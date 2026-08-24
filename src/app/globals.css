@@ -1,0 +1,1246 @@
+/* =========================================
+   BAUMARKTFINDER MVP
+   GLOBALS.CSS
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #141821;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.header {
+  height: 76px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #ededed;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  color: #141821;
+  text-decoration: none;
+
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.brand strong {
+  color: #ed2f32;
+}
+
+.brandIcon {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 8px;
+  background: #ed2f32;
+  color: white;
+
+  font-size: 23px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav a {
+  color: #20242b;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #ed2f32;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+  position: relative;
+
+  max-width: 1440px;
+  min-height: 500px;
+
+  margin: 0 auto;
+  padding: 58px 54px 42px;
+
+  overflow: hidden;
+}
+
+
+/* TEXT LINKS */
+
+.heroCopy {
+  position: relative;
+  z-index: 3;
+
+  max-width: 610px;
+}
+
+.heroCopy h1 {
+  margin: 0;
+
+  color: #171b23;
+
+  font-size: clamp(48px, 4.8vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -3px;
+}
+
+.heroCopy p {
+  max-width: 540px;
+
+  margin: 24px 0 0;
+
+  color: #7c8491;
+
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+
+/* =========================================
+   HERO MATERIALBILD RECHTS
+   ========================================= */
+
+.heroVisual {
+  position: absolute;
+  z-index: 1;
+
+  top: 25px;
+  right: 15px;
+
+  width: 440px;
+height: 265px;
+
+  pointer-events: none;
+}
+
+.heroVisual img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: right top;
+}
+
+
+/* =========================================
+   SUCHBEREICH
+   ========================================= */
+
+.searchPanel {
+  position: relative;
+  z-index: 10;
+
+  width: min(980px, 100%);
+
+  margin-top: 38px;
+  padding: 24px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 1fr)
+    minmax(260px, 1fr)
+    130px;
+
+  gap: 18px;
+  align-items: end;
+
+  background: rgba(255, 255, 255, 0.98);
+
+  border: 1px solid #ebedf0;
+  border-radius: 14px;
+
+  box-shadow: 0 14px 40px rgba(18, 24, 33, 0.07);
+}
+
+.fieldBlock {
+  position: relative;
+  min-width: 0;
+}
+
+.fieldBlock label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #343a43;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.inputShell {
+  width: 100%;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #d9dde2;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.inputShell:focus-within {
+  border-color: #ef3034;
+  box-shadow: 0 0 0 3px rgba(239, 48, 52, 0.08);
+}
+
+.inputIcon {
+  flex-shrink: 0;
+
+  margin-left: 17px;
+
+  color: #555e69;
+  font-size: 21px;
+}
+
+.inputShell input {
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+
+  padding: 0 16px 0 12px;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #252b33;
+  font-size: 15px;
+}
+
+.inputShell input::placeholder {
+  color: #959ba4;
+}
+
+
+/* =========================================
+   SUCHBUTTON
+   ========================================= */
+
+.searchButton {
+  width: 100%;
+  height: 58px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: linear-gradient(135deg, #f12e31, #e82024);
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(239, 47, 50, 0.2);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.searchButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(239, 47, 50, 0.25);
+}
+
+.searchButton:disabled {
+  opacity: 0.7;
+  cursor: wait;
+  transform: none;
+}
+
+
+/* =========================================
+   MATERIALVORSCHLÄGE
+   ========================================= */
+
+.materialInputWrapper {
+  position: relative;
+}
+
+.materialSuggestions {
+  position: absolute;
+
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+
+  z-index: 999;
+
+  max-height: 320px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-shadow: 0 16px 36px rgba(16, 24, 40, 0.14);
+}
+
+.materialSuggestion {
+  width: 100%;
+  min-height: 52px;
+
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border: 0;
+  border-bottom: 1px solid #eeeeee;
+  border-radius: 0;
+
+  background: #ffffff;
+
+  color: #242932;
+
+  text-align: left;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.materialSuggestion:last-child {
+  border-bottom: 0;
+}
+
+.materialSuggestion:hover {
+  background: #f6f7f8;
+}
+
+.suggestionIcon {
+  flex-shrink: 0;
+
+  color: #7b838d;
+  font-size: 18px;
+}
+
+
+/* =========================================
+   BELIEBT
+   ========================================= */
+
+.popular {
+  position: relative;
+  z-index: 5;
+
+  margin-top: 22px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.popular > span {
+  margin-right: 4px;
+
+  color: #6b717b;
+  font-size: 14px;
+}
+
+.popular button {
+  padding: 10px 17px;
+
+  border: 1px solid #e0e3e7;
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #303640;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.popular button:hover {
+  border-color: #ed3033;
+  color: #ed3033;
+}
+
+.searchStatus {
+  margin-top: 18px;
+
+  color: #6d737d;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   ERGEBNISSE
+   ========================================= */
+
+.resultsSection {
+  max-width: 1440px;
+
+  margin: 24px auto 0;
+
+  padding: 30px 54px 54px;
+}
+
+.sectionHeading {
+  margin-bottom: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.eyebrow {
+  color: #ee3034;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.sectionHeading h2 {
+  margin: 7px 0 6px;
+
+  color: #171b23;
+
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.sectionHeading p {
+  margin: 0;
+
+  color: #777e88;
+  font-size: 14px;
+}
+
+.sectionHeading p strong {
+  color: #333943;
+}
+
+.resultCount {
+  padding: 9px 13px;
+
+  border-radius: 999px;
+
+  background: #f3f4f5;
+
+  color: #6e747c;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   BAUMARKT KARTEN
+   ========================================= */
+
+.storeGrid {
+  width: 100%;
+
+  display: flex;
+
+  gap: 18px;
+
+  overflow-x: auto;
+  overflow-y: visible;
+
+  padding: 12px 4px 20px;
+
+  scroll-snap-type: x proximity;
+
+  scrollbar-width: thin;
+  scrollbar-color: #d9d9d9 transparent;
+}
+
+.storeGrid::-webkit-scrollbar {
+  height: 7px;
+}
+
+.storeGrid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.storeGrid::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 20px;
+}
+
+.offerCard {
+  position: relative;
+
+  flex: 0 0 225px;
+
+  width: 225px;
+  min-width: 225px;
+  min-height: 355px;
+
+  padding: 24px 18px 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #e6e8eb;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+
+  scroll-snap-align: start;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.offerCard:hover {
+  transform: translateY(-2px);
+
+  border-color: #d9dce0;
+
+  box-shadow: 0 8px 25px rgba(20, 25, 35, 0.08);
+}
+
+.nearestCard {
+  border-color: rgba(239, 47, 50, 0.4);
+
+  box-shadow: 0 8px 24px rgba(239, 47, 50, 0.07);
+}
+
+.nearestBadge {
+  position: absolute;
+
+  top: -12px;
+  left: 14px;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  background: #ed3033;
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   LOGOS
+   ========================================= */
+
+.logoArea {
+  height: 52px;
+
+  margin-bottom: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logoArea img {
+  display: block;
+
+  max-width: 115px;
+  max-height: 38px;
+
+  object-fit: contain;
+}
+
+.logoFallback {
+  color: #ed3033;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+
+/* =========================================
+   BAUMARKT INFO
+   ========================================= */
+
+.offerCard h3 {
+  min-height: 40px;
+
+  margin: 0 0 6px;
+
+  color: #171b23;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+.storeAddress {
+  min-height: 38px;
+
+  margin: 0 0 12px;
+
+  color: #747b85;
+
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.availabilityPlaceholder {
+  margin-bottom: 12px;
+
+  color: #259c54;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.distancePlaceholder {
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #ec3033;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   PREIS
+   ========================================= */
+
+.pricePlaceholder {
+  margin-top: auto;
+  margin-bottom: 16px;
+
+  padding-top: 14px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+.pricePlaceholder span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #969ba2;
+  font-size: 10px;
+}
+
+.pricePlaceholder strong {
+  display: block;
+
+  color: #171b23;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+
+/* =========================================
+   ANGEBOT / ROUTE
+   ========================================= */
+
+.cardActions {
+  margin-top: auto;
+
+  display: grid;
+
+  gap: 8px;
+}
+
+.cardActions a {
+  width: 100%;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.offerButton {
+  border: 1px solid #ef2d31;
+
+  background: #ef2d31;
+
+  color: #ffffff;
+}
+
+.offerButton:hover {
+  background: #db2024;
+  border-color: #db2024;
+}
+
+.routeButton {
+  border: 1px solid #dfe2e6;
+
+  background: #ffffff;
+
+  color: #282d35;
+}
+
+.routeButton:hover {
+  background: #f8f8f8;
+}
+
+
+/* =========================================
+   KI MATERIALPLANER
+   ========================================= */
+
+.aiSection {
+  max-width: 1332px;
+
+  margin: 10px auto 50px;
+
+  border: 1px solid #e7e9ec;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 5px 20px rgba(20, 25, 35, 0.04);
+
+  overflow: hidden;
+}
+
+.aiHeader {
+  padding: 24px 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #eceef0;
+}
+
+.aiHeader > div:first-child {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.aiBadge {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 9px;
+
+  background: #f7f7f8;
+
+  color: #171b23;
+
+  font-size: 25px;
+}
+
+.aiHeader h2 {
+  margin: 0 0 5px;
+
+  color: #181c23;
+
+  font-size: 20px;
+}
+
+.aiHeader p {
+  margin: 0;
+
+  color: #7c838d;
+
+  font-size: 13px;
+}
+
+.aiTotal {
+  text-align: right;
+}
+
+.aiTotal span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #818792;
+
+  font-size: 12px;
+}
+
+.aiTotal strong {
+  color: #171b23;
+
+  font-size: 18px;
+}
+
+.aiTable {
+  width: 100%;
+}
+
+.aiTableHead,
+.aiRow {
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1.5fr
+    1fr;
+
+  gap: 20px;
+
+  align-items: center;
+}
+
+.aiTableHead {
+  padding: 14px 28px;
+
+  background: #fafafa;
+
+  color: #757c86;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  border-bottom: 1px solid #eceef0;
+}
+
+.aiRow {
+  padding: 16px 28px;
+
+  border-bottom: 1px solid #f0f1f2;
+
+  font-size: 13px;
+}
+
+.aiRow strong {
+  color: #252a31;
+
+  font-size: 13px;
+}
+
+.aiRow span {
+  color: #626974;
+}
+
+.aiFooter {
+  padding: 20px 28px;
+
+  display: flex;
+  justify-content: flex-end;
+
+  background: #fafafa;
+}
+
+.aiFooter button {
+  padding: 13px 20px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: #ef2d31;
+
+  color: #ffffff;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.aiFooter button:hover {
+  background: #dc2024;
+}
+
+
+/* =========================================
+   BENEFITS
+   ========================================= */
+
+.benefits {
+  max-width: 1332px;
+
+  margin: 16px auto 60px;
+
+  padding: 26px 22px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  border-top: 1px solid #eceeef;
+}
+
+.benefits > div {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.benefits strong {
+  color: #171b23;
+
+  font-size: 26px;
+}
+
+.benefits span {
+  display: grid;
+
+  gap: 3px;
+
+  color: #888e97;
+
+  font-size: 12px;
+}
+
+.benefits b {
+  color: #22272f;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+  .header {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hero {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .heroCopy {
+    max-width: 570px;
+  }
+
+  .heroVisual {
+  top: 20px;
+  right: 20px;
+
+  width: 390px;
+  height: 235px;
+
+  opacity: 1;
+}
+
+  .searchPanel {
+    max-width: 850px;
+
+    grid-template-columns:
+      minmax(220px, 1fr)
+      minmax(220px, 1fr)
+      120px;
+  }
+
+  .resultsSection {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .offerCard {
+    flex: 0 0 220px;
+    width: 220px;
+    min-width: 220px;
+  }
+
+  .aiSection {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .benefits {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+
+/* =========================================
+   KLEINER TABLET
+   ========================================= */
+
+@media (max-width: 850px) {
+  .nav {
+    gap: 20px;
+  }
+
+  .heroVisual {
+    top: 25px;
+    right: -200px;
+
+    width: 570px;
+
+    opacity: 0.22;
+  }
+
+  .searchPanel {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .searchButton {
+    grid-column: 1 / -1;
+  }
+
+  .aiTableHead,
+  .aiRow {
+    grid-template-columns:
+      2fr
+      1fr
+      1fr;
+  }
+
+  .aiTableHead span:nth-child(3),
+  .aiRow span:nth-child(3) {
+    display: none;
+  }
+
+  .benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+  .header {
+    height: 66px;
+
+    padding: 0 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .brand {
+    font-size: 19px;
+  }
+
+  .brandIcon {
+    width: 30px;
+    height: 30px;
+
+    font-size: 19px;
+  }
+
+  .hero {
+    min-height: auto;
+
+    padding: 42px 20px 28px;
+  }
+
+  .heroCopy h1 {
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+
+  .heroCopy p {
+    font-size: 16px;
+  }
+
+  .heroVisual {
+    display: none;
+  }
+
+  .searchPanel {
+    width: 100%;
+
+    margin-top: 34px;
+    padding: 18px;
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .searchButton {
+    grid-column: auto;
+  }
+
+  .resultsSection {
+    padding: 28px 20px 40px;
+  }
+
+  .sectionHeading {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .storeGrid {
+    margin-right: -20px;
+    padding-right: 20px;
+  }
+
+  .offerCard {
+    flex: 0 0 210px;
+
+    width: 210px;
+    min-width: 210px;
+  }
+
+  .aiSection {
+    margin: 0 20px 40px;
+  }
+
+  .aiHeader {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .aiTotal {
+    text-align: left;
+  }
+
+  .aiTableHead,
+  .aiRow {
+    grid-template-columns:
+      1.7fr
+      0.8fr;
+  }
+
+  .aiTableHead span:nth-child(3),
+  .aiTableHead span:nth-child(4),
+  .aiRow span:nth-child(3),
+  .aiRow span:nth-child(4) {
+    display: none;
+  }
+
+  .aiFooter {
+    justify-content: stretch;
+  }
+
+  .aiFooter button {
+    width: 100%;
+  }
+
+  .benefits {
+    margin: 0 20px 40px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 24px;
+  }
+}
+
+
+/* =========================================
+   KLEINE HANDYS
+   ========================================= */
+
+@media (max-width: 430px) {
+  .heroCopy h1 {
+    font-size: 38px;
+  }
+
+  .offerCard {
+    flex-basis: 205px;
+
+    width: 205px;
+    min-width: 205px;
+  }
+
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+}
