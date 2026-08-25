@@ -7,7 +7,16 @@ import {
   type MaterialSuggestion,
 } from "../services/materialSuggestions";
 import { getStoreUrl } from "../lib/resolver";
-
+const STORE_LOGOS: Record<string, string> = {
+  obi: "/imagesobi.jpg",
+  bauhaus: "/bauhaus.png",
+  hornbach: "/imageshornbach.png",
+  toom: "/toom.webp",
+  hagebau: "/hagebau.jpg",
+  globus: "/Globus.png",
+  hellweg: "/hellweg.png",
+  baywa: "/baywa.png",
+};
 const GOOGLE_MAPS_API_KEY =
   process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
 
@@ -19,16 +28,6 @@ type StoreResult = {
   duration: string;
 };
 
-const STORE_LOGOS: Record<string, string> = {
-  obi: "/logos/obi.png",
-  bauhaus: "/logos/bauhaus.png",
-  hornbach: "/logos/hornbach.png",
-  toom: "/logos/toom.png",
-  hagebau: "/logos/hagebau.png",
-  raabkarcher: "/logos/raabkarcher.png",
-  baywa: "/logos/baywa.png",
-  wuerth: "/logos/wuerth.png",
-};
 
 const POPULAR_MATERIALS = [
   "Regips",
@@ -42,13 +41,13 @@ function getStoreId(name: string) {
   const n = name.toLowerCase();
 
   if (n.includes("obi")) return "obi";
-  if (n.includes("hornbach")) return "hornbach";
   if (n.includes("bauhaus")) return "bauhaus";
+  if (n.includes("hornbach")) return "hornbach";
   if (n.includes("toom")) return "toom";
   if (n.includes("hagebau")) return "hagebau";
-  if (n.includes("raab")) return "raabkarcher";
+  if (n.includes("globus")) return "globus";
+  if (n.includes("hellweg")) return "hellweg";
   if (n.includes("baywa")) return "baywa";
-  if (n.includes("würth") || n.includes("wuerth")) return "wuerth";
 
   return null;
 }
@@ -294,9 +293,20 @@ useEffect(() => {
                 return;
               }
 
-            const cleanResults = places
+           const cleanResults = places
   .map((place) => {
-    const id = getStoreId(place.name || "");
+    const placeName = place.name || "";
+    const nameLower = placeName.toLowerCase();
+
+    // Gartencenter rausfiltern
+   if (
+  nameLower.includes("gartencenter") ||
+  nameLower.includes("stadtgarten")
+) {
+  return null;
+}
+
+    const id = getStoreId(placeName);
 
     if (!id) return null;
 
@@ -330,8 +340,14 @@ distanceService.getDistanceMatrix(
     destinations: cleanResults.map(
       (store) => store.address
     ),
-    travelMode: google.maps.TravelMode.DRIVING,
-    unitSystem: google.maps.UnitSystem.METRIC,
+   travelMode: google.maps.TravelMode.DRIVING,
+
+drivingOptions: {
+  departureTime: new Date(),
+  trafficModel: google.maps.TrafficModel.BEST_GUESS,
+},
+
+unitSystem: google.maps.UnitSystem.METRIC,
   },
   (response: any, distanceStatus: string) => {
     if (
@@ -352,26 +368,38 @@ distanceService.getDistanceMatrix(
     const elements =
       response.rows[0].elements ?? [];
 
-    const resultsWithDistance =
-      cleanResults.map((store, index) => {
-        const element = elements[index];
+const resultsWithDistance =
+  cleanResults
+    .map((store, index) => {
+      const element = elements[index];
 
-        return {
-          ...store,
+      const trafficDuration =
+        element?.duration_in_traffic ??
+        element?.duration;
 
-          distance:
-            element?.status === "OK"
-              ? element.distance?.text ?? ""
-              : "",
+      return {
+        ...store,
 
-          duration:
-            element?.status === "OK"
-              ? element.duration?.text ?? ""
-              : "",
-        };
-      });
+        distance:
+          element?.status === "OK"
+            ? element.distance?.text ?? ""
+            : "",
 
-    setResults(resultsWithDistance);
+        duration:
+          element?.status === "OK"
+            ? trafficDuration?.text ?? ""
+            : "",
+
+        durationValue:
+          element?.status === "OK"
+            ? trafficDuration?.value ??
+              Number.MAX_SAFE_INTEGER
+            : Number.MAX_SAFE_INTEGER,
+      };
+    })
+    .sort((a, b) => a.durationValue - b.durationValue)
+    .map(({ durationValue, ...store }) => store);
+setResults(resultsWithDistance);
     setStatus("");
     setLoading(false);
   }
@@ -545,6 +573,7 @@ distanceService.getDistanceMatrix(
 
                 <div className="logoArea">
                   <img
+                  className={`storeLogo storeLogo-${store.id}`}
                     src={STORE_LOGOS[store.id]}
                     alt={`${store.name} Logo`}
                     onError={(e) => {
@@ -552,9 +581,7 @@ distanceService.getDistanceMatrix(
                     }}
                   />
 
-                  <strong className="logoFallback">
-                    {store.name.split(" ")[0]}
-                  </strong>
+                 
                 </div>
 
                 <h3>{store.name}</h3>

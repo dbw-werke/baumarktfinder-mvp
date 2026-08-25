@@ -603,8 +603,7 @@ height: 265px;
    ========================================= */
 
 .logoArea {
-  height: 52px;
-
+  height: 80px;
   margin-bottom: 14px;
 
   display: flex;
@@ -613,21 +612,12 @@ height: 265px;
 }
 
 .logoArea img {
-  display: block;
-
-  max-width: 115px;
-  max-height: 38px;
-
+  width: 160px;
+  height: 65px;
   object-fit: contain;
+  object-position: left center;
+  display: block;
 }
-
-.logoFallback {
-  color: #ed3033;
-
-  font-size: 20px;
-  font-weight: 800;
-}
-
 
 /* =========================================
    BAUMARKT INFO
