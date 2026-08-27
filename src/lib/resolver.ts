@@ -95,26 +95,22 @@ export function findMaterial(input: string) {
 }
 
 function buildStoreSearchUrl(storeId: string, searchTerm: string) {
-  const q = encodeURIComponent(searchTerm);
+  const q = encodeURIComponent(searchTerm.trim());
 
   const urls: Record<string, string> = {
     obi: `https://www.obi.de/search/${q}/`,
-    bauhaus: `https://www.bauhaus.info/search?q=${q}`,
+    bauhaus: `https://www.bauhaus.info/suche?text=${q}`,
     hornbach: `https://www.hornbach.de/suche/sortiment/${q}/`,
     toom: `https://toom.de/suche/?q=${q}`,
     hagebau: `https://www.hagebau.de/suche/?q=${q}`,
-    raabkarcher: `https://www.raabkarcher.de/suche?text=${q}`,
+    globus: `https://www.globus-baumarkt.de/suche/?q=${q}`,
+    hellweg: `https://www.hellweg.de/suche/?q=${q}`,
     baywa: `https://www.baywa-baustoffe.de/suche?q=${q}`,
-    wuerth: `https://eshop.wuerth.de/Suche?text=${q}`,
-
   };
 
   return urls[storeId] ?? `https://www.google.com/search?q=${q}`;
 }
 
-export function getStoreUrl(storeId: string, input: string) {
-  const material = findMaterial(input);
-  const searchTerm = material?.searchTerm ?? material?.name ?? input;
-
+export function getStoreUrl(storeId: string, searchTerm: string) {
   return buildStoreSearchUrl(storeId, searchTerm);
 }
