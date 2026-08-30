@@ -48,7 +48,6 @@ function getStoreId(name: string) {
   if (n.includes("globus")) return "globus";
   if (n.includes("hellweg")) return "hellweg";
   if (n.includes("baywa")) return "baywa";
-
   return null;
 }
 
@@ -137,6 +136,7 @@ export default function Page() {
   const [results, setResults] = useState<StoreResult[]>([]);
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
+  const [locationLoading, setLocationLoading] = useState(false);
 useEffect(() => {
   warmMaterialSuggestions();
 }, []);
@@ -233,7 +233,68 @@ useEffect(() => {
     setSelectedMaterial(suggestion);
     setSuggestions([]);
   }
+async function useCurrentLocation() {
+  if (!navigator.geolocation) {
+    setStatus("Dein Browser unterstützt keine Standortbestimmung.");
+    return;
+  }
 
+  setLocationLoading(true);
+  setStatus("Standort wird ermittelt...");
+
+  navigator.geolocation.getCurrentPosition(
+    async (position) => {
+      try {
+        await loadGoogleMaps();
+
+        const google = (window as any).google;
+        const geocoder = new google.maps.Geocoder();
+
+        const location = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        };
+
+        geocoder.geocode(
+          { location },
+          (results: any[], status: string) => {
+            if (
+              status === "OK" &&
+              results?.[0]?.formatted_address
+            ) {
+              setAddress(results[0].formatted_address);
+              setStatus("");
+            } else {
+              setStatus("Adresse für deinen Standort konnte nicht ermittelt werden.");
+            }
+
+            setLocationLoading(false);
+          }
+        );
+      } catch (error) {
+        console.error(error);
+        setStatus("Standort konnte nicht verarbeitet werden.");
+        setLocationLoading(false);
+      }
+    },
+    (error) => {
+      if (error.code === 1) {
+        setStatus("Standortfreigabe wurde abgelehnt.");
+      } else if (error.code === 2) {
+        setStatus("Dein Standort ist momentan nicht verfügbar.");
+      } else {
+        setStatus("Standort konnte nicht ermittelt werden.");
+      }
+
+      setLocationLoading(false);
+    },
+    {
+      enableHighAccuracy: false,
+      timeout: 10000,
+      maximumAge: 60000,
+    }
+  );
+}
   async function handleSearch(e: React.FormEvent) {
     e.preventDefault();
 
@@ -275,24 +336,22 @@ useEffect(() => {
           }
 
           const location = geoResults[0].geometry.location;
-
-          service.nearbySearch(
-            {
-              location,
-              rankBy: google.maps.places.RankBy.DISTANCE,
-              keyword: "Baumarkt",
-            },
-            (places: any[], placesStatus: string) => {
-              if (
-                placesStatus !==
-                  google.maps.places.PlacesServiceStatus.OK ||
-                !places
-              ) {
-                setStatus("Keine Baumärkte gefunden");
-                setLoading(false);
-                return;
-              }
-
+service.nearbySearch(
+  {
+    location,
+    rankBy: google.maps.places.RankBy.DISTANCE,
+    keyword: "Baumarkt",
+  },
+  (places: any[], placesStatus: string) => {
+    if (
+      placesStatus !==
+        google.maps.places.PlacesServiceStatus.OK ||
+      !places
+    ) {
+      setStatus("Keine Baumärkte gefunden");
+      setLoading(false);
+      return;
+    }
            const cleanResults = places
   .map((place) => {
     const placeName = place.name || "";
@@ -473,6 +532,17 @@ setResults(resultsWithDistance);
                 autoComplete="off"
               />
             </div>
+              <button
+    type="button"
+    className="currentLocationButton"
+    onClick={useCurrentLocation}
+    disabled={locationLoading}
+  >
+    <span>⌖</span>
+    {locationLoading
+      ? "Standort wird ermittelt..."
+      : "Meinen aktuellen Standort verwenden"}
+  </button>
           </div>
 
           <div

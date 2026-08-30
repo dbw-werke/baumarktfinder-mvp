@@ -98,16 +98,16 @@ function buildStoreSearchUrl(storeId: string, searchTerm: string) {
   const q = encodeURIComponent(searchTerm.trim());
 
   const urls: Record<string, string> = {
-    obi: `https://www.obi.de/search/${q}/`,
-    bauhaus: `https://www.bauhaus.info/suche?text=${q}`,
-    hornbach: `https://www.hornbach.de/suche/sortiment/${q}/`,
-    toom: `https://toom.de/suche/?q=${q}`,
-    hagebau: `https://www.hagebau.de/suche/?q=${q}`,
-    globus: `https://www.globus-baumarkt.de/suche/?q=${q}`,
-    hellweg: `https://www.hellweg.de/suche/?q=${q}`,
-    baywa: `https://www.baywa-baustoffe.de/suche?q=${q}`,
-  };
-
+  obi: `https://www.obi.de/search/${q}/`,
+  hornbach: `https://www.hornbach.de/s/${q}`,
+  bauhaus: `https://www.bauhaus.info/search?q=${q}`,
+  toom: `https://www.toom.de/s/${q}/`,
+  hagebau: `https://www.hagebau.de/search/?q=${q}`,
+  globus: `https://www.globus-baumarkt.de/search/result?query=${q}&type=search`,
+  raabkarcher: `https://www.raabkarcher.de/produkte/c/s_06`,
+  baywa: `https://www.baywa-baustoffe.de/suche?q=${q}`,
+  hellweg: `https://www.hellweg.de/search?search=${q}`,
+};
   return urls[storeId] ?? `https://www.google.com/search?q=${q}`;
 }
 

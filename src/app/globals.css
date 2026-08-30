@@ -197,8 +197,7 @@ height: 265px;
     130px;
 
   gap: 18px;
-  align-items: end;
-
+  align-items: start;
   background: rgba(255, 255, 255, 0.98);
 
   border: 1px solid #ebedf0;
@@ -1233,4 +1232,28 @@ height: 265px;
   .benefits {
     grid-template-columns: 1fr;
   }
+}
+.currentLocationButton {
+  margin-top: 9px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.currentLocationButton:hover {
+  opacity: 1;
+}
+
+.currentLocationButton:disabled {
+  cursor: wait;
+  opacity: 0.5;
 }
