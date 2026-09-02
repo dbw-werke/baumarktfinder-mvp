@@ -104,7 +104,6 @@ function buildStoreSearchUrl(storeId: string, searchTerm: string) {
   toom: `https://www.toom.de/s/${q}/`,
   hagebau: `https://www.hagebau.de/search/?q=${q}`,
   globus: `https://www.globus-baumarkt.de/search/result?query=${q}&type=search`,
-  raabkarcher: `https://www.raabkarcher.de/produkte/c/s_06`,
   baywa: `https://www.baywa-baustoffe.de/suche?q=${q}`,
   hellweg: `https://www.hellweg.de/search?search=${q}`,
 };
