@@ -7,6 +7,7 @@ import {
   type MaterialSuggestion,
 } from "../services/materialSuggestions";
 import { getStoreUrl } from "../lib/resolver";
+import { supabase } from "../lib/supabase";
 const STORE_LOGOS: Record<string, string> = {
   obi: "/imagesobi.jpg",
   bauhaus: "/bauhaus.png",
@@ -15,7 +16,6 @@ const STORE_LOGOS: Record<string, string> = {
   hagebau: "/hagebau.jpg",
   globus: "/Globus.png",
   hellweg: "/hellweg.png",
-  baywa: "/baywa.png",
 };
 const GOOGLE_MAPS_API_KEY =
   process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
@@ -26,8 +26,11 @@ type StoreResult = {
   address: string;
   distance: string;
   duration: string;
+  price?: number | null;
+  priceProductName?: string | null;
+  priceProductUrl?: string | null;
+  priceCheckedAt?: string | null;
 };
-
 
 const POPULAR_MATERIALS = [
   "Regips",
@@ -47,7 +50,6 @@ function getStoreId(name: string) {
   if (n.includes("hagebau")) return "hagebau";
   if (n.includes("globus")) return "globus";
   if (n.includes("hellweg")) return "hellweg";
-  if (n.includes("baywa")) return "baywa";
   return null;
 }
 
@@ -295,6 +297,126 @@ async function useCurrentLocation() {
     }
   );
 }
+async function attachPricesToStores(
+  stores: StoreResult[]
+): Promise<StoreResult[]> {
+  let material = selectedMaterial;
+
+  if (!material) {
+    const found = await getMaterialSuggestions(product.trim());
+
+    if (found.length === 0) {
+      return stores;
+    }
+
+    material = found[0];
+    setSelectedMaterial(material);
+  }
+
+  const storeIds = [
+    ...new Set(stores.map((store) => store.id)),
+  ];
+
+  if (storeIds.length === 0) {
+    return stores;
+  }
+
+  setStatus("Preise werden geladen...");
+
+  const { data, error } = await supabase
+    .from("store_prices")
+    .select(`
+      store_id,
+      price,
+      product_name,
+      product_url,
+      checked_at
+    `)
+    .eq("material_id", material.id)
+    .in("store_id", storeIds)
+    .order("checked_at", {
+      ascending: false,
+    });
+
+  if (error) {
+    console.error(
+      "store_prices:",
+      error
+    );
+
+    return stores;
+  }
+
+  const pricesByStore = new Map<
+    string,
+    {
+      store_id: string;
+      price: number | string;
+      product_name: string | null;
+      product_url: string | null;
+      checked_at: string | null;
+    }
+  >();
+
+  for (const row of data ?? []) {
+    /*
+     * Weil checked_at DESC sortiert ist,
+     * nehmen wir je Baumarkt nur den
+     * neuesten Preis.
+     */
+    if (
+      pricesByStore.has(
+        row.store_id
+      )
+    ) {
+      continue;
+    }
+
+    const price =
+      Number(row.price);
+
+    if (
+      !Number.isFinite(price) ||
+      price <= 0
+    ) {
+      continue;
+    }
+
+    pricesByStore.set(
+      row.store_id,
+      row
+    );
+  }
+
+  return stores.map((store) => {
+    const priceData =
+      pricesByStore.get(
+        store.id
+      );
+
+    if (!priceData) {
+      return store;
+    }
+
+    return {
+      ...store,
+
+      price:
+        Number(
+          priceData.price
+        ),
+
+      priceProductName:
+        priceData.product_name,
+
+      priceProductUrl:
+        priceData.product_url,
+
+      priceCheckedAt:
+        priceData.checked_at,
+    };
+  });
+}
   async function handleSearch(e: React.FormEvent) {
     e.preventDefault();
 
@@ -458,9 +580,18 @@ const resultsWithDistance =
     })
     .sort((a, b) => a.durationValue - b.durationValue)
     .map(({ durationValue, ...store }) => store);
-setResults(resultsWithDistance);
+attachPricesToStores(resultsWithDistance)
+  .then((resultsWithPrices) => {
+    setResults(resultsWithPrices);
     setStatus("");
     setLoading(false);
+  })
+  .catch((error) => {
+    console.error(error);
+    setResults(resultsWithDistance);
+    setStatus("");
+    setLoading(false);
+  });
   }
 );
             }
@@ -672,18 +803,45 @@ setResults(resultsWithDistance);
     : "Entfernung wird berechnet"}
 </div>
 
-                <div className="pricePlaceholder">
-                  <span>Preisvergleich</span>
-                  <strong>folgt</strong>
-                </div>
+              <div className="pricePlaceholder">
+  {store.price != null ? (
+    <>
+      <span>{store.priceProductName ?? "Aktueller Preis"}</span>
+
+      <strong>
+        {Number(store.price).toLocaleString("de-DE", {
+          style: "currency",
+          currency: "EUR",
+        })}
+      </strong>
+
+      {store.priceCheckedAt && (
+        <small>
+          Aktualisiert:{" "}
+          {new Date(
+            store.priceCheckedAt
+          ).toLocaleDateString("de-DE")}
+        </small>
+      )}
+    </>
+  ) : (
+    <>
+      <span>Preis</span>
+      <strong>–</strong>
+    </>
+  )}
+</div>
 
                 <div className="cardActions">
                   <a
                     className="offerButton"
-                    href={getStoreUrl(
-                      store.id,
-                      storeSearchTerm
-                    )}
+                    href={
+                      store.priceProductUrl ||
+                      getStoreUrl(
+                        store.id,
+                        storeSearchTerm
+                      )
+                    }
                     target="_blank"
                     rel="noreferrer"
                   >

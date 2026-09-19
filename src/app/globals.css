@@ -282,6 +282,7 @@ a {
 .searchButton {
   width: 100%;
   height: 58px;
+  margin-top: 22px;
 
   border: 0;
   border-radius: 8px;
@@ -1257,4 +1258,287 @@ a {
 .currentLocationButton:disabled {
   cursor: wait;
   opacity: 0.5;
+}
+/* =========================================
+   MOBILE FINAL FIX
+   ========================================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.site {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+input,
+button,
+a {
+  max-width: 100%;
+}
+
+@media (max-width: 650px) {
+  .header {
+    width: 100%;
+    height: 62px;
+    padding: 0 16px;
+  }
+
+  .brand {
+    min-width: 0;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .hero {
+    width: 100%;
+    padding: 32px 16px 24px;
+    overflow: visible;
+  }
+
+  .heroCopy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(32px, 10vw, 40px);
+    line-height: 1.05;
+    letter-spacing: -1.3px;
+    overflow-wrap: break-word;
+  }
+
+  .heroCopy p {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .heroVisual {
+    display: none;
+  }
+
+  .searchPanel {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 26px;
+    padding: 16px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .fieldBlock,
+  .materialInputWrapper,
+  .inputShell {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .inputShell input {
+    width: 100%;
+    min-width: 0;
+    font-size: 16px;
+  }
+
+  .searchButton {
+    width: 100%;
+    grid-column: auto;
+  }
+
+  .currentLocationButton {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .popular {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .popular button {
+    max-width: 100%;
+  }
+
+  .resultsSection {
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 16px 36px;
+  }
+
+  .sectionHeading {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 26px;
+    overflow-wrap: break-word;
+  }
+
+  /* KEIN HORIZONTALER KARTEN-SCROLL MEHR */
+  .storeGrid {
+    width: 100%;
+    margin: 0;
+    padding: 12px 0 20px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+
+    gap: 16px;
+
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .offerCard {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 0;
+
+    flex: none;
+
+    padding: 22px 18px 18px;
+    scroll-snap-align: none;
+  }
+
+  .logoArea {
+    width: 100%;
+    height: 65px;
+  }
+
+  .logoArea img {
+    width: auto;
+    max-width: 150px;
+    height: 55px;
+  }
+
+  .offerCard h3,
+  .storeAddress {
+    min-height: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .pricePlaceholder {
+    margin-top: 10px;
+  }
+
+  .pricePlaceholder span,
+  .pricePlaceholder strong,
+  .pricePlaceholder small {
+    overflow-wrap: anywhere;
+  }
+
+  .cardActions {
+    width: 100%;
+  }
+
+  .cardActions a {
+    width: 100%;
+  }
+
+  .aiSection {
+    width: auto;
+    max-width: none;
+    margin: 0 16px 36px;
+  }
+
+  .aiHeader {
+    padding: 20px 16px;
+  }
+
+  .aiHeader > div:first-child {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .aiHeader h2,
+  .aiHeader p {
+    overflow-wrap: anywhere;
+  }
+
+  .aiTable {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .aiTableHead,
+  .aiRow {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    grid-template-columns:
+      minmax(0, 1.7fr)
+      minmax(0, 0.8fr);
+
+    gap: 10px;
+  }
+
+  .aiTableHead span,
+  .aiRow span,
+  .aiRow strong {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .aiFooter {
+    padding: 16px;
+  }
+
+  .benefits {
+    width: auto;
+    max-width: none;
+
+    margin: 0 16px 36px;
+    padding-left: 0;
+    padding-right: 0;
+
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+
+  .brandIcon {
+    width: 28px;
+    height: 28px;
+    margin-right: 7px;
+  }
+
+  .hero {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .resultsSection {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .aiSection,
+  .benefits {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }
