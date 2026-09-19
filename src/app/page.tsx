@@ -475,24 +475,21 @@ service.nearbySearch(
       return;
     }
            const cleanResults = places
-  .map((place) => {
+  .map((place, index) => {
     const placeName = place.name || "";
     const nameLower = placeName.toLowerCase();
 
-    // Gartencenter rausfiltern
-   if (
-  nameLower.includes("gartencenter") ||
-  nameLower.includes("stadtgarten")
-) {
-  return null;
-}
+    if (
+      nameLower.includes("gartencenter") ||
+      nameLower.includes("stadtgarten")
+    ) {
+      return null;
+    }
 
-    const id = getStoreId(placeName);
-
-    if (!id) return null;
+    const supportedStoreId = getStoreId(placeName);
 
     return {
-      id,
+      id: supportedStoreId ?? `other-${place.place_id ?? index}`,
       name: place.name || "Baumarkt",
       address:
         place.vicinity ||

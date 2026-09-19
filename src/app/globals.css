@@ -156,11 +156,11 @@ a {
   position: absolute;
   z-index: 1;
 
-  top: 35px;
-  right: 70px;
+  top: 25px;
+  right: 45px;
 
-  width: 390px;
-  height: 245px;
+  width: 520px;
+  height: 330px;
 
   pointer-events: none;
 }
