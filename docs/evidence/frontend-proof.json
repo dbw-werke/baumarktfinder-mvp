@@ -1,0 +1,29 @@
+{
+  "environment": "isolated local PostgreSQL; actual retailer observations; synthetic layout-only store",
+  "checks": [
+    {
+      "material": "Knauf Uniflott Fugenspachtel, 25 kg",
+      "package_price": 42.5,
+      "unit_price": 1.7,
+      "exact_product_link": "https://www.hornbach.de/p/knauf-uniflott-spachtelmasse-25-kg/203327/",
+      "frontend_database_read": true,
+      "rendered_card": true
+    },
+    {
+      "material": "Knauf Rotband Haftputzgips, 30 kg",
+      "package_price": 11.5,
+      "unit_price": 0.38,
+      "exact_product_link": "https://www.hornbach.de/p/knauf-rotband-haftputzgips-zum-glaetten-30-kg/261950/",
+      "frontend_database_read": true,
+      "rendered_card": true
+    },
+    {
+      "material": "Knauf Perlfix Ansetzgips, 30 kg",
+      "package_price": 12.55,
+      "unit_price": 0.42,
+      "exact_product_link": "https://www.hornbach.de/p/knauf-perlfix-ansetzgips-30-kg/205209/",
+      "frontend_database_read": true,
+      "rendered_card": true
+    }
+  ]
+}

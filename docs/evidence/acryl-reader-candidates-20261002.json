@@ -1,0 +1,213 @@
+{
+  "replayed_at": "2026-10-02T18:14:22.626Z",
+  "mode": "offline-original-html",
+  "candidates": [
+    {
+      "store_id": "hornbach",
+      "product_url": "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/",
+      "checked_at": "2026-09-30T20:35:01.830Z",
+      "source_file": "work/coverage-20260930/hornbach-acryl-weiss-310ml-v1.html",
+      "products": [
+        {
+          "name": "PRECIT Acryl weiß 310 ml; Acrylat Dichtstoff, Acrylatbasis",
+          "url": "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/",
+          "price": 4.89,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Precit Built",
+          "category": "Startseite > Sortiment > Baustoffe > Rohbau > Dichtungsmassen",
+          "description": "Brauchst Du eine zuverlässige Lösung für verschiedene Abdichtungs- und Reparaturarbeiten? Das PRECIT Acryl weiß 310 ml bietet Dir vielseitige Möglichkeiten. Produktmerkmale des PRECIT Acryl weiß 310 ml Darum solltest Du zugreifen: Dieses Produkt eignet sich hervorragend zum Abdichten, Reparieren oder Spachteln an Böden, Decken und Fassaden. Mit seiner ca. 20-minütigen Hautbildungszeit kannst Du zügig weiterarbeiten, ohne lange Wartezeiten. Die weiße Farbe passt sich dezent an, was besonders bei sichtbaren Stellen von Vorteil ist. Da es sowohl im Innen- als auch im Außenbereich einsetzbar ist, bietet es flexible Anwendungsmöglichkeiten. Der Acrylat-Dichtstoff auf Acrylatbasis sorgt für eine starke Haftung und lässt sich leicht verarbeiten. Dies macht es ideal für Fensterbänke und Laminat, wo präzises und sauberes Arbeiten wichtig ist. Festgezurrt: Das PRECIT Acryl weiß 310 ml ist die richtige Wahl für zuverlässige Abdichtungs- und Reparaturarbeiten im Innen- und Außenbereich.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Dichtstoff"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Acryl"
+            },
+            {
+              "name": "Inhaltsstoffe",
+              "value": "Acrylat Dichtstoff, Acrylatbasis"
+            },
+            {
+              "name": "Anwendungsgebiete",
+              "value": "Fassade, Fensterbänke, Laminat"
+            },
+            {
+              "name": "Verarbeitungstemperatur",
+              "value": "5 °C - 35 °C"
+            },
+            {
+              "name": "Ca. Hautbildungszeit",
+              "value": "20 min"
+            },
+            {
+              "name": "Inhalt",
+              "value": "310 ml"
+            },
+            {
+              "name": "Verwendbar für",
+              "value": "Mauerwerk, Holz"
+            },
+            {
+              "name": "Untergrundbeschaffenheit",
+              "value": "Fettfrei, Sauber, Staubfrei, Trocken, Tragfähig"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Außen, Innen"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Abdichten, Reparieren, Spachteln"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Boden, Decke, Wand"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Weiß"
+            },
+            {
+              "name": "Farbton",
+              "value": "Weiß"
+            },
+            {
+              "name": "Ergänzende Gefahrenmerkmale (EUH-Sätze)",
+              "value": "(EUH210) Sicherheitsdatenblatt auf Anfrage erhältlich., (EUH208) Enthält 1,2-Benzisothiazol-3(2H)-on, Reaktionsmasse aus: 5-Chlor-2-methyl-2H-isothiazol-3-on [EG nr. 247-500-7] und 2-Methyl-2H-isothiazol-3-on [EG nr. 220-239-6] (3:1). Kann allergische Reaktionen hervorrufen."
+            },
+            {
+              "name": "Aushärtungszeit",
+              "value": "2 mm pro Tag"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "RNFV"
+            },
+            {
+              "name": "EAN",
+              "value": "4306517467944"
+            }
+          ],
+          "externalId": "10313763",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-09-30T20:35:01.830Z"
+        }
+      ]
+    },
+    {
+      "store_id": "toom",
+      "product_url": "https://toom.de/p/acryl-spachtelmasse-riss-und-fugendicht-weiss-310-ml/2360023",
+      "checked_at": "2026-09-30T20:35:01.747Z",
+      "source_file": "work/coverage-20260930/toom-acryl-weiss-310ml-v1.html",
+      "products": [
+        {
+          "name": "toom Acryl-Spachtelmasse \"Riss- und Fugendicht\" weiß 310 ml",
+          "url": "https://toom.de/p/acryl-spachtelmasse-riss-und-fugendicht-weiss-310-ml/2360023",
+          "externalId": "2360023",
+          "price": 5.99,
+          "priceBasis": "package",
+          "priceSource": "retailer-product-state",
+          "priceBasisEvidence": "toom-same-sku-PCE-and-price-metadata",
+          "currency": "EUR",
+          "availability": null,
+          "soldIndividually": true,
+          "observedSpecs": {},
+          "retrievedAt": "2026-09-30T20:35:01.747Z",
+          "brand": "toom",
+          "category": "Bauen & Renovieren > Dichtstoffe > Acryl",
+          "description": "Mit der Spachtelmasse aus Acryl \"Riss- und Fugendicht\" der toom Qualitätsmarke lassen sich Risse in Putz, Stuck oder Mauerwerk problemlos verschließen. Die Masse kann sowohl im Innen- als auch im Außenbereich an Wänden, Decken oder Gewölben zum Einsatz kommen. Sie ist witterungs- und alterungsbeständig sowie wasserdampfdurchlässig.",
+          "attributes": [
+            {
+              "name": "Marke",
+              "value": "toom"
+            },
+            {
+              "name": "Serie",
+              "value": "Riss- und Fugendicht"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Acryl in strukturierter Putz-Optik"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Drinnen und draußen zu verwenden"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Lässt sich überstreichen und verputzen"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "toom Qualitätsmarke"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "store_id": "toom",
+      "product_url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+      "checked_at": "2026-10-01T15:53:28.751Z",
+      "source_file": "work/coverage-20261001/extra-acryl310.html",
+      "products": [
+        {
+          "name": "toom Maleracryl \"express\" weiß 310 ml; überstreichbar",
+          "url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+          "externalId": "2350309",
+          "price": 5.99,
+          "priceBasis": "package",
+          "priceSource": "retailer-product-state",
+          "priceBasisEvidence": "toom-same-sku-PCE-and-price-metadata",
+          "currency": "EUR",
+          "availability": null,
+          "soldIndividually": true,
+          "observedSpecs": {},
+          "retrievedAt": "2026-10-01T15:53:28.751Z",
+          "brand": "toom",
+          "category": "Bauen & Renovieren > Dichtstoffe > Acryl",
+          "description": "Egal, ob sie Fugen oder Anschlüsse abdichten möchten, mit dem Maleracryl \"express\" von toom sind diese Arbeiten im Nu erledigt. Es härtet schnell aus und ist bereits nach zehn Minuten überstreichbar. Es eignet sich auch für den Einsatz im Außenbereich, da es witterungs- und altersbeständig ist. Dank der praktischen Dosiertülle lässt es sich sauber und einfach anwenden.",
+          "attributes": [
+            {
+              "name": "Marke",
+              "value": "toom"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Geeignet für den Innen- und Außenbereich"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Bereits nach 10 min überstreichbar"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Hohe Haftkraft"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Zum Abdichten von Anschlüssen u. ä."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unavailable": [
+    {
+      "store_id": "globus",
+      "reason": "blocked",
+      "original_attempt": {
+        "requested_url": "https://www.globus-baumarkt.de/search/result?type=search&query=Gipskartonplatte%20Standard%2012%2C5%20%C3%97%20600%20%C3%97%201200%20mm",
+        "checked_at": "2026-10-01T15:52:17.063Z",
+        "error": "blocked"
+      }
+    }
+  ]
+}

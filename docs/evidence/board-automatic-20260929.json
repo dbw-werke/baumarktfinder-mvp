@@ -1,0 +1,126 @@
+{
+  "retrieval": "Public official product HTML fetched by robots-respecting reader; replayed through corrected package-basis extractor with original retrieval timestamps.",
+  "observations": [
+    {
+      "store_id": "hornbach",
+      "material_id": "2d750efa-4af5-e9b4-5416-89678194f058",
+      "source_url": "https://www.hornbach.de/p/knauf-gipskartonplatte-bauplatte-gkb-2000-mm-x-1250-mm-x-12-5-mm/3286520/",
+      "checked_at": "2026-09-29T10:49:30.560Z",
+      "product_name": "Knauf Gipskartonplatte Bauplatte GKB 2000 mm x 1250 mm x 12,5 mm",
+      "price": 11.05,
+      "package_quantity": 2.5,
+      "unit": "m2",
+      "evidence": {
+        "canonical_version": 1,
+        "specs": {
+          "type": "standard",
+          "thickness_mm": 12.5,
+          "width_mm": 1250,
+          "length_mm": 2000,
+          "area_m2": 2.5,
+          "required_terms": [
+            "gipskarton"
+          ],
+          "excluded_terms": [
+            "feuchtraum",
+            "imprägniert",
+            "impragniert",
+            "gkbi",
+            "feuerschutz"
+          ]
+        },
+        "observed_specs": {
+          "length_mm": 2000,
+          "width_mm": 1250,
+          "thickness_mm": 12.5,
+          "area_m2": 2.5
+        },
+        "price_basis": "package",
+        "price_basis_evidence": "hornbach-same-sku-sales-unit",
+        "extraction": "json-ld-offer",
+        "retrieved_at": "2026-09-29T10:49:30.560Z"
+      }
+    },
+    {
+      "store_id": "toom",
+      "material_id": "2d750efa-4af5-e9b4-5416-89678194f058",
+      "source_url": "https://toom.de/p/gipskartonplatte-200-x-125-x-125-cm/3254141",
+      "checked_at": "2026-09-29T10:49:30.560Z",
+      "product_name": "Gipskartonplatte 200 x 125 x 1,25 cm",
+      "price": 11.23,
+      "package_quantity": 2.5,
+      "unit": "m2",
+      "evidence": {
+        "canonical_version": 1,
+        "specs": {
+          "type": "standard",
+          "thickness_mm": 12.5,
+          "width_mm": 1250,
+          "length_mm": 2000,
+          "area_m2": 2.5,
+          "required_terms": [
+            "gipskarton"
+          ],
+          "excluded_terms": [
+            "feuchtraum",
+            "imprägniert",
+            "impragniert",
+            "gkbi",
+            "feuerschutz"
+          ]
+        },
+        "observed_specs": {
+          "length_mm": 2000,
+          "width_mm": 1250,
+          "thickness_mm": 12.5,
+          "area_m2": 2.5
+        },
+        "price_basis": "package",
+        "price_basis_evidence": "toom-same-sku-PCE-and-price-metadata",
+        "extraction": "retailer-product-state",
+        "retrieved_at": "2026-09-29T10:49:30.560Z"
+      }
+    },
+    {
+      "store_id": "globus",
+      "material_id": "2d750efa-4af5-e9b4-5416-89678194f058",
+      "source_url": "https://www.globus-baumarkt.de/p/knauf-gipskarton-bauplatte-gkb-200-x-125-cm-12-5-mm-0779250144/",
+      "checked_at": "2026-09-29T10:49:30.560Z",
+      "product_name": "Knauf Gipskarton-Bauplatte GKB 200 x 125 cm 12,5 mm",
+      "price": 11.05,
+      "package_quantity": 2.5,
+      "unit": "m2",
+      "evidence": {
+        "canonical_version": 1,
+        "specs": {
+          "type": "standard",
+          "thickness_mm": 12.5,
+          "width_mm": 1250,
+          "length_mm": 2000,
+          "area_m2": 2.5,
+          "required_terms": [
+            "gipskarton"
+          ],
+          "excluded_terms": [
+            "feuchtraum",
+            "imprägniert",
+            "impragniert",
+            "gkbi",
+            "feuerschutz"
+          ]
+        },
+        "observed_specs": {
+          "pieces": 1,
+          "length_mm": 2000,
+          "width_mm": 1250,
+          "thickness_mm": 12.5,
+          "area_m2": 2.5
+        },
+        "price_basis": "package",
+        "price_basis_evidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+        "extraction": "retailer-product-state",
+        "retrieved_at": "2026-09-29T10:49:30.560Z"
+      }
+    }
+  ]
+}

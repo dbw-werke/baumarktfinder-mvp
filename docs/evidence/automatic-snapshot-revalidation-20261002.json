@@ -1,0 +1,182 @@
+{
+  "replayed_at": "2026-10-02T18:15:28.469Z",
+  "network_requests": 0,
+  "database_writes": 0,
+  "rows": [
+    {
+      "store_id": "toom",
+      "canonical_slug": "glaswolle-035-120-5-76m2-v1",
+      "checked_at": "2026-10-01T15:58:59.305Z",
+      "source_file": "work/coverage-20261001/d213954b9725c57653ca.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "knauf-uniflott-25kg-v1",
+      "checked_at": "2026-10-01T15:55:51.285Z",
+      "source_file": "work/coverage-20261001/527186ab96984f114758.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "toom",
+      "canonical_slug": "knauf-uniflott-25kg-v1",
+      "checked_at": "2026-10-01T15:55:52.974Z",
+      "source_file": "work/coverage-20261001/f28ebc008cd530a722ab.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "globus",
+      "canonical_slug": "knauf-rotband-30kg-v1",
+      "checked_at": "2026-09-30T20:35:02.878Z",
+      "source_file": "work/coverage-20260930/globus-knauf-rotband-30kg-v1.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "knauf-rotband-30kg-v1",
+      "checked_at": "2026-10-01T15:56:42.708Z",
+      "source_file": "work/coverage-20261001/6466e4d564a407cd739b.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "toom",
+      "canonical_slug": "knauf-rotband-30kg-v1",
+      "checked_at": "2026-10-01T15:56:53.150Z",
+      "source_file": "work/coverage-20261001/d321cd0a308d6a22dd90.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "globus",
+      "canonical_slug": "gipskarton-standard-12-5-2000-1250-v1",
+      "checked_at": "2026-09-29T10:49:30.560Z",
+      "source_file": "work/coverage-20260929/globus.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "gipskarton-standard-12-5-2000-1250-v1",
+      "checked_at": "2026-10-01T15:52:17.367Z",
+      "source_file": "work/coverage-20261001/68bde7ad612f450265d8.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "toom",
+      "canonical_slug": "gipskarton-standard-12-5-2000-1250-v1",
+      "checked_at": "2026-10-01T15:52:17.443Z",
+      "source_file": "work/coverage-20261001/99b03016ee95910ba534.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "toom",
+      "canonical_slug": "acryl-weiss-310ml-v1",
+      "checked_at": "2026-10-01T15:53:28.751Z",
+      "source_file": "work/coverage-20261001/extra-acryl310.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "ud28-27-3000-v1",
+      "checked_at": "2026-10-01T15:53:14.338Z",
+      "source_file": "work/coverage-20261001/b9b362e182873eb95a52.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "gipskarton-standard-12-5-1200-600-v1",
+      "checked_at": "2026-10-01T15:51:51.576Z",
+      "source_file": "work/coverage-20261001/322b1fd0c08caea7f4d8.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "globus",
+      "canonical_slug": "cd60-27-3100-v1",
+      "checked_at": "2026-09-30T20:35:03.913Z",
+      "source_file": "work/coverage-20260930/globus-cd60-27-3100-v1.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "cd60-27-3100-v1",
+      "checked_at": "2026-10-01T16:00:18.065Z",
+      "source_file": "work/coverage-20261001/11135ac55acba730948f.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "toom",
+      "canonical_slug": "cd60-27-3100-v1",
+      "checked_at": "2026-10-01T16:00:19.741Z",
+      "source_file": "work/coverage-20261001/f333b71825f7d09d9441.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "pu-schaum-1k-b2-genius-750ml-v1",
+      "checked_at": "2026-10-01T21:02:51.916Z",
+      "source_file": "work/coverage-20261001/extra-pu-genius.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "knauf-perlfix-30kg-v1",
+      "checked_at": "2026-10-01T15:57:01.437Z",
+      "source_file": "work/coverage-20261001/bd7ebda5968a07181ae0.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "knauf-uniflott-finish-8kg-v1",
+      "checked_at": "2026-10-01T15:55:53.182Z",
+      "source_file": "work/coverage-20261001/c952fc1cf124d3fcc482.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "globus",
+      "canonical_slug": "knauf-tiefengrund-5l-v1",
+      "checked_at": "2026-09-30T20:35:00.784Z",
+      "source_file": "work/coverage-20260930/globus-knauf-tiefengrund-5l-v1.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "knauf-tiefengrund-5l-v1",
+      "checked_at": "2026-10-01T15:57:07.494Z",
+      "source_file": "work/coverage-20261001/06795904e0707571be35.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "toom",
+      "canonical_slug": "knauf-tiefengrund-5l-v1",
+      "checked_at": "2026-10-01T15:57:09.203Z",
+      "source_file": "work/coverage-20261001/bb1139efcc5f1897f859.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+      "checked_at": "2026-10-01T15:53:24.542Z",
+      "source_file": "work/coverage-20261001/extra-silikon.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "knauf-uniflott-5kg-v1",
+      "checked_at": "2026-10-01T15:55:37.229Z",
+      "source_file": "work/coverage-20261001/17b102e397f34b32d0d1.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "toom",
+      "canonical_slug": "knauf-uniflott-5kg-v1",
+      "checked_at": "2026-10-01T15:55:48.968Z",
+      "source_file": "work/coverage-20261001/c269fa9a9047557ab454.html",
+      "status": "revalidated"
+    },
+    {
+      "store_id": "hornbach",
+      "canonical_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+      "checked_at": "2026-10-01T15:52:23.359Z",
+      "source_file": "work/coverage-20261001/6c40942e2604f22bd183.html",
+      "status": "revalidated"
+    }
+  ]
+}

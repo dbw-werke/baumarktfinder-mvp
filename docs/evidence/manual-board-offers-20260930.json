@@ -1,0 +1,34 @@
+[
+  {
+    "material_slug": "gipskarton-standard-12-5-2000-1250-v1",
+    "store_id": "obi",
+    "product_name": "Gipskarton 12,5 mm x 1250 mm x 2000 mm",
+    "product_url": "https://www.obi.de/p/6728448/gipskarton-12-5-mm-x-1250-mm-x-2000-mm",
+    "price": 11.22,
+    "price_basis": "package",
+    "declared_unit_price": 4.49,
+    "base_unit": "m2",
+    "package_quantity": 2.5,
+    "currency": "EUR",
+    "checked_at": "2026-09-30T20:33:31Z",
+    "availability": null,
+    "observed_specs": { "type": "standard", "length_mm": 2000, "width_mm": 1250, "thickness_mm": 12.5, "area_m2": 2.5 },
+    "verification_note": "Manual official product-page verification after the automated HTTP reader returned404. Public OBI page inspected30Sep2026: title and selected variant12.5x1250x2000mm; product data Standard/GKB. Explicit EUR11.22 per sale unit and total; independent EUR4.49/m2. Actual one-sheet price, not calculated from rounded unit price. VAT included, delivery charges excluded; no local stock claim."
+  },
+  {
+    "material_slug": "gipskarton-standard-12-5-2000-1250-v1",
+    "store_id": "bauhaus",
+    "product_name": "Rigips Gipskartonplatte GKB, 2000 x 1250 x 12,5 mm",
+    "product_url": "https://www.bauhaus.info/bauplatten/rigips-gipskartonplatte-gkb/p/22704078",
+    "price": 11.05,
+    "price_basis": "package",
+    "declared_unit_price": 4.42,
+    "base_unit": "m2",
+    "package_quantity": 2.5,
+    "currency": "EUR",
+    "checked_at": "2026-09-30T20:33:31Z",
+    "availability": null,
+    "observed_specs": { "type": "standard", "length_mm": 2000, "width_mm": 1250, "thickness_mm": 12.5, "area_m2": 2.5 },
+    "verification_note": "Manual official product-page inspection30Sep2026 after automated robots-unavailable. Page fetch showed crawler freshness yesterday: explicit product22704078, selected GKB2000x1250x12.5mm, one sheet2.5m2. EUR11.05 per piece and total; separate EUR4.42/m2. Standard one-piece price, not volume discount from50pieces. VAT included, delivery excluded; availability unknown."
+  }
+]

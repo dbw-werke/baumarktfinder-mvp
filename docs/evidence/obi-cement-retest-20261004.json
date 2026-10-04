@@ -1,0 +1,1195 @@
+{
+  "testedAt": "2026-10-04T08:48:11.658Z",
+  "queries": 1,
+  "reports": [
+    {
+      "userQuery": "Zement",
+      "normalizedQuery": "zement",
+      "productsFound": 1,
+      "topCandidates": [
+        {
+          "store": "OBI",
+          "productName": "Trasszement 25 kg",
+          "productUrl": "https://www.obi.de/p/3693132/trasszement-25-kg",
+          "detectedFamily": "cement",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 25
+          },
+          "actualSize": "25 kg",
+          "packagePrice": 9.79,
+          "unitPrice": 0.4,
+          "matchScore": 123,
+          "score": 123,
+          "result": "ACCEPT",
+          "hardExclusion": null,
+          "rejectionReason": null
+        },
+        {
+          "store": "OBI",
+          "productName": "Saint-Gobain Rigips Schnellbauschraube TN Feingewinde 3,5 mm x 35 mm 1000 Stück",
+          "productUrl": "https://www.obi.de/p/2491397/saint-gobain-rigips-schnellbauschraube-tn-feingewinde-3-5-mm-x-35-mm-1000-stueck",
+          "detectedFamily": "drywall-screw",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 35,
+            "diameter_mm": 3.5,
+            "pieces": 1000
+          },
+          "actualSize": "3,5 × 35 mm · 1.000 Stück",
+          "packagePrice": 15.99,
+          "unitPrice": 0.02,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Uniflott Spachtelmasse 25 kg",
+          "productUrl": "https://www.obi.de/p/1608983/knauf-uniflott-spachtelmasse-25-kg",
+          "detectedFamily": "uniflott",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 25
+          },
+          "actualSize": "25 kg",
+          "packagePrice": 43.99,
+          "unitPrice": 1.76,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Soudal Maleracryl Weiß 300 ml",
+          "productUrl": "https://www.obi.de/p/3016565/soudal-maleracryl-weiss-300-ml",
+          "detectedFamily": "acrylic",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "volume_l": 0.3,
+            "color": "weiss"
+          },
+          "actualSize": "300 ml",
+          "packagePrice": 5.69,
+          "unitPrice": 18.97,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Gipskarton 12,5 mm x 1250 mm x 2000 mm",
+          "productUrl": "https://www.obi.de/p/6728448/gipskarton-12-5-mm-x-1250-mm-x-2000-mm",
+          "detectedFamily": "gypsum",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 12,
+            "width_mm": 1250,
+            "length_mm": 2000,
+            "thickness_mm": 12.5,
+            "area_m2": 2.5
+          },
+          "actualSize": "2.000 × 1.250 × 12,5 mm · 2,5 m²",
+          "packagePrice": 11.22,
+          "unitPrice": 4.49,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "CMI Acryl Weiß 310 ml",
+          "productUrl": "https://www.obi.de/p/4771325/cmi-acryl-weiss-310-ml",
+          "detectedFamily": "acrylic",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 235,
+            "width_mm": 50,
+            "volume_l": 0.31,
+            "color": "weiss"
+          },
+          "actualSize": "310 ml",
+          "packagePrice": 2.19,
+          "unitPrice": 7.07,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "UD-Wandanschlussprofil Stahl verzinkt 27 mm x 28 mm x 3.000 mm",
+          "productUrl": "https://www.obi.de/p/2354207/ud-wandanschlussprofil-stahl-verzinkt-27-mm-x-28-mm-x-3-000-mm",
+          "detectedFamily": "ud-profile",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 3000,
+            "width_mm": 28,
+            "height_mm": 27,
+            "area_m2": 0.084
+          },
+          "actualSize": "3.000 × 28 × 27 mm",
+          "packagePrice": 7.29,
+          "unitPrice": 2.43,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Gipskarton Miniboard 12,5 mm x 600 mm x 1200 mm",
+          "productUrl": "https://www.obi.de/p/8144024/gipskarton-miniboard-12-5-mm-x-600-mm-x-1200-mm",
+          "detectedFamily": "gypsum",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 1200,
+            "width_mm": 600,
+            "thickness_mm": 12.5,
+            "area_m2": 0.72
+          },
+          "actualSize": "1.200 × 600 × 12,5 mm · 0,72 m²",
+          "packagePrice": 4.88,
+          "unitPrice": 6.78,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Deckenprofil CD 27 mm x 60 mm x 3100 mm",
+          "productUrl": "https://www.obi.de/p/6728323/knauf-deckenprofil-cd-27-mm-x-60-mm-x-3100-mm",
+          "detectedFamily": "cd-profile",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 3100,
+            "width_mm": 60,
+            "height_mm": 27,
+            "area_m2": 0.186
+          },
+          "actualSize": "3.100 × 60 × 27 mm",
+          "packagePrice": 9.19,
+          "unitPrice": 2.96,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Perlfix Ansetzgips 30 kg",
+          "productUrl": "https://www.obi.de/p/2263010/knauf-perlfix-ansetzgips-30-kg",
+          "detectedFamily": "perlfix",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 520,
+            "width_mm": 370,
+            "weight_kg": 30
+          },
+          "actualSize": "30 kg",
+          "packagePrice": 12.79,
+          "unitPrice": 0.43,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Rockwool Trennwandplatte Sonorock WLG 040 40 mm Steinwolle, 7,5 m²/Paket",
+          "productUrl": "https://www.obi.de/p/2877751/rockwool-trennwandplatte-sonorock-wlg-40-40-mm-steinwolle",
+          "detectedFamily": "mineral-wool",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 1000,
+            "width_mm": 625,
+            "thickness_mm": 40,
+            "pieces": 12,
+            "area_m2": 7.5,
+            "thermal_conductivity": 0.04
+          },
+          "actualSize": "1.000 × 625 × 40 mm · 7,5 m² · 12 Stück",
+          "packagePrice": 32.92,
+          "unitPrice": 4.39,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Ursa Home Klemmfilz Dämmplatte aus Glaswolle WLG 035 120 mm",
+          "productUrl": "https://www.obi.de/p/4283792/ursa-home-klemmfilz-daemmplatte-aus-glaswolle-wlg-035-120-mm",
+          "detectedFamily": "mineral-wool",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 4400,
+            "width_mm": 1200,
+            "thickness_mm": 120,
+            "pieces": 1,
+            "area_m2": 5.28,
+            "thermal_conductivity": 0.035
+          },
+          "actualSize": "4.400 × 1.200 × 120 mm · 5,28 m² · 1 Stück",
+          "packagePrice": 45.35,
+          "unitPrice": 8.59,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Schnellbauschrauben TN Feingewinde 3,5 x 25 mm 1.000 Stück",
+          "productUrl": "https://www.obi.de/p/4261053/knauf-schnellbauschrauben-tn-3-5-x-25-mm-1-000-stueck",
+          "detectedFamily": "drywall-screw",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 25,
+            "diameter_mm": 3.5,
+            "pieces": 1000
+          },
+          "actualSize": "3,5 × 25 mm · 1.000 Stück",
+          "packagePrice": 12.49,
+          "unitPrice": 0.01,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Feinspachtelmasse Uniflott Finish 8 kg",
+          "productUrl": "https://www.obi.de/p/8899189/knauf-feinspachtelmasse-uniflott-finish-8-kg",
+          "detectedFamily": "uniflott-finish",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 8
+          },
+          "actualSize": "8 kg",
+          "packagePrice": 17.99,
+          "unitPrice": 2.25,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Tiefengrund LF 5 l",
+          "productUrl": "https://www.obi.de/p/6939854/knauf-tiefengrund-lf-5-l",
+          "detectedFamily": "deep-primer",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "volume_l": 5
+          },
+          "actualSize": "5 l",
+          "packagePrice": 33.99,
+          "unitPrice": 6.8,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Uniflott Spachtelmasse 5 kg",
+          "productUrl": "https://www.obi.de/p/6728141/knauf-uniflott-spachtelmasse-5-kg",
+          "detectedFamily": "uniflott",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 5
+          },
+          "actualSize": "5 kg",
+          "packagePrice": 11.49,
+          "unitPrice": 2.3,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Direktabhänger 125 mm",
+          "productUrl": "https://www.obi.de/p/2353639/direktabhaenger-125-mm",
+          "detectedFamily": "direct-hanger",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 1,
+            "width_mm": 30,
+            "length_mm": 125,
+            "area_m2": 0.00375
+          },
+          "actualSize": "125 × 30 × 1 mm",
+          "packagePrice": 0.59,
+          "unitPrice": null,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Glasfasergewebe 1 m x 50 m",
+          "productUrl": "https://www.obi.de/p/3263688/glasfasergewebe-1-m-x-50-m",
+          "detectedFamily": "reinforcement-mesh",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 50000,
+            "width_mm": 1000,
+            "area_m2": 50
+          },
+          "actualSize": "50.000 × 1.000 mm · 50 m²",
+          "packagePrice": 104.99,
+          "unitPrice": 2.1,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Rotband Haftputz 30 kg",
+          "productUrl": "https://www.obi.de/p/2263044/knauf-rotband-haftputz-30-kg",
+          "detectedFamily": "rotband",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 30,
+            "height_mm": 540,
+            "width_mm": 360
+          },
+          "actualSize": "30 kg",
+          "packagePrice": 11.59,
+          "unitPrice": 0.39,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Soudal Bauschaum B2 Genius Gun 750 ml",
+          "productUrl": "https://www.obi.de/p/9089269/soudal-bauschaum-b2-genius-gun-750-ml",
+          "detectedFamily": "pu-foam",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "volume_l": 0.75
+          },
+          "actualSize": "750 ml",
+          "packagePrice": 14.29,
+          "unitPrice": 19.06,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "OBI Bau-Silikon Weiß 310 ml",
+          "productUrl": "https://www.obi.de/p/8215527/obi-bau-silikon-weiss-310-ml",
+          "detectedFamily": "silicone",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "volume_l": 0.31,
+            "color": "weiss"
+          },
+          "actualSize": "310 ml",
+          "packagePrice": 9.69,
+          "unitPrice": 31.26,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Sakret Sockelputz 30 kg",
+          "productUrl": "https://www.obi.de/p/7505456/sakret-sockelputz-30-kg",
+          "detectedFamily": "plinth-plaster",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 30,
+            "height_mm": 520,
+            "width_mm": 240
+          },
+          "actualSize": "30 kg",
+          "packagePrice": 13.99,
+          "unitPrice": 0.47,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Spezialhaftgrund 2,5 kg",
+          "productUrl": "https://www.obi.de/p/3845005/knauf-spezialhaftgrund-2-5-kg",
+          "detectedFamily": "bonding-primer",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 2.5
+          },
+          "actualSize": "2,5 kg",
+          "packagePrice": 25.99,
+          "unitPrice": 10.4,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Alpina Rollputz 12 kg Weiß Matt",
+          "productUrl": "https://www.obi.de/p/8170136/alpina-rollputz-12-kg-weiss-matt",
+          "detectedFamily": "roll-plaster",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 12,
+            "color": "weiss"
+          },
+          "actualSize": "12 kg",
+          "packagePrice": 34.99,
+          "unitPrice": 2.92,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "PCI Flexmörtel Fliesenkleber 25 kg",
+          "productUrl": "https://www.obi.de/p/1766096/pci-flexmoertel-fliesenkleber-25-kg",
+          "detectedFamily": "tile-adhesive",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 25
+          },
+          "actualSize": "25 kg",
+          "packagePrice": 48.99,
+          "unitPrice": 1.96,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Sakret Betonestrich 10 kg",
+          "productUrl": "https://www.obi.de/p/6723290/sakret-betonestrich-10-kg",
+          "detectedFamily": "screed",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 10
+          },
+          "actualSize": "10 kg",
+          "packagePrice": 5.69,
+          "unitPrice": 0.57,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Bosch Delta-Schleifblatt F460 Best for Wood and Paint 5-er Pack Körnung 120",
+          "productUrl": "https://www.obi.de/p/8045353/bosch-delta-schleifblatt-f460-best-for-wood-and-paint-5-er-pack-koernung-120",
+          "detectedFamily": "abrasive",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 93,
+            "width_mm": 93,
+            "thickness_mm": 1,
+            "pieces": 5,
+            "grit": 120,
+            "area_m2": 0.043245000000000006
+          },
+          "actualSize": "93 × 93 × 1 mm · 5 Stück · K120",
+          "packagePrice": 5.49,
+          "unitPrice": null,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Gipskartonplatte 12,5 mm x 1.250 mm x 2.000 mm imprägniert",
+          "productUrl": "https://www.obi.de/p/5407580/gipskartonplatte-12-5-mm-x-1-250-mm-x-2-000-mm-impraegniert",
+          "detectedFamily": "gypsum-wet",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 2000,
+            "width_mm": 1250,
+            "thickness_mm": 12.5,
+            "area_m2": 2.5
+          },
+          "actualSize": "2.000 × 1.250 × 12,5 mm · 2,5 m²",
+          "packagePrice": 15.97,
+          "unitPrice": 6.39,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "OBI Wandfarbe Easyweiss Weiß Matt 10 l",
+          "productUrl": "https://www.obi.de/p/8564437/obi-wandfarbe-easyweiss-weiss-matt-10-l",
+          "detectedFamily": "paint",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "volume_l": 10,
+            "color": "weiss"
+          },
+          "actualSize": "10 l",
+          "packagePrice": 33.99,
+          "unitPrice": 3.4,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Saint-Gobain Rigips Direktabhänger für CD-Profile 125 mm 100 Stück",
+          "productUrl": "https://www.obi.de/p/2491819/saint-gobain-rigips-direktabhaenger-fuer-cd-profile-125-mm-100-stueck",
+          "detectedFamily": "direct-hanger",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "pieces": 100,
+            "length_mm": 125
+          },
+          "actualSize": "125 mm · 100 Stück",
+          "packagePrice": 40.99,
+          "unitPrice": null,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Saint-Gobain Rigips Direktabhänger für Holz 125 mm",
+          "productUrl": "https://www.obi.de/p/2496941/saint-gobain-rigips-direktabhaenger-fuer-holz-125-mm",
+          "detectedFamily": "direct-hanger",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 125
+          },
+          "actualSize": "125 mm",
+          "packagePrice": 0.69,
+          "unitPrice": null,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Saint-Gobain Rigips Direktabhänger für Holz 125 mm 100 Stück",
+          "productUrl": "https://www.obi.de/p/2491850/saint-gobain-rigips-direktabhaenger-fuer-holz-125-mm-100-stueck",
+          "detectedFamily": "direct-hanger",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "pieces": 100,
+            "length_mm": 125
+          },
+          "actualSize": "125 mm · 100 Stück",
+          "packagePrice": 40.99,
+          "unitPrice": null,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "OBI Anschluss-Acryl Weiß 310 ml",
+          "productUrl": "https://www.obi.de/p/8215469/obi-anschluss-acryl-weiss-310-ml",
+          "detectedFamily": "acrylic",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 230,
+            "width_mm": 41,
+            "volume_l": 0.31,
+            "color": "weiss"
+          },
+          "actualSize": "310 ml",
+          "packagePrice": 5.39,
+          "unitPrice": 17.39,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Soudal Riss & Putz Acryl Weiß 300 ml",
+          "productUrl": "https://www.obi.de/p/3016573/soudal-riss-putz-acryl-weiss-300-ml",
+          "detectedFamily": "acrylic",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 230,
+            "width_mm": 41,
+            "volume_l": 0.3,
+            "color": "weiss"
+          },
+          "actualSize": "300 ml",
+          "packagePrice": 6.59,
+          "unitPrice": 21.97,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "OBI Acryl strukturiert Weiß 310 ml",
+          "productUrl": "https://www.obi.de/p/8215618/obi-acryl-strukturiert-weiss-310-ml",
+          "detectedFamily": "acrylic",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 230,
+            "width_mm": 41,
+            "volume_l": 0.31,
+            "color": "weiss"
+          },
+          "actualSize": "310 ml",
+          "packagePrice": 5.39,
+          "unitPrice": 17.39,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "CMI Acryl Grau 310 ml",
+          "productUrl": "https://www.obi.de/p/1937580/cmi-acryl-grau-310-ml",
+          "detectedFamily": "acrylic",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 235,
+            "width_mm": 50,
+            "volume_l": 0.31,
+            "color": "grau"
+          },
+          "actualSize": "310 ml",
+          "packagePrice": 2.19,
+          "unitPrice": 7.07,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "CMI Silikon Transparent 280 ml",
+          "productUrl": "https://www.obi.de/p/4147831/cmi-silikon-transparent-280-ml",
+          "detectedFamily": "silicone",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 230,
+            "width_mm": 41,
+            "volume_l": 0.28,
+            "color": "transparent"
+          },
+          "actualSize": "280 ml",
+          "packagePrice": 3.69,
+          "unitPrice": 13.18,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "CMI Silikon Weiß 280 ml",
+          "productUrl": "https://www.obi.de/p/4147872/cmi-silikon-weiss-280-ml",
+          "detectedFamily": "silicone",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 230,
+            "width_mm": 41,
+            "volume_l": 0.28,
+            "color": "weiss"
+          },
+          "actualSize": "280 ml",
+          "packagePrice": 3.69,
+          "unitPrice": 13.18,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "OBI Bau-Silikon Grau 310 ml",
+          "productUrl": "https://www.obi.de/p/8215493/obi-bau-silikon-grau-310-ml",
+          "detectedFamily": "silicone",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 230,
+            "width_mm": 41,
+            "volume_l": 0.31,
+            "color": "grau"
+          },
+          "actualSize": "310 ml",
+          "packagePrice": 9.69,
+          "unitPrice": 31.26,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "CMI Silikon Grau 280 ml",
+          "productUrl": "https://www.obi.de/p/4147864/cmi-silikon-grau-280-ml",
+          "detectedFamily": "silicone",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 230,
+            "width_mm": 41,
+            "volume_l": 0.28,
+            "color": "grau"
+          },
+          "actualSize": "280 ml",
+          "packagePrice": 3.69,
+          "unitPrice": 13.18,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "OBI Sanitär-Silikon Weiß 310 ml",
+          "productUrl": "https://www.obi.de/p/8215667/obi-sanitaer-silikon-weiss-310-ml",
+          "detectedFamily": "silicone",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 230,
+            "width_mm": 41,
+            "volume_l": 0.31,
+            "color": "weiss"
+          },
+          "actualSize": "310 ml",
+          "packagePrice": 8.59,
+          "unitPrice": 27.71,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Sakret Sockelputz 10 kg",
+          "productUrl": "https://www.obi.de/p/7505415/sakret-sockelputz-10-kg",
+          "detectedFamily": "plinth-plaster",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 10,
+            "height_mm": 360,
+            "width_mm": 160
+          },
+          "actualSize": "10 kg",
+          "packagePrice": 10.79,
+          "unitPrice": 1.08,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Pattex PU-Schaum White Line 500 ml",
+          "productUrl": "https://www.obi.de/p/7691827/pattex-pu-schaum-white-line-500-ml",
+          "detectedFamily": "pu-foam",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 238,
+            "width_mm": 66,
+            "volume_l": 0.5
+          },
+          "actualSize": "500 ml",
+          "packagePrice": 8.99,
+          "unitPrice": 17.98,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "CMI Montageschaum 1K 500 ml",
+          "productUrl": "https://www.obi.de/p/8227548/cmi-montageschaum-1k-500-ml",
+          "detectedFamily": "pu-foam",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 239,
+            "width_mm": 63,
+            "volume_l": 0.5
+          },
+          "actualSize": "500 ml",
+          "packagePrice": 5.79,
+          "unitPrice": 11.58,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Soudal PU-Schaum Füllen & Dämmen SMX B2 500 ml",
+          "productUrl": "https://www.obi.de/p/4438701/soudal-pu-schaum-fuellen-daemmen-smx-b2-500-ml",
+          "detectedFamily": "pu-foam",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 285,
+            "width_mm": 60,
+            "volume_l": 0.5
+          },
+          "actualSize": "500 ml",
+          "packagePrice": 18.69,
+          "unitPrice": 37.38,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Gipskarton 12,5 mm x 600 mm x 2000 mm",
+          "productUrl": "https://www.obi.de/p/2420347/gipskarton-12-5-mm-x-600-mm-x-2000-mm",
+          "detectedFamily": "gypsum",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 2000,
+            "width_mm": 600,
+            "length_mm": 2000,
+            "thickness_mm": 12.5,
+            "area_m2": 1.2
+          },
+          "actualSize": "2.000 × 600 × 12,5 mm · 1,2 m²",
+          "packagePrice": 5.38,
+          "unitPrice": 4.49,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Gipskarton 12,5 mm x 600 mm x 2600 mm",
+          "productUrl": "https://www.obi.de/p/2826519/gipskarton-12-5-mm-x-600-mm-x-2600-mm",
+          "detectedFamily": "gypsum",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 12,
+            "width_mm": 600,
+            "length_mm": 2600,
+            "thickness_mm": 12.5,
+            "area_m2": 1.56
+          },
+          "actualSize": "2.600 × 600 × 12,5 mm · 1,56 m²",
+          "packagePrice": 7,
+          "unitPrice": 4.49,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Tiefgrund 5 l",
+          "productUrl": "https://www.obi.de/p/9060849/tiefgrund-5-l",
+          "detectedFamily": "deep-primer",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 245,
+            "width_mm": 140,
+            "volume_l": 5
+          },
+          "actualSize": "5 l",
+          "packagePrice": 9.29,
+          "unitPrice": 1.86,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Tiefengrund LF 1 l",
+          "productUrl": "https://www.obi.de/p/6939839/knauf-tiefengrund-lf-1-l",
+          "detectedFamily": "deep-primer",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 130,
+            "width_mm": 135,
+            "volume_l": 1
+          },
+          "actualSize": "1 l",
+          "packagePrice": 8.99,
+          "unitPrice": null,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "OBI Tiefgrund Transparent 5 l",
+          "productUrl": "https://www.obi.de/p/6017156/obi-tiefgrund-transparent-5-l",
+          "detectedFamily": "deep-primer",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 251,
+            "width_mm": 190,
+            "volume_l": 5,
+            "color": "transparent"
+          },
+          "actualSize": "5 l",
+          "packagePrice": 24.99,
+          "unitPrice": 5,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "MEM Super-Tiefgrund 5 l",
+          "productUrl": "https://www.obi.de/p/2373470/mem-super-tiefgrund-5-l",
+          "detectedFamily": "deep-primer",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "height_mm": 245,
+            "width_mm": 185,
+            "volume_l": 5
+          },
+          "actualSize": "5 l",
+          "packagePrice": 29.99,
+          "unitPrice": 6,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Knauf Perlfix Ansetzgips 25 kg",
+          "productUrl": "https://www.obi.de/p/6701833/knauf-perlfix-ansetzgips-25-kg",
+          "detectedFamily": "perlfix",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "weight_kg": 25,
+            "height_mm": 500,
+            "width_mm": 310
+          },
+          "actualSize": "25 kg",
+          "packagePrice": 10.79,
+          "unitPrice": 0.44,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        },
+        {
+          "store": "OBI",
+          "productName": "Glasfasergewebe 1 m x 10 m",
+          "productUrl": "https://www.obi.de/p/3263647/glasfasergewebe-1-m-x-10-m",
+          "detectedFamily": "reinforcement-mesh",
+          "requestedFamily": "cement",
+          "requestedSpecs": {},
+          "observedSpecs": {
+            "length_mm": 10000,
+            "width_mm": 1000,
+            "area_m2": 10
+          },
+          "actualSize": "10.000 × 1.000 mm · 10 m²",
+          "packagePrice": 24.49,
+          "unitPrice": 2.45,
+          "matchScore": 0,
+          "score": 0,
+          "result": "REJECT",
+          "hardExclusion": "incompatible-product-family",
+          "rejectionReason": "incompatible-product-family"
+        }
+      ],
+      "selectedProduct": {
+        "store_id": "obi",
+        "product_name": "Trasszement 25 kg",
+        "product_url": "https://www.obi.de/p/3693132/trasszement-25-kg",
+        "actual_size": "25 kg",
+        "price": 9.79,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:47:56.509Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 25,
+        "unit": "kg",
+        "unit_price": 0.3916,
+        "family": "cement",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      },
+      "requestedFamily": "cement",
+      "requestedSpecs": {},
+      "cacheStatus": "updated",
+      "cacheUpdated": true,
+      "retrieval": {
+        "direct": {
+          "status": "failure",
+          "products": 0
+        },
+        "playwright": {
+          "status": "success",
+          "products": 1
+        }
+      },
+      "verificationStatus": "verified",
+      "source": "automatic",
+      "errors": [
+        {
+          "code": "direct_fetch_404",
+          "url": "https://www.obi.de/p/3693132/trasszement-25-kg"
+        },
+        {
+          "code": "direct_fetch_404",
+          "url": "https://www.obi.de/search/zement/"
+        },
+        {
+          "code": "playwright_seller_unverified",
+          "url": "https://www.obi.de/p/2462679/zement-chromatarm"
+        },
+        {
+          "code": "playwright_seller_unverified",
+          "url": "https://www.obi.de/p/2462356/zement-chromatarm"
+        },
+        {
+          "code": "playwright_seller_unverified",
+          "url": "https://www.obi.de/p/2462646/zement-chromatarm"
+        },
+        {
+          "code": "playwright_seller_unverified",
+          "url": "https://www.obi.de/p/3761236/betonestrich-40-kg-c25-30"
+        },
+        {
+          "code": "playwright_seller_unverified",
+          "url": "https://www.obi.de/p/2462000/zement-chromatarm"
+        }
+      ]
+    }
+  ]
+}

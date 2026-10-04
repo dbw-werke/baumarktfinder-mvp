@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-09-28T18:51:25.397Z",
+  "request": {
+    "address": "60320 Frankfurt am Main"
+  },
+  "http_status": 503,
+  "elapsed_ms": 41865,
+  "data": {
+    "error": "Der offene Kartendienst antwortet gerade nicht rechtzeitig. Bitte später erneut versuchen."
+  }
+}

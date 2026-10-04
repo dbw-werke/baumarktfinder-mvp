@@ -1,0 +1,58 @@
+[
+  {
+    "material_slug": "knauf-uniflott-5kg-v1",
+    "store_id": "obi",
+    "product_name": "Knauf Uniflott Spachtelmasse 5 kg",
+    "product_url": "https://www.obi.de/p/6728141/knauf-uniflott-spachtelmasse-5-kg",
+    "price": 11.49,
+    "base_unit": "kg",
+    "package_quantity": 5,
+    "currency": "EUR",
+    "checked_at": "2026-09-24T17:23:44Z",
+    "availability": null,
+    "observed_specs": { "weight_kg": 5 },
+    "verification_note": "Offizielle OBI-Produktseite am 24.09.2026 per Web-Öffnen geprüft; Abruf als heute gecrawlt ausgewiesen. Artikel 6728141, normaler Knauf Uniflott, Produktinhalt 5 kg. Angezeigter Gesamtpreis 11,49 EUR einschließlich Mehrwertsteuer; separater Grundpreis 2,30 EUR/kg, Versand zusätzlich. Verkäufer OBI E-Commerce GmbH. Keine Aussage zu Bestand oder Preis einer konkreten Filiale."
+  },
+  {
+    "material_slug": "knauf-tiefengrund-5l-v1",
+    "store_id": "obi",
+    "product_name": "Knauf Tiefengrund LF 5 l",
+    "product_url": "https://www.obi.de/p/6939854/knauf-tiefengrund-lf-5-l",
+    "price": 33.99,
+    "base_unit": "l",
+    "package_quantity": 5,
+    "currency": "EUR",
+    "checked_at": "2026-09-24T17:23:44Z",
+    "availability": null,
+    "observed_specs": { "volume_l": 5 },
+    "verification_note": "Offizielle OBI-Produktseite am 24.09.2026 per Web-Öffnen geprüft; Abruf als heute gecrawlt ausgewiesen. Artikel 6939854, Knauf Tiefengrund LF, Produktinhalt 5 l. Aktuell geöffnete Seite zeigt 33,99 EUR einschließlich Mehrwertsteuer und separat 6,80 EUR/l; der ältere Suchtreffer mit 36,99 EUR wurde verworfen. Hauslieferung auf der Seite derzeit nicht möglich; Filialbestand unbekannt."
+  },
+  {
+    "material_slug": "knauf-rotband-30kg-v1",
+    "store_id": "bauhaus",
+    "product_name": "Knauf Rotband Haftputzgips 30 kg",
+    "product_url": "https://www.bauhaus.info/gipsputze/knauf-rotband-haftputzgips/p/13874415",
+    "price": 11.50,
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "currency": "EUR",
+    "checked_at": "2026-09-24T17:23:44Z",
+    "availability": null,
+    "observed_specs": { "weight_kg": 30 },
+    "verification_note": "Offizielle BAUHAUS-Produktseite am 24.09.2026 per Web-Öffnen geprüft; Abruf als heute gecrawlt ausgewiesen. Artikel 13874415, normaler Knauf Rotband Haftputzgips, gewählte Nettomasse 30 kg. Einzelpackung 11,50 EUR einschließlich Mehrwertsteuer, separat 0,38 EUR/kg. Kein PRO-, Finish- oder Mengenrabattpreis. Filialbestand und Filialpreis wurden nicht behauptet."
+  },
+  {
+    "material_slug": "knauf-uniflott-finish-8kg-v1",
+    "store_id": "bauhaus",
+    "product_name": "Knauf Feinspachtel Uniflott Finish 8 kg",
+    "product_url": "https://www.bauhaus.info/trockenbauspachtel/knauf-feinspachtel-uniflott-finish/p/20160230",
+    "price": 15.60,
+    "base_unit": "kg",
+    "package_quantity": 8,
+    "currency": "EUR",
+    "checked_at": "2026-09-24T17:23:44Z",
+    "availability": null,
+    "observed_specs": { "weight_kg": 8 },
+    "verification_note": "Offizielle BAUHAUS-Produktseite nach Weiterleitung auf den aktuellen Trockenbauspachtel-Pfad am 24.09.2026 geprüft; Abruf als heute gecrawlt ausgewiesen. Artikel 20160230, gebrauchsfertiger Knauf Uniflott Finish, ausgewählte Nettomasse 8 kg. Einzelpackung 15,60 EUR einschließlich Mehrwertsteuer, separat 1,95 EUR/kg. Die zusätzliche Gewichtsangabe 8,4 kg ist nicht die gewählte Füllmenge. Filialbestand unbekannt."
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-09-24T17:24:54.760Z",
+  "source": "https://toom.de/c/bauen-renovieren/baustoffe",
+  "live_http_body": "work/toom-category-live.html",
+  "verified": [
+    {
+      "store": "toom",
+      "slug": "knauf-rotband-30kg-v1",
+      "price": 11.99,
+      "url": "https://toom.de/p/haftputzgips-rotband-30-kg/3053468"
+    },
+    {
+      "store": "toom",
+      "slug": "knauf-uniflott-25kg-v1",
+      "price": 43.99,
+      "url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754"
+    }
+  ],
+  "rejected": [
+    {
+      "store": "hagebau",
+      "reason": "Opened Rotband30kg and Uniflott25kg exact product pages have JavaScript placeholders, no current price. Search index prices not used."
+    },
+    {
+      "store": "hellweg",
+      "reason": "Uniflott25kg exact product URL redirects to homepage; no product or price. Historical search-index product information not used."
+    }
+  ]
+}

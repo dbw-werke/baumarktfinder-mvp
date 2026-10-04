@@ -1,0 +1,17 @@
+{
+  "testedAt": "2026-10-04T08:51:26.912Z",
+  "engine": "Isolated PostgreSQL/PGlite",
+  "migration": "202610040001_obi_verified_products.sql",
+  "checks": [
+    "idempotent migration",
+    "service-only RPC write",
+    "older refresh preserves newer offer",
+    "unit-only price rejected",
+    "foreign host rejected",
+    "anon read verified data",
+    "anon RPC denied",
+    "anon delete denied"
+  ],
+  "passed": true,
+  "externalSupabaseMigrated": false
+}

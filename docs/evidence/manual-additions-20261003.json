@@ -1,0 +1,72 @@
+[
+  {
+    "material_slug": "steinwolle-sonorock-040-40-7-5m2-v1",
+    "store_id": "bauhaus",
+    "product_name": "Rockwool Sonorock Steinwolle Trennwandplatte 40 mm, 7,5 m²/Paket",
+    "product_url": "https://www.bauhaus.info/steinwolle/rockwool-steinwolle-sonorock-trennwandplatte/p/13905339",
+    "price": 32.6,
+    "declared_unit_price": 4.35,
+    "base_unit": "m2",
+    "package_quantity": 7.5,
+    "observed_specs": {
+      "type": "steinwolle-trennwandplatte",
+      "thickness_mm": 40,
+      "width_mm": 625,
+      "length_mm": 1000,
+      "pieces": 12,
+      "area_m2": 7.5,
+      "thermal_conductivity": 0.04
+    },
+    "verification_note": "Official BAUHAUS product 13905339 opened/read 03.10.2026 Europe/Berlin. Exact 40 mm, 1000 x 625 mm, conductivity .04, 7.5 m2 equals one sales package; independently shown Gesamtbetrag 32.60 EUR. Package contains 12 boards as implied by the stated area and dimensions. No bulk discount or converted price used. No branch stock claim.",
+    "price_basis": "package",
+    "currency": "EUR",
+    "source": "manual_verified",
+    "availability": null,
+    "checked_at": "2026-10-02T22:12:02.180Z"
+  },
+  {
+    "material_slug": "steinwolle-sonorock-040-40-7-5m2-v1",
+    "store_id": "obi",
+    "product_name": "Rockwool Trennwandplatte Sonorock WLG 040 40 mm Steinwolle, 7,5 m²/Paket",
+    "product_url": "https://www.obi.de/p/2877751/rockwool-trennwandplatte-sonorock-wlg-40-40-mm-steinwolle",
+    "price": 32.92,
+    "declared_unit_price": 4.39,
+    "base_unit": "m2",
+    "package_quantity": 7.5,
+    "observed_specs": {
+      "type": "steinwolle-trennwandplatte",
+      "thickness_mm": 40,
+      "width_mm": 625,
+      "length_mm": 1000,
+      "pieces": 12,
+      "area_m2": 7.5,
+      "thermal_conductivity": 0.04
+    },
+    "verification_note": "Official OBI 2877751 opened/read 03.10.2026 Europe/Berlin. Own product data gives stone wool WLG040, 40 mm, 62.5 x 100 cm and 7.5 m2/Paket. Independent Verkaufseinheit/Gesamtpreis 32.92 EUR incl VAT, seller OBI. Displayed base price4.39 is not multiplied to fabricate the total. Shipping additional, no branch stock claim.",
+    "price_basis": "package",
+    "currency": "EUR",
+    "source": "manual_verified",
+    "availability": null,
+    "checked_at": "2026-10-02T22:12:02.180Z"
+  },
+  {
+    "material_slug": "acryl-weiss-310ml-v1",
+    "store_id": "globus",
+    "product_name": "Acryl weiß 310 ml",
+    "product_url": "https://www.globus-baumarkt.de/p/acryl-weiss-310-ml-0779051109/",
+    "price": 1.99,
+    "declared_unit_price": 6.42,
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "observed_specs": {
+      "volume_l": 0.31,
+      "color": "weiss"
+    },
+    "verification_note": "Official Globus Maleracryl category opened/read 03.10.2026 Europe/Berlin displays the specific linked product0779051109 at package price1.99EUR with separate6.42EUR/l. Its official product page confirms310ml, white, acrylic dispersion, overpaintable. Product detail extraction has no visible total; category and matching direct product identity were cross-checked manually. Source https://www.globus-baumarkt.de/fliesen-baustoffe/bauchemie/silikon-acryl/?filter=Produktart:Maleracryl. No branch availability asserted.",
+    "price_basis": "package",
+    "currency": "EUR",
+    "source": "manual_verified",
+    "availability": null,
+    "checked_at": "2026-10-02T22:12:02.180Z"
+  }
+]

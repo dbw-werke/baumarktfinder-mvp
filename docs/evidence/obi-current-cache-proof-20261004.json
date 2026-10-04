@@ -1,0 +1,606 @@
+{
+  "testedAt": "2026-10-04T09:02:34.537Z",
+  "networkReplayed": false,
+  "automaticCacheProducts": 42,
+  "queries": 31,
+  "withOffer": 28,
+  "results": [
+    {
+      "query": "Acryl",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "CMI Acryl Grau 310 ml",
+        "product_url": "https://www.obi.de/p/1937580/cmi-acryl-grau-310-ml",
+        "actual_size": "310 ml",
+        "price": 2.19,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:39:57.429Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 0.31,
+        "unit": "l",
+        "unit_price": 7.064516,
+        "family": "acrylic",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Armierungsgewebe",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Glasfasergewebe 1 m x 10 m",
+        "product_url": "https://www.obi.de/p/3263647/glasfasergewebe-1-m-x-10-m",
+        "actual_size": "10.000 × 1.000 mm · 10 m²",
+        "price": 24.49,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:46:01.431Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 10,
+        "unit": "m2",
+        "unit_price": 2.449,
+        "family": "reinforcement-mesh",
+        "match_score": 120,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "CD Profil 60/27",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Knauf Deckenprofil CD 27 mm x 60 mm x 3100 mm",
+        "product_url": "https://www.obi.de/p/6728323/knauf-deckenprofil-cd-27-mm-x-60-mm-x-3100-mm",
+        "actual_size": "3.100 × 60 × 27 mm",
+        "price": 9.19,
+        "currency": "EUR",
+        "checked_at": "2026-09-26T19:27:07Z",
+        "source": "manual",
+        "price_scope": "chain",
+        "package_quantity": 3.1,
+        "unit": "m",
+        "unit_price": 2.964516,
+        "family": "cd-profile",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "manual"
+      }
+    },
+    {
+      "query": "CW Profil 50",
+      "offer": null
+    },
+    {
+      "query": "Direktabhänger",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Direktabhänger 125 mm",
+        "product_url": "https://www.obi.de/p/2353639/direktabhaenger-125-mm",
+        "actual_size": "125 mm",
+        "price": 0.59,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:39:11.464Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "family": "direct-hanger",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Feuchtraumplatte",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Gipskartonplatte 12,5 mm x 1.250 mm x 2.000 mm imprägniert",
+        "product_url": "https://www.obi.de/p/5407580/gipskartonplatte-12-5-mm-x-1-250-mm-x-2-000-mm-impraegniert",
+        "actual_size": "2.000 × 1.250 × 12,5 mm · 2,5 m²",
+        "price": 15.97,
+        "currency": "EUR",
+        "checked_at": "2026-10-03T17:53:03.000Z",
+        "source": "manual",
+        "price_scope": "chain",
+        "package_quantity": 2.5,
+        "unit": "m2",
+        "unit_price": 6.388,
+        "family": "gypsum-wet",
+        "match_score": 120,
+        "verification_status": "verified",
+        "retrieval_method": "manual"
+      }
+    },
+    {
+      "query": "Haftgrund",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Knauf Spezialhaftgrund 2,5 kg",
+        "product_url": "https://www.obi.de/p/3845005/knauf-spezialhaftgrund-2-5-kg",
+        "actual_size": "2,5 kg",
+        "price": 25.99,
+        "currency": "EUR",
+        "checked_at": "2026-10-03T17:53:03.000Z",
+        "source": "manual",
+        "price_scope": "chain",
+        "package_quantity": 2.5,
+        "unit": "kg",
+        "unit_price": 10.396,
+        "family": "bonding-primer",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "manual"
+      }
+    },
+    {
+      "query": "Perlfix",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Knauf Perlfix Ansetzgips 30 kg",
+        "product_url": "https://www.obi.de/p/2263010/knauf-perlfix-ansetzgips-30-kg",
+        "actual_size": "30 kg",
+        "price": 12.79,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:42:40.152Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 30,
+        "unit": "kg",
+        "unit_price": 0.426333,
+        "family": "perlfix",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Rotband",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Knauf Rotband Haftputz 30 kg",
+        "product_url": "https://www.obi.de/p/2263044/knauf-rotband-haftputz-30-kg",
+        "actual_size": "30 kg",
+        "price": 11.59,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:41:36.359Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 30,
+        "unit": "kg",
+        "unit_price": 0.386333,
+        "family": "rotband",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Uniflott",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Knauf Uniflott Spachtelmasse 25 kg",
+        "product_url": "https://www.obi.de/p/1608983/knauf-uniflott-spachtelmasse-25-kg",
+        "actual_size": "25 kg",
+        "price": 43.99,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:49:04.209Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 25,
+        "unit": "kg",
+        "unit_price": 1.7596,
+        "family": "uniflott",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "PU-Schaum",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Soudal PU-Schaum Füllen & Dämmen SMX B2 500 ml",
+        "product_url": "https://www.obi.de/p/4438701/soudal-pu-schaum-fuellen-daemmen-smx-b2-500-ml",
+        "actual_size": "500 ml",
+        "price": 18.69,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:41:28.080Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 0.5,
+        "unit": "l",
+        "unit_price": 37.38,
+        "family": "pu-foam",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Rigips",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Gipskarton 12,5 mm x 600 mm x 2000 mm",
+        "product_url": "https://www.obi.de/p/2420347/gipskarton-12-5-mm-x-600-mm-x-2000-mm",
+        "actual_size": "2.000 × 600 × 12,5 mm · 1,2 m²",
+        "price": 5.38,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:41:56.446Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 1.2,
+        "unit": "m2",
+        "unit_price": 4.483333,
+        "family": "gypsum",
+        "match_score": 120,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Gipskarton",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Gipskarton 12,5 mm x 600 mm x 2000 mm",
+        "product_url": "https://www.obi.de/p/2420347/gipskarton-12-5-mm-x-600-mm-x-2000-mm",
+        "actual_size": "2.000 × 600 × 12,5 mm · 1,2 m²",
+        "price": 5.38,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:41:56.446Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 1.2,
+        "unit": "m2",
+        "unit_price": 4.483333,
+        "family": "gypsum",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Rollputz",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Alpina Rollputz 12 kg Weiß Matt",
+        "product_url": "https://www.obi.de/p/8170136/alpina-rollputz-12-kg-weiss-matt",
+        "actual_size": "12 kg",
+        "price": 34.99,
+        "currency": "EUR",
+        "checked_at": "2026-10-03T17:53:03.000Z",
+        "source": "manual",
+        "price_scope": "chain",
+        "package_quantity": 12,
+        "unit": "kg",
+        "unit_price": 2.915833,
+        "family": "roll-plaster",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "manual"
+      }
+    },
+    {
+      "query": "Schleifpapier",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Bosch Delta-Schleifblatt F460 Best for Wood and Paint 5-er Pack Körnung 120",
+        "product_url": "https://www.obi.de/p/8045353/bosch-delta-schleifblatt-f460-best-for-wood-and-paint-5-er-pack-koernung-120",
+        "actual_size": "93 × 93 × 1 mm · 5 Stück · K120",
+        "price": 5.49,
+        "currency": "EUR",
+        "checked_at": "2026-10-03T17:53:03.000Z",
+        "source": "manual",
+        "price_scope": "chain",
+        "package_quantity": 5,
+        "unit": "piece",
+        "unit_price": 1.098,
+        "family": "abrasive",
+        "match_score": 120,
+        "verification_status": "verified",
+        "retrieval_method": "manual"
+      }
+    },
+    {
+      "query": "Schnellbauschrauben",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Schnellbauschrauben Trompetenkopf Ø 3,9 mm x 19 mm Stahl 1000 Stück",
+        "product_url": "https://www.obi.de/p/4255097/schnellbauschrauben-trompetenkopf-3-9-mm-x-19-mm-stahl-1000-stueck",
+        "actual_size": "3,9 × 19 mm · 1.000 Stück",
+        "price": 13.69,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:49:29.171Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 1000,
+        "unit": "piece",
+        "unit_price": 0.01369,
+        "family": "drywall-screw",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Silikon",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "CMI Silikon Transparent 280 ml",
+        "product_url": "https://www.obi.de/p/4147831/cmi-silikon-transparent-280-ml",
+        "actual_size": "280 ml",
+        "price": 3.69,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:40:16.035Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 0.28,
+        "unit": "l",
+        "unit_price": 13.178571,
+        "family": "silicone",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Sockelputz",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Sakret Sockelputz 10 kg",
+        "product_url": "https://www.obi.de/p/7505415/sakret-sockelputz-10-kg",
+        "actual_size": "10 kg",
+        "price": 10.79,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:41:01.300Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 10,
+        "unit": "kg",
+        "unit_price": 1.079,
+        "family": "plinth-plaster",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Dämmung",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Rockwool Trennwandplatte Sonorock WLG 40 40 mm Steinwolle",
+        "product_url": "https://www.obi.de/p/2877751/rockwool-trennwandplatte-sonorock-wlg-40-40-mm-steinwolle",
+        "actual_size": "1.000 × 625 × 40 mm · 7,5 m²",
+        "price": 32.92,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:53:56.635Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 7.5,
+        "unit": "m2",
+        "unit_price": 4.389333,
+        "family": "mineral-wool",
+        "match_score": 120,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Mineralwolle",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Rockwool Trennwandplatte Sonorock WLG 40 40 mm Steinwolle",
+        "product_url": "https://www.obi.de/p/2877751/rockwool-trennwandplatte-sonorock-wlg-40-40-mm-steinwolle",
+        "actual_size": "1.000 × 625 × 40 mm · 7,5 m²",
+        "price": 32.92,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:53:56.635Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 7.5,
+        "unit": "m2",
+        "unit_price": 4.389333,
+        "family": "mineral-wool",
+        "match_score": 120,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Tiefengrund",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Knauf Tiefengrund LF 1 l",
+        "product_url": "https://www.obi.de/p/6939839/knauf-tiefengrund-lf-1-l",
+        "actual_size": "1 l",
+        "price": 8.99,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:42:17.923Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 1,
+        "unit": "l",
+        "unit_price": 8.99,
+        "family": "deep-primer",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "UW Profil",
+      "offer": null
+    },
+    {
+      "query": "Zement",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Trasszement 25 kg",
+        "product_url": "https://www.obi.de/p/3693132/trasszement-25-kg",
+        "actual_size": "25 kg",
+        "price": 9.79,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:47:56.509Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 25,
+        "unit": "kg",
+        "unit_price": 0.3916,
+        "family": "cement",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "OSB",
+      "offer": null
+    },
+    {
+      "query": "Fliesenkleber",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "PCI Flexmörtel Fliesenkleber 25 kg",
+        "product_url": "https://www.obi.de/p/1766096/pci-flexmoertel-fliesenkleber-25-kg",
+        "actual_size": "25 kg",
+        "price": 48.99,
+        "currency": "EUR",
+        "checked_at": "2026-10-03T17:53:03.000Z",
+        "source": "manual",
+        "price_scope": "chain",
+        "package_quantity": 25,
+        "unit": "kg",
+        "unit_price": 1.9596,
+        "family": "tile-adhesive",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "manual"
+      }
+    },
+    {
+      "query": "Estrich",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Sakret Betonestrich 10 kg",
+        "product_url": "https://www.obi.de/p/6723290/sakret-betonestrich-10-kg",
+        "actual_size": "10 kg",
+        "price": 5.69,
+        "currency": "EUR",
+        "checked_at": "2026-10-03T17:53:03.000Z",
+        "source": "manual",
+        "price_scope": "chain",
+        "package_quantity": 10,
+        "unit": "kg",
+        "unit_price": 0.569,
+        "family": "screed",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "manual"
+      }
+    },
+    {
+      "query": "Spachtelmasse",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Knauf Uniflott Spachtelmasse 25 kg",
+        "product_url": "https://www.obi.de/p/1608983/knauf-uniflott-spachtelmasse-25-kg",
+        "actual_size": "25 kg",
+        "price": 43.99,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:49:04.209Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 25,
+        "unit": "kg",
+        "unit_price": 1.7596,
+        "family": "uniflott",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Grundierung",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "MEM Super-Tiefgrund 5 l",
+        "product_url": "https://www.obi.de/p/2373470/mem-super-tiefgrund-5-l",
+        "actual_size": "5 l",
+        "price": 29.99,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:42:22.835Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 5,
+        "unit": "l",
+        "unit_price": 5.998,
+        "family": "deep-primer",
+        "match_score": 120,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Dämmplatte",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Ursa Home Klemmfilz Dämmplatte aus Glaswolle WLG 035 100 mm",
+        "product_url": "https://www.obi.de/p/4283784/ursa-home-klemmfilz-daemmplatte-aus-glaswolle-wlg-035-100-mm",
+        "actual_size": "4.800 × 1.200 × 100 mm · 5,76 m²",
+        "price": 38.53,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:53:58.264Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 5.76,
+        "unit": "m2",
+        "unit_price": 6.689236,
+        "family": "mineral-wool",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Trockenbauschrauben",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "Saint-Gobain Rigips Schnellbauschraube TN Feingewinde 3,5 mm x 35 mm 1000 Stück",
+        "product_url": "https://www.obi.de/p/2491397/saint-gobain-rigips-schnellbauschraube-tn-feingewinde-3-5-mm-x-35-mm-1000-stueck",
+        "actual_size": "3,5 × 35 mm · 1.000 Stück",
+        "price": 15.99,
+        "currency": "EUR",
+        "checked_at": "2026-10-04T08:49:26.584Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "package_quantity": 1000,
+        "unit": "piece",
+        "unit_price": 0.01599,
+        "family": "drywall-screw",
+        "match_score": 120,
+        "verification_status": "verified",
+        "retrieval_method": "playwright"
+      }
+    },
+    {
+      "query": "Farbe",
+      "offer": {
+        "store_id": "obi",
+        "product_name": "OBI Wandfarbe Easyweiss Weiß Matt 10 l",
+        "product_url": "https://www.obi.de/p/8564437/obi-wandfarbe-easyweiss-weiss-matt-10-l",
+        "actual_size": "10 l",
+        "price": 33.99,
+        "currency": "EUR",
+        "checked_at": "2026-10-03T17:53:03.000Z",
+        "source": "manual",
+        "price_scope": "chain",
+        "package_quantity": 10,
+        "unit": "l",
+        "unit_price": 3.399,
+        "family": "paint",
+        "match_score": 123,
+        "verification_status": "verified",
+        "retrieval_method": "manual"
+      }
+    }
+  ]
+}

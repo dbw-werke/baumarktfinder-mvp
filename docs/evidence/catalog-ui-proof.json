@@ -1,0 +1,32 @@
+{
+  "completed_at": "2026-09-25T13:18:29Z",
+  "application": "Next.js production build",
+  "environment": "Isolated localhost proxy; simulated and visibly labeled branch responses, real verified bundled product observations. No fixture branches included in delivered app.",
+  "automated_tests_passed": 91,
+  "lint": "passed",
+  "production_build": "passed",
+  "browser_checks": {
+    "address_only_submission": "passed; material remained empty",
+    "all_nearby_chains": 4,
+    "all_verified_offers": 12,
+    "rotband_30kg_filter": 3,
+    "rotband_package_price_sort": [11.5, 11.5, 11.99],
+    "toom_rotband_filter": 1,
+    "uniflott_25kg_filter": 2,
+    "unknown_query": "explicit empty state; retailer links remain",
+    "reset_filters": 12,
+    "exact_product_links": 12,
+    "manual_and_automatic_labels": "present with original checked_at",
+    "mobile_viewport_requested": { "width": 390, "height": 844 },
+    "mobile_document_width": 375,
+    "mobile_scroll_width": 375,
+    "desktop_document_width": 1265,
+    "desktop_scroll_width": 1265
+  },
+  "live_limitations": [
+    "Google key restricted for current local origins; user intends to supply a configured key later.",
+    "Public Nominatim geocoding worked; Overpass branch queries timed out on two documented public providers.",
+    "Supabase schema migration not applied to live account; local database fallback used.",
+    "Twelve observations are a partial product catalogue, not complete branch inventory."
+  ]
+}

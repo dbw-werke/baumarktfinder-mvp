@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-10-03T07:16:14.459Z",
+  "command": "npm run verify",
+  "exit_code": 0,
+  "lint": "passed",
+  "tests": {
+    "passed": 163,
+    "failed": 0,
+    "skipped": 0
+  },
+  "production_build": "passed",
+  "typescript": "passed within Next.js build",
+  "real_price_rows": 59,
+  "canonical_variants": 34,
+  "observed_chains": 6,
+  "sql": {
+    "environment": "isolated PGlite, not external Supabase",
+    "passed": true,
+    "materials_checked": 11,
+    "rendered_cards": 88,
+    "synthetic_branch_fixtures": true,
+    "synthetic_prices": false
+  },
+  "frontend": {
+    "dom_search_transitions": "passed",
+    "stale_response_guard": "passed",
+    "loading_skeletons": "passed",
+    "product_links_and_route_urls": "passed in actual production components",
+    "horizontal_layout": "single non-wrapping flex row; current visual browser acceptance blocked",
+    "live_http": {
+      "status": 200,
+      "url": "http://127.0.0.1:3000/"
+    }
+  },
+  "external": {
+    "browser": "Local tab control rejected by browser security policy; no workaround attempted",
+    "google": "Last concrete API diagnosis API_KEY_HTTP_REFERRER_BLOCKED; current successful live autocomplete not confirmed",
+    "supabase": "Final configuration check: materials, canonical_material_aliases and verified_store_prices returned no usable responses; prior 42703/PGRST205 schema failures remain unresolved; no owner migration access"
+  },
+  "deployment": {
+    "github_push": false,
+    "vercel_deploy": false,
+    "live_supabase_schema_modified": false
+  }
+}

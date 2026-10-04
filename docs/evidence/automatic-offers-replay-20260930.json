@@ -1,0 +1,563 @@
+{
+  "replayed_at": "2026-10-01T15:51:41.931Z",
+  "original_source": "work/coverage-20260930/new-products.json",
+  "observations": [
+    {
+      "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+      "canonical_slug": "cd60-27-3100-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "cd",
+        "length_mm": 3100,
+        "width_mm": 60,
+        "height_mm": 27,
+        "required_terms": [
+          "cd"
+        ],
+        "excluded_terms": [
+          "ud",
+          "cw",
+          "uw"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Knauf CD-Deckenprofil 3100 mm x 60 mm x 27 mm",
+      "product_url": "https://www.hornbach.de/p/knauf-cd-deckenprofil-3100-mm-x-60-mm-x-27-mm/260720/",
+      "price": 9.15,
+      "unit_price": 2.95,
+      "unit": "m",
+      "package_quantity": 3.1,
+      "currency": "EUR",
+      "checked_at": "2026-09-30T20:34:59.782Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {}
+    },
+    {
+      "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+      "canonical_slug": "knauf-tiefengrund-5l-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "tiefengrund",
+        "volume_l": 5,
+        "required_terms": [
+          "knauf",
+          "tiefengrund"
+        ],
+        "excluded_terms": [
+          "konzentrat"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Knauf Tiefengrund 5 l",
+      "product_url": "https://toom.de/p/tiefengrund-5-l/3054172",
+      "price": 33.99,
+      "unit_price": 6.8,
+      "unit": "l",
+      "package_quantity": 5,
+      "currency": "EUR",
+      "checked_at": "2026-09-30T20:34:59.766Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {}
+    },
+    {
+      "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+      "canonical_slug": "knauf-tiefengrund-5l-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "tiefengrund",
+        "volume_l": 5,
+        "required_terms": [
+          "knauf",
+          "tiefengrund"
+        ],
+        "excluded_terms": [
+          "konzentrat"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "Knauf Tiefengrund 5 l",
+      "product_url": "https://www.globus-baumarkt.de/p/knauf-tiefengrund-5-l-0779050059/",
+      "price": 31.45,
+      "unit_price": 6.29,
+      "unit": "l",
+      "package_quantity": 5,
+      "currency": "EUR",
+      "checked_at": "2026-09-30T20:35:00.784Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {}
+    },
+    {
+      "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+      "canonical_slug": "knauf-rotband-30kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "haftputzgips",
+        "weight_kg": 30,
+        "required_terms": [
+          "knauf",
+          "rotband"
+        ],
+        "excluded_terms": [
+          "pro",
+          "finish",
+          "flächen",
+          "flaechen",
+          "renovier"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "Knauf Rotband Haftputzgips 30 kg",
+      "product_url": "https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/",
+      "price": 11.5,
+      "unit_price": 0.38,
+      "unit": "kg",
+      "package_quantity": 30,
+      "currency": "EUR",
+      "checked_at": "2026-09-30T20:35:02.878Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {}
+    },
+    {
+      "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+      "canonical_slug": "cd60-27-3100-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "cd",
+        "length_mm": 3100,
+        "width_mm": 60,
+        "height_mm": 27,
+        "required_terms": [
+          "cd"
+        ],
+        "excluded_terms": [
+          "ud",
+          "cw",
+          "uw"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "Knauf CD-Deckenprofil 3100 x 60 x 27 mm",
+      "product_url": "https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/",
+      "price": 9.15,
+      "unit_price": 2.95,
+      "unit": "m",
+      "package_quantity": 3.1,
+      "currency": "EUR",
+      "checked_at": "2026-09-30T20:35:03.913Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "pieces": 1
+      }
+    }
+  ],
+  "reports": [
+    {
+      "store_id": "hornbach",
+      "material_slug": "cd60-27-3100-v1",
+      "url": "https://www.hornbach.de/p/knauf-cd-deckenprofil-3100-mm-x-60-mm-x-27-mm/260720/",
+      "checked_at": "2026-09-30T20:34:59.782Z",
+      "products": [
+        {
+          "name": "Knauf CD-Deckenprofil 3100 mm x 60 mm x 27 mm",
+          "url": "https://www.hornbach.de/p/knauf-cd-deckenprofil-3100-mm-x-60-mm-x-27-mm/260720/",
+          "price": 9.15,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "externalId": "260720",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-09-30T20:34:59.782Z",
+          "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+          "declaredUnitPrice": 2.95
+        }
+      ],
+      "accepted": {
+        "name": "Knauf CD-Deckenprofil 3100 mm x 60 mm x 27 mm",
+        "url": "https://www.hornbach.de/p/knauf-cd-deckenprofil-3100-mm-x-60-mm-x-27-mm/260720/",
+        "price": 9.15,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "json-ld-offer",
+        "availability": "InStock",
+        "externalId": "260720",
+        "observedSpecs": {},
+        "soldIndividually": true,
+        "retrievedAt": "2026-09-30T20:34:59.782Z",
+        "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+        "declaredUnitPrice": 2.95,
+        "unitPrice": 2.951613,
+        "unit": "m",
+        "packageQuantity": 3.1,
+        "matchEvidence": {
+          "canonical_version": 1,
+          "specs": {
+            "type": "cd",
+            "length_mm": 3100,
+            "width_mm": 60,
+            "height_mm": 27,
+            "required_terms": [
+              "cd"
+            ],
+            "excluded_terms": [
+              "ud",
+              "cw",
+              "uw"
+            ]
+          },
+          "observed_specs": {
+            "length_mm": 3100,
+            "width_mm": 60,
+            "height_mm": 27,
+            "area_m2": 0.186
+          },
+          "price_basis": "package",
+          "price_basis_evidence": "hornbach-same-sku-sales-unit",
+          "extraction": "json-ld-offer",
+          "retrieved_at": "2026-09-30T20:34:59.782Z"
+        }
+      },
+      "html_file": "work/coverage-20260930/hornbach-cd60-27-3100-v1.html",
+      "replayed_at": "2026-10-01T15:51:41.847Z",
+      "source_mode": "offline-original-html",
+      "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5"
+    },
+    {
+      "store_id": "hornbach",
+      "material_slug": "acryl-weiss-310ml-v1",
+      "url": "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/",
+      "checked_at": "2026-09-30T20:35:01.830Z",
+      "products": [
+        {
+          "name": "PRECIT Acryl weiß 310 ml",
+          "url": "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/",
+          "price": 4.89,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "externalId": "10313763",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-09-30T20:35:01.830Z"
+        }
+      ],
+      "accepted": null,
+      "html_file": "work/coverage-20260930/hornbach-acryl-weiss-310ml-v1.html",
+      "replayed_at": "2026-10-01T15:51:41.850Z",
+      "source_mode": "offline-original-html",
+      "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8"
+    },
+    {
+      "store_id": "toom",
+      "material_slug": "knauf-tiefengrund-5l-v1",
+      "url": "https://toom.de/p/tiefengrund-5-l/3054172",
+      "checked_at": "2026-09-30T20:34:59.766Z",
+      "products": [
+        {
+          "name": "Knauf Tiefengrund 5 l",
+          "url": "https://toom.de/p/tiefengrund-5-l/3054172",
+          "externalId": "3054172",
+          "price": 33.99,
+          "priceBasis": "package",
+          "priceSource": "retailer-product-state",
+          "priceBasisEvidence": "toom-same-sku-PCE-and-price-metadata",
+          "currency": "EUR",
+          "availability": null,
+          "soldIndividually": true,
+          "observedSpecs": {},
+          "retrievedAt": "2026-09-30T20:34:59.766Z"
+        }
+      ],
+      "accepted": {
+        "name": "Knauf Tiefengrund 5 l",
+        "url": "https://toom.de/p/tiefengrund-5-l/3054172",
+        "externalId": "3054172",
+        "price": 33.99,
+        "priceBasis": "package",
+        "priceSource": "retailer-product-state",
+        "priceBasisEvidence": "toom-same-sku-PCE-and-price-metadata",
+        "currency": "EUR",
+        "availability": null,
+        "soldIndividually": true,
+        "observedSpecs": {},
+        "retrievedAt": "2026-09-30T20:34:59.766Z",
+        "unitPrice": 6.798,
+        "unit": "l",
+        "packageQuantity": 5,
+        "matchEvidence": {
+          "canonical_version": 1,
+          "specs": {
+            "type": "tiefengrund",
+            "volume_l": 5,
+            "required_terms": [
+              "knauf",
+              "tiefengrund"
+            ],
+            "excluded_terms": [
+              "konzentrat"
+            ]
+          },
+          "observed_specs": {
+            "volume_l": 5
+          },
+          "price_basis": "package",
+          "price_basis_evidence": "toom-same-sku-PCE-and-price-metadata",
+          "extraction": "retailer-product-state",
+          "retrieved_at": "2026-09-30T20:34:59.766Z"
+        }
+      },
+      "html_file": "work/coverage-20260930/toom-knauf-tiefengrund-5l-v1.html",
+      "replayed_at": "2026-10-01T15:51:41.860Z",
+      "source_mode": "offline-original-html",
+      "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222"
+    },
+    {
+      "store_id": "toom",
+      "material_slug": "acryl-weiss-310ml-v1",
+      "url": "https://toom.de/p/acryl-spachtelmasse-riss-und-fugendicht-weiss-310-ml/2360023",
+      "checked_at": "2026-09-30T20:35:01.747Z",
+      "products": [
+        {
+          "name": "toom Acryl-Spachtelmasse \"Riss- und Fugendicht\" weiß 310 ml",
+          "url": "https://toom.de/p/acryl-spachtelmasse-riss-und-fugendicht-weiss-310-ml/2360023",
+          "externalId": "2360023",
+          "price": 5.99,
+          "priceBasis": "package",
+          "priceSource": "retailer-product-state",
+          "priceBasisEvidence": "toom-same-sku-PCE-and-price-metadata",
+          "currency": "EUR",
+          "availability": null,
+          "soldIndividually": true,
+          "observedSpecs": {},
+          "retrievedAt": "2026-09-30T20:35:01.747Z"
+        }
+      ],
+      "accepted": null,
+      "html_file": "work/coverage-20260930/toom-acryl-weiss-310ml-v1.html",
+      "replayed_at": "2026-10-01T15:51:41.868Z",
+      "source_mode": "offline-original-html",
+      "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8"
+    },
+    {
+      "store_id": "globus",
+      "material_slug": "knauf-tiefengrund-5l-v1",
+      "url": "https://www.globus-baumarkt.de/p/knauf-tiefengrund-5-l-0779050059/",
+      "checked_at": "2026-09-30T20:35:00.784Z",
+      "products": [
+        {
+          "name": "Knauf Tiefengrund 5 l",
+          "url": "https://www.globus-baumarkt.de/p/knauf-tiefengrund-5-l-0779050059/",
+          "price": 31.45,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "externalId": "0779050059",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-09-30T20:35:00.784Z"
+        }
+      ],
+      "accepted": {
+        "name": "Knauf Tiefengrund 5 l",
+        "url": "https://www.globus-baumarkt.de/p/knauf-tiefengrund-5-l-0779050059/",
+        "price": 31.45,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "json-ld-offer",
+        "availability": "InStock",
+        "externalId": "0779050059",
+        "observedSpecs": {},
+        "soldIndividually": true,
+        "retrievedAt": "2026-09-30T20:35:00.784Z",
+        "unitPrice": 6.29,
+        "unit": "l",
+        "packageQuantity": 5,
+        "matchEvidence": {
+          "canonical_version": 1,
+          "specs": {
+            "type": "tiefengrund",
+            "volume_l": 5,
+            "required_terms": [
+              "knauf",
+              "tiefengrund"
+            ],
+            "excluded_terms": [
+              "konzentrat"
+            ]
+          },
+          "observed_specs": {
+            "volume_l": 5
+          },
+          "price_basis": "package",
+          "extraction": "json-ld-offer",
+          "retrieved_at": "2026-09-30T20:35:00.784Z"
+        }
+      },
+      "html_file": "work/coverage-20260930/globus-knauf-tiefengrund-5l-v1.html",
+      "replayed_at": "2026-10-01T15:51:41.875Z",
+      "source_mode": "offline-original-html",
+      "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222"
+    },
+    {
+      "store_id": "globus",
+      "material_slug": "knauf-rotband-30kg-v1",
+      "url": "https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/",
+      "checked_at": "2026-09-30T20:35:02.878Z",
+      "products": [
+        {
+          "name": "Knauf Rotband Haftputzgips 30 kg",
+          "url": "https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/",
+          "externalId": "0779100307",
+          "price": 11.5,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "retailer-product-state",
+          "priceBasisEvidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+          "availability": null,
+          "soldIndividually": true,
+          "observedSpecs": {},
+          "retrievedAt": "2026-09-30T20:35:02.878Z"
+        }
+      ],
+      "accepted": {
+        "name": "Knauf Rotband Haftputzgips 30 kg",
+        "url": "https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/",
+        "externalId": "0779100307",
+        "price": 11.5,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "retailer-product-state",
+        "priceBasisEvidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+        "availability": null,
+        "soldIndividually": true,
+        "observedSpecs": {},
+        "retrievedAt": "2026-09-30T20:35:02.878Z",
+        "unitPrice": 0.383333,
+        "unit": "kg",
+        "packageQuantity": 30,
+        "matchEvidence": {
+          "canonical_version": 1,
+          "specs": {
+            "type": "haftputzgips",
+            "weight_kg": 30,
+            "required_terms": [
+              "knauf",
+              "rotband"
+            ],
+            "excluded_terms": [
+              "pro",
+              "finish",
+              "flächen",
+              "flaechen",
+              "renovier"
+            ]
+          },
+          "observed_specs": {
+            "weight_kg": 30
+          },
+          "price_basis": "package",
+          "price_basis_evidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+          "extraction": "retailer-product-state",
+          "retrieved_at": "2026-09-30T20:35:02.878Z"
+        }
+      },
+      "html_file": "work/coverage-20260930/globus-knauf-rotband-30kg-v1.html",
+      "replayed_at": "2026-10-01T15:51:41.883Z",
+      "source_mode": "offline-original-html",
+      "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05"
+    },
+    {
+      "store_id": "globus",
+      "material_slug": "cd60-27-3100-v1",
+      "url": "https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/",
+      "checked_at": "2026-09-30T20:35:03.913Z",
+      "products": [
+        {
+          "name": "Knauf CD-Deckenprofil 3100 x 60 x 27 mm",
+          "url": "https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/",
+          "externalId": "0779250250",
+          "price": 9.15,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "retailer-product-state",
+          "priceBasisEvidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+          "availability": null,
+          "soldIndividually": true,
+          "observedSpecs": {
+            "pieces": 1
+          },
+          "retrievedAt": "2026-09-30T20:35:03.913Z"
+        }
+      ],
+      "accepted": {
+        "name": "Knauf CD-Deckenprofil 3100 x 60 x 27 mm",
+        "url": "https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/",
+        "externalId": "0779250250",
+        "price": 9.15,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "retailer-product-state",
+        "priceBasisEvidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+        "availability": null,
+        "soldIndividually": true,
+        "observedSpecs": {
+          "pieces": 1
+        },
+        "retrievedAt": "2026-09-30T20:35:03.913Z",
+        "unitPrice": 2.951613,
+        "unit": "m",
+        "packageQuantity": 3.1,
+        "matchEvidence": {
+          "canonical_version": 1,
+          "specs": {
+            "type": "cd",
+            "length_mm": 3100,
+            "width_mm": 60,
+            "height_mm": 27,
+            "required_terms": [
+              "cd"
+            ],
+            "excluded_terms": [
+              "ud",
+              "cw",
+              "uw"
+            ]
+          },
+          "observed_specs": {
+            "pieces": 1,
+            "length_mm": 3100,
+            "width_mm": 60,
+            "height_mm": 27,
+            "area_m2": 0.186
+          },
+          "price_basis": "package",
+          "price_basis_evidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+          "extraction": "retailer-product-state",
+          "retrieved_at": "2026-09-30T20:35:03.913Z"
+        }
+      },
+      "html_file": "work/coverage-20260930/globus-cd60-27-3100-v1.html",
+      "replayed_at": "2026-10-01T15:51:41.891Z",
+      "source_mode": "offline-original-html",
+      "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5"
+    }
+  ]
+}

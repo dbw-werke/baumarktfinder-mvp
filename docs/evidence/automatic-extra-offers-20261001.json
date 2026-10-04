@@ -1,0 +1,590 @@
+{
+  "replayed_at": "2026-10-02T18:12:44.553Z",
+  "mode": "offline-original-public-html",
+  "database_writes": 0,
+  "observations": [
+    {
+      "material_id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+      "canonical_slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sanitaer-silikon-acetat",
+        "volume_l": 0.31,
+        "color": "weiss",
+        "required_terms": [
+          "silikon",
+          "sanitär",
+          "essig"
+        ],
+        "excluded_terms": [
+          "neutral",
+          "acryl",
+          "entferner"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Akkit 601 Sanitär Silikon weiß 310 ml; Essig vernetztes Silikon",
+      "product_url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+      "price": 7.89,
+      "unit_price": 25.45,
+      "unit": "l",
+      "package_quantity": 0.31,
+      "currency": "EUR",
+      "checked_at": "2026-10-01T15:53:24.542Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {}
+    },
+    {
+      "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+      "canonical_slug": "acryl-weiss-310ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "acryl",
+        "volume_l": 0.31,
+        "color": "weiss",
+        "required_terms": [
+          "acryl",
+          "weiß",
+          "überstreichbar"
+        ],
+        "excluded_terms": [
+          "silikon",
+          "parkett",
+          "transparent"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "toom Maleracryl \"express\" weiß 310 ml; überstreichbar",
+      "product_url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+      "price": 5.99,
+      "unit_price": 19.32,
+      "unit": "l",
+      "package_quantity": 0.31,
+      "currency": "EUR",
+      "checked_at": "2026-10-01T15:53:28.751Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {}
+    },
+    {
+      "material_id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+      "canonical_slug": "pu-schaum-1k-b2-genius-750ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "1k-b2-genius",
+        "volume_l": 0.75,
+        "color": "beige",
+        "required_terms": [
+          "soudal",
+          "b2",
+          "genius",
+          "einkomponent"
+        ],
+        "excluded_terms": [
+          "2k",
+          "reiniger"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Soudal Bauschaum B2 Genius Gun beige 750 ml; Polyurethan (PU); B2 normal entflammbar; einkomponentiger PU-Schaum",
+      "product_url": "https://www.hornbach.de/p/soudal-bauschaum-b2-genius-gun-beige-750-ml/5125626/",
+      "price": 11.95,
+      "unit_price": 15.93,
+      "unit": "l",
+      "package_quantity": 0.75,
+      "currency": "EUR",
+      "checked_at": "2026-10-01T21:02:51.916Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {}
+    },
+    {
+      "material_id": "1da620c7-7d08-a42e-5ad8-bd13fd803269",
+      "canonical_slug": "glaswolle-035-120-5-76m2-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "glaswolle-klemmfilz",
+        "thickness_mm": 120,
+        "width_mm": 1200,
+        "length_mm": 4800,
+        "pieces": 1,
+        "thermal_conductivity": 0.035,
+        "area_m2": 5.76,
+        "required_terms": [
+          "glaswolle",
+          "035"
+        ],
+        "excluded_terms": [
+          "steinwolle"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Isover Klemmfilz 'Integra ZKF1-035' 120 mm; WLS 035; Glaswolle",
+      "product_url": "https://toom.de/p/klemmfilz-integra-zkf1-035-120-mm/3150282",
+      "price": 63.3,
+      "unit_price": 10.99,
+      "unit": "m2",
+      "package_quantity": 5.76,
+      "currency": "EUR",
+      "checked_at": "2026-10-01T15:58:59.305Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "width_mm": 1200,
+        "length_mm": 4800,
+        "thickness_mm": 120,
+        "area_m2": 5.76
+      }
+    }
+  ],
+  "reports": [
+    {
+      "material_id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+      "canonical_slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+      "store_id": "hornbach",
+      "url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+      "checked_at": "2026-10-01T15:53:24.542Z",
+      "html_file": "work/coverage-20261001/extra-silikon.html",
+      "status": "verified-offline-replay",
+      "products": [
+        {
+          "name": "Akkit 601 Sanitär Silikon weiß 310 ml; Essig vernetztes Silikon",
+          "url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+          "price": 7.89,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Akkit",
+          "category": "Startseite > Sortiment > Bodenbeläge & Fliesen > Fliesenzubehör > Sanitärsilikon",
+          "description": "Akkit Sanitär Silikon hält dauerhaft dicht. Das Silikon in Weiß ist speziell für den Sanitär- oder Küchenbereich gedacht. Der dauerelastische Fugenstoff in der praktischen 310-ml-Kartusche dichtet hervorragend ab, ist wasserbeständig, pilzhemmend und perfekt geeignet für das Verschließen von Anschlussfugen. Festgenagelt: Alterungsbeständig, dauerhaft dicht, elastisch und einfach zu verarbeiten – was will man mehr?",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Dichtstoff"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Silikon"
+            },
+            {
+              "name": "Inhaltsstoffe",
+              "value": "Essig vernetztes Silikon"
+            },
+            {
+              "name": "Anwendungsgebiete",
+              "value": "Sanitärkeramik, Glas und Alu ohne Vorbehandlung"
+            },
+            {
+              "name": "Verarbeitungstemperatur",
+              "value": "5 °C - 35 °C"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Alterungsbeständig, Dauerhaft dicht, Einkomponentig, Elastisch"
+            },
+            {
+              "name": "Ca. Hautbildungszeit",
+              "value": "7 min"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Nicht anstrichveträglich gem.Definition. Tatsächliche Reichweite hängt von der Fugenform, Verarbeitungstechnik und Materialdichte ab."
+            },
+            {
+              "name": "Reichweite/Ergiebigkeit",
+              "value": "5x5 mm → 12 m, 6x6 mm → 8 m, 7x7 mm → 6 m, 8x8 mm → 4,5 m, 10x10 mm → 3 m, 12x10 mm →2,5 m, 15x10 mm → 2 m, 20x12 mm → 1,2 m"
+            },
+            {
+              "name": "Inhalt",
+              "value": "310 ml"
+            },
+            {
+              "name": "Verwendbar für",
+              "value": "Keramik, Fugen"
+            },
+            {
+              "name": "Untergrundbeschaffenheit",
+              "value": "Fettfrei, Sauber, Staubfrei, Trocken, Tragfähig"
+            },
+            {
+              "name": "Vorbereitungshinweis",
+              "value": "Die Haftflächen müssen sauber, staub- und fettfrei sein."
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Außen, Innen, Feuchtraum, In gewerblichen Nassräumen, Nassbereich"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Abdichten, Ausfüllen"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Boden, Decke, Wand"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Weiß"
+            },
+            {
+              "name": "Farbton",
+              "value": "Weiß"
+            },
+            {
+              "name": "Emissionsklasse",
+              "value": "EC1 plus"
+            },
+            {
+              "name": "Ergänzende Gefahrenmerkmale (EUH-Sätze)",
+              "value": "(EUH210) Sicherheitsdatenblatt auf Anfrage erhältlich., (EUH208) Enthält 2-Octyl-2H-isothiazol-3-on. Kann allergische Reaktionen hervorrufen."
+            },
+            {
+              "name": "Hinweis zur Entsorgung",
+              "value": "Bitte beachte die Hinweise zur Entsorgung"
+            },
+            {
+              "name": "Aushärtungszeit",
+              "value": "2 mm pro Tag"
+            },
+            {
+              "name": "Temperaturbeständigkeit (bis zu)",
+              "value": "150 °C"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "X1W5"
+            },
+            {
+              "name": "EAN",
+              "value": "4306517467869"
+            }
+          ],
+          "externalId": "10313761",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-01T15:53:24.542Z",
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+      "canonical_slug": "acryl-weiss-310ml-v1",
+      "store_id": "toom",
+      "url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+      "checked_at": "2026-10-01T15:53:28.751Z",
+      "html_file": "work/coverage-20261001/extra-acryl310.html",
+      "status": "verified-offline-replay",
+      "products": [
+        {
+          "name": "toom Maleracryl \"express\" weiß 310 ml; überstreichbar",
+          "url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+          "externalId": "2350309",
+          "price": 5.99,
+          "priceBasis": "package",
+          "priceSource": "retailer-product-state",
+          "priceBasisEvidence": "toom-same-sku-PCE-and-price-metadata",
+          "currency": "EUR",
+          "availability": null,
+          "soldIndividually": true,
+          "observedSpecs": {},
+          "retrievedAt": "2026-10-01T15:53:28.751Z",
+          "brand": "toom",
+          "category": "Bauen & Renovieren > Dichtstoffe > Acryl",
+          "description": "Egal, ob sie Fugen oder Anschlüsse abdichten möchten, mit dem Maleracryl \"express\" von toom sind diese Arbeiten im Nu erledigt. Es härtet schnell aus und ist bereits nach zehn Minuten überstreichbar. Es eignet sich auch für den Einsatz im Außenbereich, da es witterungs- und altersbeständig ist. Dank der praktischen Dosiertülle lässt es sich sauber und einfach anwenden.",
+          "attributes": [
+            {
+              "name": "Marke",
+              "value": "toom"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Geeignet für den Innen- und Außenbereich"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Bereits nach 10 min überstreichbar"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Hohe Haftkraft"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Zum Abdichten von Anschlüssen u. ä."
+            }
+          ],
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "material_id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+      "canonical_slug": "pu-schaum-1k-b2-genius-750ml-v1",
+      "store_id": "hornbach",
+      "url": "https://www.hornbach.de/p/soudal-bauschaum-b2-genius-gun-beige-750-ml/5125626/",
+      "checked_at": "2026-10-01T21:02:51.916Z",
+      "html_file": "work/coverage-20261001/extra-pu-genius.html",
+      "status": "verified-offline-replay",
+      "products": [
+        {
+          "name": "Soudal Bauschaum B2 Genius Gun beige 750 ml; Polyurethan (PU); B2 normal entflammbar; einkomponentiger PU-Schaum",
+          "url": "https://www.hornbach.de/p/soudal-bauschaum-b2-genius-gun-beige-750-ml/5125626/",
+          "price": 11.95,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Soudal",
+          "category": "Startseite > Sortiment > Baustoffe > Rohbau > Bauschaum",
+          "description": "Möchtest Du Fenster- und Türrahmen effektiv abdichten? Der Soudal Bauschaum B2 Genius Gun bietet Dir die Lösung. Produktmerkmale des Soudal Bauschaum B2 Genius Gun beige 750 ml Darum solltest Du zugreifen: Dieser einkomponentige PU-Schaum ist ideal zum Abdichten, Ausfüllen und Dämmen von Hohlräumen an Boden, Decke und Wand. Dank der schnellen Aushärtungszeit ist der Schaum bereits nach 45 Minuten schneidbar, was eine zügige Weiterverarbeitung ermöglicht. Der Schaum ist schwindarm, lösemittelfrei und kann nach dem Aushärten überstrichen oder überputzt werden, was Dir Flexibilität bei der Gestaltung bietet. Die wiederverschließbare Genius Gun sorgt für eine einfache Handhabung und ermöglicht eine präzise Dosierung. Der Schaum ist sowohl für den Innen- als auch Außenbereich geeignet und bietet eine zuverlässige Abdichtung für Fenster, Haustüren und Badewannen. Mit einer Baustoffklasse B2 ist der Schaum normal entflammbar und bietet somit eine solide Sicherheit. Festgezurrt: Der Soudal Bauschaum B2 Genius Gun ist die ideale Wahl für schnelle und effektive Abdichtungsarbeiten im Innen- und Außenbereich.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Schaum"
+            },
+            {
+              "name": "Ausführung",
+              "value": "PU-Schaum"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Außen, Innen"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Abdichten, Ausfüllen, Dämmen, Isolieren"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Boden, Decke, Wand"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Schwindarm, Wiederverschließbar, Ohne Zusatz von Lösemitteln, Überstreichbar, Überputzbar"
+            },
+            {
+              "name": "Inhalt",
+              "value": "750 ml"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Beige"
+            },
+            {
+              "name": "Inhaltsstoffe",
+              "value": "Polyurethan (PU)"
+            },
+            {
+              "name": "Emissionsklasse",
+              "value": "EC1 plus"
+            },
+            {
+              "name": "Verarbeitungstemperatur",
+              "value": "5 °C - 30 °C"
+            },
+            {
+              "name": "Isocyanatgehalt",
+              "value": "> 1 %"
+            },
+            {
+              "name": "Geeignet für",
+              "value": "Fenster, Haustür, Badewannen"
+            },
+            {
+              "name": "Baustoffklasse",
+              "value": "B2 normal entflammbar"
+            },
+            {
+              "name": "Transporthinweis",
+              "value": "Beim Transport im KFZ die Dose stehend im Karton bzw. Laderaum lagern - keinesfalls im Fond"
+            },
+            {
+              "name": "Verarbeitungshinweis",
+              "value": "Während der Verarbeitung Schutzhandschuhe und Schutzbrille tragen"
+            },
+            {
+              "name": "Entsorgungshinweis",
+              "value": "Gebrauchte PU-Schaumdosen können kostenfrei im Markt zurückgegeben werden"
+            },
+            {
+              "name": "Aushärtungszeit",
+              "value": "Schneidbar nach 45 Minuten"
+            },
+            {
+              "name": "Signalwort",
+              "value": "Gefahr"
+            },
+            {
+              "name": "Gefahrenhinweise (H-Sätze)",
+              "value": "(H222) Extrem entzündbares Aerosol., (H229) Behälter steht unter Druck: kann bei Erwärmung bersten., (H315) Verursacht Hautreizungen., (H317) Kann allergische Hautreaktionen verursachen., (H319) Verursacht schwere Augenreizung., (H332) Gesundheitsschädlich bei Einatmen., (H334) Kann bei Einatmen Allergie, asthmaartige Symptome oder Atembeschwerden verursachen., (H335) Kann die Atemwege reizen., (H351) Kann vermutlich Krebs erzeugen., (H373) Kann die Organe schädigen bei längerer oder wiederholter Exposition."
+            },
+            {
+              "name": "Sicherheitshinweise (P-Sätze)",
+              "value": "(P102) Darf nicht in die Hände von Kindern gelangen., (P103) Vor Gebrauch Kennzeichnungsetikett lesen."
+            },
+            {
+              "name": "Rohdichteklasse",
+              "value": "25 kg/m³"
+            },
+            {
+              "name": "Hinweis zur Entsorgung",
+              "value": "Bitte beachte die Hinweise zur Entsorgung"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "T52M"
+            },
+            {
+              "name": "EAN",
+              "value": "2005125626003, 5411183102279"
+            }
+          ],
+          "externalId": "5125626",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-01T21:02:51.916Z",
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "material_id": "1da620c7-7d08-a42e-5ad8-bd13fd803269",
+      "canonical_slug": "glaswolle-035-120-5-76m2-v1",
+      "store_id": "toom",
+      "url": "https://toom.de/p/klemmfilz-integra-zkf1-035-120-mm/3150282",
+      "checked_at": "2026-10-01T15:58:59.305Z",
+      "html_file": "work/coverage-20261001/d213954b9725c57653ca.html",
+      "status": "verified-offline-replay",
+      "products": [
+        {
+          "name": "Isover Klemmfilz 'Integra ZKF1-035' 120 mm; WLS 035; Glaswolle",
+          "url": "https://toom.de/p/klemmfilz-integra-zkf1-035-120-mm/3150282",
+          "externalId": "3150282",
+          "price": 63.3,
+          "priceBasis": "package",
+          "priceSource": "retailer-product-state",
+          "priceBasisEvidence": "toom-same-sku-PCE-and-price-metadata",
+          "currency": "EUR",
+          "availability": null,
+          "soldIndividually": true,
+          "observedSpecs": {
+            "width_mm": 1200,
+            "length_mm": 4800,
+            "thickness_mm": 120,
+            "area_m2": 5.76
+          },
+          "retrievedAt": "2026-10-01T15:58:59.305Z",
+          "brand": "Isover",
+          "category": "Bauen & Renovieren > Baustoffe > Dämmung > Innendämmung",
+          "description": "Mach dein Zuhause zum Energiesparer mit unserer Innendämmung! Dank des Klemmfilzes 'Integra ZKF1-035' von Isover ist dies ohne großen Aufwand möglich. Die Dachdämmung schützt dein Zuhause gleichermaßen vor Feuchtigkeit und Durchzug. So sorgst du im Winter dafür, dass die Wärme der Heizung nicht nach draußen gelangt. Im Sommer hilft die Innendämmung dabei, die Hitze draußen zu halten. Das Material verfügt über die Baustoffklasse A1 und ist somit nicht brennbar. Mit einem Inhalt von 5,76 m² kannst du die Sparren großzügig isolieren. Bestehend aus Glaswolle lässt sich das Material gut verarbeiten. Bei der Arbeit solltest du eine Atemschutzmaske und Handschuhe tragen. Mit einer Breite von 120 cm und einer Länge von 480 cm bietet dir das Produkt alles, was du brauchst. Dank einem Gewicht von 14,34 kg lässt sich das Material gut transportieren. Durch die Innendämmung dichtest du dein Heim effizient ab und machst es so fit für die Zukunft. In unserem Ratgeber erhältst du Tipps, wie du in deinem Haus energieeffizient die Innenwände dämmen kannst.",
+          "attributes": [
+            {
+              "name": "Breite",
+              "value": "120 cm"
+            },
+            {
+              "name": "Gewicht",
+              "value": "14,34 kg"
+            },
+            {
+              "name": "Länge",
+              "value": "480 cm"
+            },
+            {
+              "name": "Artikeltyp",
+              "value": "Klemmfilz"
+            },
+            {
+              "name": "Stärke",
+              "value": "120 mm"
+            },
+            {
+              "name": "Wärmeleitfähigkeit",
+              "value": "0,035 W/m²K"
+            },
+            {
+              "name": "Wärmeleitstufe (WLS)",
+              "value": "35"
+            },
+            {
+              "name": "Artikeltyp",
+              "value": "Klemmfilz"
+            },
+            {
+              "name": "Stärke",
+              "value": "120 mm"
+            },
+            {
+              "name": "Wärmeleitfähigkeit",
+              "value": "0,035 W/m²K"
+            },
+            {
+              "name": "Wärmeleitstufe (WLS)",
+              "value": "35"
+            },
+            {
+              "name": "Inhalt",
+              "value": "5,76 m²"
+            },
+            {
+              "name": "Inhalt pro Pack",
+              "value": "5,76 m²"
+            },
+            {
+              "name": "Lieferumfang",
+              "value": "1 x Pack"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Dachdämmung"
+            },
+            {
+              "name": "Baustoffklasse",
+              "value": "A1"
+            },
+            {
+              "name": "Geeignet für",
+              "value": "Zwischensparrendämmung für das Steildach"
+            },
+            {
+              "name": "Marke",
+              "value": "Isover"
+            },
+            {
+              "name": "Material",
+              "value": "Glaswolle"
+            },
+            {
+              "name": "Serie",
+              "value": "Integra ZKF1-035"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "leicht und elastisch"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "optimale Klemmwirkung unabhängig von den Abständen zwischen den Sparren"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "ausgezeichnete Energieeinsparung"
+            }
+          ],
+          "rejection_reason": null
+        }
+      ]
+    }
+  ]
+}

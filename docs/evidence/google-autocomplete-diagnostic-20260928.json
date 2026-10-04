@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-09-28T20:49:49+02:00",
+  "observed_on": "2026-09-28",
+  "method": "POST",
+  "endpoint": "https://places.googleapis.com/v1/places:autocomplete",
+  "actual_origin": "http://127.0.0.1:3000",
+  "referer": "http://127.0.0.1:3000/",
+  "request": {
+    "input": "Frankfurt",
+    "includedRegionCodes": ["de"],
+    "languageCode": "de",
+    "regionCode": "de"
+  },
+  "http_status": 403,
+  "api_status": "PERMISSION_DENIED",
+  "error_reasons": ["API_KEY_HTTP_REFERRER_BLOCKED"],
+  "suggestion_count": 0,
+  "verification_method": "One read-only request to the official Places API using the app's existing local key and exact current app Origin/Referer. This is an API diagnostic, not a successful browser autocomplete acceptance test.",
+  "credential_values_stored": false,
+  "cloud_configuration_changed": false
+}

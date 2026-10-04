@@ -1,0 +1,1065 @@
+[
+  {
+    "slug": "gipskarton-standard-12-5-1200-600-v1",
+    "name": "Gipskartonplatte Standard 12,5 × 600 × 1200 mm",
+    "suggestion_label": "Gipskartonplatte Standard 12,5 × 600 × 1200 mm",
+    "store_search_term": "Gipskartonplatte Standard 12,5 × 600 × 1200 mm",
+    "category": "Trockenbau",
+    "product_family": "gipskarton",
+    "base_unit": "m2",
+    "package_quantity": 0.72,
+    "specs": {
+      "type": "standard",
+      "thickness_mm": 12.5,
+      "width_mm": 600,
+      "length_mm": 1200,
+      "area_m2": 0.72,
+      "required_terms": [
+        "gipskarton"
+      ],
+      "excluded_terms": [
+        "feuchtraum",
+        "imprägniert",
+        "impragniert",
+        "gkbi",
+        "feuerschutz"
+      ]
+    },
+    "aliases": [
+      "rigips",
+      "regips",
+      "rigipsplatte",
+      "rigips platte",
+      "gipsplatte",
+      "gipskarton",
+      "gipskartonplatte",
+      "GK",
+      "GK Platte",
+      "trockenbauplatte"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "gipskarton-standard-12-5-2000-1250-v1",
+    "name": "Gipskartonplatte Standard 12,5 × 1250 × 2000 mm",
+    "suggestion_label": "Gipskartonplatte Standard 12,5 × 1250 × 2000 mm",
+    "store_search_term": "Gipskartonplatte Standard 12,5 × 1250 × 2000 mm",
+    "category": "Trockenbau",
+    "product_family": "gipskarton",
+    "base_unit": "m2",
+    "package_quantity": 2.5,
+    "specs": {
+      "type": "standard",
+      "thickness_mm": 12.5,
+      "width_mm": 1250,
+      "length_mm": 2000,
+      "area_m2": 2.5,
+      "required_terms": [
+        "gipskarton"
+      ],
+      "excluded_terms": [
+        "feuchtraum",
+        "imprägniert",
+        "impragniert",
+        "gkbi",
+        "feuerschutz"
+      ]
+    },
+    "aliases": [
+      "rigips",
+      "regips",
+      "rigipsplatte",
+      "rigips platte",
+      "gipsplatte",
+      "gipskarton",
+      "gipskartonplatte",
+      "GK",
+      "GK Platte",
+      "trockenbauplatte"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+    "name": "Feuchtraum-Gipskartonplatte 12,5 × 1250 × 2000 mm",
+    "suggestion_label": "Feuchtraum-Gipskartonplatte 12,5 × 1250 × 2000 mm",
+    "store_search_term": "Feuchtraum-Gipskartonplatte 12,5 × 1250 × 2000 mm",
+    "category": "Trockenbau",
+    "product_family": "gipskarton",
+    "base_unit": "m2",
+    "package_quantity": 2.5,
+    "specs": {
+      "type": "feuchtraum",
+      "thickness_mm": 12.5,
+      "width_mm": 1250,
+      "length_mm": 2000,
+      "area_m2": 2.5,
+      "required_terms": [
+        "feuchtraum"
+      ],
+      "excluded_terms": [
+        "feuerschutz"
+      ]
+    },
+    "aliases": [
+      "feuchtraumplatte",
+      "grüne rigips",
+      "gkbi",
+      "rigips feuchtraum"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "osb3-18-2500-1250-v1",
+    "name": "OSB/3 Verlegeplatte 18 × 1250 × 2500 mm, Nut und Feder",
+    "suggestion_label": "OSB/3 Verlegeplatte 18 × 1250 × 2500 mm, Nut und Feder",
+    "store_search_term": "OSB/3 Verlegeplatte 18 × 1250 × 2500 mm, Nut und Feder",
+    "category": "Holzbau",
+    "product_family": "osb",
+    "base_unit": "m2",
+    "package_quantity": 3.125,
+    "specs": {
+      "type": "osb3",
+      "thickness_mm": 18,
+      "width_mm": 1250,
+      "length_mm": 2500,
+      "area_m2": 3.125,
+      "required_terms": [
+        "osb",
+        "nut",
+        "feder"
+      ]
+    },
+    "aliases": [
+      "OSB",
+      "osb platte",
+      "grobspanplatte",
+      "verlegeplatte"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "ud28-27-3000-v1",
+    "name": "UD-Wandprofil 28/27 × 3000 mm",
+    "suggestion_label": "UD-Wandprofil 28/27 × 3000 mm",
+    "store_search_term": "UD-Wandprofil 28/27 × 3000 mm",
+    "category": "Trockenbau",
+    "product_family": "ud-profil",
+    "base_unit": "m",
+    "package_quantity": 3,
+    "specs": {
+      "type": "ud",
+      "length_mm": 3000,
+      "width_mm": 28,
+      "height_mm": 27,
+      "required_terms": [
+        "ud"
+      ],
+      "excluded_terms": [
+        "cd",
+        "cw",
+        "uw"
+      ]
+    },
+    "aliases": [
+      "UD",
+      "UD 28",
+      "UD Profil",
+      "wandanschlussprofil"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "cd60-27-3000-v1",
+    "name": "CD-Deckenprofil 60/27 × 3000 mm",
+    "suggestion_label": "CD-Deckenprofil 60/27 × 3000 mm",
+    "store_search_term": "CD-Deckenprofil 60/27 × 3000 mm",
+    "category": "Trockenbau",
+    "product_family": "cd-profil",
+    "base_unit": "m",
+    "package_quantity": 3,
+    "specs": {
+      "type": "cd",
+      "length_mm": 3000,
+      "width_mm": 60,
+      "height_mm": 27,
+      "required_terms": [
+        "cd"
+      ],
+      "excluded_terms": [
+        "ud",
+        "cw",
+        "uw"
+      ]
+    },
+    "aliases": [
+      "CD",
+      "CD Profil",
+      "CD 60/27",
+      "CD Profil 60/27",
+      "deckenprofil"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "trennwandband-30-3-30000-v1",
+    "name": "Trennwandband 30 mm × 3 mm × 30 m, selbstklebend",
+    "suggestion_label": "Trennwandband 30 mm × 3 mm × 30 m, selbstklebend",
+    "store_search_term": "Trennwandband 30 mm × 3 mm × 30 m, selbstklebend",
+    "category": "Trockenbau",
+    "product_family": "trennwandband",
+    "base_unit": "m",
+    "package_quantity": 30,
+    "specs": {
+      "type": "trennwandband",
+      "width_mm": 30,
+      "thickness_mm": 3,
+      "length_mm": 30000,
+      "required_terms": [
+        "trennwandband",
+        "selbstklebend"
+      ]
+    },
+    "aliases": [
+      "trennwandband",
+      "dichtungsband trockenbau"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "dichtungsband-50-3-30000-v1",
+    "name": "Dichtungsband 50 mm × 3 mm × 30 m, selbstklebend",
+    "suggestion_label": "Dichtungsband 50 mm × 3 mm × 30 m, selbstklebend",
+    "store_search_term": "Dichtungsband 50 mm × 3 mm × 30 m, selbstklebend",
+    "category": "Trockenbau",
+    "product_family": "dichtungsband",
+    "base_unit": "m",
+    "package_quantity": 30,
+    "specs": {
+      "type": "dichtungsband",
+      "width_mm": 50,
+      "thickness_mm": 3,
+      "length_mm": 30000,
+      "required_terms": [
+        "dichtungsband",
+        "selbstklebend"
+      ]
+    },
+    "aliases": [
+      "dichtungsband",
+      "profilband"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "direktabhaenger-cd60-125-1-v1",
+    "name": "Direktabhänger CD 60/27, 125 mm, 1 Stück",
+    "suggestion_label": "Direktabhänger CD 60/27, 125 mm, 1 Stück",
+    "store_search_term": "Direktabhänger CD 60/27, 125 mm, 1 Stück",
+    "category": "Trockenbau",
+    "product_family": "direktabhaenger",
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "specs": {
+      "type": "direktabhaenger",
+      "length_mm": 125,
+      "pieces": 1,
+      "profile": "cd60/27",
+      "required_terms": [
+        "direktabhänger",
+        "60",
+        "27"
+      ]
+    },
+    "aliases": [
+      "direktabhänger",
+      "direktabhaenger",
+      "abhänger"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "nonius-unterteil-cd60-130-1-v1",
+    "name": "Noniusabhänger Unterteil CD 60/27, 130 mm, 1 Stück",
+    "suggestion_label": "Noniusabhänger Unterteil CD 60/27, 130 mm, 1 Stück",
+    "store_search_term": "Noniusabhänger Unterteil CD 60/27, 130 mm, 1 Stück",
+    "category": "Trockenbau",
+    "product_family": "noniusabhaenger",
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "specs": {
+      "type": "nonius-unterteil",
+      "length_mm": 130,
+      "pieces": 1,
+      "profile": "cd60/27",
+      "required_terms": [
+        "nonius",
+        "unterteil",
+        "60",
+        "27"
+      ],
+      "excluded_terms": [
+        "oberteil"
+      ]
+    },
+    "aliases": [
+      "noniusabhänger",
+      "noniusabhaenger",
+      "nonius unterteil"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "knauf-uniflott-5kg-v1",
+    "name": "Knauf Uniflott Fugenspachtel, 5 kg",
+    "suggestion_label": "Knauf Uniflott Fugenspachtel, 5 kg",
+    "store_search_term": "Knauf Uniflott Fugenspachtel, 5 kg",
+    "category": "Spachtelmassen",
+    "product_family": "uniflott",
+    "base_unit": "kg",
+    "package_quantity": 5,
+    "specs": {
+      "type": "fugenspachtel",
+      "weight_kg": 5,
+      "required_terms": [
+        "knauf",
+        "uniflott"
+      ],
+      "excluded_terms": [
+        "finish",
+        "imprägniert",
+        "impragniert"
+      ]
+    },
+    "aliases": [
+      "uniflott",
+      "fugenspachtel",
+      "knauf spachtel"
+    ],
+    "brand": "Knauf",
+    "canonical_version": 1
+  },
+  {
+    "slug": "knauf-uniflott-25kg-v1",
+    "name": "Knauf Uniflott Fugenspachtel, 25 kg",
+    "suggestion_label": "Knauf Uniflott Fugenspachtel, 25 kg",
+    "store_search_term": "Knauf Uniflott Fugenspachtel, 25 kg",
+    "category": "Spachtelmassen",
+    "product_family": "uniflott",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "specs": {
+      "type": "fugenspachtel",
+      "weight_kg": 25,
+      "required_terms": [
+        "knauf",
+        "uniflott"
+      ],
+      "excluded_terms": [
+        "finish",
+        "imprägniert",
+        "impragniert"
+      ]
+    },
+    "aliases": [
+      "uniflott",
+      "fugenspachtel"
+    ],
+    "brand": "Knauf",
+    "canonical_version": 1
+  },
+  {
+    "slug": "knauf-uniflott-finish-8kg-v1",
+    "name": "Knauf Uniflott Finish Fertigspachtel, 8 kg",
+    "suggestion_label": "Knauf Uniflott Finish Fertigspachtel, 8 kg",
+    "store_search_term": "Knauf Uniflott Finish Fertigspachtel, 8 kg",
+    "category": "Spachtelmassen",
+    "product_family": "uniflott-finish",
+    "base_unit": "kg",
+    "package_quantity": 8,
+    "specs": {
+      "type": "fertigspachtel",
+      "weight_kg": 8,
+      "required_terms": [
+        "knauf",
+        "uniflott",
+        "finish"
+      ]
+    },
+    "aliases": [
+      "finish",
+      "uniflott finish",
+      "fertigspachtel"
+    ],
+    "brand": "Knauf",
+    "canonical_version": 1
+  },
+  {
+    "slug": "rigips-vario-5kg-v1",
+    "name": "Rigips VARIO Fugenspachtel, 5 kg",
+    "suggestion_label": "Rigips VARIO Fugenspachtel, 5 kg",
+    "store_search_term": "Rigips VARIO Fugenspachtel, 5 kg",
+    "category": "Spachtelmassen",
+    "product_family": "vario",
+    "base_unit": "kg",
+    "package_quantity": 5,
+    "specs": {
+      "type": "fugenspachtel",
+      "weight_kg": 5,
+      "required_terms": [
+        "rigips",
+        "vario"
+      ],
+      "excluded_terms": [
+        "hydro"
+      ]
+    },
+    "aliases": [
+      "VARIO",
+      "rigips vario",
+      "fugenspachtel"
+    ],
+    "brand": "Rigips",
+    "canonical_version": 1
+  },
+  {
+    "slug": "knauf-rotband-30kg-v1",
+    "name": "Knauf Rotband Haftputzgips, 30 kg",
+    "suggestion_label": "Knauf Rotband Haftputzgips, 30 kg",
+    "store_search_term": "Knauf Rotband Haftputzgips, 30 kg",
+    "category": "Putze",
+    "product_family": "rotband",
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "specs": {
+      "type": "haftputzgips",
+      "weight_kg": 30,
+      "required_terms": [
+        "knauf",
+        "rotband"
+      ],
+      "excluded_terms": [
+        "pro",
+        "finish",
+        "flächen",
+        "flaechen",
+        "renovier"
+      ]
+    },
+    "aliases": [
+      "rotband",
+      "haftputz",
+      "gipsputz"
+    ],
+    "brand": "Knauf",
+    "canonical_version": 1
+  },
+  {
+    "slug": "knauf-rotband-25kg-v1",
+    "name": "Knauf Rotband Haftputzgips, 25 kg",
+    "suggestion_label": "Knauf Rotband Haftputzgips, 25 kg",
+    "store_search_term": "Knauf Rotband Haftputzgips, 25 kg",
+    "category": "Putze",
+    "product_family": "rotband",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "specs": {
+      "type": "haftputzgips",
+      "weight_kg": 25,
+      "required_terms": [
+        "knauf",
+        "rotband"
+      ],
+      "excluded_terms": [
+        "pro",
+        "finish",
+        "flächen",
+        "flaechen",
+        "renovier"
+      ]
+    },
+    "aliases": [
+      "rotband",
+      "haftputz",
+      "gipsputz"
+    ],
+    "brand": "Knauf",
+    "canonical_version": 1
+  },
+  {
+    "slug": "knauf-perlfix-30kg-v1",
+    "name": "Knauf Perlfix Ansetzgips, 30 kg",
+    "suggestion_label": "Knauf Perlfix Ansetzgips, 30 kg",
+    "store_search_term": "Knauf Perlfix Ansetzgips, 30 kg",
+    "category": "Putze",
+    "product_family": "perlfix",
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "specs": {
+      "type": "ansetzgips",
+      "weight_kg": 30,
+      "required_terms": [
+        "knauf",
+        "perlfix"
+      ]
+    },
+    "aliases": [
+      "perlfix",
+      "ansetzgips",
+      "gipskleber"
+    ],
+    "brand": "Knauf",
+    "canonical_version": 1
+  },
+  {
+    "slug": "knauf-tiefengrund-5l-v1",
+    "name": "Knauf Tiefengrund, 5 l",
+    "suggestion_label": "Knauf Tiefengrund, 5 l",
+    "store_search_term": "Knauf Tiefengrund, 5 l",
+    "category": "Grundierungen",
+    "product_family": "tiefengrund",
+    "base_unit": "l",
+    "package_quantity": 5,
+    "specs": {
+      "type": "tiefengrund",
+      "volume_l": 5,
+      "required_terms": [
+        "knauf",
+        "tiefengrund"
+      ],
+      "excluded_terms": [
+        "konzentrat"
+      ]
+    },
+    "aliases": [
+      "tiefengrund",
+      "grundierung",
+      "tiefgrund"
+    ],
+    "brand": "Knauf",
+    "canonical_version": 1
+  },
+  {
+    "slug": "haftgrund-quarzsand-5l-v1",
+    "name": "Haftgrund mit Quarzsand, gebrauchsfertig, 5 l",
+    "suggestion_label": "Haftgrund mit Quarzsand, gebrauchsfertig, 5 l",
+    "store_search_term": "Haftgrund mit Quarzsand, gebrauchsfertig, 5 l",
+    "category": "Grundierungen",
+    "product_family": "haftgrund",
+    "base_unit": "l",
+    "package_quantity": 5,
+    "specs": {
+      "type": "haftgrund-quarzsand",
+      "volume_l": 5,
+      "required_terms": [
+        "haftgrund",
+        "quarzsand"
+      ],
+      "excluded_terms": [
+        "konzentrat"
+      ]
+    },
+    "aliases": [
+      "haftgrund",
+      "haftbrücke",
+      "haftbruecke"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "acryl-weiss-310ml-v1",
+    "name": "Acryl-Dichtstoff weiß, überstreichbar, 310 ml",
+    "suggestion_label": "Acryl-Dichtstoff weiß, überstreichbar, 310 ml",
+    "store_search_term": "Acryl-Dichtstoff weiß, überstreichbar, 310 ml",
+    "category": "Dichtstoffe",
+    "product_family": "acryl",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "specs": {
+      "type": "acryl",
+      "volume_l": 0.31,
+      "color": "weiss",
+      "required_terms": [
+        "acryl",
+        "weiß",
+        "überstreichbar"
+      ],
+      "excluded_terms": [
+        "silikon",
+        "parkett",
+        "transparent"
+      ]
+    },
+    "aliases": [
+      "acryl",
+      "acryl 310",
+      "acryl 310 ml",
+      "maleracryl"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "tn-3-5-25-1000-v1",
+    "name": "Schnellbauschrauben TN 3,5 × 25 mm, Feingewinde, 1000 Stück",
+    "suggestion_label": "Schnellbauschrauben TN 3,5 × 25 mm, Feingewinde, 1000 Stück",
+    "store_search_term": "Schnellbauschrauben TN 3,5 × 25 mm, Feingewinde, 1000 Stück",
+    "category": "Befestigung",
+    "product_family": "tn-schrauben",
+    "base_unit": "piece",
+    "package_quantity": 1000,
+    "specs": {
+      "type": "tn",
+      "diameter_mm": 3.5,
+      "length_mm": 25,
+      "pieces": 1000,
+      "required_terms": [
+        "tn",
+        "feingewinde"
+      ],
+      "excluded_terms": [
+        "grobgewinde",
+        "tb"
+      ]
+    },
+    "aliases": [
+      "TN 25",
+      "TN25",
+      "schnellbauschrauben",
+      "rigipsschrauben"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "tn-3-5-35-1000-v1",
+    "name": "Schnellbauschrauben TN 3,5 × 35 mm, Feingewinde, 1000 Stück",
+    "suggestion_label": "Schnellbauschrauben TN 3,5 × 35 mm, Feingewinde, 1000 Stück",
+    "store_search_term": "Schnellbauschrauben TN 3,5 × 35 mm, Feingewinde, 1000 Stück",
+    "category": "Befestigung",
+    "product_family": "tn-schrauben",
+    "base_unit": "piece",
+    "package_quantity": 1000,
+    "specs": {
+      "type": "tn",
+      "diameter_mm": 3.5,
+      "length_mm": 35,
+      "pieces": 1000,
+      "required_terms": [
+        "tn",
+        "feingewinde"
+      ],
+      "excluded_terms": [
+        "grobgewinde",
+        "tb"
+      ]
+    },
+    "aliases": [
+      "TN 35",
+      "TN35",
+      "schnellbauschrauben",
+      "rigipsschrauben"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "glaswolle-035-120-6m2-v1",
+    "name": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 5000 mm, 6 m²/Rolle",
+    "suggestion_label": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 5000 mm, 6 m²/Rolle",
+    "store_search_term": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 5000 mm, 6 m²/Rolle",
+    "category": "Dämmung",
+    "product_family": "mineralwolle",
+    "base_unit": "m2",
+    "package_quantity": 6,
+    "specs": {
+      "type": "glaswolle-klemmfilz",
+      "thickness_mm": 120,
+      "width_mm": 1200,
+      "length_mm": 5000,
+      "pieces": 1,
+      "thermal_conductivity": 0.035,
+      "area_m2": 6,
+      "required_terms": [
+        "glaswolle",
+        "035"
+      ],
+      "excluded_terms": [
+        "steinwolle"
+      ]
+    },
+    "aliases": [
+      "mineralwolle",
+      "dämmung",
+      "daemmung",
+      "klemmfilz",
+      "glaswolle"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "dampfbremse-sd2-1500-50000-v1",
+    "name": "Dampfbremse sd 2 m, 1,5 × 50 m, 75 m²/Rolle",
+    "suggestion_label": "Dampfbremse sd 2 m, 1,5 × 50 m, 75 m²/Rolle",
+    "store_search_term": "Dampfbremse sd 2 m, 1,5 × 50 m, 75 m²/Rolle",
+    "category": "Dämmung",
+    "product_family": "dampfbremse",
+    "base_unit": "m2",
+    "package_quantity": 75,
+    "specs": {
+      "type": "dampfbremse",
+      "sd_m": 2,
+      "width_mm": 1500,
+      "length_mm": 50000,
+      "area_m2": 75,
+      "required_terms": [
+        "dampfbremse"
+      ],
+      "excluded_terms": [
+        "variabel",
+        "klimamembran"
+      ]
+    },
+    "aliases": [
+      "dampfbremse",
+      "dampfbremsfolie"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "pe-folie-200-2000-50000-v1",
+    "name": "PE-Baufolie 200 µm, 2 × 50 m, 100 m²/Rolle",
+    "suggestion_label": "PE-Baufolie 200 µm, 2 × 50 m, 100 m²/Rolle",
+    "store_search_term": "PE-Baufolie 200 µm, 2 × 50 m, 100 m²/Rolle",
+    "category": "Folien",
+    "product_family": "pe-folie",
+    "base_unit": "m2",
+    "package_quantity": 100,
+    "specs": {
+      "type": "pe-baufolie",
+      "thickness_mm": 0.2,
+      "width_mm": 2000,
+      "length_mm": 50000,
+      "area_m2": 100,
+      "required_terms": [
+        "pe",
+        "folie"
+      ]
+    },
+    "aliases": [
+      "PE Folie",
+      "PE-Folie",
+      "baufolie",
+      "polyethylenfolie"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "randdaemmstreifen-8-150-25000-v1",
+    "name": "Randdämmstreifen 8 × 150 mm × 25 m, mit Folienlasche",
+    "suggestion_label": "Randdämmstreifen 8 × 150 mm × 25 m, mit Folienlasche",
+    "store_search_term": "Randdämmstreifen 8 × 150 mm × 25 m, mit Folienlasche",
+    "category": "Estrich",
+    "product_family": "randdaemmstreifen",
+    "base_unit": "m",
+    "package_quantity": 25,
+    "specs": {
+      "type": "randdaemmstreifen",
+      "thickness_mm": 8,
+      "width_mm": 150,
+      "length_mm": 25000,
+      "required_terms": [
+        "randdämmstreifen",
+        "folienlasche"
+      ]
+    },
+    "aliases": [
+      "randdämmstreifen",
+      "randdaemmstreifen",
+      "estrichrandstreifen"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "cd60-27-3100-v1",
+    "name": "CD-Deckenprofil 60/27 × 3100 mm",
+    "suggestion_label": "CD-Deckenprofil 60/27 × 3100 mm",
+    "store_search_term": "CD-Deckenprofil 60/27 × 3100 mm",
+    "category": "Trockenbau",
+    "product_family": "cd-profil",
+    "base_unit": "m",
+    "package_quantity": 3.1,
+    "specs": {
+      "type": "cd",
+      "length_mm": 3100,
+      "width_mm": 60,
+      "height_mm": 27,
+      "required_terms": [
+        "cd"
+      ],
+      "excluded_terms": [
+        "ud",
+        "cw",
+        "uw"
+      ]
+    },
+    "aliases": [
+      "CD",
+      "CD Profil",
+      "CD 60/27",
+      "CD Profil 60/27",
+      "deckenprofil"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "glaswolle-035-120-5-28m2-v1",
+    "name": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 4400 mm, 5,28 m²/Rolle",
+    "suggestion_label": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 4400 mm, 5,28 m²/Rolle",
+    "store_search_term": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 4400 mm, 5,28 m²/Rolle",
+    "category": "Dämmung",
+    "product_family": "mineralwolle",
+    "base_unit": "m2",
+    "package_quantity": 5.28,
+    "specs": {
+      "type": "glaswolle-klemmfilz",
+      "thickness_mm": 120,
+      "width_mm": 1200,
+      "length_mm": 4400,
+      "pieces": 1,
+      "thermal_conductivity": 0.035,
+      "area_m2": 5.28,
+      "required_terms": [
+        "glaswolle",
+        "035"
+      ],
+      "excluded_terms": [
+        "steinwolle"
+      ]
+    },
+    "aliases": [
+      "mineralwolle",
+      "dämmung",
+      "daemmung",
+      "klemmfilz",
+      "glaswolle"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+    "name": "Sanitär-Silikon weiß, essigvernetzend, 310 ml",
+    "suggestion_label": "Sanitär-Silikon weiß, essigvernetzend, 310 ml",
+    "store_search_term": "Sanitär Silikon weiß 310 ml essig",
+    "category": "Dichtstoffe",
+    "product_family": "sanitaer-silikon-acetat",
+    "brand": null,
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "specs": {
+      "type": "sanitaer-silikon-acetat",
+      "volume_l": 0.31,
+      "color": "weiss",
+      "required_terms": [
+        "silikon",
+        "sanitär",
+        "essig"
+      ],
+      "excluded_terms": [
+        "neutral",
+        "acryl",
+        "entferner"
+      ]
+    },
+    "aliases": [
+      "silikon",
+      "sanitärsilikon",
+      "sanitär silikon",
+      "silikon weiß 310 ml",
+      "essigvernetzendes silikon"
+    ],
+    "canonical_version": 1
+  },
+  {
+    "slug": "glaswolle-035-120-5-76m2-v1",
+    "name": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 4800 mm, 5,76 m²/Rolle",
+    "suggestion_label": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 4800 mm, 5,76 m²/Rolle",
+    "store_search_term": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 4800 mm, 5,76 m²/Rolle",
+    "category": "Dämmung",
+    "product_family": "mineralwolle",
+    "base_unit": "m2",
+    "package_quantity": 5.76,
+    "specs": {
+      "type": "glaswolle-klemmfilz",
+      "thickness_mm": 120,
+      "width_mm": 1200,
+      "length_mm": 4800,
+      "pieces": 1,
+      "thermal_conductivity": 0.035,
+      "area_m2": 5.76,
+      "required_terms": [
+        "glaswolle",
+        "035"
+      ],
+      "excluded_terms": [
+        "steinwolle"
+      ]
+    },
+    "aliases": [
+      "mineralwolle",
+      "dämmung",
+      "daemmung",
+      "klemmfilz",
+      "glaswolle"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "pu-schaum-1k-b2-genius-750ml-v1",
+    "name": "Soudal PU-Bauschaum 1K B2 Genius Gun beige, 750 ml",
+    "suggestion_label": "Soudal PU-Bauschaum 1K B2 Genius Gun beige, 750 ml",
+    "store_search_term": "Soudal PU-Bauschaum 1K B2 Genius Gun beige, 750 ml",
+    "category": "Bauschäume",
+    "product_family": "pu-schaum",
+    "base_unit": "l",
+    "package_quantity": 0.75,
+    "specs": {
+      "type": "1k-b2-genius",
+      "volume_l": 0.75,
+      "color": "beige",
+      "required_terms": [
+        "soudal",
+        "b2",
+        "genius",
+        "einkomponent"
+      ],
+      "excluded_terms": [
+        "2k",
+        "reiniger"
+      ]
+    },
+    "aliases": [
+      "PU-Schaum",
+      "Montageschaum",
+      "Bauschaum"
+    ],
+    "brand": "Soudal",
+    "canonical_version": 1
+  },
+  {
+    "slug": "acryl-weiss-300ml-v1",
+    "name": "Acryl-Dichtstoff weiß, überstreichbar, 300 ml",
+    "suggestion_label": "Acryl-Dichtstoff weiß, überstreichbar, 300 ml",
+    "store_search_term": "Acryl-Dichtstoff weiß, überstreichbar, 300 ml",
+    "category": "Dichtstoffe",
+    "product_family": "acryl",
+    "base_unit": "l",
+    "package_quantity": 0.3,
+    "specs": {
+      "type": "acryl",
+      "volume_l": 0.3,
+      "color": "weiss",
+      "required_terms": [
+        "acryl",
+        "weiß",
+        "überstreichbar"
+      ],
+      "excluded_terms": [
+        "silikon",
+        "parkett",
+        "transparent"
+      ]
+    },
+    "aliases": [
+      "Acryl 300",
+      "Acryl 300 ml",
+      "Maleracryl 300 ml"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "acryl-weiss-280ml-v1",
+    "name": "Acryl-Dichtstoff weiß, überstreichbar, 280 ml",
+    "suggestion_label": "Acryl-Dichtstoff weiß, überstreichbar, 280 ml",
+    "store_search_term": "Acryl-Dichtstoff weiß, überstreichbar, 280 ml",
+    "category": "Dichtstoffe",
+    "product_family": "acryl",
+    "base_unit": "l",
+    "package_quantity": 0.28,
+    "specs": {
+      "type": "acryl",
+      "volume_l": 0.28,
+      "color": "weiss",
+      "required_terms": [
+        "acryl",
+        "weiß",
+        "überstreichbar"
+      ],
+      "excluded_terms": [
+        "silikon",
+        "parkett",
+        "transparent"
+      ]
+    },
+    "aliases": [
+      "Acryl 280",
+      "Acryl 280 ml",
+      "Maleracryl 280 ml"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "steinwolle-sonorock-040-40-7-5m2-v1",
+    "name": "Rockwool Sonorock Steinwolle WLG 040, 40 × 625 × 1000 mm, 7,5 m²/Paket",
+    "suggestion_label": "Mineralwolle 40 mm – Rockwool Sonorock, 7,5 m²/Paket",
+    "store_search_term": "Rockwool Sonorock Steinwolle 40 mm",
+    "category": "Dämmung",
+    "product_family": "mineralwolle",
+    "brand": "Rockwool",
+    "base_unit": "m2",
+    "package_quantity": 7.5,
+    "canonical_version": 1,
+    "specs": {
+      "type": "steinwolle-trennwandplatte",
+      "thickness_mm": 40,
+      "width_mm": 625,
+      "length_mm": 1000,
+      "pieces": 12,
+      "area_m2": 7.5,
+      "thermal_conductivity": 0.04,
+      "required_terms": [
+        "steinwolle",
+        "sonorock"
+      ],
+      "excluded_terms": [
+        "glaswolle"
+      ]
+    },
+    "aliases": [
+      "Mineralwolle 40 mm",
+      "Steinwolle 40mm",
+      "Sonorock 40",
+      "Trennwandplatte 40 mm"
+    ]
+  }
+]

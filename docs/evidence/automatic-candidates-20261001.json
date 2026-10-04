@@ -1,0 +1,63 @@
+{
+  "cd60-27-3100-v1": {
+    "hornbach": [
+      "https://www.hornbach.de/p/knauf-cd-deckenprofil-3100-mm-x-60-mm-x-27-mm/260720/"
+    ],
+    "globus": [
+      "https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/"
+    ],
+    "toom": [
+      "https://toom.de/p/cd-deckenprofil-stahlblech-verzinkt-310-x-6-x-27-cm/3154030"
+    ]
+  },
+  "acryl-weiss-310ml-v1": {
+    "hornbach": [
+      "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/"
+    ],
+    "toom": [
+      "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+      "https://toom.de/p/acryl-spachtelmasse-riss-und-fugendicht-weiss-310-ml/2360023"
+    ]
+  },
+  "knauf-tiefengrund-5l-v1": {
+    "toom": [
+      "https://toom.de/p/tiefengrund-5-l/3054172"
+    ],
+    "globus": [
+      "https://www.globus-baumarkt.de/p/knauf-tiefengrund-5-l-0779050059/"
+    ]
+  },
+  "knauf-rotband-30kg-v1": {
+    "globus": [
+      "https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/"
+    ]
+  },
+  "glaswolle-035-120-5-28m2-v1": {
+    "globus": [
+      "https://www.globus-baumarkt.de/p/ursa-home-klemmfilz-glaswolle-wlg-035-0779201036/"
+    ]
+  },
+  "glaswolle-035-120-6m2-v1": {
+    "toom": [
+      "https://toom.de/p/klemmfilz-integra-zkf1-035-120-mm/3150282"
+    ]
+  },
+  "sanitaer-silikon-acetat-weiss-310ml-v1": {
+    "hornbach": [
+      "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/"
+    ],
+    "globus": [
+      "https://www.globus-baumarkt.de/p/primaster-sanitaer-silikon-weiss-310-ml-0779052985/"
+    ]
+  },
+  "glaswolle-035-120-5-76m2-v1": {
+    "toom": [
+      "https://toom.de/p/klemmfilz-integra-zkf1-035-120-mm/3150282"
+    ]
+  },
+  "pu-schaum-1k-b2-genius-750ml-v1": {
+    "hornbach": [
+      "https://www.hornbach.de/p/soudal-bauschaum-b2-genius-gun-beige-750-ml/5125626/"
+    ]
+  }
+}

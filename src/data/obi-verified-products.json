@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "description": "Manuell belegte OBI-Produkte ohne kanonische Material-ID. Keine automatisch abgerufenen Livepreise.",
+  "products": [
+    {
+      "name": "Direktabhänger 125 mm",
+      "url": "https://www.obi.de/p/2353639/direktabhaenger-125-mm",
+      "price": 0.59,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "length_mm": 125
+      },
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Glasfasergewebe 1 m x 50 m",
+      "url": "https://www.obi.de/p/3263688/glasfasergewebe-1-m-x-50-m",
+      "price": 104.99,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "length_mm": 50000,
+        "width_mm": 1000,
+        "area_m2": 50
+      },
+      "declaredUnitPrice": 2.1,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Knauf Rotband Haftputz 30 kg",
+      "url": "https://www.obi.de/p/2263044/knauf-rotband-haftputz-30-kg",
+      "price": 11.59,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "weight_kg": 30
+      },
+      "declaredUnitPrice": 0.39,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Soudal Bauschaum B2 Genius Gun 750 ml",
+      "url": "https://www.obi.de/p/9089269/soudal-bauschaum-b2-genius-gun-750-ml",
+      "price": 14.29,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "volume_l": 0.75
+      },
+      "declaredUnitPrice": 19.06,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "OBI Bau-Silikon Weiß 310 ml",
+      "url": "https://www.obi.de/p/8215527/obi-bau-silikon-weiss-310-ml",
+      "price": 9.69,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "volume_l": 0.31,
+        "color": "weiss"
+      },
+      "declaredUnitPrice": 31.26,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Sakret Sockelputz 30 kg",
+      "url": "https://www.obi.de/p/7505456/sakret-sockelputz-30-kg",
+      "price": 13.99,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "weight_kg": 30
+      },
+      "declaredUnitPrice": 0.47,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Trasszement 25 kg",
+      "url": "https://www.obi.de/p/3693132/trasszement-25-kg",
+      "price": 9.79,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "weight_kg": 25
+      },
+      "declaredUnitPrice": 0.4,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Knauf Spezialhaftgrund 2,5 kg",
+      "url": "https://www.obi.de/p/3845005/knauf-spezialhaftgrund-2-5-kg",
+      "price": 25.99,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "weight_kg": 2.5
+      },
+      "declaredUnitPrice": 10.4,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Alpina Rollputz 12 kg Weiß Matt",
+      "url": "https://www.obi.de/p/8170136/alpina-rollputz-12-kg-weiss-matt",
+      "price": 34.99,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "weight_kg": 12,
+        "color": "weiss"
+      },
+      "declaredUnitPrice": 2.92,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "PCI Flexmörtel Fliesenkleber 25 kg",
+      "url": "https://www.obi.de/p/1766096/pci-flexmoertel-fliesenkleber-25-kg",
+      "price": 48.99,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "weight_kg": 25
+      },
+      "declaredUnitPrice": 1.96,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Sakret Betonestrich 10 kg",
+      "url": "https://www.obi.de/p/6723290/sakret-betonestrich-10-kg",
+      "price": 5.69,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "weight_kg": 10
+      },
+      "declaredUnitPrice": 0.57,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Bosch Delta-Schleifblatt F460 Best for Wood and Paint 5-er Pack Körnung 120",
+      "url": "https://www.obi.de/p/8045353/bosch-delta-schleifblatt-f460-best-for-wood-and-paint-5-er-pack-koernung-120",
+      "price": 5.49,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "pieces": 5,
+        "length_mm": 93,
+        "width_mm": 93,
+        "thickness_mm": 1,
+        "grit": 120
+      },
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "Gipskartonplatte 12,5 mm x 1.250 mm x 2.000 mm imprägniert",
+      "url": "https://www.obi.de/p/5407580/gipskartonplatte-12-5-mm-x-1-250-mm-x-2-000-mm-impraegniert",
+      "price": 15.97,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "thickness_mm": 12.5,
+        "width_mm": 1250,
+        "length_mm": 2000,
+        "area_m2": 2.5
+      },
+      "declaredUnitPrice": 6.39,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    },
+    {
+      "name": "OBI Wandfarbe Easyweiss Weiß Matt 10 l",
+      "url": "https://www.obi.de/p/8564437/obi-wandfarbe-easyweiss-weiss-matt-10-l",
+      "price": 33.99,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "manual-admin-verification",
+      "retrievedAt": "2026-10-03T17:53:03.000Z",
+      "availability": "OnlineOnly",
+      "observedSpecs": {
+        "volume_l": 10,
+        "color": "weiss"
+      },
+      "declaredUnitPrice": 3.4,
+      "seller": "OBI E-Commerce GmbH",
+      "verification": {
+        "method": "official-product-page-via-web-renderer",
+        "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+      }
+    }
+  ]
+}

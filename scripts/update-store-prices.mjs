@@ -1,650 +1,149 @@
-import {
-  createClient,
-} from "@supabase/supabase-js";
+import { createClient } from "@supabase/supabase-js";
+import dotenv from "dotenv";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { dirname, resolve } from "node:path";
+import { pathToFileURL } from "node:url";
+import { createShopReader, STORE_IDS, productUrl } from "./shop-reader/shops.mjs";
+import { buildStandard, filterCrossStorePriceOutliers, normalize } from "./shop-reader/product-standardizer.mjs";
+import { findStoreProduct } from "./shop-reader/product-alternatives.mjs";
 
-import {
-  searchShop,
-} from "./shop-reader/shops.mjs";
-
-import {
-  buildStandard,
-  chooseNormalizedProduct,
-  filterCrossStorePriceOutliers,
-} from "./shop-reader/product-standardizer.mjs";
-
-
-const supabaseUrl =
-  process.env.NEXT_PUBLIC_SUPABASE_URL;
-
-const serviceKey =
-  process.env.SUPABASE_SERVICE_ROLE_KEY;
-
-
-if (
-  !supabaseUrl ||
-  !serviceKey
-) {
-  throw new Error(
-    "Supabase ENV fehlt."
-  );
-}
-
-
-const supabase =
-  createClient(
-    supabaseUrl,
-    serviceKey,
-    {
-      auth: {
-        persistSession: false,
-        autoRefreshToken: false,
-      },
-    }
-  );
-
-
-/*
- * NUR diese Shops werden automatisch gelesen.
- *
- * NICHT automatisch:
- * hornbach
- * hellweg
- * hagebau
- */
-const AUTO_STORES = [
-  "obi",
-  "toom",
-  "bauhaus",
-  "globus",
-];
-
-
-const REQUEST_DELAY_MS = 3000;
-
-
-function sleep(ms) {
-  return new Promise(
-    (resolve) =>
-      setTimeout(resolve, ms)
-  );
-}
-
-
-function normalize(value = "") {
-  return String(value)
-    .toLowerCase()
-    .replace(/ä/g, "ae")
-    .replace(/ö/g, "oe")
-    .replace(/ü/g, "ue")
-    .replace(/ß/g, "ss")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-
-/* ======================================================
-   PRODUKT-URL ABSOLUT MACHEN
-====================================================== */
-
-function absoluteProductUrl(
-  storeId,
-  url
-) {
-  if (!url) {
-    return null;
-  }
-
-
-  if (
-    url.startsWith("https://") ||
-    url.startsWith("http://")
-  ) {
-    return url;
-  }
-
-
-  const bases = {
-    obi:
-      "https://www.obi.de",
-
-    toom:
-      "https://toom.de",
-
-    bauhaus:
-      "https://www.bauhaus.info",
-
-    globus:
-      "https://www.globus-baumarkt.de",
+export function createRepository(client) {
+  return {
+    async materials() {
+      const { data, error } = await client.from("materials").select("*").eq("active", true).gte("canonical_version", 1).order("name");
+      if (error) throw new Error(`Material schema unavailable (${error.code || "database-error"}); apply migration and seed first.`);
+      return data || [];
+    },
+    async mapping(materialId, storeId) {
+      const { data, error } = await client.from("store_products").select("product_url").eq("material_id", materialId).eq("store_id", storeId).eq("active", true).maybeSingle();
+      if (error) throw new Error(`Product mapping unavailable (${error.code || "database-error"}).`);
+      return data?.product_url;
+    },
+    async save(payload) {
+      const { data, error } = await client.rpc("save_verified_price", { payload });
+      if (error) throw new Error(`Atomic price write failed (${error.code || "database-error"}).`);
+      return data;
+    },
   };
-
-
-  const base =
-    bases[storeId];
-
-
-  if (!base) {
-    return url;
-  }
-
-
-  return (
-    base +
-    (url.startsWith("/")
-      ? ""
-      : "/") +
-    url
-  );
+}
+export function databaseRepository() {
+  dotenv.config({ path: ".env.local", quiet: true });
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL, key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) throw new Error("NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required on the server.");
+  return createRepository(createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } }));
+}
+export function pricePayload(material, storeId, product, source = "automatic") {
+  const url = productUrl(storeId, product.url);
+  if (!url) throw new Error("Invalid official product URL.");
+  return { material_id: material.id, store_id: storeId, product_name: product.name, product_url: url,
+    price: product.price, package_quantity: product.packageQuantity, base_unit: product.unit, currency: "EUR",
+    source, price_scope: "chain", checked_at: product.retrievedAt || new Date().toISOString(),
+    external_id: product.externalId || null, availability: product.availability || null, match_evidence: product.matchEvidence };
 }
 
-
-/* ======================================================
-   PREIS SPEICHERN
-
-   WICHTIG:
-   Erst nachdem ein technisch gültiger Treffer
-   gefunden wurde.
-
-   Blockiert / kein Treffer / Fehler:
-   alter Preis bleibt bestehen.
-====================================================== */
-
-async function savePrice(
-  material,
-  storeId,
-  product
-) {
-  const price =
-    Number(
-      product.price
-    );
-
-
-  if (
-    !Number.isFinite(price) ||
-    price <= 0
-  ) {
-    throw new Error(
-      `Ungültiger Produktpreis: ${product.price}`
-    );
-  }
-
-
-  const payload = {
-    material_id:
-      material.id,
-
-    store_id:
-      storeId,
-
-    price,
-
-    product_name:
-      product.name,
-
-    product_url:
-      absoluteProductUrl(
-        storeId,
-        product.url
-      ),
-
-    checked_at:
-      new Date()
-        .toISOString(),
-  };
-
-
-  /*
-   * Neuesten bestehenden Datensatz suchen.
-   */
-  const {
-    data: existing,
-    error: findError,
-  } =
-    await supabase
-      .from("store_prices")
-      .select("id")
-      .eq(
-        "material_id",
-        material.id
-      )
-      .eq(
-        "store_id",
-        storeId
-      )
-      .order(
-        "checked_at",
-        {
-          ascending: false,
-        }
-      )
-      .limit(1);
-
-
-  if (findError) {
-    throw findError;
-  }
-
-
-  /*
-   * Existiert bereits ein Preis:
-   * aktualisieren statt Duplikat erzeugen.
-   */
-  if (
-    existing &&
-    existing.length > 0
-  ) {
-    const {
-      error,
-    } =
-      await supabase
-        .from("store_prices")
-        .update(payload)
-        .eq(
-          "id",
-          existing[0].id
-        );
-
-
-    if (error) {
-      throw error;
-    }
-
-
-    return "updated";
-  }
-
-
-  /*
-   * Sonst neu anlegen.
-   */
-  const {
-    error,
-  } =
-    await supabase
-      .from("store_prices")
-      .insert(payload);
-
-
-  if (error) {
-    throw error;
-  }
-
-
-  return "inserted";
-}
-
-
-/* ======================================================
-   EIN MATERIAL VERARBEITEN
-====================================================== */
-
-async function updateMaterial(
-  material
-) {
-  const standard =
-    buildStandard(
-      material
-    );
-
-
-  if (!standard) {
-    console.log(
-      `– ${material.name}: keine Vergleichsregel`
-    );
-
-    return;
-  }
-
-
-  console.log("");
-  console.log(
-    "================================="
-  );
-
-  console.log(
-    material.name
-  );
-
-  console.log(
-    `STANDARD: ${standard.id}`
-  );
-
-  console.log(
-    `SUCHE: ${standard.search}`
-  );
-
-  console.log(
-    "================================="
-  );
-
-
-  /*
-   * Erst alle technisch gültigen Kandidaten sammeln.
-   *
-   * NOCH NICHT Supabase verändern.
-   */
+/** No write is attempted until a valid current offer has passed every canonical check. */
+export async function updateMaterial(material, { repository, reader, stores = STORE_IDS, dryRun = false, candidateUrls = {}, canonicalMaterials = [], candidateUrlsByMaterial = {}, log = () => {} }) {
+  const standard = buildStandard(material), report = { material: material.slug || material.id, name: material.name, stores: [] };
+  if (!standard) { report.status = "unsupported-canonical-specification"; return report; }
   const candidates = [];
-
-
-  for (
-    const storeId
-    of AUTO_STORES
-  ) {
-    console.log("");
-    console.log(
-      `→ ${storeId}`
-    );
-
-
+  for (const storeId of stores) {
+    const row = { store: storeId, chain_id: storeId, requested_material_id: material.id, status: "unavailable", retained_previous_price: true,
+      reader_products_found: 0, matched_product: null, package_size: null, package_price: null, product_url: null, saved_to_supabase: false, rejection_reason: null }; report.stores.push(row);
     try {
-      const shop =
-        await searchShop(
-          storeId,
-          standard.search
-        );
-
-
-      const product =
-        chooseNormalizedProduct(
-          shop.products ?? [],
-          standard
-        );
-
-
-      if (!product) {
-        console.log(
-          `✗ ${storeId}: kein technisch passendes Produkt`
-        );
-
-        await sleep(
-          REQUEST_DELAY_MS
-        );
-
-        continue;
+      const result = await findStoreProduct(material, { storeId, repository, reader, canonicalMaterials,
+        candidateUrls: candidateUrls[storeId] || [], candidateUrlsByMaterial });
+      row.attempts = result.attempts;
+      row.reader_products_found = result.attempts.reduce((total, attempt) => total + (attempt.reader_products_found || 0), 0);
+      if (!result.product) {
+        row.status = "no-exact-verified-offer"; row.errors = result.errors;
+        row.rejection_reason = [...new Set(result.attempts.flatMap((attempt) => [attempt.rejection_reason, ...(attempt.products || []).map((product) => product.rejection_reason)]).filter(Boolean))].join("; ") || "no-compatible-verified-offer";
+      } else {
+        candidates.push({ store: storeId, price: result.product.price, ...result, row }); row.status = "candidate";
+        row.matched_product = result.product.name;
+        row.match_score = result.product.matchScore; row.detected_family = result.product.matchEvidence.detected_family;
+        row.observed_specs = result.product.matchEvidence.observed_specs;
+        row.package_size = { quantity: result.product.packageQuantity, unit: result.product.unit, specs: result.actualMaterial.specs };
+        row.package_price = result.product.price; row.product_url = result.product.url;
       }
-
-
-      const price =
-        Number(
-          product.price
-        );
-
-
-      if (
-        !Number.isFinite(price) ||
-        price <= 0
-      ) {
-        console.log(
-          `✗ ${storeId}: ungültiger Produktpreis`
-        );
-
-        await sleep(
-          REQUEST_DELAY_MS
-        );
-
-        continue;
-      }
-
-
-      candidates.push({
-        store:
-          storeId,
-
-        price,
-
-        product,
-      });
-
-
-      console.log(
-        `✓ KANDIDAT ${storeId}: ${price.toFixed(
-          2
-        )} € | ${product.name}`
-      );
-
-
     } catch (error) {
-      console.log(
-        `✗ ${storeId}: ${
-          error instanceof Error
-            ? error.message
-            : String(error)
-        }`
-      );
-
-
-      /*
-       * Ganz wichtig:
-       *
-       * Bei BLOCKED / ERROR / NO PRODUCTS
-       * wird NICHTS aus Supabase gelöscht.
-       */
+      row.status = error.code || "collection-error";
+      row.rejection_reason = row.status;
+      row.attempts = error.collectionAttempts || [];
+      row.reader_products_found = row.attempts.reduce((total, attempt) => total + (attempt.reader_products_found || 0), 0);
+      row.error = error.name === "CollectionError" ? error.message : "Retrieval or mapping lookup failed; no price was written.";
     }
-
-
-    await sleep(
-      REQUEST_DELAY_MS
-    );
+    log(`${material.name} | ${storeId}: ${row.status}`);
   }
-
-
-  if (
-    candidates.length === 0
-  ) {
-    console.log(
-      "– Kein sicherer neuer Preis. Bestehende Preise bleiben unverändert."
-    );
-
-    return;
+  // Package totals from different sizes are not comparable price outliers.
+  const byActualMaterial = new Map();
+  for (const candidate of candidates) {
+    const id = candidate.actualMaterial.id;
+    if (!byActualMaterial.has(id)) byActualMaterial.set(id, []);
+    byActualMaterial.get(id).push(candidate);
   }
-
-
-  /* ====================================================
-     CROSS-STORE PLAUSIBILITÄT
-
-     Erst NACH technischem Matching.
-
-     Preis entscheidet niemals,
-     welches Produkt technisch passend ist.
-  ==================================================== */
-
-  const saneCandidates =
-    filterCrossStorePriceOutliers(
-      candidates
-    );
-
-
-  const acceptedStores =
-    new Set(
-      saneCandidates.map(
-        (candidate) =>
-          candidate.store
-      )
-    );
-
-
-  for (
-    const candidate
-    of candidates
-  ) {
-    if (
-      !acceptedStores.has(
-        candidate.store
-      )
-    ) {
-      console.log(
-        `⛔ ${candidate.store}: ${candidate.price.toFixed(
-          2
-        )} € als Preis-Ausreißer verworfen`
-      );
-
-      continue;
-    }
-
-
-    const action =
-      await savePrice(
-        material,
-        candidate.store,
-        candidate.product
-      );
-
-
-    console.log(
-      `✓ GESPEICHERT ${candidate.store}: ${candidate.price.toFixed(
-        2
-      )} € (${action})`
-    );
+  const accepted = new Set([...byActualMaterial.values()].flatMap((group) => filterCrossStorePriceOutliers(group)));
+  for (const candidate of candidates) {
+    const { row, store, product, actualMaterial, matchKind } = candidate;
+    if (!accepted.has(candidate)) { row.status = "price-outlier"; row.rejection_reason = "price-outlier-for-same-package"; continue; }
+    try {
+      const payload = pricePayload(actualMaterial, store, product);
+      if (!dryRun) await repository.save(payload);
+      Object.assign(row, { status: dryRun ? "verified-dry-run" : "saved", retained_previous_price: dryRun,
+        saved_to_supabase: !dryRun,
+        material_id: actualMaterial.id, canonical_slug: actualMaterial.slug, preferred_material_id: material.id, match_kind: matchKind,
+        price: product.price, unit_price: product.unitPrice, unit: product.unit, package_quantity: product.packageQuantity,
+        product_name: product.name, product_url: product.url, checked_at: payload.checked_at });
+    } catch { row.status = "save-failed"; row.rejection_reason = "database-save-failed"; }
   }
+  report.status = report.stores.some((row) => ["saved", "verified-dry-run"].includes(row.status)) ? "ok" : "unavailable";
+  return report;
 }
 
-
-/* ======================================================
-   MAIN
-====================================================== */
-
-async function main() {
-  const requested =
-    process.argv
-      .slice(2)
-      .join(" ")
-      .trim();
-
-
-  const {
-    data: materials,
-    error,
-  } =
-    await supabase
-      .from("materials")
-      .select(`
-        id,
-        name,
-        suggestion_label,
-        store_search_term,
-        product_family,
-        comparison_type,
-        match_rules,
-        active
-      `)
-      .eq(
-        "active",
-        true
-      );
-
-
-  if (error) {
-    throw error;
+export function parseArguments(args) {
+  const options = { dryRun: false, stores: STORE_IDS, limit: Infinity, query: "", report: "work/price-update-last.json" };
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+    if (arg === "--dry-run") options.dryRun = true;
+    else if (["--stores", "--limit", "--materials-file", "--candidates", "--report"].includes(arg)) {
+      const value = args[++i]; if (!value || value.startsWith("--")) throw new Error(`Missing value for ${arg}`);
+      if (arg === "--stores") options.stores = value.split(",");
+      else if (arg === "--limit") options.limit = Number(value);
+      else if (arg === "--materials-file") options.materialsFile = value;
+      else if (arg === "--candidates") options.candidatesFile = value;
+      else options.report = value;
+    } else if (arg.startsWith("--")) throw new Error(`Unknown argument ${arg}`);
+    else options.query += `${arg} `;
   }
-
-
-  let selected =
-    materials ?? [];
-
-
-  if (
-    requested &&
-    requested.toLowerCase() !==
-      "all"
-  ) {
-    const needle =
-      normalize(
-        requested
-      );
-
-
-    selected =
-      selected.filter(
-        (material) =>
-          [
-            material.name,
-            material.suggestion_label,
-            material.store_search_term,
-            material.product_family,
-          ]
-            .filter(Boolean)
-            .some(
-              (value) => {
-                const normalized =
-                  normalize(
-                    value
-                  );
-
-
-                return (
-                  normalized.includes(
-                    needle
-                  ) ||
-                  needle.includes(
-                    normalized
-                  )
-                );
-              }
-            )
-      );
-  }
-
-
-  if (
-    selected.length === 0
-  ) {
-    throw new Error(
-      `Material nicht gefunden: ${requested}`
-    );
-  }
-
-
-  console.log("");
-  console.log(
-    "===== BAUMARKTFINDER PREISUPDATE ====="
-  );
-
-  console.log(
-    `Materialien: ${selected.length}`
-  );
-
-  console.log(
-    `Automatisch: ${AUTO_STORES.join(
-      ", "
-    )}`
-  );
-
-  console.log(
-    "Manuell: hornbach, hellweg, hagebau"
-  );
-
-
-  for (
-    const material
-    of selected
-  ) {
-    await updateMaterial(
-      material
-    );
-
-
-    /*
-     * Pause zwischen Materialien.
-     */
-    await sleep(
-      REQUEST_DELAY_MS
-    );
-  }
-
-
-  console.log("");
-  console.log(
-    "===== FERTIG ====="
-  );
+  if (options.stores.some((store) => !STORE_IDS.includes(store)) || options.stores.length === 0) throw new Error("Unknown retailer.");
+  if (!(options.limit > 0)) throw new Error("--limit must be positive.");
+  if (options.materialsFile && !options.dryRun) throw new Error("--materials-file is restricted to read-only --dry-run.");
+  return options;
 }
-
-
-main().catch(
-  (error) => {
-    console.error(
-      error
-    );
-
-    process.exit(1);
-  }
-);
+export async function main(args = process.argv.slice(2)) {
+  const options = parseArguments(args), reader = createShopReader();
+  const repository = options.materialsFile ? { mapping: async () => null } : databaseRepository();
+  const canonicalMaterials = options.materialsFile ? JSON.parse(await readFile(options.materialsFile, "utf8")) : await repository.materials();
+  let materials = canonicalMaterials;
+  const query = normalize(options.query);
+  if (query && query !== "all") materials = materials.filter((m) => normalize(`${m.name} ${m.slug} ${m.product_family}`).includes(query));
+  materials = materials.slice(0, options.limit);
+  if (!materials.length) throw new Error("No active canonical materials matched.");
+  const candidateUrls = options.candidatesFile ? JSON.parse(await readFile(options.candidatesFile, "utf8")) : {};
+  const report = { started_at: new Date().toISOString(), dry_run: options.dryRun, materials: [] };
+  for (const material of materials) report.materials.push(await updateMaterial(material, {
+    repository, reader, stores: options.stores, dryRun: options.dryRun,
+    canonicalMaterials, candidateUrlsByMaterial: candidateUrls,
+    candidateUrls: candidateUrls[material.slug] || candidateUrls[material.id] || {}, log: console.log }));
+  report.completed_at = new Date().toISOString();
+  report.verified = report.materials.flatMap((m) => m.stores).filter((row) => ["saved", "verified-dry-run"].includes(row.status)).length;
+  report.write_failures = report.materials.flatMap((m) => m.stores).filter((row) => row.status === "save-failed").length;
+  await mkdir(dirname(resolve(options.report)), { recursive: true });
+  await writeFile(options.report, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  console.log(`Verified offers: ${report.verified}. Report: ${options.report}. Failed retrievals retained every previous price.`);
+  if (report.write_failures) process.exitCode = 1;
+  else if (!report.verified) process.exitCode = 2;
+  return report;
+}
+if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) main().catch((error) => {
+  console.error(error.message); process.exitCode = 1;
+});

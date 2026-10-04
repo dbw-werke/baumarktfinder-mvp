@@ -1,0 +1,65 @@
+{
+  "started_at": "2026-09-23T16:41:52.789Z",
+  "dry_run": true,
+  "materials": [
+    {
+      "material": "knauf-rotband-30kg-v1",
+      "name": "Knauf Rotband Haftputzgips, 30 kg",
+      "stores": [
+        {
+          "store": "obi",
+          "status": "no-exact-verified-offer",
+          "retained_previous_price": true,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Knauf%20Rotband%20Haftputzgips%2C%2030%20kg/"
+            }
+          ]
+        },
+        {
+          "store": "toom",
+          "status": "no-exact-verified-offer",
+          "retained_previous_price": true,
+          "errors": []
+        },
+        {
+          "store": "hornbach",
+          "status": "verified-dry-run",
+          "retained_previous_price": true,
+          "price": 11.5,
+          "unit_price": 0.383333,
+          "unit": "kg",
+          "package_quantity": 30,
+          "product_name": "Knauf Rotband Haftputzgips zum Glätten 30 kg",
+          "product_url": "https://www.hornbach.de/p/knauf-rotband-haftputzgips-zum-glaetten-30-kg/261950/",
+          "checked_at": "2026-09-23T16:42:19.374Z"
+        },
+        {
+          "store": "bauhaus",
+          "status": "robots-unavailable",
+          "retained_previous_price": true
+        },
+        {
+          "store": "hagebau",
+          "status": "no-exact-verified-offer",
+          "retained_previous_price": true,
+          "errors": []
+        },
+        {
+          "store": "globus",
+          "status": "blocked",
+          "retained_previous_price": true
+        },
+        {
+          "store": "hellweg",
+          "status": "robots-unavailable",
+          "retained_previous_price": true
+        }
+      ],
+      "status": "ok"
+    }
+  ],
+  "completed_at": "2026-09-23T16:42:47.987Z",
+  "verified": 1
+}

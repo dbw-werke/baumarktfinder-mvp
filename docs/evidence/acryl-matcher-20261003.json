@@ -1,0 +1,513 @@
+{
+  "mode": "original-product-html-and-verified-manual-observations",
+  "network_requests": 0,
+  "rows": [
+    {
+      "store": "obi",
+      "candidates": [],
+      "manual_candidates": [
+        {
+          "source": "manual_verified",
+          "name": "Soudal Maleracryl Weiß 300 ml",
+          "url": "https://www.obi.de/p/3016565/soudal-maleracryl-weiss-300-ml",
+          "price": 5.69,
+          "checked_at": "2026-10-02T22:02:39Z",
+          "accepted": true,
+          "score": 154,
+          "detectedFamily": "acrylic",
+          "requestedFamily": "acrylic",
+          "hardExclusion": null,
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 0.3,
+            "color": "weiss",
+            "type": "acryl"
+          },
+          "matchKind": "alternative",
+          "rejectionReason": null,
+          "packageQuantity": 0.3,
+          "packageDistance": 0.03225806451612906
+        },
+        {
+          "source": "manual_verified",
+          "name": "CMI Acryl Weiß 310 ml",
+          "url": "https://www.obi.de/p/4771325/cmi-acryl-weiss-310-ml",
+          "price": 2.19,
+          "checked_at": "2026-10-02T22:02:39Z",
+          "accepted": true,
+          "score": 164,
+          "detectedFamily": "acrylic",
+          "requestedFamily": "acrylic",
+          "hardExclusion": null,
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 0.31,
+            "color": "weiss",
+            "type": "acryl"
+          },
+          "matchKind": "exact",
+          "rejectionReason": null,
+          "packageQuantity": 0.31,
+          "packageDistance": 0
+        }
+      ]
+    },
+    {
+      "store": "toom",
+      "candidates": [
+        {
+          "source": "automatic",
+          "name": "toom Silikonfugenspachtel",
+          "url": "https://toom.de/p/silikonfugenspachtel/1150199",
+          "price": 5.99,
+          "checked_at": "2026-10-01T15:56:26.793Z",
+          "accepted": false,
+          "score": 0,
+          "detectedFamily": "silicone",
+          "requestedFamily": "acrylic",
+          "hardExclusion": "incompatible_product_family",
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {},
+          "matchKind": null,
+          "rejectionReason": "incompatible_product_family"
+        },
+        {
+          "source": "automatic",
+          "name": "toom Acryl-Spachtelmasse \"Riss- und Fugendicht\" weiß 310 ml",
+          "url": "https://toom.de/p/acryl-spachtelmasse-riss-und-fugendicht-weiss-310-ml/2360023",
+          "price": 5.99,
+          "checked_at": "2026-10-01T15:57:37.552Z",
+          "accepted": true,
+          "score": 174,
+          "detectedFamily": "acrylic",
+          "requestedFamily": "acrylic",
+          "hardExclusion": null,
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 0.31,
+            "color": "weiss",
+            "type": "acryl"
+          },
+          "matchKind": "exact",
+          "rejectionReason": null,
+          "packageQuantity": 0.31,
+          "packageDistance": 0
+        },
+        {
+          "source": "automatic",
+          "name": "toom Maleracryl \"express\" weiß 310 ml; überstreichbar",
+          "url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+          "price": 5.99,
+          "checked_at": "2026-10-01T15:53:28.751Z",
+          "accepted": true,
+          "score": 176,
+          "detectedFamily": "acrylic",
+          "requestedFamily": "acrylic",
+          "hardExclusion": null,
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 0.31,
+            "color": "weiss",
+            "type": "acryl"
+          },
+          "matchKind": "exact",
+          "rejectionReason": null,
+          "packageQuantity": 0.31,
+          "packageDistance": 0
+        }
+      ],
+      "manual_candidates": []
+    },
+    {
+      "store": "hornbach",
+      "candidates": [
+        {
+          "source": "automatic",
+          "name": "Silikon-Fugenspachtel Kaufmann für Winkelfugen",
+          "url": "https://www.hornbach.de/p/silikon-fugenspachtel-kaufmann-fuer-winkelfugen/7690186/",
+          "price": 14.95,
+          "checked_at": "2026-10-01T15:56:16.767Z",
+          "accepted": false,
+          "score": 0,
+          "detectedFamily": "silicone",
+          "requestedFamily": "acrylic",
+          "hardExclusion": "incompatible_product_family",
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "color": "schwarz"
+          },
+          "matchKind": null,
+          "rejectionReason": "incompatible_product_family"
+        },
+        {
+          "source": "automatic",
+          "name": "Silikon-Fugenspachtel Kaufmann für Radien",
+          "url": "https://www.hornbach.de/p/silikon-fugenspachtel-kaufmann-fuer-radien/7690187/",
+          "price": 14.95,
+          "checked_at": "2026-10-01T15:56:18.733Z",
+          "accepted": false,
+          "score": 0,
+          "detectedFamily": "silicone",
+          "requestedFamily": "acrylic",
+          "hardExclusion": "incompatible_product_family",
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "color": "schwarz"
+          },
+          "matchKind": null,
+          "rejectionReason": "incompatible_product_family"
+        },
+        {
+          "source": "automatic",
+          "name": "Akkit 101 Haftgrund 1 l; Acrylat-Dispersion",
+          "url": "https://www.hornbach.de/p/akkit-101-haftgrund-1-l/10299149/",
+          "price": 14.29,
+          "checked_at": "2026-10-01T15:57:21.449Z",
+          "accepted": false,
+          "score": 0,
+          "detectedFamily": "haftgrund",
+          "requestedFamily": "acrylic",
+          "hardExclusion": "incompatible_product_family",
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 1
+          },
+          "matchKind": null,
+          "rejectionReason": "incompatible_product_family"
+        },
+        {
+          "source": "automatic",
+          "name": "PRECIT Acryl weiß 310 ml; Acrylat Dichtstoff, Acrylatbasis",
+          "url": "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/",
+          "price": 4.89,
+          "checked_at": "2026-10-01T15:57:35.807Z",
+          "accepted": true,
+          "score": 174,
+          "detectedFamily": "acrylic",
+          "requestedFamily": "acrylic",
+          "hardExclusion": null,
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 0.31,
+            "color": "weiss",
+            "type": "acryl"
+          },
+          "matchKind": "exact",
+          "rejectionReason": null,
+          "packageQuantity": 0.31,
+          "packageDistance": 0
+        },
+        {
+          "source": "automatic",
+          "name": "Akkit 601 Sanitär Silikon weiß 310 ml; Essig vernetztes Silikon",
+          "url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+          "price": 7.89,
+          "checked_at": "2026-10-01T15:53:24.542Z",
+          "accepted": false,
+          "score": 0,
+          "detectedFamily": "silicone",
+          "requestedFamily": "acrylic",
+          "hardExclusion": "incompatible_product_family",
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 0.31,
+            "color": "weiss"
+          },
+          "matchKind": null,
+          "rejectionReason": "incompatible_product_family"
+        }
+      ],
+      "manual_candidates": []
+    },
+    {
+      "store": "bauhaus",
+      "candidates": [],
+      "manual_candidates": [
+        {
+          "source": "manual_verified",
+          "name": "Sika Acryl Professional Weiß 300 ml",
+          "url": "https://www.bauhaus.info/acryl/sika-acryl-professional/p/28275633",
+          "price": 2.95,
+          "checked_at": "2026-10-02T22:02:39Z",
+          "accepted": true,
+          "score": 154,
+          "detectedFamily": "acrylic",
+          "requestedFamily": "acrylic",
+          "hardExclusion": null,
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 0.3,
+            "color": "weiss",
+            "type": "acryl"
+          },
+          "matchKind": "alternative",
+          "rejectionReason": null,
+          "packageQuantity": 0.3,
+          "packageDistance": 0.03225806451612906
+        },
+        {
+          "source": "manual_verified",
+          "name": "Probau Maleracryl Plus Weiß 310 ml",
+          "url": "https://www.bauhaus.info/acryl/probau-maleracryl-plus/p/26149033",
+          "price": 3.95,
+          "checked_at": "2026-10-02T22:02:39Z",
+          "accepted": true,
+          "score": 164,
+          "detectedFamily": "acrylic",
+          "requestedFamily": "acrylic",
+          "hardExclusion": null,
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 0.31,
+            "color": "weiss",
+            "type": "acryl"
+          },
+          "matchKind": "exact",
+          "rejectionReason": null,
+          "packageQuantity": 0.31,
+          "packageDistance": 0
+        }
+      ]
+    },
+    {
+      "store": "hagebau",
+      "candidates": [],
+      "manual_candidates": [],
+      "reader_rejections": [
+        {
+          "name": "Racofix Acryldichtstoff, 310 ml, weiß/grau",
+          "url": "https://www.hagebau.de/p/racofix-acryldichtstoff-310-ml-weiss-grau-anP7000444247/",
+          "checked_at": "2026-10-01T21:03:32.013Z",
+          "price": null,
+          "result": "REJECT",
+          "reason": "not-purchasable:unavailable;OUTLET_PLACEHOLDER",
+          "note": "Displayed placeholder/member price is not a verified purchasable online package offer."
+        }
+      ]
+    },
+    {
+      "store": "globus",
+      "candidates": [],
+      "manual_candidates": [
+        {
+          "source": "manual_verified",
+          "name": "Acryl weiß 310 ml",
+          "url": "https://www.globus-baumarkt.de/p/acryl-weiss-310-ml-0779051109/",
+          "price": 1.99,
+          "checked_at": "2026-10-02T22:12:02.180Z",
+          "accepted": true,
+          "score": 164,
+          "detectedFamily": "acrylic",
+          "requestedFamily": "acrylic",
+          "hardExclusion": null,
+          "requestedSpecs": {
+            "type": "acryl",
+            "volume_l": 0.31,
+            "color": "weiss",
+            "required_terms": [
+              "acryl",
+              "weiß",
+              "überstreichbar"
+            ],
+            "excluded_terms": [
+              "silikon",
+              "parkett",
+              "transparent"
+            ]
+          },
+          "observedSpecs": {
+            "volume_l": 0.31,
+            "color": "weiss",
+            "type": "acryl"
+          },
+          "matchKind": "exact",
+          "rejectionReason": null,
+          "packageQuantity": 0.31,
+          "packageDistance": 0
+        }
+      ]
+    },
+    {
+      "store": "hellweg",
+      "candidates": [],
+      "manual_candidates": [],
+      "reader_rejections": [
+        {
+          "name": null,
+          "price": null,
+          "result": "NO_CANDIDATE",
+          "reason": "robots-unavailable; recorded product URL redirected to homepage",
+          "note": "No verified current acrylic product/price from this source. Historical search-index prices are not used."
+        }
+      ]
+    }
+  ]
+}

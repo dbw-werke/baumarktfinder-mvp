@@ -1,1007 +1,180 @@
-import { chromium } from "playwright";
-const SHOPS = {
-  obi: {
-    name: "OBI",
-    url: (q) =>
-      `https://www.obi.de/search/${encodeURIComponent(q)}/`,
-  },
+import { createPoliteFetcher, CollectionError } from "./http.mjs";
+import { normalize } from "./product-standardizer.mjs";
+import { confirmHornbachPackagePrices, extractToomProductState, extractGlobusProductState } from "./retailer-state.mjs";
+import { extractHagebauProductState } from "./hagebau-state.mjs";
+import { confirmObiProducts, obiProductUrl } from "./obi-state.mjs";
 
-  toom: {
-    name: "toom",
-    url: (q) =>
-      `https://www.toom.de/s/${encodeURIComponent(q)}/`,
-  },
-
-  hornbach: {
-    name: "Hornbach",
-    url: (q) =>
-      `https://www.hornbach.de/s/${encodeURIComponent(q)}`,
-  },
-
-  bauhaus: {
-    name: "BAUHAUS",
-    url: (q) =>
-      `https://www.bauhaus.info/search?q=${encodeURIComponent(q)}`,
-  },
-
-  hagebau: {
-    name: "hagebau",
-    url: (q) =>
-      `https://www.hagebau.de/search/?q=${encodeURIComponent(q)}`,
-  },
-
-  globus: {
-    name: "Globus",
-    url: (q) =>
-      `https://www.globus-baumarkt.de/search/result?type=search&query=${encodeURIComponent(q)}`,
-  },
-
-  hellweg: {
-    name: "HELLWEG",
-    url: (q) =>
-      `https://www.hellweg.de/search?search=${encodeURIComponent(q)}`,
-  },
+export const SHOPS = {
+  obi: { name: "OBI", origin: "https://www.obi.de", hosts: ["www.obi.de", "obi.de"], search: (q) => `/search/${encodeURIComponent(q)}/`, product: /\/p\/\d+\// },
+  toom: { name: "toom", origin: "https://toom.de", hosts: ["toom.de", "www.toom.de", "static.toom.de"], search: (q) => `/s/${encodeURIComponent(q)}/`, product: /\/p\/[^/]+\/\d+/ },
+  hornbach: { name: "HORNBACH", origin: "https://www.hornbach.de", hosts: ["www.hornbach.de", "hornbach.de"], search: (q) => `/s/${encodeURIComponent(q)}`, product: /\/p\/[^/]+\/\d+/ },
+  bauhaus: { name: "BAUHAUS", origin: "https://www.bauhaus.info", hosts: ["www.bauhaus.info", "bauhaus.info"], search: (q) => `/suche/produkte?text=${encodeURIComponent(q)}`, product: /\/p\/\d+/ },
+  hagebau: { name: "hagebau", origin: "https://www.hagebau.de", hosts: ["www.hagebau.de", "hagebau.de"], search: (q) => `/search/?q=${encodeURIComponent(q)}`, product: /\/p\/|\/artikel\/|\/p[a-z]?\d{5,}/ },
+  globus: { name: "Globus Baumarkt", origin: "https://www.globus-baumarkt.de", hosts: ["www.globus-baumarkt.de", "globus-baumarkt.de"], search: (q) => `/search/result?type=search&query=${encodeURIComponent(q)}`, product: /\/p\/|\/artikel\/|\/[^/]+-\d{6,}\/?$/ },
+  hellweg: { name: "HELLWEG", origin: "https://www.hellweg.de", hosts: ["www.hellweg.de", "hellweg.de"], search: (q) => `/search?search=${encodeURIComponent(q)}`, product: /\/a\/|\/p\/|\/produkt\/|\/[^/]+-\d{5,}\/?$/ },
 };
-
-function normalizeText(value = "") {
-  return String(value)
-    .replace(/\u00a0/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+export const STORE_IDS = Object.keys(SHOPS);
+const clean = (v) => String(v || "").replace(/\s+/g, " ").trim();
+const decode = (v) => String(v || "").replace(/&quot;/g, '"').replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;|&apos;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)));
+const list = (v) => v == null ? [] : Array.isArray(v) ? v : [v];
+const type = (node, expected) => list(node?.["@type"]).some((v) => String(v).split("/").pop() === expected);
+export function parsePrice(value) {
+  if (typeof value === "number") return Number.isFinite(value) && value > 0 ? value : null;
+  let text = clean(value).replace(/\s/g, "");
+  if (/^\d{1,3}(\.\d{3})+,\d{2}$/.test(text)) text = text.replace(/\./g, "").replace(",", ".");
+  else if (/^\d+,\d{1,2}$/.test(text)) text = text.replace(",", ".");
+  if (!/^\d+(\.\d{1,6})?$/.test(text)) return null;
+  const number = Number(text); return number > 0 && Number.isFinite(number) ? number : null;
 }
-
-function parsePrice(value) {
-  if (value == null) return null;
-
-  let text = String(value)
-    .replace(/\s/g, "")
-    .replace("€", "")
-    .replace(",-", ",00")
-    .replace(".-", ".00");
-
-  if (/^\d{1,3}(?:\.\d{3})+,\d{2}$/.test(text)) {
-    text = text
-      .replace(/\./g, "")
-      .replace(",", ".");
-  } else if (/^\d+,\d{2}$/.test(text)) {
-    text = text.replace(",", ".");
+export function productUrl(storeId, value, base = SHOPS[storeId]?.origin) {
+  const shop = SHOPS[storeId]; if (!shop) return null;
+  try { const url = new URL(decode(value), base);
+    if (url.protocol !== "https:" || url.username || url.password || url.port || !shop.hosts.includes(url.hostname) || !shop.product.test(url.pathname)) return null;
+    url.search = ""; url.hash = ""; return url.href;
+  } catch { return null; }
+}
+function unit(value) {
+  return ({ kg: "kg", KGM: "kg", l: "l", LTR: "l", m: "m", MTR: "m", MTK: "m2", "m²": "m2", m2: "m2",
+    C62: "package", H87: "package", EA: "package", Stueck: "package", Stück: "package", piece: "package", sack: "package", pack: "package" })[value] || null;
+}
+function structuredSpecs(node) {
+  const specs = {};
+  const fields = { length: "length_mm", width: "width_mm", depth: "thickness_mm", weight: "weight_kg" };
+  for (const [field, key] of Object.entries(fields)) {
+    const v = node[field]; if (!v || typeof v !== "object") continue;
+    const multiplier = ({ MMT: 1, mm: 1, CMT: 10, cm: 10, MTR: 1000, m: 1000, KGM: 1, kg: 1 })[v.unitCode || v.unitText];
+    if (multiplier) specs[key] = Number(v.value) * multiplier;
   }
-
-  const result = Number(text);
-
-  return Number.isFinite(result)
-    ? result
-    : null;
+  for (const p of list(node.additionalProperty)) {
+    const key = ({ laenge: "length_mm", breite: "width_mm", staerke: "thickness_mm", dicke: "thickness_mm", durchmesser: "diameter_mm", nettomasse: "weight_kg", inhalt: "volume_l", stueckzahl: "pieces" })[normalize(p.name)];
+    const multiplier = ({ mm: 1, cm: 10, m: 1000, kg: 1, l: 1, ml: 0.001, KGM: 1, MMT: 1, LTR: 1, C62: 1 })[p.unitText || p.unitCode];
+    if (key && multiplier) specs[key] = Number(p.value) * multiplier;
+  }
+  return specs;
 }
 
-function looksBlocked(status, title, body) {
-  const text =
-    `${title || ""} ${body || ""}`.toLowerCase();
-
-  return (
-    status === 403 ||
-    status === 429 ||
-    text.includes("access denied") ||
-    text.includes("captcha") ||
-    text.includes("verify you are human") ||
-    text.includes("unusual traffic") ||
-    text.includes("request blocked")
-  );
+/** Only simple, current, unconditional product offers. Aggregate/loyalty/branch offers fail closed. */
+export function extractStructuredProducts(html, pageUrl, storeId, now = new Date()) {
+  if (storeId === "hagebau") return extractHagebauProductState(html, pageUrl, now);
+  const products = [], visited = new Set();
+  let hasProductOffers = false;
+  function walk(node) {
+    if (!node || typeof node !== "object") return;
+    if (type(node, "Product")) extract(node);
+    for (const [key, value] of Object.entries(node)) if (key !== "isRelatedTo" && key !== "isSimilarTo") {
+      if (Array.isArray(value)) value.forEach(walk); else if (value && typeof value === "object") walk(value);
+    }
+  }
+  function extract(node) {
+    if (list(node.offers).length) hasProductOffers = true;
+    const url = productUrl(storeId, node.url || node["@id"] || pageUrl, pageUrl);
+    if (!url || !clean(node.name)) return;
+    const offers = list(node.offers).filter((offer) => type(offer, "Offer") && !offer.availableAtOrFrom && !offer.eligibleCustomerType && !offer.validForMemberTier);
+    const candidates = [];
+    for (const offer of offers) {
+      if (offer.priceValidUntil && new Date(`${String(offer.priceValidUntil).slice(0, 10)}T23:59:59Z`) < now) continue;
+      if (offer.validFrom && new Date(offer.validFrom) > now) continue;
+      if (offer.eligibleQuantity && Number(offer.eligibleQuantity.minValue || offer.eligibleQuantity.value || 1) > 1) continue;
+      if (offer.itemCondition && !String(offer.itemCondition).endsWith("NewCondition")) continue;
+      if (offer.url && productUrl(storeId, offer.url, pageUrl) !== url) continue;
+      const price = parsePrice(offer.price), currency = offer.priceCurrency;
+      if (!price || currency !== "EUR") continue;
+      const specs = list(offer.priceSpecification), active = specs.filter((p) => p.price == null || parsePrice(p.price) === price);
+      // A SalePrice specification can still be a member-only or bulk price.
+      if (active.some((p) => p.validForMemberTier || p.eligibleCustomerType || Number(p.eligibleQuantity?.minValue || p.eligibleQuantity?.value || 1) > 1)) continue;
+      const basis = unit(offer.unitCode || offer.unitText || active[0]?.referenceQuantity?.unitCode || active[0]?.unitCode || active[0]?.unitText);
+      if (active[0]?.referenceQuantity?.value && Number(active[0].referenceQuantity.value) !== 1) continue;
+      // Without explicit price basis, a mass/volume-named container is a single package.
+      // Area/length products must declare their price unit; assuming a sheet price is unsafe.
+      const priceBasis = basis || (/\d+(?:[.,]\d+)?\s*(kg|ml|liter|l)\b/i.test(node.name) ? "package" : null);
+      const availability = String(offer.availability || "").split("/").pop() || null;
+      if (availability && !["InStock", "LimitedAvailability", "OnlineOnly", "PreOrder", "BackOrder"].includes(availability)) continue;
+      candidates.push({ name: clean(node.name), url, price, currency, priceBasis, priceSource: "json-ld-offer", availability,
+        brand: clean(typeof node.brand === "object" ? node.brand?.name : node.brand) || null,
+        category: clean(typeof node.category === "string" ? node.category : "") || null,
+        description: clean(decode(String(node.description || "").replace(/<[^>]*>/g, " "))),
+        attributes: list(node.additionalProperty).filter((entry) => entry?.name && entry.value != null)
+          .map((entry) => ({ name: clean(entry.name), value: clean(entry.value) })),
+        externalId: String(node.sku || node.productID || node.gtin13 || ""), observedSpecs: structuredSpecs(node),
+        soldIndividually: true, retrievedAt: now.toISOString() });
+    }
+    // Multiple delivery offers at the same price are okay; conflicting online offers are ambiguous.
+    const prices = new Set(candidates.map((p) => `${p.price}:${p.priceBasis}`));
+    if (prices.size === 1 && candidates.length && !visited.has(url)) { products.push(candidates[0]); visited.add(url); }
+  }
+  for (const match of html.matchAll(/<script\b[^>]*type\s*=\s*["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    try { walk(JSON.parse(match[1].trim())); } catch { /* Broken structured data never becomes a guessed price. */ }
+  }
+  if (storeId === "obi") return confirmObiProducts(html, products, pageUrl);
+  if (storeId === "hornbach") return confirmHornbachPackagePrices(html, products, pageUrl);
+  // Product-bound hydration/metadata fallback is used only when JSON-LD offers are absent.
+  if (!products.length && !hasProductOffers && storeId === "toom") return extractToomProductState(html, pageUrl, now);
+  if (!products.length && !hasProductOffers && storeId === "globus") return extractGlobusProductState(html, pageUrl, now);
+  return products;
 }
-async function extractObiProducts(page) {
-  return await page.evaluate(() => {
-    function clean(value = "") {
-      return String(value)
-        .replace(/\u00a0/g, " ")
-        .replace(/\s+/g, " ")
-        .trim();
+export function discoverProductLinks(html, pageUrl, storeId, query) {
+  const words = normalize(query).split(/[^a-z0-9]+/).filter((v) => v.length > 3 && !/^\d+$/.test(v));
+  const links = new Map();
+  // OBI search ranking supplies candidate identity only, never a displayed price.
+  // Broad terms/synonyms need not appear literally in the product URL.
+  if (storeId === "obi" && /\/search\//.test(new URL(pageUrl).pathname)) {
+    for (const match of html.matchAll(/(?:href\s*=\s*["']([^"']+)["']|["'](?:url|productUrl)["']\s*:\s*["']([^"']+)["'])/gi)) {
+      const url = obiProductUrl(decode(match[1] || match[2]), pageUrl);
+      if (url && !links.has(url)) links.set(url, 0);
     }
-
-    function parseNumber(value) {
-      if (!value) return null;
-
-      const cleaned = String(value)
-        .replace(/\s/g, "")
-        .replace(",-", ",00")
-        .replace(".-", ",00")
-        .replace(",", ".");
-
-      const number = Number(cleaned);
-
-      return Number.isFinite(number)
-        ? number
-        : null;
-    }
-
-    /*
-     * OBI zeigt teilweise:
-     *
-     * 11,59 €
-     *
-     * oder visuell auf getrennten DOM-Spans:
-     *
-     * 11,
-     * 59
-     * €
-     *
-     * Deshalb erlauben wir Leerzeichen zwischen Euro und Cent.
-     */
-    function findPrices(text) {
-      const result = [];
-
-      const normalized = clean(text);
-
-      const regex =
-        /(\d{1,4})\s*[,]\s*(\d{2})\s*€/g;
-
-      for (const match of normalized.matchAll(regex)) {
-        const index =
-          match.index ?? 0;
-
-        const price =
-          Number(
-            `${match[1]}.${match[2]}`
-          );
-
-        if (
-          !Number.isFinite(price) ||
-          price <= 0
-        ) {
-          continue;
-        }
-
-        const before =
-          normalized
-            .slice(
-              Math.max(0, index - 35),
-              index
-            )
-            .toLowerCase();
-
-        const after =
-          normalized
-            .slice(
-              index + match[0].length,
-              index + match[0].length + 40
-            )
-            .toLowerCase();
-
-        const isUnitPrice =
-          /^\s*\/\s*(kg|kilogramm|g|gramm|l|liter|ml|m²|m2|m|meter)\b/i.test(
-            after
-          ) ||
-          /^\s*(pro|je)\s+(kg|kilogramm|g|gramm|l|liter|ml|m²|m2|m|meter)\b/i.test(
-            after
-          ) ||
-          /\b1\s*(kg|kilogramm|g|gramm|l|liter|ml|m²|m2|m|meter)\s*=\s*$/i.test(
-            before
-          );
-
-        result.push({
-          price,
-          isUnitPrice,
-          index,
-        });
-      }
-
-      return result;
-    }
-
-    const output = [];
-    const seen = new Set();
-
-    const links = [
-      ...document.querySelectorAll(
-        'a[href*="/p/"]'
-      ),
-    ];
-
-    for (const link of links) {
-      const url =
-        link.href?.split("?")[0];
-
-      if (
-        !url ||
-        seen.has(url)
-      ) {
-        continue;
-      }
-
-      let element =
-        link;
-
-      let cardText =
-        "";
-
-      let prices =
-        [];
-
-      /*
-       * OBI Produktkarte finden.
-       */
-      for (
-        let depth = 0;
-        depth < 14;
-        depth++
-      ) {
-        if (!element) {
-          break;
-        }
-
-        const text =
-          clean(
-            element.innerText ||
-            element.textContent
-          );
-
-        if (
-          text.length >= 10 &&
-          text.length <= 6000
-        ) {
-          const found =
-            findPrices(text);
-
-          /*
-           * Die Karte ist erst gültig,
-           * wenn ein NICHT-Grundpreis existiert.
-           */
-          const main =
-            found.find(
-              (entry) =>
-                !entry.isUnitPrice &&
-                entry.price >= 1
-            );
-
-          if (main) {
-            cardText =
-              text;
-
-            prices =
-              found;
-
-            break;
-          }
-        }
-
-        element =
-          element.parentElement;
-      }
-
-      if (!cardText) {
-        continue;
-      }
-
-      /*
-       * WICHTIG:
-       * Niemals €/kg als Produktpreis.
-       */
-      const mainPrice =
-        prices.find(
-          (entry) =>
-            !entry.isUnitPrice &&
-            entry.price >= 1
-        );
-
-      if (!mainPrice) {
-        continue;
-      }
-
-      const unitPrice =
-        prices.find(
-          (entry) =>
-            entry.isUnitPrice
-        );
-
-      let name =
-        clean(
-          link.getAttribute("aria-label") ||
-          link.getAttribute("title") ||
-          link.innerText ||
-          link.textContent
-        );
-
-      if (
-        !name ||
-        name.length < 3 ||
-        name.length > 300
-      ) {
-        const heading =
-          element?.querySelector?.(
-            "h1,h2,h3,h4,[class*='title'],[class*='name']"
-          );
-
-        if (heading) {
-          name =
-            clean(
-              heading.innerText ||
-              heading.textContent
-            );
-        }
-      }
-
-      /*
-       * Für OBI ist wichtig:
-       * lieber keinen Treffer als 0,39 €.
-       */
-      if (
-        !name ||
-        name.length < 3
-      ) {
-        continue;
-      }
-
-      seen.add(url);
-
-      output.push({
-        name,
-        price:
-          mainPrice.price,
-
-        unitPrice:
-          unitPrice?.price ??
-          null,
-
-        url,
-        rawText:
-          cardText,
-      });
-
-      if (
-        output.length >= 30
-      ) {
-        break;
-      }
-    }
-
-    return output;
-  });
+  }
+  for (const match of html.matchAll(/(?:href\s*=\s*["']([^"']+)["']|<loc>([^<]+)<\/loc>)/gi)) {
+    const url = productUrl(storeId, match[1] || match[2], pageUrl); if (!url) continue;
+    const score = words.reduce((n, word) => n + Number(normalize(decodeURIComponent(url)).includes(word)), 0);
+    if (score) links.set(url, score);
+  }
+  return [...links].sort((a, b) => b[1] - a[1]).map(([url]) => url);
 }
-async function extractProducts(page, shopId) {
-  return await page.evaluate(
-    ({ shopId }) => {
-      function clean(value) {
-        return String(value || "")
-          .replace(/\u00a0/g, " ")
-          .replace(/\s+/g, " ")
-          .trim();
+export function createShopReader({ http = createPoliteFetcher(), maxProductPages = 6, maxSitemaps = 4 } = {}) {
+  const searchCache = new Map(), sitemapCache = new Map();
+  async function readProduct(storeId, url) {
+    const valid = productUrl(storeId, url); if (!valid) throw new CollectionError("invalid-product-url");
+    const page = await http.get(valid, SHOPS[storeId].hosts);
+    const canonical = productUrl(storeId, page.url);
+    if (!canonical) throw new CollectionError("not-product-page");
+    return extractStructuredProducts(page.body, page.url, storeId).filter((p) => p.url.replace(/\/$/, "") === canonical.replace(/\/$/, ""));
+  }
+  async function sitemapPages(storeId) {
+    if (!sitemapCache.has(storeId)) sitemapCache.set(storeId, (async () => {
+      const shop = SHOPS[storeId], policy = await http.getRobots(shop.origin, shop.hosts), pages = [], queue = [...policy.sitemaps];
+      for (let index = 0; queue.length && index < maxSitemaps; index++) {
+        const url = queue.shift();
+        if (!shop.hosts.includes(new URL(url).hostname) || /\.gz$/i.test(url)) continue;
+        try { const page = await http.get(url, shop.hosts);
+          if (/<sitemapindex/i.test(page.body)) queue.push(...[...page.body.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => decode(m[1])).filter((u) => /product|artikel|sitemap/i.test(u)));
+          else pages.push(page);
+        } catch (error) { if (["blocked", "robots-unavailable"].includes(error.code)) throw error; }
       }
-
-      function allowedUrl(href) {
-        if (!href) return false;
-
-        const h =
-          href.toLowerCase();
-
-        if (shopId === "obi") {
-          return h.includes("/p/");
-        }
-
-        if (shopId === "toom") {
-          return h.includes("/p/");
-        }
-
-        if (shopId === "hornbach") {
-          return (
-            h.includes("/p/") ||
-            h.includes("/shop/")
-          );
-        }
-
-        if (shopId === "bauhaus") {
-          return h.includes("/p/");
-        }
-
-        if (shopId === "hagebau") {
-          return (
-            h.includes("/p/") ||
-            h.includes("/artikel/")
-          );
-        }
-
-        if (shopId === "globus") {
-          return (
-            h.includes("/p/") ||
-            h.includes("/artikel/")
-          );
-        }
-
-        if (shopId === "hellweg") {
-          return (
-            h.includes("/a/") ||
-            h.includes("/p/") ||
-            h.includes("/produkt/")
-          );
-        }
-
-        return false;
-      }
-
-      function number(value) {
-        let text =
-          String(value || "")
-            .trim()
-            .replace(/\s/g, "")
-            .replace(",-", ",00")
-            .replace(".-", ".00");
-
-        if (/^\d{1,3}(?:\.\d{3})+,\d{2}$/.test(text)) {
-          text =
-            text
-              .replace(/\./g, "")
-              .replace(",", ".");
-        } else {
-          text =
-            text.replace(",", ".");
-        }
-
-        const n = Number(text);
-
-        return Number.isFinite(n)
-          ? n
-          : null;
-      }
-
-      function findPrices(text) {
-        const prices = [];
-
-        const regex =
-          /(\d{1,4}(?:\.\d{3})*(?:,\d{2}|,-|\.-))\s*€/g;
-
-        for (const match of text.matchAll(regex)) {
-          const index =
-            match.index ?? 0;
-
-          const raw =
-            match[0];
-
-          const price =
-            number(match[1]);
-
-          if (!price || price <= 0) {
-            continue;
-          }
-
-          const before =
-            text
-              .slice(
-                Math.max(0, index - 30),
-                index
-              )
-              .toLowerCase();
-
-          const after =
-            text
-              .slice(
-                index + raw.length,
-                index + raw.length + 30
-              )
-              .toLowerCase();
-
-          const unitPrice =
-            /^\s*\/\s*(kg|kilogramm|g|gramm|l|liter|ml|m²|m2|m|meter)\b/i.test(
-              after
-            ) ||
-            /^\s*(pro|je)\s+(kg|kilogramm|g|gramm|l|liter|ml|m²|m2|m|meter)\b/i.test(
-              after
-            ) ||
-            /\b1\s*(kg|kilogramm|g|gramm|l|liter|ml|m²|m2|m|meter)\s*=\s*$/i.test(
-              before
-            );
-
-          prices.push({
-            price,
-            raw,
-            index,
-            unitPrice,
-          });
-        }
-
-        /*
-         * BAUHAUS:
-         * 11,50 pro Stück inkl. MwSt.
-         */
-        const bauhaus =
-          /(\d{1,4},\d{2})\s+pro\s+(stück|eimer|sack|packung|rolle|kanister|dose|flasche)/gi;
-
-        for (const match of text.matchAll(bauhaus)) {
-          const price =
-            number(match[1]);
-
-          if (!price) continue;
-
-          prices.push({
-            price,
-            raw: match[0],
-            index: match.index ?? 0,
-            unitPrice: false,
-          });
-        }
-
-        return prices;
-      }
-
-      const output = [];
-      const seen =
-        new Set();
-
-      const links = [
-        ...document.querySelectorAll(
-          "a[href]"
-        ),
-      ];
-
-      for (const link of links) {
-        const href =
-          link.href || "";
-
-        if (!allowedUrl(href)) {
-          continue;
-        }
-
-        const url =
-          href.split("?")[0];
-
-        if (seen.has(url)) {
-          continue;
-        }
-
-        let element =
-          link;
-
-        let cardText =
-          "";
-
-        let foundPrices =
-          [];
-
-        let cardElement =
-          null;
-
-        /*
-         * OBI funktionierte vorher genau mit
-         * diesem Parent-Walk.
-         */
-        for (
-          let depth = 0;
-          depth < 14;
-          depth++
-        ) {
-          if (!element) break;
-
-          const text =
-            clean(
-              element.innerText ||
-              element.textContent
-            );
-
-          if (
-            text.length >= 10 &&
-            text.length <= 6000
-          ) {
-            const prices =
-              findPrices(text);
-
-            const main =
-              prices.find(
-                (p) =>
-                  !p.unitPrice
-              );
-
-            if (main) {
-              cardText =
-                text;
-
-              foundPrices =
-                prices;
-
-              cardElement =
-                element;
-
-              break;
-            }
-          }
-
-          element =
-            element.parentElement;
-        }
-
-        if (!cardText) {
-          continue;
-        }
-
-        const mainPrice =
-          foundPrices.find(
-            (p) =>
-              !p.unitPrice
-          );
-
-        if (!mainPrice) {
-          continue;
-        }
-
-        const unit =
-          foundPrices.find(
-            (p) =>
-              p.unitPrice
-          );
-
-        let name =
-          clean(
-            link.getAttribute(
-              "aria-label"
-            ) ||
-            link.getAttribute(
-              "title"
-            ) ||
-            link.innerText ||
-            link.textContent
-          );
-
-        /*
-         * Manche Shops packen den kompletten
-         * Karteninhalt in den Link.
-         */
-        if (
-          !name ||
-          name.length < 3 ||
-          name.length > 350
-        ) {
-          const heading =
-            cardElement?.querySelector?.(
-              "h1,h2,h3,h4,[class*='title'],[class*='name']"
-            );
-
-          if (heading) {
-            name =
-              clean(
-                heading.innerText ||
-                heading.textContent
-              );
-          }
-        }
-
-        /*
-         * Letzter Fallback:
-         * Text vor Hauptpreis.
-         */
-        if (
-          !name ||
-          name.length < 3
-        ) {
-          const position =
-            cardText.indexOf(
-              mainPrice.raw
-            );
-
-          if (position > 0) {
-            name =
-              clean(
-                cardText.slice(
-                  0,
-                  position
-                )
-              );
-          }
-        }
-
-        if (
-          !name ||
-          name.length < 3
-        ) {
-          continue;
-        }
-
-        seen.add(url);
-
-        output.push({
-          name,
-
-          price:
-            mainPrice.price,
-
-          unitPrice:
-            unit?.price ??
-            null,
-
-          url,
-
-          rawText:
-            cardText,
-        });
-
-        if (
-          output.length >= 40
-        ) {
-          break;
-        }
-      }
-
-      return output;
-    },
-    { shopId }
-  );
-}
-
-async function scanShop(
-  browser,
-  shopId,
-  query
-) {
-  const shop =
-    SHOPS[shopId];
-
-  const context =
-    await browser.newContext({
-      locale:
-        "de-DE",
-
-      timezoneId:
-        "Europe/Berlin",
-
-      viewport: {
-        width: 1440,
-        height: 1000,
-      },
-
-      userAgent:
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140 Safari/537.36",
-
-      extraHTTPHeaders: {
-        "Accept-Language":
-          "de-DE,de;q=0.9,en;q=0.8",
-      },
-    });
-
-  const page =
-    await context.newPage();
-
-  await page.route(
-    "**/*",
-    async (route) => {
-      const type =
-        route
-          .request()
-          .resourceType();
-
-      if (
-        type === "image" ||
-        type === "font" ||
-        type === "media"
-      ) {
-        await route.abort();
-        return;
-      }
-
-      await route.continue();
+      return pages;
+    })());
+    return sitemapCache.get(storeId);
+  }
+  return { readProduct, async searchShop(storeId, query, { mappedUrl, candidateUrls = [] } = {}) {
+    const shop = SHOPS[storeId]; if (!shop) throw new CollectionError("unknown-store");
+    const products = [], errors = [], seen = new Set();
+    async function collect(url) { if (seen.has(url)) return; seen.add(url);
+      try { products.push(...await readProduct(storeId, url)); }
+      catch (error) { errors.push({ code: error.code || "network-error", url }); if (["blocked", "robots-unavailable"].includes(error.code)) throw error; }
     }
-  );
-
-  try {
-    console.log(
-      `→ ${shop.name}`
-    );
-
-    let response =
-      null;
-
+    // Mapped products are always refreshed directly, and must pass matching again in the updater.
+    if (mappedUrl) { await collect(mappedUrl); if (products.length) return { store: storeId, products, errors, discovery: "mapping" }; }
+    for (const url of candidateUrls.slice(0, maxProductPages)) await collect(url);
+    if (products.length) return { store: storeId, products, errors, discovery: "provided-candidate" };
+    const searchUrl = shop.origin + shop.search(query); let links = [];
     try {
-      response =
-        await page.goto(
-          shop.url(query),
-          {
-            waitUntil:
-              "domcontentloaded",
-
-            timeout:
-              15000,
-          }
-        );
-    } catch (error) {
-      const message =
-        error instanceof Error
-          ? error.message
-          : String(error);
-
-      if (
-        !message.includes(
-          "Timeout"
-        )
-      ) {
-        throw error;
-      }
-    }
-
-    /*
-     * OBI braucht etwas länger.
-     */
-    if (shopId === "obi") {
-      await page.waitForTimeout(
-        1100
-      );
-    } else {
-      await page.waitForTimeout(
-        700
-      );
-    }
-
-    const status =
-      response?.status() ??
-      0;
-
-    const title =
-      await page
-        .title()
-        .catch(() => "");
-
-    const body =
-      (
-        await page
-          .locator("body")
-          .innerText()
-          .catch(() => "")
-      ).slice(
-        0,
-        5000
-      );
-
-    if (
-      looksBlocked(
-        status,
-        title,
-        body
-      )
-    ) {
-      return {
-        store: shopId,
-        storeName: shop.name,
-        status: "blocked",
-        products: [],
-      };
-    }
-
-    /*
-     * Lazy loading.
-     */
-    for (
-      let i = 0;
-      i < 3;
-      i++
-    ) {
-      await page.mouse.wheel(
-        0,
-        1000
-      );
-
-      await page.waitForTimeout(
-        200
-      );
-    }
-
-    const products =
-  shopId === "obi"
-    ? await extractObiProducts(page)
-    : await extractProducts(
-        page,
-        shopId
-      );
-    if (
-      products.length === 0
-    ) {
-      return {
-        store: shopId,
-        storeName: shop.name,
-        status: "no-products",
-        products: [],
-      };
-    }
-
-    return {
-      store: shopId,
-      storeName: shop.name,
-      status: "ok",
-      products,
-    };
-  } catch (error) {
-    return {
-      store: shopId,
-      storeName: shop.name,
-      status: "error",
-
-      error:
-        error instanceof Error
-          ? error.message
-          : String(error),
-
-      products: [],
-    };
-  } finally {
-    await page
-      .close()
-      .catch(() => {});
-
-    await context
-      .close()
-      .catch(() => {});
-  }
+      if (!searchCache.has(searchUrl)) searchCache.set(searchUrl, http.get(searchUrl, shop.hosts));
+      const page = await searchCache.get(searchUrl);
+      // Discovery data identifies candidate URLs only. Every price comes from its product page.
+      links = [...extractStructuredProducts(page.body, page.url, storeId).map((p) => p.url), ...discoverProductLinks(page.body, page.url, storeId, query)];
+    } catch (error) { errors.push({ code: error.code || "network-error", url: searchUrl }); if (["blocked", "robots-unavailable"].includes(error.code)) throw error; }
+    if (!links.length) for (const page of await sitemapPages(storeId)) links.push(...discoverProductLinks(page.body, page.url, storeId, query));
+    for (const url of [...new Set(links)].slice(0, maxProductPages)) await collect(url);
+    return { store: storeId, products, errors, discovery: "automatic" };
+  } };
 }
-
-export async function searchAllShops(query) {
-  const browser = await chromium.launch({
-    headless: true,
-  });
-
-  try {
-    return await Promise.all(
-      Object.keys(SHOPS).map((shopId) =>
-        scanShop(
-          browser,
-          shopId,
-          query
-        )
-      )
-    );
-  } finally {
-    await browser
-      .close()
-      .catch(() => {});
-  }
-}
-
-export async function searchShop(
-  shopId,
-  query
-) {
-  if (!SHOPS[shopId]) {
-    throw new Error(
-      `Unbekannter Shop: ${shopId}`
-    );
-  }
-
-  const browser =
-    await chromium.launch({
-      headless: true,
-    });
-
-  try {
-    const result =
-      await scanShop(
-        browser,
-        shopId,
-        query
-      );
-
-    if (
-      result.status !== "ok"
-    ) {
-      throw new Error(
-        `${shopId}: ${result.status}`
-      );
-    }
-
-    return {
-      store:
-        result.store,
-
-      storeName:
-        result.storeName,
-
-      query,
-
-      source:
-        "local",
-
-      products:
-        result.products,
-    };
-  } finally {
-    await browser
-      .close()
-      .catch(() => {});
-  }
-}
-
-export function getShopIds() {
-  return Object.keys(
-    SHOPS
-  );
-}
+export async function searchShop(storeId, query, options) { return createShopReader().searchShop(storeId, query, options); }

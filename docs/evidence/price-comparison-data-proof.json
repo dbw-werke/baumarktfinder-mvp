@@ -1,0 +1,1373 @@
+{
+  "generated_at": "2026-10-03T07:06:35.392Z",
+  "environment": "Isolated in-memory PostgreSQL (PGlite), real retailer observations replayed with their ORIGINAL observation times.",
+  "live_supabase": {
+    "tested": false,
+    "modified": false,
+    "limitation": "This proves local SQL/RLS/frontend integration, not deployment or network access to the external Supabase project."
+  },
+  "retailer_network_requests_in_this_run": 0,
+  "synthetic_price_rows": 0,
+  "input_sources": [
+    {
+      "path": "src/data/verified-catalog-snapshot.json",
+      "sha256": "3172ce9f6e881d4417ef22b1a729c5f70f5ab7c8bcff6d4c93872415fe81701f",
+      "rows": 31,
+      "mode": "stored-real-observation-replay"
+    },
+    {
+      "path": "src/data/manual-prices.json",
+      "sha256": "f38f29140c2f582f5438d1c47615ed8223abcdd790eee75e28333e21fdfd6387",
+      "rows": 30,
+      "mode": "stored-real-observation-replay"
+    },
+    {
+      "path": "docs/evidence/manual-additions-20261003.json",
+      "sha256": "b255ad393575e6caea77b0f6c567ab94cece688907dafa751cf5260ed5403c74",
+      "rows": 3,
+      "mode": "current-manual-importer-validation-then-replay"
+    }
+  ],
+  "checks": {
+    "current_manual_importer": true,
+    "atomic_rpc": true,
+    "audit_history": true,
+    "public_rls_read": true,
+    "frontend_price_validation": true,
+    "original_observation_times_preserved": true,
+    "own_alternative_ids": true,
+    "exact_id_priority": true,
+    "unchanged_actual_package_prices": true,
+    "same_chain_for_multiple_branches": true,
+    "production_component_ssr": true,
+    "branch_existence_or_stock_claims": false
+  },
+  "comparisons": [
+    {
+      "requested_slug": "gipskarton-standard-12-5-1200-600-v1",
+      "requested_id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
+      "requested_name": "Gipskartonplatte Standard 12,5 × 600 × 1200 mm",
+      "observed_offer_chains": 5,
+      "selections": [
+        {
+          "store_id": "obi",
+          "price": {
+            "material_id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
+            "store_id": "obi",
+            "product_name": "Gipskarton Miniboard 12,5 mm x 600 mm x 1200 mm",
+            "product_url": "https://www.obi.de/p/8144024/gipskarton-miniboard-12-5-mm-x-600-mm-x-1200-mm",
+            "price": 4.88,
+            "unit_price": 6.78,
+            "unit": "m2",
+            "package_quantity": 0.72,
+            "currency": "EUR",
+            "checked_at": "2026-09-26T19:27:07.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "preferredSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "bauhaus",
+          "price": {
+            "material_id": "2d750efa-4af5-e9b4-5416-89678194f058",
+            "store_id": "bauhaus",
+            "product_name": "Rigips Gipskartonplatte GKB, 2000 x 1250 x 12,5 mm",
+            "product_url": "https://www.bauhaus.info/bauplatten/rigips-gipskartonplatte-gkb/p/22704078",
+            "price": 11.05,
+            "unit_price": 4.42,
+            "unit": "m2",
+            "package_quantity": 2.5,
+            "currency": "EUR",
+            "checked_at": "2026-09-30T20:33:31.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "alternative",
+          "actualSpecification": "12,5 × 1250 × 2000 mm · 2,5 m²",
+          "preferredSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "explanation": "Alternative Größe – kein geprüftes Angebot der Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hornbach",
+          "price": {
+            "material_id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
+            "store_id": "hornbach",
+            "product_name": "Knauf Gipskartonplatte Miniboard Standardplatte GKB 1200 mm x 600 mm x 12,5 mm",
+            "product_url": "https://www.hornbach.de/p/knauf-gipskartonplatte-miniboard-standardplatte-gkb-1200-mm-x-600-mm-x-12-5-mm/7510113/",
+            "price": 4.85,
+            "unit_price": 6.74,
+            "unit": "m2",
+            "package_quantity": 0.72,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:51:51.576Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "preferredSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "toom",
+          "price": {
+            "material_id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
+            "store_id": "toom",
+            "product_name": "Knauf Gipskartonplatte 'Miniboard' 120 x 60 x 1,25 cm",
+            "product_url": "https://toom.de/p/gipskartonplatte-miniboard-120-x-60-x-125-cm/3250126",
+            "price": 4.89,
+            "unit_price": 6.79,
+            "unit": "m2",
+            "package_quantity": 0.72,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:52:14.899Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "preferredSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hagebau",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "globus",
+          "price": {
+            "material_id": "2d750efa-4af5-e9b4-5416-89678194f058",
+            "store_id": "globus",
+            "product_name": "Knauf Gipskarton-Bauplatte GKB 200 x 125 cm 12,5 mm",
+            "product_url": "https://www.globus-baumarkt.de/p/knauf-gipskarton-bauplatte-gkb-200-x-125-cm-12-5-mm-0779250144/",
+            "price": 11.05,
+            "unit_price": 4.42,
+            "unit": "m2",
+            "package_quantity": 2.5,
+            "currency": "EUR",
+            "checked_at": "2026-09-29T10:49:30.560Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "alternative",
+          "actualSpecification": "12,5 × 1250 × 2000 mm · 2,5 m²",
+          "preferredSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "explanation": "Alternative Größe – kein geprüftes Angebot der Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "12,5 × 600 × 1200 mm · 0,72 m²",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "cd60-27-3000-v1",
+      "requested_id": "eaff18c6-3cc4-0b8e-0d86-888725219caf",
+      "requested_name": "CD-Deckenprofil 60/27 × 3000 mm",
+      "observed_offer_chains": 4,
+      "selections": [
+        {
+          "store_id": "obi",
+          "price": {
+            "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+            "store_id": "obi",
+            "product_name": "Knauf Deckenprofil CD 27 mm x 60 mm x 3100 mm",
+            "product_url": "https://www.obi.de/p/6728323/knauf-deckenprofil-cd-27-mm-x-60-mm-x-3100-mm",
+            "price": 9.19,
+            "unit_price": 2.96,
+            "unit": "m",
+            "package_quantity": 3.1,
+            "currency": "EUR",
+            "checked_at": "2026-09-26T19:27:07.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "alternative",
+          "actualSpecification": "27 × 60 × 3100 mm · 3,1 m",
+          "preferredSpecification": "27 × 60 × 3000 mm · 3 m",
+          "explanation": "Alternative Größe – kein geprüftes Angebot der Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "bauhaus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "27 × 60 × 3000 mm · 3 m",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hornbach",
+          "price": {
+            "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+            "store_id": "hornbach",
+            "product_name": "Knauf CD-Deckenprofil 3100 mm x 60 mm x 27 mm",
+            "product_url": "https://www.hornbach.de/p/knauf-cd-deckenprofil-3100-mm-x-60-mm-x-27-mm/260720/",
+            "price": 9.15,
+            "unit_price": 2.95,
+            "unit": "m",
+            "package_quantity": 3.1,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T16:00:18.065Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "alternative",
+          "actualSpecification": "27 × 60 × 3100 mm · 3,1 m",
+          "preferredSpecification": "27 × 60 × 3000 mm · 3 m",
+          "explanation": "Alternative Größe – kein geprüftes Angebot der Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "toom",
+          "price": {
+            "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+            "store_id": "toom",
+            "product_name": "Knauf CD-Deckenprofil Stahlblech verzinkt 310 x 6 x 2,7 cm",
+            "product_url": "https://toom.de/p/cd-deckenprofil-stahlblech-verzinkt-310-x-6-x-27-cm/3154030",
+            "price": 9.49,
+            "unit_price": 3.06,
+            "unit": "m",
+            "package_quantity": 3.1,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T16:00:19.741Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "alternative",
+          "actualSpecification": "27 × 60 × 3100 mm · 3,1 m",
+          "preferredSpecification": "27 × 60 × 3000 mm · 3 m",
+          "explanation": "Alternative Größe – kein geprüftes Angebot der Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hagebau",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "27 × 60 × 3000 mm · 3 m",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "globus",
+          "price": {
+            "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+            "store_id": "globus",
+            "product_name": "Knauf CD-Deckenprofil 3100 x 60 x 27 mm",
+            "product_url": "https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/",
+            "price": 9.15,
+            "unit_price": 2.95,
+            "unit": "m",
+            "package_quantity": 3.1,
+            "currency": "EUR",
+            "checked_at": "2026-09-30T20:35:03.913Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "alternative",
+          "actualSpecification": "27 × 60 × 3100 mm · 3,1 m",
+          "preferredSpecification": "27 × 60 × 3000 mm · 3 m",
+          "explanation": "Alternative Größe – kein geprüftes Angebot der Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "27 × 60 × 3000 mm · 3 m",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "glaswolle-035-120-6m2-v1",
+      "requested_id": "775c5e17-d6db-e6ac-4e70-a65d07515bd8",
+      "requested_name": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 5000 mm, 6 m²/Rolle",
+      "observed_offer_chains": 2,
+      "selections": [
+        {
+          "store_id": "obi",
+          "price": {
+            "material_id": "aceb2694-62a9-d1e0-3e6c-3bf8d4c68ebd",
+            "store_id": "obi",
+            "product_name": "Ursa Home Klemmfilz Dämmplatte aus Glaswolle WLG 035 120 mm",
+            "product_url": "https://www.obi.de/p/4283792/ursa-home-klemmfilz-daemmplatte-aus-glaswolle-wlg-035-120-mm",
+            "price": 45.35,
+            "unit_price": 8.59,
+            "unit": "m2",
+            "package_quantity": 5.28,
+            "currency": "EUR",
+            "checked_at": "2026-09-26T19:27:07.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "alternative",
+          "actualSpecification": "120 × 1200 × 4400 mm · 5,28 m²",
+          "preferredSpecification": "120 × 1200 × 5000 mm · 6 m²",
+          "explanation": "Alternative Größe – kein geprüftes Angebot der Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "bauhaus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "120 × 1200 × 5000 mm · 6 m²",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hornbach",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "120 × 1200 × 5000 mm · 6 m²",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "toom",
+          "price": {
+            "material_id": "1da620c7-7d08-a42e-5ad8-bd13fd803269",
+            "store_id": "toom",
+            "product_name": "Isover Klemmfilz 'Integra ZKF1-035' 120 mm; WLS 035; Glaswolle",
+            "product_url": "https://toom.de/p/klemmfilz-integra-zkf1-035-120-mm/3150282",
+            "price": 63.3,
+            "unit_price": 10.99,
+            "unit": "m2",
+            "package_quantity": 5.76,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T16:00:54.112Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "alternative",
+          "actualSpecification": "120 × 1200 × 4800 mm · 5,76 m²",
+          "preferredSpecification": "120 × 1200 × 5000 mm · 6 m²",
+          "explanation": "Alternative Größe – kein geprüftes Angebot der Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hagebau",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "120 × 1200 × 5000 mm · 6 m²",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "globus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "120 × 1200 × 5000 mm · 6 m²",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "120 × 1200 × 5000 mm · 6 m²",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "knauf-uniflott-5kg-v1",
+      "requested_id": "f123e8b4-bcc3-d801-e8b3-72eb5412c728",
+      "requested_name": "Knauf Uniflott Fugenspachtel, 5 kg",
+      "observed_offer_chains": 5,
+      "selections": [
+        {
+          "store_id": "obi",
+          "price": {
+            "material_id": "f123e8b4-bcc3-d801-e8b3-72eb5412c728",
+            "store_id": "obi",
+            "product_name": "Knauf Uniflott Spachtelmasse 5 kg",
+            "product_url": "https://www.obi.de/p/6728141/knauf-uniflott-spachtelmasse-5-kg",
+            "price": 11.49,
+            "unit_price": 2.3,
+            "unit": "kg",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T21:03:00.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "5 kg",
+          "preferredSpecification": "5 kg",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "bauhaus",
+          "price": {
+            "material_id": "1fc5bf38-3822-f578-7c96-34f5b4b8e68d",
+            "store_id": "bauhaus",
+            "product_name": "Knauf Fugenspachtel Uniflott 25 kg",
+            "product_url": "https://www.bauhaus.info/trockenbauspachtel/knauf-fugenspachtel-uniflott/p/13873894",
+            "price": 42.5,
+            "unit_price": 1.7,
+            "unit": "kg",
+            "package_quantity": 25,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:51:57.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "alternative",
+          "actualSpecification": "25 kg",
+          "preferredSpecification": "5 kg",
+          "explanation": "Alternative Größe – kein geprüftes Angebot der Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hornbach",
+          "price": {
+            "material_id": "f123e8b4-bcc3-d801-e8b3-72eb5412c728",
+            "store_id": "hornbach",
+            "product_name": "Knauf Uniflott Spachtelmasse 5 kg",
+            "product_url": "https://www.hornbach.de/p/knauf-uniflott-spachtelmasse-5-kg/203316/",
+            "price": 11.45,
+            "unit_price": 2.29,
+            "unit": "kg",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:56:10.656Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "5 kg",
+          "preferredSpecification": "5 kg",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "toom",
+          "price": {
+            "material_id": "f123e8b4-bcc3-d801-e8b3-72eb5412c728",
+            "store_id": "toom",
+            "product_name": "Knauf Gipsspachtelmasse 'Uniflott' 5 kg",
+            "product_url": "https://toom.de/p/gipsspachtelmasse-uniflott-5-kg/3250027",
+            "price": 13.99,
+            "unit_price": 2.8,
+            "unit": "kg",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:55:48.968Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "5 kg",
+          "preferredSpecification": "5 kg",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hagebau",
+          "price": {
+            "material_id": "f123e8b4-bcc3-d801-e8b3-72eb5412c728",
+            "store_id": "hagebau",
+            "product_name": "KNAUF Fugenspachtelmasse »Uniflott«, für Gipsfaserplatten und Gipskartonplatten",
+            "product_url": "https://www.hagebau.de/p/knauf-fugenspachtelmasse-uniflott-fuer-gipsfaserplatten-und-gipskartonplatten-anP7000193555/",
+            "price": 11.49,
+            "unit_price": 2.3,
+            "unit": "kg",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:54:51.060Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "5 kg",
+          "preferredSpecification": "5 kg",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "globus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 kg",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 kg",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "knauf-rotband-30kg-v1",
+      "requested_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+      "requested_name": "Knauf Rotband Haftputzgips, 30 kg",
+      "observed_offer_chains": 4,
+      "selections": [
+        {
+          "store_id": "obi",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "30 kg",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "bauhaus",
+          "price": {
+            "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+            "store_id": "bauhaus",
+            "product_name": "Knauf Rotband Haftputzgips 30 kg",
+            "product_url": "https://www.bauhaus.info/gipsputze/knauf-rotband-haftputzgips/p/13874415",
+            "price": 11.5,
+            "unit_price": 0.38,
+            "unit": "kg",
+            "package_quantity": 30,
+            "currency": "EUR",
+            "checked_at": "2026-09-24T17:23:44.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "30 kg",
+          "preferredSpecification": "30 kg",
+          "explanation": "Wunschgröße",
+          "freshness": "stale"
+        },
+        {
+          "store_id": "hornbach",
+          "price": {
+            "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+            "store_id": "hornbach",
+            "product_name": "Knauf Rotband Haftputzgips zum Glätten 30 kg",
+            "product_url": "https://www.hornbach.de/p/knauf-rotband-haftputzgips-zum-glaetten-30-kg/261950/",
+            "price": 11.5,
+            "unit_price": 0.38,
+            "unit": "kg",
+            "package_quantity": 30,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:56:42.708Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "30 kg",
+          "preferredSpecification": "30 kg",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "toom",
+          "price": {
+            "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+            "store_id": "toom",
+            "product_name": "Knauf Haftputzgips 'Rotband' 30 kg",
+            "product_url": "https://toom.de/p/haftputzgips-rotband-30-kg/3053468",
+            "price": 11.99,
+            "unit_price": 0.4,
+            "unit": "kg",
+            "package_quantity": 30,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:56:53.150Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "30 kg",
+          "preferredSpecification": "30 kg",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hagebau",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "30 kg",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "globus",
+          "price": {
+            "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+            "store_id": "globus",
+            "product_name": "Knauf Rotband Haftputzgips 30 kg",
+            "product_url": "https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/",
+            "price": 11.5,
+            "unit_price": 0.38,
+            "unit": "kg",
+            "package_quantity": 30,
+            "currency": "EUR",
+            "checked_at": "2026-09-30T20:35:02.878Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "30 kg",
+          "preferredSpecification": "30 kg",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "30 kg",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "knauf-tiefengrund-5l-v1",
+      "requested_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+      "requested_name": "Knauf Tiefengrund, 5 l",
+      "observed_offer_chains": 6,
+      "selections": [
+        {
+          "store_id": "obi",
+          "price": {
+            "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+            "store_id": "obi",
+            "product_name": "Knauf Tiefengrund LF 5 l",
+            "product_url": "https://www.obi.de/p/6939854/knauf-tiefengrund-lf-5-l",
+            "price": 33.99,
+            "unit_price": 6.8,
+            "unit": "l",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-09-24T17:23:44.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "5 l",
+          "preferredSpecification": "5 l",
+          "explanation": "Wunschgröße",
+          "freshness": "stale"
+        },
+        {
+          "store_id": "bauhaus",
+          "price": {
+            "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+            "store_id": "bauhaus",
+            "product_name": "Knauf Tiefengrund 5 l",
+            "product_url": "https://www.bauhaus.info/tiefengrund-haftgrund/knauf-tiefengrund/p/13868964",
+            "price": 31.45,
+            "unit_price": 6.29,
+            "unit": "l",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:51:57.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "5 l",
+          "preferredSpecification": "5 l",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hornbach",
+          "price": {
+            "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+            "store_id": "hornbach",
+            "product_name": "Knauf Tiefengrund 5 l",
+            "product_url": "https://www.hornbach.de/p/knauf-tiefengrund-5-l/253689/",
+            "price": 31.45,
+            "unit_price": 6.29,
+            "unit": "l",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:57:07.494Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "5 l",
+          "preferredSpecification": "5 l",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "toom",
+          "price": {
+            "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+            "store_id": "toom",
+            "product_name": "Knauf Tiefengrund 5 l",
+            "product_url": "https://toom.de/p/tiefengrund-5-l/3054172",
+            "price": 33.99,
+            "unit_price": 6.8,
+            "unit": "l",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:57:09.203Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "5 l",
+          "preferredSpecification": "5 l",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hagebau",
+          "price": {
+            "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+            "store_id": "hagebau",
+            "product_name": "KNAUF Tiefengrundierung »Tiefengrund plus«, transparent (milchig), 5 l",
+            "product_url": "https://www.hagebau.de/p/knauf-tiefengrundierung-transparent-milchig-5-l-anP7000204795/",
+            "price": 31.99,
+            "unit_price": 6.4,
+            "unit": "l",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:51:44.264Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "5 l",
+          "preferredSpecification": "5 l",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "globus",
+          "price": {
+            "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+            "store_id": "globus",
+            "product_name": "Knauf Tiefengrund 5 l",
+            "product_url": "https://www.globus-baumarkt.de/p/knauf-tiefengrund-5-l-0779050059/",
+            "price": 31.45,
+            "unit_price": 6.29,
+            "unit": "l",
+            "package_quantity": 5,
+            "currency": "EUR",
+            "checked_at": "2026-09-30T20:35:00.784Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "5 l",
+          "preferredSpecification": "5 l",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 l",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "acryl-weiss-310ml-v1",
+      "requested_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+      "requested_name": "Acryl-Dichtstoff weiß, überstreichbar, 310 ml",
+      "observed_offer_chains": 5,
+      "selections": [
+        {
+          "store_id": "obi",
+          "price": {
+            "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+            "store_id": "obi",
+            "product_name": "CMI Acryl Weiß 310 ml",
+            "product_url": "https://www.obi.de/p/4771325/cmi-acryl-weiss-310-ml",
+            "price": 2.19,
+            "unit_price": 7.06,
+            "unit": "l",
+            "package_quantity": 0.31,
+            "currency": "EUR",
+            "checked_at": "2026-10-02T22:02:39.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "310 ml",
+          "preferredSpecification": "310 ml",
+          "explanation": "Wunschgröße",
+          "freshness": "fresh"
+        },
+        {
+          "store_id": "bauhaus",
+          "price": {
+            "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+            "store_id": "bauhaus",
+            "product_name": "Probau Maleracryl Plus Weiß 310 ml",
+            "product_url": "https://www.bauhaus.info/acryl/probau-maleracryl-plus/p/26149033",
+            "price": 3.95,
+            "unit_price": 12.74,
+            "unit": "l",
+            "package_quantity": 0.31,
+            "currency": "EUR",
+            "checked_at": "2026-10-02T22:02:39.000Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "310 ml",
+          "preferredSpecification": "310 ml",
+          "explanation": "Wunschgröße",
+          "freshness": "fresh"
+        },
+        {
+          "store_id": "hornbach",
+          "price": {
+            "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+            "store_id": "hornbach",
+            "product_name": "PRECIT Acryl weiß 310 ml; Acrylat Dichtstoff, Acrylatbasis",
+            "product_url": "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/",
+            "price": 4.89,
+            "unit_price": 15.77,
+            "unit": "l",
+            "package_quantity": 0.31,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:57:35.807Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "310 ml",
+          "preferredSpecification": "310 ml",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "toom",
+          "price": {
+            "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+            "store_id": "toom",
+            "product_name": "toom Maleracryl \"express\" weiß 310 ml; überstreichbar",
+            "product_url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+            "price": 5.99,
+            "unit_price": 19.32,
+            "unit": "l",
+            "package_quantity": 0.31,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:53:28.751Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "310 ml",
+          "preferredSpecification": "310 ml",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "hagebau",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "310 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "globus",
+          "price": {
+            "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+            "store_id": "globus",
+            "product_name": "Acryl weiß 310 ml",
+            "product_url": "https://www.globus-baumarkt.de/p/acryl-weiss-310-ml-0779051109/",
+            "price": 1.99,
+            "unit_price": 6.42,
+            "unit": "l",
+            "package_quantity": 0.31,
+            "currency": "EUR",
+            "checked_at": "2026-10-02T22:12:02.180Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "310 ml",
+          "preferredSpecification": "310 ml",
+          "explanation": "Wunschgröße",
+          "freshness": "fresh"
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "310 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "steinwolle-sonorock-040-40-7-5m2-v1",
+      "requested_id": "a77f72d7-ba2c-f7ee-d4ea-8a3c6899322c",
+      "requested_name": "Rockwool Sonorock Steinwolle WLG 040, 40 × 625 × 1000 mm, 7,5 m²/Paket",
+      "observed_offer_chains": 2,
+      "selections": [
+        {
+          "store_id": "obi",
+          "price": {
+            "material_id": "a77f72d7-ba2c-f7ee-d4ea-8a3c6899322c",
+            "store_id": "obi",
+            "product_name": "Rockwool Trennwandplatte Sonorock WLG 040 40 mm Steinwolle, 7,5 m²/Paket",
+            "product_url": "https://www.obi.de/p/2877751/rockwool-trennwandplatte-sonorock-wlg-40-40-mm-steinwolle",
+            "price": 32.92,
+            "unit_price": 4.39,
+            "unit": "m2",
+            "package_quantity": 7.5,
+            "currency": "EUR",
+            "checked_at": "2026-10-02T22:12:02.180Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+          "preferredSpecification": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+          "explanation": "Wunschgröße",
+          "freshness": "fresh"
+        },
+        {
+          "store_id": "bauhaus",
+          "price": {
+            "material_id": "a77f72d7-ba2c-f7ee-d4ea-8a3c6899322c",
+            "store_id": "bauhaus",
+            "product_name": "Rockwool Sonorock Steinwolle Trennwandplatte 40 mm, 7,5 m²/Paket",
+            "product_url": "https://www.bauhaus.info/steinwolle/rockwool-steinwolle-sonorock-trennwandplatte/p/13905339",
+            "price": 32.6,
+            "unit_price": 4.35,
+            "unit": "m2",
+            "package_quantity": 7.5,
+            "currency": "EUR",
+            "checked_at": "2026-10-02T22:12:02.180Z",
+            "source": "manual",
+            "price_scope": "chain",
+            "availability": null
+          },
+          "match": "exact",
+          "actualSpecification": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+          "preferredSpecification": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+          "explanation": "Wunschgröße",
+          "freshness": "fresh"
+        },
+        {
+          "store_id": "hornbach",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "toom",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hagebau",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "globus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+      "requested_id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+      "requested_name": "Sanitär-Silikon weiß, essigvernetzend, 310 ml",
+      "observed_offer_chains": 1,
+      "selections": [
+        {
+          "store_id": "obi",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "310 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "bauhaus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "310 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hornbach",
+          "price": {
+            "material_id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+            "store_id": "hornbach",
+            "product_name": "Akkit 601 Sanitär Silikon weiß 310 ml; Essig vernetztes Silikon",
+            "product_url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+            "price": 7.89,
+            "unit_price": 25.45,
+            "unit": "l",
+            "package_quantity": 0.31,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T15:53:24.542Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "310 ml",
+          "preferredSpecification": "310 ml",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "toom",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "310 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hagebau",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "310 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "globus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "310 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "310 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "pu-schaum-1k-b2-genius-750ml-v1",
+      "requested_id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+      "requested_name": "Soudal PU-Bauschaum 1K B2 Genius Gun beige, 750 ml",
+      "observed_offer_chains": 1,
+      "selections": [
+        {
+          "store_id": "obi",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "750 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "bauhaus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "750 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hornbach",
+          "price": {
+            "material_id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+            "store_id": "hornbach",
+            "product_name": "Soudal Bauschaum B2 Genius Gun beige 750 ml; Polyurethan (PU); B2 normal entflammbar; einkomponentiger PU-Schaum",
+            "product_url": "https://www.hornbach.de/p/soudal-bauschaum-b2-genius-gun-beige-750-ml/5125626/",
+            "price": 11.95,
+            "unit_price": 15.93,
+            "unit": "l",
+            "package_quantity": 0.75,
+            "currency": "EUR",
+            "checked_at": "2026-10-01T21:02:51.916Z",
+            "source": "automatic",
+            "price_scope": "chain",
+            "availability": "InStock"
+          },
+          "match": "exact",
+          "actualSpecification": "750 ml",
+          "preferredSpecification": "750 ml",
+          "explanation": "Wunschgröße",
+          "freshness": "cached"
+        },
+        {
+          "store_id": "toom",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "750 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hagebau",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "750 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "globus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "750 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "750 ml",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    },
+    {
+      "requested_slug": "haftgrund-quarzsand-5l-v1",
+      "requested_id": "8eaeded8-90f3-a96c-ba42-fbc8836eebdb",
+      "requested_name": "Haftgrund mit Quarzsand, gebrauchsfertig, 5 l",
+      "observed_offer_chains": 0,
+      "selections": [
+        {
+          "store_id": "obi",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 l",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "bauhaus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 l",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hornbach",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 l",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "toom",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 l",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hagebau",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 l",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "globus",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 l",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        },
+        {
+          "store_id": "hellweg",
+          "match": "unavailable",
+          "actualSpecification": null,
+          "preferredSpecification": "5 l",
+          "explanation": "Kein geprüftes Angebot für diese Materialauswahl",
+          "freshness": null
+        }
+      ],
+      "actual_component_ssr": {
+        "component": "src/components/ProductComparison.tsx",
+        "rendered_cards": 8,
+        "synthetic_branch_fixtures_only": true,
+        "own_routes_and_actual_product_links": true,
+        "actual_package_prices_and_specifications": true
+      }
+    }
+  ],
+  "schema_sha256": "c502fa273bfb4a702222282ec128a4883b9e95c2aa75ca916f4d1b7e6b68efa7",
+  "seed_sha256": "97a69553ed9391570b45b9dcc3b5d906116bba02251a49e1d4ec603b60738061",
+  "canonical_materials": 34,
+  "rpc_calls": 64,
+  "history_rows": 64,
+  "verified_public_prices": 59,
+  "observed_chain_count": 6,
+  "observation_window": {
+    "oldest": "2026-09-24T17:23:44.000Z",
+    "newest": "2026-10-02T22:12:02.180Z"
+  },
+  "summary": {
+    "preferred_materials": 11,
+    "materials_with_observed_offers": 10,
+    "exact_selections": 26,
+    "alternative_selections": 9,
+    "unavailable_selections": 42
+  },
+  "completed_at": "2026-10-03T07:06:39.274Z",
+  "rendering_scope": "Actual production ProductComparison/StoreCard server rendering with real SQL-read prices and explicitly synthetic branch/location fixtures. Does not prove browser Maps access, real branch existence or stock."
+}

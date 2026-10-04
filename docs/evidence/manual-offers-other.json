@@ -1,0 +1,36 @@
+[
+  {
+    "material_slug": "knauf-rotband-30kg-v1",
+    "store_id": "toom",
+    "product_name": "Knauf Haftputzgips 'Rotband' 30 kg",
+    "product_url": "https://toom.de/p/haftputzgips-rotband-30-kg/3053468",
+    "price": 11.99,
+    "package_quantity": 30,
+    "verification_note": "Manuell geprüft am 24.09.2026: Offizielle toom-Kategorieseite direkt per robots-konformem HTTP abgerufen; konkrete Produktkarte SKU3053468 und eingebettete öffentliche Kartendaten zeigen primären Packungspreis11,99EUR und separat Grundpreis0,40EUR/kg. Produktdetailseite bestätigt Knauf Rotband30kg. Keine Kundenkartenpreise verwendet; Mengenrabatt-Badge vorhanden, aber primärer Preis ohne Mindestmenge oder ab-Angabe. Preisbeobachtung des Onlinekatalogs; keine Aussage zum Filialbestand. Quelle:https://toom.de/c/bauen-renovieren/baustoffe",
+    "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+    "currency": "EUR",
+    "base_unit": "kg",
+    "checked_at": "2026-09-24T17:24:54.760Z",
+    "availability": null,
+    "observed_specs": {
+      "weight_kg": 30
+    }
+  },
+  {
+    "material_slug": "knauf-uniflott-25kg-v1",
+    "store_id": "toom",
+    "product_name": "Knauf Spachtelmasse 'Uniflott' 25 kg",
+    "product_url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+    "price": 43.99,
+    "package_quantity": 25,
+    "verification_note": "Manuell geprüft am 24.09.2026: Offizielle toom-Kategorieseite direkt per robots-konformem HTTP abgerufen; konkrete Produktkarte SKU3053754 und eingebettete öffentliche Kartendaten zeigen Packungspreis43,99EUR und separat Grundpreis1,76EUR/kg. Produktdetailseite bestätigt Knauf Uniflott25kg. Unbedingter primärer Preis, keine Sonder-/Kundenkartenpreise; Online-Lieferung angezeigt. Generisches Bild-Alt-Attribut5kg wurde nicht als Produktspezifikation übernommen; Titel und Inhaltstabelle des konkreten Artikels nennen25kg. Keine Filialbestandsaussage. Quelle:https://toom.de/c/bauen-renovieren/baustoffe",
+    "material_id": "1fc5bf38-3822-f578-7c96-34f5b4b8e68d",
+    "currency": "EUR",
+    "base_unit": "kg",
+    "checked_at": "2026-09-24T17:24:54.760Z",
+    "availability": null,
+    "observed_specs": {
+      "weight_kg": 25
+    }
+  }
+]

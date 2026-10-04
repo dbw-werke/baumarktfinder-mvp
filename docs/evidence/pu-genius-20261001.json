@@ -1,0 +1,163 @@
+{
+  "store_id": "hornbach",
+  "url": "https://www.hornbach.de/p/soudal-bauschaum-b2-genius-gun-beige-750-ml/5125626/",
+  "checked_at": "2026-10-01T21:02:51.916Z",
+  "html_file": "work/coverage-20261001/extra-pu-genius.html",
+  "products": [
+    {
+      "name": "Soudal Bauschaum B2 Genius Gun beige 750 ml; Polyurethan (PU); B2 normal entflammbar",
+      "url": "https://www.hornbach.de/p/soudal-bauschaum-b2-genius-gun-beige-750-ml/5125626/",
+      "price": 11.95,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "json-ld-offer",
+      "availability": "InStock",
+      "externalId": "5125626",
+      "observedSpecs": {},
+      "soldIndividually": true,
+      "retrievedAt": "2026-10-01T21:02:51.916Z"
+    }
+  ],
+  "attributes": [
+    {
+      "__typename": "ProductAttribute",
+      "key": "Artikeltyp",
+      "value": "Schaum"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Ausführung",
+      "value": "PU-Schaum"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Einsatzbereich",
+      "value": "Außen, Innen"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Anwendung",
+      "value": "Abdichten, Ausfüllen, Dämmen, Isolieren"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Anwendungsbereich",
+      "value": "Boden, Decke, Wand"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Eigenschaft",
+      "value": "Schwindarm, Wiederverschließbar, Ohne Zusatz von Lösemitteln, Überstreichbar, Überputzbar"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Inhalt",
+      "value": "750 ml"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Grundfarbe",
+      "value": "Beige"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Inhaltsstoffe",
+      "value": "Polyurethan (PU)"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Emissionsklasse",
+      "value": "EC1 plus"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Verarbeitungstemperatur",
+      "value": "5 °C - 30 °C"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Isocyanatgehalt",
+      "value": "> 1 %"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Geeignet für",
+      "value": "Fenster, Haustür, Badewannen"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Baustoffklasse",
+      "value": "B2 normal entflammbar"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Transporthinweis",
+      "value": "Beim Transport im KFZ die Dose stehend im Karton bzw. Laderaum lagern - keinesfalls im Fond"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Verarbeitungshinweis",
+      "value": "Während der Verarbeitung Schutzhandschuhe und Schutzbrille tragen"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Entsorgungshinweis",
+      "value": "Gebrauchte PU-Schaumdosen können kostenfrei im Markt zurückgegeben werden"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Aushärtungszeit",
+      "value": "Schneidbar nach 45 Minuten"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Signalwort",
+      "value": "Gefahr"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Gefahrenhinweise (H-Sätze)",
+      "value": "(H222) Extrem entzündbares Aerosol., (H229) Behälter steht unter Druck: kann bei Erwärmung bersten., (H315) Verursacht Hautreizungen., (H317) Kann allergische Hautreaktionen verursachen., (H319) Verursacht schwere Augenreizung., (H332) Gesundheitsschädlich bei Einatmen., (H334) Kann bei Einatmen Allergie, asthmaartige Symptome oder Atembeschwerden verursachen., (H335) Kann die Atemwege reizen., (H351) Kann vermutlich Krebs erzeugen., (H373) Kann die Organe schädigen bei längerer oder wiederholter Exposition."
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Sicherheitshinweise (P-Sätze)",
+      "value": "(P102) Darf nicht in die Hände von Kindern gelangen., (P103) Vor Gebrauch Kennzeichnungsetikett lesen."
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Rohdichteklasse",
+      "value": "25 kg/m³"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "Hinweis zur Entsorgung",
+      "value": "Bitte beachte die Hinweise zur Entsorgung"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "AKN (Artikelkurznummer)",
+      "value": "T52M"
+    },
+    {
+      "__typename": "ProductAttribute",
+      "key": "EAN",
+      "value": "2005125626003, 5411183102279"
+    }
+  ],
+  "description": "Möchtest Du Fenster- und Türrahmen effektiv abdichten? Der Soudal Bauschaum B2 Genius Gun bietet Dir die Lösung.<br /><br /><b>Produktmerkmale des Soudal Bauschaum B2 Genius Gun beige 750 ml</b><br />Darum solltest Du zugreifen: Dieser einkomponentige PU-Schaum ist ideal zum Abdichten, Ausfüllen und Dämmen von Hohlräumen an Boden, Decke und Wand. Dank der schnellen Aushärtungszeit ist der Schaum bereits nach 45 Minuten schneidbar, was eine zügige Weiterverarbeitung ermöglicht. Der Schaum ist schwindarm, lösemittelfrei und kann nach dem Aushärten überstrichen oder überputzt werden, was Dir Flexibilität bei der Gestaltung bietet. Die wiederverschließbare Genius Gun sorgt für eine einfache Handhabung und ermöglicht eine präzise Dosierung. Der Schaum ist sowohl für den Innen- als auch Außenbereich geeignet und bietet eine zuverlässige Abdichtung für Fenster, Haustüren und Badewannen. Mit einer Baustoffklasse B2 ist der Schaum normal entflammbar und bietet somit eine solide Sicherheit.<br /><br />Festgezurrt: Der Soudal Bauschaum B2 Genius Gun ist die ideale Wahl für schnelle und effektive Abdichtungsarbeiten im Innen- und Außenbereich.",
+  "merchant": {
+    "__typename": "Merchant",
+    "isMarketplaceMerchant": false,
+    "name": "HORNBACH",
+    "merchantId": "DE850",
+    "policiesHintText": "Informationen des Verkäufers, wie z. B. Rückgabebedingungen und AGB, finden Sie bei Klick auf den Verkäufernamen.",
+    "merchantProductsSearchUrl": null,
+    "category": "DV"
+  },
+  "package_unit": {
+    "__typename": "DefaultSalesUnit",
+    "salesUnitId": "226117",
+    "productMeasurementUnitCode": "ST"
+  }
+}

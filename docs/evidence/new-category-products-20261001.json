@@ -1,0 +1,71 @@
+{
+  "reports": [
+    {
+      "store_id": "hornbach",
+      "key": "silikon",
+      "url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+      "checked_at": "2026-10-01T15:53:24.542Z",
+      "html_file": "work/coverage-20261001/extra-silikon.html",
+      "products": [
+        {
+          "name": "Akkit 601 Sanitär Silikon weiß 310 ml",
+          "url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+          "price": 7.89,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "externalId": "10313761",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-01T15:53:24.542Z"
+        }
+      ]
+    },
+    {
+      "store_id": "hornbach",
+      "key": "pu750",
+      "url": "https://www.hornbach.de/p/beko-montageschaum-750-ml-280-752/12613718/",
+      "checked_at": "2026-10-01T15:53:26.614Z",
+      "html_file": "work/coverage-20261001/extra-pu750.html",
+      "products": [
+        {
+          "name": "beko Montageschaum 750 ml 280 752",
+          "url": "https://www.hornbach.de/p/beko-montageschaum-750-ml-280-752/12613718/",
+          "price": 9.99,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "externalId": "12613718",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-01T15:53:26.614Z"
+        }
+      ]
+    },
+    {
+      "store_id": "toom",
+      "key": "acryl310",
+      "url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+      "checked_at": "2026-10-01T15:53:28.751Z",
+      "html_file": "work/coverage-20261001/extra-acryl310.html",
+      "products": [
+        {
+          "name": "toom Maleracryl \"express\" weiß 310 ml",
+          "url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+          "externalId": "2350309",
+          "price": 5.99,
+          "priceBasis": "package",
+          "priceSource": "retailer-product-state",
+          "priceBasisEvidence": "toom-same-sku-PCE-and-price-metadata",
+          "currency": "EUR",
+          "availability": null,
+          "soldIndividually": true,
+          "observedSpecs": {},
+          "retrievedAt": "2026-10-01T15:53:28.751Z"
+        }
+      ]
+    }
+  ]
+}
