@@ -54,16 +54,19 @@ export function confirmHornbachPackagePrices(html, products, pageUrl) {
   }).filter(Boolean);
 }
 
-export function extractToomProductState(html, pageUrl, now = new Date()) {
+export function extractToomProductState(html, pageUrl, now = new Date(), { identityOnly = false } = {}) {
   let data;
   try { const encoded = html.match(/<div\b(?=[^>]*\bid="root")(?=[^>]*\bdata-props="([^"]+)")[^>]*>/)?.[1];
     data = JSON.parse(decodeURIComponent(decode(encoded || "")))?.content; }
   catch { return []; }
   const info = data?.basic_info, details = data?.details, metadata = data?.meta_data;
-  if (!info || !metadata || details?.base_quantity_unit !== "PCE" || !sameUrl(metadata.canonical_url, pageUrl)
-    || !pageUrl.replace(/\/$/, "").endsWith(`/${info.sku}`) || typeof metadata.meta_price !== "number" || metadata.meta_price <= 0
+  if (!info || !text(info.name) || !metadata || details?.base_quantity_unit !== "PCE" || !sameUrl(metadata.canonical_url, pageUrl)
+    || !pageUrl.replace(/\/$/, "").endsWith(`/${info.sku}`)) return [];
+  // Hydrated head metadata changes during a sale while root.meta_price keeps the old price.
+  // Identity-only callers must obtain a separate current price from the official API/buybox.
+  if (!identityOnly && (typeof metadata.meta_price !== "number" || metadata.meta_price <= 0
     || Number(meta(html, "product:price:amount")) !== metadata.meta_price || text(meta(html, "og:title")) !== text(info.name)
-    || !/Alle Preisangaben in EUR inkl\./.test(html)) return [];
+    || !/Alle Preisangaben in EUR inkl\./.test(html))) return [];
   const observedSpecs = {};
   const characteristics = Object.values(data.characteristics || {}).flatMap((group) => Array.isArray(group) ? group : []);
   const identityProperties = [];
@@ -97,7 +100,7 @@ export function extractToomProductState(html, pageUrl, now = new Date()) {
   // Avoid negations and recommendations; do not scan arbitrary page descriptions.
   const properties = Array.isArray(details.selling_points?.items) ? details.selling_points.items.map(text) : [];
   if (properties.some((value) => /^(?:bereits nach \d+ min )?überstreichbar$/i.test(value))) name += "; überstreichbar";
-  return [{ name, url: metadata.canonical_url, externalId: String(info.sku), price: metadata.meta_price,
+  return [{ name, url: metadata.canonical_url, externalId: String(info.sku), ...(!identityOnly ? { price: metadata.meta_price } : {}),
     priceBasis: "package", priceSource: "retailer-product-state", priceBasisEvidence: "toom-same-sku-PCE-and-price-metadata",
     currency: "EUR", availability: null, soldIndividually: true, observedSpecs, retrievedAt: now.toISOString(),
     brand: brand || null, category: Array.isArray(data.breadcrumb) ? data.breadcrumb.map((entry) => text(entry.name || entry.title || entry.label)).filter(Boolean).join(" > ") || null : null,

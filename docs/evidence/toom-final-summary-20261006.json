@@ -1,0 +1,185 @@
+{
+  "checked_at": "2026-10-06T20:31:35.336Z",
+  "stored_refreshable": 13,
+  "first_pass": {
+    "checked": 17,
+    "changed": 2,
+    "failed": 4
+  },
+  "repeat": {
+    "checked": 13,
+    "changed": 0,
+    "failed": 0
+  },
+  "hourly_schedule_configured": true,
+  "hourly_schedule_active": false,
+  "persistence": "local_cache_only",
+  "failures": [
+    {
+      "material": "Direktabhänger CD 60/27, 125 mm, 1 Stück",
+      "failure_reason": "no_valid_product_match",
+      "candidates": [
+        {
+          "name": "Knauf Direktabhänger CD-Profil 60/27 100 Stück",
+          "url": "https://toom.de/p/direktabhaenger-cd-profil-6027-100-stueck/3150358",
+          "price": 42.99,
+          "rejection_reason": "wrong-or-missing-profile"
+        },
+        {
+          "name": "Knauf Direktabhänger für CD-Profile",
+          "url": "https://toom.de/p/direktabhaenger-fuer-cd-profile/3153733",
+          "price": 0.69,
+          "rejection_reason": "wrong-or-missing-profile"
+        },
+        {
+          "name": "Knauf Direktabhänger für Holzlatten 125 mm 100 Stück",
+          "url": "https://toom.de/p/direktabhaenger-fuer-holzlatten-125-mm-100-stueck/3150357",
+          "price": 42.99,
+          "rejection_reason": "wrong-or-missing-profile"
+        },
+        {
+          "name": "Knauf Multiverbinder CD-Profil 60/27 mm",
+          "url": "https://toom.de/p/multiverbinder-cd-profil-6027-mm/3153910",
+          "price": 0.59,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Kreuzverbinder CD-Profil 60/27 mm",
+          "url": "https://toom.de/p/kreuzverbinder-cd-profil-6027-mm/3153920",
+          "price": 0.59,
+          "rejection_reason": "incompatible_product_family"
+        }
+      ]
+    },
+    {
+      "material": "Knauf Perlfix Ansetzgips, 30 kg",
+      "failure_reason": "no_valid_product_match",
+      "candidates": [
+        {
+          "name": "Knauf Ansatzgips 'Perlfix' 10 kg",
+          "url": "https://toom.de/p/ansatzgips-perlfix-10-kg/3053150",
+          "price": 7.69,
+          "rejection_reason": "wrong-specification:weight_kg"
+        },
+        {
+          "name": "Knauf Spachtelmasse 'Uniflott' 5 kg",
+          "url": "https://toom.de/p/spachtelmasse-uniflott-5-kg/3053743",
+          "price": 9.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Maschinenputz 'MP 75' 30 kg",
+          "url": "https://toom.de/p/maschinenputz-mp-75-30-kg/3051675",
+          "price": 11.49,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Haftputzgips 'Rotband' 30 kg",
+          "url": "https://toom.de/p/haftputzgips-rotband-30-kg/3053468",
+          "price": 11.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Fertigputzgips 'Goldband' 30 kg",
+          "url": "https://toom.de/p/fertigputzgips-goldband-30-kg/3053479",
+          "price": 9.49,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Flächendicht 10 kg",
+          "url": "https://toom.de/p/flaechendicht-10-kg/2350592",
+          "price": 72.99,
+          "rejection_reason": "incompatible_product_family"
+        }
+      ]
+    },
+    {
+      "material": "Sanitär-Silikon weiß, essigvernetzend, 310 ml",
+      "failure_reason": "no_valid_product_match",
+      "candidates": [
+        {
+          "name": "toom Sanitärsilikon weiß 310 ml",
+          "url": "https://toom.de/p/sanitaersilikon-weiss-310-ml/2360002",
+          "price": 9.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Alpina Sanitärsilikon 'Dusch- & Bad Silikon' weiß 300 ml",
+          "url": "https://toom.de/p/sanitaersilikon-dusch-bad-silikon-weiss-300-ml/2360441",
+          "price": 14.99,
+          "rejection_reason": "wrong-specification:volume_l"
+        },
+        {
+          "name": "Knauf Sanitärsilikon weiß 300 ml",
+          "url": "https://toom.de/p/sanitaersilikon-weiss-300-ml/2360238",
+          "price": 11.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Knauf Sanitär Express Silikon weiß 300 ml",
+          "url": "https://toom.de/p/sanitaer-express-silikon-weiss-300-ml/2360401",
+          "price": 12.49,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Pronova Sanitärsilikon 'Eco' weiß 280 ml",
+          "url": "https://toom.de/p/sanitaersilikon-eco-weiss-280-ml/2360371",
+          "price": 9.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Sista Sanitärsilikon 'Bad' weiß 280 ml",
+          "url": "https://toom.de/p/sanitaersilikon-bad-weiss-280-ml/10468685",
+          "price": 9.99,
+          "rejection_reason": "unverified-essential-attribute"
+        }
+      ]
+    },
+    {
+      "material": "Soudal PU-Bauschaum 1K B2 Genius Gun beige, 750 ml",
+      "failure_reason": "no_valid_product_match",
+      "candidates": [
+        {
+          "name": "Soudal Brunnenschaum 750 ml",
+          "url": "https://toom.de/p/brunnenschaum-750-ml/3352151",
+          "price": 14.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Soudal Bauschaum 'Genius Gun' 500 ml",
+          "url": "https://toom.de/p/bauschaum-genius-gun-500-ml/3350178",
+          "price": 14.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Soudal Bauschaum 750 ml",
+          "url": "https://toom.de/p/bauschaum-750-ml/3352195",
+          "price": 13.79,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Soudal Dämmstoffkleber 'Genius' orange 600 ml",
+          "url": "https://toom.de/p/daemmstoffkleber-genius-orange-600-ml/3350173",
+          "price": 13.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Soudal Dämmstoffkleber-Pistole beige 750 ml",
+          "url": "https://toom.de/p/daemmstoffkleber-pistole-beige-750-ml/3350174",
+          "price": 17.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Soudal Energiesparschaum 500 ml",
+          "url": "https://toom.de/p/energiesparschaum-500-ml/2350390",
+          "price": 13.99,
+          "rejection_reason": "unverified-essential-attribute"
+        }
+      ]
+    }
+  ],
+  "verified_tests": 247,
+  "lint": "passed",
+  "build": "passed",
+  "production_api": "passed"
+}

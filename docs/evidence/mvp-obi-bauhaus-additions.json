@@ -1,0 +1,681 @@
+{
+  "observations": [
+    {
+      "key": "armierungsgewebe",
+      "store_id": "obi",
+      "product_name": "Glasfasergewebe 1 m x 10 m",
+      "product_url": "https://www.obi.de/p/3263647/glasfasergewebe-1-m-x-10-m",
+      "price": 24.49,
+      "package_quantity": 10,
+      "unit": "m2",
+      "actual_package": "10 m²",
+      "unit_price": 2.45,
+      "currency": "EUR",
+      "checked_at": "2026-10-04T08:46:01.431Z",
+      "source": "automatic",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "width_mm": 1000,
+        "length_mm": 10000,
+        "area_m2": 10
+      },
+      "evidence_file": "work/obi-query-cache.json",
+      "note": "Official PDP shows dimensions and actual area; grammage is not explicitly declared. Do not infer 160 g/m² from shipping weight.",
+      "raw_product": {
+        "name": "Glasfasergewebe 1 m x 10 m",
+        "url": "https://www.obi.de/p/3263647/glasfasergewebe-1-m-x-10-m",
+        "price": 24.49,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "obi-rendered-product",
+        "seller": "OBI E-Commerce GmbH",
+        "priceScope": "chain",
+        "availability": "OnlineOnly",
+        "retrievedAt": "2026-10-04T08:46:01.431Z",
+        "externalId": "3263647",
+        "category": null,
+        "attributes": [],
+        "declaredUnitPrice": 2.45,
+        "declaredUnit": "m2",
+        "priceBasisEvidence": "visible-own-product-total",
+        "verificationStatus": "verified",
+        "retrievalMethod": "playwright"
+      }
+    },
+    {
+      "key": "direktabhaenger",
+      "store_id": "obi",
+      "product_name": "Direktabhänger 125 mm",
+      "product_url": "https://www.obi.de/p/2353639/direktabhaenger-125-mm",
+      "price": 0.59,
+      "package_quantity": 1,
+      "unit": "piece",
+      "actual_package": "125 mm · 1 Stück",
+      "unit_price": null,
+      "currency": "EUR",
+      "checked_at": "2026-10-04T08:39:11.464Z",
+      "source": "automatic",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd"
+      },
+      "evidence_file": "work/obi-query-cache.json",
+      "note": "Official PDP rechecked 2026-10-08 states for CD profiles and 125 mm; old verified price date retained.",
+      "raw_product": {
+        "name": "Direktabhänger 125 mm",
+        "url": "https://www.obi.de/p/2353639/direktabhaenger-125-mm",
+        "price": 0.59,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "obi-rendered-product",
+        "seller": "OBI E-Commerce GmbH",
+        "priceScope": "chain",
+        "availability": "OnlineOnly",
+        "retrievedAt": "2026-10-04T08:39:11.464Z",
+        "externalId": "2353639",
+        "category": null,
+        "attributes": [
+          {
+            "name": "Gewicht",
+            "value": "50 g"
+          },
+          {
+            "name": "Höhe",
+            "value": "1 mm"
+          },
+          {
+            "name": "Breite",
+            "value": "3,0 cm"
+          },
+          {
+            "name": "Tiefe",
+            "value": "12,5 cm"
+          }
+        ],
+        "priceBasisEvidence": "visible-own-product-single-purchase-price",
+        "verificationStatus": "verified",
+        "retrievalMethod": "playwright"
+      }
+    },
+    {
+      "key": "feuchtraumplatte",
+      "store_id": "obi",
+      "product_name": "Gipskartonplatte 12,5 mm x 1.250 mm x 2.000 mm imprägniert",
+      "product_url": "https://www.obi.de/p/5407580/gipskartonplatte-12-5-mm-x-1-250-mm-x-2-000-mm-impraegniert",
+      "price": 15.97,
+      "package_quantity": 2.5,
+      "unit": "m2",
+      "actual_package": "12,5 × 1250 × 2000 mm · 2,5 m²",
+      "unit_price": 6.39,
+      "currency": "EUR",
+      "checked_at": "2026-10-03T17:53:03.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "thickness_mm": 12.5,
+        "width_mm": 1250,
+        "length_mm": 2000,
+        "area_m2": 2.5
+      },
+      "evidence_file": "src/data/obi-verified-products.json",
+      "note": null,
+      "raw_product": {
+        "name": "Gipskartonplatte 12,5 mm x 1.250 mm x 2.000 mm imprägniert",
+        "url": "https://www.obi.de/p/5407580/gipskartonplatte-12-5-mm-x-1-250-mm-x-2-000-mm-impraegniert",
+        "price": 15.97,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "manual-admin-verification",
+        "retrievedAt": "2026-10-03T17:53:03.000Z",
+        "availability": "OnlineOnly",
+        "observedSpecs": {
+          "thickness_mm": 12.5,
+          "width_mm": 1250,
+          "length_mm": 2000,
+          "area_m2": 2.5
+        },
+        "declaredUnitPrice": 6.39,
+        "seller": "OBI E-Commerce GmbH",
+        "verification": {
+          "method": "official-product-page-via-web-renderer",
+          "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+        }
+      }
+    },
+    {
+      "key": "haftgrund",
+      "store_id": "obi",
+      "product_name": "Knauf Spezialhaftgrund 2,5 kg",
+      "product_url": "https://www.obi.de/p/3845005/knauf-spezialhaftgrund-2-5-kg",
+      "price": 25.99,
+      "package_quantity": 2.5,
+      "unit": "kg",
+      "actual_package": "2,5 kg",
+      "unit_price": 10.4,
+      "currency": "EUR",
+      "checked_at": "2026-10-03T17:53:03.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "weight_kg": 2.5
+      },
+      "evidence_file": "src/data/obi-verified-products.json",
+      "note": "Actual package is 2.5 kg; do not relabel as 5 l.",
+      "raw_product": {
+        "name": "Knauf Spezialhaftgrund 2,5 kg",
+        "url": "https://www.obi.de/p/3845005/knauf-spezialhaftgrund-2-5-kg",
+        "price": 25.99,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "manual-admin-verification",
+        "retrievedAt": "2026-10-03T17:53:03.000Z",
+        "availability": "OnlineOnly",
+        "observedSpecs": {
+          "weight_kg": 2.5
+        },
+        "declaredUnitPrice": 10.4,
+        "seller": "OBI E-Commerce GmbH",
+        "verification": {
+          "method": "official-product-page-via-web-renderer",
+          "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+        }
+      }
+    },
+    {
+      "key": "rotband",
+      "store_id": "obi",
+      "product_name": "Knauf Rotband Haftputz 30 kg",
+      "product_url": "https://www.obi.de/p/2263044/knauf-rotband-haftputz-30-kg",
+      "price": 11.59,
+      "package_quantity": 30,
+      "unit": "kg",
+      "actual_package": "30 kg",
+      "unit_price": 0.39,
+      "currency": "EUR",
+      "checked_at": "2026-10-04T08:41:36.359Z",
+      "source": "automatic",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "weight_kg": 30
+      },
+      "evidence_file": "work/obi-query-cache.json",
+      "note": null,
+      "raw_product": {
+        "name": "Knauf Rotband Haftputz 30 kg",
+        "url": "https://www.obi.de/p/2263044/knauf-rotband-haftputz-30-kg",
+        "price": 11.59,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "obi-rendered-product",
+        "seller": "OBI E-Commerce GmbH",
+        "priceScope": "chain",
+        "availability": "OnlineOnly",
+        "retrievedAt": "2026-10-04T08:41:36.359Z",
+        "externalId": "2263044",
+        "category": null,
+        "attributes": [
+          {
+            "name": "Körnung",
+            "value": "1,2 mm"
+          },
+          {
+            "name": "Inhalt",
+            "value": "30 kg"
+          },
+          {
+            "name": "Gewicht",
+            "value": "30,0 kg"
+          },
+          {
+            "name": "Höhe",
+            "value": "54,0 cm"
+          },
+          {
+            "name": "Breite",
+            "value": "36,0 cm"
+          },
+          {
+            "name": "Tiefe",
+            "value": "16,0 cm"
+          }
+        ],
+        "declaredUnitPrice": 0.39,
+        "declaredUnit": "kg",
+        "priceBasisEvidence": "visible-own-product-total",
+        "verificationStatus": "verified",
+        "retrievalMethod": "playwright"
+      }
+    },
+    {
+      "key": "pu-schaum",
+      "store_id": "obi",
+      "product_name": "Soudal Bauschaum B2 Genius Gun 750 ml",
+      "product_url": "https://www.obi.de/p/9089269/soudal-bauschaum-b2-genius-gun-750-ml",
+      "price": 14.29,
+      "package_quantity": 0.75,
+      "unit": "l",
+      "actual_package": "750 ml",
+      "unit_price": 19.06,
+      "currency": "EUR",
+      "checked_at": "2026-10-03T17:53:03.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "volume_l": 0.75
+      },
+      "evidence_file": "src/data/obi-verified-products.json",
+      "note": null,
+      "raw_product": {
+        "name": "Soudal Bauschaum B2 Genius Gun 750 ml",
+        "url": "https://www.obi.de/p/9089269/soudal-bauschaum-b2-genius-gun-750-ml",
+        "price": 14.29,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "manual-admin-verification",
+        "retrievedAt": "2026-10-03T17:53:03.000Z",
+        "availability": "OnlineOnly",
+        "observedSpecs": {
+          "volume_l": 0.75
+        },
+        "declaredUnitPrice": 19.06,
+        "seller": "OBI E-Commerce GmbH",
+        "verification": {
+          "method": "official-product-page-via-web-renderer",
+          "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+        }
+      }
+    },
+    {
+      "key": "rollputz",
+      "store_id": "obi",
+      "product_name": "Alpina Rollputz 12 kg Weiß Matt",
+      "product_url": "https://www.obi.de/p/8170136/alpina-rollputz-12-kg-weiss-matt",
+      "price": 34.99,
+      "package_quantity": 12,
+      "unit": "kg",
+      "actual_package": "12 kg",
+      "unit_price": 2.92,
+      "currency": "EUR",
+      "checked_at": "2026-10-03T17:53:03.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "weight_kg": 12,
+        "color": "weiss"
+      },
+      "evidence_file": "src/data/obi-verified-products.json",
+      "note": null,
+      "raw_product": {
+        "name": "Alpina Rollputz 12 kg Weiß Matt",
+        "url": "https://www.obi.de/p/8170136/alpina-rollputz-12-kg-weiss-matt",
+        "price": 34.99,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "manual-admin-verification",
+        "retrievedAt": "2026-10-03T17:53:03.000Z",
+        "availability": "OnlineOnly",
+        "observedSpecs": {
+          "weight_kg": 12,
+          "color": "weiss"
+        },
+        "declaredUnitPrice": 2.92,
+        "seller": "OBI E-Commerce GmbH",
+        "verification": {
+          "method": "official-product-page-via-web-renderer",
+          "note": "Produktseite am 03.10.2026 gelesen: eigener Artikel, Packungspreis inkl. MwSt., Lieferung durch OBI. Kein Filialbestand belegt. Web-Renderer kann zwischengespeicherte Seiten liefern; direkter Node-Abruf derzeit HTTP 404."
+        }
+      }
+    },
+    {
+      "key": "silikon",
+      "store_id": "obi",
+      "product_name": "OBI Sanitär-Silikon Weiß 310 ml",
+      "product_url": "https://www.obi.de/p/8215667/obi-sanitaer-silikon-weiss-310-ml",
+      "price": 8.59,
+      "package_quantity": 0.31,
+      "unit": "l",
+      "actual_package": "310 ml",
+      "unit_price": 27.71,
+      "currency": "EUR",
+      "checked_at": "2026-10-04T08:40:24.595Z",
+      "source": "automatic",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "volume_l": 0.31,
+        "color": "weiss"
+      },
+      "evidence_file": "work/obi-query-cache.json",
+      "note": null,
+      "raw_product": {
+        "name": "OBI Sanitär-Silikon Weiß 310 ml",
+        "url": "https://www.obi.de/p/8215667/obi-sanitaer-silikon-weiss-310-ml",
+        "price": 8.59,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "obi-rendered-product",
+        "seller": "OBI E-Commerce GmbH",
+        "priceScope": "chain",
+        "availability": "OnlineOnly",
+        "retrievedAt": "2026-10-04T08:40:24.595Z",
+        "externalId": "8215667",
+        "category": null,
+        "attributes": [
+          {
+            "name": "Gewicht",
+            "value": "500 g"
+          },
+          {
+            "name": "Höhe",
+            "value": "23,0 cm"
+          },
+          {
+            "name": "Breite",
+            "value": "4,1 cm"
+          },
+          {
+            "name": "Tiefe",
+            "value": "4,1 cm"
+          }
+        ],
+        "declaredUnitPrice": 27.71,
+        "declaredUnit": "l",
+        "priceBasisEvidence": "visible-own-product-total",
+        "verificationStatus": "verified",
+        "retrievalMethod": "playwright"
+      }
+    },
+    {
+      "key": "sockelputz",
+      "store_id": "obi",
+      "product_name": "Sakret Sockelputz 30 kg",
+      "product_url": "https://www.obi.de/p/7505456/sakret-sockelputz-30-kg",
+      "price": 13.99,
+      "package_quantity": 30,
+      "unit": "kg",
+      "actual_package": "30 kg",
+      "unit_price": 0.47,
+      "currency": "EUR",
+      "checked_at": "2026-10-04T08:40:59.152Z",
+      "source": "automatic",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "weight_kg": 30
+      },
+      "evidence_file": "work/obi-query-cache.json",
+      "note": null,
+      "raw_product": {
+        "name": "Sakret Sockelputz 30 kg",
+        "url": "https://www.obi.de/p/7505456/sakret-sockelputz-30-kg",
+        "price": 13.99,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "obi-rendered-product",
+        "seller": "OBI E-Commerce GmbH",
+        "priceScope": "chain",
+        "availability": "OnlineOnly",
+        "retrievedAt": "2026-10-04T08:40:59.152Z",
+        "externalId": "7505456",
+        "category": null,
+        "attributes": [
+          {
+            "name": "Anwendung",
+            "value": "Sonstige"
+          },
+          {
+            "name": "Verwendungsgebiet",
+            "value": "Haus"
+          },
+          {
+            "name": "Inhalt",
+            "value": "30 kg"
+          },
+          {
+            "name": "Gewicht",
+            "value": "30,0 kg"
+          },
+          {
+            "name": "Höhe",
+            "value": "52,0 cm"
+          },
+          {
+            "name": "Breite",
+            "value": "24,0 cm"
+          },
+          {
+            "name": "Tiefe",
+            "value": "11,0 cm"
+          }
+        ],
+        "declaredUnitPrice": 0.47,
+        "declaredUnit": "kg",
+        "priceBasisEvidence": "visible-own-product-total",
+        "verificationStatus": "verified",
+        "retrievalMethod": "playwright"
+      }
+    },
+    {
+      "key": "zement",
+      "store_id": "obi",
+      "product_name": "Trasszement 25 kg",
+      "product_url": "https://www.obi.de/p/3693132/trasszement-25-kg",
+      "price": 9.79,
+      "package_quantity": 25,
+      "unit": "kg",
+      "actual_package": "25 kg",
+      "unit_price": 0.4,
+      "currency": "EUR",
+      "checked_at": "2026-10-04T08:47:56.509Z",
+      "source": "automatic",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "seller": "OBI E-Commerce GmbH",
+      "observed_specs": {
+        "weight_kg": 25
+      },
+      "evidence_file": "work/obi-query-cache.json",
+      "note": null,
+      "raw_product": {
+        "name": "Trasszement 25 kg",
+        "url": "https://www.obi.de/p/3693132/trasszement-25-kg",
+        "price": 9.79,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "obi-rendered-product",
+        "seller": "OBI E-Commerce GmbH",
+        "priceScope": "chain",
+        "availability": "OnlineOnly",
+        "retrievedAt": "2026-10-04T08:47:56.509Z",
+        "externalId": "3693132",
+        "category": null,
+        "attributes": [],
+        "declaredUnitPrice": 0.4,
+        "declaredUnit": "kg",
+        "priceBasisEvidence": "visible-own-product-total",
+        "verificationStatus": "verified",
+        "retrievalMethod": "playwright"
+      }
+    },
+    {
+      "key": "armierungsgewebe",
+      "store_id": "bauhaus",
+      "product_name": "Probau Armierungsgewebe 10 m²",
+      "product_url": "https://www.bauhaus.info/wdvs-gewebe/probau-armierungsgewebe/p/13878909",
+      "price": 19.95,
+      "package_quantity": 10,
+      "unit": "m2",
+      "actual_package": "10 m²",
+      "unit_price": 2,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "observed_specs": {
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "area_m2": 10
+      },
+      "verification_method": "official-product-page-via-web-renderer",
+      "note": "Price and package verified on exact10m² PDP; grammage absent in this variant table.25m² variant separatelyexplicit160g/m²."
+    },
+    {
+      "key": "cd-profil",
+      "store_id": "bauhaus",
+      "product_name": "Probau CD-Deckenprofil 3000 × 60 × 27 mm",
+      "product_url": "https://www.bauhaus.info/cd-profile/probau-cd-deckenprofil/p/20489120",
+      "price": 6.65,
+      "package_quantity": 3,
+      "unit": "m",
+      "actual_package": "3000 × 60 × 27 mm · 1 Stück",
+      "unit_price": 2.22,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "observed_specs": {
+        "length_mm": 3000,
+        "width_mm": 60,
+        "height_mm": 27,
+        "pieces": 1
+      },
+      "verification_method": "official-product-page-via-web-renderer",
+      "note": "Exact official PDP opened; package selling price and own specifications observed, no search snippet price. Renderer can cache pages."
+    },
+    {
+      "key": "cw-profil",
+      "store_id": "bauhaus",
+      "product_name": "Probau CW-Standprofil 2600 × 50 × 50 mm",
+      "product_url": "https://www.bauhaus.info/cw-profile/probau-cw-standprofil/p/20479644",
+      "price": 5.1,
+      "package_quantity": 2.6,
+      "unit": "m",
+      "actual_package": "2600 × 50 × 50 mm · 1 Stück",
+      "unit_price": 1.96,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "observed_specs": {
+        "length_mm": 2600,
+        "width_mm": 50,
+        "height_mm": 50,
+        "pieces": 1
+      },
+      "verification_method": "official-product-page-via-web-renderer",
+      "note": "Exact official PDP opened; package selling price and own specifications observed, no search snippet price. Renderer can cache pages."
+    },
+    {
+      "key": "direktabhaenger",
+      "store_id": "bauhaus",
+      "product_name": "Probau Direktabhänger CD-Deckenprofile 125 mm, 1 Stück",
+      "product_url": "https://www.bauhaus.info/deckenabhaenger/probau-direktabhaenger/p/25562691",
+      "price": 0.38,
+      "package_quantity": 1,
+      "unit": "piece",
+      "actual_package": "125 mm · 1 Stück",
+      "unit_price": null,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "observed_specs": {
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd"
+      },
+      "verification_method": "official-product-page-via-web-renderer",
+      "note": "Exact official PDP opened; package selling price and own specifications observed, no search snippet price. Renderer can cache pages."
+    },
+    {
+      "key": "feuchtraumplatte",
+      "store_id": "bauhaus",
+      "product_name": "Rigips Gipskartonplatte GKBI 2000 × 1250 × 12,5 mm imprägniert",
+      "product_url": "https://www.bauhaus.info/feuchtraumplatten/rigips-gipskartonplatte-gkbi/p/22687869",
+      "price": 15.95,
+      "package_quantity": 2.5,
+      "unit": "m2",
+      "actual_package": "2000 × 1250 × 12,5 mm · 2,5 m²",
+      "unit_price": 6.38,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "observed_specs": {
+        "length_mm": 2000,
+        "width_mm": 1250,
+        "thickness_mm": 12.5,
+        "area_m2": 2.5
+      },
+      "verification_method": "official-product-page-via-web-renderer",
+      "note": "Exact official PDP opened; package selling price and own specifications observed, no search snippet price. Renderer can cache pages."
+    },
+    {
+      "key": "haftgrund",
+      "store_id": "bauhaus",
+      "product_name": "Quick-Mix Haftgrund 5 l",
+      "product_url": "https://www.bauhaus.info/tiefengrund-haftgrund/quick-mix-haftgrund/p/13865802",
+      "price": 29.95,
+      "package_quantity": 5,
+      "unit": "l",
+      "actual_package": "5 l",
+      "unit_price": 5.99,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "observed_specs": {
+        "volume_l": 5
+      },
+      "verification_method": "official-product-page-via-web-renderer",
+      "note": "Exact official PDP opened; package selling price and own specifications observed, no search snippet price. Renderer can cache pages."
+    },
+    {
+      "key": "perlfix",
+      "store_id": "bauhaus",
+      "product_name": "Knauf Ansetzgips Perlfix 25 kg",
+      "product_url": "https://www.bauhaus.info/knauf-ansetzgips-perlfix/p/13863055",
+      "price": 10.5,
+      "package_quantity": 25,
+      "unit": "kg",
+      "actual_package": "25 kg",
+      "unit_price": 0.42,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "verification_status": "verified",
+      "price_scope": "chain",
+      "observed_specs": {
+        "weight_kg": 25
+      },
+      "verification_method": "official-product-page-via-web-renderer",
+      "note": "ExactPDP rendered content reported crawled2weeksago; checkedtoday via renderer, not guaranteed uncached."
+    }
+  ],
+  "failures": [],
+  "note": "Existing official verified observations reused with original checked_at; newly opened page observations will be marked manual with renderer-cache caveat."
+}

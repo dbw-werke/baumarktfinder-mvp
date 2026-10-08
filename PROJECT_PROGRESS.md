@@ -1,1 +1,1 @@
-Gesamtfortschritt: 98 %
+Gesamtfortschritt: 75 %

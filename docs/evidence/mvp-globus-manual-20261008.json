@@ -1,0 +1,43 @@
+[
+  {
+    "key": "cw-profil",
+    "store_id": "globus",
+    "product_name": "Knauf CW-db-Ständerprofil 2600 x 50 x 50 mm",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-cw-db-staenderprofil-2600-x-50-x-50-mm-0779250244/",
+    "price": 6.35,
+    "base_unit": "m",
+    "package_quantity": 2.6,
+    "observed_specs": {
+      "length_mm": 2600,
+      "width_mm": 50,
+      "height_mm": 50
+    },
+    "material_slug": "cw50-50-2600-v1",
+    "checked_at": "2026-10-08T08:03:00.000Z",
+    "source": "manual",
+    "verification_note": "Official rendered product page, selected Lieferung nach Hause: total6.35EUR and2.44EUR/m. One2600mm profile. Read with normal Codex browser, no challenge.",
+    "currency": "EUR",
+    "price_basis": "package"
+  },
+  {
+    "key": "armierungsgewebe",
+    "store_id": "globus",
+    "product_name": "SAKRET Armierungsgewebe 10 x 1 m = 10 m² Maschenweite 4 x 4 mm",
+    "product_url": "https://www.globus-baumarkt.de/p/sakret-armierungsgewebe-10-x-1-m-10-m2-maschenweite-4-x-4-mm-0779250463/",
+    "price": 27.9,
+    "base_unit": "m2",
+    "package_quantity": 10,
+    "observed_specs": {
+      "length_mm": 10000,
+      "width_mm": 1000,
+      "grammage_g_m2": 165,
+      "area_m2": 10
+    },
+    "material_slug": "armierungsgewebe-165-1000-10000-v1",
+    "checked_at": "2026-10-08T17:06:43.642Z",
+    "source": "manual",
+    "verification_note": "Official rendered PDP online buybox27.90EUR; roll10x1m, owntechnicaldetails165g/m². Actualpackage not unitprice.",
+    "currency": "EUR",
+    "price_basis": "package"
+  }
+]

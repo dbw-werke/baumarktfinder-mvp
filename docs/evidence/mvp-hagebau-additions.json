@@ -1,0 +1,74 @@
+{
+  "store": "hagebau",
+  "observed_at": "2026-10-08",
+  "current_price_confirmed": false,
+  "freshness_note": "Official product documents were exposed by web search, whose listed crawl ages are retained. Normal live Chromium hit a hard bot block and stopped; no bypass attempted. These are historical observed fallback candidates, not newly confirmed live prices.",
+  "rows": [
+    {
+      "key": "gipskarton",
+      "name": "KNAUF Gipskartonplatte Miniboard 12,5 × 600 × 1200 mm",
+      "url": "https://www.hagebau.de/p/knauf-gipskartonplatte-miniboard-bxl-600-x-1200-x-125-mm-anP7000133401/",
+      "price": 4.99,
+      "unit_price": 6.93,
+      "base_unit": "m2",
+      "package_quantity": 0.72,
+      "observedSpecs": {
+        "type": "standard",
+        "thickness_mm": 12.5,
+        "width_mm": 600,
+        "length_mm": 1200,
+        "pieces": 1,
+        "area_m2": 0.72
+      },
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "evidence": {
+        "online_article": "1142010",
+        "ean": "4006379062171",
+        "package_statement": "Lieferumfang: 1x Gipskartonplatte",
+        "normal_price": 4.99,
+        "excluded_customer_card_price": 4.84,
+        "online_available": false
+      },
+      "status": "historical_manual_candidate"
+    },
+    {
+      "key": "acryl",
+      "name": "RENOVO Acryl Riss & Putz weiß 310 ml",
+      "url": "https://www.hagebau.de/p/renovo-acryl-riss-putz-anP02656646/",
+      "price": 5.49,
+      "unit_price": 17.71,
+      "base_unit": "l",
+      "package_quantity": 0.31,
+      "observedSpecs": {
+        "volume_l": 0.31,
+        "color": "weiß",
+        "pieces": 1
+      },
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "2 weeks ago",
+      "evidence": {
+        "online_article": "1175112",
+        "ean": "4046806012867",
+        "package_statement": "Eine Kartusche mit 310 ml Inhalt",
+        "material": "Acrylatdispersion",
+        "normal_price": 5.49,
+        "excluded_customer_card_price": 5.33,
+        "online_available": false
+      },
+      "status": "historical_manual_candidate"
+    },
+    {
+      "key": "uniflott",
+      "url": "https://www.hagebau.de/p/knauf-fertigputzgips-uniflott-25-kg-weiss-grau-anP7000105707/",
+      "status": "not_added",
+      "reason": "No current exact product-page price proof; known 5 kg verified fallback remains. Category shows 40.49 but exact PDP shell and normal Chromium hard-blocked."
+    },
+    {
+      "key": "gipskarton",
+      "url": "https://www.hagebau.de/p/rigips-gipskartonplatte-weiss-staerke-125-mm-anP7000435297/",
+      "status": "rejected",
+      "reason": "Product page price4.82/unit6.69m² and dimensions1200x600 conflict with delivery56plates. No independent one-plate package proof; choose explicit one-plate Knauf candidate instead."
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "store": "toom",
+  "started_at": "2026-10-06T20:22:23.903Z",
+  "storage": "local_cache",
+  "schema_error": null,
+  "products": [
+    {
+      "store": "toom",
+      "material_id": "65777a87-70cd-99a3-c1ad-7004cc248378",
+      "material": "Direktabhänger CD 60/27, 125 mm, 1 Stück",
+      "product": null,
+      "product_url": null,
+      "old_active_price": null,
+      "new_active_price": null,
+      "old_price": null,
+      "unit_price": null,
+      "unit": "piece",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": null,
+      "attempted_at": "2026-10-06T20:22:23.911Z",
+      "cache_updated": false,
+      "db_updated": false,
+      "failure_reason": "no_valid_product_match",
+      "replacement": false,
+      "discovery": true,
+      "candidates": [
+        {
+          "name": "Knauf Direktabhänger CD-Profil 60/27 100 Stück",
+          "url": "https://toom.de/p/direktabhaenger-cd-profil-6027-100-stueck/3150358",
+          "price": 42.99,
+          "rejection_reason": "wrong-or-missing-profile"
+        },
+        {
+          "name": "Knauf Direktabhänger für CD-Profile",
+          "url": "https://toom.de/p/direktabhaenger-fuer-cd-profile/3153733",
+          "price": 0.69,
+          "rejection_reason": "wrong-or-missing-profile"
+        },
+        {
+          "name": "Knauf Direktabhänger für Holzlatten 125 mm 100 Stück",
+          "url": "https://toom.de/p/direktabhaenger-fuer-holzlatten-125-mm-100-stueck/3150357",
+          "price": 42.99,
+          "rejection_reason": "wrong-or-missing-profile"
+        },
+        {
+          "name": "Knauf Multiverbinder CD-Profil 60/27 mm",
+          "url": "https://toom.de/p/multiverbinder-cd-profil-6027-mm/3153910",
+          "price": 0.59,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Kreuzverbinder CD-Profil 60/27 mm",
+          "url": "https://toom.de/p/kreuzverbinder-cd-profil-6027-mm/3153920",
+          "price": 0.59,
+          "rejection_reason": "incompatible_product_family"
+        }
+      ],
+      "direct_reason": null
+    },
+    {
+      "store": "toom",
+      "material_id": "8739fa28-ef16-5da4-dea0-a10cd973d87a",
+      "material": "Knauf Perlfix Ansetzgips, 30 kg",
+      "product": null,
+      "product_url": null,
+      "old_active_price": null,
+      "new_active_price": null,
+      "old_price": null,
+      "unit_price": null,
+      "unit": "kg",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": null,
+      "attempted_at": "2026-10-06T20:22:55.491Z",
+      "cache_updated": false,
+      "db_updated": false,
+      "failure_reason": "no_valid_product_match",
+      "replacement": false,
+      "discovery": true,
+      "candidates": [
+        {
+          "name": "Knauf Ansatzgips 'Perlfix' 10 kg",
+          "url": "https://toom.de/p/ansatzgips-perlfix-10-kg/3053150",
+          "price": 7.69,
+          "rejection_reason": "wrong-specification:weight_kg"
+        },
+        {
+          "name": "Knauf Spachtelmasse 'Uniflott' 5 kg",
+          "url": "https://toom.de/p/spachtelmasse-uniflott-5-kg/3053743",
+          "price": 9.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Maschinenputz 'MP 75' 30 kg",
+          "url": "https://toom.de/p/maschinenputz-mp-75-30-kg/3051675",
+          "price": 11.49,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Haftputzgips 'Rotband' 30 kg",
+          "url": "https://toom.de/p/haftputzgips-rotband-30-kg/3053468",
+          "price": 11.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Fertigputzgips 'Goldband' 30 kg",
+          "url": "https://toom.de/p/fertigputzgips-goldband-30-kg/3053479",
+          "price": 9.49,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Knauf Flächendicht 10 kg",
+          "url": "https://toom.de/p/flaechendicht-10-kg/2350592",
+          "price": 72.99,
+          "rejection_reason": "incompatible_product_family"
+        }
+      ],
+      "direct_reason": null
+    },
+    {
+      "store": "toom",
+      "material_id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+      "material": "Sanitär-Silikon weiß, essigvernetzend, 310 ml",
+      "product": null,
+      "product_url": null,
+      "old_active_price": null,
+      "new_active_price": null,
+      "old_price": null,
+      "unit_price": null,
+      "unit": "l",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": null,
+      "attempted_at": "2026-10-06T20:23:13.233Z",
+      "cache_updated": false,
+      "db_updated": false,
+      "failure_reason": "no_valid_product_match",
+      "replacement": false,
+      "discovery": true,
+      "candidates": [
+        {
+          "name": "toom Sanitärsilikon weiß 310 ml",
+          "url": "https://toom.de/p/sanitaersilikon-weiss-310-ml/2360002",
+          "price": 9.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Alpina Sanitärsilikon 'Dusch- & Bad Silikon' weiß 300 ml",
+          "url": "https://toom.de/p/sanitaersilikon-dusch-bad-silikon-weiss-300-ml/2360441",
+          "price": 14.99,
+          "rejection_reason": "wrong-specification:volume_l"
+        },
+        {
+          "name": "Knauf Sanitärsilikon weiß 300 ml",
+          "url": "https://toom.de/p/sanitaersilikon-weiss-300-ml/2360238",
+          "price": 11.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Knauf Sanitär Express Silikon weiß 300 ml",
+          "url": "https://toom.de/p/sanitaer-express-silikon-weiss-300-ml/2360401",
+          "price": 12.49,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Pronova Sanitärsilikon 'Eco' weiß 280 ml",
+          "url": "https://toom.de/p/sanitaersilikon-eco-weiss-280-ml/2360371",
+          "price": 9.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Sista Sanitärsilikon 'Bad' weiß 280 ml",
+          "url": "https://toom.de/p/sanitaersilikon-bad-weiss-280-ml/10468685",
+          "price": 9.99,
+          "rejection_reason": "unverified-essential-attribute"
+        }
+      ],
+      "direct_reason": null
+    },
+    {
+      "store": "toom",
+      "material_id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+      "material": "Soudal PU-Bauschaum 1K B2 Genius Gun beige, 750 ml",
+      "product": null,
+      "product_url": null,
+      "old_active_price": null,
+      "new_active_price": null,
+      "old_price": null,
+      "unit_price": null,
+      "unit": "l",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": null,
+      "attempted_at": "2026-10-06T20:23:35.923Z",
+      "cache_updated": false,
+      "db_updated": false,
+      "failure_reason": "no_valid_product_match",
+      "replacement": false,
+      "discovery": true,
+      "candidates": [
+        {
+          "name": "Soudal Brunnenschaum 750 ml",
+          "url": "https://toom.de/p/brunnenschaum-750-ml/3352151",
+          "price": 14.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Soudal Bauschaum 'Genius Gun' 500 ml",
+          "url": "https://toom.de/p/bauschaum-genius-gun-500-ml/3350178",
+          "price": 14.99,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Soudal Bauschaum 750 ml",
+          "url": "https://toom.de/p/bauschaum-750-ml/3352195",
+          "price": 13.79,
+          "rejection_reason": "unverified-essential-attribute"
+        },
+        {
+          "name": "Soudal Dämmstoffkleber 'Genius' orange 600 ml",
+          "url": "https://toom.de/p/daemmstoffkleber-genius-orange-600-ml/3350173",
+          "price": 13.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Soudal Dämmstoffkleber-Pistole beige 750 ml",
+          "url": "https://toom.de/p/daemmstoffkleber-pistole-beige-750-ml/3350174",
+          "price": 17.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Soudal Energiesparschaum 500 ml",
+          "url": "https://toom.de/p/energiesparschaum-500-ml/2350390",
+          "price": 13.99,
+          "rejection_reason": "unverified-essential-attribute"
+        }
+      ],
+      "direct_reason": null
+    },
+    {
+      "store": "toom",
+      "material_id": "60c4a168-2bf6-f806-729b-1490d89aa85c",
+      "material": "Zement, 25 kg",
+      "product": "Universalzement 25 kg",
+      "product_url": "https://toom.de/p/universalzement-25-kg/3153986",
+      "old_active_price": null,
+      "new_active_price": 5.29,
+      "old_price": null,
+      "unit_price": 0.21,
+      "unit": "kg",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-06T20:24:01.279Z",
+      "attempted_at": "2026-10-06T20:23:53.685Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": true,
+      "candidates": [
+        {
+          "name": "Universalzement 25 kg",
+          "url": "https://toom.de/p/universalzement-25-kg/3153986",
+          "price": 5.29,
+          "rejection_reason": null
+        },
+        {
+          "name": "toom Estrichbeton 25 kg",
+          "url": "https://toom.de/p/estrichbeton-25-kg/3050217",
+          "price": 6.19,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "toom Zementmörtel 25 kg",
+          "url": "https://toom.de/p/zementmoertel-25-kg/3050219",
+          "price": 6.19,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "toom Schnellbeton 25 kg",
+          "url": "https://toom.de/p/schnellbeton-25-kg/3050356",
+          "price": 7.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Saint-Gobain Weber Kalkzement-Putz 25 kg",
+          "url": "https://toom.de/p/kalkzement-putz-25-kg/3056427",
+          "price": 9.99,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Quick-mix Beton 'Ruck-Zuck' 25 kg",
+          "url": "https://toom.de/p/beton-ruck-zuck-25-kg/3050553",
+          "price": 8.99,
+          "rejection_reason": "incompatible_product_family"
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 25
+    },
+    {
+      "store": "toom",
+      "material_id": "d68b71d7-ee5b-20f3-9d25-13ce34f3764c",
+      "material": "Zement-Sockelputz, 30 kg",
+      "product": "Quick-mix Sockelputz 30 kg",
+      "product_url": "https://toom.de/p/sockelputz-30-kg/3055591",
+      "old_active_price": null,
+      "new_active_price": 11.99,
+      "old_price": null,
+      "unit_price": 0.4,
+      "unit": "kg",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-06T20:24:21.342Z",
+      "attempted_at": "2026-10-06T20:24:15.099Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": true,
+      "candidates": [
+        {
+          "name": "Quick-mix Sockelputz 30 kg",
+          "url": "https://toom.de/p/sockelputz-30-kg/3055591",
+          "price": 11.99,
+          "rejection_reason": null
+        },
+        {
+          "name": "Quick-mix Sockelleichtputz 25 kg",
+          "url": "https://toom.de/p/sockelleichtputz-25-kg/10482641",
+          "price": 10.99,
+          "rejection_reason": "wrong-specification:weight_kg"
+        },
+        {
+          "name": "Saint-Gobain Weber Zement-Sockelputz 25 kg",
+          "url": "https://toom.de/p/zement-sockelputz-25-kg/3056416",
+          "price": 10.59,
+          "rejection_reason": "wrong-specification:weight_kg"
+        },
+        {
+          "name": "toom Zementmörtel 25 kg",
+          "url": "https://toom.de/p/zementmoertel-25-kg/3050219",
+          "price": 6.19,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Saint-Gobain Weber Kalkzement-Leichtputz 25 kg",
+          "url": "https://toom.de/p/kalkzement-leichtputz-25-kg/3056438",
+          "price": 10.79,
+          "rejection_reason": "incompatible_product_family"
+        },
+        {
+          "name": "Kosche Eckholz Zement grau 19 x 19 x 60 mm, 4 Stück",
+          "url": "https://toom.de/p/eckholz-zement-grau-19-x-19-x-60-mm-4-stueck/7171225",
+          "price": 8.99,
+          "rejection_reason": "incompatible_product_family"
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 30
+    }
+  ],
+  "refreshable": 0,
+  "checked": 6,
+  "changed": 0,
+  "failed": 4,
+  "verified": 2,
+  "db_updated": 0,
+  "refreshable_after": 2,
+  "completed_at": "2026-10-06T20:24:33.802Z"
+}

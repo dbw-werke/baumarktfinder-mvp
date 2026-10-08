@@ -1,0 +1,462 @@
+{
+  "checked_at": "2026-10-07T18:19:34.926Z",
+  "note": "Real direct endpoint and normal Chromium own-buybox proof. For browser fallback only the direct price API was deliberately replaced with an empty response; PDP/browser price evidence remained live.",
+  "directResult": {
+    "products": [
+      {
+        "name": "Knauf Spachtelmasse 'Uniflott' 25 kg",
+        "url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+        "externalId": "3053754",
+        "priceBasis": "package",
+        "priceSource": "retailer-product-state",
+        "priceBasisEvidence": "toom-exact-sap-current-deliver-state",
+        "currency": "EUR",
+        "availability": null,
+        "soldIndividually": true,
+        "observedSpecs": {
+          "weight_kg": 25
+        },
+        "retrievedAt": "2026-10-07T18:19:28.311Z",
+        "brand": "Knauf",
+        "category": "Bauen & Renovieren > Baustoffe > Rohbau > Gipse, Putze & Ausgleichsmassen",
+        "description": "Für dein Bauvorhaben sind die passenden Materialien das A und O. Genau das bekommst du mit der Spachtelmasse 'Uniflott' von Knauf. Oberflächliche Ausbesserungsarbeiten lassen sich mit ihr bewerkstelligen. Beachte vor der Arbeit, dass der Untergrund, auf dem du arbeitest, trocken, sauber und staubfrei ist. Außerdem beträgt die Verarbeitungszeit 45 Minuten. Dabei sollte die Umgebungstemperatur nicht unter 10 °C liegen. Mit dieser Spachtelmasse wird dein Projekt ein voller Erfolg!",
+        "attributes": [
+          {
+            "name": "Artikeltyp",
+            "value": "Spachtelmasse"
+          },
+          {
+            "name": "Verarbeitungstemperatur min.",
+            "value": "10 °C"
+          },
+          {
+            "name": "Verarbeitungszeit",
+            "value": "45 min"
+          },
+          {
+            "name": "Artikeltyp",
+            "value": "Spachtelmasse"
+          },
+          {
+            "name": "Verarbeitungstemperatur min.",
+            "value": "10 °C"
+          },
+          {
+            "name": "Verarbeitungszeit",
+            "value": "45 min"
+          },
+          {
+            "name": "Hinweis zur Lieferung",
+            "value": "Aufgrund aktueller logistischer Herausforderungen können wir pro Bestellung maximal 83 Stück ausliefern. Du kannst aber mehrere Bestellungen über jeweils 83 Stück aufgeben. Bestellungen, die 83 Stück übersteigen, müssen wir aktuell leider stornieren."
+          },
+          {
+            "name": "Inhalt",
+            "value": "25 kg"
+          },
+          {
+            "name": "Anwendungsbereich",
+            "value": "Verspachteln"
+          },
+          {
+            "name": "Einsatzbereich",
+            "value": "innen"
+          },
+          {
+            "name": "Farbe",
+            "value": "Weiß"
+          },
+          {
+            "name": "Marke",
+            "value": "Knauf"
+          },
+          {
+            "name": "Norm",
+            "value": "DIN EN 13963"
+          },
+          {
+            "name": "Serie",
+            "value": "Uniflott"
+          },
+          {
+            "name": "Untergrundbeschaffenheit",
+            "value": "trocken|sauber|staubfrei"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "zur Verspachtelung von Gipsplattenfugen"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "optimal geeignet für das System 'Uniflott'"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "härtet hochfest aus"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "geringer Trocknungsschwund"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "kann trocken geschliffen und überstrichen werden"
+          }
+        ],
+        "packageQuantity": 25,
+        "baseUnit": "kg",
+        "actualSize": "25 Kilogramm",
+        "price": 38.99,
+        "oldPrice": 43.99,
+        "declaredUnitPrice": 1.56,
+        "declaredUnit": "kg",
+        "priceScope": "chain",
+        "verificationStatus": "verified",
+        "retrievalMethod": "direct",
+        "metadata": {
+          "delivery_state": "unavailable",
+          "delivery_available": false,
+          "observed_market_id": "3248",
+          "price_channel": "deliver",
+          "pickup_state": "available"
+        }
+      }
+    ],
+    "reason": null,
+    "method": "direct",
+    "removed": false,
+    "variantUrls": [
+      "https://toom.de/p/spachtelmasse-uniflott-5-kg/3053743",
+      "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754"
+    ]
+  },
+  "browserResult": {
+    "products": [
+      {
+        "name": "Knauf Spachtelmasse 'Uniflott' 25 kg",
+        "url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+        "externalId": "3053754",
+        "priceBasis": "package",
+        "priceSource": "retailer-product-state",
+        "priceBasisEvidence": "toom-own-visible-buybox-current",
+        "currency": "EUR",
+        "availability": null,
+        "soldIndividually": true,
+        "observedSpecs": {
+          "weight_kg": 25
+        },
+        "retrievedAt": "2026-10-07T18:19:34.785Z",
+        "brand": "Knauf",
+        "category": "Bauen & Renovieren > Baustoffe > Rohbau > Gipse, Putze & Ausgleichsmassen",
+        "description": "Für dein Bauvorhaben sind die passenden Materialien das A und O. Genau das bekommst du mit der Spachtelmasse 'Uniflott' von Knauf. Oberflächliche Ausbesserungsarbeiten lassen sich mit ihr bewerkstelligen. Beachte vor der Arbeit, dass der Untergrund, auf dem du arbeitest, trocken, sauber und staubfrei ist. Außerdem beträgt die Verarbeitungszeit 45 Minuten. Dabei sollte die Umgebungstemperatur nicht unter 10 °C liegen. Mit dieser Spachtelmasse wird dein Projekt ein voller Erfolg!",
+        "attributes": [
+          {
+            "name": "Artikeltyp",
+            "value": "Spachtelmasse"
+          },
+          {
+            "name": "Verarbeitungstemperatur min.",
+            "value": "10 °C"
+          },
+          {
+            "name": "Verarbeitungszeit",
+            "value": "45 min"
+          },
+          {
+            "name": "Artikeltyp",
+            "value": "Spachtelmasse"
+          },
+          {
+            "name": "Verarbeitungstemperatur min.",
+            "value": "10 °C"
+          },
+          {
+            "name": "Verarbeitungszeit",
+            "value": "45 min"
+          },
+          {
+            "name": "Hinweis zur Lieferung",
+            "value": "Aufgrund aktueller logistischer Herausforderungen können wir pro Bestellung maximal 83 Stück ausliefern. Du kannst aber mehrere Bestellungen über jeweils 83 Stück aufgeben. Bestellungen, die 83 Stück übersteigen, müssen wir aktuell leider stornieren."
+          },
+          {
+            "name": "Inhalt",
+            "value": "25 kg"
+          },
+          {
+            "name": "Anwendungsbereich",
+            "value": "Verspachteln"
+          },
+          {
+            "name": "Einsatzbereich",
+            "value": "innen"
+          },
+          {
+            "name": "Farbe",
+            "value": "Weiß"
+          },
+          {
+            "name": "Marke",
+            "value": "Knauf"
+          },
+          {
+            "name": "Norm",
+            "value": "DIN EN 13963"
+          },
+          {
+            "name": "Serie",
+            "value": "Uniflott"
+          },
+          {
+            "name": "Untergrundbeschaffenheit",
+            "value": "trocken|sauber|staubfrei"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "zur Verspachtelung von Gipsplattenfugen"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "optimal geeignet für das System 'Uniflott'"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "härtet hochfest aus"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "geringer Trocknungsschwund"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "kann trocken geschliffen und überstrichen werden"
+          }
+        ],
+        "packageQuantity": 25,
+        "baseUnit": "kg",
+        "actualSize": "25 Kilogramm",
+        "price": 38.99,
+        "oldPrice": 43.99,
+        "declaredUnitPrice": 1.56,
+        "declaredUnit": "kg",
+        "priceScope": "chain",
+        "verificationStatus": "verified",
+        "retrievalMethod": "playwright",
+        "metadata": {
+          "observed_market": "Troisdorf",
+          "delivery_state": ".",
+          "price_channel": "visible-buybox"
+        }
+      }
+    ],
+    "reason": null,
+    "method": "playwright",
+    "removed": false,
+    "directReason": "active_online_price_missing",
+    "variantUrls": [
+      "https://toom.de/p/spachtelmasse-uniflott-5-kg/3053743",
+      "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754"
+    ]
+  },
+  "evidence": [
+    {
+      "url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+      "method": "direct",
+      "endpoint": "https://api.toom.de/public/v1/jsonview/1000000024141/3248",
+      "state": {
+        "deliver": {
+          "market_id": 3001,
+          "case": "3.2",
+          "state": "unavailable",
+          "tax_rate": 19,
+          "message_config": {
+            "text": "Dieses Produkt ist bald wieder verfügbar.",
+            "status": "Nicht verfügbar"
+          },
+          "price": {
+            "regular": 43.99,
+            "offer": 38.99,
+            "offer_valid_to": "10.10.2026"
+          },
+          "package": {
+            "price": {
+              "regular": 1.76,
+              "offer": 1.56,
+              "amount_unit": "Kilogramm"
+            },
+            "size": "25 Kilogramm"
+          }
+        },
+        "reserve": {
+          "market_id": 3248,
+          "case": "1",
+          "state": "available",
+          "tax_rate": 19,
+          "message_config": {
+            "text": "Verfügbar im Markt {selected_market}",
+            "status": "Verfügbar",
+            "tooltip": "Abholbereit in 2 Stunden",
+            "notification": "Artikel wird 3 Tage für dich hinterlegt"
+          },
+          "price": {
+            "regular": 43.99,
+            "offer": 38.99,
+            "offer_valid_to": "10.10.2026"
+          },
+          "package": {
+            "price": {
+              "regular": 1.76,
+              "offer": 1.56,
+              "amount_unit": "Kilogramm"
+            },
+            "size": "25 Kilogramm"
+          }
+        }
+      },
+      "result": {
+        "products": [
+          {
+            "name": "Knauf Spachtelmasse 'Uniflott' 25 kg",
+            "url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+            "externalId": "3053754",
+            "priceBasis": "package",
+            "priceSource": "retailer-product-state",
+            "priceBasisEvidence": "toom-exact-sap-current-deliver-state",
+            "currency": "EUR",
+            "availability": null,
+            "soldIndividually": true,
+            "observedSpecs": {
+              "weight_kg": 25
+            },
+            "retrievedAt": "2026-10-07T18:19:28.311Z",
+            "brand": "Knauf",
+            "category": "Bauen & Renovieren > Baustoffe > Rohbau > Gipse, Putze & Ausgleichsmassen",
+            "description": "Für dein Bauvorhaben sind die passenden Materialien das A und O. Genau das bekommst du mit der Spachtelmasse 'Uniflott' von Knauf. Oberflächliche Ausbesserungsarbeiten lassen sich mit ihr bewerkstelligen. Beachte vor der Arbeit, dass der Untergrund, auf dem du arbeitest, trocken, sauber und staubfrei ist. Außerdem beträgt die Verarbeitungszeit 45 Minuten. Dabei sollte die Umgebungstemperatur nicht unter 10 °C liegen. Mit dieser Spachtelmasse wird dein Projekt ein voller Erfolg!",
+            "attributes": [
+              {
+                "name": "Artikeltyp",
+                "value": "Spachtelmasse"
+              },
+              {
+                "name": "Verarbeitungstemperatur min.",
+                "value": "10 °C"
+              },
+              {
+                "name": "Verarbeitungszeit",
+                "value": "45 min"
+              },
+              {
+                "name": "Artikeltyp",
+                "value": "Spachtelmasse"
+              },
+              {
+                "name": "Verarbeitungstemperatur min.",
+                "value": "10 °C"
+              },
+              {
+                "name": "Verarbeitungszeit",
+                "value": "45 min"
+              },
+              {
+                "name": "Hinweis zur Lieferung",
+                "value": "Aufgrund aktueller logistischer Herausforderungen können wir pro Bestellung maximal 83 Stück ausliefern. Du kannst aber mehrere Bestellungen über jeweils 83 Stück aufgeben. Bestellungen, die 83 Stück übersteigen, müssen wir aktuell leider stornieren."
+              },
+              {
+                "name": "Inhalt",
+                "value": "25 kg"
+              },
+              {
+                "name": "Anwendungsbereich",
+                "value": "Verspachteln"
+              },
+              {
+                "name": "Einsatzbereich",
+                "value": "innen"
+              },
+              {
+                "name": "Farbe",
+                "value": "Weiß"
+              },
+              {
+                "name": "Marke",
+                "value": "Knauf"
+              },
+              {
+                "name": "Norm",
+                "value": "DIN EN 13963"
+              },
+              {
+                "name": "Serie",
+                "value": "Uniflott"
+              },
+              {
+                "name": "Untergrundbeschaffenheit",
+                "value": "trocken|sauber|staubfrei"
+              },
+              {
+                "name": "Eigenschaft",
+                "value": "zur Verspachtelung von Gipsplattenfugen"
+              },
+              {
+                "name": "Eigenschaft",
+                "value": "optimal geeignet für das System 'Uniflott'"
+              },
+              {
+                "name": "Eigenschaft",
+                "value": "härtet hochfest aus"
+              },
+              {
+                "name": "Eigenschaft",
+                "value": "geringer Trocknungsschwund"
+              },
+              {
+                "name": "Eigenschaft",
+                "value": "kann trocken geschliffen und überstrichen werden"
+              }
+            ],
+            "packageQuantity": 25,
+            "baseUnit": "kg",
+            "actualSize": "25 Kilogramm",
+            "price": 38.99,
+            "oldPrice": 43.99,
+            "declaredUnitPrice": 1.56,
+            "declaredUnit": "kg",
+            "priceScope": "chain",
+            "verificationStatus": "verified",
+            "retrievalMethod": "direct",
+            "metadata": {
+              "delivery_state": "unavailable",
+              "delivery_available": false,
+              "observed_market_id": "3248",
+              "price_channel": "deliver",
+              "pickup_state": "available"
+            }
+          }
+        ],
+        "reason": null
+      }
+    },
+    {
+      "url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+      "method": "direct",
+      "endpoint": "https://api.toom.de/public/v1/jsonview/1000000024141/3248",
+      "state": {},
+      "result": {
+        "products": [],
+        "reason": "active_online_price_missing"
+      }
+    },
+    {
+      "url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+      "method": "playwright",
+      "box": {
+        "name": "Spachtelmasse 'Uniflott' 25 kg",
+        "current": "38,99 €",
+        "previous": "43,99 €",
+        "packagePrice": "1,56 € / Kilogramm",
+        "size": "Paketinhalt: 25 Kilogramm",
+        "conditional": false,
+        "market": "Troisdorf",
+        "deliveryState": "."
+      }
+    }
+  ]
+}

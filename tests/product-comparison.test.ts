@@ -110,6 +110,18 @@ test("profile lengths may differ but cross-sections cannot; screw lengths remain
   assert.ok(getVariantDistance(screw, fewer)! > 0);
   assert.equal(formatMaterialSpecification(fewer), "3,5 × 25 mm · 500 Stück");
 });
+test("broad CW/UW width requests do not invent a height; explicitly requested heights still have to match", () => {
+  for (const name of ["CW-Ständerprofil 50 mm, 2600 mm", "UW-Rahmenprofil 50 mm, 2000 mm"]) {
+    const broad = find(name);
+    assert.ok(broad); assert.equal(broad.specs.height_mm, undefined);
+    assert.equal(getVariantDistance(broad, broad), 0);
+    assert.equal(getVariantDistance(broad, { ...broad, specs: { ...broad.specs, width_mm: 75 } }), null);
+    const explicit = { ...broad, specs: { ...broad.specs, height_mm: 40 } };
+    assert.equal(getVariantDistance(explicit, broad), null);
+    assert.equal(getVariantDistance(explicit, { ...explicit, specs: { ...explicit.specs, height_mm: 50 } }), null);
+    assert.equal(getVariantDistance(explicit, explicit), 0);
+  }
+});
 
 test("multi-unit packs compare their actual area and count while insulation performance stays fixed", () => {
   const insulation = find("Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 5000 mm, 6 m²/Rolle");

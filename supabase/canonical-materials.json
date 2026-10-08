@@ -1061,5 +1061,345 @@
       "Sonorock 40",
       "Trennwandplatte 40 mm"
     ]
+  },
+  {
+    "slug": "zement-25kg-v1",
+    "name": "Zement, 25 kg",
+    "suggestion_label": "Zement, 25 kg",
+    "store_search_term": "Zement 25 kg",
+    "category": "Rohbau",
+    "product_family": "zement",
+    "brand": null,
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "canonical_version": 1,
+    "specs": {
+      "type": "zement",
+      "weight_kg": 25,
+      "required_terms": [
+        "zement"
+      ],
+      "excluded_terms": [
+        "mörtel",
+        "estrich",
+        "beton",
+        "farbe",
+        "putz"
+      ]
+    },
+    "aliases": [
+      "Zement",
+      "Cement",
+      "Zement 25 kg"
+    ]
+  },
+  {
+    "slug": "sockelputz-30kg-v1",
+    "name": "Zement-Sockelputz, 30 kg",
+    "suggestion_label": "Sockelputz, 30 kg",
+    "store_search_term": "Sockelputz 30 kg",
+    "category": "Putz",
+    "product_family": "sockelputz",
+    "brand": null,
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "canonical_version": 1,
+    "specs": {
+      "type": "sockelputz",
+      "weight_kg": 30,
+      "required_terms": [
+        "sockelputz"
+      ],
+      "excluded_terms": [
+        "farbe",
+        "profil",
+        "gewebe"
+      ]
+    },
+    "aliases": [
+      "Sockelputz",
+      "Zementsockelputz",
+      "Sockelputz 30 kg"
+    ]
+  },
+  {
+    "slug": "armierungsgewebe-160-1000-10000-v1",
+    "name": "Armierungsgewebe 160 g/m², 1 × 10 m",
+    "suggestion_label": "Armierungsgewebe 160 g/m², 1 × 10 m",
+    "store_search_term": "Armierungsgewebe 160 g/m², 1 × 10 m",
+    "category": "Baumaterial",
+    "product_family": "armierungsgewebe",
+    "base_unit": "m2",
+    "package_quantity": 10,
+    "specs": {
+      "type": "armierungsgewebe",
+      "length_mm": 10000,
+      "width_mm": 1000,
+      "grammage_g_m2": 160,
+      "area_m2": 10,
+      "excluded_terms": [
+        "streifen",
+        "eckprofil",
+        "mörtel"
+      ]
+    },
+    "aliases": [
+      "Armierungsgewebe",
+      "Putzgewebe",
+      "Glasfasergewebe"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "cw50-50-2600-v1",
+    "name": "CW-Ständerprofil 50 mm, 2600 mm",
+    "suggestion_label": "CW-Ständerprofil 50 mm, 2600 mm",
+    "store_search_term": "CW Profil 50",
+    "category": "Baumaterial",
+    "product_family": "cw-profil",
+    "base_unit": "m",
+    "package_quantity": 2.6,
+    "specs": {
+      "type": "cw-profil",
+      "length_mm": 2600,
+      "width_mm": 50,
+      "profile": "cw",
+      "excluded_terms": [
+        "uw",
+        "cd",
+        "ud",
+        "türsturz",
+        "steckwinkel"
+      ]
+    },
+    "aliases": [
+      "CW Profil",
+      "CW Profil 50",
+      "CW50"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "uw50-40-2000-v1",
+    "name": "UW-Rahmenprofil 50 mm, 2000 mm",
+    "suggestion_label": "UW-Rahmenprofil 50 mm, 2000 mm",
+    "store_search_term": "UW Profil 50",
+    "category": "Baumaterial",
+    "product_family": "uw-profil",
+    "base_unit": "m",
+    "package_quantity": 2,
+    "specs": {
+      "type": "uw-profil",
+      "length_mm": 2000,
+      "width_mm": 50,
+      "profile": "uw",
+      "excluded_terms": [
+        "cw",
+        "cd",
+        "ud",
+        "türsturz",
+        "steckwinkel"
+      ]
+    },
+    "aliases": [
+      "UW Profil",
+      "UW Profil 50",
+      "UW50"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "direktabhaenger-cd-125-1-v1",
+    "name": "Direktabhänger für CD-Profile, Schenkellänge 125 mm, 1 Stück",
+    "suggestion_label": "Direktabhänger für CD-Profile, Schenkellänge 125 mm, 1 Stück",
+    "store_search_term": "Direktabhänger für CD-Profile, Schenkellänge 125 mm, 1 Stück",
+    "category": "Baumaterial",
+    "product_family": "direktabhaenger",
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "specs": {
+      "type": "direktabhaenger",
+      "length_mm": 125,
+      "pieces": 1,
+      "profile": "cd",
+      "excluded_terms": [
+        "holzlatten",
+        "holzplatten",
+        "nonius",
+        "verbinder"
+      ]
+    },
+    "aliases": [
+      "Direktabhänger",
+      "Direktabhaenger",
+      "Abhänger CD"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "haftgrund-5l-v1",
+    "name": "Haftgrund, 5 l",
+    "suggestion_label": "Haftgrund, 5 l",
+    "store_search_term": "Haftgrund, 5 l",
+    "category": "Baumaterial",
+    "product_family": "haftgrund",
+    "base_unit": "l",
+    "package_quantity": 5,
+    "specs": {
+      "type": "haftgrund",
+      "volume_l": 5,
+      "excluded_terms": [
+        "tiefengrund",
+        "tiefgrund",
+        "betonkontakt"
+      ]
+    },
+    "aliases": [
+      "Haftgrund",
+      "Haftgrundierung"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "pu-schaum-1k-750ml-v1",
+    "name": "PU-Bauschaum, 750 ml",
+    "suggestion_label": "PU-Bauschaum, 750 ml",
+    "store_search_term": "PU-Bauschaum, 750 ml",
+    "category": "Baumaterial",
+    "product_family": "pu-schaum",
+    "base_unit": "l",
+    "package_quantity": 0.75,
+    "specs": {
+      "type": "pu-schaum",
+      "volume_l": 0.75,
+      "excluded_terms": [
+        "brunnenschaum",
+        "kleber",
+        "reiniger",
+        "entferner",
+        "2k"
+      ]
+    },
+    "aliases": [
+      "PU-Schaum",
+      "Bauschaum",
+      "Montageschaum",
+      "PU Schaum"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "sanitaer-silikon-weiss-310ml-v1",
+    "name": "Sanitär-Silikon weiß, 310 ml",
+    "suggestion_label": "Sanitär-Silikon weiß, 310 ml",
+    "store_search_term": "Sanitär-Silikon weiß, 310 ml",
+    "category": "Baumaterial",
+    "product_family": "silikon",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "specs": {
+      "type": "sanitaer-silikon",
+      "color": "weiss",
+      "volume_l": 0.31,
+      "excluded_terms": [
+        "acryl",
+        "hybrid",
+        "montagekleber",
+        "entferner"
+      ]
+    },
+    "aliases": [
+      "Silikon",
+      "Sanitärsilikon",
+      "Silikon weiß"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "rollputz-12kg-v1",
+    "name": "Rollputz weiß, 12 kg",
+    "suggestion_label": "Rollputz weiß, 12 kg",
+    "store_search_term": "Rollputz weiß, 12 kg",
+    "category": "Baumaterial",
+    "product_family": "rollputz",
+    "base_unit": "kg",
+    "package_quantity": 12,
+    "specs": {
+      "type": "rollputz",
+      "weight_kg": 12,
+      "color": "weiss",
+      "excluded_terms": [
+        "werkzeug",
+        "rolle",
+        "fertigputzgips"
+      ]
+    },
+    "aliases": [
+      "Rollputz",
+      "Streichputz"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "schleifpapier-k180-230-280-1-v1",
+    "name": "Schleifpapier K180, 230 × 280 mm, 1 Blatt",
+    "suggestion_label": "Schleifpapier K180, 230 × 280 mm, 1 Blatt",
+    "store_search_term": "Schleifpapier K180, 230 × 280 mm, 1 Blatt",
+    "category": "Baumaterial",
+    "product_family": "schleifpapier",
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "specs": {
+      "type": "schleifpapier",
+      "length_mm": 280,
+      "width_mm": 230,
+      "grit": 180,
+      "pieces": 1,
+      "excluded_terms": [
+        "maschine",
+        "schleifspitze",
+        "set",
+        "schleifrolle"
+      ]
+    },
+    "aliases": [
+      "Schleifpapier",
+      "Schleifblatt",
+      "Schleifpapier K180"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "knauf-perlfix-10kg-v1",
+    "name": "Knauf Perlfix Ansetzgips, 10 kg",
+    "suggestion_label": "Knauf Perlfix Ansetzgips, 10 kg",
+    "store_search_term": "Perlfix 10 kg",
+    "category": "Putze",
+    "product_family": "perlfix",
+    "base_unit": "kg",
+    "package_quantity": 10,
+    "specs": {
+      "type": "ansetzgips",
+      "weight_kg": 10,
+      "required_terms": [
+        "knauf",
+        "perlfix"
+      ]
+    },
+    "aliases": [
+      "Perlfix 10 kg",
+      "Knauf Perlfix 10kg"
+    ],
+    "brand": "Knauf",
+    "canonical_version": 1
   }
 ]

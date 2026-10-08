@@ -16,6 +16,7 @@
     "prices:snapshot": "node scripts/refresh-catalog-snapshot.mjs",
     "prices:audit": "node --import tsx scripts/audit-price-coverage.mjs",
     "obi:search": "tsx scripts/obi-search.ts",
+    "toom:refresh": "tsx scripts/toom-refresh.ts",
     "materials:seed": "node supabase/generate-seed.mjs",
     "check:config": "node scripts/check-configuration.mjs"
   },

@@ -1,0 +1,19 @@
+{
+  "tested_at": "2026-10-05T16:24:29.569Z",
+  "engine": "Isolated PostgreSQL/PGlite",
+  "migration": "202610050001_toom_hourly_prices.sql",
+  "passed": true,
+  "externalSupabaseMigrated": false,
+  "checks": [
+    "idempotent additive migration",
+    "current/crossed-out/unit price kept separate",
+    "previous observation preserved when history was missing",
+    "older and duplicate observations ignored",
+    "invalid refresh transaction rolls back",
+    "unchanged price updates checked_at and history",
+    "sale ending clears crossed-out price",
+    "existing canonical writer remains compatible",
+    "anonymous verified reads allowed",
+    "anonymous write and delete denied"
+  ]
+}

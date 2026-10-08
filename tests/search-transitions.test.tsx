@@ -6,9 +6,12 @@ import { mkdtemp, writeFile, rm } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import React, { act } from "react";
-import { getCanonicalComparisonCatalog } from "../src/lib/productComparison";
+import { getCanonicalComparisonCatalog, selectChainOffer } from "../src/lib/productComparison";
 import { getCatalogSnapshot } from "../src/services/catalogSnapshot";
 import { CHAIN_IDS, CHAINS, routeFallback } from "../src/lib/stores";
+import { fetchStoreCatalog } from "../src/services/catalog";
+import { GET as getToomPrices } from "../src/app/api/toom/prices/route";
+import { MVP_MATERIAL_INTENTS } from "../src/lib/toomIntent";
 
 test("real Finder hides old cards, renders skeletons, and never commits an older search", async () => {
   const dom = new JSDOM('<!doctype html><div id="root"></div>', { url: "http://localhost/", pretendToBeVisual: true });
@@ -25,7 +28,17 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     address: "Synthetische Testadresse", location: { lat: 50.13 + index * .01, lng: 8.68 }, countryCode: "DE", airDistanceMeters: 1000 + index * 100, attributions: [] }));
   const materials = getCanonicalComparisonCatalog().map(material => ({ ...material, material, label: material.name }));
   const requests: Array<{ resolve: (value: unknown) => void; reject: (error: Error) => void }> = [];
+  let pendingCatalog: Promise<unknown> | null = null;
   const harness = { materials, offers: getCatalogSnapshot(CHAIN_IDS), catalogCalls: 0,
+    catalog: () => {
+      harness.catalogCalls++;
+      const request = fetchStoreCatalog([...CHAIN_IDS], null, undefined, async () => getToomPrices()).then(result => {
+        harness.offers = result.offers;
+        return { offers: result.offers, error: null };
+      });
+      pendingCatalog = request;
+      return request;
+    },
     obi: (() => Promise.resolve({offer:null,warning:null})) as (query:string,signal:AbortSignal)=>Promise<unknown>,
     nearby: () => new Promise((resolve, reject) => requests.push({ resolve, reject })) };
   Object.defineProperty(globalThis, "__finderHarness", { value: harness, configurable: true });
@@ -42,7 +55,7 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
           if (args.path === "image") return { resolveDir: resolve("."), loader: "jsx", contents: 'import React from "react"; export default function Image({unoptimized,priority,...p}){return <img {...p}/>}' };
           if (args.path === "nearby") return { resolveDir: resolve("."), contents: "export const discoverNearby=(...args)=>globalThis.__finderHarness.nearby(...args);" };
           if (args.path === "obi") return { resolveDir: resolve("."), contents: "export const fetchObiOffer=(...args)=>globalThis.__finderHarness.obi(...args);" };
-          if (args.path === "catalog") return { resolveDir: resolve("."), contents: "export const fetchStoreCatalog=async()=>{globalThis.__finderHarness.catalogCalls++;return {offers:globalThis.__finderHarness.offers,error:null}};" };
+          if (args.path === "catalog") return { resolveDir: resolve("."), contents: "export const fetchStoreCatalog=()=>globalThis.__finderHarness.catalog();" };
           return { resolveDir: resolve("."), contents: `import {searchMaterialCatalog} from "./src/services/materialSuggestions.ts"; export {resolvePreferredMaterial,searchMaterialCatalog} from "./src/services/materialSuggestions.ts"; export const getMaterialCatalog=async()=>globalThis.__finderHarness.materials; export const getMaterialSuggestions=async(q)=>searchMaterialCatalog(globalThis.__finderHarness.materials,q); export const warmMaterialSuggestions=async()=>{};` };
         });
       } }] });
@@ -57,7 +70,12 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
       element.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
     });
     const submit = async () => act(async () => { dom.window.document.querySelector("form")!.dispatchEvent(new dom.window.Event("submit", { bubbles: true, cancelable: true })); });
-    const complete = async (index: number) => act(async () => { requests[index].resolve({ origin, stores, warnings: [] }); });
+    const complete = async (index: number) => act(async () => {
+      requests[index].resolve({ origin, stores, warnings: [] });
+      // Local API performs a real file read; let that response arrive while React's act scope is open.
+      await new Promise(resolve => setTimeout(resolve, 0));
+      await pendingCatalog;
+    });
     const names = () => [...dom.window.document.querySelectorAll(".productName")].map(node => node.textContent).join(" ");
     const loading = () => {
       assert.equal(dom.window.document.querySelectorAll(".productOfferCard").length, 0, "old product/price cards disappear immediately");
@@ -66,7 +84,9 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     };
     await input('[aria-label="Adresse"]', "Frankfurt"); await input("#material", "Acryl 310 ml"); await submit(); loading(); await complete(0);
     assert.match(names(), /Acryl/i); assert.equal(dom.window.document.querySelectorAll(".skeletonCard").length, 0);
-    await input("#material", "Tiefengrund"); await submit(); loading(); await complete(1);
+    await input("#material", "Tiefengrund");
+    assert.equal(dom.window.document.querySelectorAll(".productOfferCard").length, 0, "typing a new material clears the old price before submit");
+    await submit(); loading(); await complete(1);
     assert.match(names(), /Tiefengrund/i); assert.doesNotMatch(names(), /acryl/i);
     await input("#material", "Acryl 310 ml"); await submit(); loading();
     await input("#material", "Rotband 30 kg"); await submit(); loading();
@@ -99,6 +119,46 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     const current=dom.window.document.querySelector('#results')!.innerHTML;
     await act(async()=>obiRequests[0].resolve({offer:{...generic,product_name:'Old hanger'},warning:null}));
     assert.equal(dom.window.document.querySelector('#results')!.innerHTML,current,'late OBI price cannot replace the latest query');
+    harness.obi=async()=>({offer:null,warning:null});
+    const evidence: Record<string, unknown>[] = [];
+    let requestIndex=6;
+    for (const intent of MVP_MATERIAL_INTENTS) {
+      await input('#material',intent.input);
+      assert.equal(dom.window.document.querySelectorAll('.productOfferCard').length,0);
+      await submit();loading();await complete(requestIndex++);
+      const target=materials.find(item=>item.material.slug===intent.canonical_slug)!.material;
+      assert.equal((dom.window.document.querySelector('#comparison-material') as HTMLSelectElement).value,target.id,intent.input);
+      assert.equal(dom.window.document.querySelectorAll('.comparisonGrid').length,1);
+      for (const store of stores) {
+        const selection=selectChainOffer(target,harness.offers,materials.map(item=>item.material),store.id);
+        const card=dom.window.document.querySelector(`[data-store-id="${store.placeId}"]`)!;
+        assert.ok(card,`${intent.input}: ${store.id} branch card`);
+        if(selection.price) {
+          assert.equal(card.querySelector('.productName')?.textContent,selection.price.product_name);
+          assert.equal(card.querySelector('.packagePrice')?.textContent,new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(selection.price.price));
+          assert.equal(card.querySelector('.actualSpecification')?.textContent,selection.actualSpecification);
+          assert.equal(card.querySelector<HTMLAnchorElement>('.offerButton')?.href,selection.price.product_url);
+        } else assert.ok(card.querySelector('.missingPrice'),`${intent.input}: never fabricate missing ${store.id} price`);
+        assert.match(card.querySelector<HTMLAnchorElement>('.routeButton')!.href,/google\.com\/maps\/dir/);
+        evidence.push({input:intent.input,canonical_slug:intent.canonical_slug,store:store.id,rendered:Boolean(selection.price),
+          product:selection.price?.product_name??null,package:selection.actualSpecification,price:selection.price?.price??null,
+          product_url:selection.price?.product_url??null,checked_at:selection.price?.checked_at??null});
+      }
+      if(intent.key==='uniflott') {
+        const toom=dom.window.document.querySelector('[data-store-id="fixture-toom"]')!;
+        assert.match(toom.querySelector('.productName')!.textContent!,/Uniflott/i);
+        assert.match(toom.querySelector('.actualSpecification')!.textContent!,/25 kg/);
+        assert.ok(toom.querySelector('.packagePrice'),'simple Uniflott displays the verified TOOM cache observation');
+      }
+    }
+    stores.splice(stores.findIndex(store=>store.id==='toom'),1);
+    await input('#material','Dämmung');await submit();await complete(requestIndex++);
+    const insulation=materials.find(item=>item.material.slug==='steinwolle-sonorock-040-40-7-5m2-v1')!.material;
+    assert.equal((dom.window.document.querySelector('#comparison-material') as HTMLSelectElement).value,insulation.id,'shared defaults work without a TOOM branch');
+    if(process.env.FRONTEND_AUDIT_REPORT) await writeFile(resolve(process.env.FRONTEND_AUDIT_REPORT),JSON.stringify({
+      checked_at:new Date().toISOString(),flow:'Real Finder/components and verified catalog/cache API; only address/nearby network and OBI live reader simulated',
+      queries:MVP_MATERIAL_INTENTS.length,observations:evidence,
+    },null,2));
   } finally {
     if (root) await act(async () => root!.unmount());
     dom.window.close();

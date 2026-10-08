@@ -8,16 +8,18 @@ Der neue Katalogmodus kann bei Google-Ausfall auf eine ausdrücklich ausgelöste
 
 ## Funktionsumfang
 
+- **toom-Stundenrefresh vom 06.10.2026:** gespeicherte Produkt-URLs, aktive Aktions-/Packungspreise, Historie und separater Chromium-Fallback. 13 Produkte lokal prüfbar; stündlicher GitHub-Workflow vorbereitet, noch nicht aktiv. [Einrichtung](docs/TOOM-UPDATER.md) · [Prüfergebnisse und Supabase-Befund](docs/TOOM-ABNAHME.md).
+
 - **OBI-Fortsetzung vom 04.10.2026:** freie Materialsuche ohne neue kanonische Datensätze, persistenter geprüfter Cache und separater Chromium-Updater als HTTP-Fallback. [Einrichtung](docs/OBI-UPDATER.md) · [Echte Abrufe und verbleibende Grenzen](docs/OBI-ABNAHME.md).
 
 - Deutsche Google-Adressvorschläge und geprüfter deutscher Standort, auch bei Geolocation. Ausländische Filialen werden an Landesgrenzen ausgeschlossen.
 - OBI, BAUHAUS, HORNBACH, toom, hagebau, Globus Baumarkt und HELLWEG im Umkreis von 35 km; maximal 15 physische Märkte.
 - Serviceabteilungen werden ausgefiltert. Dubletten werden anhand von Kette, Adresse und räumlicher Nähe bereinigt, bevor Routen angefragt werden.
 - Google Routes mit Verkehrslage; bei Ausfall bleiben Märkte und Preise sichtbar. Luftlinie wird ausdrücklich als solche bezeichnet.
-- 34 konkrete Materialvarianten mit Synonymen, Schreibfehlertoleranz und überprüfbaren Packungs- und Maßangaben. Kompakte Größen wie „5L“ und „30kg“ funktionieren; unbekannte Größen werden nicht geraten.
+- 36 konkrete Materialvarianten mit Synonymen, Schreibfehlertoleranz und überprüfbaren Packungs- und Maßangaben. Kompakte Größen wie „5L“ und „30kg“ funktionieren; unbekannte Größen werden nicht geraten.
 - Bei Materialsuche erhält jede physische Filiale eine eigene Vergleichskarte. Je Kette zuerst die Wunschgröße, sonst die nächste geprüfte kompatible Variante unter ihrer eigenen Material-ID. Tatsächliche Größe und großer, zentrierter Packungspreis bleiben unverändert; der Grundpreis steht kleiner darunter. Fehlende Angebote bleiben sichtbar als „Preis nicht verfügbar“.
 - Suche nur mit Adresse bleibt möglich: Materialkatalog mit Freitext-/Händlerfilter und nächster Filiale pro Angebot. Preisreihenfolge im Katalog ist nur innerhalb derselben Material-ID verfügbar.
-- Separater Preis-Worker: Produkt finden, Merkmale prüfen, echten Packungspreis lesen und atomar speichern. Die Kundensuche verwendet geprüfte Datenbank-/Cachewerte. Die freie OBI-Suche kann serverseitig begrenzt strukturierte Daten nachladen; Chromium läuft ausschließlich im separaten OBI-Updater.
+- Separater Preis-Worker: Produkt finden, Merkmale prüfen, echten Packungspreis lesen und atomar speichern. Die Kundensuche verwendet geprüfte Datenbank-/Cachewerte. Die freie OBI-Suche kann serverseitig begrenzt strukturierte Daten nachladen; Chromium läuft ausschließlich in separaten Updatern.
 - Preisquelle, Prüfzeit, Grundpreis und Kettenpreis-Hinweis; keine erfundenen Preise oder Bestände. Produktlink und angezeigter Preis gehören zum selben geprüften Produkt.
 - Kompakte horizontale Kartenreihe auf Desktop und Mobilgeräten. Neue Suche zeigt sofort fünf Ladeplatzhalter; verspätete Antworten ersetzen keine neueren Ergebnisse.
 - Offizielle Händlersuche bei fehlender Produktzuordnung. Route führt zur ausgewählten Filiale; OpenStreetMap-Koordinaten werden nicht als Google Place ID behandelt.

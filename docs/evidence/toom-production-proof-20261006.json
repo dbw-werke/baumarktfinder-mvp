@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-06T20:30:25.168Z",
+  "passed": true,
+  "home_status": 200,
+  "api_status": 200,
+  "verified_prices": 13,
+  "sale": {
+    "material_id": "1fc5bf38-3822-f578-7c96-34f5b4b8e68d",
+    "store_id": "toom",
+    "product_name": "Knauf Spachtelmasse 'Uniflott' 25 kg",
+    "product_url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+    "price": 38.99,
+    "unit_price": 1.56,
+    "unit": "kg",
+    "package_quantity": 25,
+    "currency": "EUR",
+    "checked_at": "2026-10-06T20:28:04.403Z",
+    "source": "automatic",
+    "price_scope": "chain",
+    "availability": null,
+    "verified": true
+  },
+  "history": [
+    {
+      "price": 43.99,
+      "checked_at": "2026-10-01T15:56:05.019Z"
+    },
+    {
+      "price": 38.99,
+      "checked_at": "2026-10-05T16:27:06.130Z"
+    }
+  ],
+  "package_price_rendered": true,
+  "exact_product_link": true,
+  "route_link": true,
+  "branch_note": "Synthetic component test branch; actual prices from production API. No visual browser inspection."
+}

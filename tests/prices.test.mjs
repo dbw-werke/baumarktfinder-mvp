@@ -121,11 +121,11 @@ test("manual imports are labeled manual and reject wrong package sizes", () => {
   assert.equal(validateManualRow(row, material).availability, null);
   assert.throws(() => validateManualRow({ ...row, product_name: "Knauf Rotband 25 kg" }, material));
 });
-test("generic retailers share the mapped-product refresh path; hagebau requires its own same-SKU proof", async () => {
+test("generic retailers share the mapped-product refresh path; toom and hagebau require retailer-specific proof", async () => {
   const fixtures = { obi: "https://www.obi.de/p/123456/fixture", toom: "https://toom.de/p/fixture/123456/", hornbach: offer.url,
     bauhaus: "https://www.bauhaus.info/fixture/p/123456", hagebau: "https://www.hagebau.de/p/fixture/123456/",
     globus: "https://www.globus-baumarkt.de/p/fixture/123456/", hellweg: "https://www.hellweg.de/p/fixture/123456/" };
-  for (const [store, url] of Object.entries(fixtures).filter(([store]) => store !== "hagebau")) {
+  for (const [store, url] of Object.entries(fixtures).filter(([store]) => !["hagebau", "toom"].includes(store))) {
     const ownSchema = store === "obi" ? { ...schema, url, sku:"123456", offers:{...schema.offers,seller:{name:"OBI E-Commerce GmbH"}} } : { ...schema, url };
     const reader = createShopReader({ http: { get: async () => ({ body: document(ownSchema), url }) } });
     assert.equal((await reader.searchShop(store, "fixture", { mappedUrl: url })).discovery, "mapping");

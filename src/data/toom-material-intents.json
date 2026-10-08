@@ -1,0 +1,23 @@
+[
+  {"key":"acryl","input":"Acryl","canonical_slug":"acryl-weiss-310ml-v1","search_term":"Maleracryl weiß 310 ml","aliases":["Acryl Weiß 310 ml","Acryl 310 ml","Maleracryl","Acryl-Dichtstoff","Fugenacryl","Anschlussacryl"]},
+  {"key":"armierungsgewebe","input":"Armierungsgewebe","canonical_slug":"armierungsgewebe-160-1000-10000-v1","search_term":"Armierungsgewebe 160 g 10 m²","aliases":["Armierungsgewebe 160","Armierungsgewebe 160 g","Glasfasergewebe"]},
+  {"key":"cd-profil","input":"CD Profil","canonical_slug":"cd60-27-3000-v1","search_term":"CD Deckenprofil 60 27","aliases":["CD Profil 60/27","CD Deckenprofil","Deckenprofil CD 60/27"]},
+  {"key":"cw-profil","input":"CW Profil","canonical_slug":"cw50-50-2600-v1","search_term":"CW Ständerprofil 50","aliases":["CW Profil 50","CW Ständerprofil","Ständerprofil CW 50"]},
+  {"key":"direktabhaenger","input":"Direktabhänger","canonical_slug":"direktabhaenger-cd-125-1-v1","search_term":"Direktabhänger CD 125 mm","aliases":["Direktabhaenger"]},
+  {"key":"feuchtraumplatte","input":"Feuchtraumplatte","canonical_slug":"gipskarton-feuchtraum-12-5-2000-1250-v1","search_term":"Gipskartonplatte imprägniert 12,5 mm","aliases":["Feuchtraumplatte 12,5 mm","Feuchtraum Gipskartonplatte","Gipskarton imprägniert","Rigips grün"]},
+  {"key":"haftgrund","input":"Haftgrund","canonical_slug":"haftgrund-5l-v1","search_term":"Haftgrund","aliases":[]},
+  {"key":"perlfix","input":"Perlfix","canonical_slug":"knauf-perlfix-30kg-v1","search_term":"Knauf Perlfix","aliases":["Knauf Perlfix"]},
+  {"key":"rotband","input":"Rotband","canonical_slug":"knauf-rotband-30kg-v1","search_term":"Knauf Rotband","aliases":["Knauf Rotband"]},
+  {"key":"uniflott","input":"Uniflott","canonical_slug":"knauf-uniflott-25kg-v1","search_term":"Knauf Uniflott 25 kg","aliases":["Knauf Uniflott","Knauf Uniflott 25 kg","Uniflott 25 kg"]},
+  {"key":"pu-schaum","input":"PU-Schaum","canonical_slug":"pu-schaum-1k-750ml-v1","search_term":"PU Bauschaum 750 ml","aliases":["Bauschaum","PU Schaum","Montageschaum"]},
+  {"key":"gipskarton","input":"Rigips","canonical_slug":"gipskarton-standard-12-5-1200-600-v1","search_term":"Gipskartonplatte 12,5 mm","aliases":["Gipskarton","Gipskartonplatte","Standard Gipskartonplatte 12,5 mm","Gipskartonplatte 12,5 mm","Rigipsplatte","Rigips 12,5 mm","GKB","Bauplatte"]},
+  {"key":"rollputz","input":"Rollputz","canonical_slug":"rollputz-12kg-v1","search_term":"Rollputz 12 kg","aliases":[]},
+  {"key":"schleifpapier","input":"Schleifpapier","canonical_slug":"schleifpapier-k180-230-280-1-v1","search_term":"Schleifpapier K180","aliases":["Schmirgelpapier","Schleifpapier K180"]},
+  {"key":"schnellbauschrauben","input":"Schrauben","canonical_slug":"tn-3-5-25-1000-v1","search_term":"Schnellbauschrauben 25 mm","aliases":["Schnellbauschrauben","Schnellbauschrauben 25 mm","Trockenbauschrauben","Trockenbauschrauben 25 mm","TN Schrauben"]},
+  {"key":"silikon","input":"Silikon","canonical_slug":"sanitaer-silikon-weiss-310ml-v1","search_term":"Sanitär Silikon weiß 310 ml","aliases":["Sanitärsilikon","Sanitär Silikon"]},
+  {"key":"sockelputz","input":"Sockelputz","canonical_slug":"sockelputz-30kg-v1","search_term":"Sockelputz","aliases":["Zement-Sockelputz"]},
+  {"key":"mineralwolle","input":"Dämmung","canonical_slug":"steinwolle-sonorock-040-40-7-5m2-v1","search_term":"Steinwolle 40 mm","aliases":["Mineralwolle","Steinwolle","Mineralwolle 40 mm","Steinwolle 40 mm","Dämmung 40 mm","Dämmstoff"]},
+  {"key":"tiefengrund","input":"Tiefengrund","canonical_slug":"knauf-tiefengrund-5l-v1","search_term":"Tiefengrund","aliases":["Tiefgrund"]},
+  {"key":"uw-profil","input":"UW Profil","canonical_slug":"uw50-40-2000-v1","search_term":"UW Rahmenprofil 50","aliases":["UW Profil 50","UW Rahmenprofil","Rahmenprofil UW 50"]},
+  {"key":"zement","input":"Zement","canonical_slug":"zement-25kg-v1","search_term":"Zement 25 kg","aliases":["Bauzement","Universalzement"]}
+]

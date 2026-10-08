@@ -9,7 +9,7 @@ const sizeFields = {
 const numericFields = ["weight_kg", "volume_l", "length_mm", "width_mm", "height_mm", "thickness_mm", "diameter_mm", "area_m2", "pieces", "grit", "grammage_g_m2", "sd_m", "thermal_conductivity"];
 const functionalFields = {
   gipskarton: ["thickness_mm"], osb: ["thickness_mm"], mineralwolle: ["thickness_mm", "thermal_conductivity"],
-  "ud-profil": ["width_mm", "height_mm"], "cd-profil": ["width_mm", "height_mm"], "cw-profil": ["width_mm", "height_mm"], "uw-profil": ["width_mm", "height_mm"],
+  "ud-profil": ["width_mm", "height_mm"], "cd-profil": ["width_mm", "height_mm"], "cw-profil": ["width_mm"], "uw-profil": ["width_mm"],
   trennwandband: ["width_mm", "thickness_mm"], dichtungsband: ["width_mm", "thickness_mm"], randdaemmstreifen: ["width_mm", "thickness_mm"],
   "tn-schrauben": ["diameter_mm", "length_mm"], direktabhaenger: ["length_mm", "profile"], noniusabhaenger: ["length_mm", "profile"],
   dampfbremse: ["sd_m"], "pe-folie": ["thickness_mm"],

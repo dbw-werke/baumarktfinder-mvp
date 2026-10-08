@@ -1,6 +1,7 @@
 import { createPoliteFetcher, CollectionError } from "./http.mjs";
 import { normalize } from "./product-standardizer.mjs";
 import { confirmHornbachPackagePrices, extractToomProductState, extractGlobusProductState } from "./retailer-state.mjs";
+import { readToomIdentity, parseToomSellingState } from "./toom-pricing.mjs";
 import { extractHagebauProductState } from "./hagebau-state.mjs";
 import { confirmObiProducts, obiProductUrl } from "./obi-state.mjs";
 
@@ -137,6 +138,18 @@ export function createShopReader({ http = createPoliteFetcher(), maxProductPages
     const page = await http.get(valid, SHOPS[storeId].hosts);
     const canonical = productUrl(storeId, page.url);
     if (!canonical) throw new CollectionError("not-product-page");
+    if (storeId === "toom") {
+      // Legacy scheduled/import workers must not promote stale metadata prices.
+      const identity = readToomIdentity(page.body, page.url);
+      if (!identity || !/^\d+$/.test(identity.sapId)) throw new CollectionError("toom-active-price-identity-missing");
+      const market = process.env.TOOM_TEST_MARKET_ID || "3248";
+      if (!/^\d{3,8}$/.test(market)) throw new CollectionError("invalid-toom-test-market");
+      const state = await http.get(`https://api.toom.de/public/v1/jsonview/${identity.sapId}/${market}`, ["api.toom.de"]);
+      let data; try { data = JSON.parse(state.body); } catch { throw new CollectionError("toom-active-price-invalid"); }
+      const current = parseToomSellingState(identity, data, new Date(), market);
+      if (!current.products.length) throw new CollectionError(current.reason || "toom-active-price-missing");
+      return current.products;
+    }
     return extractStructuredProducts(page.body, page.url, storeId).filter((p) => p.url.replace(/\/$/, "") === canonical.replace(/\/$/, ""));
   }
   async function sitemapPages(storeId) {

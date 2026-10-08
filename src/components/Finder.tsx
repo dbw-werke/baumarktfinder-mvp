@@ -9,7 +9,7 @@ import SearchLoading from "./SearchLoading";
 import StoreCard from "./StoreCard";
 import NearbyStoreCard from "./NearbyStoreCard";
 import ProductComparison from "./ProductComparison";
-import { getMaterialCatalog, getMaterialSuggestions, resolvePreferredMaterial, searchMaterialCatalog, warmMaterialSuggestions, type MaterialRow, type MaterialSuggestion } from "../services/materialSuggestions";
+import { getMaterialCatalog, getMaterialSuggestions, searchMaterialCatalog, warmMaterialSuggestions, type MaterialRow, type MaterialSuggestion } from "../services/materialSuggestions";
 import { fetchStoreCatalog } from "../services/catalog";
 import { fetchObiOffer } from "../services/obi";
 import type { ObiOffer } from "../lib/obi-offer";
@@ -19,6 +19,7 @@ import { discoverNearby, type NearbyResult } from "../services/nearby";
 import { closestBranch, filterCatalog } from "../lib/catalogView";
 import { CHAINS, type Coordinates, type ChainId } from "../lib/stores";
 import { getStoreUrl } from "../lib/resolver";
+import { resolveMvpPreferredMaterial, withMvpMaterialMetadata } from "../lib/toomIntent";
 
 type SearchResult = NearbyResult & { offers: StorePrice[]; observedAt: number; materials: MaterialRow[]; obiOffer?: ObiOffer | null; obiMaterialId?: string | null };
 const POPULAR_MATERIALS = ["Rigips", "Dämmung", "Rotband", "Acryl", "Tiefengrund"];
@@ -67,7 +68,11 @@ export default function Finder() {
     return () => { cancelled = true; window.clearTimeout(timer); };
   }, [product, selectedMaterial]);
 
-  function changeMaterial(value: string) { setProduct(value); setSelectedMaterial(null); setSuggestions([]); }
+  function changeMaterial(value: string) {
+    searchGeneration.current++; obiRequest.current?.abort(); busy.current = false;
+    setLoading(false); setPendingKey(""); setStatus(""); setResult(null); setComparisonMaterial(null);
+    setProduct(value); setSelectedMaterial(null); setSuggestions([]);
+  }
   async function useCurrentLocation() {
     if (busy.current || locationBusy.current || addressBusy.current) return;
     if (!navigator.geolocation) { setStatus("Dein Browser unterstützt keine Standortbestimmung. Bitte gib eine Adresse in Deutschland ein."); return; }
@@ -105,17 +110,20 @@ export default function Finder() {
       const preferOpen = googleUnavailable && Date.now() < googleRetryAt.current;
       const discovery = await discoverNearby({ address: address.trim(), origin: addressSelection ?? undefined, location: coordinates ?? undefined, preferOpen }, () => {});
       if (!current()) return;
-      const [catalogue, materials, obi] = await Promise.all([fetchStoreCatalog([...new Set(discovery.stores.map((store) => store.id))]), materialCatalog,
-        product.trim() && discovery.stores.some(store=>store.id==="obi") ? fetchObiOffer(product.trim(),obiController.signal) : Promise.resolve(null)]);
+      const materials = await materialCatalog;
+      if (!current()) return;
+      const comparisonCatalog = withMvpMaterialMetadata(materials);
+      const preferred = resolveMvpPreferredMaterial(comparisonCatalog, product, selectedMaterial?.id);
+      const [catalogue, obi] = await Promise.all([fetchStoreCatalog([...new Set(discovery.stores.map((store) => store.id))]),
+        product.trim() && discovery.stores.some(store=>store.id==="obi") ? fetchObiOffer(preferred?.store_search_term ?? product.trim(),obiController.signal) : Promise.resolve(null)]);
       if (!current()) return;
       setAddress(discovery.origin.address); setAddressSelection(discovery.origin); setCoordinates(discovery.origin.location);
       if (discovery.origin.provider === "osm" && !preferOpen) { googleRetryAt.current = Date.now() + 60_000; setGoogleUnavailable(true); }
       else if (discovery.origin.provider !== "osm") setGoogleUnavailable(false);
-      const preferred = resolvePreferredMaterial(materials, product, selectedMaterial?.id);
-      setResult({ ...discovery, offers: catalogue.offers, materials: materials.map((item) => item.material), obiOffer:obi?.offer, obiMaterialId:preferred?.id ?? null,
+      setResult({ ...discovery, offers: catalogue.offers, materials: comparisonCatalog.map((item) => item.material), obiOffer:obi?.offer, obiMaterialId:preferred?.id ?? null,
         warnings: [...discovery.warnings, ...(catalogue.error ? [catalogue.error] : []), ...(obi?.warning ? [obi.warning] : [])], observedAt: Date.now() });
       setComparisonQuery(product.trim()); setComparisonMaterial(preferred);
-      setQuery(product.trim()); setFilterIds(preferred ? [preferred.id] : searchMaterialCatalog(materials, product).map((item) => item.id));
+      setQuery(product.trim()); setFilterIds(preferred ? [preferred.id] : searchMaterialCatalog(comparisonCatalog, product).map((item) => item.id));
       setChain("all"); setSort("distance"); setOfferLimit(24); setSuggestions([]);
       setStatus(discovery.stores.length ? "" : "Keine unterstützten Baumärkte in Deutschland im Umkreis von 35 km gefunden.");
       window.requestAnimationFrame(() => { if (current()) document.getElementById("results")?.scrollIntoView({ behavior: "smooth", block: "start" }); });
@@ -155,7 +163,7 @@ export default function Finder() {
           <button type="button" className="currentLocationButton" disabled={loading || locationLoading || addressPending} onClick={useCurrentLocation}><span aria-hidden="true">⌖</span>{locationLoading ? "Standort wird ermittelt …" : "Meinen aktuellen Standort verwenden"}</button>
         </div>
         <SuggestionInput id="material" label="MATERIAL (OPTIONAL)" placeholder="Leer lassen für alle erfassten Materialien" value={product} suggestions={suggestions} disabled={locationLoading}
-          onChange={changeMaterial} onSelect={(item) => { setProduct(item.label); setSelectedMaterial(item); setSuggestions([]); }} />
+          onChange={changeMaterial} onSelect={(item) => { changeMaterial(item.label); setSelectedMaterial(item); }} />
         <button className="searchButton" disabled={(loading && pendingKey === searchKey) || locationLoading || addressPending} type="submit">{loading && pendingKey === searchKey ? "Suche läuft …" : addressPending ? "Adresse wird geprüft …" : "Suchen"}</button>
       </form>
       <div className="popular"><span>Beliebt:</span>{POPULAR_MATERIALS.map((item) => <button type="button" disabled={locationLoading} key={item} onClick={() => { changeMaterial(item); document.getElementById("material")?.focus(); }}>{item}</button>)}</div>

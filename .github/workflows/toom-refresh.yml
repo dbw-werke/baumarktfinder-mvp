@@ -1,0 +1,84 @@
+name: Hourly verified toom prices
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: 'Also discover missing toom materials (normal hourly runs revisit stored URLs)'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: hourly-toom-prices
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    env:
+      TOOM_CACHE_PATH: work/toom-verified-cache.json
+      TOOM_USE_SUPABASE: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL != '' && secrets.SUPABASE_SERVICE_ROLE_KEY != '' }}
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      DISCOVER: ${{ github.event_name == 'workflow_dispatch' && inputs.discover }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Locate previous durable toom cache
+        id: previous
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const artifacts = await github.paginate(github.rest.actions.listArtifactsForRepo, {
+              ...context.repo, name: 'toom-verified-cache', per_page: 100
+            });
+            const previous = artifacts
+              .filter(a => !a.expired && a.workflow_run?.id && a.workflow_run.id !== context.runId && a.workflow_run.head_branch === context.ref.replace('refs/heads/', ''))
+              .sort((a, b) => Date.parse(b.created_at) - Date.parse(a.created_at))[0];
+            core.setOutput('run_id', previous?.workflow_run.id || '');
+            core.info(previous ? 'Restoring previous verified prices and history.' : 'First run: using the existing verified repository snapshot.');
+      - name: Restore verified cache and price history
+        if: steps.previous.outputs.run_id != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: toom-verified-cache
+          path: work
+          run-id: ${{ steps.previous.outputs.run_id }}
+          github-token: ${{ github.token }}
+      - name: Refresh exact stored product URLs
+        id: refresh
+        shell: bash
+        run: |
+          if [ "$DISCOVER" = 'true' ]; then
+            npm run toom:refresh -- --discover --report work/toom-refresh-last.json
+          else
+            npm run toom:refresh -- --report work/toom-refresh-last.json
+          fi
+      - name: Preserve verified cache even after a partial retrieval failure
+        # A failed download can leave a partial file. Only publish a cache after
+        # the updater actually ran; otherwise keep the previous artifact intact.
+        if: always() && (steps.refresh.outcome == 'success' || steps.refresh.outcome == 'failure')
+        uses: actions/upload-artifact@v4
+        with:
+          name: toom-verified-cache
+          path: work/toom-verified-cache.json
+          retention-days: 90
+          if-no-files-found: ignore
+      - name: Preserve refresh diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: toom-refresh-report
+          path: work/toom-refresh-last.json
+          retention-days: 30
+          if-no-files-found: ignore

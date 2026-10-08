@@ -1,0 +1,357 @@
+{
+  "store": "toom",
+  "started_at": "2026-10-05T16:26:58.439Z",
+  "storage": "local_cache",
+  "schema_error": null,
+  "products": [
+    {
+      "store": "toom",
+      "material_id": "1da620c7-7d08-a42e-5ad8-bd13fd803269",
+      "material": "Glaswolle-Klemmfilz WLG 035, 120 × 1200 × 4800 mm, 5,76 m²/Rolle",
+      "product": "Isover Klemmfilz 'Integra ZKF1-035' 120 mm; WLS 035; Glaswolle",
+      "product_url": "https://toom.de/p/klemmfilz-integra-zkf1-035-120-mm/3150282",
+      "old_active_price": 63.3,
+      "new_active_price": 63.3,
+      "old_price": null,
+      "unit_price": 10.99,
+      "unit": "m2",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:03.637Z",
+      "attempted_at": "2026-10-05T16:26:58.441Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Isover Klemmfilz 'Integra ZKF1-035' 120 mm; WLS 035; Glaswolle",
+          "url": "https://toom.de/p/klemmfilz-integra-zkf1-035-120-mm/3150282",
+          "price": 63.3,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 5.76
+    },
+    {
+      "store": "toom",
+      "material_id": "1fc5bf38-3822-f578-7c96-34f5b4b8e68d",
+      "material": "Knauf Uniflott Fugenspachtel, 25 kg",
+      "product": "Knauf Spachtelmasse 'Uniflott' 25 kg",
+      "product_url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+      "old_active_price": 43.99,
+      "new_active_price": 38.99,
+      "old_price": 43.99,
+      "unit_price": 1.56,
+      "unit": "kg",
+      "price_changed": true,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:06.130Z",
+      "attempted_at": "2026-10-05T16:27:03.647Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Knauf Spachtelmasse 'Uniflott' 25 kg",
+          "url": "https://toom.de/p/spachtelmasse-uniflott-25-kg/3053754",
+          "price": 38.99,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 25
+    },
+    {
+      "store": "toom",
+      "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+      "material": "Knauf Rotband Haftputzgips, 30 kg",
+      "product": "Knauf Haftputzgips 'Rotband' 30 kg",
+      "product_url": "https://toom.de/p/haftputzgips-rotband-30-kg/3053468",
+      "old_active_price": 11.99,
+      "new_active_price": 11.99,
+      "old_price": null,
+      "unit_price": 0.4,
+      "unit": "kg",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:08.638Z",
+      "attempted_at": "2026-10-05T16:27:06.138Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Knauf Haftputzgips 'Rotband' 30 kg",
+          "url": "https://toom.de/p/haftputzgips-rotband-30-kg/3053468",
+          "price": 11.99,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 30
+    },
+    {
+      "store": "toom",
+      "material_id": "2d750efa-4af5-e9b4-5416-89678194f058",
+      "material": "Gipskartonplatte Standard 12,5 × 1250 × 2000 mm",
+      "product": "Knauf Gipskartonplatte 200 x 125 x 1,25 cm",
+      "product_url": "https://toom.de/p/gipskartonplatte-200-x-125-x-125-cm/3254141",
+      "old_active_price": 11.23,
+      "new_active_price": 11.23,
+      "old_price": null,
+      "unit_price": 4.49,
+      "unit": "m2",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:11.140Z",
+      "attempted_at": "2026-10-05T16:27:08.645Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Knauf Gipskartonplatte 200 x 125 x 1,25 cm",
+          "url": "https://toom.de/p/gipskartonplatte-200-x-125-x-125-cm/3254141",
+          "price": 11.23,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 2.5
+    },
+    {
+      "store": "toom",
+      "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+      "material": "Acryl-Dichtstoff weiß, überstreichbar, 310 ml",
+      "product": "toom Maleracryl \"express\" weiß 310 ml; überstreichbar",
+      "product_url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+      "old_active_price": 5.99,
+      "new_active_price": 5.99,
+      "old_price": null,
+      "unit_price": 19.32,
+      "unit": "l",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:13.659Z",
+      "attempted_at": "2026-10-05T16:27:11.146Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "toom Maleracryl \"express\" weiß 310 ml; überstreichbar",
+          "url": "https://toom.de/p/maleracryl-express-weiss-310-ml/2350309",
+          "price": 5.99,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 0.31
+    },
+    {
+      "store": "toom",
+      "material_id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
+      "material": "Gipskartonplatte Standard 12,5 × 600 × 1200 mm",
+      "product": "Knauf Gipskartonplatte 'Miniboard' 120 x 60 x 1,25 cm",
+      "product_url": "https://toom.de/p/gipskartonplatte-miniboard-120-x-60-x-125-cm/3250126",
+      "old_active_price": 4.89,
+      "new_active_price": 4.89,
+      "old_price": null,
+      "unit_price": 6.79,
+      "unit": "m2",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:16.162Z",
+      "attempted_at": "2026-10-05T16:27:13.665Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Knauf Gipskartonplatte 'Miniboard' 120 x 60 x 1,25 cm",
+          "url": "https://toom.de/p/gipskartonplatte-miniboard-120-x-60-x-125-cm/3250126",
+          "price": 4.89,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 0.72
+    },
+    {
+      "store": "toom",
+      "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+      "material": "CD-Deckenprofil 60/27 × 3100 mm",
+      "product": "Knauf CD-Deckenprofil Stahlblech verzinkt 310 x 6 x 2,7 cm",
+      "product_url": "https://toom.de/p/cd-deckenprofil-stahlblech-verzinkt-310-x-6-x-27-cm/3154030",
+      "old_active_price": 9.49,
+      "new_active_price": 9.49,
+      "old_price": null,
+      "unit_price": 3.06,
+      "unit": "m",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:18.664Z",
+      "attempted_at": "2026-10-05T16:27:16.169Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Knauf CD-Deckenprofil Stahlblech verzinkt 310 x 6 x 2,7 cm",
+          "url": "https://toom.de/p/cd-deckenprofil-stahlblech-verzinkt-310-x-6-x-27-cm/3154030",
+          "price": 9.49,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 3.1
+    },
+    {
+      "store": "toom",
+      "material_id": "c3eb45d7-6ade-8acf-36b5-998aae112efa",
+      "material": "Schnellbauschrauben TN 3,5 × 25 mm, Feingewinde, 1000 Stück",
+      "product": "Knauf Schnellbauschraubenset TN Feingewinde 2,5 cm 1000 Stück",
+      "product_url": "https://toom.de/p/schnellbauschraubenset-tn-feingewinde-25-cm-1000-stueck/3254328",
+      "old_active_price": 17.99,
+      "new_active_price": 17.99,
+      "old_price": null,
+      "unit_price": 0.02,
+      "unit": "piece",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:21.184Z",
+      "attempted_at": "2026-10-05T16:27:18.668Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Knauf Schnellbauschraubenset TN Feingewinde 2,5 cm 1000 Stück",
+          "url": "https://toom.de/p/schnellbauschraubenset-tn-feingewinde-25-cm-1000-stueck/3254328",
+          "price": 17.99,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 1000
+    },
+    {
+      "store": "toom",
+      "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+      "material": "Knauf Tiefengrund, 5 l",
+      "product": "Knauf Tiefengrund 5 l",
+      "product_url": "https://toom.de/p/tiefengrund-5-l/3054172",
+      "old_active_price": 33.99,
+      "new_active_price": 33.99,
+      "old_price": null,
+      "unit_price": 6.8,
+      "unit": "l",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:23.688Z",
+      "attempted_at": "2026-10-05T16:27:21.190Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Knauf Tiefengrund 5 l",
+          "url": "https://toom.de/p/tiefengrund-5-l/3054172",
+          "price": 33.99,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 5
+    },
+    {
+      "store": "toom",
+      "material_id": "f123e8b4-bcc3-d801-e8b3-72eb5412c728",
+      "material": "Knauf Uniflott Fugenspachtel, 5 kg",
+      "product": "Knauf Gipsspachtelmasse 'Uniflott' 5 kg",
+      "product_url": "https://toom.de/p/gipsspachtelmasse-uniflott-5-kg/3250027",
+      "old_active_price": 13.99,
+      "new_active_price": 11.99,
+      "old_price": 13.99,
+      "unit_price": 2.4,
+      "unit": "kg",
+      "price_changed": true,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:26.306Z",
+      "attempted_at": "2026-10-05T16:27:23.693Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Knauf Gipsspachtelmasse 'Uniflott' 5 kg",
+          "url": "https://toom.de/p/gipsspachtelmasse-uniflott-5-kg/3250027",
+          "price": 11.99,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 5
+    },
+    {
+      "store": "toom",
+      "material_id": "f1da0475-9771-b503-5f40-26c8b138d4ae",
+      "material": "Feuchtraum-Gipskartonplatte 12,5 × 1250 × 2000 mm",
+      "product": "Knauf Gipskartonplatte imprägniert 200 x 125 x 1,25 cm",
+      "product_url": "https://toom.de/p/gipskartonplatte-impraegniert-200-x-125-x-125-cm/3254185",
+      "old_active_price": 15.98,
+      "new_active_price": 15.98,
+      "old_price": null,
+      "unit_price": 6.39,
+      "unit": "m2",
+      "price_changed": false,
+      "fetch_method": "direct",
+      "checked_at": "2026-10-05T16:27:31.331Z",
+      "attempted_at": "2026-10-05T16:27:26.312Z",
+      "cache_updated": true,
+      "db_updated": false,
+      "failure_reason": null,
+      "replacement": false,
+      "discovery": false,
+      "candidates": [
+        {
+          "name": "Knauf Gipskartonplatte imprägniert 200 x 125 x 1,25 cm",
+          "url": "https://toom.de/p/gipskartonplatte-impraegniert-200-x-125-x-125-cm/3254185",
+          "price": 15.98,
+          "rejection_reason": null
+        }
+      ],
+      "direct_reason": null,
+      "package_quantity": 2.5
+    }
+  ],
+  "refreshable": 11,
+  "checked": 11,
+  "changed": 2,
+  "failed": 0,
+  "verified": 11,
+  "db_updated": 0,
+  "refreshable_after": 11,
+  "completed_at": "2026-10-05T16:27:31.337Z"
+}

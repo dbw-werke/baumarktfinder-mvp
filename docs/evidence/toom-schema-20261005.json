@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-05T16:19:15.302Z",
+  "service_role": "configured_but_api_key_rejected",
+  "tables": [
+    {
+      "table": "materials",
+      "status": 200,
+      "accessible": true
+    },
+    {
+      "table": "stores",
+      "status": 200,
+      "accessible": true
+    },
+    {
+      "table": "store_products",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.store_products' in the schema cache"
+    },
+    {
+      "table": "verified_store_prices",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.verified_store_prices' in the schema cache"
+    },
+    {
+      "table": "price_history",
+      "status": 404,
+      "code": "PGRST205",
+      "message": "Could not find the table 'public.price_history' in the schema cache"
+    }
+  ],
+  "canonical_material_fields": {
+    "status": 400,
+    "code": "42703",
+    "message": "column materials.canonical_version does not exist"
+  }
+}

@@ -42,16 +42,39 @@ export function mergeCatalogSources(chains: ChainId[], databaseOffers: StorePric
     : message };
 }
 
-/** Read only the verified cache for nearby chains. The optional client supports isolated tests. */
-export async function fetchStoreCatalog(storeIds: string[], client = supabase, localOffers?: readonly StorePrice[]): Promise<StoreCatalogResult> {
+/** The hourly worker writes this cache; customer searches only read its verified observations. */
+async function fetchUpdatedToomPrices(fetcher: typeof fetch | null): Promise<StorePrice[]> {
+  if (!fetcher) return [];
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 5_000);
+  try {
+    const response = await fetcher("/api/toom/prices", { cache: "no-store", signal: controller.signal });
+    if (!response.ok) return [];
+    const data: unknown = await response.json();
+    if (!data || typeof data !== "object" || !("prices" in data) || !Array.isArray(data.prices) || data.prices.length > MAX_ROWS) return [];
+    return data.prices.flatMap((row: unknown) => {
+      if (!row || typeof row !== "object" || Array.isArray(row)) return [];
+      const record = row as Record<string, unknown>;
+      if (typeof record.material_id !== "string" || !record.material_id.trim()) return [];
+      const valid = validateStorePrice(record, record.material_id, ["toom"]);
+      return valid ? [valid] : [];
+    });
+  } catch { return []; }
+  finally { clearTimeout(timeout); }
+}
+
+/** Read only verified prices for nearby chains. Optional clients keep tests isolated from the network. */
+export async function fetchStoreCatalog(storeIds: string[], client = supabase, localOffers?: readonly StorePrice[],
+  runtimeFetcher: typeof fetch | null = typeof window === "undefined" ? null : fetch): Promise<StoreCatalogResult> {
   const chains = [...new Set(storeIds)].filter(isChainId);
   if (!chains.length) return { offers: [], error: null };
   const saved = localOffers ?? getCatalogSnapshot(chains);
-  if (!client) return mergeCatalogSources(chains, [], saved, "Der Produktkatalog ist noch nicht mit der Preisdatenbank verbunden.");
+  const updated = chains.includes("toom") ? fetchUpdatedToomPrices(runtimeFetcher) : Promise.resolve([]);
+  if (!client) return mergeCatalogSources(chains, [], [...await updated, ...saved], "Der Produktkatalog ist noch nicht mit der Preisdatenbank verbunden.");
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 10_000);
   const offers: StorePrice[] = [];
-  const result = (error: string | null): StoreCatalogResult => mergeCatalogSources(chains, offers, saved, error);
+  const result = async (error: string | null): Promise<StoreCatalogResult> => mergeCatalogSources(chains, offers, [...await updated, ...saved], error);
   try {
     // A final one-row probe distinguishes a full 2000-row catalogue from an actual truncation.
     for (let offset = 0; offset <= MAX_ROWS; offset += PAGE_SIZE) {
@@ -74,7 +97,7 @@ export async function fetchStoreCatalog(storeIds: string[], client = supabase, l
     }
     return result(null);
   } catch {
-    return mergeCatalogSources(chains, offers, saved, offers.length
+    return result(offers.length
       ? "Der Produktkatalog konnte nur teilweise geladen werden. Bereits geprüfte Angebote bleiben sichtbar."
       : "Der Produktkatalog konnte nicht geladen werden. Die gefundenen Märkte bleiben verfügbar.");
   } finally { clearTimeout(timeout); }
