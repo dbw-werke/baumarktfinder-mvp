@@ -13,7 +13,7 @@
       "height_mm": 50
     },
     "material_slug": "cw50-50-2600-v1",
-    "checked_at": "2026-10-08T08:03:00.000Z",
+    "checked_at": "2026-10-08T17:06:43.642Z",
     "source": "manual",
     "verification_note": "Official rendered product page, selected Lieferung nach Hause: total6.35EUR and2.44EUR/m. One2600mm profile. Read with normal Codex browser, no challenge.",
     "currency": "EUR",
@@ -39,5 +39,43 @@
     "verification_note": "Official rendered PDP online buybox27.90EUR; roll10x1m, owntechnicaldetails165g/m². Actualpackage not unitprice.",
     "currency": "EUR",
     "price_basis": "package"
+  },
+  {
+    "key": "direktabhaenger",
+    "store_id": "globus",
+    "product_name": "Knauf Direktabhänger 125 mm für CD Profil 60/27",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-27-0779250352/",
+    "price": 0.58,
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "observed_specs": {
+      "length_mm": 125,
+      "pieces": 1,
+      "profile": "cd"
+    },
+    "material_slug": "direktabhaenger-cd-125-1-v1",
+    "checked_at": "2026-10-08T21:53:23.192Z",
+    "source": "manual",
+    "currency": "EUR",
+    "price_basis": "package",
+    "verification_note": "Normal browser official own product page: selected Lieferung nach Hause, exact selling package total and product dimensions verified. No conditional/member or unit price used."
+  },
+  {
+    "key": "haftgrund",
+    "store_id": "globus",
+    "product_name": "MEM Super Haftgrund 5 l",
+    "product_url": "https://www.globus-baumarkt.de/p/mem-super-haftgrund-5-l-0779050054/",
+    "price": 27.99,
+    "base_unit": "l",
+    "package_quantity": 5,
+    "observed_specs": {
+      "volume_l": 5
+    },
+    "material_slug": "haftgrund-5l-v1",
+    "checked_at": "2026-10-08T21:53:23.193Z",
+    "source": "manual",
+    "currency": "EUR",
+    "price_basis": "package",
+    "verification_note": "Normal browser official own product page: selected Lieferung nach Hause, exact selling package total and product dimensions verified. No conditional/member or unit price used."
   }
 ]

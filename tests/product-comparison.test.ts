@@ -25,6 +25,20 @@ test("all bundled definitions have valid comparison metadata without adding offe
   for (const material of catalog) assert.equal(getVariantDistance(material, material), 0, material.name);
 });
 
+test("a cached exact-size wet abrasive cannot override comparable wood/metal paper", () => {
+  const sheet = find("Schleifpapier K180, 230 × 280 mm, 1 Blatt");
+  const roll = find("Schleifpapierrolle Holz/Metall K180, 93 mm × 5 m, 1 Rolle");
+  const invalid = offer(sheet, { store_id: "bauhaus", product_name: "Schleifpapier Nass-/Trockenschliff K180 Holz Metall",
+    product_url: "https://www.bauhaus.info/schleifpapier/test/p/12345678" });
+  const valid = offer(roll, { store_id: "bauhaus", product_url: "https://www.bauhaus.info/schleifpapier/test/p/12345679" });
+  assert.equal(selectChainOffer(sheet, [invalid], catalog, "bauhaus").match, "unavailable");
+  const selected = selectChainOffer(sheet, [invalid, valid], catalog, "bauhaus");
+  assert.equal(selected.match, "alternative");
+  assert.equal(selected.price?.material_id, roll.id);
+  assert.equal(selected.price?.price, valid.price);
+  assert.match(selected.actualSpecification!, /93 × 5000 mm/);
+});
+
 test("an exact preferred ID wins over every cheaper alternative", () => {
   const exact = offer(uniflott5, { price: 100, unit_price: 20 });
   const result = selectChainOffer(uniflott5, [offer(uniflott25, { price: 5, unit_price: 0.2 }), exact], catalog);

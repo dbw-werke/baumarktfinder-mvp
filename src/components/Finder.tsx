@@ -115,7 +115,7 @@ export default function Finder() {
       const comparisonCatalog = withMvpMaterialMetadata(materials);
       const preferred = resolveMvpPreferredMaterial(comparisonCatalog, product, selectedMaterial?.id);
       const [catalogue, obi] = await Promise.all([fetchStoreCatalog([...new Set(discovery.stores.map((store) => store.id))]),
-        product.trim() && discovery.stores.some(store=>store.id==="obi") ? fetchObiOffer(preferred?.store_search_term ?? product.trim(),obiController.signal) : Promise.resolve(null)]);
+        product.trim() && discovery.stores.some(store=>store.id==="obi") ? fetchObiOffer(preferred?.name ?? product.trim(),obiController.signal) : Promise.resolve(null)]);
       if (!current()) return;
       setAddress(discovery.origin.address); setAddressSelection(discovery.origin); setCoordinates(discovery.origin.location);
       if (discovery.origin.provider === "osm" && !preferOpen) { googleRetryAt.current = Date.now() + 60_000; setGoogleUnavailable(true); }

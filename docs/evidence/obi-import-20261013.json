@@ -1,0 +1,428 @@
+[
+  {
+    "material_slug": "acryl-weiss-310ml-v1",
+    "store_id": "obi",
+    "product_name": "CMI Acryl Weiß 310 ml",
+    "product_url": "https://www.obi.de/p/4771325/cmi-acryl-weiss-310-ml",
+    "price": 2.19,
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "acryl",
+      "color": "weiss",
+      "volume_l": 0.31
+    },
+    "verification_note": "OBI Art. 4771325: Gesamtpreis 2,19 EUR fuer 310 ml, Grundpreis 7,07 EUR/l. Echter ueberstreichbarer Acryl-Dichtstoff fuer Risse und Anschlussfugen innen, kein Silikon.",
+    "unit_price": 7.07
+  },
+  {
+    "material_slug": "armierungsgewebe-1000-10000-v1",
+    "store_id": "obi",
+    "product_name": "Glasfasergewebe 1 m x 10 m",
+    "product_url": "https://www.obi.de/p/3263647/glasfasergewebe-1-m-x-10-m",
+    "price": 24.49,
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 10,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "armierungsgewebe",
+      "length_mm": 10000,
+      "width_mm": 1000,
+      "area_m2": 10
+    },
+    "verification_note": "OBI Art. 3263647: Gesamtpreis 24,49 EUR fuer 1 x 10 m/10 m2; 2,45 EUR/m2 separat. Alkalibestaendiges Armierungsgewebe zur Einbettung in Epatherm-Spachtel; keine Fugenstreifen und kein Schleifgitter.",
+    "unit_price": 2.45
+  },
+  {
+    "material_slug": "cd60-27-3100-v1",
+    "store_id": "obi",
+    "product_name": "Knauf Deckenprofil CD 27 mm x 60 mm x 3100 mm",
+    "product_url": "https://www.obi.de/p/6728323/knauf-deckenprofil-cd-27-mm-x-60-mm-x-3100-mm",
+    "price": 9.19,
+    "currency": "EUR",
+    "base_unit": "m",
+    "package_quantity": 3.1,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "cd",
+      "length_mm": 3100,
+      "width_mm": 60,
+      "height_mm": 27
+    },
+    "verification_note": "OBI Art. 6728323: 9,19 EUR fuer gesamtes 3,1-m-CD-Profil; separat 2,97 EUR/m. Technische Abmessungen 27 x 60 x 3100 mm. Fuer Unterkonstruktionen abgehaengter Decken.",
+    "unit_price": 2.97
+  },
+  {
+    "material_slug": "cw50-50-2600-v1",
+    "store_id": "obi",
+    "product_name": "Knauf CW-Profil 50 x 50 x 0,6 mm, Länge: 2.600 mm",
+    "product_url": "https://www.obi.de/p/6836837/knauf-cw-profil-50-x-50-x-0-6-mm-laenge-2-600-mm",
+    "price": 6.39,
+    "currency": "EUR",
+    "base_unit": "m",
+    "package_quantity": 2.6,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "cw-profil",
+      "profile": "cw",
+      "length_mm": 2600,
+      "width_mm": 50
+    },
+    "verification_note": "OBI Art. 6836837: 6,39 EUR fuer gesamtes CW50-Profil in 2,6 m; 2,46 EUR/m separat. Verifiziert: 50-mm-Steg und Flansch, Blech 0,6 mm, Staenderprofil fuer Innen-/Montagewaende. Marktbestand nicht zugesichert.",
+    "unit_price": 2.46
+  },
+  {
+    "material_slug": "direktabhaenger-cd-125-1-v1",
+    "store_id": "obi",
+    "product_name": "Direktabhänger 125 mm",
+    "product_url": "https://www.obi.de/p/2353639/direktabhaenger-125-mm",
+    "price": 0.59,
+    "currency": "EUR",
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "direktabhaenger",
+      "length_mm": 125,
+      "pieces": 1,
+      "profile": "cd"
+    },
+    "verification_note": "OBI Art. 2353639: 0,59 EUR pro Direktabhaenger 125 mm. Beschreibung bestaetigt direkte Befestigung einer CD-Profil-Unterkonstruktion; kein Noniusabhaenger."
+  },
+  {
+    "material_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+    "store_id": "obi",
+    "product_name": "Gipskartonplatte 12,5 mm x 1.250 mm x 2.000 mm imprägniert",
+    "product_url": "https://www.obi.de/p/5407580/gipskartonplatte-12-5-mm-x-1-250-mm-x-2-000-mm-impraegniert",
+    "price": 15.97,
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 2.5,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "feuchtraum",
+      "thickness_mm": 12.5,
+      "width_mm": 1250,
+      "length_mm": 2000,
+      "area_m2": 2.5
+    },
+    "verification_note": "OBI Art. 5407580: Verkaufseinheits-/Gesamtpreis 15,97 EUR fuer 2,5 m2; 6,39 EUR/m2 separat. Impraegnierte Feuchtraum-Gipskartonplatte 12,5 x 1250 x 2000 mm, keine Standardplatte.",
+    "unit_price": 6.39
+  },
+  {
+    "material_slug": "haftgrund-2-5kg-v1",
+    "store_id": "obi",
+    "product_name": "Knauf Spezialhaftgrund 2,5 kg",
+    "product_url": "https://www.obi.de/p/3845005/knauf-spezialhaftgrund-2-5-kg",
+    "price": 25.99,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 2.5,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "haftgrund",
+      "weight_kg": 2.5
+    },
+    "verification_note": "OBI Art. 3845005: Gesamtpreis 25,99 EUR fuer 2,5 kg; 10,40 EUR/kg separat. Haftgrund fuer glatte oder saugende Untergruende und Spachtelschichten; kein Tiefengrund. Kein erfundenes 5-l-Gebinde.",
+    "unit_price": 10.4
+  },
+  {
+    "material_slug": "knauf-perlfix-30kg-v1",
+    "store_id": "obi",
+    "product_name": "Knauf Perlfix Ansetzgips 30 kg",
+    "product_url": "https://www.obi.de/p/2263010/knauf-perlfix-ansetzgips-30-kg",
+    "price": 12.79,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "ansetzgips",
+      "weight_kg": 30
+    },
+    "verification_note": "OBI Art. 2263010: Gesamtpreis 12,79 EUR fuer 30-kg-Sack Knauf Perlfix; 0,43 EUR/kg separat. Ansetzgips zur Montage von Gipskartonplatten, keine Palette.",
+    "unit_price": 0.43
+  },
+  {
+    "material_slug": "knauf-rotband-30kg-v1",
+    "store_id": "obi",
+    "product_name": "Knauf Rotband Haftputz 30 kg",
+    "product_url": "https://www.obi.de/p/2263044/knauf-rotband-haftputz-30-kg",
+    "price": 11.59,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "haftputz",
+      "weight_kg": 30
+    },
+    "verification_note": "OBI Art. 2263044: Gesamtpreis 11,59 EUR fuer 30 kg Knauf Rotband Haftputz; 0,39 EUR/kg separat. Gips-Haftputz fuer Innenraeume, kein gleichnamiger Rotband-Finish-Fertigspachtel.",
+    "unit_price": 0.39
+  },
+  {
+    "material_slug": "knauf-uniflott-25kg-v1",
+    "store_id": "obi",
+    "product_name": "Knauf Uniflott Spachtelmasse 25 kg",
+    "product_url": "https://www.obi.de/p/1608983/knauf-uniflott-spachtelmasse-25-kg",
+    "price": 43.99,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:24.109Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "uniflott",
+      "weight_kg": 25
+    },
+    "verification_note": "OBI Art. 1608983: Gesamtpreis 43,99 EUR fuer 25 kg Knauf Uniflott; 1,76 EUR/kg separat. Trockenbau-Fugenspachtel fuer Gipskartonplatten, kein Uniflott Finish und kein 5-kg-Sack.",
+    "unit_price": 1.76
+  },
+  {
+    "material_slug": "pu-schaum-1k-750ml-v1",
+    "store_id": "obi",
+    "product_name": "Soudal Bauschaum B2 Genius Gun 750 ml",
+    "product_url": "https://www.obi.de/p/9089269/soudal-bauschaum-b2-genius-gun-750-ml",
+    "price": 14.29,
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 0.75,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "pu-schaum",
+      "volume_l": 0.75
+    },
+    "verification_note": "OBI Art. 9089269: Gesamtpreis 14,29 EUR; separat 19,06 EUR/l. 750 ml, einkomponentiger Polyurethanschaum fuer Hohlraeume und Dachausbau; Verkaeufer OBI E-Commerce GmbH.",
+    "unit_price": 19.06
+  },
+  {
+    "material_slug": "gipskarton-standard-12-5-1200-600-v1",
+    "store_id": "obi",
+    "product_name": "Gipskarton Miniboard 12,5 mm x 600 mm x 1200 mm",
+    "product_url": "https://www.obi.de/p/8144024/gipskarton-miniboard-12-5-mm-x-600-mm-x-1200-mm",
+    "price": 4.88,
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 0.72,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "standard",
+      "thickness_mm": 12.5,
+      "width_mm": 600,
+      "length_mm": 1200,
+      "area_m2": 0.72
+    },
+    "verification_note": "OBI Art. 8144024: eigenstaendig ausgewiesener Verkaufseinheits-/Gesamtpreis 4,88 EUR; Grundpreis 6,78 EUR/m2. Standardplatte fuer trockenen Innenausbau, 600 x 1200 x 12,5 mm.",
+    "unit_price": 6.78
+  },
+  {
+    "material_slug": "rollputz-12kg-v1",
+    "store_id": "obi",
+    "product_name": "Alpina Rollputz 12 kg Weiß Matt",
+    "product_url": "https://www.obi.de/p/8170136/alpina-rollputz-12-kg-weiss-matt",
+    "price": 34.99,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 12,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "rollputz",
+      "weight_kg": 12,
+      "color": "weiss"
+    },
+    "verification_note": "OBI Art. 8170136: Gesamtpreis 34,99 EUR fuer 12 kg; 2,92 EUR/kg sekundaer. Rollputz fuer Innenwaende; Beschreibung nennt ausdruecklich Gipskartonplatten als Untergrund.",
+    "unit_price": 2.92
+  },
+  {
+    "material_slug": "tn-3-5-25-1000-v1",
+    "store_id": "obi",
+    "product_name": "Knauf Schnellbauschrauben TN 3,5 x 25 mm 1.000 Stück",
+    "product_url": "https://www.obi.de/p/4261053/knauf-schnellbauschrauben-tn-3-5-x-25-mm-1-000-stueck",
+    "price": 12.49,
+    "currency": "EUR",
+    "base_unit": "piece",
+    "package_quantity": 1000,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "tn",
+      "diameter_mm": 3.5,
+      "length_mm": 25,
+      "pieces": 1000
+    },
+    "verification_note": "OBI Art. 4261053: 12,49 EUR fuer gewaehlte 25-mm-/1000-Stueck-Packung; TN-Schrauben fuer Platten auf Holz-/Metallunterkonstruktionen, Innenwaende/Decke/Dachausbau."
+  },
+  {
+    "material_slug": "sanitaer-silikon-weiss-310ml-v1",
+    "store_id": "obi",
+    "product_name": "OBI Sanitär-Silikon Weiß 310 ml",
+    "product_url": "https://www.obi.de/p/8215667/obi-sanitaer-silikon-weiss-310-ml",
+    "price": 8.59,
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "sanitaer-silikon",
+      "color": "weiss",
+      "volume_l": 0.31
+    },
+    "verification_note": "OBI Art. 8215667: Gesamtpreis 8,59 EUR fuer 310 ml; 27,71 EUR/l sekundaer. Echter Silikon-Dichtstoff fuer dauerelastische Innenabdichtungen im Bad/Kueche/WC, kein Acryl.",
+    "unit_price": 27.71
+  },
+  {
+    "material_slug": "sockelputz-30kg-v1",
+    "store_id": "obi",
+    "product_name": "Sakret Sockelputz 30 kg",
+    "product_url": "https://www.obi.de/p/7505456/sakret-sockelputz-30-kg",
+    "price": 13.99,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "sockelputz",
+      "weight_kg": 30
+    },
+    "verification_note": "OBI Art. 7505456: Gesamtpreis 13,99 EUR fuer 30 kg; Grundpreis 0,47 EUR/kg. Echter zementgebundener Sockelputz; Verkaeufer OBI E-Commerce GmbH.",
+    "unit_price": 0.47
+  },
+  {
+    "material_slug": "steinwolle-sonorock-040-40-7-5m2-v1",
+    "store_id": "obi",
+    "product_name": "Rockwool Trennwandplatte Sonorock WLG 040 40 mm Steinwolle, 7,5 m²/Paket",
+    "product_url": "https://www.obi.de/p/2877751/rockwool-trennwandplatte-sonorock-wlg-40-40-mm-steinwolle",
+    "price": 32.92,
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 7.5,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "steinwolle-trennwandplatte",
+      "thickness_mm": 40,
+      "width_mm": 625,
+      "length_mm": 1000,
+      "area_m2": 7.5,
+      "pieces": 12,
+      "thermal_conductivity": 0.04
+    },
+    "verification_note": "OBI Art. 2877751: Verkaufseinheits-/Gesamtpreis 32,92 EUR; separat 4,39 EUR/m2. Paketinhalt 7,5 m2, Steinwolle WLG040, 40 mm, Format 625 x 1000 mm. Trennwanddaemmung zwischen Staendern.",
+    "unit_price": 4.39
+  },
+  {
+    "material_slug": "knauf-tiefengrund-5l-v1",
+    "store_id": "obi",
+    "product_name": "OBI Tiefgrund Transparent 5 l",
+    "product_url": "https://www.obi.de/p/6017156/obi-tiefgrund-transparent-5-l",
+    "price": 24.99,
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 5,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "tiefengrund",
+      "volume_l": 5
+    },
+    "verification_note": "OBI Art. 6017156: Gesamtpreis 24,99 EUR fuer 5 l; separat 5,00 EUR/l. Tiefgrund zur Festigung und Grundierung poroeser/saugender mineralischer Innenuntergruende, kein Haftgrund.",
+    "unit_price": 5
+  },
+  {
+    "material_slug": "uw50-40-2000-v1",
+    "store_id": "obi",
+    "product_name": "Knauf UW-Rahmenprofil 40 mm x 50 mm x 2000 mm",
+    "product_url": "https://www.obi.de/p/6836829/knauf-uw-rahmenprofil-40-mm-x-50-mm-x-2000-mm",
+    "price": 4.89,
+    "currency": "EUR",
+    "base_unit": "m",
+    "package_quantity": 2,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "uw-profil",
+      "profile": "uw",
+      "length_mm": 2000,
+      "width_mm": 50
+    },
+    "verification_note": "OBI Art. 6836829: 4,89 EUR fuer 2-m-Profil; 2,45 EUR/m separat. UW50 Boden-/Deckenprofil fuer Metallstaender-Trennwaende; keine Online-Lieferung, Marktbestand muss geprueft werden.",
+    "unit_price": 2.45
+  },
+  {
+    "material_slug": "zement-25kg-v1",
+    "store_id": "obi",
+    "product_name": "Trasszement 25 kg",
+    "product_url": "https://www.obi.de/p/3693132/trasszement-25-kg",
+    "price": 9.79,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:44:08.840Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "zement",
+      "weight_kg": 25
+    },
+    "verification_note": "OBI Art. 3693132: Gesamtpreis 9,79 EUR fuer 25 kg; separat 0,40 EUR/kg. Produktart Zement, Quick-Mix Trasszement, kein fertiger Sockelputz oder Moertel.",
+    "unit_price": 0.4
+  },
+  {
+    "material_slug": "schleifpapier-trockenbau-k180-225-5-v1",
+    "store_id": "obi",
+    "product_name": "LUX-TOOLS Schleifscheiben K180 Trockenbau 5 Stück, Ø 225 mm",
+    "product_url": "https://www.obi.de/p/2785301/lux-tools-schleifscheiben-k180-trockenbau-5-stueck",
+    "price": 11.49,
+    "currency": "EUR",
+    "base_unit": "piece",
+    "package_quantity": 5,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:48.046Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "schleifpapier",
+      "length_mm": 225,
+      "width_mm": 225,
+      "diameter_mm": 225,
+      "grit": 180,
+      "pieces": 5
+    },
+    "verification_note": "Offizielle OBI-Produktseite Art.2785301: 11,49 EUR je Packung mit 5 Scheiben, 225 mm, K180, klettiert, achtfach gelocht, Trockenbau/Putz. Preis separat beobachtet, keine Hochrechnung. Einsatz mit passendem Trockenbauschleifer; keine Holz-only- oder Nassschleifalternative. Web-Seitenabruf kann zwischengespeichert sein; keine Filialbestandszusage."
+  }
+]

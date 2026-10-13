@@ -16,6 +16,21 @@ test("Hornbach confirms the independently observed ST total without multiplying 
   const row = confirmHornbachPackagePrices(hbHtml(hb), [observed], hbUrl)[0];
   assert.equal(row.price, 11.05); assert.equal(row.priceBasis, "package"); assert.equal(row.declaredUnitPrice, 4.42);
 });
+test("Hornbach ROL sales unit confirms the roll total independently of rounded square-metre price", () => {
+  const state = { ...hb, defaultSalesUnit: { productMeasurementUnitCode: "ROL" },
+    defaultPrice: { price: 28.05, unit: "Rolle(n)", currencyCode: "EUR" }, basicPrice: { price: 2.81, unit: "m²", currency: "€" } };
+  const result = confirmHornbachPackagePrices(hbHtml(state), [{ ...observed, price: 28.05 }], hbUrl)[0];
+  assert.equal(result.priceBasis, "package");
+  assert.equal(result.price, 28.05);
+  assert.equal(result.declaredUnitPrice, 2.81);
+  assert.equal(confirmHornbachPackagePrices(hbHtml(state), [{ ...observed, price: 2.81 }], hbUrl)[0].priceBasis, null);
+});
+test("Hornbach PAK keeps the 1000-piece package total separate from the per-piece base price", () => {
+  const state = { ...hb, defaultSalesUnit: { productMeasurementUnitCode: "PAK" },
+    defaultPrice: { price: 10.55, unit: "Pack", currencyCode: "EUR" }, basicPrice: { price: .01, unit: "ST", currency: "€" } };
+  assert.equal(confirmHornbachPackagePrices(hbHtml(state), [{ ...observed, price: 10.55 }], hbUrl)[0].priceBasis, "package");
+  assert.equal(confirmHornbachPackagePrices(hbHtml(state), [{ ...observed, price: .01 }], hbUrl)[0].priceBasis, null);
+});
 test("Hornbach package proof rejects wrong SKU, marketplace, conflicting total and base-unit-only data", () => {
   for (const change of [{ abstractProductId: "654321" }, { url: hbUrl.replace("123456", "654321") },
     { basicPrice: { ...hb.basicPrice, price: 11.06 } }, { basicPrice: null }, { defaultSalesUnit: { productMeasurementUnitCode: "m²" } },

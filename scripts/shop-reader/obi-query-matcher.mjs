@@ -11,7 +11,7 @@ const germanNumber = (value) => String(value).replace(/\b(\d{1,3})\.(\d{3})(?=\s
 const families = [
   { id: "direct-hanger", test: /direktabhaenger/, shape: "hanger", exclude: /nonius|verbinder|schraub/ },
   { id: "reinforcement-mesh", test: /armierungsgewebe|glasfasergewebe|putzgewebe/, shape: "mesh", exclude: /eckwinkel|gewebewinkel|eckprofil|gewebeband|streifen/ },
-  { id: "gypsum-wet", test: /feuchtraumplatte|gkbi|gipskarton.*impraegniert/, shape: "board", exclude: /brandschutz|feuerschutz|\bgkfi\b/ },
+  { id: "gypsum-wet", test: /feuchtraum|gkbi|gipskarton.*impraegniert/, shape: "board", exclude: /brandschutz|feuerschutz|\bgkfi\b/ },
   { id: "gypsum-special", test: /brandschutzplatte|feuerschutzplatte|fireboard|silentboard|\bgkfi?\b/, shape: "board" },
   { id: "uniflott-finish", test: /uniflott.*finish/, shape: "bag" },
   { id: "uniflott", test: /uniflott/, shape: "bag", exclude: /finish|impraegniert/ },
@@ -43,7 +43,7 @@ const families = [
   { id: "mortar", test: /moertel/, shape: "bag" },
   { id: "plaster", test: /putz/, shape: "bag" },
   { id: "cement", test: /zement|\bcem\s*[iv]/, shape: "bag", exclude: /moertel|estrich|beton|farbe|putz|faser|platte|reiniger/ },
-  { id: "abrasive", test: /schleifpapier|schleifblatt|schleifgitter|schleifbogen/, shape: "abrasive", exclude: /maschine|schleifer|schleifgeraet/ },
+  { id: "abrasive", test: /schleifpapier|schleifblatt|schleifgitter|schleifbogen|schleifscheibe/, shape: "abrasive", exclude: /maschine|schleifer|schleifgeraet/ },
   { id: "mineral-wool", test: /mineralwolle|glaswolle|steinwolle|klemmfilz|trennwandplatte|sonorock|akustic/, shape: "insulation", exclude: /rohrschale|du[e]?bel|messer|kleber|halter/ },
   { id: "insulation-board", test: /daemmplatte|hartschaumplatte|\bxps\b|\beps\b|styropor|styrodur|holzfaserplatte/, shape: "insulation", exclude: /kleber|du[e]?bel|halter|messer/ },
   { id: "osb", test: /\bosb/, shape: "board", exclude: /lack|schraub|kleber/ },
@@ -153,7 +153,9 @@ export function extractObiProductPackage(product, family = detect(fields(product
     packageQuantity = values.volume_l; baseUnit = "l";
     labels.push(values.volume_l < 1 ? `${format(values.volume_l * 1000)} ml` : `${format(values.volume_l)} l`);
   } else if (number(values.weight_kg)) { packageQuantity = values.weight_kg; baseUnit = "kg"; labels.push(`${format(values.weight_kg)} kg`); }
-  if (number(values.length_mm) && number(values.width_mm)) {
+  if (shape === "abrasive" && number(values.diameter_mm)) {
+    labels.push(`Ø ${format(values.diameter_mm)} mm`);
+  } else if (number(values.length_mm) && number(values.width_mm)) {
     const third = values.thickness_mm || values.height_mm;
     labels.push(`${[values.length_mm, values.width_mm, ...(third ? [third] : [])].map(format).join(" × ")} mm`);
   } else if (number(values.length_mm)) labels.push(`${values.diameter_mm ? `${format(values.diameter_mm)} × ` : ""}${format(values.length_mm)} mm`);
@@ -207,6 +209,12 @@ export function rankObiCandidates(query, products = []) {
       actualSize: actual.actualSize, packagePrice: product.price ?? product.package_price ?? null, unitPrice:product.declaredUnitPrice ?? product.unitPrice ?? null, matchScore: 0, score: 0, result: "REJECT", hardExclusion: null, rejectionReason: null };
     const reject = (reason) => { diagnostic.rejectionReason = reason; diagnostic.hardExclusion = reason; diagnostics.push(diagnostic); };
     if (!normalizedQuery || !own.name) { reject("missing-query-or-product-name"); continue; }
+    if (intent.family === "abrasive") {
+      const purpose = normalize([product.name, product.description, JSON.stringify(product.attributes ?? {}), JSON.stringify(product.observedSpecs ?? {})].join(" "));
+      if (!/trockenbau|gipskarton|spachtel|fueller/.test(purpose) || /nass|wet sanding|wasserfest/.test(purpose)) {
+        reject("unverified-drywall-abrasive-purpose"); continue;
+      }
+    }
     if (actual.conflicts.length) { reject(`conflicting-specifications:${actual.conflicts.join(",")}`); continue; }
     if (intent.family !== "unknown") {
       if (!compatible(intent.family, detectedFamily, own)) { reject("incompatible-product-family"); continue; }
@@ -221,7 +229,8 @@ export function rankObiCandidates(query, products = []) {
     const wrongIdentity = identityRequirements.find(([request, proof]) => request.test(normalizedQuery) && !proof.test(technicalText));
     if (wrongIdentity) { reject(`missing-essential-attribute:${wrongIdentity[2]}`); continue; }
     const missingTerm = intent.essentialTerms.find((term) => term.startsWith("osb ")
-      ? !new RegExp(`\\bosb\\s*[/ -]?${term.at(-1)}\\b`).test(technicalText) : !technicalText.includes(term));
+      ? !new RegExp(`\\bosb\\s*[/ -]?${term.at(-1)}\\b`).test(technicalText)
+      : term === "feingewinde" && detectedFamily === "drywall-screw" && /\btn\b/.test(own.primary) ? false : !technicalText.includes(term));
     if (missingTerm) { reject(`missing-essential-attribute:${missingTerm}`); continue; }
     const mismatch = Object.entries(intent.essentialSpecs).find(([key, value]) => !equal(actual.observedSpecs[key], value));
     if (mismatch) { reject(`wrong-or-unverified-specification:${mismatch[0]}`); continue; }

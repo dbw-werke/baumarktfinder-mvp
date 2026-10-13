@@ -15,7 +15,12 @@ function meta(html, property) {
   }
   return new Set(values).size === 1 ? values[0] : null;
 }
-const packageUnit = (unit) => ["ST", "Stück", "PCE", "Pack", "Paket", "Rolle", "Sack", "Eimer", "Kartusche"].includes(unit);
+const packageUnit = (unit) => {
+  if (["ST", "Stück", "PCE"].includes(unit)) return "piece";
+  if (["PAK", "Pack", "Paket"].includes(unit)) return "pack";
+  if (["ROL", "Rolle", "Rolle(n)"].includes(unit)) return "roll";
+  return ["Sack", "Eimer", "Kartusche"].includes(unit) ? unit : null;
+};
 const euro = (price) => price && (price.currencyCode === "EUR" || price.currency === "€");
 const plain = (value) => text(decode(String(value || "").replace(/<[^>]*>/g, " ")));
 
@@ -46,7 +51,9 @@ export function confirmHornbachPackagePrices(html, products, pageUrl) {
     if (product.priceBasis != null) return enriched;
     if (row.offerDV?.merchant?.isMarketplaceMerchant !== false || row.offerDV?.canBeAddedToCart !== true
       || !packageUnit(row.defaultSalesUnit?.productMeasurementUnitCode)) return enriched;
-    const prices = [row.defaultPrice, row.basicPrice].filter((price) => packageUnit(price?.unit) && euro(price));
+    const saleUnit = packageUnit(row.defaultSalesUnit.productMeasurementUnitCode);
+    // A PAK can have a secondary ST price; that is not another pack total.
+    const prices = [row.defaultPrice, row.basicPrice].filter((price) => packageUnit(price?.unit) === saleUnit && euro(price));
     if (!prices.length || prices.some((price) => typeof price.price !== "number" || price.price !== product.price)) return enriched;
     const unitPrice = [row.defaultPrice, row.basicPrice].find((price) => ["kg", "l", "m", "m²"].includes(price?.unit) && euro(price));
     return { ...enriched, priceBasis: "package", priceBasisEvidence: "hornbach-same-sku-sales-unit",

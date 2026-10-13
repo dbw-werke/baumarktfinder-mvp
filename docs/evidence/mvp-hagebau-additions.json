@@ -69,6 +69,526 @@
       "url": "https://www.hagebau.de/p/rigips-gipskartonplatte-weiss-staerke-125-mm-anP7000435297/",
       "status": "rejected",
       "reason": "Product page price4.82/unit6.69m² and dimensions1200x600 conflict with delivery56plates. No independent one-plate package proof; choose explicit one-plate Knauf candidate instead."
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:53:12.199Z",
+      "current_price_confirmed": false,
+      "key": "rotband",
+      "name": "KNAUF Haftputzgips Rotband 30 kg grau",
+      "url": "https://www.hagebau.de/p/knauf-haftputzgips-rotband-30-kg-grau-anP7000065922/",
+      "price": 11.69,
+      "unit_price": 0.39,
+      "base_unit": "kg",
+      "package_quantity": 30,
+      "observedSpecs": {
+        "weight_kg": 30,
+        "brand": "Knauf",
+        "series": "Rotband"
+      },
+      "evidence": {
+        "online_article": "1099216",
+        "ean": "4003982085160",
+        "package_statement": "30 kg",
+        "normal_price": 11.69,
+        "excluded_customer_card_price": 11.34,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:53:12.199Z",
+      "current_price_confirmed": false,
+      "key": "perlfix",
+      "name": "KNAUF Ansetzgips Perlfix 10 kg",
+      "url": "https://www.hagebau.de/p/knauf-ansetzgips-geeignet-fuer-wand-10-kg-anP7000203417/",
+      "price": 7.69,
+      "unit_price": 0.77,
+      "base_unit": "kg",
+      "package_quantity": 10,
+      "observedSpecs": {
+        "weight_kg": 10,
+        "brand": "Knauf",
+        "series": "Perlfix"
+      },
+      "evidence": {
+        "online_article": "1168579",
+        "ean": "4006379035182",
+        "package_statement": "Gebindegröße 10 kg",
+        "normal_price": 7.69,
+        "excluded_customer_card_price": 7.46,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:53:12.199Z",
+      "current_price_confirmed": false,
+      "key": "sockelputz",
+      "name": "SAKRET Sockelputz grau 10 kg",
+      "url": "https://www.hagebau.de/p/sakret-sockelputz-grau-anP7000464814/",
+      "price": 10.49,
+      "unit_price": 1.05,
+      "base_unit": "kg",
+      "package_quantity": 10,
+      "observedSpecs": {
+        "weight_kg": 10,
+        "brand": "Sakret"
+      },
+      "evidence": {
+        "online_article": "1150875",
+        "ean": "4005813664070",
+        "package_statement": "Selected Gebindegröße 10 kg; 30 kg option not this observation",
+        "normal_price": 10.49,
+        "excluded_customer_card_price": 10.18,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:53:12.199Z",
+      "current_price_confirmed": false,
+      "key": "cd-profil",
+      "name": "KNAUF CD-Deckenprofil 60 × 27 × 4000 mm",
+      "url": "https://www.hagebau.de/p/knauf-cd-deckenprofil-laenge-400-cm-silberfarben-anP7000288337/",
+      "price": 11.99,
+      "unit_price": 3,
+      "base_unit": "m",
+      "package_quantity": 4,
+      "observedSpecs": {
+        "profile": "cd",
+        "width_mm": 60,
+        "height_mm": 27,
+        "length_mm": 4000
+      },
+      "evidence": {
+        "online_article": "1208686",
+        "ean": "4006379066759",
+        "package_statement": "CD-Decken 60 x 27 x 0.6 mm, à 4000 mm",
+        "normal_price": 11.99,
+        "excluded_customer_card_price": 11.63,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "last month",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:53:12.199Z",
+      "current_price_confirmed": false,
+      "key": "uw-profil",
+      "name": "KNAUF UW-dB-Rahmenprofil 50 × 40 × 2000 mm",
+      "url": "https://www.hagebau.de/p/knauf-uw-db-rahmenprofil-stahl-bxhxl-50-mm-x-40-mm-x-2000-mm-anP7000166633/",
+      "price": 4.99,
+      "unit_price": 2.5,
+      "base_unit": "m",
+      "package_quantity": 2,
+      "observedSpecs": {
+        "profile": "uw",
+        "width_mm": 50,
+        "height_mm": 40,
+        "length_mm": 2000,
+        "pieces": 1
+      },
+      "evidence": {
+        "online_article": "1131956",
+        "ean": "4006379075706",
+        "package_statement": "Lieferumfang 1x UW-DB Rahmenprofil",
+        "normal_price": 4.99,
+        "excluded_customer_card_price": 4.84,
+        "online_available": false,
+        "live_open_status": 404
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "last week",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:54:57.866Z",
+      "current_price_confirmed": false,
+      "key": "direktabhaenger",
+      "name": "KNAUF Direktabhänger 125 mm",
+      "url": "https://www.hagebau.de/p/knauf-abhaengung-direktabhaenger-laenge-125-cm-silberfarben-anP7000261035/",
+      "price": 0.65,
+      "base_unit": "piece",
+      "package_quantity": 1,
+      "observedSpecs": {
+        "length_mm": 125
+      },
+      "description": "Für Deckenprofile; direkte Abhängung der Decke bis 12,5 cm, verzinktes Stahlblech, Tragfähigkeitsklasse 0,40 kN. No explicit CD60/27 stated in this PDP.",
+      "evidence": {
+        "online_article": "1170920",
+        "ean": "4006379064052",
+        "normal_price": 0.65,
+        "excluded_customer_card_price": 0.63,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:54:57.866Z",
+      "current_price_confirmed": false,
+      "key": "haftgrund",
+      "name": "MEM Super-Haftgrund weiß 5 l",
+      "url": "https://www.hagebau.de/p/mem-haftgrund-super-haftgrund-anP00637294/",
+      "price": 29.99,
+      "unit_price": 6,
+      "base_unit": "l",
+      "package_quantity": 5,
+      "observedSpecs": {
+        "volume_l": 5,
+        "color": "weiß"
+      },
+      "description": "Haftgrund zur Verfestigung von losem Putz, Beton, Ziegelmauerwerk, Gasbeton und Gipsplatten. Für saugende und nichtsaugende Untergründe.",
+      "evidence": {
+        "online_article": "1147408",
+        "ean": "4010327007718",
+        "package_statement": "Gebindegröße 5 l",
+        "normal_price": 29.99,
+        "excluded_customer_card_price": 29.09,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "4 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:54:57.866Z",
+      "current_price_confirmed": false,
+      "key": "rollputz",
+      "name": "KNAUF Easy-Putz Rollputz 1 mm 10 kg weiß",
+      "url": "https://www.hagebau.de/p/knauf-dekorputz-weiss-geeignet-fuer-wand-und-decke-anP7000248025/",
+      "price": 29.99,
+      "unit_price": 3,
+      "base_unit": "kg",
+      "package_quantity": 10,
+      "observedSpecs": {
+        "weight_kg": 10,
+        "color": "weiß",
+        "grain_mm": 1
+      },
+      "description": "Gebrauchsfertiger mineralischer Dekorputz für Wand und Decke, mit einer Rolle aufzutragen.",
+      "evidence": {
+        "online_article": "1170946",
+        "ean": "4006379067657",
+        "package_statement": "Putz Easy-Putz 1 mm 10 kg",
+        "normal_price": 29.99,
+        "excluded_customer_card_price": 29.09,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "yesterday",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:54:57.866Z",
+      "current_price_confirmed": false,
+      "key": "schnellbauschrauben",
+      "name": "GECCO Schnellbauschrauben Feingewinde 3,5 × 25 mm 1000 Stück",
+      "url": "https://www.hagebau.de/p/gecco-schnellbauschrauben-35-mm-stahl-1000-stk-35-x-25-mm-anP7000133242/",
+      "price": 11.99,
+      "base_unit": "piece",
+      "package_quantity": 1000,
+      "observedSpecs": {
+        "diameter_mm": 3.5,
+        "length_mm": 25,
+        "pieces": 1000,
+        "thread": "fine"
+      },
+      "description": "Trompetenkopf, Feingewinde, phosphatiert; DIN EN14566.",
+      "evidence": {
+        "online_article": "1140353",
+        "ean": "4035300987252",
+        "package_statement": "1000 Stk., 3,5 x 25 mm",
+        "normal_price": 11.99,
+        "excluded_customer_card_price": 11.63,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "2 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:54:57.866Z",
+      "current_price_confirmed": false,
+      "key": "pu-schaum",
+      "name": "SOUDAL PU-Schaum Pistolenschaum B2 750 ml",
+      "url": "https://www.hagebau.de/p/soudal-pu-schaum-pistolenschaum-b2-anP00637754/",
+      "price": 12.49,
+      "unit_price": 16.65,
+      "base_unit": "l",
+      "package_quantity": 0.75,
+      "observedSpecs": {
+        "volume_l": 0.75,
+        "type": "pu-schaum",
+        "components": 1,
+        "fire_class": "B2",
+        "pieces": 1
+      },
+      "description": "Einkomponentiger Polyurethanschaum zum Ausschäumen von Hohlräumen; gebrauchsfertig.",
+      "evidence": {
+        "online_article": "1169406",
+        "ean": "5411183007970",
+        "package_statement": "Lieferumfang 1 x PU-Schaum; Verpackungsinhalt 750 ml",
+        "normal_price": 12.49,
+        "excluded_rrp": 13.99,
+        "excluded_customer_card_price": 12.12,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-08T21:54:57.866Z",
+      "current_price_confirmed": false,
+      "key": "zement",
+      "name": "RENOVO Universalzement grau 5 kg",
+      "url": "https://www.hagebau.de/p/renovo-universalzement-grau-5-kg-anP7000464852/",
+      "price": 3.99,
+      "unit_price": 0.8,
+      "base_unit": "kg",
+      "package_quantity": 5,
+      "observedSpecs": {
+        "weight_kg": 5
+      },
+      "description": "Mineralisches hydraulisch erhärtendes Bindemittel zur Herstellung von Mörtel, Putz und Estrich. No cement strength class stated.",
+      "evidence": {
+        "online_article": "1157263",
+        "ean": "4046806012010",
+        "package_statement": "Gebindegröße 5 kg; Lieferumfang1Sack",
+        "normal_price": 3.99,
+        "excluded_customer_card_price": 3.87,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-09T07:02:20.211Z",
+      "current_price_confirmed": false,
+      "key": "gipskarton-feuchtraum",
+      "name": "KNAUF Gipskartonplatte GKBI imprägniert 2000 × 1250 × 12,5 mm grün",
+      "url": "https://www.hagebau.de/p/knauf-gipskartonplatte-200x125-hxb-gruen-anP7000252472/",
+      "price": 15.99,
+      "unit_price": 6.4,
+      "base_unit": "m2",
+      "package_quantity": 2.5,
+      "observedSpecs": {
+        "type": "feuchtraum",
+        "length_mm": 2000,
+        "width_mm": 1250,
+        "thickness_mm": 12.5,
+        "area_m2": 2.5
+      },
+      "description": "Imprägnierte Gipsplatte für Innenräume mit hoher Feuchtigkeit; eigene Maße200x125cmund12.5mm.",
+      "evidence": {
+        "online_article": "1208766",
+        "ean": "4003982001665",
+        "normal_price": 15.99,
+        "excluded_customer_card_price": 15.51,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-09T07:02:20.211Z",
+      "current_price_confirmed": false,
+      "key": "silikon",
+      "name": "KNAUF Sanitär-Silikon weiß 300 ml",
+      "url": "https://www.hagebau.de/p/knauf-sanitaer-silikon-weiss-03-l-anP7000228223/",
+      "price": 11.99,
+      "unit_price": 39.97,
+      "base_unit": "l",
+      "package_quantity": 0.3,
+      "observedSpecs": {
+        "type": "silikon",
+        "volume_l": 0.3,
+        "color": "weiß",
+        "components": 1,
+        "curing": "acetat"
+      },
+      "description": "Einkomponentiger acetatvernetzender Silicondichtstoff für Sanitärbereiche, Bäder, Duschen.",
+      "evidence": {
+        "online_article": "1198984",
+        "ean": "4006379096756",
+        "package_statement": "Gebindegröße0.3l",
+        "normal_price": 11.99,
+        "excluded_customer_card_price": 11.63,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-09T07:02:20.211Z",
+      "current_price_confirmed": false,
+      "key": "schleifpapier",
+      "name": "WOLFCRAFT Schleifpapierbogen Farbe/Lack K180 230 × 280 mm 1 Stück",
+      "url": "https://www.hagebau.de/p/wolfcraft-schleifpapierbogen-anP01905905/",
+      "price": 1.49,
+      "base_unit": "piece",
+      "package_quantity": 1,
+      "observedSpecs": {
+        "grit": 180,
+        "width_mm": 230,
+        "length_mm": 280,
+        "pieces": 1
+      },
+      "evidence": {
+        "online_article": "1512795",
+        "ean": "4006885601505",
+        "package_statement": "Lieferumfang1Schleifpapierb.Farbe/Lack",
+        "normal_price": 1.49,
+        "excluded_customer_card_price": 1.45,
+        "online_available": false
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-09T07:02:20.211Z",
+      "current_price_confirmed": false,
+      "key": "armierungsgewebe",
+      "name": "quick-mix Armierungsgewebe AG10 160 g/m² 1 × 10 m",
+      "url": "https://www.hagebau.de/p/quick-mix-armierungsgewebe-laenge-10-m-maschenweite-4-x-4-mm-anP7000495979/",
+      "price": 27.49,
+      "unit_price": 2.75,
+      "unit_price_unit": "m",
+      "base_unit": "m2",
+      "package_quantity": 10,
+      "observedSpecs": {
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "area_m2": 10,
+        "grammage_g_m2": 160,
+        "pieces": 1
+      },
+      "description": "Alkalibeständiges Textilglas-Gittergewebe zur Aufnahme der Zugspannungen in Armierungs- und Putzschichten.",
+      "evidence": {
+        "online_article": "1199628",
+        "ean": "4004637382405",
+        "package_statement": "Lieferumfang1Rolle; Länge10mBreite100cm",
+        "normal_price": 27.49,
+        "excluded_customer_card_price": 26.67,
+        "online_available": false,
+        "manufacturer_identity_url": "https://industrie.quick-mix.de/DE_de/fuer-heimwerker/produkte/armierungsgewebe-ag",
+        "manufacturer_grammage_url": "https://media.sievert.de/files/TM/TM_DIY-QUICK-MIX-AG__SDE__AIN__V4.pdf",
+        "manufacturer_proof": "AG10 EAN4004637382405 10m²Rolle; AGtechnicalsheet Flächengewichtca160g/m². Retailerdeclaresunit/m, not/m²."
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "4 weeks ago",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-09T07:02:20.211Z",
+      "current_price_confirmed": false,
+      "key": "steinwolle",
+      "name": "ROCKWOOL Sonorock Steinwolle 40 mm 7,5 m²",
+      "url": "https://www.hagebau.de/p/rockwool-daemmstoff-sonorock-bxl-625-x-1000-mm-steinwolle-anP7000458929/",
+      "price": 29.18,
+      "unit_price": 3.89,
+      "base_unit": "m2",
+      "package_quantity": 7.5,
+      "observedSpecs": {
+        "type": "steinwolle",
+        "brand": "Rockwool",
+        "series": "Sonorock",
+        "thickness_mm": 40,
+        "width_mm": 625,
+        "length_mm": 1000,
+        "area_m2": 7.5,
+        "thermal_conductivity": 0.04
+      },
+      "evidence": {
+        "online_article": "1168819",
+        "ean": "4003446812981",
+        "package_statement": "29.18EUR/Paket; Paketinhalt7.5m²; Verpackungsinhalt7.500m²",
+        "normal_price": 29.18,
+        "excluded_customer_card_price": 28.3,
+        "online_available": false,
+        "title_spec_conflict": "Retailer title namesWLG042 but owntechnicalattribute explicitlyWLG040. Manufacturer sameEAN confirmsSonorock040.",
+        "manufacturer_identity_url": "https://www.rockwool.com/syssiteassets/rw-d/preislisten-und-produktkataloge/hochbau/pl-hochbau-gueltig-ab-01112024-rockwool.pdf",
+        "manufacturer_proof": "Sonorock40mm,EAN4003446812981,7.500m²package"
+      }
+    },
+    {
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "3 months ago",
+      "status": "historical_manual_candidate_stale_review_required",
+      "observed_at": "2026-10-09T07:02:20.211Z",
+      "current_price_confirmed": false,
+      "key": "cw-profil",
+      "name": "KNAUF CW-dB-Ständerprofil 50 × 50 × 2600 mm",
+      "url": "https://www.hagebau.de/p/knauf-cw-db-staenderprofil-lxh-260-x-5-cm-verzinkter-stahl-anP7000166766/",
+      "price": 6.49,
+      "unit_price": 2.5,
+      "base_unit": "m",
+      "package_quantity": 2.6,
+      "observedSpecs": {
+        "profile": "cw",
+        "width_mm": 50,
+        "height_mm": 50,
+        "length_mm": 2600
+      },
+      "evidence": {
+        "online_article": "1131959",
+        "ean": "4006379063147",
+        "package_statement": "Length260cm height5cm owntechnicalEigenschaften5cmBreit",
+        "normal_price": 6.49,
+        "excluded_rrp": 7.39,
+        "excluded_customer_card_price": 6.3,
+        "online_available": false,
+        "price_freshness_warning": "Indexed PDP price6.49 is3monthsold. Official recent category hassameambiguousname at6.59 buttwootherwidths8.89, so do not present6.49 as currentorassume6.59 withoutexactSKUproof."
+      }
+    },
+    {
+      "key": "cw-profil",
+      "name": "KNAUF CW-dB-Ständerprofil 50 × 50 × 3000 mm",
+      "url": "https://www.hagebau.de/p/knauf-profil-bxhxl-5-x-5-x-300-cm-anP7000237001/",
+      "price": 7.49,
+      "unit_price": 2.5,
+      "base_unit": "m",
+      "package_quantity": 3,
+      "source": "official_product_document_via_web",
+      "source_crawl_age": "last month",
+      "status": "historical_manual_candidate",
+      "observed_at": "2026-10-09T07:03:13.248Z",
+      "current_price_confirmed": false,
+      "observedSpecs": {
+        "profile": "cw",
+        "width_mm": 50,
+        "height_mm": 50,
+        "length_mm": 3000,
+        "pieces": 1
+      },
+      "evidence": {
+        "online_article": "1168631",
+        "ean": "4006379063260",
+        "package_statement": "Lieferumfang1; own titleandtechnicaldimensions5x5x300cm",
+        "normal_price": 7.49,
+        "excluded_rrp": 8.49,
+        "excluded_customer_card_price": 7.27,
+        "online_available": false,
+        "manufacturer_identity_url": "https://knauf.com/de-DE/p/produkt/cw-db-50-11112_0022",
+        "manufacturer_proof": "Knauf ownvarianttable EAN4006379063260 CW-dB50 length3000 width50 height50. Hagebau description incorrectlymentionsUW100x40and260cm; owntitle/technicalattributes andmanufacturerEAN independentlyagree3000x50x50."
+      }
     }
-  ]
+  ],
+  "last_evidence_added_at": "2026-10-09T07:03:13.250Z"
 }

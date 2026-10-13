@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-08T17:06:03.394Z",
+  "generated_at": "2026-10-12T20:55:39.713Z",
   "canonical_material_ids": {
     "gipskarton-standard-12-5-1200-600-v1": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
     "gipskarton-standard-12-5-2000-1250-v1": "2d750efa-4af5-e9b4-5416-89678194f058",
@@ -47,7 +47,24 @@
     "sanitaer-silikon-weiss-310ml-v1": "e729a380-10bf-a30f-84ac-094f8b127f74",
     "rollputz-12kg-v1": "4d497e8a-3224-e97a-6614-9e86d889deed",
     "schleifpapier-k180-230-280-1-v1": "42039b00-d37b-5117-8c6a-568f6de25468",
-    "knauf-perlfix-10kg-v1": "d8231910-6f33-8873-2e32-39dd3ac29e32"
+    "knauf-perlfix-10kg-v1": "d8231910-6f33-8873-2e32-39dd3ac29e32",
+    "pu-schaum-1k-500ml-v1": "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+    "rollputz-15kg-v1": "18ceb301-2b85-303b-c6c9-3139acccb732",
+    "sockelputz-25kg-v1": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
+    "armierungsgewebe-1000-10000-v1": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+    "armierungsgewebe-165-1000-10000-v1": "cebcf814-aecb-4a94-5319-d57b54761eea",
+    "knauf-perlfix-25kg-v1": "003defc8-10d9-c91c-206a-302684b9ce88",
+    "rollputz-8kg-v1": "9c27bb96-20f0-2ed0-af3c-d7e84a4ea603",
+    "rollputz-10kg-v1": "5a2025df-74a9-77e5-e50f-5e61d6447090",
+    "sockelputz-10kg-v1": "53529bb2-5112-c4e1-0110-9be7e7a211e5",
+    "zement-5kg-v1": "6c7ac510-90ec-bcd9-d768-4384821e0e7c",
+    "cd60-27-4000-v1": "26727068-e723-f466-abd2-17ae49e3338b",
+    "haftgrund-2-5kg-v1": "98626fce-2c50-e299-39ac-bb5f9c9dfc41",
+    "schleifpapier-k180-93-230-10-v1": "c94d34f6-3b31-013a-e176-da1fee7c21f1",
+    "sanitaer-silikon-weiss-300ml-v1": "e2e2830e-b113-5828-bf7e-598987e86840",
+    "schleifpapier-k180-93-5000-rolle-v1": "587c0ad5-79b5-7126-58c8-d4e3504cc0ef",
+    "steinwolle-040-40-9m2-v1": "7911616b-c5fe-d6b0-1bbc-6ee25d740aed",
+    "schleifpapier-trockenbau-k180-225-5-v1": "3f27e372-f757-5850-5643-489a33782dbb"
   },
   "prices": [
     {
@@ -113,7 +130,7 @@
       "unit": "m",
       "package_quantity": 2,
       "currency": "EUR",
-      "checked_at": "2026-10-08T07:47:14.100Z",
+      "checked_at": "2026-10-12T12:30:23.120Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
@@ -181,7 +198,7 @@
       "unit": "l",
       "package_quantity": 5,
       "currency": "EUR",
-      "checked_at": "2026-10-08T07:44:58.914Z",
+      "checked_at": "2026-10-12T12:30:00.987Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
@@ -220,6 +237,38 @@
       "observed_specs": {
         "volume_l": 5,
         "type": "haftgrund"
+      }
+    },
+    {
+      "material_id": "18ceb301-2b85-303b-c6c9-3139acccb732",
+      "canonical_slug": "rollputz-15kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "rollputz",
+        "weight_kg": 15,
+        "color": "weiss",
+        "excluded_terms": [
+          "werkzeug",
+          "rolle",
+          "fertigputzgips"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "MODULAN 5502 Rollputz Außen 0,5 mm weiß 15 kg",
+      "product_url": "https://www.hornbach.de/p/modulan-5502-rollputz-aussen-0-5-mm-weiss-15-kg/10476083/",
+      "price": 34.95,
+      "unit_price": 2.33,
+      "unit": "kg",
+      "package_quantity": 15,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T12:30:14.295Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {
+        "weight_kg": 15,
+        "type": "rollputz"
       }
     },
     {
@@ -325,11 +374,15 @@
       "unit": "kg",
       "package_quantity": 25,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:55:51.285Z",
+      "checked_at": "2026-10-12T12:30:07.612Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
-      "availability": "InStock"
+      "availability": "InStock",
+      "observed_specs": {
+        "weight_kg": 25,
+        "type": "fugenspachtel"
+      }
     },
     {
       "material_id": "1fc5bf38-3822-f578-7c96-34f5b4b8e68d",
@@ -498,11 +551,15 @@
       "unit": "kg",
       "package_quantity": 30,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:56:42.708Z",
+      "checked_at": "2026-10-12T12:30:05.491Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
-      "availability": "InStock"
+      "availability": "InStock",
+      "observed_specs": {
+        "weight_kg": 30,
+        "type": "haftputzgips"
+      }
     },
     {
       "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
@@ -766,7 +823,7 @@
       "unit": "l",
       "package_quantity": 0.31,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:57:35.807Z",
+      "checked_at": "2026-10-12T12:29:50.144Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
@@ -948,18 +1005,25 @@
         ]
       },
       "store_id": "hornbach",
-      "product_name": "Knauf Gipskartonplatte Miniboard Standardplatte GKB 1200 mm x 600 mm x 12,5 mm",
+      "product_name": "Knauf Gipskartonplatte Miniboard Standardplatte GKB 1200 mm x 600 mm x 12,5 mm; A2 (nicht brennbar, mit geringen brennbaren Anteilen)",
       "product_url": "https://www.hornbach.de/p/knauf-gipskartonplatte-miniboard-standardplatte-gkb-1200-mm-x-600-mm-x-12-5-mm/7510113/",
       "price": 4.85,
       "unit_price": 6.74,
       "unit": "m2",
       "package_quantity": 0.72,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:51:51.576Z",
+      "checked_at": "2026-10-12T12:30:14.055Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
-      "availability": "InStock"
+      "availability": "InStock",
+      "observed_specs": {
+        "width_mm": 600,
+        "thickness_mm": 12.5,
+        "length_mm": 1200,
+        "area_m2": 0.72,
+        "type": "standard"
+      }
     },
     {
       "material_id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
@@ -1125,11 +1189,17 @@
       "unit": "m",
       "package_quantity": 3.1,
       "currency": "EUR",
-      "checked_at": "2026-10-01T16:00:18.065Z",
+      "checked_at": "2026-10-12T12:29:52.180Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
-      "availability": "InStock"
+      "availability": "InStock",
+      "observed_specs": {
+        "length_mm": 3100,
+        "width_mm": 60,
+        "height_mm": 27,
+        "type": "cd"
+      }
     },
     {
       "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
@@ -1170,6 +1240,38 @@
       }
     },
     {
+      "material_id": "5a2025df-74a9-77e5-e50f-5e61d6447090",
+      "canonical_slug": "rollputz-10kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "rollputz",
+        "weight_kg": 10,
+        "color": "weiss",
+        "excluded_terms": [
+          "werkzeug",
+          "rolle",
+          "fertigputzgips"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Knauf EASYPUTZ Dekorputz 0,5 mm Extra Fein weiß 10 kg",
+      "product_url": "https://www.hornbach.de/p/knauf-easyputz-dekorputz-0-5-mm-extra-fein-weiss-10-kg/7644819/",
+      "price": 29.95,
+      "unit_price": 3,
+      "unit": "kg",
+      "package_quantity": 10,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T12:30:46.065Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {
+        "weight_kg": 10,
+        "type": "rollputz"
+      }
+    },
+    {
       "material_id": "60c4a168-2bf6-f806-729b-1490d89aa85c",
       "canonical_slug": "zement-25kg-v1",
       "canonical_version": 1,
@@ -1195,7 +1297,7 @@
       "unit": "kg",
       "package_quantity": 25,
       "currency": "EUR",
-      "checked_at": "2026-10-08T07:47:30.849Z",
+      "checked_at": "2026-10-12T12:30:25.290Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
@@ -1278,6 +1380,40 @@
       }
     },
     {
+      "material_id": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
+      "canonical_slug": "sockelputz-25kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sockelputz",
+        "weight_kg": 25,
+        "required_terms": [
+          "sockelputz"
+        ],
+        "excluded_terms": [
+          "farbe",
+          "profil",
+          "gewebe"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Knauf SM700 Pro Putzmörtel 25 kg",
+      "product_url": "https://www.hornbach.de/p/knauf-sm700-pro-putzmoertel-25-kg/12027001/",
+      "price": 33.9,
+      "unit_price": 1.36,
+      "unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T12:30:18.802Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {
+        "weight_kg": 25,
+        "type": "sockelputz"
+      }
+    },
+    {
       "material_id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
       "canonical_slug": "pu-schaum-1k-b2-genius-750ml-v1",
       "canonical_version": 1,
@@ -1311,6 +1447,114 @@
       "availability": "InStock"
     },
     {
+      "material_id": "7911616b-c5fe-d6b0-1bbc-6ee25d740aed",
+      "canonical_slug": "steinwolle-040-40-9m2-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "steinwolle-trennwandplatte",
+        "thickness_mm": 40,
+        "width_mm": 625,
+        "length_mm": 1200,
+        "pieces": 12,
+        "area_m2": 9,
+        "thermal_conductivity": 0.04,
+        "required_terms": [
+          "steinwolle"
+        ],
+        "excluded_terms": [
+          "glaswolle"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "ISOVER Brandschutzplatte Protect BSP 40 für den Innenausbau WLG 040 1200 mm x 625 mm x 40 mm",
+      "product_url": "https://www.hornbach.de/p/isover-brandschutzplatte-protect-bsp-40-fuer-den-innenausbau-wlg-040-1200-mm-x-625-mm-x-40-mm/8761573/",
+      "price": 76.36,
+      "unit_price": 8.48,
+      "unit": "m2",
+      "package_quantity": 9,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T20:51:07.436Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {
+        "width_mm": 625,
+        "length_mm": 1200,
+        "thickness_mm": 40,
+        "area_m2": 9,
+        "pieces": 12,
+        "type": "steinwolle-trennwandplatte",
+        "thermal_conductivity": 0.04
+      }
+    },
+    {
+      "material_id": "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+      "canonical_slug": "pu-schaum-1k-500ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.5,
+        "excluded_terms": [
+          "brunnenschaum",
+          "kleber",
+          "reiniger",
+          "entferner",
+          "2k"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "PRECIT 1K Pistolenschaum XXL B2 beige 500 ml; Polyurethan (PU); B2 normal entflammbar",
+      "product_url": "https://www.hornbach.de/p/precit-1k-pistolenschaum-xxl-b2-beige-500-ml/10331179/",
+      "price": 8.95,
+      "unit_price": 17.9,
+      "unit": "l",
+      "package_quantity": 0.5,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T12:30:09.798Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {
+        "volume_l": 0.5,
+        "type": "pu-schaum"
+      }
+    },
+    {
+      "material_id": "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+      "canonical_slug": "pu-schaum-1k-500ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.5,
+        "excluded_terms": [
+          "brunnenschaum",
+          "kleber",
+          "reiniger",
+          "entferner",
+          "2k"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "CMI Montageschaum 1K 500 ml",
+      "product_url": "https://www.obi.de/p/8227548/cmi-montageschaum-1k-500-ml",
+      "price": 5.79,
+      "unit_price": 11.58,
+      "unit": "l",
+      "package_quantity": 0.5,
+      "currency": "EUR",
+      "checked_at": "2026-10-04T08:41:20.487Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "OnlineOnly",
+      "observed_specs": {
+        "volume_l": 0.5,
+        "type": "pu-schaum"
+      }
+    },
+    {
       "material_id": "8739fa28-ef16-5da4-dea0-a10cd973d87a",
       "canonical_slug": "knauf-perlfix-30kg-v1",
       "canonical_version": 1,
@@ -1330,11 +1574,15 @@
       "unit": "kg",
       "package_quantity": 30,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:57:01.437Z",
+      "checked_at": "2026-10-12T12:30:03.217Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
-      "availability": "InStock"
+      "availability": "InStock",
+      "observed_specs": {
+        "weight_kg": 30,
+        "type": "ansetzgips"
+      }
     },
     {
       "material_id": "8739fa28-ef16-5da4-dea0-a10cd973d87a",
@@ -1407,6 +1655,44 @@
         "area_m2": 7.5,
         "type": "steinwolle-trennwandplatte",
         "thermal_conductivity": 0.04
+      }
+    },
+    {
+      "material_id": "c3eb45d7-6ade-8acf-36b5-998aae112efa",
+      "canonical_slug": "tn-3-5-25-1000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "tn",
+        "diameter_mm": 3.5,
+        "length_mm": 25,
+        "pieces": 1000,
+        "required_terms": [
+          "tn",
+          "feingewinde"
+        ],
+        "excluded_terms": [
+          "grobgewinde",
+          "tb"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Knauf Schnellbauschraube Feingewinde TN 3,5 mm x 25 mm Pack = 1000 St",
+      "product_url": "https://www.hornbach.de/p/knauf-schnellbauschraube-feingewinde-tn-3-5-mm-x-25-mm-pack-1000-st/7026779/",
+      "price": 10.55,
+      "unit_price": 0.01,
+      "unit": "piece",
+      "package_quantity": 1000,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T20:51:05.392Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {
+        "length_mm": 25,
+        "diameter_mm": 3.5,
+        "pieces": 1000,
+        "type": "tn"
       }
     },
     {
@@ -1527,6 +1813,39 @@
           "2k"
         ]
       },
+      "store_id": "hornbach",
+      "product_name": "Soudal Bauschaum B2 Genius Gun beige 750 ml; Polyurethan (PU); B2 normal entflammbar; einkomponentiger PU-Schaum",
+      "product_url": "https://www.hornbach.de/p/soudal-bauschaum-b2-genius-gun-beige-750-ml/5125626/",
+      "price": 11.95,
+      "unit_price": 15.93,
+      "unit": "l",
+      "package_quantity": 0.75,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T12:30:50.051Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {
+        "volume_l": 0.75,
+        "type": "pu-schaum"
+      }
+    },
+    {
+      "material_id": "cf20d372-e5f7-f8b6-4181-7ea97cc9dc4d",
+      "canonical_slug": "pu-schaum-1k-750ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.75,
+        "excluded_terms": [
+          "brunnenschaum",
+          "kleber",
+          "reiniger",
+          "entferner",
+          "2k"
+        ]
+      },
       "store_id": "obi",
       "product_name": "Soudal Bauschaum B2 Genius Gun 750 ml",
       "product_url": "https://www.obi.de/p/9089269/soudal-bauschaum-b2-genius-gun-750-ml",
@@ -1576,6 +1895,41 @@
       "observed_specs": {
         "volume_l": 0.75,
         "type": "pu-schaum"
+      }
+    },
+    {
+      "material_id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+      "canonical_slug": "direktabhaenger-cd-125-1-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd",
+        "excluded_terms": [
+          "holzlatten",
+          "holzplatten",
+          "nonius",
+          "verbinder"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Knauf Direktabhänger 125 mm für CD Profil 60 mm / 27 mm",
+      "product_url": "https://www.hornbach.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-mm-27-mm/7017220/",
+      "price": 0.58,
+      "unit_price": 0.58,
+      "unit": "piece",
+      "package_quantity": 1,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T12:29:56.684Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {
+        "length_mm": 125,
+        "pieces": 1,
+        "type": "direktabhaenger"
       }
     },
     {
@@ -1727,6 +2081,43 @@
           "mörtel"
         ]
       },
+      "store_id": "hornbach",
+      "product_name": "Baumit Armierungsglasgewebe 160 gr/m² 4,5 x 4 mm weiß 10 m x 1 m Rolle = 10 m²",
+      "product_url": "https://www.hornbach.de/p/baumit-armierungsglasgewebe-160-gr-m-4-5-x-4-mm-weiss-10-m-x-1-m-rolle-10-m/3894175/",
+      "price": 28.05,
+      "unit_price": 2.81,
+      "unit": "m2",
+      "package_quantity": 10,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T12:29:49.321Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock",
+      "observed_specs": {
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "grammage_g_m2": 160,
+        "area_m2": 10,
+        "type": "armierungsgewebe"
+      }
+    },
+    {
+      "material_id": "dae638df-5d1f-1c45-c736-f8634303d3b4",
+      "canonical_slug": "armierungsgewebe-160-1000-10000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "grammage_g_m2": 160,
+        "area_m2": 10,
+        "excluded_terms": [
+          "streifen",
+          "eckprofil",
+          "mörtel"
+        ]
+      },
       "store_id": "toom",
       "product_name": "B1 Armierungsgewebe 10 m 160 g/m²",
       "product_url": "https://toom.de/p/armierungsgewebe-10-m-160-gm/3150069",
@@ -1833,11 +2224,15 @@
       "unit": "l",
       "package_quantity": 5,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:57:07.494Z",
+      "checked_at": "2026-10-12T12:30:20.873Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
-      "availability": "InStock"
+      "availability": "InStock",
+      "observed_specs": {
+        "volume_l": 5,
+        "type": "tiefengrund"
+      }
     },
     {
       "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
@@ -1928,7 +2323,7 @@
       "unit": "l",
       "package_quantity": 0.31,
       "currency": "EUR",
-      "checked_at": "2026-10-08T07:46:30.507Z",
+      "checked_at": "2026-10-12T12:30:16.547Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
@@ -2195,18 +2590,25 @@
         ]
       },
       "store_id": "hornbach",
-      "product_name": "Knauf Gipskartonplatte Feuchtraumplatte GKBI imprägniert 2000 mm x 1250 mm x 12,5 mm",
+      "product_name": "Knauf Gipskartonplatte Feuchtraumplatte GKBI imprägniert 2000 mm x 1250 mm x 12,5 mm; A2 (nicht brennbar, mit geringen brennbaren Anteilen)",
       "product_url": "https://www.hornbach.de/p/knauf-gipskartonplatte-feuchtraumplatte-gkbi-impraegniert-2000-mm-x-1250-mm-x-12-5-mm/3324241/",
       "price": 15.95,
       "unit_price": 6.38,
       "unit": "m2",
       "package_quantity": 2.5,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:52:23.359Z",
+      "checked_at": "2026-10-12T12:29:59.343Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,
-      "availability": "InStock"
+      "availability": "InStock",
+      "observed_specs": {
+        "width_mm": 1250,
+        "thickness_mm": 12.5,
+        "length_mm": 2000,
+        "area_m2": 2.5,
+        "type": "feuchtraum"
+      }
     },
     {
       "material_id": "f1da0475-9771-b503-5f40-26c8b138d4ae",
@@ -2309,7 +2711,7 @@
       "unit": "m",
       "package_quantity": 2.6,
       "currency": "EUR",
-      "checked_at": "2026-10-08T07:44:15.591Z",
+      "checked_at": "2026-10-12T12:29:54.430Z",
       "source": "automatic",
       "price_scope": "chain",
       "verified": true,

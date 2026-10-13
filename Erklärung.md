@@ -1,6 +1,16 @@
 # Erklärung zum Baumarktfinder
 
-Stand: 06.10.2026. Das bestehende Projekt wurde weitergeführt; Gestaltung, Logos und funktionierende Teile bleiben erhalten. Der aktuelle Auftrag betrifft ausschließlich die stündliche toom-Aktualisierung.
+## BAUHAUS – Stand 12.10.2026
+
+Alle 21 MVP-Materialien haben offiziell belegte BAUHAUS-Angebote in der bestehenden `src/data/manual-prices.json`. Der Kundenpfad lädt diese geprüften Daten ohne Live-Scraping. Paketvarianten bleiben als tatsächliches Produkt sichtbar: Perlfix 25 kg, Standardplatte 2,5 m², Rollputz 8 kg und Holz/Metall-Schleifpapier K180 als 5-m-Rolle zu 5,30 €. Nassschleifpapier oder Gewebe gelten nicht allein wegen gleicher Körnung als vergleichbar.
+
+Manuelle Aktualisierung: Beobachtung mit echtem Paketpreis, exakter URL, Packungsdaten, tatsächlichem Prüfdatum und Beleg im bestehenden Importformat dokumentieren. Danach `npm run prices:import -- docs/evidence/bauhaus-import-20261011.json --local --write`, `npm run build` und den laufenden Produktionsserver neu starten. Die BAUHAUS-Ergänzungen sind lokal gespeichert; ein Supabase-Schreibvorgang wird nicht behauptet.
+
+270 Tests, ESLint und Produktionsbuild bestanden. Alle 21 Suchbegriffe wurden mit der echten Finder-Komponente und echten Preisdaten getestet; Standortdaten waren Testfixtures. Die vollständige Live-Browserabnahme ist weiterhin blockiert. Auf Nutzerwunsch wurden stattdessen die manuellen Preiszuordnungen abgeschlossen. [Alle Produkte, Pakete, Preise, Links und Prüfzeitpunkte](docs/BAUHAUS-ABNAHME.md). Kein Push oder Deployment.
+
+## Vorheriger Stand vom 06.10.2026
+
+Das bestehende Projekt wurde weitergeführt; Gestaltung, Logos und funktionierende Teile bleiben erhalten. Der damalige Auftrag betraf die stündliche toom-Aktualisierung. Die folgenden Angaben dokumentieren diesen früheren Stand.
 
 ## Implementierung
 

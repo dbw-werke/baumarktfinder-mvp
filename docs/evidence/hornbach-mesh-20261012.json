@@ -1,0 +1,218 @@
+{
+  "query": "Armierungsgewebe",
+  "method": "automatic",
+  "products": [
+    {
+      "name": "Baumit Armierungsglasgewebe 160 gr/m² 4,5 x 4 mm weiß 10 m x 1 m Rolle = 10 m²",
+      "url": "https://www.hornbach.de/p/baumit-armierungsglasgewebe-160-gr-m-4-5-x-4-mm-weiss-10-m-x-1-m-rolle-10-m/3894175/",
+      "price": 28.05,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "json-ld-offer",
+      "availability": "InStock",
+      "brand": "Baumit",
+      "category": "Startseite > Sortiment > Baustoffe > Fassadendämmung > Vollwärmeschutz",
+      "description": "Planst Du ein Projekt mit Wärmedämmverbundsystemen? Dann ist das Armierungsglasgewebe 10x1 m genau das Richtige für Dich. Produktmerkmale des Baumit Armierungsglasgewebes 160 gr/m² 4,5 x 4 mm weiß 10 m x 1 m Rolle = 10 m² Darum solltest Du zugreifen: Dieses feine, schiebefeste Textilglasgewebe ist ideal zum Einbetten in Kleber, Spachtelmassen und Putze. Es ist systemgeprüft für den Einsatz in Wärmedämmverbundsystemen und bietet durch seine hohe Alkalibeständigkeit eine lange Lebensdauer. Mit einer Maschenweite von 4,5 x 4 mm sorgt es für eine gleichmäßige Verteilung der Spannungen und vermeidet so Risse in der Putzschicht. Das Gewebe ist in einer praktischen Rolle von 10 m² erhältlich und eignet sich sowohl für Vollwärmeschutz als auch für Außen- und Innenputze. Das Flächengewicht von 160 g/m² bietet eine optimale Balance zwischen Stabilität und Flexibilität. Festgezurrt: Das Baumit Armierungsglasgewebe ist die ideale Wahl für langlebige und rissfreie Putzsysteme im Innen- und Außenbereich.",
+      "attributes": [
+        {
+          "name": "Anwendungsgebiet",
+          "value": "Vollwärmeschutz, Außenputze, Innenputze"
+        },
+        {
+          "name": "Material",
+          "value": "Glasfaser"
+        },
+        {
+          "name": "Abmessung (LxB) in m",
+          "value": "10x1"
+        },
+        {
+          "name": "Länge",
+          "value": "10 m"
+        },
+        {
+          "name": "Breite",
+          "value": "1 m"
+        },
+        {
+          "name": "Format",
+          "value": "Rolle"
+        },
+        {
+          "name": "Maschenweite",
+          "value": "4,5 x 4 mm"
+        },
+        {
+          "name": "Flächengewicht",
+          "value": "160 g/m²"
+        },
+        {
+          "name": "Inhalt",
+          "value": "10 m²"
+        },
+        {
+          "name": "Inhalt",
+          "value": "1,65 kg"
+        },
+        {
+          "name": "Ausführung",
+          "value": "Textilglasgitter"
+        },
+        {
+          "name": "Eigenschaft",
+          "value": "Hoch alkalibeständig, Vermeidet Risse"
+        },
+        {
+          "name": "Artikeltyp",
+          "value": "Gewebe"
+        },
+        {
+          "name": "Abmessung (LxB) in m",
+          "value": "10.0 m x 1.0 m"
+        },
+        {
+          "name": "Farbton",
+          "value": "Weiß"
+        },
+        {
+          "name": "AKN (Artikelkurznummer)",
+          "value": "FU44"
+        },
+        {
+          "name": "EAN",
+          "value": "2003894175005, 4005893015090, 4005893277917, 4041634265010"
+        }
+      ],
+      "externalId": "3894175",
+      "observedSpecs": {},
+      "soldIndividually": true,
+      "retrievedAt": "2026-10-12T12:29:49.321Z",
+      "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+      "declaredUnitPrice": 2.81
+    }
+  ],
+  "material_slug": "armierungsgewebe-160-1000-10000-v1",
+  "normalized": {
+    "name": "Baumit Armierungsglasgewebe 160 gr/m² 4,5 x 4 mm weiß 10 m x 1 m Rolle = 10 m²",
+    "url": "https://www.hornbach.de/p/baumit-armierungsglasgewebe-160-gr-m-4-5-x-4-mm-weiss-10-m-x-1-m-rolle-10-m/3894175/",
+    "price": 28.05,
+    "currency": "EUR",
+    "priceBasis": "package",
+    "priceSource": "json-ld-offer",
+    "availability": "InStock",
+    "brand": "Baumit",
+    "category": "Startseite > Sortiment > Baustoffe > Fassadendämmung > Vollwärmeschutz",
+    "description": "Planst Du ein Projekt mit Wärmedämmverbundsystemen? Dann ist das Armierungsglasgewebe 10x1 m genau das Richtige für Dich. Produktmerkmale des Baumit Armierungsglasgewebes 160 gr/m² 4,5 x 4 mm weiß 10 m x 1 m Rolle = 10 m² Darum solltest Du zugreifen: Dieses feine, schiebefeste Textilglasgewebe ist ideal zum Einbetten in Kleber, Spachtelmassen und Putze. Es ist systemgeprüft für den Einsatz in Wärmedämmverbundsystemen und bietet durch seine hohe Alkalibeständigkeit eine lange Lebensdauer. Mit einer Maschenweite von 4,5 x 4 mm sorgt es für eine gleichmäßige Verteilung der Spannungen und vermeidet so Risse in der Putzschicht. Das Gewebe ist in einer praktischen Rolle von 10 m² erhältlich und eignet sich sowohl für Vollwärmeschutz als auch für Außen- und Innenputze. Das Flächengewicht von 160 g/m² bietet eine optimale Balance zwischen Stabilität und Flexibilität. Festgezurrt: Das Baumit Armierungsglasgewebe ist die ideale Wahl für langlebige und rissfreie Putzsysteme im Innen- und Außenbereich.",
+    "attributes": [
+      {
+        "name": "Anwendungsgebiet",
+        "value": "Vollwärmeschutz, Außenputze, Innenputze"
+      },
+      {
+        "name": "Material",
+        "value": "Glasfaser"
+      },
+      {
+        "name": "Abmessung (LxB) in m",
+        "value": "10x1"
+      },
+      {
+        "name": "Länge",
+        "value": "10 m"
+      },
+      {
+        "name": "Breite",
+        "value": "1 m"
+      },
+      {
+        "name": "Format",
+        "value": "Rolle"
+      },
+      {
+        "name": "Maschenweite",
+        "value": "4,5 x 4 mm"
+      },
+      {
+        "name": "Flächengewicht",
+        "value": "160 g/m²"
+      },
+      {
+        "name": "Inhalt",
+        "value": "10 m²"
+      },
+      {
+        "name": "Inhalt",
+        "value": "1,65 kg"
+      },
+      {
+        "name": "Ausführung",
+        "value": "Textilglasgitter"
+      },
+      {
+        "name": "Eigenschaft",
+        "value": "Hoch alkalibeständig, Vermeidet Risse"
+      },
+      {
+        "name": "Artikeltyp",
+        "value": "Gewebe"
+      },
+      {
+        "name": "Abmessung (LxB) in m",
+        "value": "10.0 m x 1.0 m"
+      },
+      {
+        "name": "Farbton",
+        "value": "Weiß"
+      },
+      {
+        "name": "AKN (Artikelkurznummer)",
+        "value": "FU44"
+      },
+      {
+        "name": "EAN",
+        "value": "2003894175005, 4005893015090, 4005893277917, 4041634265010"
+      }
+    ],
+    "externalId": "3894175",
+    "observedSpecs": {},
+    "soldIndividually": true,
+    "retrievedAt": "2026-10-12T12:29:49.321Z",
+    "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+    "declaredUnitPrice": 2.81,
+    "unitPrice": 2.805,
+    "unit": "m2",
+    "packageQuantity": 10,
+    "matchScore": 140,
+    "matchKind": "exact",
+    "matchEvidence": {
+      "canonical_version": 1,
+      "specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "grammage_g_m2": 160,
+        "area_m2": 10,
+        "excluded_terms": [
+          "streifen",
+          "eckprofil",
+          "mörtel"
+        ]
+      },
+      "match_score": 140,
+      "detected_family": "armierungsgewebe",
+      "observed_specs": {
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "weight_kg": 1.65,
+        "grammage_g_m2": 160,
+        "area_m2": 10,
+        "color": "weiss",
+        "type": "armierungsgewebe"
+      },
+      "price_basis": "package",
+      "price_basis_evidence": "hornbach-same-sku-sales-unit",
+      "extraction": "json-ld-offer",
+      "retrieved_at": "2026-10-12T12:29:49.321Z"
+    }
+  }
+}

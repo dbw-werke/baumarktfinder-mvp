@@ -2,7 +2,7 @@ import definitions from "../../supabase/canonical-materials.json";
 import snapshot from "../data/verified-catalog-snapshot.json";
 import type { BaseUnit } from "../services/materialSuggestions";
 import { validateStorePrice, type StorePrice } from "../services/prices";
-import { getVariantDistance, hasComparableSpecification } from "./productCompatibility.mjs";
+import { getVariantDistance, hasComparableSpecification, productPurposeConflict } from "./productCompatibility.mjs";
 
 export { getVariantDistance } from "./productCompatibility.mjs";
 
@@ -43,7 +43,9 @@ export function formatMaterialSpecification(material: CanonicalMaterial): string
   const pieces = numeric("pieces") ?? 1;
   if (pieces > 1 && material.base_unit !== "piece") parts.push(`${number(pieces)} Stück`);
   const length = numeric("length_mm"), width = numeric("width_mm"), thickness = numeric("thickness_mm"), height = numeric("height_mm"), diameter = numeric("diameter_mm");
-  if (length) {
+  if (material.product_family === "schleifpapier" && diameter) {
+    parts.push(`Ø ${number(diameter)} mm`);
+  } else if (length) {
     const dimensions = diameter ? [diameter, length] : width ? [thickness ?? height, width, length].filter((value): value is number => value !== undefined) : [length];
     parts.push(`${dimensions.map(number).join(" × ")} mm`);
   }
@@ -81,6 +83,7 @@ export function selectChainOffer(target: CanonicalMaterial, offers: readonly Sto
   for (const offer of offers) {
     const material = byId.get(offer.material_id);
     if (!material || !hasComparableSpecification(material) || offer.store_id !== chain
+      || productPurposeConflict(target, offer)
       || offer.unit !== material.base_unit || Math.abs(offer.package_quantity - material.package_quantity) > Math.max(1e-8, material.package_quantity * 1e-8)) continue;
     // StorePrice is an already verified service result; validate its transport fields again.
     const price = validateStorePrice({ ...offer, verified: true }, material.id, [chain]);

@@ -39,7 +39,7 @@ export function selectObiOffer(query, products, now = Date.now()) {
 
 /** Persistent verified query cache, independent of canonical material IDs. Server/worker only. */
 export function createObiLookup({ seedProducts = [], cacheFile = null, reader = null, now = Date.now,
-  freshMs = 24*60*60*1000, retryMs = 15*60*1000, logger = () => {}, loadProducts=null,saveProducts=null } = {}) {
+  freshMs = 24*60*60*1000, retryMs = 15*60*1000, logger = () => {}, loadProducts=null,saveProducts=null, readOnly=false } = {}) {
   const cache = new Map(), pending = new Map(), attempts = new Map();
   let initialized, loadedAt = -Infinity, databaseLoadedAt=-Infinity, writing = Promise.resolve(), busy = false, retryAt = 0;
   const errors = [];
@@ -91,7 +91,8 @@ export function createObiLookup({ seedProducts = [], cacheFile = null, reader = 
     const exactRequestedPackage = prior.product && Object.entries(prior.intent.packageSpecs).every(([key,value]) =>
       Math.abs(Number(prior.candidates.find(c=>c.productUrl===prior.product.url && c.result==='ACCEPT')?.observedSpecs[key]) - Number(value)) < .001);
     const fresh = prior.offer && exactRequestedPackage && now()-Date.parse(prior.offer.checked_at) <= freshMs;
-    if (!force && fresh) cacheStatus = 'fresh-verified-cache';
+    if (readOnly) cacheStatus = prior.offer ? (fresh ? 'fresh-verified-cache' : 'verified-cache') : 'unavailable';
+    else if (!force && fresh) cacheStatus = 'fresh-verified-cache';
     else if (retryAt > now() || (attempts.get(normalizedQuery) || 0) > now()) failure.push({code:'reader-cooldown'});
     else if (busy) failure.push({code:'reader-busy'});
     else {

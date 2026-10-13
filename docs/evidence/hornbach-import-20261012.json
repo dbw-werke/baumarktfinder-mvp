@@ -1,0 +1,21 @@
+[
+  {
+    "material_slug": "sockelputz-30kg-v1",
+    "store_id": "hornbach",
+    "product_name": "Knauf UP310 Zement-Sockelputz 30 kg",
+    "product_url": "https://www.hornbach.de/p/knauf-up310-zement-sockelputz-30-kg/262226/",
+    "price": 12.45,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "price_basis": "package",
+    "checked_at": "2026-10-12T12:31:30.926Z",
+    "verification_note": "Official exact HORNBACH PDP SKU262226 hydration: defaultPrice 12.45 EUR per Sack, basicPrice 0.42 EUR/kg, Inhalt30kg, Ausführung Sockelputz. Not online orderable; do not claim local branch stock. Reader returned no JSON-LD priced offer; manually checked public official structured same-product total and package.",
+    "observed_specs": {
+      "weight_kg": 30,
+      "color": "grau",
+      "type": "sockelputz"
+    },
+    "source": "manual_verified"
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "url": "https://www.hornbach.de/p/knauf-schnellbauschraube-feingewinde-tn-3-5-mm-x-25-mm-pack-1000-st/7026779/",
+    "name": "Knauf Schnellbauschraube Feingewinde TN 3,5 mm x 25 mm Pack = 1000 St",
+    "checked_at": "2026-10-12T20:50:01.104Z",
+    "defaultPrice": {
+      "__typename": "PriceWithUnit",
+      "price": 10.55,
+      "unit": "Pack",
+      "currency": "€",
+      "currencyCode": "EUR"
+    },
+    "basicPrice": {
+      "__typename": "PriceWithUnit",
+      "price": 0.01,
+      "unit": "ST",
+      "currency": "€"
+    },
+    "defaultSalesUnit": {
+      "__typename": "DefaultSalesUnit",
+      "salesUnitId": "345252",
+      "productMeasurementUnitCode": "PAK"
+    },
+    "merchant": {
+      "__typename": "Merchant",
+      "isMarketplaceMerchant": false,
+      "name": "HORNBACH",
+      "merchantId": "DE850",
+      "policiesHintText": "Informationen des Verkäufers, wie z. B. Rückgabebedingungen und AGB, finden Sie bei Klick auf den Verkäufernamen.",
+      "merchantProductsSearchUrl": null,
+      "category": "DV"
+    },
+    "canBeAddedToCart": true,
+    "attributes": [
+      {
+        "__typename": "ProductAttribute",
+        "key": "Artikeltyp",
+        "value": "Schraube"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Ausführung",
+        "value": "Gipsplattenschraube"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Größe",
+        "value": "3,5 x 25 mm"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Länge",
+        "value": "25 mm"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Durchmesser",
+        "value": "3,5 mm"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Material",
+        "value": "Metall"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Oberfläche/Oberflächenbehandlung",
+        "value": "Phosphatiert"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Farbton",
+        "value": "Schwarz"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Einsatzbereich",
+        "value": "Innen"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Geeignet für",
+        "value": "Metallständerwand"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Kopfform",
+        "value": "Senkkopf"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Antrieb",
+        "value": "Kreuzschlitz (PH)"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Inhalt",
+        "value": "1.000 Stück"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Hinweis",
+        "value": "Selbstschneidend, enges Gewinde für sicheren Halt, scharfkantige Spitze für leichtes Durchdringen des Metalls, Verschrauben ohne Vorbohren, flacher Schraubenkopf für bündiges Versenken der Schraube in der Gipsplatte"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "AKN (Artikelkurznummer)",
+        "value": "RCP6"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "EAN",
+        "value": "4006379064625"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hornbach.de/p/isover-brandschutzplatte-protect-bsp-40-fuer-den-innenausbau-wlg-040-1200-mm-x-625-mm-x-40-mm/8761573/",
+    "name": "ISOVER Brandschutzplatte Protect BSP 40 für den Innenausbau WLG 040 1200 mm x 625 mm x 40 mm",
+    "checked_at": "2026-10-12T20:50:03.129Z",
+    "defaultPrice": {
+      "__typename": "PriceWithUnit",
+      "price": 8.48,
+      "unit": "m²",
+      "currency": "€",
+      "currencyCode": "EUR"
+    },
+    "basicPrice": {
+      "__typename": "PriceWithUnit",
+      "price": 76.36,
+      "unit": "Pack",
+      "currency": "€"
+    },
+    "defaultSalesUnit": {
+      "__typename": "DefaultSalesUnit",
+      "salesUnitId": "382908",
+      "productMeasurementUnitCode": "PAK"
+    },
+    "merchant": {
+      "__typename": "Merchant",
+      "isMarketplaceMerchant": false,
+      "name": "HORNBACH",
+      "merchantId": "DE850",
+      "policiesHintText": "Informationen des Verkäufers, wie z. B. Rückgabebedingungen und AGB, finden Sie bei Klick auf den Verkäufernamen.",
+      "merchantProductsSearchUrl": null,
+      "category": "DV"
+    },
+    "canBeAddedToCart": true,
+    "attributes": [
+      {
+        "__typename": "ProductAttribute",
+        "key": "Artikeltyp",
+        "value": "Dämmplatte"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Ausführung",
+        "value": "Innenwanddämmung, Trennwandplatte"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Maß (L x B)",
+        "value": "1.200 mm x 625 mm"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Anwendung",
+        "value": "Wanddämmung, Innendämmung, Trennwanddämmung"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Anwendungsbereich",
+        "value": "Wand"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Einsatzbereich",
+        "value": "Trennwand, Innenausbau"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Material",
+        "value": "Steinwolle"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Funktionen",
+        "value": "Brandschutz"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Grundfarbe",
+        "value": "Gelb"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Wärmeleitgruppe",
+        "value": "WLG 040"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Nennwert der Wärmeleitfähigkeit λD",
+        "value": "0,039 W/(mK)"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Brandschutzklasse",
+        "value": "A1 - nicht brennbar (ohne brennbare Bestandteile)"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Euroklasse",
+        "value": "A1"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Breite",
+        "value": "625 mm"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Länge",
+        "value": "1.200 mm"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Stärke",
+        "value": "40 mm"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Packinhalt",
+        "value": "9 m²"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Pack pro Palette",
+        "value": "20 Pack"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Material",
+        "value": "Steinwolle"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Maße (LxB)",
+        "value": "1200 mm x 625 mm"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "AKN (Artikelkurznummer)",
+        "value": "VXVD"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "EAN",
+        "value": "4003973031374, 4003973249106"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hornbach.de/p/rautner-schleifpapier-alox-plus-fuer-handschleifer-schwingschleifer-230-x-280-mm-k-180-ungelocht-50-stueck/10501555/",
+    "name": "RAUTNER Schleifpapier AlOx Plus für Handschleifer Schwingschleifer, 230 x 280 mm, K 180, Ungelocht, 50 Stück",
+    "checked_at": "2026-10-12T20:50:05.188Z",
+    "defaultPrice": {
+      "__typename": "PriceWithUnit",
+      "price": 39.95,
+      "unit": "Pack",
+      "currency": "€",
+      "currencyCode": "EUR"
+    },
+    "basicPrice": null,
+    "defaultSalesUnit": {
+      "__typename": "DefaultSalesUnit",
+      "salesUnitId": "151607",
+      "productMeasurementUnitCode": "PAK"
+    },
+    "merchant": {
+      "__typename": "Merchant",
+      "isMarketplaceMerchant": false,
+      "name": "HORNBACH",
+      "merchantId": "DE850",
+      "policiesHintText": "Informationen des Verkäufers, wie z. B. Rückgabebedingungen und AGB, finden Sie bei Klick auf den Verkäufernamen.",
+      "merchantProductsSearchUrl": null,
+      "category": "DV"
+    },
+    "canBeAddedToCart": true,
+    "attributes": [
+      {
+        "__typename": "ProductAttribute",
+        "key": "Artikeltyp",
+        "value": "Schleifpapier"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Ausführung",
+        "value": "Schleifbogen"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Geeignet für",
+        "value": "Handschleifer, Schwingschleifer"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Zu bearbeitendes Material",
+        "value": "Farbe, Holz, Lack"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Maße",
+        "value": "230 x 280 mm"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Körnung",
+        "value": "180"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Lochung",
+        "value": "Ungelocht"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Kletthaftend",
+        "value": "Nein"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Material",
+        "value": "Aluminiumoxid"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Inhalt",
+        "value": "50 Stück"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Anwendung",
+        "value": "Schleifen"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Hinweis",
+        "value": "Geeignet für Trockenschliff, Für leistungsintensive Anwendungen wie Holz‑, Lack‑ und Farbschliff, insbesondere im maschinellen Einsatz."
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Räume",
+        "value": "Baustelle, Garage, Werkstatt"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "EAN",
+        "value": "4306517632489"
+      }
+    ]
+  }
+]

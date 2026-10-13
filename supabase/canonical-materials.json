@@ -1401,5 +1401,433 @@
     ],
     "brand": "Knauf",
     "canonical_version": 1
+  },
+  {
+    "slug": "pu-schaum-1k-500ml-v1",
+    "name": "PU-Bauschaum, 500 ml",
+    "suggestion_label": "PU-Bauschaum, 500 ml",
+    "store_search_term": "PU-Bauschaum, 500 ml",
+    "category": "Baumaterial",
+    "product_family": "pu-schaum",
+    "base_unit": "l",
+    "package_quantity": 0.5,
+    "specs": {
+      "type": "pu-schaum",
+      "volume_l": 0.5,
+      "excluded_terms": [
+        "brunnenschaum",
+        "kleber",
+        "reiniger",
+        "entferner",
+        "2k"
+      ]
+    },
+    "aliases": [
+      "PU-Bauschaum, 500 ml"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "rollputz-15kg-v1",
+    "name": "Rollputz weiß, 15 kg",
+    "suggestion_label": "Rollputz weiß, 15 kg",
+    "store_search_term": "Rollputz weiß, 15 kg",
+    "category": "Baumaterial",
+    "product_family": "rollputz",
+    "base_unit": "kg",
+    "package_quantity": 15,
+    "specs": {
+      "type": "rollputz",
+      "weight_kg": 15,
+      "color": "weiss",
+      "excluded_terms": [
+        "werkzeug",
+        "rolle",
+        "fertigputzgips"
+      ]
+    },
+    "aliases": [
+      "Rollputz weiß, 15 kg"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "sockelputz-25kg-v1",
+    "name": "Zement-Sockelputz, 25 kg",
+    "suggestion_label": "Zement-Sockelputz, 25 kg",
+    "store_search_term": "Zement-Sockelputz, 25 kg",
+    "category": "Putz",
+    "product_family": "sockelputz",
+    "brand": null,
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "canonical_version": 1,
+    "specs": {
+      "type": "sockelputz",
+      "weight_kg": 25,
+      "required_terms": [
+        "sockelputz"
+      ],
+      "excluded_terms": [
+        "farbe",
+        "profil",
+        "gewebe"
+      ]
+    },
+    "aliases": [
+      "Zement-Sockelputz, 25 kg"
+    ]
+  },
+  {
+    "slug": "armierungsgewebe-1000-10000-v1",
+    "name": "Armierungsgewebe, 1 × 10 m",
+    "suggestion_label": "Armierungsgewebe, 1 × 10 m",
+    "store_search_term": "Armierungsgewebe, 1 × 10 m",
+    "category": "Baumaterial",
+    "product_family": "armierungsgewebe",
+    "base_unit": "m2",
+    "package_quantity": 10,
+    "specs": {
+      "type": "armierungsgewebe",
+      "length_mm": 10000,
+      "width_mm": 1000,
+      "area_m2": 10,
+      "excluded_terms": [
+        "streifen",
+        "eckprofil",
+        "mörtel"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "armierungsgewebe-165-1000-10000-v1",
+    "name": "Armierungsgewebe 165 g/m², 1 × 10 m",
+    "suggestion_label": "Armierungsgewebe 165 g/m², 1 × 10 m",
+    "store_search_term": "Armierungsgewebe 165 g/m², 1 × 10 m",
+    "category": "Baumaterial",
+    "product_family": "armierungsgewebe",
+    "base_unit": "m2",
+    "package_quantity": 10,
+    "specs": {
+      "type": "armierungsgewebe",
+      "length_mm": 10000,
+      "width_mm": 1000,
+      "grammage_g_m2": 165,
+      "area_m2": 10,
+      "excluded_terms": [
+        "streifen",
+        "eckprofil",
+        "mörtel"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "knauf-perlfix-25kg-v1",
+    "name": "Knauf Perlfix Ansetzgips, 25 kg",
+    "suggestion_label": "Knauf Perlfix Ansetzgips, 25 kg",
+    "store_search_term": "Knauf Perlfix Ansetzgips, 25 kg",
+    "category": "Putze",
+    "product_family": "perlfix",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "specs": {
+      "type": "ansetzgips",
+      "weight_kg": 25,
+      "required_terms": [
+        "knauf",
+        "perlfix"
+      ]
+    },
+    "aliases": [],
+    "brand": "Knauf",
+    "canonical_version": 1
+  },
+  {
+    "slug": "rollputz-8kg-v1",
+    "name": "Rollputz weiß, 8 kg",
+    "suggestion_label": "Rollputz weiß, 8 kg",
+    "store_search_term": "Rollputz weiß, 8 kg",
+    "category": "Baumaterial",
+    "product_family": "rollputz",
+    "base_unit": "kg",
+    "package_quantity": 8,
+    "specs": {
+      "type": "rollputz",
+      "weight_kg": 8,
+      "color": "weiss",
+      "excluded_terms": [
+        "werkzeug",
+        "rolle",
+        "fertigputzgips"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "rollputz-10kg-v1",
+    "name": "Rollputz weiß, 10 kg",
+    "suggestion_label": "Rollputz weiß, 10 kg",
+    "store_search_term": "Rollputz weiß, 10 kg",
+    "category": "Baumaterial",
+    "product_family": "rollputz",
+    "base_unit": "kg",
+    "package_quantity": 10,
+    "specs": {
+      "type": "rollputz",
+      "weight_kg": 10,
+      "color": "weiss",
+      "excluded_terms": [
+        "werkzeug",
+        "rolle",
+        "fertigputzgips"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "sockelputz-10kg-v1",
+    "name": "Sockelputz, 10 kg",
+    "suggestion_label": "Sockelputz, 10 kg",
+    "store_search_term": "Sockelputz, 10 kg",
+    "category": "Putz",
+    "product_family": "sockelputz",
+    "brand": null,
+    "base_unit": "kg",
+    "package_quantity": 10,
+    "canonical_version": 1,
+    "specs": {
+      "type": "sockelputz",
+      "weight_kg": 10,
+      "required_terms": [
+        "sockelputz"
+      ],
+      "excluded_terms": [
+        "farbe",
+        "profil",
+        "gewebe"
+      ]
+    },
+    "aliases": []
+  },
+  {
+    "slug": "zement-5kg-v1",
+    "name": "Zement, 5 kg",
+    "suggestion_label": "Zement, 5 kg",
+    "store_search_term": "Zement, 5 kg",
+    "category": "Rohbau",
+    "product_family": "zement",
+    "brand": null,
+    "base_unit": "kg",
+    "package_quantity": 5,
+    "canonical_version": 1,
+    "specs": {
+      "type": "zement",
+      "weight_kg": 5,
+      "required_terms": [
+        "zement"
+      ],
+      "excluded_terms": [
+        "mörtel",
+        "estrich",
+        "beton",
+        "farbe",
+        "putz"
+      ]
+    },
+    "aliases": []
+  },
+  {
+    "slug": "cd60-27-4000-v1",
+    "name": "CD-Deckenprofil 60/27, 4 m",
+    "suggestion_label": "CD-Deckenprofil 60/27, 4 m",
+    "store_search_term": "CD-Deckenprofil 60/27, 4 m",
+    "category": "Trockenbau",
+    "product_family": "cd-profil",
+    "base_unit": "m",
+    "package_quantity": 4,
+    "specs": {
+      "type": "cd",
+      "length_mm": 4000,
+      "width_mm": 60,
+      "height_mm": 27,
+      "required_terms": [
+        "cd"
+      ],
+      "excluded_terms": [
+        "ud",
+        "cw",
+        "uw"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "haftgrund-2-5kg-v1",
+    "name": "Haftgrund, 2,5 kg",
+    "suggestion_label": "Haftgrund, 2,5 kg",
+    "store_search_term": "Haftgrund, 2,5 kg",
+    "category": "Baumaterial",
+    "product_family": "haftgrund",
+    "base_unit": "kg",
+    "package_quantity": 2.5,
+    "specs": {
+      "type": "haftgrund",
+      "excluded_terms": [
+        "tiefengrund",
+        "tiefgrund",
+        "betonkontakt"
+      ],
+      "weight_kg": 2.5
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "schleifpapier-k180-93-230-10-v1",
+    "name": "Schleifpapier K180, 93 × 230 mm, 10 Stück",
+    "suggestion_label": "Schleifpapier K180, 93 × 230 mm, 10 Stück",
+    "store_search_term": "Schleifpapier K180, 93 × 230 mm, 10 Stück",
+    "category": "Baumaterial",
+    "product_family": "schleifpapier",
+    "base_unit": "piece",
+    "package_quantity": 10,
+    "specs": {
+      "type": "schleifpapier",
+      "length_mm": 230,
+      "width_mm": 93,
+      "grit": 180,
+      "pieces": 10,
+      "excluded_terms": [
+        "maschine",
+        "schleifspitze",
+        "set",
+        "schleifrolle"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "sanitaer-silikon-weiss-300ml-v1",
+    "name": "Sanitär-Silikon weiß, 300 ml",
+    "suggestion_label": "Sanitär-Silikon weiß, 300 ml",
+    "store_search_term": "Sanitär-Silikon weiß, 300 ml",
+    "category": "Baumaterial",
+    "product_family": "silikon",
+    "base_unit": "l",
+    "package_quantity": 0.3,
+    "specs": {
+      "type": "sanitaer-silikon",
+      "color": "weiss",
+      "volume_l": 0.3,
+      "excluded_terms": [
+        "acryl",
+        "hybrid",
+        "montagekleber",
+        "entferner"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "schleifpapier-k180-93-5000-rolle-v1",
+    "name": "Schleifpapierrolle Holz/Metall K180, 93 mm × 5 m, 1 Rolle",
+    "suggestion_label": "Schleifpapierrolle Holz/Metall K180, 93 mm × 5 m, 1 Rolle",
+    "store_search_term": "Schleifpapierrolle Holz Metall K180 93 mm 5 m",
+    "category": "Baumaterial",
+    "product_family": "schleifpapier",
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "specs": {
+      "type": "schleifpapier",
+      "length_mm": 5000,
+      "width_mm": 93,
+      "grit": 180,
+      "pieces": 1,
+      "excluded_terms": [
+        "schleifmaschine",
+        "schleifspitze",
+        "set",
+        "nass",
+        "schleifleinen",
+        "gewebe"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "steinwolle-040-40-9m2-v1",
+    "name": "ISOVER Steinwolle Trennwandplatte WLG 040, 40 × 625 × 1200 mm, 9 m²/Paket",
+    "suggestion_label": "Steinwolle 40 mm – ISOVER, 9 m²/Paket",
+    "store_search_term": "ISOVER Protect BSP 40 Steinwolle 40 mm 9 m²",
+    "category": "Dämmung",
+    "product_family": "mineralwolle",
+    "brand": "ISOVER",
+    "base_unit": "m2",
+    "package_quantity": 9,
+    "canonical_version": 1,
+    "specs": {
+      "type": "steinwolle-trennwandplatte",
+      "thickness_mm": 40,
+      "width_mm": 625,
+      "length_mm": 1200,
+      "pieces": 12,
+      "area_m2": 9,
+      "thermal_conductivity": 0.04,
+      "required_terms": [
+        "steinwolle"
+      ],
+      "excluded_terms": [
+        "glaswolle"
+      ]
+    },
+    "aliases": []
+  },
+  {
+    "slug": "schleifpapier-trockenbau-k180-225-5-v1",
+    "name": "Trockenbau-Schleifpapier K180, Ø 225 mm, 5 Scheiben",
+    "suggestion_label": "Trockenbau-Schleifpapier K180, Ø 225 mm, 5 Scheiben",
+    "store_search_term": "Schleifscheiben K180 Trockenbau 225 mm",
+    "category": "Baumaterial",
+    "product_family": "schleifpapier",
+    "base_unit": "piece",
+    "package_quantity": 5,
+    "specs": {
+      "type": "schleifpapier",
+      "length_mm": 225,
+      "width_mm": 225,
+      "grit": 180,
+      "pieces": 5,
+      "excluded_terms": [
+        "maschine",
+        "schleifspitze",
+        "set",
+        "schleifrolle"
+      ],
+      "diameter_mm": 225
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
   }
 ]

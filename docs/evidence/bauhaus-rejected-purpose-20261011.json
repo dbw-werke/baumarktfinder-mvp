@@ -1,0 +1,42 @@
+{
+  "reason": "Wet/dry metal/lacquer paper is not verified as comparable to dry wood/metal MVP paper; grit alone is insufficient.",
+  "observations": [
+    {
+      "material_id": "42039b00-d37b-5117-8c6a-568f6de25468",
+      "canonical_slug": "schleifpapier-k180-230-280-1-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "schleifpapier",
+        "length_mm": 280,
+        "width_mm": 230,
+        "grit": 180,
+        "pieces": 1,
+        "excluded_terms": [
+          "maschine",
+          "schleifspitze",
+          "set",
+          "schleifrolle"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "BAUHAUS Schleifpapier Nass- und Trockenschliff, Körnung 180, 230 × 280 mm",
+      "product_url": "https://www.bauhaus.info/schleifpapier/bauhaus-schleifpapier/p/11376159",
+      "price": 0.85,
+      "unit_price": 0.85,
+      "unit": "piece",
+      "package_quantity": 1,
+      "currency": "EUR",
+      "checked_at": "2026-10-11T08:52:37.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 280,
+        "width_mm": 230,
+        "grit": 180,
+        "pieces": 1
+      }
+    }
+  ]
+}

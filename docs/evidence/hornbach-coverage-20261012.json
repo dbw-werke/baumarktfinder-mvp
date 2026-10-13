@@ -1,0 +1,435 @@
+{
+  "checked_at": "2026-10-12T20:56:53.375Z",
+  "method": "customer_catalog_selection",
+  "working": 20,
+  "total": 21,
+  "rows": [
+    {
+      "key": "acryl",
+      "input": "Acryl",
+      "material": "Acryl-Dichtstoff weiß, überstreichbar, 310 ml",
+      "price": {
+        "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+        "store_id": "hornbach",
+        "product_name": "PRECIT Acryl weiß 310 ml; Acrylat Dichtstoff, Acrylatbasis",
+        "product_url": "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/",
+        "price": 4.89,
+        "unit_price": 15.77,
+        "unit": "l",
+        "package_quantity": 0.31,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:29:50.144Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "310 ml"
+    },
+    {
+      "key": "armierungsgewebe",
+      "input": "Armierungsgewebe",
+      "material": "Armierungsgewebe, 1 × 10 m",
+      "price": {
+        "material_id": "dae638df-5d1f-1c45-c736-f8634303d3b4",
+        "store_id": "hornbach",
+        "product_name": "Baumit Armierungsglasgewebe 160 gr/m² 4,5 x 4 mm weiß 10 m x 1 m Rolle = 10 m²",
+        "product_url": "https://www.hornbach.de/p/baumit-armierungsglasgewebe-160-gr-m-4-5-x-4-mm-weiss-10-m-x-1-m-rolle-10-m/3894175/",
+        "price": 28.05,
+        "unit_price": 2.81,
+        "unit": "m2",
+        "package_quantity": 10,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:29:49.321Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "1000 × 10000 mm · 10 m²"
+    },
+    {
+      "key": "cd-profil",
+      "input": "CD Profil",
+      "material": "CD-Deckenprofil 60/27 × 3000 mm",
+      "price": {
+        "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+        "store_id": "hornbach",
+        "product_name": "Knauf CD-Deckenprofil 3100 mm x 60 mm x 27 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-cd-deckenprofil-3100-mm-x-60-mm-x-27-mm/260720/",
+        "price": 9.15,
+        "unit_price": 2.95,
+        "unit": "m",
+        "package_quantity": 3.1,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:29:52.180Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "27 × 60 × 3100 mm · 3,1 m"
+    },
+    {
+      "key": "cw-profil",
+      "input": "CW Profil",
+      "material": "CW-Ständerprofil 50 mm, 2600 mm",
+      "price": {
+        "material_id": "f68369db-71cd-60ae-887f-e4ddcdb7f64e",
+        "store_id": "hornbach",
+        "product_name": "Knauf CW-dB Ständerprofil 2600 mm x 50 mm x 50 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-cw-db-staenderprofil-2600-mm-x-50-mm-x-50-mm/265269/",
+        "price": 6.35,
+        "unit_price": 2.44,
+        "unit": "m",
+        "package_quantity": 2.6,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:29:54.430Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "50 × 2600 mm · 2,6 m"
+    },
+    {
+      "key": "direktabhaenger",
+      "input": "Direktabhänger",
+      "material": "Direktabhänger für CD-Profile, Schenkellänge 125 mm, 1 Stück",
+      "price": {
+        "material_id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+        "store_id": "hornbach",
+        "product_name": "Knauf Direktabhänger 125 mm für CD Profil 60 mm / 27 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-mm-27-mm/7017220/",
+        "price": 0.58,
+        "unit_price": 0.58,
+        "unit": "piece",
+        "package_quantity": 1,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:29:56.684Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "125 mm · 1 Stück"
+    },
+    {
+      "key": "feuchtraumplatte",
+      "input": "Feuchtraumplatte",
+      "material": "Feuchtraum-Gipskartonplatte 12,5 × 1250 × 2000 mm",
+      "price": {
+        "material_id": "f1da0475-9771-b503-5f40-26c8b138d4ae",
+        "store_id": "hornbach",
+        "product_name": "Knauf Gipskartonplatte Feuchtraumplatte GKBI imprägniert 2000 mm x 1250 mm x 12,5 mm; A2 (nicht brennbar, mit geringen brennbaren Anteilen)",
+        "product_url": "https://www.hornbach.de/p/knauf-gipskartonplatte-feuchtraumplatte-gkbi-impraegniert-2000-mm-x-1250-mm-x-12-5-mm/3324241/",
+        "price": 15.95,
+        "unit_price": 6.38,
+        "unit": "m2",
+        "package_quantity": 2.5,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:29:59.343Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "12,5 × 1250 × 2000 mm · 2,5 m²"
+    },
+    {
+      "key": "haftgrund",
+      "input": "Haftgrund",
+      "material": "Haftgrund, 5 l",
+      "price": {
+        "material_id": "1611b788-0e27-0632-4682-bbe3a1233b14",
+        "store_id": "hornbach",
+        "product_name": "MODULAN 2402 Haftgrund weiß 5 L",
+        "product_url": "https://www.hornbach.de/p/modulan-2402-haftgrund-weiss-5-l/10474853/",
+        "price": 25.95,
+        "unit_price": 5.19,
+        "unit": "l",
+        "package_quantity": 5,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:00.987Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "5 l"
+    },
+    {
+      "key": "perlfix",
+      "input": "Perlfix",
+      "material": "Knauf Perlfix Ansetzgips, 30 kg",
+      "price": {
+        "material_id": "8739fa28-ef16-5da4-dea0-a10cd973d87a",
+        "store_id": "hornbach",
+        "product_name": "Knauf Perlfix Ansetzgips 30 kg",
+        "product_url": "https://www.hornbach.de/p/knauf-perlfix-ansetzgips-30-kg/205209/",
+        "price": 12.55,
+        "unit_price": 0.42,
+        "unit": "kg",
+        "package_quantity": 30,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:03.217Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "30 kg"
+    },
+    {
+      "key": "rotband",
+      "input": "Rotband",
+      "material": "Knauf Rotband Haftputzgips, 30 kg",
+      "price": {
+        "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+        "store_id": "hornbach",
+        "product_name": "Knauf Rotband Haftputzgips zum Glätten 30 kg",
+        "product_url": "https://www.hornbach.de/p/knauf-rotband-haftputzgips-zum-glaetten-30-kg/261950/",
+        "price": 11.5,
+        "unit_price": 0.38,
+        "unit": "kg",
+        "package_quantity": 30,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:05.491Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "30 kg"
+    },
+    {
+      "key": "uniflott",
+      "input": "Uniflott",
+      "material": "Knauf Uniflott Fugenspachtel, 25 kg",
+      "price": {
+        "material_id": "1fc5bf38-3822-f578-7c96-34f5b4b8e68d",
+        "store_id": "hornbach",
+        "product_name": "Knauf Uniflott Spachtelmasse 25 kg",
+        "product_url": "https://www.hornbach.de/p/knauf-uniflott-spachtelmasse-25-kg/203327/",
+        "price": 42.5,
+        "unit_price": 1.7,
+        "unit": "kg",
+        "package_quantity": 25,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:07.612Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "25 kg"
+    },
+    {
+      "key": "pu-schaum",
+      "input": "PU-Schaum",
+      "material": "PU-Bauschaum, 750 ml",
+      "price": {
+        "material_id": "cf20d372-e5f7-f8b6-4181-7ea97cc9dc4d",
+        "store_id": "hornbach",
+        "product_name": "Soudal Bauschaum B2 Genius Gun beige 750 ml; Polyurethan (PU); B2 normal entflammbar; einkomponentiger PU-Schaum",
+        "product_url": "https://www.hornbach.de/p/soudal-bauschaum-b2-genius-gun-beige-750-ml/5125626/",
+        "price": 11.95,
+        "unit_price": 15.93,
+        "unit": "l",
+        "package_quantity": 0.75,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:50.051Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "750 ml"
+    },
+    {
+      "key": "gipskarton",
+      "input": "Rigips",
+      "material": "Gipskartonplatte Standard 12,5 × 600 × 1200 mm",
+      "price": {
+        "material_id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
+        "store_id": "hornbach",
+        "product_name": "Knauf Gipskartonplatte Miniboard Standardplatte GKB 1200 mm x 600 mm x 12,5 mm; A2 (nicht brennbar, mit geringen brennbaren Anteilen)",
+        "product_url": "https://www.hornbach.de/p/knauf-gipskartonplatte-miniboard-standardplatte-gkb-1200-mm-x-600-mm-x-12-5-mm/7510113/",
+        "price": 4.85,
+        "unit_price": 6.74,
+        "unit": "m2",
+        "package_quantity": 0.72,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:14.055Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "12,5 × 600 × 1200 mm · 0,72 m²"
+    },
+    {
+      "key": "rollputz",
+      "input": "Rollputz",
+      "material": "Rollputz weiß, 12 kg",
+      "price": {
+        "material_id": "5a2025df-74a9-77e5-e50f-5e61d6447090",
+        "store_id": "hornbach",
+        "product_name": "Knauf EASYPUTZ Dekorputz 0,5 mm Extra Fein weiß 10 kg",
+        "product_url": "https://www.hornbach.de/p/knauf-easyputz-dekorputz-0-5-mm-extra-fein-weiss-10-kg/7644819/",
+        "price": 29.95,
+        "unit_price": 3,
+        "unit": "kg",
+        "package_quantity": 10,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:46.065Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "10 kg"
+    },
+    {
+      "key": "schleifpapier",
+      "input": "Schleifpapier",
+      "material": "Schleifpapier K180, 230 × 280 mm, 1 Blatt",
+      "price": null,
+      "actual_package": null
+    },
+    {
+      "key": "schnellbauschrauben",
+      "input": "Schrauben",
+      "material": "Schnellbauschrauben TN 3,5 × 25 mm, Feingewinde, 1000 Stück",
+      "price": {
+        "material_id": "c3eb45d7-6ade-8acf-36b5-998aae112efa",
+        "store_id": "hornbach",
+        "product_name": "Knauf Schnellbauschraube Feingewinde TN 3,5 mm x 25 mm Pack = 1000 St",
+        "product_url": "https://www.hornbach.de/p/knauf-schnellbauschraube-feingewinde-tn-3-5-mm-x-25-mm-pack-1000-st/7026779/",
+        "price": 10.55,
+        "unit_price": 0.01,
+        "unit": "piece",
+        "package_quantity": 1000,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T20:51:05.392Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "3,5 × 25 mm · 1000 Stück"
+    },
+    {
+      "key": "silikon",
+      "input": "Silikon",
+      "material": "Sanitär-Silikon weiß, 310 ml",
+      "price": {
+        "material_id": "e729a380-10bf-a30f-84ac-094f8b127f74",
+        "store_id": "hornbach",
+        "product_name": "Akkit 601 Sanitär Silikon weiß 310 ml; Essig vernetztes Silikon",
+        "product_url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+        "price": 7.89,
+        "unit_price": 25.45,
+        "unit": "l",
+        "package_quantity": 0.31,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:16.547Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "310 ml"
+    },
+    {
+      "key": "sockelputz",
+      "input": "Sockelputz",
+      "material": "Zement-Sockelputz, 30 kg",
+      "price": {
+        "material_id": "d68b71d7-ee5b-20f3-9d25-13ce34f3764c",
+        "store_id": "hornbach",
+        "product_name": "Knauf UP310 Zement-Sockelputz 30 kg",
+        "product_url": "https://www.hornbach.de/p/knauf-up310-zement-sockelputz-30-kg/262226/",
+        "price": 12.45,
+        "unit_price": 0.42,
+        "unit": "kg",
+        "package_quantity": 30,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:31:30.926Z",
+        "source": "manual",
+        "price_scope": "chain",
+        "availability": null
+      },
+      "actual_package": "30 kg"
+    },
+    {
+      "key": "mineralwolle",
+      "input": "Dämmung",
+      "material": "Rockwool Sonorock Steinwolle WLG 040, 40 × 625 × 1000 mm, 7,5 m²/Paket",
+      "price": {
+        "material_id": "7911616b-c5fe-d6b0-1bbc-6ee25d740aed",
+        "store_id": "hornbach",
+        "product_name": "ISOVER Brandschutzplatte Protect BSP 40 für den Innenausbau WLG 040 1200 mm x 625 mm x 40 mm",
+        "product_url": "https://www.hornbach.de/p/isover-brandschutzplatte-protect-bsp-40-fuer-den-innenausbau-wlg-040-1200-mm-x-625-mm-x-40-mm/8761573/",
+        "price": 76.36,
+        "unit_price": 8.48,
+        "unit": "m2",
+        "package_quantity": 9,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T20:51:07.436Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "12 Stück · 40 × 625 × 1200 mm · 9 m² gesamt"
+    },
+    {
+      "key": "tiefengrund",
+      "input": "Tiefengrund",
+      "material": "Knauf Tiefengrund, 5 l",
+      "price": {
+        "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+        "store_id": "hornbach",
+        "product_name": "Knauf Tiefengrund 5 l",
+        "product_url": "https://www.hornbach.de/p/knauf-tiefengrund-5-l/253689/",
+        "price": 31.45,
+        "unit_price": 6.29,
+        "unit": "l",
+        "package_quantity": 5,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:20.873Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "5 l"
+    },
+    {
+      "key": "uw-profil",
+      "input": "UW Profil",
+      "material": "UW-Rahmenprofil 50 mm, 2000 mm",
+      "price": {
+        "material_id": "090eff92-f6d1-2d5f-55ef-a2396edb10ce",
+        "store_id": "hornbach",
+        "product_name": "Knauf UW-dB Rahmenprofil 2000 mm x 50 mm x 40 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-uw-db-rahmenprofil-2000-mm-x-50-mm-x-40-mm/265214/",
+        "price": 4.85,
+        "unit_price": 2.42,
+        "unit": "m",
+        "package_quantity": 2,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:23.120Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "actual_package": "50 × 2000 mm · 2 m"
+    },
+    {
+      "key": "zement",
+      "input": "Zement",
+      "material": "Zement, 25 kg",
+      "price": {
+        "material_id": "60c4a168-2bf6-f806-729b-1490d89aa85c",
+        "store_id": "hornbach",
+        "product_name": "Zement CEM I 42,5 N 25 kg",
+        "product_url": "https://www.hornbach.de/p/zement-cem-i-42-5-n-25-kg/8002614/",
+        "price": 5.95,
+        "unit_price": 0.24,
+        "unit": "kg",
+        "package_quantity": 25,
+        "currency": "EUR",
+        "checked_at": "2026-10-12T12:30:25.290Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": null
+      },
+      "actual_package": "25 kg"
+    }
+  ]
+}

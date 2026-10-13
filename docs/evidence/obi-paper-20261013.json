@@ -1,0 +1,28 @@
+{
+  "direct": {
+    "error": "not-found"
+  },
+  "source_url": "https://www.obi.de/p/2785301/lux-tools-schleifscheiben-k180-trockenbau-5-stueck",
+  "manual_verified": {
+    "material_slug": "schleifpapier-trockenbau-k180-225-5-v1",
+    "store_id": "obi",
+    "product_name": "LUX-TOOLS Schleifscheiben K180 Trockenbau 5 Stück, Ø 225 mm",
+    "product_url": "https://www.obi.de/p/2785301/lux-tools-schleifscheiben-k180-trockenbau-5-stueck",
+    "price": 11.49,
+    "currency": "EUR",
+    "base_unit": "piece",
+    "package_quantity": 5,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T11:47:48.046Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "type": "schleifpapier",
+      "length_mm": 225,
+      "width_mm": 225,
+      "diameter_mm": 225,
+      "grit": 180,
+      "pieces": 5
+    },
+    "verification_note": "Offizielle OBI-Produktseite Art.2785301: 11,49 EUR je Packung mit 5 Scheiben, 225 mm, K180, klettiert, achtfach gelocht, Trockenbau/Putz. Preis separat beobachtet, keine Hochrechnung. Einsatz mit passendem Trockenbauschleifer; keine Holz-only- oder Nassschleifalternative. Web-Seitenabruf kann zwischengespeichert sein; keine Filialbestandszusage."
+  }
+}

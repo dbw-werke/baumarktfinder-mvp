@@ -8,7 +8,7 @@ const names = [
  ['Direktabhänger','Direktabhänger für CD Profile 125 mm'],['Feuchtraumplatte','Gipskartonplatte imprägniert 2000 x 1250 x 12,5 mm'],
  ['Haftgrund','Haftgrund 5 l'],['Perlfix','Knauf Perlfix 30 kg'],['Rotband','Knauf Rotband Haftputzgips 30 kg'],
  ['Uniflott','Knauf Uniflott 5 kg'],['PU-Schaum','PU-Schaum 750 ml'],['Rigips','Gipskartonplatte GKB 2000 x 1250 x 12,5 mm'],
- ['Gipskarton','Bauplatte GKB 2000 x 1250 x 12,5 mm'],['Rollputz','Rollputz 20 kg'],['Schleifpapier','Schleifpapier K120 230 x 280 mm 10 Stück'],
+ ['Gipskarton','Bauplatte GKB 2000 x 1250 x 12,5 mm'],['Rollputz','Rollputz 20 kg'],['Schleifpapier','Trockenbau Schleifpapier K120 230 x 280 mm 10 Stück'],
  ['Schnellbauschrauben','Schnellbauschrauben TN 3,5 x 25 mm 1.000 Stück'],['Silikon','Sanitär-Silikon weiß 310 ml'],['Sockelputz','Zement-Sockelputz 30 kg'],
  ['Dämmung','Rockwool Sonorock Steinwolle 40 mm 7,5 m²'],['Mineralwolle','Rockwool Sonorock Steinwolle 40 mm 7,5 m²'],
  ['Tiefengrund','Tiefgrund 10 l'],['UW Profil','UW Profil 50 x 40 x 4000 mm'],['Zement','Portlandzement 25 kg'],

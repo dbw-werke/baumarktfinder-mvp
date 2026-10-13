@@ -1,0 +1,200 @@
+{
+  "store_id": "hornbach",
+  "query": "Schleifpapier",
+  "url": "https://www.hornbach.de/p/rautner-schleifrolle-alox-plus-fuer-handschleifer-schwingschleifer-115mm-x-5m-k-180-ungelocht-1-stueck/10485802/",
+  "checked_at": "2026-10-12T20:56:52.235Z",
+  "method": "automatic",
+  "products": [
+    {
+      "name": "RAUTNER Schleifrolle AlOx Plus für Handschleifer Schwingschleifer, 115mm x 5m, K 180, Ungelocht, 1 Stück",
+      "url": "https://www.hornbach.de/p/rautner-schleifrolle-alox-plus-fuer-handschleifer-schwingschleifer-115mm-x-5m-k-180-ungelocht-1-stueck/10485802/",
+      "price": 7.55,
+      "currency": "EUR",
+      "priceBasis": "package",
+      "priceSource": "json-ld-offer",
+      "availability": "InStock",
+      "brand": "Rautner",
+      "category": "Startseite > Sortiment > Farben, Tapeten & Wandverkleidungen > Malerbedarf & Malerzubehör > Schleifmittel für Maler",
+      "description": "Die Schleifrolle für Hand- und Schwingschleifer von RAUTNER ist ein klassisches Schleifmittel für den Trockenschliff und darf auf der Baustelle, in der Werkstatt oder der Garage nicht fehlen. Produktmerkmale der Schleifrolle für Hand- und Schwingschleifer von RAUTNER Darum solltest Du zugreifen: Die Schleifrolle bietet Dir auf 5 m Länge und 115 mm Breite ein Schleifpapier mit einer Körnung von 180. Du kannst das Schleifpapier verwenden, um Holz, Lacke oder Farben zu schleifen. Die Schleifrolle ist aus Aluminiumoxid gefertigt, ungelocht und nicht kletthaftend. Du kannst ein hochwertiges Oberflächenfinish erwarten, wenn Du mit dem Schleifpapier wirbelst. Die Schleifrolle besitzt eine hohe Lebensdauer. Dies ist der Spezialbeschichtung des Papiers zu verdanken, die das Verstopfen Deines Schleifers reduziert. Schon nach wenigen Schleifbewegungen wirst Du Dich am gründlichen Schleifverhalten der Schleifpapierbögen freuen. Verantwortlich dafür ist die präzise Kornausrichtung, die RAUTNER der Schleifrolle spendiert hat. Festgenagelt: Aufgrund der präzisen Kornausrichtung werden Schleifarbeiten mit der Schleifrolle von RAUTNER zum wahren Freudenfest.",
+      "attributes": [
+        {
+          "name": "Artikeltyp",
+          "value": "Schleifpapier"
+        },
+        {
+          "name": "Ausführung",
+          "value": "Schleifrolle"
+        },
+        {
+          "name": "Geeignet für",
+          "value": "Handschleifer, Schwingschleifer"
+        },
+        {
+          "name": "Zu bearbeitendes Material",
+          "value": "Farbe, Holz, Lack"
+        },
+        {
+          "name": "Maße",
+          "value": "115 mm x 5 m"
+        },
+        {
+          "name": "Körnung",
+          "value": "180"
+        },
+        {
+          "name": "Lochung",
+          "value": "Ungelocht"
+        },
+        {
+          "name": "Kletthaftend",
+          "value": "Nein"
+        },
+        {
+          "name": "Material",
+          "value": "Aluminiumoxid"
+        },
+        {
+          "name": "Inhalt",
+          "value": "1 Stück"
+        },
+        {
+          "name": "Anwendung",
+          "value": "Schleifen"
+        },
+        {
+          "name": "Hinweis",
+          "value": "Geeignet für Trockenschliff"
+        },
+        {
+          "name": "Räume",
+          "value": "Baustelle, Garage, Werkstatt"
+        },
+        {
+          "name": "EAN",
+          "value": "4306517623838"
+        }
+      ],
+      "externalId": "10485802",
+      "observedSpecs": {},
+      "soldIndividually": true,
+      "retrievedAt": "2026-10-12T20:56:54.420Z",
+      "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+      "declaredUnitPrice": 1.51
+    }
+  ],
+  "failure": null,
+  "structured_price_evidence": {
+    "title": "RAUTNER Schleifrolle AlOx Plus für Handschleifer Schwingschleifer, 115mm x 5m, K 180, Ungelocht, 1 Stück",
+    "url": "https://www.hornbach.de/p/rautner-schleifrolle-alox-plus-fuer-handschleifer-schwingschleifer-115mm-x-5m-k-180-ungelocht-1-stueck/10485802/",
+    "defaultPrice": {
+      "__typename": "PriceWithUnit",
+      "price": 7.55,
+      "unit": "ST",
+      "currency": "€",
+      "currencyCode": "EUR"
+    },
+    "basicPrice": {
+      "__typename": "PriceWithUnit",
+      "price": 1.51,
+      "unit": "m",
+      "currency": "€"
+    },
+    "defaultSalesUnit": {
+      "__typename": "DefaultSalesUnit",
+      "salesUnitId": "145856",
+      "productMeasurementUnitCode": "ST"
+    },
+    "offerDV": {
+      "__typename": "OfferV2",
+      "merchant": {
+        "__typename": "Merchant",
+        "isMarketplaceMerchant": false,
+        "name": "HORNBACH",
+        "merchantId": "DE850",
+        "policiesHintText": "Informationen des Verkäufers, wie z. B. Rückgabebedingungen und AGB, finden Sie bei Klick auf den Verkäufernamen.",
+        "merchantProductsSearchUrl": null,
+        "category": "DV"
+      },
+      "isLeading": true,
+      "offerId": "DE850_10485802_ST",
+      "canBeAddedToCart": true,
+      "canBeAddedToCartText": "Online bestellen",
+      "deliveryTimeText": "Lieferzeit ca. 3 Werktage",
+      "showShippingCosts": true,
+      "productContactInformation": null
+    },
+    "attributeList": [
+      {
+        "__typename": "ProductAttribute",
+        "key": "Artikeltyp",
+        "value": "Schleifpapier"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Ausführung",
+        "value": "Schleifrolle"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Geeignet für",
+        "value": "Handschleifer, Schwingschleifer"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Zu bearbeitendes Material",
+        "value": "Farbe, Holz, Lack"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Maße",
+        "value": "115 mm x 5 m"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Körnung",
+        "value": "180"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Lochung",
+        "value": "Ungelocht"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Kletthaftend",
+        "value": "Nein"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Material",
+        "value": "Aluminiumoxid"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Inhalt",
+        "value": "1 Stück"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Anwendung",
+        "value": "Schleifen"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Hinweis",
+        "value": "Geeignet für Trockenschliff"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "Räume",
+        "value": "Baustelle, Garage, Werkstatt"
+      },
+      {
+        "__typename": "ProductAttribute",
+        "key": "EAN",
+        "value": "4306517623838"
+      }
+    ],
+    "description": "Die Schleifrolle für Hand- und Schwingschleifer von RAUTNER ist ein klassisches Schleifmittel für den Trockenschliff und darf auf der Baustelle, in der Werkstatt oder der Garage nicht fehlen. <br /><br /><b>Produktmerkmale der Schleifrolle für Hand- und Schwingschleifer von RAUTNER</b><br /><br />Darum solltest Du zugreifen: Die Schleifrolle bietet Dir auf 5 m Länge und 115 mm Breite ein Schleifpapier mit einer Körnung von 180. Du kannst das Schleifpapier verwenden, um Holz, Lacke oder Farben zu schleifen. Die Schleifrolle ist aus Aluminiumoxid gefertigt, ungelocht und nicht kletthaftend. Du kannst ein hochwertiges Oberflächenfinish erwarten, wenn Du mit dem Schleifpapier wirbelst.<br /><br />Die Schleifrolle besitzt eine hohe Lebensdauer. Dies ist der Spezialbeschichtung des Papiers zu verdanken, die das Verstopfen Deines Schleifers reduziert. Schon nach wenigen Schleifbewegungen wirst Du Dich am gründlichen Schleifverhalten der Schleifpapierbögen freuen. Verantwortlich dafür ist die präzise Kornausrichtung, die RAUTNER der Schleifrolle spendiert hat. <br /><br />Festgenagelt: Aufgrund der präzisen Kornausrichtung werden Schleifarbeiten mit der Schleifrolle von RAUTNER zum wahren Freudenfest."
+  }
+}

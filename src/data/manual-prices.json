@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-02T22:12:03.619Z",
+  "generated_at": "2026-10-13T11:52:10.689Z",
   "canonical_material_ids": {
     "gipskarton-standard-12-5-1200-600-v1": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
     "gipskarton-standard-12-5-2000-1250-v1": "2d750efa-4af5-e9b4-5416-89678194f058",
@@ -35,9 +35,67 @@
     "pu-schaum-1k-b2-genius-750ml-v1": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
     "acryl-weiss-300ml-v1": "23aa28b5-5e69-1a1c-65c7-c68c4fb11c57",
     "acryl-weiss-280ml-v1": "81262b5d-1e95-5fe3-1634-8e543049d5af",
-    "steinwolle-sonorock-040-40-7-5m2-v1": "a77f72d7-ba2c-f7ee-d4ea-8a3c6899322c"
+    "steinwolle-sonorock-040-40-7-5m2-v1": "a77f72d7-ba2c-f7ee-d4ea-8a3c6899322c",
+    "zement-25kg-v1": "60c4a168-2bf6-f806-729b-1490d89aa85c",
+    "sockelputz-30kg-v1": "d68b71d7-ee5b-20f3-9d25-13ce34f3764c",
+    "armierungsgewebe-160-1000-10000-v1": "dae638df-5d1f-1c45-c736-f8634303d3b4",
+    "cw50-50-2600-v1": "f68369db-71cd-60ae-887f-e4ddcdb7f64e",
+    "uw50-40-2000-v1": "090eff92-f6d1-2d5f-55ef-a2396edb10ce",
+    "direktabhaenger-cd-125-1-v1": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+    "haftgrund-5l-v1": "1611b788-0e27-0632-4682-bbe3a1233b14",
+    "pu-schaum-1k-750ml-v1": "cf20d372-e5f7-f8b6-4181-7ea97cc9dc4d",
+    "sanitaer-silikon-weiss-310ml-v1": "e729a380-10bf-a30f-84ac-094f8b127f74",
+    "rollputz-12kg-v1": "4d497e8a-3224-e97a-6614-9e86d889deed",
+    "schleifpapier-k180-230-280-1-v1": "42039b00-d37b-5117-8c6a-568f6de25468",
+    "knauf-perlfix-10kg-v1": "d8231910-6f33-8873-2e32-39dd3ac29e32",
+    "pu-schaum-1k-500ml-v1": "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+    "rollputz-15kg-v1": "18ceb301-2b85-303b-c6c9-3139acccb732",
+    "sockelputz-25kg-v1": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
+    "armierungsgewebe-1000-10000-v1": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+    "armierungsgewebe-165-1000-10000-v1": "cebcf814-aecb-4a94-5319-d57b54761eea",
+    "knauf-perlfix-25kg-v1": "003defc8-10d9-c91c-206a-302684b9ce88",
+    "rollputz-8kg-v1": "9c27bb96-20f0-2ed0-af3c-d7e84a4ea603",
+    "rollputz-10kg-v1": "5a2025df-74a9-77e5-e50f-5e61d6447090",
+    "sockelputz-10kg-v1": "53529bb2-5112-c4e1-0110-9be7e7a211e5",
+    "zement-5kg-v1": "6c7ac510-90ec-bcd9-d768-4384821e0e7c",
+    "cd60-27-4000-v1": "26727068-e723-f466-abd2-17ae49e3338b",
+    "haftgrund-2-5kg-v1": "98626fce-2c50-e299-39ac-bb5f9c9dfc41",
+    "schleifpapier-k180-93-230-10-v1": "c94d34f6-3b31-013a-e176-da1fee7c21f1",
+    "sanitaer-silikon-weiss-300ml-v1": "e2e2830e-b113-5828-bf7e-598987e86840",
+    "schleifpapier-k180-93-5000-rolle-v1": "587c0ad5-79b5-7126-58c8-d4e3504cc0ef",
+    "steinwolle-040-40-9m2-v1": "7911616b-c5fe-d6b0-1bbc-6ee25d740aed",
+    "schleifpapier-trockenbau-k180-225-5-v1": "3f27e372-f757-5850-5643-489a33782dbb"
   },
   "prices": [
+    {
+      "material_id": "003defc8-10d9-c91c-206a-302684b9ce88",
+      "canonical_slug": "knauf-perlfix-25kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "ansetzgips",
+        "weight_kg": 25,
+        "required_terms": [
+          "knauf",
+          "perlfix"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Knauf Ansetzgips Perlfix 25 kg",
+      "product_url": "https://www.bauhaus.info/knauf-ansetzgips-perlfix/p/13863055",
+      "price": 10.5,
+      "unit_price": 0.42,
+      "unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 25
+      }
+    },
     {
       "material_id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
       "canonical_slug": "tn-3-5-35-1000-v1",
@@ -73,6 +131,107 @@
         "diameter_mm": 3.5,
         "length_mm": 35,
         "pieces": 1000
+      }
+    },
+    {
+      "material_id": "090eff92-f6d1-2d5f-55ef-a2396edb10ce",
+      "canonical_slug": "uw50-40-2000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "uw-profil",
+        "length_mm": 2000,
+        "width_mm": 50,
+        "profile": "uw",
+        "excluded_terms": [
+          "cw",
+          "cd",
+          "ud",
+          "türsturz",
+          "steckwinkel"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau UW-Rahmenprofil 2000 × 50 × 40 mm",
+      "product_url": "https://www.bauhaus.info/uw-profile/probau-uw-rahmenprofil/p/20657219",
+      "price": 3.7,
+      "unit_price": 1.85,
+      "unit": "m",
+      "package_quantity": 2,
+      "currency": "EUR",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 2000,
+        "width_mm": 50
+      }
+    },
+    {
+      "material_id": "090eff92-f6d1-2d5f-55ef-a2396edb10ce",
+      "canonical_slug": "uw50-40-2000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "uw-profil",
+        "length_mm": 2000,
+        "width_mm": 50,
+        "profile": "uw",
+        "excluded_terms": [
+          "cw",
+          "cd",
+          "ud",
+          "türsturz",
+          "steckwinkel"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Knauf UW-Rahmenprofil 40 mm x 50 mm x 2000 mm",
+      "product_url": "https://www.obi.de/p/6836829/knauf-uw-rahmenprofil-40-mm-x-50-mm-x-2000-mm",
+      "price": 4.89,
+      "unit_price": 2.44,
+      "unit": "m",
+      "package_quantity": 2,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:44:08.840Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "uw-profil",
+        "length_mm": 2000,
+        "width_mm": 50
+      }
+    },
+    {
+      "material_id": "1611b788-0e27-0632-4682-bbe3a1233b14",
+      "canonical_slug": "haftgrund-5l-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "haftgrund",
+        "volume_l": 5,
+        "excluded_terms": [
+          "tiefengrund",
+          "tiefgrund",
+          "betonkontakt"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Quick-Mix Haftgrund 5 l",
+      "product_url": "https://www.bauhaus.info/tiefengrund-haftgrund/quick-mix-haftgrund/p/13865802",
+      "price": 29.95,
+      "unit_price": 5.99,
+      "unit": "l",
+      "package_quantity": 5,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "volume_l": 5
       }
     },
     {
@@ -171,7 +330,7 @@
       "unit": "kg",
       "package_quantity": 25,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:51:57Z",
+      "checked_at": "2026-10-11T08:53:39.000Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -205,7 +364,7 @@
       "unit": "kg",
       "package_quantity": 25,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:51:57Z",
+      "checked_at": "2026-10-13T11:47:24.109Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -347,7 +506,43 @@
       "unit": "kg",
       "package_quantity": 30,
       "currency": "EUR",
-      "checked_at": "2026-09-24T17:23:44Z",
+      "checked_at": "2026-10-11T08:53:39.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 30
+      }
+    },
+    {
+      "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+      "canonical_slug": "knauf-rotband-30kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "haftputzgips",
+        "weight_kg": 30,
+        "required_terms": [
+          "knauf",
+          "rotband"
+        ],
+        "excluded_terms": [
+          "pro",
+          "finish",
+          "flächen",
+          "flaechen",
+          "renovier"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Knauf Rotband Haftputz 30 kg",
+      "product_url": "https://www.obi.de/p/2263044/knauf-rotband-haftputz-30-kg",
+      "price": 11.59,
+      "unit_price": 0.39,
+      "unit": "kg",
+      "package_quantity": 30,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:47:24.109Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -421,7 +616,7 @@
       "unit": "m2",
       "package_quantity": 2.5,
       "currency": "EUR",
-      "checked_at": "2026-09-30T20:33:31Z",
+      "checked_at": "2026-10-11T08:53:39.000Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -503,7 +698,7 @@
       "unit": "l",
       "package_quantity": 0.31,
       "currency": "EUR",
-      "checked_at": "2026-10-02T22:02:39Z",
+      "checked_at": "2026-10-11T08:53:39.000Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -575,12 +770,13 @@
       "unit": "l",
       "package_quantity": 0.31,
       "currency": "EUR",
-      "checked_at": "2026-10-02T22:02:39Z",
+      "checked_at": "2026-10-13T11:47:24.109Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
-      "availability": "InStock",
+      "availability": null,
       "observed_specs": {
+        "type": "acryl",
         "volume_l": 0.31
       }
     },
@@ -659,6 +855,115 @@
       }
     },
     {
+      "material_id": "3f27e372-f757-5850-5643-489a33782dbb",
+      "canonical_slug": "schleifpapier-trockenbau-k180-225-5-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "schleifpapier",
+        "length_mm": 225,
+        "width_mm": 225,
+        "grit": 180,
+        "pieces": 5,
+        "excluded_terms": [
+          "maschine",
+          "schleifspitze",
+          "set",
+          "schleifrolle"
+        ],
+        "diameter_mm": 225
+      },
+      "store_id": "obi",
+      "product_name": "LUX-TOOLS Schleifscheiben K180 Trockenbau 5 Stück, Ø 225 mm",
+      "product_url": "https://www.obi.de/p/2785301/lux-tools-schleifscheiben-k180-trockenbau-5-stueck",
+      "price": 11.49,
+      "unit_price": 2.3,
+      "unit": "piece",
+      "package_quantity": 5,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:47:48.046Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "schleifpapier",
+        "length_mm": 225,
+        "width_mm": 225,
+        "diameter_mm": 225,
+        "grit": 180,
+        "pieces": 5
+      }
+    },
+    {
+      "material_id": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+      "canonical_slug": "armierungsgewebe-1000-10000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "area_m2": 10,
+        "excluded_terms": [
+          "streifen",
+          "eckprofil",
+          "mörtel"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau Armierungsgewebe 10 m²",
+      "product_url": "https://www.bauhaus.info/wdvs-gewebe/probau-armierungsgewebe/p/13878909",
+      "price": 19.95,
+      "unit_price": 2,
+      "unit": "m2",
+      "package_quantity": 10,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "area_m2": 10
+      }
+    },
+    {
+      "material_id": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+      "canonical_slug": "armierungsgewebe-1000-10000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "area_m2": 10,
+        "excluded_terms": [
+          "streifen",
+          "eckprofil",
+          "mörtel"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Glasfasergewebe 1 m x 10 m",
+      "product_url": "https://www.obi.de/p/3263647/glasfasergewebe-1-m-x-10-m",
+      "price": 24.49,
+      "unit_price": 2.45,
+      "unit": "m2",
+      "package_quantity": 10,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:47:24.109Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "area_m2": 10
+      }
+    },
+    {
       "material_id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
       "canonical_slug": "gipskarton-standard-12-5-1200-600-v1",
       "canonical_version": 1,
@@ -687,17 +992,49 @@
       "unit": "m2",
       "package_quantity": 0.72,
       "currency": "EUR",
-      "checked_at": "2026-09-26T19:27:07Z",
+      "checked_at": "2026-10-13T11:44:08.840Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
       "availability": null,
       "observed_specs": {
         "type": "standard",
-        "length_mm": 1200,
-        "width_mm": 600,
         "thickness_mm": 12.5,
+        "width_mm": 600,
+        "length_mm": 1200,
         "area_m2": 0.72
+      }
+    },
+    {
+      "material_id": "4d497e8a-3224-e97a-6614-9e86d889deed",
+      "canonical_slug": "rollputz-12kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "rollputz",
+        "weight_kg": 12,
+        "color": "weiss",
+        "excluded_terms": [
+          "werkzeug",
+          "rolle",
+          "fertigputzgips"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Alpina Rollputz 12 kg Weiß Matt",
+      "product_url": "https://www.obi.de/p/8170136/alpina-rollputz-12-kg-weiss-matt",
+      "price": 34.99,
+      "unit_price": 2.92,
+      "unit": "kg",
+      "package_quantity": 12,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:44:08.840Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "rollputz",
+        "weight_kg": 12
       }
     },
     {
@@ -726,15 +1063,126 @@
       "unit": "m",
       "package_quantity": 3.1,
       "currency": "EUR",
-      "checked_at": "2026-09-26T19:27:07Z",
+      "checked_at": "2026-10-13T11:47:24.109Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
       "availability": null,
       "observed_specs": {
+        "type": "cd",
         "length_mm": 3100,
         "width_mm": 60,
         "height_mm": 27
+      }
+    },
+    {
+      "material_id": "587c0ad5-79b5-7126-58c8-d4e3504cc0ef",
+      "canonical_slug": "schleifpapier-k180-93-5000-rolle-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "schleifpapier",
+        "length_mm": 5000,
+        "width_mm": 93,
+        "grit": 180,
+        "pieces": 1,
+        "excluded_terms": [
+          "schleifmaschine",
+          "schleifspitze",
+          "set",
+          "nass",
+          "schleifleinen",
+          "gewebe"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Wolfcraft Schleifpapierrolle Holz/Metall K180, 5 m x 93 mm",
+      "product_url": "https://www.bauhaus.info/schleifpapier/wolfcraft-schleifpapier/p/27790416",
+      "price": 5.3,
+      "unit_price": 5.3,
+      "unit": "piece",
+      "package_quantity": 1,
+      "currency": "EUR",
+      "checked_at": "2026-10-11T21:54:04.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 5000,
+        "width_mm": 93,
+        "grit": 180,
+        "pieces": 1
+      }
+    },
+    {
+      "material_id": "60c4a168-2bf6-f806-729b-1490d89aa85c",
+      "canonical_slug": "zement-25kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "zement",
+        "weight_kg": 25,
+        "required_terms": [
+          "zement"
+        ],
+        "excluded_terms": [
+          "mörtel",
+          "estrich",
+          "beton",
+          "farbe",
+          "putz"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Zement 25 kg chromatarm",
+      "product_url": "https://www.bauhaus.info/zement-moertel/zement/p/13887110",
+      "price": 5.25,
+      "unit_price": 0.21,
+      "unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 25
+      }
+    },
+    {
+      "material_id": "60c4a168-2bf6-f806-729b-1490d89aa85c",
+      "canonical_slug": "zement-25kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "zement",
+        "weight_kg": 25,
+        "required_terms": [
+          "zement"
+        ],
+        "excluded_terms": [
+          "mörtel",
+          "estrich",
+          "beton",
+          "farbe",
+          "putz"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Trasszement 25 kg",
+      "product_url": "https://www.obi.de/p/3693132/trasszement-25-kg",
+      "price": 9.79,
+      "unit_price": 0.39,
+      "unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:44:08.840Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "zement",
+        "weight_kg": 25
       }
     },
     {
@@ -757,13 +1205,76 @@
       "unit": "kg",
       "package_quantity": 30,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:51:57Z",
+      "checked_at": "2026-10-13T11:47:24.109Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
       "availability": null,
       "observed_specs": {
+        "type": "ansetzgips",
         "weight_kg": 30
+      }
+    },
+    {
+      "material_id": "98626fce-2c50-e299-39ac-bb5f9c9dfc41",
+      "canonical_slug": "haftgrund-2-5kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "haftgrund",
+        "excluded_terms": [
+          "tiefengrund",
+          "tiefgrund",
+          "betonkontakt"
+        ],
+        "weight_kg": 2.5
+      },
+      "store_id": "obi",
+      "product_name": "Knauf Spezialhaftgrund 2,5 kg",
+      "product_url": "https://www.obi.de/p/3845005/knauf-spezialhaftgrund-2-5-kg",
+      "price": 25.99,
+      "unit_price": 10.4,
+      "unit": "kg",
+      "package_quantity": 2.5,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:47:24.109Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "haftgrund",
+        "weight_kg": 2.5
+      }
+    },
+    {
+      "material_id": "9c27bb96-20f0-2ed0-af3c-d7e84a4ea603",
+      "canonical_slug": "rollputz-8kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "rollputz",
+        "weight_kg": 8,
+        "color": "weiss",
+        "excluded_terms": [
+          "werkzeug",
+          "rolle",
+          "fertigputzgips"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "swingcolor Dekoputz Roll- & Streichputz Weiß 8 kg",
+      "product_url": "https://www.bauhaus.info/rollputze/swingcolor-dekoputz-roll-streichputz/p/28235707",
+      "price": 22.95,
+      "unit_price": 2.87,
+      "unit": "kg",
+      "package_quantity": 8,
+      "currency": "EUR",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 8
       }
     },
     {
@@ -794,7 +1305,7 @@
       "unit": "m2",
       "package_quantity": 7.5,
       "currency": "EUR",
-      "checked_at": "2026-10-02T22:12:02.180Z",
+      "checked_at": "2026-10-11T08:53:39.000Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -837,7 +1348,7 @@
       "unit": "m2",
       "package_quantity": 7.5,
       "currency": "EUR",
-      "checked_at": "2026-10-02T22:12:02.180Z",
+      "checked_at": "2026-10-13T11:44:08.840Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -847,8 +1358,8 @@
         "thickness_mm": 40,
         "width_mm": 625,
         "length_mm": 1000,
-        "pieces": 12,
         "area_m2": 7.5,
+        "pieces": 12,
         "thermal_conductivity": 0.04
       }
     },
@@ -919,7 +1430,7 @@
       "unit": "piece",
       "package_quantity": 1000,
       "currency": "EUR",
-      "checked_at": "2026-10-01T21:03:00Z",
+      "checked_at": "2026-10-11T08:53:39.000Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -949,19 +1460,20 @@
         ]
       },
       "store_id": "obi",
-      "product_name": "Knauf Schnellbauschrauben TN Feingewinde 3,5 x 25 mm 1.000 Stück",
+      "product_name": "Knauf Schnellbauschrauben TN 3,5 x 25 mm 1.000 Stück",
       "product_url": "https://www.obi.de/p/4261053/knauf-schnellbauschrauben-tn-3-5-x-25-mm-1-000-stueck",
       "price": 12.49,
       "unit_price": 0.01,
       "unit": "piece",
       "package_quantity": 1000,
       "currency": "EUR",
-      "checked_at": "2026-10-01T21:03:00Z",
+      "checked_at": "2026-10-13T11:44:08.840Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
       "availability": null,
       "observed_specs": {
+        "type": "tn",
         "diameter_mm": 3.5,
         "length_mm": 25,
         "pieces": 1000
@@ -1028,6 +1540,242 @@
       }
     },
     {
+      "material_id": "cf20d372-e5f7-f8b6-4181-7ea97cc9dc4d",
+      "canonical_slug": "pu-schaum-1k-750ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.75,
+        "excluded_terms": [
+          "brunnenschaum",
+          "kleber",
+          "reiniger",
+          "entferner",
+          "2k"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Pattex Montageschaum White Line 750 ml",
+      "product_url": "https://www.bauhaus.info/bauschaeume/pattex-montageschaum-white-line/p/25360169",
+      "price": 12.95,
+      "unit_price": 17.27,
+      "unit": "l",
+      "package_quantity": 0.75,
+      "currency": "EUR",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "volume_l": 0.75
+      }
+    },
+    {
+      "material_id": "cf20d372-e5f7-f8b6-4181-7ea97cc9dc4d",
+      "canonical_slug": "pu-schaum-1k-750ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.75,
+        "excluded_terms": [
+          "brunnenschaum",
+          "kleber",
+          "reiniger",
+          "entferner",
+          "2k"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Soudal Bauschaum B2 Genius Gun 750 ml",
+      "product_url": "https://www.obi.de/p/9089269/soudal-bauschaum-b2-genius-gun-750-ml",
+      "price": 14.29,
+      "unit_price": 19.05,
+      "unit": "l",
+      "package_quantity": 0.75,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:44:08.840Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.75
+      }
+    },
+    {
+      "material_id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+      "canonical_slug": "direktabhaenger-cd-125-1-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd",
+        "excluded_terms": [
+          "holzlatten",
+          "holzplatten",
+          "nonius",
+          "verbinder"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau Direktabhänger CD-Deckenprofile 125 mm, 1 Stück",
+      "product_url": "https://www.bauhaus.info/deckenabhaenger/probau-direktabhaenger/p/25562691",
+      "price": 0.38,
+      "unit_price": 0.38,
+      "unit": "piece",
+      "package_quantity": 1,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 125,
+        "pieces": 1
+      }
+    },
+    {
+      "material_id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+      "canonical_slug": "direktabhaenger-cd-125-1-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd",
+        "excluded_terms": [
+          "holzlatten",
+          "holzplatten",
+          "nonius",
+          "verbinder"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Direktabhänger 125 mm",
+      "product_url": "https://www.obi.de/p/2353639/direktabhaenger-125-mm",
+      "price": 0.59,
+      "unit_price": 0.59,
+      "unit": "piece",
+      "package_quantity": 1,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:47:24.109Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd"
+      }
+    },
+    {
+      "material_id": "d68b71d7-ee5b-20f3-9d25-13ce34f3764c",
+      "canonical_slug": "sockelputz-30kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sockelputz",
+        "weight_kg": 30,
+        "required_terms": [
+          "sockelputz"
+        ],
+        "excluded_terms": [
+          "farbe",
+          "profil",
+          "gewebe"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Knauf Marmorit Sockelputz UP 310 30 kg",
+      "product_url": "https://www.bauhaus.info/zementputze/knauf-marmorit-sockelputz-up-310/p/13898422",
+      "price": 12.45,
+      "unit_price": 0.42,
+      "unit": "kg",
+      "package_quantity": 30,
+      "currency": "EUR",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 30
+      }
+    },
+    {
+      "material_id": "d68b71d7-ee5b-20f3-9d25-13ce34f3764c",
+      "canonical_slug": "sockelputz-30kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sockelputz",
+        "weight_kg": 30,
+        "required_terms": [
+          "sockelputz"
+        ],
+        "excluded_terms": [
+          "farbe",
+          "profil",
+          "gewebe"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Knauf UP310 Zement-Sockelputz 30 kg",
+      "product_url": "https://www.hornbach.de/p/knauf-up310-zement-sockelputz-30-kg/262226/",
+      "price": 12.45,
+      "unit_price": 0.42,
+      "unit": "kg",
+      "package_quantity": 30,
+      "currency": "EUR",
+      "checked_at": "2026-10-12T12:31:30.926Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 30,
+        "type": "sockelputz"
+      }
+    },
+    {
+      "material_id": "d68b71d7-ee5b-20f3-9d25-13ce34f3764c",
+      "canonical_slug": "sockelputz-30kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sockelputz",
+        "weight_kg": 30,
+        "required_terms": [
+          "sockelputz"
+        ],
+        "excluded_terms": [
+          "farbe",
+          "profil",
+          "gewebe"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Sakret Sockelputz 30 kg",
+      "product_url": "https://www.obi.de/p/7505456/sakret-sockelputz-30-kg",
+      "price": 13.99,
+      "unit_price": 0.47,
+      "unit": "kg",
+      "package_quantity": 30,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:44:08.840Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "sockelputz",
+        "weight_kg": 30
+      }
+    },
+    {
       "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
       "canonical_slug": "knauf-tiefengrund-5l-v1",
       "canonical_version": 1,
@@ -1050,7 +1798,7 @@
       "unit": "l",
       "package_quantity": 5,
       "currency": "EUR",
-      "checked_at": "2026-10-01T15:51:57Z",
+      "checked_at": "2026-10-11T08:53:39.000Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -1075,20 +1823,123 @@
         ]
       },
       "store_id": "obi",
-      "product_name": "Knauf Tiefengrund LF 5 l",
-      "product_url": "https://www.obi.de/p/6939854/knauf-tiefengrund-lf-5-l",
-      "price": 33.99,
-      "unit_price": 6.8,
+      "product_name": "OBI Tiefgrund Transparent 5 l",
+      "product_url": "https://www.obi.de/p/6017156/obi-tiefgrund-transparent-5-l",
+      "price": 24.99,
+      "unit_price": 5,
       "unit": "l",
       "package_quantity": 5,
       "currency": "EUR",
-      "checked_at": "2026-09-24T17:23:44Z",
+      "checked_at": "2026-10-13T11:44:08.840Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
       "availability": null,
       "observed_specs": {
+        "type": "tiefengrund",
         "volume_l": 5
+      }
+    },
+    {
+      "material_id": "e729a380-10bf-a30f-84ac-094f8b127f74",
+      "canonical_slug": "sanitaer-silikon-weiss-310ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sanitaer-silikon",
+        "color": "weiss",
+        "volume_l": 0.31,
+        "excluded_terms": [
+          "acryl",
+          "hybrid",
+          "montagekleber",
+          "entferner"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau Sanitär-Silikon Weiß 310 ml",
+      "product_url": "https://www.bauhaus.info/silikon/probau-sanitaer-silikon/p/23413872",
+      "price": 7.85,
+      "unit_price": 25.32,
+      "unit": "l",
+      "package_quantity": 0.31,
+      "currency": "EUR",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "volume_l": 0.31
+      }
+    },
+    {
+      "material_id": "e729a380-10bf-a30f-84ac-094f8b127f74",
+      "canonical_slug": "sanitaer-silikon-weiss-310ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sanitaer-silikon",
+        "color": "weiss",
+        "volume_l": 0.31,
+        "excluded_terms": [
+          "acryl",
+          "hybrid",
+          "montagekleber",
+          "entferner"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "OBI Sanitär-Silikon Weiß 310 ml",
+      "product_url": "https://www.obi.de/p/8215667/obi-sanitaer-silikon-weiss-310-ml",
+      "price": 8.59,
+      "unit_price": 27.71,
+      "unit": "l",
+      "package_quantity": 0.31,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:44:08.840Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "sanitaer-silikon",
+        "volume_l": 0.31
+      }
+    },
+    {
+      "material_id": "eaff18c6-3cc4-0b8e-0d86-888725219caf",
+      "canonical_slug": "cd60-27-3000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "cd",
+        "length_mm": 3000,
+        "width_mm": 60,
+        "height_mm": 27,
+        "required_terms": [
+          "cd"
+        ],
+        "excluded_terms": [
+          "ud",
+          "cw",
+          "uw"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau CD-Deckenprofil 3000 × 60 × 27 mm",
+      "product_url": "https://www.bauhaus.info/cd-profile/probau-cd-deckenprofil/p/20489120",
+      "price": 6.65,
+      "unit_price": 2.22,
+      "unit": "m",
+      "package_quantity": 3,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 3000,
+        "width_mm": 60,
+        "height_mm": 27
       }
     },
     {
@@ -1123,6 +1974,152 @@
       "availability": null,
       "observed_specs": {
         "weight_kg": 5
+      }
+    },
+    {
+      "material_id": "f1da0475-9771-b503-5f40-26c8b138d4ae",
+      "canonical_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "feuchtraum",
+        "thickness_mm": 12.5,
+        "width_mm": 1250,
+        "length_mm": 2000,
+        "area_m2": 2.5,
+        "required_terms": [
+          "feuchtraum"
+        ],
+        "excluded_terms": [
+          "feuerschutz"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Rigips Gipskartonplatte GKBI 2000 × 1250 × 12,5 mm imprägniert",
+      "product_url": "https://www.bauhaus.info/feuchtraumplatten/rigips-gipskartonplatte-gkbi/p/22687869",
+      "price": 15.95,
+      "unit_price": 6.38,
+      "unit": "m2",
+      "package_quantity": 2.5,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 2000,
+        "width_mm": 1250,
+        "thickness_mm": 12.5,
+        "area_m2": 2.5
+      }
+    },
+    {
+      "material_id": "f1da0475-9771-b503-5f40-26c8b138d4ae",
+      "canonical_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "feuchtraum",
+        "thickness_mm": 12.5,
+        "width_mm": 1250,
+        "length_mm": 2000,
+        "area_m2": 2.5,
+        "required_terms": [
+          "feuchtraum"
+        ],
+        "excluded_terms": [
+          "feuerschutz"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Gipskartonplatte 12,5 mm x 1.250 mm x 2.000 mm imprägniert",
+      "product_url": "https://www.obi.de/p/5407580/gipskartonplatte-12-5-mm-x-1-250-mm-x-2-000-mm-impraegniert",
+      "price": 15.97,
+      "unit_price": 6.39,
+      "unit": "m2",
+      "package_quantity": 2.5,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:47:24.109Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "feuchtraum",
+        "thickness_mm": 12.5,
+        "width_mm": 1250,
+        "length_mm": 2000,
+        "area_m2": 2.5
+      }
+    },
+    {
+      "material_id": "f68369db-71cd-60ae-887f-e4ddcdb7f64e",
+      "canonical_slug": "cw50-50-2600-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "cw-profil",
+        "length_mm": 2600,
+        "width_mm": 50,
+        "profile": "cw",
+        "excluded_terms": [
+          "uw",
+          "cd",
+          "ud",
+          "türsturz",
+          "steckwinkel"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau CW-Standprofil 2600 × 50 × 50 mm",
+      "product_url": "https://www.bauhaus.info/cw-profile/probau-cw-standprofil/p/20479644",
+      "price": 5.1,
+      "unit_price": 1.96,
+      "unit": "m",
+      "package_quantity": 2.6,
+      "currency": "EUR",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 2600,
+        "width_mm": 50
+      }
+    },
+    {
+      "material_id": "f68369db-71cd-60ae-887f-e4ddcdb7f64e",
+      "canonical_slug": "cw50-50-2600-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "cw-profil",
+        "length_mm": 2600,
+        "width_mm": 50,
+        "profile": "cw",
+        "excluded_terms": [
+          "uw",
+          "cd",
+          "ud",
+          "türsturz",
+          "steckwinkel"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Knauf CW-Profil 50 x 50 x 0,6 mm, Länge: 2.600 mm",
+      "product_url": "https://www.obi.de/p/6836837/knauf-cw-profil-50-x-50-x-0-6-mm-laenge-2-600-mm",
+      "price": 6.39,
+      "unit_price": 2.46,
+      "unit": "m",
+      "package_quantity": 2.6,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T11:47:24.109Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "cw-profil",
+        "length_mm": 2600,
+        "width_mm": 50
       }
     }
   ]

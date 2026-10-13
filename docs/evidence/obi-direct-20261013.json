@@ -1,0 +1,122 @@
+[
+  {
+    "key": "acryl",
+    "url": "https://www.obi.de/p/4771325/cmi-acryl-weiss-310-ml",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:41:53.741Z"
+  },
+  {
+    "key": "armierungsgewebe",
+    "url": "https://www.obi.de/p/3263688/glasfasergewebe-1-m-x-50-m",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:41:55.799Z"
+  },
+  {
+    "key": "cd-profil",
+    "url": "https://www.obi.de/p/6728323/knauf-deckenprofil-cd-27-mm-x-60-mm-x-3100-mm",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:41:57.763Z"
+  },
+  {
+    "key": "cw-profil",
+    "error": "no_mapping"
+  },
+  {
+    "key": "direktabhaenger",
+    "url": "https://www.obi.de/p/2353639/direktabhaenger-125-mm",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:41:59.895Z"
+  },
+  {
+    "key": "feuchtraumplatte",
+    "url": "https://www.obi.de/p/5407580/gipskartonplatte-12-5-mm-x-1-250-mm-x-2-000-mm-impraegniert",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:01.950Z"
+  },
+  {
+    "key": "haftgrund",
+    "url": "https://www.obi.de/p/3845005/knauf-spezialhaftgrund-2-5-kg",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:03.825Z"
+  },
+  {
+    "key": "perlfix",
+    "url": "https://www.obi.de/p/2263010/knauf-perlfix-ansetzgips-30-kg",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:05.834Z"
+  },
+  {
+    "key": "rotband",
+    "url": "https://www.obi.de/p/2263044/knauf-rotband-haftputz-30-kg",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:07.810Z"
+  },
+  {
+    "key": "uniflott",
+    "url": "https://www.obi.de/p/1608983/knauf-uniflott-spachtelmasse-25-kg",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:09.808Z"
+  },
+  {
+    "key": "pu-schaum",
+    "url": "https://www.obi.de/p/9089269/soudal-bauschaum-b2-genius-gun-750-ml",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:11.809Z"
+  },
+  {
+    "key": "gipskarton",
+    "url": "https://www.obi.de/p/8144024/gipskarton-miniboard-12-5-mm-x-600-mm-x-1200-mm",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:14.031Z"
+  },
+  {
+    "key": "rollputz",
+    "url": "https://www.obi.de/p/8170136/alpina-rollputz-12-kg-weiss-matt",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:15.872Z"
+  },
+  {
+    "key": "schleifpapier",
+    "error": "no_mapping"
+  },
+  {
+    "key": "schnellbauschrauben",
+    "url": "https://www.obi.de/p/4261053/knauf-schnellbauschrauben-tn-3-5-x-25-mm-1-000-stueck",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:17.917Z"
+  },
+  {
+    "key": "silikon",
+    "url": "https://www.obi.de/p/8215667/obi-sanitaer-silikon-weiss-310-ml",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:19.857Z"
+  },
+  {
+    "key": "sockelputz",
+    "url": "https://www.obi.de/p/7505456/sakret-sockelputz-30-kg",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:24.287Z"
+  },
+  {
+    "key": "mineralwolle",
+    "url": "https://www.obi.de/p/2877751/rockwool-trennwandplatte-sonorock-wlg-40-40-mm-steinwolle",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:24.325Z"
+  },
+  {
+    "key": "tiefengrund",
+    "url": "https://www.obi.de/p/6017156/obi-tiefgrund-transparent-5-l",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:26.369Z"
+  },
+  {
+    "key": "uw-profil",
+    "error": "no_mapping"
+  },
+  {
+    "key": "zement",
+    "url": "https://www.obi.de/p/3693132/trasszement-25-kg",
+    "error": "not-found",
+    "checked_at": "2026-10-13T11:42:28.362Z"
+  }
+]

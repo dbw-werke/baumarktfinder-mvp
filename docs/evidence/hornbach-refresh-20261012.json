@@ -1,0 +1,2616 @@
+{
+  "started_at": "2026-10-12T12:29:47.551Z",
+  "store_id": "hornbach",
+  "observations": [
+    {
+      "key": "acryl",
+      "requested_slug": "acryl-weiss-310ml-v1",
+      "previous": {
+        "material_id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+        "store_id": "hornbach",
+        "product_name": "PRECIT Acryl weiß 310 ml; Acrylat Dichtstoff, Acrylatbasis",
+        "product_url": "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/",
+        "price": 4.89,
+        "unit_price": 15.77,
+        "unit": "l",
+        "package_quantity": 0.31,
+        "currency": "EUR",
+        "checked_at": "2026-10-01T15:57:35.807Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "PRECIT Acryl weiß 310 ml; Acrylat Dichtstoff, Acrylatbasis",
+          "url": "https://www.hornbach.de/p/precit-acryl-weiss-310-ml/10313763/",
+          "price": 4.89,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Precit Built",
+          "category": "Startseite > Sortiment > Baustoffe > Rohbau > Dichtungsmassen",
+          "description": "Brauchst Du eine zuverlässige Lösung für verschiedene Abdichtungs- und Reparaturarbeiten? Das PRECIT Acryl weiß 310 ml bietet Dir vielseitige Möglichkeiten. Produktmerkmale des PRECIT Acryl weiß 310 ml Darum solltest Du zugreifen: Dieses Produkt eignet sich hervorragend zum Abdichten, Reparieren oder Spachteln an Böden, Decken und Fassaden. Mit seiner ca. 20-minütigen Hautbildungszeit kannst Du zügig weiterarbeiten, ohne lange Wartezeiten. Die weiße Farbe passt sich dezent an, was besonders bei sichtbaren Stellen von Vorteil ist. Da es sowohl im Innen- als auch im Außenbereich einsetzbar ist, bietet es flexible Anwendungsmöglichkeiten. Der Acrylat-Dichtstoff auf Acrylatbasis sorgt für eine starke Haftung und lässt sich leicht verarbeiten. Dies macht es ideal für Fensterbänke und Laminat, wo präzises und sauberes Arbeiten wichtig ist. Festgezurrt: Das PRECIT Acryl weiß 310 ml ist die richtige Wahl für zuverlässige Abdichtungs- und Reparaturarbeiten im Innen- und Außenbereich.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Dichtstoff"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Acryl"
+            },
+            {
+              "name": "Inhaltsstoffe",
+              "value": "Acrylat Dichtstoff, Acrylatbasis"
+            },
+            {
+              "name": "Anwendungsgebiete",
+              "value": "Fassade, Fensterbänke, Laminat"
+            },
+            {
+              "name": "Verarbeitungstemperatur",
+              "value": "5 °C - 35 °C"
+            },
+            {
+              "name": "Ca. Hautbildungszeit",
+              "value": "20 min"
+            },
+            {
+              "name": "Inhalt",
+              "value": "310 ml"
+            },
+            {
+              "name": "Verwendbar für",
+              "value": "Mauerwerk, Holz"
+            },
+            {
+              "name": "Untergrundbeschaffenheit",
+              "value": "Fettfrei, Sauber, Staubfrei, Trocken, Tragfähig"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Außen, Innen"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Abdichten, Reparieren, Spachteln"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Boden, Decke, Wand"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Weiß"
+            },
+            {
+              "name": "Farbton",
+              "value": "Weiß"
+            },
+            {
+              "name": "Ergänzende Gefahrenmerkmale (EUH-Sätze)",
+              "value": "(EUH210) Sicherheitsdatenblatt auf Anfrage erhältlich., (EUH208) Enthält 1,2-Benzisothiazol-3(2H)-on, Reaktionsmasse aus: 5-Chlor-2-methyl-2H-isothiazol-3-on [EG nr. 247-500-7] und 2-Methyl-2H-isothiazol-3-on [EG nr. 220-239-6] (3:1). Kann allergische Reaktionen hervorrufen."
+            },
+            {
+              "name": "Aushärtungszeit",
+              "value": "2 mm pro Tag"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "RNFV"
+            },
+            {
+              "name": "EAN",
+              "value": "4306517467944"
+            }
+          ],
+          "externalId": "10313763",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:29:50.144Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:29:50.147Z",
+      "validation": {
+        "material_slug": "acryl-weiss-310ml-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 0.31,
+        "unit": "l",
+        "price": 4.89,
+        "match_score": 174,
+        "observed_specs": {
+          "volume_l": 0.31,
+          "color": "weiss",
+          "type": "acryl"
+        }
+      }
+    },
+    {
+      "key": "cd-profil",
+      "requested_slug": "cd60-27-3000-v1",
+      "previous": {
+        "material_id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+        "store_id": "hornbach",
+        "product_name": "Knauf CD-Deckenprofil 3100 mm x 60 mm x 27 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-cd-deckenprofil-3100-mm-x-60-mm-x-27-mm/260720/",
+        "price": 9.15,
+        "unit_price": 2.95,
+        "unit": "m",
+        "package_quantity": 3.1,
+        "currency": "EUR",
+        "checked_at": "2026-10-01T16:00:18.065Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf CD-Deckenprofil 3100 mm x 60 mm x 27 mm",
+          "url": "https://www.hornbach.de/p/knauf-cd-deckenprofil-3100-mm-x-60-mm-x-27-mm/260720/",
+          "price": 9.15,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Trockenbau > Trockenbauprofile",
+          "description": "Die Decke in Ihrem Altbau ist Ihnen zu hoch und Sie möchten diese gerne abhängen um Heizkosten zu sparen? Oder möchten Sie bei einer niedrigen Raumhöhe eine Unterdecke erstellen um ein Beleuchtungssystem einzubauen? Das Knauf Deckenprofil CD ist perfekt geeignet für flexible Gestaltungsmöglichkeiten: Mit Deckenabhänghöhen von 40 mm bis 75 cm ist alles möglich. Mit dem Knauf Deckenprofil CD in 3,0 m Länge erstellen Sie einfach und unkompliziert ein stabiles Grund- und Tragprofil zur Deckenabhängung. Für geringe Abhänghöhen von 40 mm bis 125 mm ist das Knauf Deckenprofil CD perfekt in Kombination mit den Knauf Direktabhängern. In Verbindung mit Knauf Draht mit Öse und Knauf Anker-Fix-Schnellabhängern sind bis zu 75 cm möglich – damit sind Ihrer Flexibilität bei der Deckengestaltung keine Grenzen gesetzt. Sie können die Knauf Deckenprofile CD auch ohne Abhängung befestigen und eine Unterkonstruktion direkt an der Decke anbringen, z. B. als Deckenbekleidung zum Verkleiden alter Decken oder Rohdecken. Für ein Plus an Wohnkomfort können Sie in die Unterkonstruktion natürlich auch Dämmstoffe für Schall- / Wärme- und Brandschutz einbringen. Und wenn es mal eng wird: Durch die geringe Höhe von nur 27 mm können Sie die Profile auch hervorragend zum Erstellen von Ständerprofilen bei Wandbekleidungen und Vorsatzschalen verwenden. Knauf Deckenprofile CD sind für den Einsatz im Innenbereich geeignet und können mit Knauf Gipsplatten beplankt werden. Das Knauf Deckenprofil CD ist zu kurz für Ihren Anwendungszweck? Sie können die Profile ganz einfach mit Knauf Profil- / Multiverbinder verlängern. Vielseitig und flexibel: Das Knauf Deckenprofil CD ist für verschiedene Abhänghöhen und Anwendungsmöglichkeiten perfekt geeignet.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Profil"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Deckenprofil"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Dach sanieren, Dachausbau, Decke, Innenausbau"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Erstellen von abgehängten Decken, Vorsatzschalen"
+            },
+            {
+              "name": "Artikelvorteil",
+              "value": "Leicht zu verarbeiten, Variabel einsetzbar"
+            },
+            {
+              "name": "Norm",
+              "value": "DIN EN 14195"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Achten Sie beim Erstellen einer Deckenabhängung, Deckenbekleidung oder Dachgeschossausbau mit Knauf Deckenprofilen CD auf die entsprechende Detailzeichnung, zur Erhöhung der Stabilität und an Decken ist eine Beplankung quer zu den Profilen (Tragprofil) zwingend erforderlich, durch ungeschützte Lagerung im Freien kann es durch Feuchtigkeit zu s. g. Weißrost kommen, was keinen Einfluss auf die Langlebigkeit und Qualität des Profils hat, Knauf Deckenprofile CD sind nicht für den Außenbereich bestimmt, Knauf Deckenprofile CD werden mit einer Blechschere oder einer elektronischen Blechschere gekürzt"
+            },
+            {
+              "name": "Material, Behandlung",
+              "value": "Stahlblech Verzinkt"
+            },
+            {
+              "name": "Maße (BxH)",
+              "value": "N/A x N/A"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "DG4T"
+            },
+            {
+              "name": "EAN",
+              "value": "2000260720005, 4002806016427, 4003982024596, 4012560001317, 4036127707337, 4036127797338, 8595563930014"
+            }
+          ],
+          "externalId": "260720",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:29:52.180Z",
+          "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+          "declaredUnitPrice": 2.95
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:29:52.181Z",
+      "validation": {
+        "material_slug": "cd60-27-3100-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 3.1,
+        "unit": "m",
+        "price": 9.15,
+        "match_score": 152,
+        "observed_specs": {
+          "length_mm": 3100,
+          "width_mm": 60,
+          "height_mm": 27,
+          "area_m2": 0.186,
+          "type": "cd"
+        }
+      }
+    },
+    {
+      "key": "cw-profil",
+      "requested_slug": "cw50-50-2600-v1",
+      "previous": {
+        "material_id": "f68369db-71cd-60ae-887f-e4ddcdb7f64e",
+        "store_id": "hornbach",
+        "product_name": "Knauf CW-dB Ständerprofil 2600 mm x 50 mm x 50 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-cw-db-staenderprofil-2600-mm-x-50-mm-x-50-mm/265269/",
+        "price": 6.35,
+        "unit_price": 2.44,
+        "unit": "m",
+        "package_quantity": 2.6,
+        "currency": "EUR",
+        "checked_at": "2026-10-08T07:44:15.591Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf CW-dB Ständerprofil 2600 mm x 50 mm x 50 mm",
+          "url": "https://www.hornbach.de/p/knauf-cw-db-staenderprofil-2600-mm-x-50-mm-x-50-mm/265269/",
+          "price": 6.35,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Trockenbau > Trockenbauprofile",
+          "description": "Die stabile Grundlage für den Aufbau einer Trockenbauwand ist das Ständerwerk, an dem Sie die Gipsplatten befestigen. Im besten Fall lassen sich die Profile für die Metallständer-Trennwände nicht nur schnell und unkompliziert montieren, sondern sorgen zusätzlich auch noch für besseren Schallschutz. So können alle Personen im Haus die verschiedenen Zimmer gleichzeitig ungestört nutzen. Clevere Details an den Metallprofilen machen die Montage auch für Heimwerker problemlos. Mit dem Knauf Ständerprofil CW-dB 50x50mm x 260cm erstellen Sie einfach und zügig stabile Metallständer-Trennwände. Dabei bietet es Ihnen im Verbund mit den Knauf UW-dB-Profilen einen erhöhten Schallschutz für Ihre Räume (bis zu 8 dB über DIN-Norm). So können Sie Ihre vier Wände auch beim Trockenbau-Verfahren in Ruhe genießen. Außerdem wurde an viele Einzelheiten beim Knauf Ständerprofil CW-dB gedacht, die Ihnen den Einbau erleichtern: – Die wabenähnliche Spezialprägung macht die Metalllprofile stabiler – Ausstanzungen in H-Form erlauben sicheres und einfaches Legen von Elektrokabeln in der Wand – Die vorgefertigten Schraubpunkte vereinfachen das Befestigen der Platten und ermöglichen eine stärkere Verschraubung – Eine spezielle Prägestruktur verhindert das Verrutschen der Leisten in den RahmenprofilenKnauf Ständerprofile CW-dB kommen im Innenausbau zum Einsatz, hauptsächlich als Ständerprofil bei nichttragenden Trockenbau-Wänden. Außerdem können diese im Badezimmer bei Vorwandinstallationen für Toilette oder Waschbecken oder anderen Metallunterkonstruktionen verwendet werden. Sie können mit dem Knauf Ständerprofil CW-dB auch Brandschutzkonstruktionen errichten sowie problemlos Elektro- und Sanitärinstallationen oder Dämmmaterial in der Wand einarbeiten. Das Knauf Ständer-Profil CW-dB – für einfache Montage und erhöhten Schallschutz: intelligent gemacht!",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Profil"
+            },
+            {
+              "name": "Maß (B x H)",
+              "value": "50 mm x 50 mm"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Wandprofil"
+            },
+            {
+              "name": "Artikelvorteil",
+              "value": "Zur Durchführung von Elektrokabeln sind H-förmige Stanzungen angebracht, leicht zu verarbeiten, variabel einsetzbar"
+            },
+            {
+              "name": "Länge",
+              "value": "2,6 m"
+            },
+            {
+              "name": "Breite",
+              "value": "50 mm"
+            },
+            {
+              "name": "Höhe",
+              "value": "50 mm"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Achten Sie beim Erstellen einer Trockenbauwand, einer Vorsatzschale, Installationswand, Vorwandinstallation oder dem Dachgeschossausbau mit Knauf Rahmenprofilen UW-dB und Ständer-Profilen CW-dB auf die entsprechende Detailzeichnung, Knauf Ständer-Profile CW-dB eignen sich zur Beplankung mit allen handelsüblichen Gipsplatten, eine Beplankung quer zu den Profilen erhöht die Stabilität und ist an Decken zwingend erforderlich, die Profile lassen sich durch Verschachteln sicher verlängern, durch ungeschützte Lagerung im Freien kann es durch Feuchtigkeit zu s. g. Weißrost kommen, was keinen Einfluss auf die Langlebigkeit und Qualität des Profils hat, Knauf Ständer-Profile CW-dB sind nicht für den Außenbereich bestimmt und werden mit einer Blechschere oder einer elektronischen Blechschere gekürzt., Ist dieser Artikel in Ihrem Markt nicht am Lager ist nur eine Kleibund-Abnahme möglich."
+            },
+            {
+              "name": "Stärke",
+              "value": "0,6 mm"
+            },
+            {
+              "name": "Material, Behandlung",
+              "value": "Stahlblech Verzinkt"
+            },
+            {
+              "name": "Maße (BxH)",
+              "value": "5 x 5 cm"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "G5T1"
+            },
+            {
+              "name": "EAN",
+              "value": "2000265269004, 4002806450375, 4003982022851, 4006379063147, 4012560001973, 4029369039373, 4036127752023, 4036127792029, 9002943015586"
+            }
+          ],
+          "externalId": "265269",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:29:54.430Z",
+          "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+          "declaredUnitPrice": 2.44
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:29:54.431Z",
+      "validation": {
+        "material_slug": "cw50-50-2600-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 2.6,
+        "unit": "m",
+        "price": 6.35,
+        "match_score": 150,
+        "observed_specs": {
+          "length_mm": 2600,
+          "width_mm": 50,
+          "height_mm": 50,
+          "thickness_mm": 0.6,
+          "area_m2": 0.13,
+          "type": "cw-profil"
+        }
+      }
+    },
+    {
+      "key": "direktabhaenger",
+      "requested_slug": "direktabhaenger-cd-125-1-v1",
+      "previous": {
+        "material_id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+        "store_id": "hornbach",
+        "product_name": "Knauf Direktabhänger 125 mm für CD Profil 60 mm / 27 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-mm-27-mm/7017220/",
+        "price": 0.58,
+        "unit_price": 0.58,
+        "unit": "piece",
+        "package_quantity": 1,
+        "currency": "EUR",
+        "checked_at": "2026-10-08T07:44:32.513Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf Direktabhänger 125 mm für CD Profil 60 mm / 27 mm",
+          "url": "https://www.hornbach.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-mm-27-mm/7017220/",
+          "price": 0.58,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Trockenbau > Deckenabhängung",
+          "description": "Eine hohe Decke abzuhängen, z. B. in einem Altbau, bietet Ihnen nicht nur den Vorteil, Heizkosten zu sparen, sondern auch neue Gestaltungsmöglichkeiten. So können Sie Ihre Decke beispielsweise mit einer neuen Beleuchtung aufwerten. Dafür genügt es bereits, wenige Zentimeter der Decke abzuhängen. Für so eine geringe Abhänghöhe sind Direktabhänger eine einfache und bequeme Lösung für eine tragfähige und plan ausgerichtete Unterkonstruktion. Eigenschaften: Knauf Direktabhänger für CD-Profil 125 mm aus verzinktem Stahlblech eignen sich hervorragend für Abhänghöhen von 40 mm bis 125 mm. Sie werden direkt an der Decke befestigt. Das erleichtert Ihnen eine ebene Ausrichtung von Deckenprofilen: Profil auf der gewünschten Höhe einsetzen, am Abhänger befestigen, fertig. Belastbar sind sie ebenfalls. Ein einzelner Direktabhänger kann 40 kg tragen, dies entspricht der Tragfähigkeitsklasse 0,40 kN. Zudem lassen sich kleine Unebenheiten in der Decke mit Knauf Direktabhängern für CD-Profil 125 mm bequem ausgleichen. Dachgeschossausbau? Wandverkleidung? Auch hier können die Knauf Direktabhänger für CD-Profil 125 mm Sie bei der Montage einer Unterkonstruktion optimal unterstützen. Die Direktabhänger von Knauf haben eine Schenkellänge von 125 mm und sind optimal auf die Knauf Deckenprofile CD mit einer Breite von 60 mm zugeschnitten. Sie möchten Ihre Decke oder Wand dämmen? Mit dem Direktabhänger von Knauf ist eine Wärmedämmung mit einer Dicke von bis zu 100 mm möglich. Noch ein Detail zum Verbrauch: 50 Knauf Direktabhänger für CD-Profil 125 mm reichen für eine Unterkonstruktion aus Knauf CD-Profilen mit einer Fläche von ca. 33 m². Knauf Direktabhänger für CD-Profil 125 mm – Deckenprofile ausrichten und Decken abhängen leichtgemacht.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Abhänger"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Direktabhänger"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Deckenprofile"
+            },
+            {
+              "name": "Material",
+              "value": "Metall"
+            },
+            {
+              "name": "Inhalt",
+              "value": "1 Stück"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Breite: 30mm, Länge 125mm"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "XEYS"
+            },
+            {
+              "name": "EAN",
+              "value": "4006379064052"
+            }
+          ],
+          "externalId": "7017220",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:29:56.684Z",
+          "priceBasisEvidence": "hornbach-same-sku-sales-unit"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:29:56.686Z",
+      "validation": {
+        "material_slug": "direktabhaenger-cd-125-1-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 1,
+        "unit": "piece",
+        "price": 0.58,
+        "match_score": 150,
+        "observed_specs": {
+          "length_mm": 125,
+          "pieces": 1,
+          "type": "direktabhaenger"
+        }
+      }
+    },
+    {
+      "key": "feuchtraumplatte",
+      "requested_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+      "previous": {
+        "material_id": "f1da0475-9771-b503-5f40-26c8b138d4ae",
+        "store_id": "hornbach",
+        "product_name": "Knauf Gipskartonplatte Feuchtraumplatte GKBI imprägniert 2000 mm x 1250 mm x 12,5 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-gipskartonplatte-feuchtraumplatte-gkbi-impraegniert-2000-mm-x-1250-mm-x-12-5-mm/3324241/",
+        "price": 15.95,
+        "unit_price": 6.38,
+        "unit": "m2",
+        "package_quantity": 2.5,
+        "currency": "EUR",
+        "checked_at": "2026-10-01T15:52:23.359Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf Gipskartonplatte Feuchtraumplatte GKBI imprägniert 2000 mm x 1250 mm x 12,5 mm; A2 (nicht brennbar, mit geringen brennbaren Anteilen)",
+          "url": "https://www.hornbach.de/p/knauf-gipskartonplatte-feuchtraumplatte-gkbi-impraegniert-2000-mm-x-1250-mm-x-12-5-mm/3324241/",
+          "price": 15.95,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Trockenbau > Gipskartonplatten",
+          "description": "Planst Du eine Renovierung in Feuchträumen und suchst nach einer zuverlässigen Lösung? Die Knauf Gipskartonplatte Feuchtraumplatte GKBI imprägniert 2000 mm x 1250 mm x 12,5 mm bietet Dir genau das. Produktmerkmale der Knauf Gipskartonplatte Feuchtraumplatte GKBI imprägniert 2000 mm x 1250 mm x 12,5 mm Darum solltest Du zugreifen: Diese imprägnierte Gipskartonplatte ist speziell für den Einsatz in Feuchträumen wie Badezimmern und Küchen konzipiert. Dank ihrer Imprägnierung ist sie feuchtigkeitsabweisend und schützt effektiv vor Spritzwasser und erhöhter Luftfeuchtigkeit. Die grüne Farbe der Platte verhindert Verwechslungen auf der Baustelle und erleichtert die Zuordnung. Ihre nicht brennbare Eigenschaft gemäß Baustoffklasse A2 sorgt für zusätzliche Sicherheit. Die Platte ist vielseitig einsetzbar und eignet sich hervorragend für Decken- und Wandverkleidungen. Mit einer Breite von 1250 mm und einer Länge von 2000 mm ermöglicht sie eine großflächige Montage, was den Baufortschritt beschleunigt. Die halbrunde und abgeflachte Kante erleichtert das Spachteln und sorgt für ein sauberes Finish. Festgezurrt: Die Knauf Gipskartonplatte Feuchtraumplatte GKBI ist die ideale Wahl für langlebige und feuchtigkeitsresistente Trockenbauprojekte in Küche und Bad.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Ausbauplatte"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Gipskartonplatte"
+            },
+            {
+              "name": "Variante",
+              "value": "Feuchtraumplatte"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Innen, Feuchtraum"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Deckenverkleidung, Wandverkleidung"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Decke, Wand"
+            },
+            {
+              "name": "Material",
+              "value": "Gipskarton"
+            },
+            {
+              "name": "Behandlung",
+              "value": "Imprägniert"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Spachtelbar, Vielseitig einsetzbar, Nicht brennbar, Feuchtraumgeeignet"
+            },
+            {
+              "name": "Kantenausprägung",
+              "value": "Halbrund, Abgeflachte Kante"
+            },
+            {
+              "name": "Funktion",
+              "value": "Handlich, Feuchtbereich einsetzbar"
+            },
+            {
+              "name": "Räume",
+              "value": "Badezimmer, Küche, Gäste-WC, Dachboden, Keller"
+            },
+            {
+              "name": "Breite",
+              "value": "1.250 mm"
+            },
+            {
+              "name": "Stärke",
+              "value": "12,5 mm"
+            },
+            {
+              "name": "m² pro Palette",
+              "value": "140 m²"
+            },
+            {
+              "name": "Stück pro Palette",
+              "value": "56 Stück"
+            },
+            {
+              "name": "Gewicht pro Palette",
+              "value": "1.232 kg"
+            },
+            {
+              "name": "Gewicht pro Stück",
+              "value": "22 kg"
+            },
+            {
+              "name": "Norm",
+              "value": "EN 520"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Zu Verschrauben an Profilen mit 0,7mm Stärke mit den Knauf Schnellbauschrauben Feingewinde TN 3,5 x 25mm und TN 3,5 x 35mm, zu Verschrauben an Profilen mit 2,0mm Stärke mit den Knauf Schnellbauschrauben Bohrspitze TB 3,5 x 25mm und TN 3,5 x 35mm, zu Verspachteln mit dem System Uniflott von Knauf. Knauf Uniflott für die Grundverspachtelung und Knauf Uniflott Finish für die Endverspachtelung. Im Feuchtraum mit Knauf Uniflott imprägniert verspachteln. Die Eigenschaft \"Brandschutz\" bezieht sich auf die gesamte Konstruktion und nicht auf die einzelne Platte."
+            },
+            {
+              "name": "Bestellhinweis",
+              "value": "Hinweis zur Belieferung: !! Bitte vor Bestellung sicherstellen, dass die Entladestelle mit einem 40 Tonnen – LKW erreichbar ist. Weitere Informationen entnehmen Sie bitte dem Datenblatt !! Zur Abstimmung des Anliefertermines bitte Handy oder Telefonnummer angeben, welche tagsüber erreichbar ist."
+            },
+            {
+              "name": "Baustoffklasse",
+              "value": "A2 (nicht brennbar, mit geringen brennbaren Anteilen)"
+            },
+            {
+              "name": "Länge",
+              "value": "2.000 mm"
+            },
+            {
+              "name": "Oberfläche/Oberflächenbehandlung",
+              "value": "Imprägniert"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "ZYJD"
+            },
+            {
+              "name": "EAN",
+              "value": "2003324241003, 4002806122067, 4002806131304, 4003982001665, 4003982247513, 4032961013436, 4032961013443, 5413218550185"
+            }
+          ],
+          "externalId": "3324241",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:29:59.343Z",
+          "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+          "declaredUnitPrice": 6.38
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:29:59.345Z",
+      "validation": {
+        "material_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 2.5,
+        "unit": "m2",
+        "price": 15.95,
+        "match_score": 152,
+        "observed_specs": {
+          "width_mm": 1250,
+          "thickness_mm": 12.5,
+          "length_mm": 2000,
+          "area_m2": 2.5,
+          "type": "feuchtraum"
+        }
+      }
+    },
+    {
+      "key": "haftgrund",
+      "requested_slug": "haftgrund-5l-v1",
+      "previous": {
+        "material_id": "1611b788-0e27-0632-4682-bbe3a1233b14",
+        "store_id": "hornbach",
+        "product_name": "MODULAN 2402 Haftgrund weiß 5 L",
+        "product_url": "https://www.hornbach.de/p/modulan-2402-haftgrund-weiss-5-l/10474853/",
+        "price": 25.95,
+        "unit_price": 5.19,
+        "unit": "l",
+        "package_quantity": 5,
+        "currency": "EUR",
+        "checked_at": "2026-10-08T07:44:58.914Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "MODULAN 2402 Haftgrund weiß 5 L",
+          "url": "https://www.hornbach.de/p/modulan-2402-haftgrund-weiss-5-l/10474853/",
+          "price": 25.95,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Modulan",
+          "category": "Startseite > Sortiment > Farben, Tapeten & Wandverkleidungen > Farben > Wandfarben > Grundierungen Wand",
+          "description": "Steht bei Deinem Anstrich ein schwieriger Untergrund an und Du willst, dass die Beschichtung sicher hält? Dann kommt es auf die richtige Vorbehandlung an. Produktmerkmale des MODULAN 2402 Haftgrund weiß 5 L Darum solltest Du zugreifen: MODULAN 2402 Haftgrund weiß 5 L ist als Haftgrundierung für innen und außen ausgelegt und sorgt dafür, dass nachfolgende Anstriche auf kritischen Flächen besser greifen. Mit nur einem empfohlenen Anstrich kommst Du zügig voran und schaffst eine gleichmäßige Basis für Decken und Wände. Der weiße Farbton hilft dabei, den Untergrund optisch zu vereinheitlichen, sodass der Folgeanstrich gleichmäßiger wirkt. Für Beton, Mauerwerk, Glasfaser und Tapete geeignet, unterstützt die Grundierung eine stabile, tragfähige Oberfläche und reduziert das Risiko von Haftungsproblemen. Bei stark saugenden oder kritischen Untergründen solltest Du vorab mit MODULAN 2101 Hydrosol-Tiefgrund grundieren, damit der Haftgrund nicht ungleichmäßig einzieht und Du ein kontrolliertes Ergebnis erzielst. Wichtig ist eine saubere Vorbereitung: Der Untergrund muss trocken, öl- und fettfrei sowie frei von Sinterschichten, Ausblühungen und Trennmitteln sein, damit die Grundierung zuverlässig arbeiten kann. Die Verarbeitung ist flexibel per Rollen, Sprühen oder Streichen möglich, und mit ca. 10 m²/l bei einmaligem Auftrag lässt sich die benötigte Menge gut planen; nach rund 12 Stunden Trocknung kann der weitere Aufbau folgen. Festgezurrt: Mit dieser Haftgrundierung schaffst Du in einem Anstrich eine verlässliche Basis auf vielen Untergründen, damit der Folgeanstrich gleichmäßig sitzt und sicher hält.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Grundierung"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Haftgrundierung"
+            },
+            {
+              "name": "Ideal geeignet für",
+              "value": "Decken, Wände"
+            },
+            {
+              "name": "Geeignet für Untergrund",
+              "value": "Beton, Glasfaser, Mauerwerk, Tapete"
+            },
+            {
+              "name": "Farbton",
+              "value": "Weiß"
+            },
+            {
+              "name": "Empfohlene Anzahl Anstriche",
+              "value": "1"
+            },
+            {
+              "name": "Reichweite (ca.) bei einmaligem Anstrich",
+              "value": "10 m²/l"
+            },
+            {
+              "name": "Gebindegröße",
+              "value": "5 l"
+            },
+            {
+              "name": "Basis",
+              "value": "Dispersion, Wasserbasierend"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Außen, Innen"
+            },
+            {
+              "name": "Trockendauer ca.",
+              "value": "12 h"
+            },
+            {
+              "name": "Verarbeitung",
+              "value": "Rollen, Sprühen, Streichen"
+            },
+            {
+              "name": "Grundierung empfohlen",
+              "value": "Ja"
+            },
+            {
+              "name": "Hinweis zur Untergrundvorbehandlung",
+              "value": "Kritische und stark saugende Untergründe mit MODULAN 2101 Hydrosol-Tiefgrund grundieren."
+            },
+            {
+              "name": "Ergänzende Gefahrenmerkmale (EUH-Sätze)",
+              "value": "(EUH210) Sicherheitsdatenblatt auf Anfrage erhältlich., (EUH211) Achtung! Beim Sprühen können gefährliche lungengängige Tröpfchen entstehen. Aerosol oder Nebel nicht einatmen."
+            },
+            {
+              "name": "Hinweis zur Untergrundvorbehandlung",
+              "value": "Der Untergrund muss sauber, trocken, öl-, fettfrei, fest, tragfähig sowie frei von Sinterschichten, Ausblühungen und Trennmitteln sein"
+            },
+            {
+              "name": "Ohne Zusatz von Konservierungsmitteln",
+              "value": "Ja"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "J8YZ"
+            },
+            {
+              "name": "EAN",
+              "value": "4306517479251, 4306517479848, 4306517480165, 4306517480325"
+            }
+          ],
+          "externalId": "10474853",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:00.987Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:00.988Z",
+      "validation": {
+        "material_slug": "haftgrund-5l-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 5,
+        "unit": "l",
+        "price": 25.95,
+        "match_score": 150,
+        "observed_specs": {
+          "volume_l": 5,
+          "color": "weiss",
+          "type": "haftgrund"
+        }
+      }
+    },
+    {
+      "key": "perlfix",
+      "requested_slug": "knauf-perlfix-30kg-v1",
+      "previous": {
+        "material_id": "8739fa28-ef16-5da4-dea0-a10cd973d87a",
+        "store_id": "hornbach",
+        "product_name": "Knauf Perlfix Ansetzgips 30 kg",
+        "product_url": "https://www.hornbach.de/p/knauf-perlfix-ansetzgips-30-kg/205209/",
+        "price": 12.55,
+        "unit_price": 0.42,
+        "unit": "kg",
+        "package_quantity": 30,
+        "currency": "EUR",
+        "checked_at": "2026-10-01T15:57:01.437Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf Perlfix Ansetzgips 30 kg",
+          "url": "https://www.hornbach.de/p/knauf-perlfix-ansetzgips-30-kg/205209/",
+          "price": 12.55,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Trockenbau > Fugenspachtel",
+          "description": "Bei der Renovierung u. a. von Altbauten und Fachwerkhäusern treffen Heimwerker oft auf diese Herausforderung: Das Mauerwerk oder der Altputz bilden eine unebene Fläche, die erst einmal mit Putz ausgeglichen werden muss, bevor es ans Streichen, Tapezieren oder Verfliesen geht. Mit Gipsplatten erzielen Sie schnell und einfach eine glatte, ebene Wand. Der passende Ansetzgips schafft dabei den nötigen Ausgleich zwischen Mauerwerk und den verlegten Gipsplatten. Knauf Perlfix 30 kg ist ein Spezialkleber auf Gipsbasis zum Ansetzen von Gipsplatten. Er wird direkt auf unebenes Mauerwerk oder Beton im Innenbereich aufgetragen, um Gips- und Verbundplatten an der Wand zu befestigen. So fungieren die Gipsplatten gleichzeitig als Trockenputz im Wandbereich. Das Ergebnis: eine glatte und ebene Wand, ideal zum Streichen, Tapezieren oder für einen Dekorputz. Eigenschaften: Der Ansetzgips punktet durch ein sehr gutes Haftvermögen. Dank seiner hervorragenden haftvermittelnden Eigenschaften gehen die Gipsplatten einen starken Haftverbund mit dem Untergrund ein. So halten die Platten optimal. Besonderer Vorteil: seine Ergiebigkeit. Für 1 m² benötigen Sie nur ca. 5 kg des Ansetzgipses. Den Spezialkleber können Sie innerhalb von 30 Minuten verarbeiten, für die Trocknungszeit müssen Sie mit mindestens 3 Stunden rechnen. Der bereits anmachfertige Knauf Perlfix 30 kg lässt sich durch die spachtelfähige Konsistenz leicht verarbeiten: Anwendung: mit Wasser anmischen auf den Platten verteilen Platten ansetzen – fertig. Knauf Perlfix 30 kg – der haftstarke Ansetzgips für Trockenputz bringt Gipsplatten sicher auf unebenen Untergrund.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Spachtelmasse"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Ansetzbinder, Innenspachtel"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Montieren"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Innen, Wand"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Innen"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Grau"
+            },
+            {
+              "name": "Körnung",
+              "value": "-"
+            },
+            {
+              "name": "Material",
+              "value": "Gips"
+            },
+            {
+              "name": "Artikelvorteil",
+              "value": "Optimal haftvermittelnd, leicht zu verarbeiten, anmachfertig, sehr gutes Haftvermögen"
+            },
+            {
+              "name": "Inhalt",
+              "value": "30 kg"
+            },
+            {
+              "name": "Geeignet für Untergrund",
+              "value": "Mauerwerk, Beton"
+            },
+            {
+              "name": "Trockendauer ca.",
+              "value": "3 h"
+            },
+            {
+              "name": "Norm",
+              "value": "DIN 14496"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Die Raum- und Untergrundtemperatur darf +5 °C nicht unterschreiten, nur soviel Knauf Perlfix anmischen, wie innerhalb von 30 Minuten verarbeitet werden kann. Bereits angesteifter Knauf Perlfix darf weder mit Wasser oder Knauf Perlfix Pulver gemischt werden, schwach saugende Untergründe:mit Knauf Betokontakt grundieren, saugende Untergründe:mit Knauf Tiefengrund grundieren, stark saugende Untergründe:mit Knauf Haftemulsion grundieren"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "FF1F"
+            },
+            {
+              "name": "EAN",
+              "value": "2000205209008, 4003982085030"
+            }
+          ],
+          "externalId": "205209",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:03.217Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:03.218Z",
+      "validation": {
+        "material_slug": "knauf-perlfix-30kg-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 30,
+        "unit": "kg",
+        "price": 12.55,
+        "match_score": 159,
+        "observed_specs": {
+          "weight_kg": 30,
+          "color": "grau",
+          "type": "ansetzgips"
+        }
+      }
+    },
+    {
+      "key": "rotband",
+      "requested_slug": "knauf-rotband-30kg-v1",
+      "previous": {
+        "material_id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+        "store_id": "hornbach",
+        "product_name": "Knauf Rotband Haftputzgips zum Glätten 30 kg",
+        "product_url": "https://www.hornbach.de/p/knauf-rotband-haftputzgips-zum-glaetten-30-kg/261950/",
+        "price": 11.5,
+        "unit_price": 0.38,
+        "unit": "kg",
+        "package_quantity": 30,
+        "currency": "EUR",
+        "checked_at": "2026-10-01T15:56:42.708Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf Rotband Haftputzgips zum Glätten 30 kg",
+          "url": "https://www.hornbach.de/p/knauf-rotband-haftputzgips-zum-glaetten-30-kg/261950/",
+          "price": 11.5,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Rohbau > Putz & Putzprofile > Unterputze",
+          "description": "Hast Du unterschiedliche Untergründe in Deinem Zuhause und suchst einen vielseitigen Putz, der alles meistert? Der Knauf Rotband Haftputzgips ist die Lösung für Deine Wände und Decken. Produktmerkmale des Knauf Rotband Haftputzgips zum Glätten 30 kg Darum solltest Du zugreifen: Dieser Haftputzgips ist ideal für Mauerwerk, Beton und Gipsplatten geeignet und bietet eine hervorragende Haftung auf verschiedenen Untergründen. Die Verarbeitung ist sowohl manuell als auch maschinell möglich, was Dir Flexibilität bei der Anwendung bietet. Mit einer maximalen Schichtdicke von 50 mm kannst Du auch größere Unebenheiten ausgleichen. Der Putz ist wasserdampfdurchlässig, wodurch die darunter liegenden Wände atmen können und ein angenehmes Raumklima entsteht. Die lange Verarbeitungszeit von bis zu 1,5 Stunden nach dem Anmischen ermöglicht Dir eine stressfreie Anwendung und individuelle Gestaltung der Oberfläche. Die empfohlene zweischichtige Auftragstechnik frisch in frisch sorgt für eine besonders stabile und gleichmäßige Oberfläche. Dank der leichten Verarbeitung ist der Knauf Rotband Haftputzgips auch für Heimwerker geeignet. Die Körnung von 0-1,2 mm ermöglicht eine glatte oder strukturierte Oberfläche, die ohne weitere Beschichtungen ansprechend aussieht. Die hohe Ergiebigkeit von 0,85 m²/kg macht ihn zu einer wirtschaftlichen Wahl für Deine Projekte. Festgezurrt: Der Knauf Rotband Haftputzgips bietet eine vielseitige und zuverlässige Lösung für Deine Verputzarbeiten, die sowohl funktional als auch ästhetisch überzeugt.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Putz"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Haftputz, Handputz"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Verputzen, Füllen"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Mauerwerk, Beton, Gipsplatte"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Räume m. übl. Luftfeuchte, einschl. häusl.Feuchträume, wie Küchen/ Bäder"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Innen"
+            },
+            {
+              "name": "Material",
+              "value": "Gips"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Grau"
+            },
+            {
+              "name": "Inhalt",
+              "value": "30 kg"
+            },
+            {
+              "name": "Verbrauch je mm Schichtdicke",
+              "value": "0,85 kg/m²"
+            },
+            {
+              "name": "Max. Schichtdicke",
+              "value": "50 mm"
+            },
+            {
+              "name": "Trockendauer ca.",
+              "value": "3 h"
+            },
+            {
+              "name": "Körnung",
+              "value": "0-1,2 mm"
+            },
+            {
+              "name": "Geeignet für Untergrund",
+              "value": "Mauerwerk, Ziegelmauerwerk, Beton, Porenbeton, Gipskartonplatten"
+            },
+            {
+              "name": "Reichweite (ca.)",
+              "value": "0,85 m²/kg"
+            },
+            {
+              "name": "Untergrundbeschaffenheit",
+              "value": "Sauber, Tragfähig, Frei von haftungsmindernden Stoffen"
+            },
+            {
+              "name": "Verarbeitungstemperatur",
+              "value": "5 °C - 25 °C"
+            },
+            {
+              "name": "Notwendige Vorbehandlung",
+              "value": "Anspritzen mit Saniervorspritz, Stark saugende Untergründe mit Haftgrundierung vorstreichen"
+            },
+            {
+              "name": "Ideal geeignet für",
+              "value": "Decken, Wände"
+            },
+            {
+              "name": "Norm",
+              "value": "DIN 13279"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Für Sichtdicken von 5 bis 50 mm (auch zum Verfüllen von Schlitzen), Manuell oder Maschinell verarbeitbar, Zweischichtiger Auftrag \"frisch in frisch\" empfohlen, Bei Holzbalken: Vorverkleidung mit Schrenzlage und Putzträger erforderlich, Bei ungenügend tragfähigem Mauerwerk: Vollflächiger Putzträger empfohlen"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Maschinengängig"
+            },
+            {
+              "name": "Signalwort",
+              "value": "Gefahr"
+            },
+            {
+              "name": "Gefahrenhinweise (H-Sätze)",
+              "value": "(H318) Verursacht schwere Augenschäden."
+            },
+            {
+              "name": "Sicherheitshinweise (P-Sätze)",
+              "value": "(P102) Darf nicht in die Hände von Kindern gelangen., (P103) Vor Gebrauch Kennzeichnungsetikett lesen."
+            },
+            {
+              "name": "Stück pro Palette",
+              "value": "40 Stück"
+            },
+            {
+              "name": "Farbton",
+              "value": "Hellgrau"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "THEC"
+            },
+            {
+              "name": "EAN",
+              "value": "2000261950005, 4003982085160, 8590408421306"
+            }
+          ],
+          "externalId": "261950",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:05.491Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:05.492Z",
+      "validation": {
+        "material_slug": "knauf-rotband-30kg-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 30,
+        "unit": "kg",
+        "price": 11.5,
+        "match_score": 149,
+        "observed_specs": {
+          "weight_kg": 30,
+          "color": "grau",
+          "type": "haftputzgips"
+        }
+      }
+    },
+    {
+      "key": "uniflott",
+      "requested_slug": "knauf-uniflott-25kg-v1",
+      "previous": {
+        "material_id": "1fc5bf38-3822-f578-7c96-34f5b4b8e68d",
+        "store_id": "hornbach",
+        "product_name": "Knauf Uniflott Spachtelmasse 25 kg",
+        "product_url": "https://www.hornbach.de/p/knauf-uniflott-spachtelmasse-25-kg/203327/",
+        "price": 42.5,
+        "unit_price": 1.7,
+        "unit": "kg",
+        "package_quantity": 25,
+        "currency": "EUR",
+        "checked_at": "2026-10-01T15:55:51.285Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf Uniflott Spachtelmasse 25 kg",
+          "url": "https://www.hornbach.de/p/knauf-uniflott-spachtelmasse-25-kg/203327/",
+          "price": 42.5,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Trockenbau > Fugenspachtel",
+          "description": "Knauf Uniflott 25 kg ist ein kunststoffvergüteter Spezialgips in Profi-Qualität, mit dem Sie Gipsplatten mit halbrunder Kante (Abkürzung HRK) und halbrunder abgeflachter Kante (HRAK) schnell und einfach verspachteln können. Bei vielen Spachtelmassen müssen Fugendeckstreifen zum Einsatz kommen, um die Fugen zu verstärken, was mehr Zeit und Mühe erfordert - bei diesem Spezialgips müssen Sie keine zusätzlichen Fugendeckstreifen einarbeiten. Die Verspachtelung von Gipsplattenfugen hat mehrere Funktionen: - Durch die korrekte Verspachtelung bekommt eine Gipsplattenwand erst ihre End-Stabilität - Der luftdichte Abschluss gewährleistet einen optimalen Schallschutz - Luftdichte Fugen beugen ebenfalls Bauteilschäden vor, die sonst durch die eindringende Luftfeuchtigkeit entstehen könnten. Eigenschaften: Knauf Uniflott 5 kg überzeugt mit vielen positiven Eigenschaften: Das Material trocknet schnell aus und erreicht dabei schnell eine hohe Festigkeit. Die hochwertige Fugenspachtelmasse ist darüber hinaus sehr einfach zu verarbeiten: Sie ist geschmeidig, leicht aufzutragen und zu schleifen. So wird Ihnen die Arbeit leicht gemacht! Und das ist nicht alles: Knauf Uniflott 25 kg schrumpft beim Trocknen nur gering – somit entfällt lästiges Nachspachteln.Knauf Uniflott 25 kg ist ein starker Partner im System Uniflott: Bei der Grundverspachtelung nutzen Sie Knauf Uniflott zum Füllen der Gipsplattenfugen, bei der Endverspachtelung sorgen Sie mit Knauf Uniflott Finish für eine glatte Oberfläche. Anwendungsbereich: Die Spachtelmasse können Sie an Wänden und Decken im Innenbereich einsetzen. Pro lfm Fuge brauchen Sie bei Platten mit HRK-Kante ca. 110 g bzw. bei Platten mit HRAK-Kante ca. 210 g Knauf Uniflott. Knauf Uniflott 25 kg – für schnelles und einfaches Verspachteln von Gipsplattenfugen.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Spachtelmasse"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Fugenspachtel, Innenspachtel"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Füllen, Abdichten"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Decke, Innen, Wand"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Innen"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Grau"
+            },
+            {
+              "name": "Körnung",
+              "value": "-"
+            },
+            {
+              "name": "Material",
+              "value": "Gips"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Schleifbar, Überstreichbar"
+            },
+            {
+              "name": "Artikelvorteil",
+              "value": "Verfugen ohne Bewehrungsstreifen, schnelle Austrocknung, leicht zu verspachteln, leicht schleifbar, geringer Trocknungsschwund, hohes Haftvermögen"
+            },
+            {
+              "name": "Inhalt",
+              "value": "25 kg"
+            },
+            {
+              "name": "Geeignet für Untergrund",
+              "value": "Gipskarton, Gipsfaserplatten"
+            },
+            {
+              "name": "Norm",
+              "value": "DIN EN 13963 Typ 4B"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Die Raum- und Untergrundtemperatur darf +10 °C nicht unterschreiten, bei der Verspachtelung von Kanten in beanspruchten Flächen und in Bereichen, die Bewegungen ausgesetzt sind, ist ein Fugendeckstreifen einzuarbeiten, um eine nachträgliche Rissbildung zu vermeiden, nur soviel Knauf Uniflott anmischen, wie innerhalb von 45 Minuten verarbeitet werden kann. Bereits angesteifter Knauf Uniflott darf weder mit Wasser oder Knauf Uniflott Pulver gemischt werden, Knauf Uniflott kann nicht im Außenbreich eingesetzt werden, für Feuchträume empfiehlt sich Knauf Uniflott imprägniert"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "ZW7M"
+            },
+            {
+              "name": "EAN",
+              "value": "2000203327001, 4003982019905, 4003982162847, 4003982245687, 4003982591340"
+            }
+          ],
+          "externalId": "203327",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:07.612Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:07.613Z",
+      "validation": {
+        "material_slug": "knauf-uniflott-25kg-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 25,
+        "unit": "kg",
+        "price": 42.5,
+        "match_score": 159,
+        "observed_specs": {
+          "weight_kg": 25,
+          "color": "grau",
+          "type": "fugenspachtel"
+        }
+      }
+    },
+    {
+      "key": "pu-schaum",
+      "requested_slug": "pu-schaum-1k-750ml-v1",
+      "previous": {
+        "material_id": "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+        "store_id": "hornbach",
+        "product_name": "PRECIT 1K Pistolenschaum XXL B2 beige 500 ml; Polyurethan (PU); B2 normal entflammbar",
+        "product_url": "https://www.hornbach.de/p/precit-1k-pistolenschaum-xxl-b2-beige-500-ml/10331179/",
+        "price": 8.95,
+        "unit_price": 17.9,
+        "unit": "l",
+        "package_quantity": 0.5,
+        "currency": "EUR",
+        "checked_at": "2026-10-08T07:45:31.419Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "PRECIT 1K Pistolenschaum XXL B2 beige 500 ml; Polyurethan (PU); B2 normal entflammbar",
+          "url": "https://www.hornbach.de/p/precit-1k-pistolenschaum-xxl-b2-beige-500-ml/10331179/",
+          "price": 8.95,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Precit Built",
+          "category": "Startseite > Sortiment > Baustoffe > Rohbau > Bauschaum",
+          "description": "Musst Du Löcher und Hohlräume effizient füllen? Kein Problem. Mit dem PRECIT Pistolenschaum XXL B2, 500 ml, erzielst Du hervorragende Ergebnisse. Produktmerkmale des PRECIT 1K Pistolenschaum XXL B2 beige 500 ml Darum solltest Du zugreifen: Der Isolierschaum auf Polyurethan-Basis bietet ausgezeichnete wärme-, kälte-, feuchtigkeits- und schalldämmende Eigenschaften. Er eignet sich ideal zum Dämmen und Auffüllen von Löchern und Hohlräumen, sowohl innen als auch außen. Mit einer sehr hohen Schaumausbeute von ca. 28 Litern kannst Du große Flächen effizient bearbeiten. Der Bauschaum ist für die Verarbeitung mit handelsüblichen Schaumpistolen konzipiert und bietet eine schnelle Aushärtungszeit, da er bereits nach 45 Minuten schneidbar ist. Die Baustoffklasse B2 bedeutet, dass der Schaum normal entflammbar ist, was ihn für viele Bauanwendungen geeignet macht. Der beige PU-Schaum ist für den Einsatz an Boden, Decke und Wand konzipiert und eignet sich besonders für Fenster und Haustüren. Die Verarbeitungstemperatur liegt zwischen 5 und 25 °C, was eine flexible Anwendung ermöglicht. Festgezurrt: Der PRECIT Pistolenschaum XXL B2 bietet eine hohe Schaumausbeute und vielseitige Einsatzmöglichkeiten für Innen- und Außenbereiche.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Bauschaum"
+            },
+            {
+              "name": "Ausführung",
+              "value": "PU-Schaum"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Außen, Innen"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Abdichten, Ausfüllen, Dämmen, Isolieren, Montieren"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Boden, Decke, Wand"
+            },
+            {
+              "name": "Inhalt",
+              "value": "500 ml"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Beige"
+            },
+            {
+              "name": "Inhaltsstoffe",
+              "value": "Polyurethan (PU)"
+            },
+            {
+              "name": "Emissionsklasse",
+              "value": "EC1 plus"
+            },
+            {
+              "name": "Verarbeitungstemperatur",
+              "value": "5 °C - 25 °C"
+            },
+            {
+              "name": "Isocyanatgehalt",
+              "value": "> 1 %"
+            },
+            {
+              "name": "Geeignet für",
+              "value": "Fenster, Haustür"
+            },
+            {
+              "name": "Baustoffklasse",
+              "value": "B2 normal entflammbar"
+            },
+            {
+              "name": "Transporthinweis",
+              "value": "Beim Transport im KFZ die Dose stehend im Karton bzw. Laderaum lagern - keinesfalls im Fond"
+            },
+            {
+              "name": "Verarbeitungshinweis",
+              "value": "Während der Verarbeitung Schutzhandschuhe und Schutzbrille tragen"
+            },
+            {
+              "name": "Schaumausbeute",
+              "value": "Ca. 28 Liter"
+            },
+            {
+              "name": "Entsorgungshinweis",
+              "value": "Gebrauchte PU-Schaumdosen können kostenfrei im Markt zurückgegeben werden"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Wärmeleitfähigkeit EN 12667 (WLG): 0,037 W/m.K"
+            },
+            {
+              "name": "Aushärtungszeit",
+              "value": "Schneidbar nach 45 Minuten"
+            },
+            {
+              "name": "Signalwort",
+              "value": "Gefahr"
+            },
+            {
+              "name": "Gefahrenhinweise (H-Sätze)",
+              "value": "(H222) Extrem entzündbares Aerosol., (H229) Behälter steht unter Druck: kann bei Erwärmung bersten., (H315) Verursacht Hautreizungen., (H317) Kann allergische Hautreaktionen verursachen., (H319) Verursacht schwere Augenreizung., (H332) Gesundheitsschädlich bei Einatmen., (H334) Kann bei Einatmen Allergie, asthmaartige Symptome oder Atembeschwerden verursachen., (H335) Kann die Atemwege reizen., (H351) Kann vermutlich Krebs erzeugen., (H373) Kann die Organe schädigen bei längerer oder wiederholter Exposition."
+            },
+            {
+              "name": "Sicherheitshinweise (P-Sätze)",
+              "value": "(P102) Darf nicht in die Hände von Kindern gelangen., (P103) Vor Gebrauch Kennzeichnungsetikett lesen."
+            },
+            {
+              "name": "Rohdichteklasse",
+              "value": "18 kg/m³"
+            },
+            {
+              "name": "Hinweis zur Entsorgung",
+              "value": "Bitte beachte die Hinweise zur Entsorgung"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "EXM5"
+            },
+            {
+              "name": "EAN",
+              "value": "4306517552572"
+            }
+          ],
+          "externalId": "10331179",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:09.798Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:09.799Z",
+      "validation": {
+        "material_slug": "pu-schaum-1k-500ml-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 0.5,
+        "unit": "l",
+        "price": 8.95,
+        "match_score": 150,
+        "observed_specs": {
+          "volume_l": 0.5,
+          "color": "beige",
+          "type": "pu-schaum"
+        }
+      }
+    },
+    {
+      "key": "gipskarton",
+      "requested_slug": "gipskarton-standard-12-5-1200-600-v1",
+      "previous": {
+        "material_id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
+        "store_id": "hornbach",
+        "product_name": "Knauf Gipskartonplatte Miniboard Standardplatte GKB 1200 mm x 600 mm x 12,5 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-gipskartonplatte-miniboard-standardplatte-gkb-1200-mm-x-600-mm-x-12-5-mm/7510113/",
+        "price": 4.85,
+        "unit_price": 6.74,
+        "unit": "m2",
+        "package_quantity": 0.72,
+        "currency": "EUR",
+        "checked_at": "2026-10-01T15:51:51.576Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf Gipskartonplatte Miniboard Standardplatte GKB 1200 mm x 600 mm x 12,5 mm; A2 (nicht brennbar, mit geringen brennbaren Anteilen)",
+          "url": "https://www.hornbach.de/p/knauf-gipskartonplatte-miniboard-standardplatte-gkb-1200-mm-x-600-mm-x-12-5-mm/7510113/",
+          "price": 4.85,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Trockenbau > Gipskartonplatten",
+          "description": "Möchtest Du Deinen Dachboden effizient ausbauen oder die Decke abhängen, um Heizkosten zu sparen? Die Knauf Gipskartonplatte Miniboard Standardplatte GKB ist die ideale Lösung. Produktmerkmale der Knauf Gipskartonplatte Miniboard Standardplatte GKB 1200 mm x 600 mm x 12,5 mm Darum solltest Du zugreifen: Diese Ausbauplatte aus Gipskarton ist besonders handlich und einfach zu transportieren, was die Einmann-Montage im Trockenbau erleichtert. Mit einer Breite von 600 mm und einer Länge von 1200 mm eignet sie sich hervorragend für Decken- und Wandverkleidungen im Innenbereich. Die Platte ist nicht brennbar gemäß Baustoffklasse A2, was zusätzliche Sicherheit bietet. Ihre Formbeständigkeit und Belastbarkeit sorgen für dauerhafte Ergebnisse. Dank der halbrunden Kantenausprägung ist sie spachtelbar und ermöglicht eine glatte Oberfläche für Tapeten oder Dekorputz. Die Norm EN 520 garantiert die Qualität und Zuverlässigkeit des Materials. Festgezurrt: Die Knauf Gipskartonplatte Miniboard bietet eine praktische und sichere Lösung für Innenausbauprojekte, die sowohl effizient als auch langlebig sind.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Ausbauplatte"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Gipskartonplatte"
+            },
+            {
+              "name": "Variante",
+              "value": "Standardplatte"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Innen"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Deckenverkleidung, Wandverkleidung"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Decke, Wand"
+            },
+            {
+              "name": "Material",
+              "value": "Gipskarton"
+            },
+            {
+              "name": "Behandlung",
+              "value": "Unbehandelt"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Spachtelbar, Vielseitig einsetzbar, Nicht brennbar"
+            },
+            {
+              "name": "Kantenausprägung",
+              "value": "Halbrund"
+            },
+            {
+              "name": "Funktion",
+              "value": "Handlich, Einfach zu transportieren, Enorm belastbar"
+            },
+            {
+              "name": "Räume",
+              "value": "Arbeitszimmer, Wohnzimmer, Schlafzimmer, Dachboden, Keller"
+            },
+            {
+              "name": "Breite",
+              "value": "600 mm"
+            },
+            {
+              "name": "Stärke",
+              "value": "12,5 mm"
+            },
+            {
+              "name": "m² pro Palette",
+              "value": "43,2 m²"
+            },
+            {
+              "name": "Stück pro Palette",
+              "value": "60 Stück"
+            },
+            {
+              "name": "Gewicht pro Palette",
+              "value": "432 kg"
+            },
+            {
+              "name": "Gewicht pro Stück",
+              "value": "7,2 kg"
+            },
+            {
+              "name": "Norm",
+              "value": "EN 520"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Zu Verschrauben an Profilen mit 0,7mm Stärke mit den Knauf Schnellbauschrauben Feingewinde TN 3,5 x 25mm und TN 3,5 x 35mm, zu Verschrauben an Profilen mit 2,0mm Stärke mit den Knauf Schnellbauschrauben Bohrspitze TB 3,5 x 25mm und TN 3,5 x 35mm, zu Verspachteln mit dem System Uniflott von Knauf. Knauf Uniflott für die Grundverspachtelung und Knauf Uniflott Finish für die Endverspachtelung, Knauf Miniboard stets hochkant tragen und liegend lagern, eine Beplankung quer zu den Profilen erhöht die Stabilität an Wänden und ist an Decken zwingend erforderlich"
+            },
+            {
+              "name": "Bestellhinweis",
+              "value": "Hinweis zur Belieferung: !! Bitte vor Bestellung sicherstellen, dass die Entladestelle mit einem 40 Tonnen – LKW erreichbar ist. Weitere Informationen entnehmen Sie bitte dem Datenblatt !! Zur Abstimmung des Anliefertermines bitte Handy oder Telefonnummer angeben, welche tagsüber erreichbar ist."
+            },
+            {
+              "name": "Baustoffklasse",
+              "value": "A2 (nicht brennbar, mit geringen brennbaren Anteilen)"
+            },
+            {
+              "name": "Länge",
+              "value": "1.200 mm"
+            },
+            {
+              "name": "Oberfläche/Oberflächenbehandlung",
+              "value": "-"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "3E7S"
+            },
+            {
+              "name": "EAN",
+              "value": "4002806827450, 4006379062171"
+            }
+          ],
+          "externalId": "7510113",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:14.055Z",
+          "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+          "declaredUnitPrice": 6.74
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:14.056Z",
+      "validation": {
+        "material_slug": "gipskarton-standard-12-5-1200-600-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 0.72,
+        "unit": "m2",
+        "price": 4.85,
+        "match_score": 152,
+        "observed_specs": {
+          "width_mm": 600,
+          "thickness_mm": 12.5,
+          "length_mm": 1200,
+          "area_m2": 0.72,
+          "type": "standard"
+        }
+      }
+    },
+    {
+      "key": "rollputz",
+      "requested_slug": "rollputz-12kg-v1",
+      "previous": {
+        "material_id": "18ceb301-2b85-303b-c6c9-3139acccb732",
+        "store_id": "hornbach",
+        "product_name": "MODULAN 5502 Rollputz Außen 0,5 mm weiß 15 kg",
+        "product_url": "https://www.hornbach.de/p/modulan-5502-rollputz-aussen-0-5-mm-weiss-15-kg/10476083/",
+        "price": 34.95,
+        "unit_price": 2.33,
+        "unit": "kg",
+        "package_quantity": 15,
+        "currency": "EUR",
+        "checked_at": "2026-10-08T07:45:52.795Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "MODULAN 5502 Rollputz Außen 0,5 mm weiß 15 kg",
+          "url": "https://www.hornbach.de/p/modulan-5502-rollputz-aussen-0-5-mm-weiss-15-kg/10476083/",
+          "price": 34.95,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Modulan",
+          "category": "Startseite > Sortiment > Baustoffe > Rohbau > Putz & Putzprofile > Oberputze",
+          "description": "Möchtest Du Deine Fassade mit einer dekorativen Struktur aufwerten? Dann ist der MODULAN 5502 Rollputz Außen 0,5 mm weiß 15 kg genau das Richtige für Dich. Produktmerkmale des MODULAN 5502 Rollputz Außen 0,5 mm weiß 15 kg Darum solltest Du zugreifen: Dieser feinkörnige Dispersions-Dekorputz ist speziell für den Außenbereich konzipiert und eignet sich hervorragend für Mauerwerk und Beton. Mit einer Körnung von 0,5 mm verleiht er Deiner Fassade eine ansprechende Struktur und sorgt für ein dekoratives Finish. Der Putz ist wasserbasierend und kann durch Rollen, Spachteln, Sprühen oder Streichen aufgetragen werden, was Dir Flexibilität bei der Verarbeitung bietet. Eine Grundierung wird empfohlen, um die Haftung zu verbessern und ein gleichmäßiges Ergebnis zu erzielen. Mit einer Reichweite von etwa 1,5 m²/kg bei einmaligem Anstrich ist er ergiebig und effizient. Der Putz ist in Weiß erhältlich, kann jedoch im HORNBACH-Farbmischcenter abgetönt werden, um individuelle Farbwünsche zu erfüllen. Festgezurrt: Der MODULAN 5502 Rollputz bietet eine flexible und dekorative Lösung für langlebige Fassadenbeschichtungen.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Putz"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Rollputz"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Außen"
+            },
+            {
+              "name": "Ideal geeignet für",
+              "value": "Wände"
+            },
+            {
+              "name": "Geeignet für Untergrund",
+              "value": "Mauerwerk, Beton"
+            },
+            {
+              "name": "Abtönbar im HORNBACH-Farbmischcenter",
+              "value": "Ja"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Weiß"
+            },
+            {
+              "name": "Farbton",
+              "value": "Weiß"
+            },
+            {
+              "name": "Glanzgrad",
+              "value": "Matt"
+            },
+            {
+              "name": "Optik",
+              "value": "Putz-Optik"
+            },
+            {
+              "name": "Körnung",
+              "value": "0,5 mm"
+            },
+            {
+              "name": "Reichweite (ca.) bei einmaligem Anstrich",
+              "value": "1,5 m²/kg"
+            },
+            {
+              "name": "Trockendauer ca.",
+              "value": "72 h"
+            },
+            {
+              "name": "Verarbeitung",
+              "value": "Rollen, Streichen, Spachteln"
+            },
+            {
+              "name": "Grundierung empfohlen",
+              "value": "Ja"
+            },
+            {
+              "name": "Basis",
+              "value": "Dispersion, Wasserbasierend"
+            },
+            {
+              "name": "Ergänzende Gefahrenmerkmale (EUH-Sätze)",
+              "value": "(EUH208) Enthält 1,2-Benzisothiazol-3(2H)-on. Kann allergische Reaktionen hervorrufen., (EUH210) Sicherheitsdatenblatt auf Anfrage erhältlich., (EUH211) Achtung! Beim Sprühen können gefährliche lungengängige Tröpfchen entstehen. Aerosol oder Nebel nicht einatmen."
+            },
+            {
+              "name": "EAN",
+              "value": "4306517479572, 4306517480097"
+            }
+          ],
+          "externalId": "10476083",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:14.295Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:14.296Z",
+      "validation": {
+        "material_slug": "rollputz-15kg-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 15,
+        "unit": "kg",
+        "price": 34.95,
+        "match_score": 170,
+        "observed_specs": {
+          "weight_kg": 15,
+          "color": "weiss",
+          "type": "rollputz"
+        }
+      }
+    },
+    {
+      "key": "silikon",
+      "requested_slug": "sanitaer-silikon-weiss-310ml-v1",
+      "previous": {
+        "material_id": "e729a380-10bf-a30f-84ac-094f8b127f74",
+        "store_id": "hornbach",
+        "product_name": "Akkit 601 Sanitär Silikon weiß 310 ml; Essig vernetztes Silikon",
+        "product_url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+        "price": 7.89,
+        "unit_price": 25.45,
+        "unit": "l",
+        "package_quantity": 0.31,
+        "currency": "EUR",
+        "checked_at": "2026-10-08T07:46:30.507Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Akkit 601 Sanitär Silikon weiß 310 ml; Essig vernetztes Silikon",
+          "url": "https://www.hornbach.de/p/akkit-601-sanitaer-silikon-weiss-310-ml/10313761/",
+          "price": 7.89,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Akkit",
+          "category": "Startseite > Sortiment > Bodenbeläge & Fliesen > Fliesenzubehör > Sanitärsilikon",
+          "description": "Akkit Sanitär Silikon hält dauerhaft dicht. Das Silikon in Weiß ist speziell für den Sanitär- oder Küchenbereich gedacht. Der dauerelastische Fugenstoff in der praktischen 310-ml-Kartusche dichtet hervorragend ab, ist wasserbeständig, pilzhemmend und perfekt geeignet für das Verschließen von Anschlussfugen. Festgenagelt: Alterungsbeständig, dauerhaft dicht, elastisch und einfach zu verarbeiten – was will man mehr?",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Dichtstoff"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Silikon"
+            },
+            {
+              "name": "Inhaltsstoffe",
+              "value": "Essig vernetztes Silikon"
+            },
+            {
+              "name": "Anwendungsgebiete",
+              "value": "Sanitärkeramik, Glas und Alu ohne Vorbehandlung"
+            },
+            {
+              "name": "Verarbeitungstemperatur",
+              "value": "5 °C - 35 °C"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Alterungsbeständig, Dauerhaft dicht, Einkomponentig, Elastisch"
+            },
+            {
+              "name": "Ca. Hautbildungszeit",
+              "value": "7 min"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Nicht anstrichveträglich gem.Definition. Tatsächliche Reichweite hängt von der Fugenform, Verarbeitungstechnik und Materialdichte ab."
+            },
+            {
+              "name": "Reichweite/Ergiebigkeit",
+              "value": "5x5 mm → 12 m, 6x6 mm → 8 m, 7x7 mm → 6 m, 8x8 mm → 4,5 m, 10x10 mm → 3 m, 12x10 mm →2,5 m, 15x10 mm → 2 m, 20x12 mm → 1,2 m"
+            },
+            {
+              "name": "Inhalt",
+              "value": "310 ml"
+            },
+            {
+              "name": "Verwendbar für",
+              "value": "Keramik, Fugen"
+            },
+            {
+              "name": "Untergrundbeschaffenheit",
+              "value": "Fettfrei, Sauber, Staubfrei, Trocken, Tragfähig"
+            },
+            {
+              "name": "Vorbereitungshinweis",
+              "value": "Die Haftflächen müssen sauber, staub- und fettfrei sein."
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Außen, Innen, Feuchtraum, In gewerblichen Nassräumen, Nassbereich"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Abdichten, Ausfüllen"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Boden, Decke, Wand"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Weiß"
+            },
+            {
+              "name": "Farbton",
+              "value": "Weiß"
+            },
+            {
+              "name": "Emissionsklasse",
+              "value": "EC1 plus"
+            },
+            {
+              "name": "Ergänzende Gefahrenmerkmale (EUH-Sätze)",
+              "value": "(EUH210) Sicherheitsdatenblatt auf Anfrage erhältlich., (EUH208) Enthält 2-Octyl-2H-isothiazol-3-on. Kann allergische Reaktionen hervorrufen."
+            },
+            {
+              "name": "Hinweis zur Entsorgung",
+              "value": "Bitte beachte die Hinweise zur Entsorgung"
+            },
+            {
+              "name": "Aushärtungszeit",
+              "value": "2 mm pro Tag"
+            },
+            {
+              "name": "Temperaturbeständigkeit (bis zu)",
+              "value": "150 °C"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "X1W5"
+            },
+            {
+              "name": "EAN",
+              "value": "4306517467869"
+            }
+          ],
+          "externalId": "10313761",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:16.547Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:16.548Z",
+      "validation": {
+        "material_slug": "sanitaer-silikon-weiss-310ml-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 0.31,
+        "unit": "l",
+        "price": 7.89,
+        "match_score": 170,
+        "observed_specs": {
+          "volume_l": 0.31,
+          "color": "weiss",
+          "type": "sanitaer-silikon"
+        }
+      }
+    },
+    {
+      "key": "sockelputz",
+      "requested_slug": "sockelputz-30kg-v1",
+      "previous": {
+        "material_id": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
+        "store_id": "hornbach",
+        "product_name": "Knauf SM700 Pro Putzmörtel 25 kg",
+        "product_url": "https://www.hornbach.de/p/knauf-sm700-pro-putzmoertel-25-kg/12027001/",
+        "price": 33.9,
+        "unit_price": 1.36,
+        "unit": "kg",
+        "package_quantity": 25,
+        "currency": "EUR",
+        "checked_at": "2026-10-08T07:46:52.357Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf SM700 Pro Putzmörtel 25 kg",
+          "url": "https://www.hornbach.de/p/knauf-sm700-pro-putzmoertel-25-kg/12027001/",
+          "price": 33.9,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Rohbau > Putz & Putzprofile > Oberputze",
+          "description": "Suchst Du nach einem zuverlässigen Putzmörtel für verschiedene Untergründe? Dann ist der Knauf SM700 Pro Putzmörtel 25 kg genau das Richtige für Dich. Produktmerkmale des Knauf SM700 Pro Putzmörtels 25 kg Darum solltest Du zugreifen: Dieser Putzmörtel ist sowohl für den Innen- als auch für den Außenbereich geeignet und bietet eine hohe Haftfestigkeit auf unterschiedlichen Untergründen. Er kann als Haftputz, Maschinenputz und Sockelputz verwendet werden, was ihn zu einer flexiblen Lösung für Fassaden, Sockel und Wände macht. Die weiße Farbe des Mörtels sorgt für eine neutrale Basis, die sich leicht überstreichen oder weiterverarbeiten lässt. Dank seiner speziellen Zusammensetzung ist der Putzmörtel besonders widerstandsfähig gegen Witterungseinflüsse, was eine lange Lebensdauer gewährleistet. Festgezurrt: Der Knauf SM700 Pro Putzmörtel 25 kg ist die ideale Wahl für langlebige und vielseitige Putzarbeiten an Fassaden und Wänden.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Putz"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Haftputz, Maschinenputz, Sockelputz"
+            },
+            {
+              "name": "Anwendung",
+              "value": "Verputzen"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Außen, Innen"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Fassade, Sockel, Wand"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Innen & Außen"
+            },
+            {
+              "name": "Material",
+              "value": "Bindemittel, Kalk, Weisszement"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Weiß"
+            },
+            {
+              "name": "Inhalt",
+              "value": "25 kg"
+            },
+            {
+              "name": "Körnung",
+              "value": "1 mm"
+            },
+            {
+              "name": "Geeignet für Untergrund",
+              "value": "Armierungsspachtel im WDVS, Außenputze, Innenputze"
+            },
+            {
+              "name": "Reichweite (ca.)",
+              "value": "0,14 m²/kg"
+            },
+            {
+              "name": "Hinweis",
+              "value": "als Klebe-, Armier- oder Renoviermörtel & Oberputz für die Fassade und den Sockel"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Maschinengängig"
+            },
+            {
+              "name": "Signalwort",
+              "value": "Gefahr"
+            },
+            {
+              "name": "Gefahrenhinweise (H-Sätze)",
+              "value": "(H315) Verursacht Hautreizungen., (H318) Verursacht schwere Augenschäden."
+            },
+            {
+              "name": "Sicherheitshinweise (P-Sätze)",
+              "value": "(P102) Darf nicht in die Hände von Kindern gelangen., (P103) Vor Gebrauch Kennzeichnungsetikett lesen."
+            },
+            {
+              "name": "Farbton",
+              "value": "Weiß"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "37C6"
+            },
+            {
+              "name": "EAN",
+              "value": "4003950085734"
+            }
+          ],
+          "externalId": "12027001",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:18.802Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:18.803Z",
+      "validation": {
+        "material_slug": "sockelputz-25kg-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 25,
+        "unit": "kg",
+        "price": 33.9,
+        "match_score": 152,
+        "observed_specs": {
+          "weight_kg": 25,
+          "color": "weiss",
+          "type": "sockelputz"
+        }
+      }
+    },
+    {
+      "key": "tiefengrund",
+      "requested_slug": "knauf-tiefengrund-5l-v1",
+      "previous": {
+        "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+        "store_id": "hornbach",
+        "product_name": "Knauf Tiefengrund 5 l",
+        "product_url": "https://www.hornbach.de/p/knauf-tiefengrund-5-l/253689/",
+        "price": 31.45,
+        "unit_price": 6.29,
+        "unit": "l",
+        "package_quantity": 5,
+        "currency": "EUR",
+        "checked_at": "2026-10-01T15:57:07.494Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf Tiefengrund 5 l",
+          "url": "https://www.hornbach.de/p/knauf-tiefengrund-5-l/253689/",
+          "price": 31.45,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Rohbau > Baugrundierung & Putzgrundierung",
+          "description": "Bereitest Du Dich auf das Fliesenlegen vor? Dann ist die richtige Grundierung entscheidend. Produktmerkmale des Knauf Tiefengrund 5 l Darum solltest Du zugreifen: Der Knauf Tiefengrund sorgt für optimalen Halt des Fliesenklebers und bildet die Basis für die Festigkeit von Spachtelmassen. Er reguliert die Wasseraufnahme und unterstützt eine gleichmäßige, porenarme Oberfläche. Diese Grundierung ist gebrauchsfertig und eignet sich für saugende Untergründe wie Gipskartonplatten, Gipsfaserplatten, Gipsputz, Gipsbauplatten und Kalkzementputz. Sie kann sowohl im Innen- als auch im Außenbereich verwendet werden. Der Tiefengrund dringt in die oberste Schicht des Untergrunds ein und reguliert dessen Saugfähigkeit. Dadurch wird verhindert, dass Fliesenmörtel und Spachtelmassen zu schnell Wasser verlieren, was ihre Verarbeitung und Haftung verbessert. Gleichzeitig bleibt der Untergrund dampfdiffusionsoffen, sodass ein Feuchteausgleich möglich ist. Ein weiterer Vorteil ist, dass der Tiefengrund feine Staubpartikel bindet und die Verbundhaftung zwischen Untergrund und Oberbelag wie Fliesenkleber, Tapeten oder Farbanstrichen erhöht. Für eine nahezu porenfreie Oberfläche beim Verspachteln reduziert die Grundierung das Aufsteigen von Luftblasen. Die Anwendung ist einfach: kurz aufrühren, auftragen, trocknen lassen – eine Verdünnung ist nicht erforderlich. Der Tiefengrund ist lösungsmittelfrei und trocknet schnell, was die Verarbeitung erleichtert. Mit einem Verbrauch von ca. 100 ml/m² reicht 1 Liter für ca. 10–15 m². Festgezurrt: Der Knauf Tiefengrund 5 l ist die ideale Wahl für eine zuverlässige und effektive Vorbereitung saugender Untergründe.",
+          "attributes": [
+            {
+              "name": "Inhalt",
+              "value": "5 l"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Innen, Außen"
+            },
+            {
+              "name": "Geeignete Untergründe",
+              "value": "Gipskartonplatten, Gipsfaserplatten, Gipsputz, Gipsbauplatten, Kalkzementputz"
+            },
+            {
+              "name": "Untergrundbeschaffenheit",
+              "value": "Sauber, Trocken, Frei von trennenden Verunreinigungen, Frei von Staub, Tragfähig"
+            },
+            {
+              "name": "Verarbeitungstemperatur",
+              "value": "5 °C - 30 °C"
+            },
+            {
+              "name": "Verbrauch ca.",
+              "value": "100 ml/m²"
+            },
+            {
+              "name": "Entsorgung",
+              "value": "Entsorgung gemäß den behördlichen Vorschriften"
+            },
+            {
+              "name": "Ergänzende Gefahrenmerkmale (EUH-Sätze)",
+              "value": "(EUH208) Enthält 1,2-Benzisothiazol-3(2H)-on. Kann allergische Reaktionen hervorrufen., (EUH208) Enthält Reaktionsmasse aus: 5-Chlor-2-methyl-2H-isothiazol-3-on [EG nr. 247-500-7] und 2-Methyl-2H-isothiazol-3-on [EG nr. 220-239-6] (3:1). Kann allergische Reaktionen hervorrufen., (EUH210) Sicherheitsdatenblatt auf Anfrage erhältlich."
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Saugende Untergründe"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "F46N"
+            },
+            {
+              "name": "EAN",
+              "value": "2000253689005, 4006379024575, 4006379064724, 4006379069859, 5901793355290, 5901793357423"
+            }
+          ],
+          "externalId": "253689",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:20.873Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:20.873Z",
+      "validation": {
+        "material_slug": "knauf-tiefengrund-5l-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 5,
+        "unit": "l",
+        "price": 31.45,
+        "match_score": 149,
+        "observed_specs": {
+          "volume_l": 5,
+          "type": "tiefengrund"
+        }
+      }
+    },
+    {
+      "key": "uw-profil",
+      "requested_slug": "uw50-40-2000-v1",
+      "previous": {
+        "material_id": "090eff92-f6d1-2d5f-55ef-a2396edb10ce",
+        "store_id": "hornbach",
+        "product_name": "Knauf UW-dB Rahmenprofil 2000 mm x 50 mm x 40 mm",
+        "product_url": "https://www.hornbach.de/p/knauf-uw-db-rahmenprofil-2000-mm-x-50-mm-x-40-mm/265214/",
+        "price": 4.85,
+        "unit_price": 2.42,
+        "unit": "m",
+        "package_quantity": 2,
+        "currency": "EUR",
+        "checked_at": "2026-10-08T07:47:14.100Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": "InStock"
+      },
+      "products": [
+        {
+          "name": "Knauf UW-dB Rahmenprofil 2000 mm x 50 mm x 40 mm",
+          "url": "https://www.hornbach.de/p/knauf-uw-db-rahmenprofil-2000-mm-x-50-mm-x-40-mm/265214/",
+          "price": 4.85,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Baustoffe > Trockenbau > Trockenbauprofile",
+          "description": "Die stabile Grundlage für den Aufbau einer Trockenbauwand ist das Ständerwerk, an dem Sie die Gipsplatten befestigen. Im besten Fall lassen sich die Profile für die Metallständer-Trennwände nicht nur schnell und unkompliziert montieren, sondern sorgen zusätzlich auch noch für besseren Schallschutz. So können alle Personen im Haus die verschiedenen Zimmer gleichzeitig ungestört nutzen. Clevere Details an den Metallprofilen machen die Montage auch für Heimwerker problemlos. Mit dem Knauf Rahmenprofil UW-dB 50x40mm x 200cm (zur Befestigung an Decke und Boden) erstellen Sie im Verbund mit den Knauf CW-dB-Profilen schnell und unkompliziert stabile Metallständer-Trennwände. Das Rahmenprofil ermöglicht dabei einen erhöhten Schallschutz für Ihre Räume (bis zu 8 dB über DIN-Norm). So können Sie Ihre vier Wände auch beim Trockenbau-Verfahren in Ruhe genießen. Außerdem wurde an clevere Einzelheiten gedacht, die Ihnen den Einbau erleichtern: – Die wabenähnliche Spezialprägung macht die Metallleisten stabiler und erhöht die Festigkeit der Wand – Die vorgefertigten Schraubpunkte ermöglichen eine stärkere Verschraubung und erleichtern das Anbringen der Platten Knauf Rahmenprofile UW-dB sind im Innenausbau vielseitig einsetzbar: im Ständerwerk, als Rahmenprofile auf Böden und an Decken bei nichttragenden Trockenbau-Wänden. C-Profile wie das Knauf CW-dB-Profil werden an den Wänden befestigt und als senkrechte Streben in die U-Profile eingestellt. Außerdem können Sie damit Vorwandinstallationen für WC oder Waschbecken im Bad oder andere Metallunterkonstruktionen erstellen. Sie können Knauf Ständerprofile UW-dB auch bei dem Errichten von Brandschutzkonstruktionen verwenden sowie problemlos Dämmstoffe, Elektro- und Sanitärinstallationen in der Wand einarbeiten. Das Knauf Ständer-Profil UW-dB – für unkomplizierte Montage und erhöhten Schallschutz: clever gemacht!",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Profil"
+            },
+            {
+              "name": "Maß (B x H)",
+              "value": "50 mm x 40 mm"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Bodenprofil, Deckenprofil"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Erstellen von Trennwänden, Innenausbau, Ständerwandkonstruktion"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Erstellen von abgehängten Decken, Vorsatzschalen, Vorwandinstallation, Befestigung an Boden und Decke"
+            },
+            {
+              "name": "Artikelvorteil",
+              "value": "In Verbindung mit Knauf CW-dB-Profilen führen die Knauf UW-dB-Profile zu einer höheren Steifigkeit der Wand durch die Spezialprägung der Profile, besserer Schallschutz (bis zu 8 db über DIN-Norm), müheloses Beplanken und stärkere Verschraubung, mehr Raumgewinn gegenüber herkömmlicher Bauweise bei gleichbleibender Stabilität und Schallschutz bei gleichzeitig geringerer Wandstärke"
+            },
+            {
+              "name": "Länge",
+              "value": "2 m"
+            },
+            {
+              "name": "Breite",
+              "value": "50 mm"
+            },
+            {
+              "name": "Höhe",
+              "value": "40 mm"
+            },
+            {
+              "name": "Hinweis",
+              "value": "Achten Sie beim Erstellen einer Trockenbauwand, einer Vorsatzschale, Installationswand, Vorwandinstallation oder dem Dachgeschossausbau mit Knauf Rahmenprofilen UW-dB und Ständer-Profilen CW-dB auf die entsprechende Detailzeichnung, Knauf Ständer-Profile CW-dB eignen sich zur Beplankung mit allen handelsüblichen Gipsplatten, eine Beplankung quer zu den Profilen erhöht die Stabilität und ist an Decken zwingend erforderlich, die Profile lassen sich durch Verschachteln sicher verlängern, durch ungeschützte Lagerung im Freien kann es durch Feuchtigkeit zu s. g. Weißrost kommen, was keinen Einfluss auf die Langlebigkeit und Qualität des Profils hat, Knauf Ständer-Profile CW-dB sind nicht für den Außenbereich bestimmt und werden mit einer Blechschere oder einer elektronischen Blechschere gekürzt., Ist dieser Artikel in Ihrem Markt nicht am Lager ist nur eine Kleibund-Abnahme möglich."
+            },
+            {
+              "name": "Material, Behandlung",
+              "value": "Stahlblech Verzinkt"
+            },
+            {
+              "name": "Maße (BxH)",
+              "value": "5 x 4 cm"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "A1C8"
+            },
+            {
+              "name": "EAN",
+              "value": "2000265214004, 4002806450450, 4003982063205, 4006379075706, 4012560005407, 4036127761124, 4036127795402"
+            }
+          ],
+          "externalId": "265214",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:23.120Z",
+          "priceBasisEvidence": "hornbach-same-sku-sales-unit",
+          "declaredUnitPrice": 2.43
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:23.121Z",
+      "validation": {
+        "material_slug": "uw50-40-2000-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 2,
+        "unit": "m",
+        "price": 4.85,
+        "match_score": 150,
+        "observed_specs": {
+          "length_mm": 2000,
+          "width_mm": 50,
+          "height_mm": 40,
+          "area_m2": 0.1,
+          "type": "uw-profil"
+        }
+      }
+    },
+    {
+      "key": "zement",
+      "requested_slug": "zement-25kg-v1",
+      "previous": {
+        "material_id": "60c4a168-2bf6-f806-729b-1490d89aa85c",
+        "store_id": "hornbach",
+        "product_name": "Zement CEM I 42,5 N 25 kg",
+        "product_url": "https://www.hornbach.de/p/zement-cem-i-42-5-n-25-kg/8002614/",
+        "price": 5.95,
+        "unit_price": 0.24,
+        "unit": "kg",
+        "package_quantity": 25,
+        "currency": "EUR",
+        "checked_at": "2026-10-08T07:47:30.849Z",
+        "source": "automatic",
+        "price_scope": "chain",
+        "availability": null
+      },
+      "products": [
+        {
+          "name": "Zement CEM I 42,5 N 25 kg",
+          "url": "https://www.hornbach.de/p/zement-cem-i-42-5-n-25-kg/8002614/",
+          "price": 5.95,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": null,
+          "brand": "Heidelberg Materials",
+          "category": "Startseite > Sortiment > Baustoffe > Rohbau > Zement & Mörtel",
+          "description": "Planst Du ein Bauprojekt, das sowohl innen als auch außen höchste Anforderungen erfüllen muss? Dann ist der Zement CEM I 42,5 N 25 kg die richtige Wahl. Produktmerkmale des Zement CEM I 42,5 N 25 kg Darum solltest Du zugreifen: Dieser Zement zeichnet sich durch seine hohe Anfangsfestigkeit aus, was eine schnelle Weiterverarbeitung ermöglicht. Er ist sowohl für den Innen- als auch für den Außenbereich geeignet, was ihn vielseitig einsetzbar macht. Die chromatarmen Eigenschaften reduzieren das Risiko von Hautreizungen und machen ihn sicherer in der Anwendung. Die Zusammensetzung aus Hüttensand, Kalkstein, Portlandzementklinker und Sulfatträger sorgt für eine stabile und dauerhafte Struktur. Der Zement entspricht der Norm DIN EN 197, was für eine gleichbleibend hohe Qualität steht. Bei der Verarbeitung ist darauf zu achten, dass der Untergrund fest, tragfähig und frei von Schmutz, Staub und Trennmitteln ist, um optimale Ergebnisse zu erzielen. Festgezurrt: Der Zement CEM I 42,5 N 25 kg bietet hohe Anfangsfestigkeit und Vielseitigkeit für anspruchsvolle Bauprojekte.",
+          "attributes": [
+            {
+              "name": "Hinweis",
+              "value": "Bei sachgerechter trockener Lagerung für mindestens 3 Monate ab Herstelldatum chromatarm., Wenn in Ihrem Markt nicht vorrätig dann nur Palettenweise zu beziehen., (1 Palette = 56 Sack)"
+            },
+            {
+              "name": "Artikeltyp",
+              "value": "Zement"
+            },
+            {
+              "name": "Variante",
+              "value": "Portlandkalksteinzement"
+            },
+            {
+              "name": "Untergrundbeschaffenheit",
+              "value": "Der Untergrund muss je nach Anwendungsfall fest, tragfähig und frei von Schmutz, Staub und Trennmitteln (Fette, Öle) sein"
+            },
+            {
+              "name": "Verarbeitungszeit ca.",
+              "value": "60 min"
+            },
+            {
+              "name": "Festigkeit",
+              "value": "42,5 N"
+            },
+            {
+              "name": "Zusammensetzung",
+              "value": "Hüttensand, Kalkstein, Portlandzementklinker, Sulfatträger"
+            },
+            {
+              "name": "Norm",
+              "value": "DIN EN 197"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Außen, Innen"
+            },
+            {
+              "name": "Eigenschaft",
+              "value": "Chromatarm, Hohe Anfangsfestigkeit"
+            },
+            {
+              "name": "Signalwort",
+              "value": "Gefahr"
+            },
+            {
+              "name": "Gefahrenhinweise (H-Sätze)",
+              "value": "(H315) Verursacht Hautreizungen., (H318) Verursacht schwere Augenschäden., (H335) Kann die Atemwege reizen."
+            },
+            {
+              "name": "Wasserzugabe",
+              "value": "0 l/kg"
+            },
+            {
+              "name": "Ergiebigkeit",
+              "value": "0 l/kg"
+            },
+            {
+              "name": "Sicherheitshinweise (P-Sätze)",
+              "value": "(P102) Darf nicht in die Hände von Kindern gelangen., (P103) Vor Gebrauch Kennzeichnungsetikett lesen."
+            },
+            {
+              "name": "Inhalt",
+              "value": "25 kg"
+            },
+            {
+              "name": "Druckfestigkeit",
+              "value": "42,5 N/mm²"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "T85S"
+            },
+            {
+              "name": "EAN",
+              "value": "4016819018903, 4016819026915, 4016819139431, 4036999001403, 4037465004058, 4260016220007, 4260016220045, 4260016220458, 4260258770018, 4260258771008"
+            }
+          ],
+          "externalId": "8002614",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:25.290Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:25.291Z",
+      "validation": {
+        "material_slug": "zement-25kg-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 25,
+        "unit": "kg",
+        "price": 5.95,
+        "match_score": 152,
+        "observed_specs": {
+          "weight_kg": 25,
+          "type": "zement"
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "completed_at": "2026-10-12T12:30:50.059Z",
+  "replacements": [
+    {
+      "key": "rollputz",
+      "material_slug": "rollputz-10kg-v1",
+      "products": [
+        {
+          "name": "Knauf EASYPUTZ Dekorputz 0,5 mm Extra Fein weiß 10 kg",
+          "url": "https://www.hornbach.de/p/knauf-easyputz-dekorputz-0-5-mm-extra-fein-weiss-10-kg/7644819/",
+          "price": 29.95,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Knauf",
+          "category": "Startseite > Sortiment > Farben, Tapeten & Wandverkleidungen > Farben > Wandfarben > Rollputz",
+          "description": "Du willst Wände und Decken schnell aufwerten und dabei eine robuste Oberfläche erhalten, die im Alltag viel mitmacht? Produktmerkmale des Knauf EASYPUTZ Dekorputz 0,5 mm Extra Fein weiß 10 kg Darum solltest Du zugreifen: Als Rollputz mit 0,5 mm Körnung lässt sich die Oberfläche zügig und gleichmäßig mit der Rolle gestalten, sodass Du mit nur einem Anstrich einen feinen Putzcharakter erzielst. Die hohe Abriebfestigkeit sowie Schlag- und Stoßfestigkeit sorgen dafür, dass die Fläche auch bei häufiger Nutzung länger ordentlich aussieht, was besonders in Flur, Küche oder Kinderzimmer praktisch ist. Die matte, weiße Optik wirkt ruhig und reduziert Spiegelungen, wodurch Unebenheiten weniger auffallen können. Der wasserbasierende Dekorputz ist für den Innenbereich ausgelegt und eignet sich für gängige Untergründe wie Gipskarton, Putz, Mauerwerk und Beton, sodass Du ihn in vielen Räumen einsetzen kannst. Für ein sicheres Ergebnis ist die Untergrundvorbereitung entscheidend: Ein vollflächiger Vorstrich mit Knauf Sperrgrund ist zwingend erforderlich, damit der Auftrag gleichmäßig gelingt und der Untergrund zuverlässig vorbereitet ist. Mit einer Reichweite von ca. 2 m² pro kg bei einmaligem Auftrag kannst Du den Materialbedarf gut planen, und nach rund 24 Stunden Trockendauer ist die Fläche in der Regel wieder nutzbar. Festgezurrt: Wenn Du einen fein strukturierten, matten Innenputz zum Rollen suchst, der mit einem Auftrag auskommt und eine widerstandsfähige Oberfläche liefert, ist Knauf EASYPUTZ Dekorputz 0,5 mm Extra Fein weiß 10 kg eine passende Wahl.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Putz, Wandfarbe"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Rollputz, Putzeffektfarbe"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Innen"
+            },
+            {
+              "name": "Räume",
+              "value": "Wohnzimmer, Schlafzimmer, Kinderzimmer, Arbeitszimmer, Badezimmer, Flur / Diele, Keller, Küche"
+            },
+            {
+              "name": "Ideal geeignet für",
+              "value": "Wände, Decken"
+            },
+            {
+              "name": "Geeignet für Untergrund",
+              "value": "Gipskarton, Putz, Mauerwerk, Beton"
+            },
+            {
+              "name": "Abtönbar im HORNBACH-Farbmischcenter",
+              "value": "Nein"
+            },
+            {
+              "name": "Grundfarbe",
+              "value": "Weiß"
+            },
+            {
+              "name": "Farbton",
+              "value": "Weiß"
+            },
+            {
+              "name": "Glanzgrad",
+              "value": "Matt"
+            },
+            {
+              "name": "Optik",
+              "value": "Mit Struktur, Putz-Optik"
+            },
+            {
+              "name": "Körnung",
+              "value": "0,5 mm"
+            },
+            {
+              "name": "Eigenschaften",
+              "value": "Hoch abriebfest, Schlagfest & Stoßfest"
+            },
+            {
+              "name": "Reichweite (ca.) bei einmaligem Anstrich",
+              "value": "2 m²/kg"
+            },
+            {
+              "name": "Gebindegröße",
+              "value": "10 kg"
+            },
+            {
+              "name": "Empfohlene Anzahl Anstriche",
+              "value": "1"
+            },
+            {
+              "name": "Trockendauer ca.",
+              "value": "24 h"
+            },
+            {
+              "name": "Verarbeitung",
+              "value": "Rollen"
+            },
+            {
+              "name": "Grundierung empfohlen",
+              "value": "Ja"
+            },
+            {
+              "name": "Hinweis zur Untergrundvorbehandlung",
+              "value": "Bei allen Untergründen ist ein vollflächig aufgetragener Vorstrich mit Knauf Sperrgrund (gebrauchsfertig) zwingend erforderlich"
+            },
+            {
+              "name": "Basis",
+              "value": "Wasserbasierend"
+            },
+            {
+              "name": "Ergänzende Gefahrenmerkmale (EUH-Sätze)",
+              "value": "(EUH211) Achtung! Beim Sprühen können gefährliche lungengängige Tröpfchen entstehen. Aerosol oder Nebel nicht einatmen."
+            },
+            {
+              "name": "Ohne Zusatz von Konservierungsmitteln",
+              "value": "Ja"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "4ESR"
+            },
+            {
+              "name": "EAN",
+              "value": "4006379067633"
+            }
+          ],
+          "externalId": "7644819",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-12T12:30:46.065Z"
+        }
+      ],
+      "method": "official_structured_direct",
+      "checked_at": "2026-10-12T12:30:46.070Z",
+      "validation": {
+        "material_slug": "rollputz-10kg-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 10,
+        "unit": "kg",
+        "price": 29.95,
+        "match_score": 170,
+        "observed_specs": {
+          "weight_kg": 10,
+          "color": "weiss",
+          "type": "rollputz"
+        }
+      }
+    },
+    {
+      "key": "sockelputz",
+      "material_slug": "sockelputz-30kg-v1",
+      "products": [
+        {
+          "name": "Knauf UP310 Zement-Sockelputz 30 kg",
+          "url": "https://www.hornbach.de/p/knauf-up310-zement-sockelputz-30-kg/262226/",
+          "price": 12.45,
+          "currency": "EUR",
+          "priceBasis": "package",
+          "priceSource": "manual-admin-verification",
+          "priceBasisEvidence": "official-same-sku-hydration-defaultPrice-Sack",
+          "declaredUnitPrice": 0.42,
+          "description": "Möchtest Du Deine Wände optimal schützen und gestalten? Der Knauf UP310 Zement-Sockelputz bietet Dir die ideale Lösung für Innen- und Außenbereiche.   Produktmerkmale des Knauf UP310 Zement-Sockelputz 30 kg  Darum solltest Du zugreifen: Dieser Sockelputz ist speziell für mineralische und pastöse Oberputze geeignet und kann sowohl im Innen- als auch im Außenbereich verwendet werden. Er ist ideal als Kellerwand-Außenputz und als Unterputz auf Mauerwerk der Druckfestigkeitsklasse > 8, auf Beton sowie für Fliesen in Feuchträumen, Bädern und Küchen. Der wasserabweisende Zement-Unterputz schützt Deine Wände vor Feuchtigkeit und sorgt für eine langlebige und stabile Oberfläche. Mit einer Körnung von 1 mm und einer Reichweite von ca. 0.04 m²/kg bietet er eine gleichmäßige und glatte Verarbeitung. Die notwendige Vorbehandlung des Untergrundes durch Befeuchten gewährleistet eine optimale Haftung und Verarbeitung. Der Putz kann bei Temperaturen zwischen 5-30 °C verarbeitet werden, was eine flexible Anwendung ermöglicht.  Festgezurrt: Der Knauf UP310 Zement-Sockelputz ist die perfekte Wahl für einen robusten und wasserabweisenden Schutz Deiner Wände.",
+          "attributes": [
+            {
+              "name": "Artikeltyp",
+              "value": "Putz"
+            },
+            {
+              "name": "Ausführung",
+              "value": "Sockelputz"
+            },
+            {
+              "name": "Anwendungsbereich",
+              "value": "Außen, Innen"
+            },
+            {
+              "name": "Einsatzbereich",
+              "value": "Sockelunterputz für mineralische und pastöse Oberputze im Innen- und Außenbereich, als Kellerwand-Außenputz, als Unterputz auf Mauerwerk der Druckfestigkeitsklasse > 8, auf Beton, für Fliesen in Feuchträumen, Bädern und Küchen"
+            },
+            {
+              "name": "Inhalt",
+              "value": "30 kg"
+            },
+            {
+              "name": "Verbrauch je mm Schichtdicke",
+              "value": "1,65 kg/m²"
+            },
+            {
+              "name": "Körnung",
+              "value": "1 mm"
+            },
+            {
+              "name": "Geeignet für Untergrund",
+              "value": "Ziegelmauerwerk, Beton, Kalksandstein, Mischmauerwerk"
+            },
+            {
+              "name": "Reichweite (ca.)",
+              "value": "0,04 m²/kg"
+            },
+            {
+              "name": "Untergrundbeschaffenheit",
+              "value": "Sauber, Tragfähig, Eben, Frei von haftungsmindernden Stoffen, Trocken"
+            },
+            {
+              "name": "Verarbeitungstemperatur",
+              "value": "5 °C - 30 °C"
+            },
+            {
+              "name": "Notwendige Vorbehandlung",
+              "value": "Befeuchten"
+            },
+            {
+              "name": "Ideal geeignet für",
+              "value": "Wände"
+            },
+            {
+              "name": "Signalwort",
+              "value": "Gefahr"
+            },
+            {
+              "name": "Gefahrenhinweise (H-Sätze)",
+              "value": "(H315) Verursacht Hautreizungen., (H318) Verursacht schwere Augenschäden."
+            },
+            {
+              "name": "Sicherheitshinweise (P-Sätze)",
+              "value": "(P102) Darf nicht in die Hände von Kindern gelangen., (P103) Vor Gebrauch Kennzeichnungsetikett lesen."
+            },
+            {
+              "name": "Stück pro Palette",
+              "value": "36 Stück"
+            },
+            {
+              "name": "Farbton",
+              "value": "Grau"
+            },
+            {
+              "name": "AKN (Artikelkurznummer)",
+              "value": "622F"
+            },
+            {
+              "name": "EAN",
+              "value": "2000262226000, 4003950000379"
+            }
+          ],
+          "observedSpecs": {
+            "weight_kg": 30,
+            "type": "sockelputz"
+          },
+          "availability": null
+        }
+      ],
+      "method": "manual_verified_official_product_state",
+      "checked_at": "2026-10-12T12:31:30.926Z",
+      "verification_note": "Official exact HORNBACH PDP SKU262226 hydration: defaultPrice 12.45 EUR per Sack, basicPrice 0.42 EUR/kg, Inhalt30kg, Ausführung Sockelputz. Not online orderable; do not claim local branch stock. Reader returned no JSON-LD priced offer; manually checked public official structured same-product total and package.",
+      "structured_price_evidence": {
+        "title": "Knauf UP310 Zement-Sockelputz 30 kg",
+        "url": "https://www.hornbach.de/p/knauf-up310-zement-sockelputz-30-kg/262226/",
+        "defaultPrice": {
+          "__typename": "PriceWithUnit",
+          "price": 12.45,
+          "unit": "Sack",
+          "currency": "€",
+          "currencyCode": "EUR"
+        },
+        "basicPrice": {
+          "__typename": "PriceWithUnit",
+          "price": 0.42,
+          "unit": "kg",
+          "currency": "€"
+        },
+        "offer": {
+          "__typename": "OfferV2",
+          "merchant": null,
+          "isLeading": false,
+          "offerId": "",
+          "canBeAddedToCart": false,
+          "canBeAddedToCartText": "Nicht online bestellbar",
+          "deliveryTimeText": null,
+          "showShippingCosts": false,
+          "productContactInformation": null
+        },
+        "attributes": [
+          {
+            "__typename": "ProductAttribute",
+            "key": "Artikeltyp",
+            "value": "Putz"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Ausführung",
+            "value": "Sockelputz"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Anwendungsbereich",
+            "value": "Außen, Innen"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Einsatzbereich",
+            "value": "Sockelunterputz für mineralische und pastöse Oberputze im Innen- und Außenbereich, als Kellerwand-Außenputz, als Unterputz auf Mauerwerk der Druckfestigkeitsklasse > 8, auf Beton, für Fliesen in Feuchträumen, Bädern und Küchen"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Inhalt",
+            "value": "30 kg"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Verbrauch je mm Schichtdicke",
+            "value": "1,65 kg/m²"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Körnung",
+            "value": "1 mm"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Geeignet für Untergrund",
+            "value": "Ziegelmauerwerk, Beton, Kalksandstein, Mischmauerwerk"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Reichweite (ca.)",
+            "value": "0,04 m²/kg"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Untergrundbeschaffenheit",
+            "value": "Sauber, Tragfähig, Eben, Frei von haftungsmindernden Stoffen, Trocken"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Verarbeitungstemperatur",
+            "value": "5 °C - 30 °C"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Notwendige Vorbehandlung",
+            "value": "Befeuchten"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Ideal geeignet für",
+            "value": "Wände"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Signalwort",
+            "value": "Gefahr"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Gefahrenhinweise (H-Sätze)",
+            "value": "(H315) Verursacht Hautreizungen., (H318) Verursacht schwere Augenschäden."
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Sicherheitshinweise (P-Sätze)",
+            "value": "(P102) Darf nicht in die Hände von Kindern gelangen., (P103) Vor Gebrauch Kennzeichnungsetikett lesen."
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Stück pro Palette",
+            "value": "36 Stück"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "Farbton",
+            "value": "Grau"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "AKN (Artikelkurznummer)",
+            "value": "622F"
+          },
+          {
+            "__typename": "ProductAttribute",
+            "key": "EAN",
+            "value": "2000262226000, 4003950000379"
+          }
+        ]
+      },
+      "validation": {
+        "material_slug": "sockelputz-30kg-v1",
+        "accepted": true,
+        "rejection_reason": null,
+        "package_quantity": 30,
+        "unit": "kg",
+        "price": 12.45,
+        "match_score": 152,
+        "observed_specs": {
+          "weight_kg": 30,
+          "color": "grau",
+          "type": "sockelputz"
+        }
+      }
+    }
+  ]
+}

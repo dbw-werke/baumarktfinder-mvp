@@ -6,12 +6,15 @@ import { mkdtemp, writeFile, rm } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 import React, { act } from "react";
-import { getCanonicalComparisonCatalog, selectChainOffer } from "../src/lib/productComparison";
+import { selectChainOffer } from "../src/lib/productComparison";
+import { bundledMaterialCatalog } from "../src/services/materialSuggestions";
 import { getCatalogSnapshot } from "../src/services/catalogSnapshot";
 import { CHAIN_IDS, CHAINS, routeFallback } from "../src/lib/stores";
 import { fetchStoreCatalog } from "../src/services/catalog";
 import { GET as getToomPrices } from "../src/app/api/toom/prices/route";
 import { MVP_MATERIAL_INTENTS } from "../src/lib/toomIntent";
+import { POST as getObiPrices } from "../src/app/api/obi/search/route";
+import type { ObiSearchResult } from "../src/lib/obi-offer";
 
 test("real Finder hides old cards, renders skeletons, and never commits an older search", async () => {
   const dom = new JSDOM('<!doctype html><div id="root"></div>', { url: "http://localhost/", pretendToBeVisual: true });
@@ -26,9 +29,10 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
   const origin = { address: "Synthetischer DOM-Teststandort", location: { lat: 50.12, lng: 8.68 }, countryCode: "DE" };
   const stores = CHAIN_IDS.map((id, index) => routeFallback({ id, placeId: `fixture-${id}`, name: `${CHAINS[id].name} Testfiliale`,
     address: "Synthetische Testadresse", location: { lat: 50.13 + index * .01, lng: 8.68 }, countryCode: "DE", airDistanceMeters: 1000 + index * 100, attributions: [] }));
-  const materials = getCanonicalComparisonCatalog().map(material => ({ ...material, material, label: material.name }));
+  const materials = bundledMaterialCatalog();
   const requests: Array<{ resolve: (value: unknown) => void; reject: (error: Error) => void }> = [];
   let pendingCatalog: Promise<unknown> | null = null;
+  let pendingObi: Promise<unknown> | null = null;
   const harness = { materials, offers: getCatalogSnapshot(CHAIN_IDS), catalogCalls: 0,
     catalog: () => {
       harness.catalogCalls++;
@@ -75,6 +79,7 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
       // Local API performs a real file read; let that response arrive while React's act scope is open.
       await new Promise(resolve => setTimeout(resolve, 0));
       await pendingCatalog;
+      await pendingObi;
     });
     const names = () => [...dom.window.document.querySelectorAll(".productName")].map(node => node.textContent).join(" ");
     const loading = () => {
@@ -119,7 +124,12 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     const current=dom.window.document.querySelector('#results')!.innerHTML;
     await act(async()=>obiRequests[0].resolve({offer:{...generic,product_name:'Old hanger'},warning:null}));
     assert.equal(dom.window.document.querySelector('#results')!.innerHTML,current,'late OBI price cannot replace the latest query');
-    harness.obi=async()=>({offer:null,warning:null});
+    const obiResults = new Map<string, ObiSearchResult>();
+    harness.obi=query=>{
+      pendingObi=getObiPrices(new Request('http://localhost/api/obi/search',{method:'POST',body:JSON.stringify({query})}))
+        .then(async response=>{assert.equal(response.status,200);const result=await response.json() as ObiSearchResult;obiResults.set(query,result);return result;});
+      return pendingObi;
+    };
     const evidence: Record<string, unknown>[] = [];
     let requestIndex=6;
     for (const intent of MVP_MATERIAL_INTENTS) {
@@ -127,22 +137,27 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
       assert.equal(dom.window.document.querySelectorAll('.productOfferCard').length,0);
       await submit();loading();await complete(requestIndex++);
       const target=materials.find(item=>item.material.slug===intent.canonical_slug)!.material;
+      const obi=obiResults.get(target.name);
+      assert.ok(obi?.offer,`${intent.input}: actual OBI API returns a verified price`);
       assert.equal((dom.window.document.querySelector('#comparison-material') as HTMLSelectElement).value,target.id,intent.input);
       assert.equal(dom.window.document.querySelectorAll('.comparisonGrid').length,1);
       for (const store of stores) {
         const selection=selectChainOffer(target,harness.offers,materials.map(item=>item.material),store.id);
+        if (['bauhaus','obi'].includes(store.id)) assert.ok(selection.price, `${intent.input}: ${store.id} must have a verified comparable offer`);
+        const expectedPrice=store.id==='obi' ? obi.offer : selection.price;
+        const expectedPackage=store.id==='obi' ? obi.offer.actual_size : selection.actualSpecification;
         const card=dom.window.document.querySelector(`[data-store-id="${store.placeId}"]`)!;
         assert.ok(card,`${intent.input}: ${store.id} branch card`);
-        if(selection.price) {
-          assert.equal(card.querySelector('.productName')?.textContent,selection.price.product_name);
-          assert.equal(card.querySelector('.packagePrice')?.textContent,new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(selection.price.price));
-          assert.equal(card.querySelector('.actualSpecification')?.textContent,selection.actualSpecification);
-          assert.equal(card.querySelector<HTMLAnchorElement>('.offerButton')?.href,selection.price.product_url);
+        if(expectedPrice) {
+          assert.equal(card.querySelector('.productName')?.textContent,expectedPrice.product_name);
+          assert.equal(card.querySelector('.packagePrice')?.textContent,new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR'}).format(expectedPrice.price));
+          assert.equal(card.querySelector('.actualSpecification')?.textContent,expectedPackage);
+          assert.equal(card.querySelector<HTMLAnchorElement>('.offerButton')?.href,expectedPrice.product_url);
         } else assert.ok(card.querySelector('.missingPrice'),`${intent.input}: never fabricate missing ${store.id} price`);
         assert.match(card.querySelector<HTMLAnchorElement>('.routeButton')!.href,/google\.com\/maps\/dir/);
-        evidence.push({input:intent.input,canonical_slug:intent.canonical_slug,store:store.id,rendered:Boolean(selection.price),
-          product:selection.price?.product_name??null,package:selection.actualSpecification,price:selection.price?.price??null,
-          product_url:selection.price?.product_url??null,checked_at:selection.price?.checked_at??null});
+        evidence.push({input:intent.input,canonical_slug:intent.canonical_slug,store:store.id,rendered:Boolean(expectedPrice),
+          product:expectedPrice?.product_name??null,package:expectedPackage,price:expectedPrice?.price??null,
+          product_url:expectedPrice?.product_url??null,checked_at:expectedPrice?.checked_at??null});
       }
       if(intent.key==='uniflott') {
         const toom=dom.window.document.querySelector('[data-store-id="fixture-toom"]')!;
@@ -156,7 +171,7 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     const insulation=materials.find(item=>item.material.slug==='steinwolle-sonorock-040-40-7-5m2-v1')!.material;
     assert.equal((dom.window.document.querySelector('#comparison-material') as HTMLSelectElement).value,insulation.id,'shared defaults work without a TOOM branch');
     if(process.env.FRONTEND_AUDIT_REPORT) await writeFile(resolve(process.env.FRONTEND_AUDIT_REPORT),JSON.stringify({
-      checked_at:new Date().toISOString(),flow:'Real Finder/components and verified catalog/cache API; only address/nearby network and OBI live reader simulated',
+      checked_at:new Date().toISOString(),flow:'Actual Finder/components in JSDOM with real OBI/TOOM API and verified catalog; address/nearby services simulated. Not a live browser test.',
       queries:MVP_MATERIAL_INTENTS.length,observations:evidence,
     },null,2));
   } finally {

@@ -35,7 +35,7 @@ function publicRow(row) {
   const observed = {};
   for (const [key, value] of Object.entries(row.observed_specs || {})) {
     if (typeof row.canonical_specs[key] === "number" && typeof value === "number" && Number.isFinite(value) && value > 0) observed[key] = value;
-    if (key === "type" && value === row.canonical_specs.type) observed.type = value;
+    if (["type", "profile", "color"].includes(key) && typeof value === "string" && value === row.canonical_specs[key]) observed[key] = value;
   }
   return { material_id: row.material_id, canonical_slug: row.canonical_slug, canonical_version: row.canonical_version,
     canonical_specs: row.canonical_specs, store_id: row.store_id, product_name: row.product_name, product_url: row.product_url,

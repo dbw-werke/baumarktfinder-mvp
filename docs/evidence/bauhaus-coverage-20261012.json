@@ -1,0 +1,240 @@
+{
+  "scope": "BAUHAUS only; actual bundled customer data and selector; no invented prices",
+  "verified_prices": 21,
+  "total": 21,
+  "component_test": "all 21 queries render matching BAUHAUS product/package/price/link in real Finder JSDOM test; location network is a test fixture",
+  "live_browser": "Not fully accepted; local browser access blocked by browser security policy. No circumvention. User requested manual price completion instead.",
+  "rows": [
+    {
+      "query": "Acryl",
+      "material": "acryl",
+      "product": "Probau Maleracryl Plus Weiß 310 ml",
+      "actual_package": "310 ml",
+      "package_price": 3.95,
+      "product_url": "https://www.bauhaus.info/acryl/probau-maleracryl-plus/p/26149033",
+      "checked_at": "2026-10-11T08:53:39.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Armierungsgewebe",
+      "material": "armierungsgewebe",
+      "product": "Probau Armierungsgewebe 10 m²",
+      "actual_package": "1000 × 10000 mm · 10 m²",
+      "package_price": 19.95,
+      "product_url": "https://www.bauhaus.info/wdvs-gewebe/probau-armierungsgewebe/p/13878909",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "CD Profil",
+      "material": "cd-profil",
+      "product": "Probau CD-Deckenprofil 3000 × 60 × 27 mm",
+      "actual_package": "27 × 60 × 3000 mm · 3 m",
+      "package_price": 6.65,
+      "product_url": "https://www.bauhaus.info/cd-profile/probau-cd-deckenprofil/p/20489120",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "CW Profil",
+      "material": "cw-profil",
+      "product": "Probau CW-Standprofil 2600 × 50 × 50 mm",
+      "actual_package": "50 × 2600 mm · 2,6 m",
+      "package_price": 5.1,
+      "product_url": "https://www.bauhaus.info/cw-profile/probau-cw-standprofil/p/20479644",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Direktabhänger",
+      "material": "direktabhaenger",
+      "product": "Probau Direktabhänger CD-Deckenprofile 125 mm, 1 Stück",
+      "actual_package": "125 mm · 1 Stück",
+      "package_price": 0.38,
+      "product_url": "https://www.bauhaus.info/deckenabhaenger/probau-direktabhaenger/p/25562691",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Feuchtraumplatte",
+      "material": "feuchtraumplatte",
+      "product": "Rigips Gipskartonplatte GKBI 2000 × 1250 × 12,5 mm imprägniert",
+      "actual_package": "12,5 × 1250 × 2000 mm · 2,5 m²",
+      "package_price": 15.95,
+      "product_url": "https://www.bauhaus.info/feuchtraumplatten/rigips-gipskartonplatte-gkbi/p/22687869",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Haftgrund",
+      "material": "haftgrund",
+      "product": "Quick-Mix Haftgrund 5 l",
+      "actual_package": "5 l",
+      "package_price": 29.95,
+      "product_url": "https://www.bauhaus.info/tiefengrund-haftgrund/quick-mix-haftgrund/p/13865802",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Perlfix",
+      "material": "perlfix",
+      "product": "Knauf Ansetzgips Perlfix 25 kg",
+      "actual_package": "25 kg",
+      "package_price": 10.5,
+      "product_url": "https://www.bauhaus.info/knauf-ansetzgips-perlfix/p/13863055",
+      "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "match": "alternative"
+    },
+    {
+      "query": "Rotband",
+      "material": "rotband",
+      "product": "Knauf Rotband Haftputzgips 30 kg",
+      "actual_package": "30 kg",
+      "package_price": 11.5,
+      "product_url": "https://www.bauhaus.info/gipsputze/knauf-rotband-haftputzgips/p/13874415",
+      "checked_at": "2026-10-11T08:53:39.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Uniflott",
+      "material": "uniflott",
+      "product": "Knauf Fugenspachtel Uniflott 25 kg",
+      "actual_package": "25 kg",
+      "package_price": 42.5,
+      "product_url": "https://www.bauhaus.info/trockenbauspachtel/knauf-fugenspachtel-uniflott/p/13873894",
+      "checked_at": "2026-10-11T08:53:39.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "PU-Schaum",
+      "material": "pu-schaum",
+      "product": "Pattex Montageschaum White Line 750 ml",
+      "actual_package": "750 ml",
+      "package_price": 12.95,
+      "product_url": "https://www.bauhaus.info/bauschaeume/pattex-montageschaum-white-line/p/25360169",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Rigips",
+      "material": "gipskarton",
+      "product": "Rigips Gipskartonplatte GKB, 2000 x 1250 x 12,5 mm",
+      "actual_package": "12,5 × 1250 × 2000 mm · 2,5 m²",
+      "package_price": 11.05,
+      "product_url": "https://www.bauhaus.info/bauplatten/rigips-gipskartonplatte-gkb/p/22704078",
+      "checked_at": "2026-10-11T08:53:39.000Z",
+      "source": "manual",
+      "match": "alternative"
+    },
+    {
+      "query": "Rollputz",
+      "material": "rollputz",
+      "product": "swingcolor Dekoputz Roll- & Streichputz Weiß 8 kg",
+      "actual_package": "8 kg",
+      "package_price": 22.95,
+      "product_url": "https://www.bauhaus.info/rollputze/swingcolor-dekoputz-roll-streichputz/p/28235707",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "match": "alternative"
+    },
+    {
+      "query": "Schleifpapier",
+      "material": "schleifpapier",
+      "product": "Wolfcraft Schleifpapierrolle Holz/Metall K180, 5 m x 93 mm",
+      "actual_package": "93 × 5000 mm · 1 Stück",
+      "package_price": 5.3,
+      "product_url": "https://www.bauhaus.info/schleifpapier/wolfcraft-schleifpapier/p/27790416",
+      "checked_at": "2026-10-11T21:54:04.000Z",
+      "source": "manual",
+      "match": "alternative"
+    },
+    {
+      "query": "Schrauben",
+      "material": "schnellbauschrauben",
+      "product": "Knauf Schnellbauschraube TN 25 Feingewinde 3,5 x 25 mm 1.000 Stück",
+      "actual_package": "3,5 × 25 mm · 1000 Stück",
+      "package_price": 10.55,
+      "product_url": "https://www.bauhaus.info/trockenbauschrauben/knauf-schnellbauschraube-tn-25/p/13935378",
+      "checked_at": "2026-10-11T08:53:39.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Silikon",
+      "material": "silikon",
+      "product": "Probau Sanitär-Silikon Weiß 310 ml",
+      "actual_package": "310 ml",
+      "package_price": 7.85,
+      "product_url": "https://www.bauhaus.info/silikon/probau-sanitaer-silikon/p/23413872",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Sockelputz",
+      "material": "sockelputz",
+      "product": "Knauf Marmorit Sockelputz UP 310 30 kg",
+      "actual_package": "30 kg",
+      "package_price": 12.45,
+      "product_url": "https://www.bauhaus.info/zementputze/knauf-marmorit-sockelputz-up-310/p/13898422",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Dämmung",
+      "material": "mineralwolle",
+      "product": "Rockwool Sonorock Steinwolle Trennwandplatte 40 mm, 7,5 m²/Paket",
+      "actual_package": "12 Stück · 40 × 625 × 1000 mm · 7,5 m² gesamt",
+      "package_price": 32.6,
+      "product_url": "https://www.bauhaus.info/steinwolle/rockwool-steinwolle-sonorock-trennwandplatte/p/13905339",
+      "checked_at": "2026-10-11T08:53:39.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Tiefengrund",
+      "material": "tiefengrund",
+      "product": "Knauf Tiefengrund 5 l",
+      "actual_package": "5 l",
+      "package_price": 31.45,
+      "product_url": "https://www.bauhaus.info/tiefengrund-haftgrund/knauf-tiefengrund/p/13868964",
+      "checked_at": "2026-10-11T08:53:39.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "UW Profil",
+      "material": "uw-profil",
+      "product": "Probau UW-Rahmenprofil 2000 × 50 × 40 mm",
+      "actual_package": "50 × 2000 mm · 2 m",
+      "package_price": 3.7,
+      "product_url": "https://www.bauhaus.info/uw-profile/probau-uw-rahmenprofil/p/20657219",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "match": "exact"
+    },
+    {
+      "query": "Zement",
+      "material": "zement",
+      "product": "Zement 25 kg chromatarm",
+      "actual_package": "25 kg",
+      "package_price": 5.25,
+      "product_url": "https://www.bauhaus.info/zement-moertel/zement/p/13887110",
+      "checked_at": "2026-10-09T07:02:00.000Z",
+      "source": "manual",
+      "match": "exact"
+    }
+  ]
+}

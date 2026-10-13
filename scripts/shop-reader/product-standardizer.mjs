@@ -1,4 +1,5 @@
 /** Match product identity before preferences. Only product-bound reader fields are trusted. */
+import { productPurposeConflict } from "../../src/lib/productCompatibility.mjs";
 export function normalize(value = "") {
   return String(value).toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue")
     .replace(/ß/g, "ss").replace(/×|\*/g, "x").replace(/,/g, ".").replace(/\s+/g, " ").trim();
@@ -14,7 +15,7 @@ const families = [
   [/feuchtraum|gkbi/, "board", /feuchtraum|impraegniert|gkbi/, /brandschutz|gkfi/],
   [/\bosb/, "board", /\bosb\s*[/ -]?3\b/, /osb\s*[/ -]?2\b/],
   [/gipskarton|rigips|gipsplatte|\bgkb\b/, "board", /gipskarton|rigipsplatte|gipsplatte|bauplatte|\bgkb\b/, /feuchtraum|impraegniert|gkbi|brandschutz|feuerschutz|\bgkf\b|gkfi|\bdf\b|hartgips|diamant|silentboard|schallschutz|akustik|fireboard|spezialplatte|zementbauplatte|bauplatten?\s*(?:aus\s*)?xps/],
-  [/schnellbauschraub|trockenbauschraub/, "screw", /schnellbauschraub|trockenbauschraub|gipskartonschraub/, /bohrspitze/],
+  [/schnellbauschraub|trockenbauschraub/, "screw", /schnellbauschraub|trockenbauschraub|gips(?:karton|platten?)schraub/, /bohrspitze/],
   [/direktabhaenger/, "hanger", /direktabhaenger/, /nonius/],
   [/nonius/, "hanger", /nonius.*unterteil/, /oberteil/],
   [/trennwandband|dichtungsband|randdaemmstreifen/, "band", /trennwandband|dichtungsband|randdaemmstreifen/],
@@ -24,7 +25,7 @@ const families = [
   [/\buw\b/, "profile", /\buw\b|rahmenprofil/, /\bcd\b|\bcw\b|\bud\b/],
   [/\bud\b/, "profile", /\bud\b|randprofil/, /\bcd\b|\bcw\b|\buw\b/],
   [/mineralwolle|glaswolle|steinwolle|klemmfilz|trennwandplatte/, "insulation", /mineralwolle|glaswolle|steinwolle|klemmfilz|trennwandplatte|sonorock|akustic/, /rohrschale/],
-  [/armierungsgewebe/, "mesh", /armierungsgewebe|glasfasergewebe|putzgewebe/, /streifen|eckwinkel|band/],
+  [/armierungsgewebe/, "mesh", /armierungs(?:glas)?gewebe|glasfasergewebe|putzgewebe/, /streifen|eckwinkel|band/],
   [/acryl/, "liquid", /acryl/, /silikon|hybrid|ms[ -]?polymer|smp[ -]?polymer|polyurethan|\bpu[ -]?(?:dichtstoff|fugendicht)|montagekleber|acryl[ -]?(?:farbe|lack)|\b(?:weisslack|buntlack|klarlack|lack|farbe)\b|haftgrund|tiefen?grund|grundierung|baukleber|dichtband|reiniger|fugenabzieher|kartuschenpresse|kuenstler|entferner/],
   [/silikon/, "liquid", /silikon/, /acryl|entferner|werkzeug/],
   [/tiefengrund|tiefgrund/, "liquid", /tiefengrund|tiefgrund/, /haftgrund|betonkontakt/],
@@ -33,7 +34,7 @@ const families = [
   [/rollputz/, "bag", /rollputz|streichputz|easyputz/, /werkzeug|rolle/],
   [/sockelputz/, "bag", /sockelputz|sockelleichtputz/, /farbe|profil|gewebe/],
   [/zement/, "bag", /zement/, /moertel|estrich|beton|farbe|putz/],
-  [/schleifpapier/, "abrasive", /schleifpapier|schleifblatt|schleifgitter/, /maschine|schleifer/],
+  [/schleifpapier/, "abrasive", /schleifpapier|schleifblatt|schleifgitter|schleifstreifen|schleifbogen|schleifrolle|schleifscheibe/, /schleifmaschine/],
 ];
 
 export function buildStandard(material) {
@@ -44,9 +45,9 @@ export function buildStandard(material) {
   if (Object.keys(specs).some((key) => !known.includes(key))) return null;
   const family = families.find(([pattern]) => pattern.test(normalize(`${material.name || ""} ${material.product_family || ""}`)));
   if (!family) return null;
-  const required = { bag: ["weight_kg"], liquid: ["volume_l"], board: ["length_mm", "width_mm", "thickness_mm"],
+  const required = { bag: ["weight_kg"], liquid: [material.base_unit === "kg" ? "weight_kg" : "volume_l"], board: ["length_mm", "width_mm", "thickness_mm"],
     profile: ["length_mm", "width_mm"], insulation: ["length_mm", "width_mm", "thickness_mm", "pieces"],
-    screw: ["diameter_mm", "length_mm", "pieces"], mesh: ["length_mm", "width_mm", "grammage_g_m2"],
+    screw: ["diameter_mm", "length_mm", "pieces"], mesh: ["length_mm", "width_mm"],
     hanger: ["length_mm", "pieces"], band: ["length_mm", "width_mm", "thickness_mm"], film: ["length_mm", "width_mm"],
     abrasive: ["length_mm", "width_mm", "grit", "pieces"] }[family[1]];
   if (required.some((key) => !positive(specs[key])) || numericKeys.some((key) => specs[key] != null && !positive(specs[key]))) return null;
@@ -89,17 +90,20 @@ const familyDetectors = [
   ["betonkontakt", /betonkontakt/], ["haftgrund", /haftgrund/], ["tiefengrund", /tiefen?grund/],
   ["acrylic", /acryl/],
   ["uniflott-finish", /uniflott.*finish/], ["uniflott", /uniflott/], ["rotband", /rotband/], ["perlfix", /perlfix/], ["vario", /vario/],
+  // Compound product identities precede their substrate: Gipsplattenschrauben
+  // are screws, even when the retailer's Ausführung contains "Gipsplatte".
+  ["tn-schrauben", /schnellbauschraub|trockenbauschraub|gips(?:karton|platten?)schraub/],
   ["gipskarton-feuchtraum", /feuchtraum|gkbi|impraegniert/], ["osb", /\bosb/],
   ["gipskarton", /gipskarton|rigipsplatte|gipsplatte|bauplatte|\bgkb\b/],
   ["direktabhaenger", /direktabhaenger/], ["noniusabhaenger", /nonius/],
-  ["band", /trennwandband|dichtungsband|randdaemmstreifen/], ["tn-schrauben", /schnellbauschraub|trockenbauschraub|gipskartonschraub/],
+  ["band", /trennwandband|dichtungsband|randdaemmstreifen/],
   ["cd-profil", /\bcd\b/], ["cw-profil", /\bcw\b/], ["uw-profil", /\buw\b/], ["ud-profil", /\bud\b/],
   ["cd-profil", /deckenprofil/], ["cw-profil", /staenderprofil/], ["uw-profil", /rahmenprofil/], ["ud-profil", /randprofil/],
   ["pu-schaum", /pu.?schaum|bauschaum|montageschaum|pistolenschaum/],
   ["mineralwolle", /mineralwolle|glaswolle|steinwolle|klemmfilz|trennwandplatte|sonorock|akustic/],
-  ["dampfbremse", /dampfbremse/], ["pe-folie", /pe.?folie|pe.?baufolie/], ["armierungsgewebe", /armierungsgewebe|glasfasergewebe|putzgewebe/],
+  ["dampfbremse", /dampfbremse/], ["pe-folie", /pe.?folie|pe.?baufolie/], ["armierungsgewebe", /armierungs(?:glas)?gewebe|glasfasergewebe|putzgewebe/],
   ["rollputz", /rollputz|streichputz|easyputz/], ["sockelputz", /sockelputz|sockelleichtputz/], ["zement", /zement/],
-  ["schleifpapier", /schleifpapier|schleifblatt|schleifgitter/],
+  ["schleifpapier", /schleifpapier|schleifblatt|schleifgitter|schleifstreifen|schleifbogen|schleifrolle/],
 ];
 function detectedFamily(text) { return familyDetectors.find(([, pattern]) => pattern.test(text))?.[0] ?? "unknown"; }
 function requestedFamily(standard) {
@@ -130,33 +134,53 @@ export function extractSpecifications(product, standard) {
       const count = value.replace(/^(\d{1,3})\.(\d{3})(?=\s|$)/, "$1$2").match(/^\d+(?:\.\d+)?/)?.[0];
       add("pieces", count);
     }
+    if (/^(packinhalt|inhalt pro packung)$/.test(key) && ["m2", "m²"].includes(m[2])) add("area_m2", Number(m[1]));
   }
   const name = fields.name;
   const capture = (pattern, key, factor = 1) => { for (const m of name.matchAll(pattern)) add(key, Number(m[1]) * factor); };
   capture(/(\d+(?:\.\d+)?)\s*kg\b/g, "weight_kg"); capture(/(\d+(?:\.\d+)?)\s*(?:l|liter)\b/g, "volume_l");
   capture(/(\d+(?:\.\d+)?)\s*ml\b/g, "volume_l", 0.001); capture(/(\d+)\s*(?:stueck|stk\.?|st\b)/g, "pieces");
-  capture(/(\d+(?:\.\d+)?)\s*g\s*\/\s*m[2²]/g, "grammage_g_m2"); capture(/\b[kp]\s*(\d{2,4})\b/g, "grit");
+  capture(/(\d+(?:\.\d+)?)\s*gr?\s*\/\s*m[2²]/g, "grammage_g_m2"); capture(/\b[kp]\s*(\d{2,4})\b/g, "grit");
   capture(/(\d+(?:\.\d+)?)\s*m[2²]/g, "area_m2");
   const factor = (unit) => unit === "m" ? 1000 : unit === "cm" ? 10 : 1;
+  // The hanger's 125 mm leg is not the compatible CD profile's 60/27 mm section.
+  // Keep full identity text above; remove only the explicitly named mating profile
+  // from dimensional parsing, so real conflicting hanger lengths still reject.
+  const dimensionName = standard.family === "hanger"
+    ? name.replace(/\b(?:cd|cw|uw|ud)[ -]*(?:profil[e]?\s*)?\d+(?:\.\d+)?\s*(?:mm\s*)?\/\s*\d+(?:\.\d+)?\s*(?:mm\b)?/g, " ")
+    : name;
   let hasTriple = false;
-  for (const m of name.matchAll(/(\d+(?:\.\d+)?)\s*(mm|cm|m)?\s*[x/]\s*(\d+(?:\.\d+)?)\s*(mm|cm|m)?\s*x\s*(\d+(?:\.\d+)?)\s*(mm|cm|m)\b/g)) {
+  for (const m of dimensionName.matchAll(/(\d+(?:\.\d+)?)\s*(mm|cm|m)?\s*[x/]\s*(\d+(?:\.\d+)?)\s*(mm|cm|m)?\s*x\s*(\d+(?:\.\d+)?)\s*(mm|cm|m)\b/g)) {
     hasTriple = true;
     const values = [Number(m[1]) * factor(m[2] || m[4] || m[6]), Number(m[3]) * factor(m[4] || m[6]), Number(m[5]) * factor(m[6])].sort((a, b) => b - a);
+    if (standard.family === "profile" && values[0] <= 200 && values[2] <= 2) {
+      // 50 x 50 x 0.6 mm describes section and sheet gauge, not the profile length.
+      add("width_mm", values[0]); add("height_mm", values[1]); continue;
+    }
     add("length_mm", values[0]); add("width_mm", values[1]); add(standard.family === "profile" ? "height_mm" : "thickness_mm", values[2]);
   }
   if (!hasTriple) {
-    for (const m of name.matchAll(/(\d+(?:\.\d+)?)\s*(mm|cm|m)?\s*[x/]\s*(\d+(?:\.\d+)?)\s*(mm|cm|m)\b/g)) {
+    for (const m of dimensionName.matchAll(/(\d+(?:\.\d+)?)\s*(mm|cm|m)?\s*[x/]\s*(\d+(?:\.\d+)?)\s*(mm|cm|m)\b/g)) {
       const values = [Number(m[1]) * factor(m[2] || m[4]), Number(m[3]) * factor(m[4])].sort((a, b) => b - a);
+      // A mesh's millimetre aperture is not the dimensions of its metre-wide roll.
+      if (standard.family === "mesh" && values.every(value => value < 50)) continue;
       if (standard.family === "screw") { add("length_mm", values[0]); add("diameter_mm", values[1]); }
       else if (standard.family === "profile" && values[0] < 500) { add("width_mm", values[0]); add("height_mm", values[1]); }
       else { add("length_mm", values[0]); add("width_mm", values[1]); }
     }
     if (["board", "insulation"].includes(standard.family)) for (const m of name.matchAll(/(\d+(?:\.\d+)?)\s*mm\b/g)) if (Number(m[1]) < 500) add("thickness_mm", m[1]);
-    if (["profile", "hanger"].includes(standard.family)) for (const m of name.matchAll(/(\d+(?:\.\d+)?)\s*(mm|cm|m)\b/g)) {
+    if (["profile", "hanger"].includes(standard.family)) for (const m of dimensionName.matchAll(/(\d+(?:\.\d+)?)\s*(mm|cm|m)\b/g)) {
       const value = Number(m[1]) * factor(m[2]); if (value >= 500 || standard.family === "hanger") add("length_mm", value);
     }
   }
+  if (standard.family === "profile") for (const m of dimensionName.matchAll(/(\d+(?:\.\d+)?)\s*(mm|cm|m)\b/g)) {
+    const value = Number(m[1]) * factor(m[2]); if (value >= 500) add("length_mm", value);
+  }
   capture(/(\d+(?:\.\d+)?)\s*[µμ]m\b/g, "thickness_mm", 0.001);
+  if (standard.family === "insulation" && result.area_m2 && result.length_mm && result.width_mm && result.pieces == null) {
+    const pieces = result.area_m2 / (result.length_mm * result.width_mm / 1e6);
+    if (Number.isInteger(pieces) && pieces > 0) add("pieces", pieces);
+  }
   if (result.length_mm && result.width_mm && result.area_m2 == null) result.area_m2 = result.length_mm * result.width_mm / 1e6 * Number(result.pieces || 1);
   return { values: result, conflicts: [...conflicts] };
 }
@@ -185,6 +209,8 @@ export function evaluateProductMatch(product, standard, { exactPackage = false }
   if (diagnostic.detectedFamily !== "unknown" && diagnostic.requestedFamily !== "unknown" && diagnostic.detectedFamily !== diagnostic.requestedFamily) return reject("incompatible_product_family", true);
   if (!standard.productMatch.test(identity)) return reject("incompatible_product_family", true);
   if (standard.exclude?.test(fields.primary)) return reject("incompatible_product_family", true);
+  const purposeConflict = productPurposeConflict(standard, product);
+  if (purposeConflict) return reject(purposeConflict, true);
   if (standard.family === "board" && standard.specs.type === "standard" && /\bxps\b|\beps\b|zement|gipsfaser/.test(fields.primary)) return reject("incompatible_product_family", true);
   // Long exclusions also occur in German compounds (Tiefengrundkonzentrat).
   // Short codes keep word boundaries: PRO must never reject 'Produkt'.

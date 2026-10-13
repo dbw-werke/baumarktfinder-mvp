@@ -13,11 +13,37 @@ const functionalFields = {
   trennwandband: ["width_mm", "thickness_mm"], dichtungsband: ["width_mm", "thickness_mm"], randdaemmstreifen: ["width_mm", "thickness_mm"],
   "tn-schrauben": ["diameter_mm", "length_mm"], direktabhaenger: ["length_mm", "profile"], noniusabhaenger: ["length_mm", "profile"],
   dampfbremse: ["sd_m"], "pe-folie": ["thickness_mm"],
-  armierungsgewebe: ["grammage_g_m2"], schleifpapier: ["grit", "width_mm", "length_mm"],
+  armierungsgewebe: ["width_mm", "length_mm"], schleifpapier: ["grit", "width_mm", "length_mm"],
 };
 const positive = (value) => typeof value === "number" && Number.isFinite(value) && value > 0;
 const close = (left, right) => Math.abs(left - right) <= Math.max(1e-8, Math.abs(right) * 1e-8);
 const normalized = (value) => value.toLocaleLowerCase("de-DE").replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").trim();
+
+/** Generic dry paper can serve wood; an explicit metal request still requires proven metal suitability. */
+export function productPurposeConflict(material, product) {
+  if (![material?.product_family, material?.productFamily].includes("schleifpapier") && material?.family !== "abrasive") return null;
+  const strings = (value, depth = 0) => {
+    if (typeof value === "string") return [value];
+    if (!value || typeof value !== "object" || depth > 4) return [];
+    return Object.values(value).flatMap(entry => strings(entry, depth + 1));
+  };
+  const fields = [product?.name, product?.product_name, product?.category, product?.description,
+    product?.attributes, product?.structuredAttributes, product?.additionalProperty,
+    product?.observedSpecs, product?.observed_specs, product?.metadata];
+  const text = normalized(fields.flatMap(value => strings(value)).join(" "))
+    .replace(/\b(?:nicht|kein[e]?|ohne)\s+(?:fuer\s+)?(?:nassschliff|nassschleifen|nassfest|wasserfest|wet sanding)\b/g, "");
+  if (/nass|wet[ -]?(?:and|or|\/|sanding|dry)|wasserfest|waterproof/.test(text)) return "incompatible-abrasive-purpose:wet-sanding";
+  if (/schleifgewebe|schleifleinen|gewebeschleif|\bgewebe\b|cloth|schleifgitter|\bgitter\b|\bmesh\b/.test(text)) return "incompatible-abrasive-type:backing";
+  // Purpose-built dry-wall paper discs are valid size variants, with their real machine size displayed.
+  if (/trockenbau|gipskarton|spachtelflaechen/.test(text) && !/dreieck|delta[ -]?schleif|schleifband\b/.test(text)) return null;
+  if (/schleifscheibe|schleifteller|dreieck|delta[ -]?schleif|schleifband\b/.test(text)) return "incompatible-abrasive-type:machine-shape";
+  const requestedPurpose = normalized([material?.name, ...(material?.specs?.required_terms ?? [])].join(" "));
+  const requiresMetal = /metall?|metal/.test(requestedPurpose);
+  if (!/holz|wood/.test(text) || (requiresMetal && !/metall?|metal/.test(text))) {
+    return requiresMetal ? "unverified-abrasive-purpose:wood-and-metal" : "unverified-abrasive-purpose:wood";
+  }
+  return null;
+}
 
 function stable(value) {
   if (Array.isArray(value)) return value.map(stable);
@@ -57,8 +83,19 @@ export function hasComparableSpecification(material) {
  */
 export function getVariantDistance(preferred, actual) {
   if (!hasComparableSpecification(preferred) || !hasComparableSpecification(actual)
-    || preferred.base_unit !== actual.base_unit || normalized(preferred.product_family) !== normalized(actual.product_family)) return null;
-  if (JSON.stringify(identitySpecs(preferred.specs, preferred.base_unit)) !== JSON.stringify(identitySpecs(actual.specs, actual.base_unit))) return null;
+    || normalized(preferred.product_family) !== normalized(actual.product_family)) return null;
+  const family = normalized(preferred.product_family);
+  const crossUnitPrimer = family === "haftgrund" && [preferred.base_unit, actual.base_unit].every(unit => ["kg", "l"].includes(unit));
+  if (preferred.base_unit !== actual.base_unit && !crossUnitPrimer) return null;
+  const wantedIdentity = identitySpecs(preferred.specs, preferred.base_unit);
+  const actualIdentity = identitySpecs(actual.specs, actual.base_unit);
+  // A broad mesh query has no specified grammage; explicit grammage stays strict.
+  if (family === "armierungsgewebe" && preferred.specs.grammage_g_m2 === undefined) delete actualIdentity.grammage_g_m2;
+  // Sandpaper sheets/strips keep their real dimensions and grit, never a converted price.
+  if (family === "schleifpapier") for (const key of ["length_mm", "width_mm"]) { delete wantedIdentity[key]; delete actualIdentity[key]; }
+  if (family === "schleifpapier" && preferred.specs.diameter_mm === undefined) delete actualIdentity.diameter_mm;
+  if (JSON.stringify(wantedIdentity) !== JSON.stringify(actualIdentity)) return null;
+  if (preferred.base_unit !== actual.base_unit) return 2; // No mass/volume conversion; prefer same-unit packages.
   const relative = (left, right) => Math.abs(right - left) / left;
   const distances = [relative(preferred.package_quantity, actual.package_quantity)];
   if (["m", "m2"].includes(preferred.base_unit)) distances.push(relative(preferred.specs.length_mm, actual.specs.length_mm));

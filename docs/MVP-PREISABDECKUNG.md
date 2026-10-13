@@ -1,6 +1,6 @@
 # MVP-Preisabdeckung
 
-Stand: 2026-10-08T17:06:18.809Z. 64/147 Kombinationen mit geprüftem gespeichertem Preis.
+Stand: 2026-10-09T07:02:23.321Z. 68/147 Kombinationen mit geprüftem gespeichertem Preis.
 
 Dies ist eine Prüfung vorhandener Preisdaten. Abrufdatum bleibt unverändert; Frontend-Abnahme und aktuelle Filialverfügbarkeit werden damit nicht bestätigt.
 
@@ -10,19 +10,19 @@ Dies ist eine Prüfung vorhandener Preisdaten. Abrufdatum bleibt unverändert; F
 | Armierungsgewebe | offen | offen | offen | 24,99 € | offen | offen | offen |
 | CD Profil | 9,19 € (andere Größe) | offen | 9,15 € (andere Größe) | 9,49 € (andere Größe) | offen | 9,15 € (andere Größe) | offen |
 | CW Profil | offen | offen | 6,35 € | 5,79 € | offen | offen | offen |
-| Direktabhänger | offen | offen | offen | 0,69 € | offen | offen | offen |
+| Direktabhänger | offen | offen | 0,58 € | 0,69 € | offen | offen | offen |
 | Feuchtraumplatte | 15,97 € | offen | 15,95 € | 15,98 € | offen | offen | offen |
 | Haftgrund | offen | offen | 25,95 € | 21,99 € | offen | offen | offen |
 | Perlfix | 12,79 € | offen | 12,55 € | 7,69 € (andere Größe) | offen | offen | offen |
 | Rotband | 11,59 € | 11,50 € | 11,50 € | 11,99 € | offen | 11,50 € | offen |
 | Uniflott | 43,99 € | 42,50 € | 42,50 € | 38,99 € | 11,49 € (andere Größe) | 42,50 € | offen |
-| PU-Schaum | 14,29 € | offen | offen | 12,99 € | offen | offen | offen |
+| PU-Schaum | 14,29 € | offen | 8,95 € (andere Größe) | 12,99 € | offen | offen | offen |
 | Rigips | 4,88 € | 11,05 € (andere Größe) | 4,85 € | 4,89 € | offen | 11,05 € (andere Größe) | offen |
-| Rollputz | 34,99 € | offen | offen | 31,99 € | offen | offen | offen |
+| Rollputz | 34,99 € | offen | 34,95 € (andere Größe) | 31,99 € | offen | offen | offen |
 | Schleifpapier | offen | offen | offen | 1,79 € | offen | offen | offen |
 | Schrauben | 12,49 € | 10,55 € | offen | 17,99 € | offen | offen | offen |
 | Silikon | 8,59 € | offen | 7,89 € | 9,99 € | offen | offen | offen |
-| Sockelputz | 13,99 € | offen | offen | 11,99 € | offen | offen | offen |
+| Sockelputz | 13,99 € | offen | 33,90 € (andere Größe) | 11,99 € | offen | offen | offen |
 | Dämmung | 32,92 € | 32,60 € | offen | 32,20 € | offen | offen | offen |
 | Tiefengrund | 24,99 € | 31,45 € | 31,45 € | 33,99 € | 31,99 € | 31,45 € | offen |
 | UW Profil | offen | offen | 4,85 € | 4,49 € | offen | offen | offen |
@@ -62,7 +62,7 @@ Dies ist eine Prüfung vorhandener Preisdaten. Abrufdatum bleibt unverändert; F
 | CW Profil | HELLWEG | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
 | Direktabhänger | OBI | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
 | Direktabhänger | BAUHAUS | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
-| Direktabhänger | HORNBACH | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
+| Direktabhänger | HORNBACH | [Knauf Direktabhänger 125 mm für CD Profil 60 mm / 27 mm](https://www.hornbach.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-mm-27-mm/7017220/) | 125 mm · 1 Stück | 0,58 € | automatic / automatic-method-not-recorded | 2026-10-08T07:44:32.513Z | — |
 | Direktabhänger | toom | [Knauf Direktabhänger für CD-Profile](https://toom.de/p/direktabhaenger-fuer-cd-profile/3153733) | 125 mm · 1 Stück | 0,69 € | automatic / direct | 2026-10-07T18:18:09.627Z | — |
 | Direktabhänger | hagebau | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
 | Direktabhänger | Globus Baumarkt | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
@@ -104,7 +104,7 @@ Dies ist eine Prüfung vorhandener Preisdaten. Abrufdatum bleibt unverändert; F
 | Uniflott | HELLWEG | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
 | PU-Schaum | OBI | [Soudal Bauschaum B2 Genius Gun 750 ml](https://www.obi.de/p/9089269/soudal-bauschaum-b2-genius-gun-750-ml) | 750 ml | 14,29 € | manual / manual | 2026-10-03T17:53:03.000Z | — |
 | PU-Schaum | BAUHAUS | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
-| PU-Schaum | HORNBACH | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
+| PU-Schaum | HORNBACH | [PRECIT 1K Pistolenschaum XXL B2 beige 500 ml; Polyurethan (PU); B2 normal entflammbar](https://www.hornbach.de/p/precit-1k-pistolenschaum-xxl-b2-beige-500-ml/10331179/) | 500 ml | 8,95 € | automatic / automatic-method-not-recorded | 2026-10-08T07:45:31.419Z | — |
 | PU-Schaum | toom | [Pattex PU-Schaum 'White Line' reinweiß 750 ml](https://toom.de/p/pu-schaum-white-line-reinweiss-750-ml/3350104) | 750 ml | 12,99 € | automatic / direct | 2026-10-06T20:45:29.599Z | — |
 | PU-Schaum | hagebau | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
 | PU-Schaum | Globus Baumarkt | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
@@ -118,7 +118,7 @@ Dies ist eine Prüfung vorhandener Preisdaten. Abrufdatum bleibt unverändert; F
 | Rigips | HELLWEG | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
 | Rollputz | OBI | [Alpina Rollputz 12 kg Weiß Matt](https://www.obi.de/p/8170136/alpina-rollputz-12-kg-weiss-matt) | 12 kg | 34,99 € | manual / manual | 2026-10-03T17:53:03.000Z | — |
 | Rollputz | BAUHAUS | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
-| Rollputz | HORNBACH | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
+| Rollputz | HORNBACH | [MODULAN 5502 Rollputz Außen 0,5 mm weiß 15 kg](https://www.hornbach.de/p/modulan-5502-rollputz-aussen-0-5-mm-weiss-15-kg/10476083/) | 15 kg | 34,95 € | automatic / automatic-method-not-recorded | 2026-10-08T07:45:52.795Z | — |
 | Rollputz | toom | [Alpina Rollputz 12 kg weiß](https://toom.de/p/rollputz-12-kg-weiss/3050385) | 12 kg | 31,99 € | automatic / direct | 2026-10-06T20:45:39.710Z | — |
 | Rollputz | hagebau | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
 | Rollputz | Globus Baumarkt | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
@@ -146,7 +146,7 @@ Dies ist eine Prüfung vorhandener Preisdaten. Abrufdatum bleibt unverändert; F
 | Silikon | HELLWEG | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
 | Sockelputz | OBI | [Sakret Sockelputz 30 kg](https://www.obi.de/p/7505456/sakret-sockelputz-30-kg) | 30 kg | 13,99 € | automatic / playwright | 2026-10-04T08:40:59.152Z | — |
 | Sockelputz | BAUHAUS | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
-| Sockelputz | HORNBACH | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
+| Sockelputz | HORNBACH | [Knauf SM700 Pro Putzmörtel 25 kg](https://www.hornbach.de/p/knauf-sm700-pro-putzmoertel-25-kg/12027001/) | 25 kg | 33,90 € | automatic / automatic-method-not-recorded | 2026-10-08T07:46:52.357Z | — |
 | Sockelputz | toom | [Quick-mix Sockelputz 30 kg](https://toom.de/p/sockelputz-30-kg/3055591) | 30 kg | 11,99 € | automatic / direct | 2026-10-06T20:28:32.934Z | — |
 | Sockelputz | hagebau | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
 | Sockelputz | Globus Baumarkt | — | — | — |  | — | no-validated-local-observation-and-no-matching-update-report |
