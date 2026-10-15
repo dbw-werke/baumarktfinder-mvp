@@ -14,7 +14,7 @@ import { fetchStoreCatalog } from "../services/catalog";
 import { fetchObiOffer } from "../services/obi";
 import type { ObiOffer } from "../lib/obi-offer";
 import type { StorePrice } from "../services/prices";
-import { getAddressSuggestionError, type ResolvedAddress } from "../services/maps";
+import { type ResolvedAddress } from "../services/maps";
 import { discoverNearby, type NearbyResult } from "../services/nearby";
 import { closestBranch, filterCatalog } from "../lib/catalogView";
 import { CHAINS, type Coordinates, type ChainId } from "../lib/stores";
@@ -68,14 +68,18 @@ export default function Finder() {
     return () => { cancelled = true; window.clearTimeout(timer); };
   }, [product, selectedMaterial]);
 
-  function changeMaterial(value: string) {
+  function clearSearch() {
     searchGeneration.current++; obiRequest.current?.abort(); busy.current = false;
-    setLoading(false); setPendingKey(""); setStatus(""); setResult(null); setComparisonMaterial(null);
+    setLoading(false); setPendingKey(""); setStatus(""); setResult(null); setComparisonMaterial(null); setFailedSearch(null);
+  }
+  function changeMaterial(value: string) {
+    clearSearch();
     setProduct(value); setSelectedMaterial(null); setSuggestions([]);
   }
   async function useCurrentLocation() {
     if (busy.current || locationBusy.current || addressBusy.current) return;
     if (!navigator.geolocation) { setStatus("Dein Browser unterstützt keine Standortbestimmung. Bitte gib eine Adresse in Deutschland ein."); return; }
+    clearSearch();
     locationBusy.current = true; setLocationLoading(true); setStatus("Standort wird ermittelt …");
     try {
       const position = await new Promise<GeolocationPosition>((resolve, reject) => {
@@ -90,7 +94,7 @@ export default function Finder() {
       setAddress("Mein aktueller Standort"); setAddressSelection(null); setAddressError(""); setStatus("Standort übernommen. Du kannst jetzt die Märkte suchen.");
     } catch (error) {
       const code = typeof error === "object" && error !== null && "code" in error ? error.code : null;
-      setStatus(code === 1 ? "Standortfreigabe wurde abgelehnt. Bitte gib deine Adresse ein." : error instanceof Error ? error.message : "Dein Standort ist momentan nicht verfügbar. Bitte gib deine Adresse ein.");
+      setStatus(code === 1 ? "Standortfreigabe wurde abgelehnt. Bitte gib deine Adresse ein." : "Dein Standort ist momentan nicht verfügbar. Bitte gib deine Adresse ein.");
     } finally { locationBusy.current = false; setLocationLoading(false); }
   }
   async function handleSearch(event: FormEvent<HTMLFormElement>) {
@@ -117,11 +121,13 @@ export default function Finder() {
       const [catalogue, obi] = await Promise.all([fetchStoreCatalog([...new Set(discovery.stores.map((store) => store.id))]),
         product.trim() && discovery.stores.some(store=>store.id==="obi") ? fetchObiOffer(preferred?.name ?? product.trim(),obiController.signal) : Promise.resolve(null)]);
       if (!current()) return;
+      const warnings = [...discovery.warnings, ...(catalogue.error ? [catalogue.error] : []), ...(obi?.warning ? [obi.warning] : [])];
+      if (warnings.length) console.warn("Baumarktfinder search diagnostics", warnings);
       setAddress(discovery.origin.address); setAddressSelection(discovery.origin); setCoordinates(discovery.origin.location);
       if (discovery.origin.provider === "osm" && !preferOpen) { googleRetryAt.current = Date.now() + 60_000; setGoogleUnavailable(true); }
       else if (discovery.origin.provider !== "osm") setGoogleUnavailable(false);
       setResult({ ...discovery, offers: catalogue.offers, materials: comparisonCatalog.map((item) => item.material), obiOffer:obi?.offer, obiMaterialId:preferred?.id ?? null,
-        warnings: [...discovery.warnings, ...(catalogue.error ? [catalogue.error] : []), ...(obi?.warning ? [obi.warning] : [])], observedAt: Date.now() });
+        warnings, observedAt: Date.now() });
       setComparisonQuery(product.trim()); setComparisonMaterial(preferred);
       setQuery(product.trim()); setFilterIds(preferred ? [preferred.id] : searchMaterialCatalog(comparisonCatalog, product).map((item) => item.id));
       setChain("all"); setSort("distance"); setOfferLimit(24); setSuggestions([]);
@@ -129,18 +135,19 @@ export default function Finder() {
       window.requestAnimationFrame(() => { if (current()) document.getElementById("results")?.scrollIntoView({ behavior: "smooth", block: "start" }); });
     } catch (error) {
       if (!current()) return;
-      setResult(null); setStatus(error instanceof Error ? error.message : "Die Suche konnte nicht abgeschlossen werden. Bitte versuche es erneut.");
+      console.warn("Baumarktfinder search failed", error);
+      setResult(null); setStatus("Die Suche ist gerade nicht verfügbar. Bitte prüfe deine Adresse und versuche es erneut.");
       setFailedSearch({ address: coordinates ? `${coordinates.lat},${coordinates.lng}` : address.trim(), product: product.trim() });
     } finally { if (current()) { busy.current = false; setLoading(false); setPendingKey(""); } }
   }
-  const stores = result ? [...result.stores].sort((a, b) => a.airDistanceMeters - b.airDistanceMeters) : [];
+  const stores = result ? [...result.stores].sort((a, b) => a.distanceMeters - b.distanceMeters || a.airDistanceMeters - b.airDistanceMeters) : [];
   const chains = [...new Set(stores.map((store) => store.id))];
   const matchingOffers = result ? filterCatalog(result.offers, stores, query, chain, filterIds) : [];
   const comparable = matchingOffers.length > 0 && new Set(matchingOffers.map((offer) => offer.material_id)).size === 1;
   const offers = [...matchingOffers].sort((a, b) => {
     if (sort === "price" && comparable) return a.price - b.price;
     if (sort === "name") return a.product_name.localeCompare(b.product_name, "de");
-    return (closestBranch(stores, a.store_id)?.airDistanceMeters ?? Infinity) - (closestBranch(stores, b.store_id)?.airDistanceMeters ?? Infinity) || a.product_name.localeCompare(b.product_name, "de");
+    return (closestBranch(stores, a.store_id)?.distanceMeters ?? Infinity) - (closestBranch(stores, b.store_id)?.distanceMeters ?? Infinity) || a.product_name.localeCompare(b.product_name, "de");
   });
   function browseChain(id: ChainId) { setChain(id); setOfferLimit(24); document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth", block: "start" }); }
 
@@ -150,19 +157,19 @@ export default function Finder() {
       <nav className="nav" aria-label="Hauptnavigation"><a href="#search">Märkte & Material</a><a href="#about">So funktioniert’s</a><span className="countryLabel">Deutschland</span></nav>
     </header>
     <section className="hero" id="search" aria-label="Baumärkte und Material suchen">
-      <div className="heroCopy"><div className="eyebrow">DEINE ADRESSE. DEINE BAUMÄRKTE.</div><h1>Material finden.<br />Ganz in deiner Nähe.</h1><p>Gib deine Adresse ein. Wir finden die nächsten Baumärkte und zeigen dir ihre erfassten Materialien. Du kannst auch direkt nach einem Produkt suchen.</p></div>
+      <div className="heroCopy"><div className="eyebrow">DEINE ADRESSE. DEINE BAUMÄRKTE.</div><h1>Baumarktpreise in deiner Nähe vergleichen</h1><p>Material suchen, Packungspreise naher Baumärkte vergleichen und mit Entfernung, Fahrzeit und Route zum passenden Angebot.</p></div>
       <div className="heroVisual"><Image src="/Material.hero.png" alt="Baumaterialien für dein Projekt" width={520} height={330} priority unoptimized /></div>
       <form onSubmit={handleSearch} className="searchPanel" aria-busy={loading}>
         <div className="locationField">
           <GoogleAddressInput value={address} disabled={locationLoading} hint={addressError}
-            onChange={(value) => { setAddress(value); setAddressSelection(null); setCoordinates(null); }}
-            onSelect={(item) => { setAddress(item.address); setAddressSelection(item); setCoordinates(item.location); setAddressError(""); setGoogleUnavailable(false); }}
+            onChange={(value) => { clearSearch(); setAddress(value); setAddressSelection(null); setCoordinates(null); }}
+            onSelect={(item) => { clearSearch(); setAddress(item.address); setAddressSelection(item); setCoordinates(item.location); setAddressError(""); setGoogleUnavailable(false); }}
             onPendingChange={(pending) => { addressBusy.current = pending; setAddressPending(pending); }}
             onReady={() => { setAddressError(""); setGoogleUnavailable(false); }}
-            onError={(error) => { googleRetryAt.current = Date.now() + 60_000; setGoogleUnavailable(true); setAddressError(getAddressSuggestionError(error)); }} />
+            onError={(error) => { console.warn("Baumarktfinder address suggestions", error); googleRetryAt.current = Date.now() + 60_000; setGoogleUnavailable(true); setAddressError("Adressvorschläge sind gerade nicht verfügbar. Bitte gib deine vollständige Adresse ein."); }} />
           <button type="button" className="currentLocationButton" disabled={loading || locationLoading || addressPending} onClick={useCurrentLocation}><span aria-hidden="true">⌖</span>{locationLoading ? "Standort wird ermittelt …" : "Meinen aktuellen Standort verwenden"}</button>
         </div>
-        <SuggestionInput id="material" label="MATERIAL (OPTIONAL)" placeholder="Leer lassen für alle erfassten Materialien" value={product} suggestions={suggestions} disabled={locationLoading}
+        <SuggestionInput id="material" label="MATERIAL" placeholder="z. B. Rigips, Uniflott oder Acryl" value={product} suggestions={suggestions} disabled={locationLoading}
           onChange={changeMaterial} onSelect={(item) => { changeMaterial(item.label); setSelectedMaterial(item); }} />
         <button className="searchButton" disabled={(loading && pendingKey === searchKey) || locationLoading || addressPending} type="submit">{loading && pendingKey === searchKey ? "Suche läuft …" : addressPending ? "Adresse wird geprüft …" : "Suchen"}</button>
       </form>
@@ -173,8 +180,7 @@ export default function Finder() {
     {loading && <SearchLoading />}
     {!loading && result && <section className="resultsSection" id="results" aria-label="Suchergebnisse" aria-busy={loading}>
       <div className="sectionHeading"><div><span className="eyebrow">RUND UM DEINE ADRESSE</span><h2>Deine nächsten Baumärkte</h2><p className="originLabel">Ausgangspunkt: {result.origin.address}</p></div><span className="resultCount">{stores.length} Märkte · {chains.length} Händler</span></div>
-      {result.warnings.length > 0 && <div className="resultWarnings" role="status">{[...new Set(result.warnings)].map((warning, index) => <p key={index}>{warning}</p>)}</div>}
-      {stores.length > 0 && <p className="comparisonNote">Nach Luftlinie sortiert · bis zu 15 Märkte im Umkreis von 35 km · OBI, BAUHAUS, HORNBACH, toom, hagebau, Globus und HELLWEG</p>}
+      {stores.length > 0 && <p className="comparisonNote distanceNote">Nach Entfernung sortiert{stores.some(store => store.routeStatus === "unavailable") ? " · ohne Route ist die Luftlinie gekennzeichnet" : " · Fahrstrecke zur Filiale"}</p>}
       {comparisonQuery && stores.length > 0 ? <>
         <div className="comparisonSelection">
           <label htmlFor="comparison-material">Wunschprodukt / Vergleichsgröße</label>
@@ -211,8 +217,8 @@ export default function Finder() {
     <section className="benefits" id="about" aria-label="So funktioniert Baumarktfinder">
       <div><strong aria-hidden="true">1</strong><span><b>Adresse eingeben</b>Oder deinen Standort verwenden</span></div>
       <div><strong aria-hidden="true">2</strong><span><b>Märkte entdecken</b>Die nächsten Filialen im Überblick</span></div>
-      <div><strong aria-hidden="true">3</strong><span><b>Material durchstöbern</b>Erfasste Angebote aller nahen Händler</span></div>
-      <div><strong aria-hidden="true">4</strong><span><b>Zum Händler oder zur Route</b>Mit Preisquelle und Prüfzeitpunkt</span></div>
+      <div><strong aria-hidden="true">3</strong><span><b>Materialpreise vergleichen</b>Produkt und tatsächliche Packung im Blick</span></div>
+      <div><strong aria-hidden="true">4</strong><span><b>Angebot und Route öffnen</b>Entfernung und Fahrzeit zur Filiale sehen</span></div>
     </section>
     <footer className="footer"><span>BAUMARKTFINDER · Deutschland</span><p>Für die Suche wird deine Adresse bzw. dein Standort an Google oder OpenStreetMap (Nominatim/Overpass) übermittelt. Routenlinks öffnen Google Maps.</p></footer>
   </main>;

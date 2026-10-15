@@ -1,9 +1,8 @@
 import "./globals.css";
+import { serializeStructuredData, siteMetadata, siteStructuredData, siteViewport } from "./seo";
 
-export const metadata = {
-  title: "Baumarktfinder – Material und Baumärkte in Deutschland",
-  description: "Vergleiche gleiche Baumaterialien, geprüfte Händlerpreise und Fahrzeiten zu Baumärkten in Deutschland.",
-};
+export const metadata = siteMetadata;
+export const viewport = siteViewport;
 
 export default function RootLayout({
   children,
@@ -12,7 +11,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(siteStructuredData) }} />
+        {children}
+      </body>
     </html>
   );
 }

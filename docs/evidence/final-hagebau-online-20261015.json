@@ -1,0 +1,690 @@
+[
+  {
+    "url": "https://www.hagebau.de/p/soudal-maler-acryl-anP01906205/",
+    "checked_at": "2026-10-15T17:22:37.371Z",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": true,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-21T19:22:35.786610905",
+      "minDeliveryTime": "2026-10-19T19:22:35.786610905",
+      "statusOnline": "available",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 10
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-soudal/",
+        "name": "SOUDAL"
+      },
+      "categoryId": "241877259",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "deliverySystemType": "KEP",
+      "ean": "5411183087255",
+      "estimatedDeliveryDateMax": "2026-10-21",
+      "estimatedDeliveryDateMin": "2026-10-19",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "581382",
+      "highlightUnitPrice": false,
+      "id": "P01906205",
+      "inCart": false,
+      "itemId": "1204102",
+      "itemType": "MIXED",
+      "name": "Maler-Acryl, 300 ml, weiß",
+      "number": "1204102",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "ONLINE",
+        "freeShipping": {
+          "displayValue": "50,00 €",
+          "value": 50,
+          "currency": "EUR"
+        },
+        "isFromPrice": false,
+        "onlinePrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "4,84 €",
+            "value": 4.84,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "16,13 €",
+              "value": 16.13,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "4,99 €",
+            "value": 4.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "16,63 €",
+              "value": 16.63,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        },
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "4,84 €",
+            "value": 4.84,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "16,13 €",
+              "value": 16.13,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "4,99 €",
+            "value": 4.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "16,63 €",
+              "value": 16.63,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "4,84 €",
+            "value": 4.84,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "16,13 €",
+              "value": 16.13,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "4,99 €",
+            "value": 4.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "16,63 €",
+              "value": 16.63,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingAmount": {
+        "displayValue": "4,95 €",
+        "value": 4.95,
+        "currency": "EUR"
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 3,
+      "shippingType": "klein_handlich",
+      "shortDescription": "Maler-Acryl, 300 ml, weiß",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1204102&productId=P01906205&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "06030199",
+        "values": [
+          "06030199"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite (mm, netto) - Artikelmaß",
+        "value": "52292 mm",
+        "values": [
+          "52292 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Höhe (mm, netto) - Artikelmaß",
+        "value": "232 mm",
+        "values": [
+          "232 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Inhalt (Stk.) pro Karton",
+        "value": "1",
+        "values": [
+          "1"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge (mm, netto) - Artikelmaß",
+        "value": "52292 mm",
+        "values": [
+          "52292 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialbasis",
+        "value": "Acrylatdispersions-Basis",
+        "values": [
+          "Acrylatdispersions-Basis"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "weiß",
+        "values": [
+          "weiß"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "5 - KT einfach",
+        "values": [
+          "5 - KT einfach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Ja",
+        "values": [
+          "Ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gefahrgut Menge",
+        "value": "0.31",
+        "values": [
+          "0.31"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "3 - Warm (frostsicher)",
+        "values": [
+          "3 - Warm (frostsicher)"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "1-lagig",
+        "values": [
+          "1-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Materialmix",
+        "values": [
+          "Materialmix"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "10 - Karton",
+        "values": [
+          "10 - Karton"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Maleracryl",
+        "values": [
+          "Maleracryl"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "weiss",
+        "values": [
+          "weiss"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 3",
+        "value": "300ml",
+        "values": [
+          "300ml"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "300 ml, weiß",
+        "values": [
+          "300 ml, weiß"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "SOUDAL",
+          "@type": "Brand"
+        },
+        "category": "Maleracryl",
+        "color": "weiß",
+        "description": "SOUDAL Maler-Acryl, Hochwertiger, plastoelastischer, einkomponentiger Malerdichtstoff auf Acrylatdispersions-Basis, Sehr gut verarbeitbar, Überstreichbar, Lösemittel- und silikonfrei, Sehr emissionsarm",
+        "gtin13": "5411183087255",
+        "image": "https://image.hagebau.de/pdp_main/17286789.jpg",
+        "name": "Maler-Acryl",
+        "offers": {
+          "availability": "https://schema.org/InStock",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 4.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "transitTime": {
+                "maxValue": 5,
+                "minValue": 3,
+                "@type": "QuantitativeValue",
+                "unitCode": "d"
+              }
+            },
+            "shippingDestination": {
+              "addressCountry": "DE",
+              "@type": "DefinedRegion"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "currency": "EUR",
+              "value": 4.95
+            }
+          },
+          "url": "https://www.hagebau.de/p/soudal-maler-acryl-300-ml-weiss-anV1204102/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1204102",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "url": "https://www.hagebau.de/p/kwb-schleifgitter-grau-koernung-225-220-mm-anP7000121187/",
+    "checked_at": "2026-10-15T17:22:39.372Z",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": true,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-21T19:22:37.806324003",
+      "minDeliveryTime": "2026-10-19T19:22:37.806324003",
+      "statusOnline": "available",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 5
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-kwb/",
+        "name": "KWB"
+      },
+      "categoryId": "237354122",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "deliverySystemType": "KEP",
+      "ean": "4009314915228",
+      "estimatedDeliveryDateMax": "2026-10-21",
+      "estimatedDeliveryDateMin": "2026-10-19",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "45360570",
+      "highlightUnitPrice": false,
+      "id": "P7000121187",
+      "inCart": false,
+      "itemId": "1137563",
+      "itemType": "MIXED",
+      "manufacturerEmail": "info@kwb.eu",
+      "manufacturerName": "kwb Germany GmbH",
+      "manufacturerPostalAddress": "kwb Germany GmbH, Hauptstraße 132, 28816 Stuhr (DE)",
+      "manufacturerWebsite": "www.kwb.eu",
+      "name": "Schleifgitter, Grau, Körnung 225, 220 mm",
+      "number": "1137563",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "ONLINE",
+        "freeShipping": {
+          "displayValue": "50,00 €",
+          "value": 50,
+          "currency": "EUR"
+        },
+        "isFromPrice": false,
+        "onlinePrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "14,54 €",
+            "value": 14.54,
+            "currency": "EUR"
+          },
+          "displayPrice": {
+            "displayValue": "14,99 €",
+            "value": 14.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false
+        },
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "14,54 €",
+            "value": 14.54,
+            "currency": "EUR"
+          },
+          "displayPrice": {
+            "displayValue": "14,99 €",
+            "value": 14.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "14,54 €",
+            "value": 14.54,
+            "currency": "EUR"
+          },
+          "displayPrice": {
+            "displayValue": "14,99 €",
+            "value": 14.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingAmount": {
+        "displayValue": "4,95 €",
+        "value": 4.95,
+        "currency": "EUR"
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 3,
+      "shippingType": "klein_handlich",
+      "shortDescription": "Schleifgitter, Grau, Körnung 225, 220 mm",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1137563&productId=P7000121187&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Basic (ALT)",
+        "values": [
+          "Basic (ALT)"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "grau",
+        "values": [
+          "grau"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Naturmaterial",
+        "values": [
+          "Naturmaterial"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Quick-Stick Scheiben Gitterleinen",
+        "values": [
+          "Quick-Stick Scheiben Gitterleinen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "K225 220 SB",
+        "values": [
+          "K225 220 SB"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "KWB",
+          "@type": "Brand"
+        },
+        "category": "Zubehör Schleifen",
+        "color": "grau",
+        "description": "KWB Schleifgitter, Grau, Körnung 225, 220 mm, ideal für Langhals-Schleifer, Schleif-Giraffen, Trockenbau-Schleifer, das Schleifblatt eignet sich ideal zum Glätten von Spachtelmasse und Unebenheiten, 4-fache Lebensdauer gegenüber handelsüblichem Korund-Schleifpapier, zum Entfernen von Farbe, Kunstharzlack, Acryllack und Rost etc.",
+        "gtin13": "4009314915228",
+        "image": "https://image.hagebau.de/pdp_main/1000000000128083.jpg",
+        "name": "Schleifgitter, Grau, Körnung 225, 220 mm",
+        "offers": {
+          "availability": "https://schema.org/InStock",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 14.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "transitTime": {
+                "maxValue": 5,
+                "minValue": 3,
+                "@type": "QuantitativeValue",
+                "unitCode": "d"
+              }
+            },
+            "shippingDestination": {
+              "addressCountry": "DE",
+              "@type": "DefinedRegion"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "currency": "EUR",
+              "value": 4.95
+            }
+          },
+          "url": "https://www.hagebau.de/p/kwb-schleifgitter-grau-koernung-225-220-mm-anV1137563/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1137563",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  }
+]

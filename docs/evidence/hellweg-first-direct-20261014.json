@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-14T11:06:20.629Z",
+  "store_id": "hellweg",
+  "attempt": {
+    "method": "existing createShopReader().readProduct",
+    "url": "https://www.hellweg.de/a/spachtelmasse-uniflott-25-kg-258021",
+    "result": "robots-unavailable",
+    "detail": "robots-invalid"
+  },
+  "browser": {
+    "provider": "cua",
+    "result": "iab unavailable; inventory apps=[] and browsers=[]"
+  },
+  "official_web_observations": [
+    {
+      "key": "acryl",
+      "product_url": "https://www.hellweg.de/a/vincent-maler-acryl-weiss-310-ml-114549",
+      "source_reference": "turn262search0; turn262search13",
+      "status": "blocked_official_catalog_unavailable"
+    },
+    {
+      "key": "armierungsgewebe",
+      "product_url": "https://www.hellweg.de/a/lugato-neu-auf-alt-gewebe-10-m-217374",
+      "source_reference": "turn276view2",
+      "status": "blocked_official_catalog_unavailable"
+    },
+    {
+      "key": "cd-profil",
+      "product_url": "https://www.hellweg.de/a/knauf-cd-profil-60-x-27-x-06-mm-3-10-m-111748",
+      "source_reference": "turn264search3; turn276view0",
+      "observed_redirect": "https://www.hellweg.de/",
+      "status": "blocked_official_catalog_unavailable"
+    },
+    {
+      "key": "cw-profil",
+      "product_url": "https://www.hellweg.de/a/cw-db-profil-50-50-0-6-mm-3-00-m-220549",
+      "source_reference": "turn264search5; turn276view1",
+      "observed_redirect": "https://www.hellweg.de/",
+      "status": "blocked_official_catalog_unavailable"
+    },
+    {
+      "key": "direktabhaenger",
+      "product_url": "https://www.hellweg.de/a/direktabhaenger-fuer-cd-profil-125-mm-inhalt-100-st.-111680",
+      "source_reference": "turn264search2",
+      "status": "blocked_official_catalog_unavailable"
+    },
+    {
+      "key": "feuchtraumplatte",
+      "product_url": "https://www.hellweg.de/a/feuchtraumplatte-gruen-200-x-60-cm-111745",
+      "source_reference": "turn267search6; turn276view3",
+      "status": "blocked_official_catalog_unavailable"
+    },
+    {
+      "key": "haftgrund",
+      "product_url": "https://www.hellweg.de/a/mem-haftgrund-super-5-l-267743",
+      "source_reference": "turn267search3",
+      "status": "blocked_official_catalog_unavailable"
+    },
+    {
+      "key": "perlfix",
+      "product_url": "https://www.hellweg.de/a/knauf-ansetzgips-perlfix-25-kg-220541",
+      "source_reference": "turn267search1",
+      "status": "blocked_official_catalog_unavailable"
+    },
+    {
+      "key": "rotband",
+      "product_url": null,
+      "source_reference": "turn267search12; turn269search0",
+      "status": "blocked_official_catalog_unavailable"
+    },
+    {
+      "key": "uniflott",
+      "product_url": "https://www.hellweg.de/a/spachtelmasse-uniflott-25-kg-258021",
+      "source_reference": "turn262search5",
+      "status": "blocked_official_catalog_unavailable"
+    }
+  ],
+  "verified_current_prices": 0,
+  "reason": "Official current catalog unavailable. No price was inferred from search filters, historic prices, other stores or unit prices."
+}

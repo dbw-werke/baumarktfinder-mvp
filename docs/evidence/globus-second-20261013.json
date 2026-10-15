@@ -1,0 +1,217 @@
+[
+  {
+    "key": "pu-schaum",
+    "material_slug": "pu-schaum-1k-750ml-v1",
+    "store_id": "globus",
+    "product_name": "Primaster PU-Montageschaum 1K 750 ml",
+    "product_url": "https://www.globus-baumarkt.de/p/primaster-pu-montageschaum-1k-750-ml-0779050647/",
+    "price": 11.29,
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 0.75,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T18:59:43.891Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "volume_l": 0.75,
+      "type": "pu-schaum"
+    },
+    "verification_note": "Official same-product JSON-LD Offer selling price; whole named container, not unit-price conversion. Product purpose and actual package checked against own product description.",
+    "evidence_method": "official_product_json_ld"
+  },
+  {
+    "key": "rollputz",
+    "material_slug": "rollputz-12kg-v1",
+    "store_id": "globus",
+    "product_name": "Alpina Rollputz 12 kg 0,5 mm Körnung weiß",
+    "product_url": "https://www.globus-baumarkt.de/p/alpina-rollputz-12-kg-0-5-mm-koernung-weiss-0765054403/",
+    "price": 29.89,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 12,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T18:59:45.723Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "weight_kg": 12,
+      "color": "weiss",
+      "type": "rollputz"
+    },
+    "verification_note": "Official same-product JSON-LD Offer selling price; whole named container, not unit-price conversion. Product purpose and actual package checked against own product description.",
+    "evidence_method": "official_product_json_ld"
+  },
+  {
+    "key": "schnellbauschrauben",
+    "material_slug": "tn-3-5-25-1000-v1",
+    "store_id": "globus",
+    "product_name": "Connex Schnellbauschrauben 3,5 x 25 mm, PH 2, 1000 Stück",
+    "product_url": "https://www.globus-baumarkt.de/p/connex-schnellbauschrauben-3-5-x-25-mm-ph-2-1000-stueck-0763026038/",
+    "price": 19.39,
+    "currency": "EUR",
+    "base_unit": "piece",
+    "package_quantity": 1000,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T19:01:29.693Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "length_mm": 25,
+      "diameter_mm": 3.5,
+      "pieces": 1000,
+      "type": "tn"
+    },
+    "verification_note": "Official product:price and same-SKU onEventDataLayer item.price agree. Actual package independently identified by own product details. Ecommerce aggregate value is stale for discounted products and not used. JSON-LD unit price not used.",
+    "evidence_method": "manual_official_product_metadata_and_same_sku_selling_state"
+  },
+  {
+    "key": "gipskarton",
+    "material_slug": "gipskarton-standard-12-5-2000-1250-v1",
+    "store_id": "globus",
+    "product_name": "Knauf Gipskarton-Bauplatte GKB 200 x 125 cm 12,5 mm",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-gipskarton-bauplatte-gkb-200-x-125-cm-12-5-mm-0779250144/",
+    "price": 9.98,
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 2.5,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T19:01:29.698Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "length_mm": 2000,
+      "width_mm": 1250,
+      "thickness_mm": 12.5,
+      "area_m2": 2.5,
+      "type": "standard"
+    },
+    "verification_note": "Official product:price and same-SKU onEventDataLayer item.price agree. Actual package independently identified by own product details. Ecommerce aggregate value is stale for discounted products and not used. JSON-LD unit price not used.",
+    "evidence_method": "manual_official_product_metadata_and_same_sku_selling_state"
+  },
+  {
+    "key": "silikon",
+    "material_slug": "sanitaer-silikon-weiss-310ml-v1",
+    "store_id": "globus",
+    "product_name": "Primaster Sanitär Silikon weiß 310 ml",
+    "product_url": "https://www.globus-baumarkt.de/p/primaster-sanitaer-silikon-weiss-310-ml-0779052985/",
+    "price": 7.79,
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T18:59:52.271Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "volume_l": 0.31,
+      "color": "weiss",
+      "type": "silikon"
+    },
+    "verification_note": "Official same-product JSON-LD Offer selling price; whole named container, not unit-price conversion. Product purpose and actual package checked against own product description.",
+    "evidence_method": "official_product_json_ld"
+  },
+  {
+    "key": "sockelputz",
+    "material_slug": "sockelputz-30kg-v1",
+    "store_id": "globus",
+    "product_name": "SAKRET Sockelputz 30 kg Sack",
+    "product_url": "https://www.globus-baumarkt.de/p/sakret-sockelputz-30-kg-sack-0779100867/",
+    "price": 13.49,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T18:59:53.904Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "weight_kg": 30,
+      "type": "sockelputz"
+    },
+    "verification_note": "Official same-product JSON-LD Offer selling price; whole named container, not unit-price conversion. Product purpose and actual package checked against own product description.",
+    "evidence_method": "official_product_json_ld"
+  },
+  {
+    "key": "mineralwolle",
+    "material_slug": "steinwolle-sonorock-040-40-7-5m2-v1",
+    "store_id": "globus",
+    "product_name": "Rockwool Trennwandplatte Sonorock Steinwolle WLG 040",
+    "product_url": "https://www.globus-baumarkt.de/p/rockwool-trennwandplatte-sonorock-steinwolle-wlg-040-0779200121/",
+    "price": 32.18,
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 7.5,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T19:01:29.702Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "length_mm": 1000,
+      "width_mm": 625,
+      "thickness_mm": 40,
+      "area_m2": 7.5,
+      "pieces": 12,
+      "thermal_conductivity": 0.04,
+      "type": "steinwolle-trennwandplatte"
+    },
+    "verification_note": "Official product:price and same-SKU onEventDataLayer item.price agree. Actual package independently identified by own product details. Ecommerce aggregate value is stale for discounted products and not used. JSON-LD unit price not used.",
+    "evidence_method": "manual_official_product_metadata_and_same_sku_selling_state"
+  },
+  {
+    "key": "uw-profil",
+    "material_slug": "uw50-40-2000-v1",
+    "store_id": "globus",
+    "product_name": "Knauf UW-db-Rahmenprofil 2000 x 50 x 40 mm",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-uw-db-rahmenprofil-2000-x-50-x-40-mm-0779250656/",
+    "price": 4.49,
+    "currency": "EUR",
+    "base_unit": "m",
+    "package_quantity": 2,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T19:01:29.705Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "length_mm": 2000,
+      "width_mm": 50,
+      "height_mm": 40,
+      "profile": "uw",
+      "type": "uw-profil"
+    },
+    "verification_note": "Official product:price and same-SKU onEventDataLayer item.price agree. Actual package independently identified by own product details. Ecommerce aggregate value is stale for discounted products and not used. JSON-LD unit price not used.",
+    "evidence_method": "manual_official_product_metadata_and_same_sku_selling_state"
+  },
+  {
+    "key": "zement",
+    "material_slug": "zement-25kg-v1",
+    "store_id": "globus",
+    "product_name": "Zement CEM II grau, 25 kg",
+    "product_url": "https://www.globus-baumarkt.de/p/zement-cem-ii-grau-25-kg-0779100292/",
+    "price": 5.25,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T18:59:59.860Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "weight_kg": 25,
+      "type": "zement"
+    },
+    "verification_note": "Official same-product JSON-LD Offer selling price; whole named container, not unit-price conversion. Product purpose and actual package checked against own product description.",
+    "evidence_method": "official_product_json_ld"
+  },
+  {
+    "key": "tiefengrund",
+    "material_slug": "knauf-tiefengrund-5l-v1",
+    "store_id": "globus",
+    "product_name": "Knauf Tiefengrund 5 l",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-tiefengrund-5-l-0779050059/",
+    "price": 31.45,
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 5,
+    "price_basis": "package",
+    "checked_at": "2026-10-13T19:00:02.069Z",
+    "source": "manual_verified",
+    "observed_specs": {
+      "volume_l": 5,
+      "type": "tiefengrund"
+    },
+    "verification_note": "Official same-product JSON-LD Offer selling price; whole named container, not unit-price conversion. Product purpose and actual package checked against own product description.",
+    "evidence_method": "official_product_json_ld"
+  }
+]

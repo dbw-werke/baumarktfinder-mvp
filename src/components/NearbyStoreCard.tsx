@@ -9,9 +9,9 @@ export default function NearbyStoreCard({ store, origin, count, query, highlight
   store: RoutedStore; origin: ResolvedAddress; count: number; query: string; highlighted: boolean; onBrowse: () => void;
 }) {
   return <article className={`offerCard nearbyStoreCard ${highlighted ? "nearestCard" : ""}`}>
-    {highlighted && <span className="nearestBadge">Nächster Markt nach Luftlinie</span>}
+    {highlighted && <span className="nearestBadge">Nächste Filiale</span>}
     <div className="logoArea"><Image src={CHAINS[store.id].logo} alt={CHAINS[store.id].name} width={160} height={65} unoptimized /></div>
-    <h3>{store.name}</h3><p className="storeAddress">{store.address}{store.addressIncomplete && <><br /><small>Straßenadresse unvollständig · Route nutzt den Kartenstandort.</small></>}</p>
+    <h3 title={store.name}>{store.name}</h3><p className="storeAddress" title={store.address}>{store.address}{store.addressIncomplete && <><br /><small>Straßenadresse unvollständig · Route nutzt den Kartenstandort.</small></>}</p>
     <div className="distancePlaceholder">⌖ {store.routeStatus === "unavailable" ? store.distance : `${store.distance} · ${store.duration}`}</div>
     <p className="routeDetail">{store.routeStatus === "unavailable" ? "Entfernung als Luftlinie" : store.routeStatus === "traffic" ? "Fahrzeit mit aktueller Verkehrslage" : "Fahrzeit ohne aktuelle Verkehrslage"}</p>
     <div className="catalogAvailability"><b>{count} {count === 1 ? "geprüftes Angebot" : "geprüfte Angebote"}</b><p>{count ? "Onlinepreise der Kette · Filialbestand bitte beim Händler prüfen." : "Das Sortiment findest du direkt beim Händler. Hier liegen noch keine passenden geprüften Preise vor."}</p></div>

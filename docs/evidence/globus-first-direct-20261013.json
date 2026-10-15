@@ -1,0 +1,859 @@
+[
+  {
+    "key": "acryl",
+    "material_slug": "acryl-weiss-310ml-v1",
+    "url": "https://www.globus-baumarkt.de/p/acryl-weiss-310-ml-0779051109/",
+    "products": [
+      {
+        "name": "Acryl weiß 310 ml",
+        "url": "https://www.globus-baumarkt.de/p/acryl-weiss-310-ml-0779051109/",
+        "price": 1.99,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "json-ld-offer",
+        "availability": "InStock",
+        "brand": "Weitere",
+        "category": null,
+        "description": "Elastoplastisches Acryl zum Abdichten von Fugen mit geringer Dehnung. Einsatzbereich: InnenAnwendungsbereich: Abdichten von Fugen, MaueranschlüssenInhalt: 310 mlFarbe: weißMaterialbasis: AcryldispersionHautbildung nach: ca. 10 - 15 MinutenAushärtung: ca. 1 bis 2 mm/Tag_Verbrauch: ca. Fuge von 5 x 5 mm ca. 12 m Reichweite; 7 x 7 mm Fuge ca. 6 m Reichweite; 10 x 10 mm Fuge ca. 3 m ReichweiteVerarbeitungstemperatur: +5°C bis +35°C Temperaturbeständigkeit: -25°C bis +80°CGeeignet für: Beton, Porenbeton, Gipskarton, Putz, Mauerwerk, Faserzement, Fensterbänke uvm.Nicht geeignet für: Aquarien, Unterwasserfugen, Natursteinen, bitumenhaltigen, organischen, weichmacher abgebenden Elastomeren, Neopren, Isolier- und SchwarzanstrichenWeitere Eigenschaften: überstreichbar, lösemittelfreiHerstellerinformationen: Bostik GmbH Niederlassung MEM | Am Emsdeich 52 | 26789 Leer, Deutschland | eMail: mem.service@bostik.com | Herstellernr. 30612495",
+        "attributes": [],
+        "externalId": "0779051109",
+        "observedSpecs": {},
+        "soldIndividually": true,
+        "retrievedAt": "2026-10-13T18:59:06.381Z"
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/acryl-weiss-310-ml-0779051109/\"/>",
+      "<meta property=\"og:title\" content=\"Acryl weiß 310 ml kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"1,99 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/acryl-weiss-310-ml-0779051109/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 1.99,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "Weitere",
+            "discount": "",
+            "price": 1.99,
+            "item_name": "Acryl weiß 310 ml",
+            "item_variant": "",
+            "item_category5": "Main Globus",
+            "item_id": "GLO779051109",
+            "item_category3": "Fliesen &amp; Baustoffe",
+            "coupon": "",
+            "item_category": "Silikon &amp; Acryl",
+            "location_id": "",
+            "item_category2": "Bauchemie",
+            "affiliation": "",
+            "item_category4": "Sortiment",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Elastoplastisches Acryl zum Abdichten von Fugen mit geringer Dehnung.</p></div>\n\n                                                                            <ul><li>Einsatzbereich: Innen</li><li>Anwendungsbereich: Abdichten von Fugen, Maueranschlüssen</li><li>Inhalt: 310 ml</li><li>Farbe: weiß</li><li>Materialbasis: Acryldispersion</li><li>Hautbildung nach: ca. 10 - 15 Minuten</li><li>Aushärtung: ca. 1 bis 2 mm/Tag_Verbrauch: ca. Fuge von 5 x 5 mm ca. 12 m Reichweite; 7 x 7 mm Fuge ca. 6 m Reichweite; 10 x 10 mm Fuge ca. 3 m Reichweite</li><li>Verarbeitungstemperatur: +5°C bis +35°C Temperaturbeständigkeit: -25°C bis +80°C</li><li>Geeignet für: Beton, Porenbeton, Gipskarton, Putz, Mauerwerk, Faserzement, Fensterbänke uvm.</li><li>Nicht geeignet für: Aquarien, Unterwasserfugen, Natursteinen, bitumenhaltigen, organischen, weichmacher abgebenden Elastomeren, Neopren, Isolier- und Schwarzanstrichen</li><li>Weitere Eigenschaften: überstreichbar, lösemittelfrei</li><li>Herstellerinformationen: Bostik GmbH Niederlassung MEM | Am Emsdeich 52 | 26789 Leer, Deutschland | eMail: mem.service@bostik.com | Herstellernr. 30612495</li>",
+    "checked_at": "2026-10-13T18:59:06.384Z"
+  },
+  {
+    "key": "armierungsgewebe",
+    "material_slug": "armierungsgewebe-165-1000-10000-v1",
+    "url": "https://www.globus-baumarkt.de/p/knauf-armierungsgewebe-10-x-1-m-10-m2-maschenweite-5-x-5-mm-0779250266/",
+    "products": [
+      {
+        "name": "Knauf Armierungsgewebe 10 x 1 m = 10 m² Maschenweite: 5 x 5 mm",
+        "url": "https://www.globus-baumarkt.de/p/knauf-armierungsgewebe-10-x-1-m-10-m2-maschenweite-5-x-5-mm-0779250266/",
+        "price": 32.99,
+        "currency": "EUR",
+        "priceBasis": null,
+        "priceSource": "json-ld-offer",
+        "availability": "OnlineOnly",
+        "brand": "Knauf",
+        "category": null,
+        "description": "Das Knauf Armierungsgewebe dient als dauerelastisches Putzträgergewebe für das Aufziehen von Grundputzen auf labilen Untergründen an Wand und Decke im Innen- und Außenbereich. Zudem werden Spannungen beim Auftrag von Spachtelmassen ausgeglichen sowie Untergrundbewegungen aufgenommen. Einsatzbereich: Innen und AußenAnwendungsbereich: Wand und DeckeMaß: 10 x 1 mMaschenweite: 5 x 5 mmInhalt: 10 m²Farbe: blauMaterial: Glasfaser-GittermatteFlächengewicht: 165 g/m²Anwendung: für das Aufziehen von Grundputzen auf labilen Untergründen, Ausgleich von Spannungen, Aufnahme von UntergrundbewegungenWeitere Eigenschaften: dauerelastisch, optimale VerankerungHerstellerinformationen: Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 5797",
+        "attributes": [],
+        "externalId": "0779250266",
+        "observedSpecs": {},
+        "soldIndividually": true,
+        "retrievedAt": "2026-10-13T19:00:07.545Z"
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/knauf-armierungsgewebe-10-x-1-m-10-m2-maschenweite-5-x-5-mm-0779250266/\"/>",
+      "<meta property=\"og:title\" content=\"Knauf Armierungsgewebe 10 x 1 m = 10 m² Maschenweite: 5 x 5 mm kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"32,99 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/knauf-armierungsgewebe-10-x-1-m-10-m2-maschenweite-5-x-5-mm-0779250266/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 32.99,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "Knauf",
+            "discount": "",
+            "price": 32.99,
+            "item_name": "Knauf Armierungsgewebe 10 x 1 m = 10 m² Maschenweite: 5 x 5 mm",
+            "item_variant": "10 m/Rolle",
+            "item_category5": "Sortiment",
+            "item_id": "GLO779250266",
+            "item_category3": "Rohbau",
+            "coupon": "",
+            "item_category": "Armierungsgewebe",
+            "location_id": "",
+            "item_category2": "Armierung",
+            "affiliation": "",
+            "item_category4": "Fliesen &amp; Baustoffe",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Das Knauf Armierungsgewebe dient als dauerelastisches Putzträgergewebe für das Aufziehen von Grundputzen auf labilen Untergründen an Wand und Decke im Innen- und Außenbereich. Zudem werden Spannungen beim Auftrag von Spachtelmassen ausgeglichen sowie Untergrundbewegungen aufgenommen.</p></div>\n\n                                                                            <ul><li>Einsatzbereich: Innen und Außen</li><li>Anwendungsbereich: Wand und Decke</li><li>Maß: 10 x 1 m</li><li>Maschenweite: 5 x 5 mm</li><li>Inhalt: 10 m²</li><li>Farbe: blau</li><li>Material: Glasfaser-Gittermatte</li><li>Flächengewicht: 165 g/m²</li><li>Anwendung: für das Aufziehen von Grundputzen auf labilen Untergründen, Ausgleich von Spannungen, Aufnahme von Untergrundbewegungen</li><li>Weitere Eigenschaften: dauerelastisch, optimale Verankerung</li><li>Herstellerinformationen: Knauf Bauprodukte GmbH &amp; Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 5797</li>",
+    "checked_at": "2026-10-13T19:00:07.552Z",
+    "rejected_previous": {
+      "url": "https://www.globus-baumarkt.de/p/sakret-armierungsgewebe-10-x-1-m-10-m2-maschenweite-4-x-4-mm-0779250463/",
+      "reason": "SAKRET technical use mainly exterior/WDVS; use Knauf explicitly interior spackle use instead",
+      "products": [
+        {
+          "name": "SAKRET Armierungsgewebe 10 x 1 m = 10 m² Maschenweite: 4 x 4 mm",
+          "url": "https://www.globus-baumarkt.de/p/sakret-armierungsgewebe-10-x-1-m-10-m2-maschenweite-4-x-4-mm-0779250463/",
+          "price": 27.9,
+          "currency": "EUR",
+          "priceBasis": null,
+          "priceSource": "json-ld-offer",
+          "availability": "InStock",
+          "brand": "Sakret",
+          "category": null,
+          "description": "Hinter einem starken Putz steht ein starkes SAKRET Armierungsgewebe. Überall da, wo Du das Armierungsgewebe platzierst, sorgt es für sicheren Halt des folgenden Putzes und verhindert Risse. Da kann noch so dran gezogen werden, das Gewebe wird nicht reißen. Du kannst es perfekt für Wärmedämmverbundsysteme einsetzen, aber genauso gut leistet es seine Arbeit bei anderen Situationen - innen und außen.Wie Du Deinen Putz risssicher machstDas SAKRET Armierungsgewebe hält am besten, wenn Du es schön gemütlich in zwei Schichten Armierungsmörtel (z. B. SAKRET Klebe- und Armierungsmörtel Premium) einbettest. Falten solltest Du dem Gewebe beim Verlegen natürlich nicht verpassen. Achte ansonsten auf die Hinweise in Technischem Merkblatt. Einsatzbereich: AußenAnwendungsbereich: Wand und DeckeMaß: 10 x 1 mMaschenweite: 4 x 4 mmInhalt: 10 m²Farbe: gelbMaterial: Alkaliresistentes GlasfasergewebeFlächengewicht: 165 g/m²Anwendung: für die Fassadendämmung und zur Überarbeitung von Altfassaden, zur Herstellung einer WDVS - Fassade mit SAKRET WärmedämmverbundsystemenWeitere Eigenschaften: hohe Reiß-und ZugfestigkeitHerstellerinformationen: SAKRET Trockenbaustoffe Europa GmbH & Co. KG | Franklinstrasse 14 | 10587 Berlin, DEUTSCHLAND | eMail: info@sakret.de | Herstellernr. 65605019",
+          "attributes": [],
+          "externalId": "0779250463",
+          "observedSpecs": {},
+          "soldIndividually": true,
+          "retrievedAt": "2026-10-13T18:59:08.328Z"
+        }
+      ]
+    }
+  },
+  {
+    "key": "cd-profil",
+    "material_slug": "cd60-27-3100-v1",
+    "url": "https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/",
+    "products": [
+      {
+        "name": "Knauf CD-Deckenprofil 3100 x 60 x 27 mm",
+        "url": "https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/",
+        "externalId": "0779250250",
+        "price": 9.15,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "retailer-product-state",
+        "priceBasisEvidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+        "availability": null,
+        "soldIndividually": true,
+        "observedSpecs": {
+          "pieces": 1
+        },
+        "retrievedAt": "2026-10-13T18:59:10.566Z",
+        "brand": "Knauf",
+        "category": "Deckenprofile > Trockenbauprofile > Trockenbau",
+        "description": "> Das Knauf Deckenprofil CD dient für die Grund- und Traglattung, sowie für die Montage der Metallunterkonstruktion bei Deckenabhängungen im Innenbereich. In Verbindung mit verschiedenen Brandschutzkonstruktionen kann ein Feuerschutz bis F 60 bei Deckenbekleidungen erreicht werden. Durch das Knauf CD-Profil ist eine Deckenabhanghöhe bis 12,5 cm, mit Knauf Direktabhängern und bis zu 75 cm, mit Knauf Draht mit Öse und Knauf Anker-Fix-Schnellabhängern möglich. Anwendungsbereich: Erstellen von abgehängten Decken, als Metallunterkonstruktion bei Deckenabhängung für die Grund- und Traglattung, im Dachgeschossausbau in Verbindung mit Knauf Direktabhänger, zur Beplankung mit Knauf Gipsplatten, zum Einbringen von Dämmstoffen für Schall-/Wärme- und Brandschutz, Innenausbau, Dachgeschossausbau. Einsatzbereich: Innen Anwendungsbereich: Decke Material: Stahlblech verzinkt Maß: 3100 x 60 x 27 mm (L x B x H) Materialstärke:0,6 mm Farbe: silbergrau Ausführung: Deckenprofil Inhalt: 1 Stück Norm: DIN EN 14195 Anwenung: C-förmiges Metallprofil zur Deckenabhängung, als Grund- und Tragprofil Geeignet für: Metallunterkonstruktion bei Deckenabhängungen Weitere Eigenschaften: einfache Verlängerung der Profile mit Knauf Profil-/Multiverbinder, Kantenausprägung CD, ermöglicht Deckenabhängehöhen bis 12,5 cm mit Knauf Direktabhänger und bis zu 75 cm mit Knauf Draht mit Öse und Knauf Anker-Fix-Schnellabhänger Herstellerinformationen: Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 3293",
+        "attributes": [
+          {
+            "name": "Einsatzbereich",
+            "value": "Innen"
+          },
+          {
+            "name": "Anwendungsbereich",
+            "value": "Decke"
+          },
+          {
+            "name": "Material",
+            "value": "Stahlblech verzinkt"
+          },
+          {
+            "name": "Maß",
+            "value": "3100 x 60 x 27 mm (L x B x H)"
+          },
+          {
+            "name": "Materialstärke",
+            "value": "0,6 mm"
+          },
+          {
+            "name": "Farbe",
+            "value": "silbergrau"
+          },
+          {
+            "name": "Ausführung",
+            "value": "Deckenprofil"
+          },
+          {
+            "name": "Inhalt",
+            "value": "1 Stück"
+          },
+          {
+            "name": "Norm",
+            "value": "DIN EN 14195"
+          },
+          {
+            "name": "Anwenung",
+            "value": "C-förmiges Metallprofil zur Deckenabhängung, als Grund- und Tragprofil"
+          },
+          {
+            "name": "Geeignet für",
+            "value": "Metallunterkonstruktion bei Deckenabhängungen"
+          },
+          {
+            "name": "Weitere Eigenschaften",
+            "value": "einfache Verlängerung der Profile mit Knauf Profil-/Multiverbinder, Kantenausprägung CD, ermöglicht Deckenabhängehöhen bis 12,5 cm mit Knauf Direktabhänger und bis zu 75 cm mit Knauf Draht mit Öse und Knauf Anker-Fix-Schnellabhänger"
+          },
+          {
+            "name": "Herstellerinformationen",
+            "value": "Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 3293"
+          }
+        ]
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/\"/>",
+      "<meta property=\"og:title\" content=\"Knauf CD-Deckenprofil 3100 x 60 x 27 mm kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"9,15 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 9.15,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "Knauf",
+            "discount": "",
+            "price": 9.15,
+            "item_name": "Knauf CD-Deckenprofil 3100 x 60 x 27 mm",
+            "item_variant": "",
+            "item_category5": "Sortiment",
+            "item_id": "GLO779250250",
+            "item_category3": "Trockenbau",
+            "coupon": "",
+            "item_category": "Deckenprofile",
+            "location_id": "",
+            "item_category2": "Trockenbauprofile",
+            "affiliation": "",
+            "item_category4": "Fliesen &amp; Baustoffe",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Das Knauf Deckenprofil CD dient für die Grund- und Traglattung, sowie für die Montage der Metallunterkonstruktion bei Deckenabhängungen im Innenbereich. In Verbindung mit verschiedenen Brandschutzkonstruktionen kann ein Feuerschutz bis F 60 bei Deckenbekleidungen erreicht werden. Durch das Knauf CD-Profil ist eine Deckenabhanghöhe bis 12,5 cm, mit Knauf Direktabhängern und bis zu 75 cm, mit Knauf Draht mit Öse und Knauf Anker-Fix-Schnellabhängern möglich. Anwendungsbereich: Erstellen von abgehängten Decken, als Metallunterkonstruktion bei Deckenabhängung für die Grund- und Traglattung, im Dachgeschossausbau in Verbindung mit Knauf Direktabhänger, zur Beplankung mit Knauf Gipsplatten, zum Einbringen von Dämmstoffen für Schall-/Wärme- und Brandschutz, Innenausbau, Dachgeschossausbau.</p></div>\n\n                                                                            <ul><li>Einsatzbereich: Innen</li><li>Anwendungsbereich: Decke</li><li>Material: Stahlblech verzinkt</li><li>Maß: 3100 x 60 x 27 mm (L x B x H)</li><li>Materialstärke:0,6 mm</li><li>Farbe: silbergrau</li><li>Ausführung: Deckenprofil</li><li>Inhalt: 1 Stück</li><li>Norm: DIN EN 14195</li><li>Anwenung: C-förmiges Metallprofil zur Deckenabhängung, als Grund- und Tragprofil</li><li>Geeignet für: Metallunterkonstruktion bei Deckenabhängungen</li><li>Weitere Eigenschaften: einfache Verlängerung der Profile mit Knauf Profil-/Multiverbinder, Kantenausprägung CD, ermöglicht Deckenabhängehöhen bis 12,5 cm mit Knauf Direktabhänger und bis zu 75 cm mit Knauf Draht mit Öse und Knauf Anker-Fix-Schnellabhänger</li><li>Herstellerinformationen: Knauf Bauprodukte GmbH &amp; Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 3293</li>",
+    "checked_at": "2026-10-13T18:59:10.570Z"
+  },
+  {
+    "key": "cw-profil",
+    "material_slug": "cw50-50-2600-v1",
+    "url": "https://www.globus-baumarkt.de/p/knauf-cw-db-staenderprofil-2600-x-50-x-50-mm-0779250244/",
+    "products": [
+      {
+        "name": "Knauf CW-db-Ständerprofil 2600 x 50 x 50 mm",
+        "url": "https://www.globus-baumarkt.de/p/knauf-cw-db-staenderprofil-2600-x-50-x-50-mm-0779250244/",
+        "price": 5.99,
+        "currency": "EUR",
+        "priceBasis": null,
+        "priceSource": "json-ld-offer",
+        "availability": "InStock",
+        "brand": "Knauf",
+        "category": null,
+        "description": "Die Knauf dB-Profile sind ein einheitliches Montage-System für Trennwände und Vorwandinstallationen. Die Knauf Ständerwandprofile CW-dB werden somit immer in Verbindung mit den Knauf Rahmenprofilen UW-dB montiert. Produkteigenschaften: Die Knauf dB-Profile (Knauf CW-dB- und UW-dB-Profil) führen im Verbund zu einer höheren Steifigkeit der Wand, durch die Spezialprägung der Profile besseren Schallschutz: bis 8 dB über DIN-Norm mehr Raumgewinn gegenüber herkömmlicher Bauweise bei gleichbleibender Stabilität und Schallschutz bei gleichzeitig geringerer Wandstärke müheloses Beplanken und stärkere Verschraubung durch werksseitig angebrachte Schraubpunkte kein Verrutschen mehr beim Einstellen in Knauf UW-dB-Rahmenprofile durch Spezialprägung H-förmige Stanzungen für sicheres und schnelles Einziehen von Elektrokabeln. Einsatzbereich: InnenAnwendungsbereich: WandMaterial: Stahlblech verzinktMaß: 2600 x 50 x 50 mm (L x B x H)Materialstärke:0,6 mmFarbe: silbergrauAusführung: StänderprofilInhalt: 1 StückNorm: DIN EN 14195Anwenung: C-förmiges Ständerprofil, das in UW-db-Rahmenprofile eigestellt wirdGeeignet für: Erstellen von Trennwänden, StänderwandkonstruktionWeitere Eigenschaften: ein- oder beidseitig beplankbar, stärkere Verschraubung durch Schraubpunkte, hohe Stabilität, kein Verrutschen durch Spezialprägung, mit H-förmige Stanzungen für Einziehen von Elektrokabeln, besseren Schallschutz bis zu 8 dBHerstellerinformationen: Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 68993",
+        "attributes": [],
+        "externalId": "0779250244",
+        "observedSpecs": {},
+        "soldIndividually": true,
+        "retrievedAt": "2026-10-13T18:59:12.614Z"
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/knauf-cw-db-staenderprofil-2600-x-50-x-50-mm-0779250244/\"/>",
+      "<meta property=\"og:title\" content=\"Knauf CW-db-Ständerprofil 2600 x 50 x 50 mm kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"5,99 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/knauf-cw-db-staenderprofil-2600-x-50-x-50-mm-0779250244/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 6.35,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "Knauf",
+            "discount": "",
+            "price": 5.99,
+            "item_name": "Knauf CW-db-Ständerprofil 2600 x 50 x 50 mm",
+            "item_variant": "",
+            "item_category5": "Sortiment",
+            "item_id": "GLO779250244",
+            "item_category3": "Trockenbau",
+            "coupon": "",
+            "item_category": "Ständerwerke",
+            "location_id": "",
+            "item_category2": "Trockenbauprofile",
+            "affiliation": "",
+            "item_category4": "Fliesen &amp; Baustoffe",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Die Knauf dB-Profile sind ein einheitliches Montage-System für Trennwände und Vorwandinstallationen. Die Knauf Ständerwandprofile CW-dB werden somit immer in Verbindung mit den Knauf Rahmenprofilen UW-dB montiert. Produkteigenschaften: Die Knauf dB-Profile (Knauf CW-dB- und UW-dB-Profil) führen im Verbund zu einer höheren Steifigkeit der Wand, durch die Spezialprägung der Profile besseren Schallschutz: bis 8 dB über DIN-Norm mehr Raumgewinn gegenüber herkömmlicher Bauweise bei gleichbleibender Stabilität und Schallschutz bei gleichzeitig geringerer Wandstärke müheloses Beplanken und stärkere Verschraubung durch werksseitig angebrachte Schraubpunkte kein Verrutschen mehr beim Einstellen in Knauf UW-dB-Rahmenprofile durch Spezialprägung H-förmige Stanzungen für sicheres und schnelles Einziehen von Elektrokabeln.</p></div>\n\n                                                                            <ul><li>Einsatzbereich: Innen</li><li>Anwendungsbereich: Wand</li><li>Material: Stahlblech verzinkt</li><li>Maß: 2600 x 50 x 50 mm (L x B x H)</li><li>Materialstärke:0,6 mm</li><li>Farbe: silbergrau</li><li>Ausführung: Ständerprofil</li><li>Inhalt: 1 Stück</li><li>Norm: DIN EN 14195</li><li>Anwenung: C-förmiges Ständerprofil, das in UW-db-Rahmenprofile eigestellt wird</li><li>Geeignet für: Erstellen von Trennwänden, Ständerwandkonstruktion</li><li>Weitere Eigenschaften: ein- oder beidseitig beplankbar, stärkere Verschraubung durch Schraubpunkte, hohe Stabilität, kein Verrutschen durch Spezialprägung, mit H-förmige Stanzungen für Einziehen von Elektrokabeln, besseren Schallschutz bis zu 8 dB</li><li>Herstellerinformationen: Knauf Bauprodukte GmbH &amp; Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 68993</li>",
+    "checked_at": "2026-10-13T18:59:12.615Z"
+  },
+  {
+    "key": "direktabhaenger",
+    "material_slug": "direktabhaenger-cd-125-1-v1",
+    "url": "https://www.globus-baumarkt.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-27-0779250352/",
+    "products": [
+      {
+        "name": "Knauf Direktabhänger 125 mm für CD Profil 60/27",
+        "url": "https://www.globus-baumarkt.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-27-0779250352/",
+        "price": 0.58,
+        "currency": "EUR",
+        "priceBasis": null,
+        "priceSource": "json-ld-offer",
+        "availability": "InStock",
+        "brand": "Knauf",
+        "category": null,
+        "description": "Der Knauf Direktabhänger für CD-Profile 60/27 dient als Grundelement zur direkten Montage einer Metallprofil-Unterkonstruktion im Deckenbereich. Der Abhänger erleichtert die plane Ausrichtung der Knauf Profile und das Ausgleichen von Unebenheiten. Eine Wärmedämmung bis zu 10 cm ist möglich. Der Knauf Direktabhänger ist auch für Wandverkleidungen geeignet. Geeignet als Grundelement zur direkten Montage einer Metallprofil-Unterkonstruktion im Deckenbereich, Decke, Deckenabhängung, in Verbindung mit CD-Profil, Vorsatzschalen, Dachschrägenbeplankung, Drempel im Innenbereich. Einsatzbereich: InnenAnwendungsbereich: DeckeZubehör für: CD-Profil 60/27Material: Stahlblech verzinktAusführung: DeckenabhängerAbhängbereich: bis 125 mmFarbe: silbergrauInhalt: 1 StückVerbrauch: 50 Stück reichen für ca. 33 qmAnwendung: Montage einer Unterkonstruktion im Deckenbereich und DachgeschossausbauWeitere Eigenschaften: Wärmedämmung bis zu 10 cm möglich, erleichtert die plane Ausrichtung der Knauf Deckenprofile und das Ausgleichen von UnebenheitenHerstellerinformationen: Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 71565",
+        "attributes": [],
+        "externalId": "0779250352",
+        "observedSpecs": {},
+        "soldIndividually": true,
+        "retrievedAt": "2026-10-13T18:59:14.349Z"
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-27-0779250352/\"/>",
+      "<meta property=\"og:title\" content=\"Knauf Direktabhänger 125 mm für CD Profil 60/27 kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"0,58 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-27-0779250352/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 0.58,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "Knauf",
+            "discount": "",
+            "price": 0.58,
+            "item_name": "Knauf Direktabhänger 125 mm für CD Profil 60/27",
+            "item_variant": "",
+            "item_category5": "Main Globus",
+            "item_id": "GLO779250352",
+            "item_category3": "Fliesen &amp; Baustoffe",
+            "coupon": "",
+            "item_category": "Verbinder &amp; Direktabhänger",
+            "location_id": "",
+            "item_category2": "Trockenbau",
+            "affiliation": "",
+            "item_category4": "Sortiment",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Der Knauf Direktabhänger für CD-Profile 60/27 dient als Grundelement zur direkten Montage einer Metallprofil-Unterkonstruktion im Deckenbereich. Der Abhänger erleichtert die plane Ausrichtung der Knauf Profile und das Ausgleichen von Unebenheiten. Eine Wärmedämmung bis zu 10 cm ist möglich. Der Knauf Direktabhänger ist auch für Wandverkleidungen geeignet. Geeignet als Grundelement zur direkten Montage einer Metallprofil-Unterkonstruktion im Deckenbereich, Decke, Deckenabhängung, in Verbindung mit CD-Profil, Vorsatzschalen, Dachschrägenbeplankung, Drempel im Innenbereich.</p></div>\n\n                                                                            <ul><li>Einsatzbereich: Innen</li><li>Anwendungsbereich: Decke</li><li>Zubehör für: CD-Profil 60/27</li><li>Material: Stahlblech verzinkt</li><li>Ausführung: Deckenabhänger</li><li>Abhängbereich: bis 125 mm</li><li>Farbe: silbergrau</li><li>Inhalt: 1 Stück</li><li>Verbrauch: 50 Stück reichen für ca. 33 qm</li><li>Anwendung: Montage einer Unterkonstruktion im Deckenbereich und Dachgeschossausbau</li><li>Weitere Eigenschaften: Wärmedämmung bis zu 10 cm möglich, erleichtert die plane Ausrichtung der Knauf Deckenprofile und das Ausgleichen von Unebenheiten</li><li>Herstellerinformationen: Knauf Bauprodukte GmbH &amp; Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 71565</li>",
+    "checked_at": "2026-10-13T18:59:14.350Z"
+  },
+  {
+    "key": "feuchtraumplatte",
+    "material_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+    "url": "https://www.globus-baumarkt.de/p/knauf-gipskarton-bauplatte-gkbi-200-x-125-cm-12-5-mm-0779250150/",
+    "products": [
+      {
+        "name": "Knauf Gipskarton-Bauplatte GKBI 200 x 125 cm 12,5 mm",
+        "url": "https://www.globus-baumarkt.de/p/knauf-gipskarton-bauplatte-gkbi-200-x-125-cm-12-5-mm-0779250150/",
+        "externalId": "0779250150",
+        "price": 15.95,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "retailer-product-state",
+        "priceBasisEvidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+        "availability": null,
+        "soldIndividually": true,
+        "observedSpecs": {
+          "pieces": 1
+        },
+        "retrievedAt": "2026-10-13T18:59:16.890Z",
+        "brand": "Knauf",
+        "category": "Gipskartonplatten > Bauplatten > Trockenbau",
+        "description": "> Die Knauf Bauplatte GKBI ist eine grüne, imprägnierte, stabile und raumhohe Gipsplatte im Profiformat für den einfachen, schnellen und trockenen Innenausbau. Die Gipsplatte ist besonders für häusliche Feuchträume, wie z. B. Küche, Bad oder Dusche, geeignet. Durch die Imprägnierung ist eine reduzierte Wasseraufnahme gewährleistet. Zudem ist die Platte sowohl biegbar als auch nicht brennbar. Einsatzbereich: Innen und Feuchtraum Anwendungsbereich: Wand und Decke Maß: 200 x 125 cm 12,5 mm Material: Gipskarton Oberflächenbehandlung: imprägniert Kante: halbrunde Längskante (HRK), kartonummantelt Inhalt: 1 Stück (50 Paletten auf einer Palette) Pro Stück: 2,5 m² Gewicht: ca. 21,25 kg Brandverhalten: A2 (nicht brennbar) Norm: DIN EN 520 Geeignet für: Deckenbekleidungen und Unterdecken, Dachgeschossbekleidungen, Metallständerwände, Holzständerwände, Holztafelbauwände, Vorsatzschalen Weitere Eigenschaften: einfache Verarbeitung, nicht brennbar, biegbar, faltbar mit V-Fräsungen, geringes Quellen und Schwinden bei Änderung der klimatischen Bedingungen Herstellerinformationen: Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 2911",
+        "attributes": [
+          {
+            "name": "Einsatzbereich",
+            "value": "Innen und Feuchtraum"
+          },
+          {
+            "name": "Anwendungsbereich",
+            "value": "Wand und Decke"
+          },
+          {
+            "name": "Maß",
+            "value": "200 x 125 cm 12,5 mm"
+          },
+          {
+            "name": "Material",
+            "value": "Gipskarton"
+          },
+          {
+            "name": "Oberflächenbehandlung",
+            "value": "imprägniert"
+          },
+          {
+            "name": "Kante",
+            "value": "halbrunde Längskante (HRK), kartonummantelt"
+          },
+          {
+            "name": "Inhalt",
+            "value": "1 Stück (50 Paletten auf einer Palette)"
+          },
+          {
+            "name": "Pro Stück",
+            "value": "2,5 m²"
+          },
+          {
+            "name": "Gewicht",
+            "value": "ca. 21,25 kg"
+          },
+          {
+            "name": "Brandverhalten",
+            "value": "A2 (nicht brennbar)"
+          },
+          {
+            "name": "Norm",
+            "value": "DIN EN 520"
+          },
+          {
+            "name": "Geeignet für",
+            "value": "Deckenbekleidungen und Unterdecken, Dachgeschossbekleidungen, Metallständerwände, Holzständerwände, Holztafelbauwände, Vorsatzschalen"
+          },
+          {
+            "name": "Weitere Eigenschaften",
+            "value": "einfache Verarbeitung, nicht brennbar, biegbar, faltbar mit V-Fräsungen, geringes Quellen und Schwinden bei Änderung der klimatischen Bedingungen"
+          },
+          {
+            "name": "Herstellerinformationen",
+            "value": "Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 2911"
+          }
+        ]
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/knauf-gipskarton-bauplatte-gkbi-200-x-125-cm-12-5-mm-0779250150/\"/>",
+      "<meta property=\"og:title\" content=\"Knauf Gipskarton-Bauplatte GKBI 200 x 125 cm 12,5 mm kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"15,95 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/knauf-gipskarton-bauplatte-gkbi-200-x-125-cm-12-5-mm-0779250150/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 15.95,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "Knauf",
+            "discount": "",
+            "price": 15.95,
+            "item_name": "Knauf Gipskarton-Bauplatte GKBI 200 x 125 cm 12,5 mm",
+            "item_variant": "",
+            "item_category5": "Sortiment",
+            "item_id": "GLO779250150",
+            "item_category3": "Trockenbau",
+            "coupon": "",
+            "item_category": "Gipskartonplatten",
+            "location_id": "",
+            "item_category2": "Bauplatten",
+            "affiliation": "",
+            "item_category4": "Fliesen &amp; Baustoffe",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Die Knauf Bauplatte GKBI ist eine grüne, imprägnierte, stabile und raumhohe Gipsplatte im Profiformat für den einfachen, schnellen und trockenen Innenausbau. Die Gipsplatte ist besonders für häusliche Feuchträume, wie z. B. Küche, Bad oder Dusche, geeignet. Durch die Imprägnierung ist eine reduzierte Wasseraufnahme gewährleistet. Zudem ist die Platte sowohl biegbar als auch nicht brennbar.</p></div>\n\n                                                                            <ul><li>Einsatzbereich: Innen und Feuchtraum</li><li>Anwendungsbereich: Wand und Decke</li><li>Maß: 200 x 125 cm 12,5 mm</li><li>Material: Gipskarton</li><li>Oberflächenbehandlung: imprägniert</li><li>Kante: halbrunde Längskante (HRK), kartonummantelt</li><li>Inhalt: 1 Stück (50 Paletten auf einer Palette)</li><li>Pro Stück: 2,5 m²</li><li>Gewicht: ca. 21,25 kg</li><li>Brandverhalten: A2 (nicht brennbar)</li><li>Norm: DIN EN 520</li><li>Geeignet für: Deckenbekleidungen und Unterdecken, Dachgeschossbekleidungen, Metallständerwände, Holzständerwände, Holztafelbauwände, Vorsatzschalen</li><li>Weitere Eigenschaften: einfache Verarbeitung, nicht brennbar, biegbar, faltbar mit V-Fräsungen, geringes Quellen und Schwinden bei Änderung der klimatischen Bedingungen</li><li>Herstellerinformationen: Knauf Bauprodukte GmbH &amp; Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 2911</li>",
+    "checked_at": "2026-10-13T18:59:16.893Z"
+  },
+  {
+    "key": "haftgrund",
+    "material_slug": "haftgrund-5l-v1",
+    "url": "https://www.globus-baumarkt.de/p/mem-super-haftgrund-5-l-0779050054/",
+    "products": [
+      {
+        "name": "MEM Super Haftgrund 5 l",
+        "url": "https://www.globus-baumarkt.de/p/mem-super-haftgrund-5-l-0779050054/",
+        "price": 27.99,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "json-ld-offer",
+        "availability": "InStock",
+        "brand": "MEM",
+        "category": null,
+        "description": "Untergrundhaftverstärker für saugende und nicht-saugende Untergründe. Schafft eine hervorragende Haftung zwischen alten und neuen Materialien, wie z.B. auf Beton, Mörtel, Fliesenuntergründen, Putz, Holzfaser- u. Gipsplatten, Marmor oder Bitumenun-tergründen. Innen und außen anwendbar, auch auf feuchten Untergründen.Durch Zugabe von MEM Super-Haftgrund werden Materialien wie Putz, Mauer- u. Fugenmörtel, Fliesenkleber, Estriche riß-beständiger und wasserabweisender. MEM Super-Haftgrund ist kautschukvergütet und lösemittelfrei. Einsatzbereich: Innen und AußenAnwendungsbereich: Wand, Boden, DeckeInhalt: 5 lAnstrichart: HaftvermittlerFarbe: milchig-weißMaterialbasis: Primer auf DispersonsbasisDurchtrockenzeit: 48 StundenÜberstreichbar nach: 30 MinutenEmpfohlene Anstrichanzahl: 1Verbrauch: ca. 0,2 Liter/m²Verarbeitungstemperatur: +5°C bis +30°CGeeignetes Werkzeug zum Auftragen: Pinsel, Rolle, Quast, SpritzverfahrenAnwendung: Haftvermittler für saugende und nichtsaugende, feuchte UntergründeGeeignet für: Beton, Mörtel, Estrich, Fliesenuntergründen, Putz, Holzfaser- und Gipsplatten, Marmor, Bitumenuntergründe uvm.Weitere Eigenschaften: lösungsmittelfrei, vielfältige Anwendung, schnell überarbeitbar, schafft eine hervorragende Haftung zwischen alten und neuen Materialien, bindet Staub, bildet einen Film der als Haftvermittler wirktHerstellerinformationen: Bostik GmbH Niederlassung MEM | Am Emsdeich 52 | 26789 Leer, Deutschland | eMail: mem.service@bostik.com | Herstellernr. 30836042",
+        "attributes": [],
+        "externalId": "0779050054",
+        "observedSpecs": {},
+        "soldIndividually": true,
+        "retrievedAt": "2026-10-13T18:59:18.202Z"
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/mem-super-haftgrund-5-l-0779050054/\"/>",
+      "<meta property=\"og:title\" content=\"MEM Super Haftgrund 5 l kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"27,99 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/mem-super-haftgrund-5-l-0779050054/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 27.99,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "MEM",
+            "discount": "",
+            "price": 27.99,
+            "item_name": "MEM Super Haftgrund 5 l",
+            "item_variant": "",
+            "item_category5": "Main Globus",
+            "item_id": "GLO765500090",
+            "item_category3": "Fliesen &amp; Baustoffe",
+            "coupon": "",
+            "item_category": "Baugrundierung &amp; Imprägnierung",
+            "location_id": "",
+            "item_category2": "Bauchemie",
+            "affiliation": "",
+            "item_category4": "Sortiment",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Untergrundhaftverstärker für saugende und nicht-saugende Untergründe. Schafft eine hervorragende Haftung zwischen alten und neuen Materialien, wie z.B. auf Beton, Mörtel, Fliesenuntergründen, Putz, Holzfaser- u. Gipsplatten, Marmor oder Bitumenun-tergründen. Innen und außen anwendbar, auch auf feuchten Untergründen.</p><p>Durch Zugabe von MEM Super-Haftgrund werden Materialien wie Putz, Mauer- u. Fugenmörtel, Fliesenkleber, Estriche riß-beständiger und wasserabweisender. MEM Super-Haftgrund ist kautschukvergütet und lösemittelfrei.</p></div>\n\n                                                                            <ul><li>Einsatzbereich: Innen und Außen</li><li>Anwendungsbereich: Wand, Boden, Decke</li><li>Inhalt: 5 l</li><li>Anstrichart: Haftvermittler</li><li>Farbe: milchig-weiß</li><li>Materialbasis: Primer auf Dispersonsbasis</li><li>Durchtrockenzeit: 48 Stunden</li><li>Überstreichbar nach: 30 Minuten</li><li>Empfohlene Anstrichanzahl: 1</li><li>Verbrauch: ca. 0,2 Liter/m²</li><li>Verarbeitungstemperatur: +5°C bis +30°C</li><li>Geeignetes Werkzeug zum Auftragen: Pinsel, Rolle, Quast, Spritzverfahren</li><li>Anwendung: Haftvermittler für saugende und nichtsaugende, feuchte Untergründe</li><li>Geeignet für: Beton, Mörtel, Estrich, Fliesenuntergründen, Putz, Holzfaser- und Gipsplatten, Marmor, Bitumenuntergründe uvm.</li><li>Weitere Eigenschaften: lösungsmittelfrei, vielfältige Anwendung, schnell überarbeitbar, schafft eine hervorragende Haftung zwischen alten und neuen Materialien, bindet Staub, bildet einen Film der als Haftvermittler wirkt</li><li>Herstellerinformationen: Bostik GmbH Niederlassung MEM | Am Emsdeich 52 | 26789 Leer, Deutschland | eMail: mem.service@bostik.com | Herstellernr. 30836042</li>",
+    "checked_at": "2026-10-13T18:59:18.203Z"
+  },
+  {
+    "key": "perlfix",
+    "material_slug": "knauf-perlfix-30kg-v1",
+    "url": "https://www.globus-baumarkt.de/p/knauf-perlfix-ansetzgips-hellgrau-30-kg-0779100295/",
+    "products": [
+      {
+        "name": "Knauf Perlfix Ansetzgips hellgrau, 30 kg",
+        "url": "https://www.globus-baumarkt.de/p/knauf-perlfix-ansetzgips-hellgrau-30-kg-0779100295/",
+        "price": 9.95,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "json-ld-offer",
+        "availability": "InStock",
+        "brand": "Knauf",
+        "category": null,
+        "description": "Der Knauf Perlfix Ansetzgips ist ein Spezialkleber zum Ansetzen von Gipsplatten, Verbund- und Gipsfaserverbundplatten im Wandbereich, direkt auf s Mauerwerk im Innenbereich. Der Ansetzgips ist dabei leicht zu verarbeiten, optimal haftvermittelnd und bereits anmachfertig. Ansetz-Gipsleicht zu verarbeitenVerbrauch: 5 kg/m²optimal haftvermittelndsehr gutes HaftvermögenNorm: DIN EN 14496anmachfertigHerstellerinformationen: Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 3110",
+        "attributes": [],
+        "externalId": "0779100295",
+        "observedSpecs": {},
+        "soldIndividually": true,
+        "retrievedAt": "2026-10-13T18:59:20.345Z"
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/knauf-perlfix-ansetzgips-hellgrau-30-kg-0779100295/\"/>",
+      "<meta property=\"og:title\" content=\"Knauf Perlfix Ansetzgips hellgrau, 30 kg kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"9,95 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/knauf-perlfix-ansetzgips-hellgrau-30-kg-0779100295/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 9.95,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "Knauf",
+            "discount": "",
+            "price": 9.95,
+            "item_name": "Knauf Perlfix Ansetzgips hellgrau, 30 kg",
+            "item_variant": "",
+            "item_category5": "Main Globus",
+            "item_id": "GLO779100295",
+            "item_category3": "Fliesen &amp; Baustoffe",
+            "coupon": "",
+            "item_category": "Gips",
+            "location_id": "",
+            "item_category2": "Rohbau",
+            "affiliation": "",
+            "item_category4": "Sortiment",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Der Knauf Perlfix Ansetzgips ist ein Spezialkleber zum Ansetzen von Gipsplatten, Verbund- und Gipsfaserverbundplatten im Wandbereich, direkt auf s Mauerwerk im Innenbereich. Der Ansetzgips ist dabei leicht zu verarbeiten, optimal haftvermittelnd und bereits anmachfertig.</p></div>\n\n                                                                            <ul><li>Ansetz-Gips</li><li>leicht zu verarbeiten</li><li>Verbrauch: 5 kg/m²</li><li>optimal haftvermittelnd</li><li>sehr gutes Haftvermögen</li><li>Norm: DIN EN 14496</li><li>anmachfertig</li><li>Herstellerinformationen: Knauf Bauprodukte GmbH &amp; Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 3110</li>",
+    "checked_at": "2026-10-13T18:59:20.346Z"
+  },
+  {
+    "key": "rotband",
+    "material_slug": "knauf-rotband-30kg-v1",
+    "url": "https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/",
+    "products": [
+      {
+        "name": "Knauf Rotband Haftputzgips 30 kg",
+        "url": "https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/",
+        "externalId": "0779100307",
+        "price": 11.5,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "retailer-product-state",
+        "priceBasisEvidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+        "availability": null,
+        "soldIndividually": true,
+        "observedSpecs": {},
+        "retrievedAt": "2026-10-13T18:59:21.558Z",
+        "brand": "Knauf",
+        "category": "Putz > Gips > Rohbau",
+        "description": "> Der Knauf Rotband Haftputzgips ist ein pulverförmiges Material auf Gipsbasis und dient zum vollflächigen Verputzen im Innenbereich. Die Verarbeitung erfolgt von Hand in einer Auftragsdicke von 7 - 50 mm. Der Haftputzgips ist besonders cremig und leichtgängig mit extra hoher Standfestigkeit. Zudem ist der Gips atmungsaktiv und wasserdampfdurchlässig und fördert so ein gesundes Wohnklima. Nicht nur in Bereichen mit der üblichen Luftfeuchtigkeit, sondern auch für häusliche Feuchträume können Sie den Knauf Rotband Haftputzgips verwenden. Anwendungsbereich: Innen, Mauerwerk, Innenputz, Beton, Porenbeton, Räume mit üblicher Luftfeuchte, häusliche Feuchträume wie Küche oder Bad, besonders geeignet auf Betondecken und Wände. Einsatzbereich: Innen Anwendungsbereich: Wand und Decke Inhalt: 30 kg Farbe: hellgrau Materialbasis: Trockenmörtel auf Putzgipsbasis mit speziellen Leichtzuschlagstoffen Trocknungszeit: 14 Tage je 10 mm Schichtdicke Verbrauch: ca. 0,8 kg/m² je mm Schichtdicke Verarbeitungstemperatur:+5 °C Mischverhältnis: ca. 20 L Wasser/30 kg Schichtdicke: mind. 5 mm Norm: DIN 13279 Verwendung: zur Herstellung geglätteter, frei strukturierter oder abgezogener Oberflächen, als Einlagenputz für alle Mauerwerksarten, Beton sowie tragfähige Putzuntergründen, auch geeignet für Renovierungs- und Ausbesserungsarbeiten Weitere Eigenschaften: Verarbeitung von Hand, brandschutztechnisch wirksam, mineralisch, leicht und ergiebig, feuchtigkeitsregulierend, diffusionsoffen, Oberfläche strukturierbar oder geglättet, stoßfest Herstellerinformationen: Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 2862",
+        "attributes": [
+          {
+            "name": "Einsatzbereich",
+            "value": "Innen"
+          },
+          {
+            "name": "Anwendungsbereich",
+            "value": "Wand und Decke"
+          },
+          {
+            "name": "Inhalt",
+            "value": "30 kg"
+          },
+          {
+            "name": "Farbe",
+            "value": "hellgrau"
+          },
+          {
+            "name": "Materialbasis",
+            "value": "Trockenmörtel auf Putzgipsbasis mit speziellen Leichtzuschlagstoffen"
+          },
+          {
+            "name": "Trocknungszeit",
+            "value": "14 Tage je 10 mm Schichtdicke"
+          },
+          {
+            "name": "Verbrauch",
+            "value": "ca. 0,8 kg/m² je mm Schichtdicke"
+          },
+          {
+            "name": "Verarbeitungstemperatur",
+            "value": "+5 °C"
+          },
+          {
+            "name": "Mischverhältnis",
+            "value": "ca. 20 L Wasser/30 kg"
+          },
+          {
+            "name": "Schichtdicke",
+            "value": "mind. 5 mm"
+          },
+          {
+            "name": "Norm",
+            "value": "DIN 13279"
+          },
+          {
+            "name": "Verwendung",
+            "value": "zur Herstellung geglätteter, frei strukturierter oder abgezogener Oberflächen, als Einlagenputz für alle Mauerwerksarten, Beton sowie tragfähige Putzuntergründen, auch geeignet für Renovierungs- und Ausbesserungsarbeiten"
+          },
+          {
+            "name": "Weitere Eigenschaften",
+            "value": "Verarbeitung von Hand, brandschutztechnisch wirksam, mineralisch, leicht und ergiebig, feuchtigkeitsregulierend, diffusionsoffen, Oberfläche strukturierbar oder geglättet, stoßfest"
+          },
+          {
+            "name": "Herstellerinformationen",
+            "value": "Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 2862"
+          }
+        ]
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/\"/>",
+      "<meta property=\"og:title\" content=\"Knauf Rotband Haftputzgips 30 kg kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"11,50 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 11.5,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "Knauf",
+            "discount": "",
+            "price": 11.5,
+            "item_name": "Knauf Rotband Haftputzgips 30 kg",
+            "item_variant": "",
+            "item_category5": "Sortiment",
+            "item_id": "GLO779100307",
+            "item_category3": "Rohbau",
+            "coupon": "",
+            "item_category": "Putz",
+            "location_id": "",
+            "item_category2": "Gips",
+            "affiliation": "",
+            "item_category4": "Fliesen &amp; Baustoffe",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Der Knauf Rotband Haftputzgips ist ein pulverförmiges Material auf Gipsbasis und dient zum vollflächigen Verputzen im Innenbereich. Die Verarbeitung erfolgt von Hand in einer Auftragsdicke von 7 - 50 mm. Der Haftputzgips ist besonders cremig und leichtgängig mit extra hoher Standfestigkeit. Zudem ist der Gips atmungsaktiv und wasserdampfdurchlässig und fördert so ein gesundes Wohnklima. Nicht nur in Bereichen mit der üblichen Luftfeuchtigkeit, sondern auch für häusliche Feuchträume können Sie den Knauf Rotband Haftputzgips verwenden. Anwendungsbereich: Innen, Mauerwerk, Innenputz, Beton, Porenbeton, Räume mit üblicher Luftfeuchte, häusliche Feuchträume wie Küche oder Bad, besonders geeignet auf Betondecken und Wände.</p></div>\n\n                                                                            <ul><li>Einsatzbereich: Innen</li><li>Anwendungsbereich: Wand und Decke</li><li>Inhalt: 30 kg</li><li>Farbe: hellgrau</li><li>Materialbasis: Trockenmörtel auf Putzgipsbasis mit speziellen Leichtzuschlagstoffen</li><li>Trocknungszeit: 14 Tage je 10 mm Schichtdicke</li><li>Verbrauch: ca. 0,8 kg/m² je mm Schichtdicke</li><li>Verarbeitungstemperatur:+5 °C</li><li>Mischverhältnis: ca. 20 L Wasser/30 kg</li><li>Schichtdicke: mind. 5 mm</li><li>Norm: DIN 13279</li><li>Verwendung: zur Herstellung geglätteter, frei strukturierter oder abgezogener Oberflächen, als Einlagenputz für alle Mauerwerksarten, Beton sowie tragfähige Putzuntergründen, auch geeignet für Renovierungs- und Ausbesserungsarbeiten</li><li>Weitere Eigenschaften: Verarbeitung von Hand, brandschutztechnisch wirksam, mineralisch, leicht und ergiebig, feuchtigkeitsregulierend, diffusionsoffen, Oberfläche strukturierbar oder geglättet, stoßfest</li><li>Herstellerinformationen: Knauf Bauprodukte GmbH &amp; Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 2862</li>",
+    "checked_at": "2026-10-13T18:59:21.561Z"
+  },
+  {
+    "key": "uniflott",
+    "material_slug": "knauf-uniflott-25kg-v1",
+    "url": "https://www.globus-baumarkt.de/p/knauf-uniflott-spachtelmasse-25-kg-0779100299/",
+    "products": [
+      {
+        "name": "Knauf Uniflott Spachtelmasse 25 kg",
+        "url": "https://www.globus-baumarkt.de/p/knauf-uniflott-spachtelmasse-25-kg-0779100299/",
+        "externalId": "0779100299",
+        "price": 42.5,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "retailer-product-state",
+        "priceBasisEvidence": "globus-same-sku-price-metadata-and-single-sale-unit",
+        "availability": null,
+        "soldIndividually": true,
+        "observedSpecs": {},
+        "retrievedAt": "2026-10-13T18:59:24.587Z",
+        "brand": "Knauf",
+        "category": "Spachtelmassen > Trockenbau > Fliesen & Baustoffe",
+        "description": "> Knauf Uniflott ist eine hochfeste, geschmeidige, sowie anmachfertige Spachtelmasse und dient als Grundverspachtelung von Gipsplattenfugen im System Uniflott. Die anschließende Endverspachtelung erfolgt mit Knauf Uniflott Finish. Die Knauf Uniflott Spachtelmasse wird mit Hand, ohne Bewehrungsstreifen, an Wand und/oder Decke im Innenbereich aufgetragen. Der Spezialgips ist dabei leicht zu verspachteln, zu schleifen und zeichnet sich zudem durch einen geringen Trocknungsschwund aus. Anwendungsbereich: Wand, Decke, Innen, Grundverspachtelung von Gipsplattenfugen im System Uniflott. Einsatzbereich: Innen Anwendungsbereich: Wand und Decke Inhalt: 25 kg Farbe: hellgrau Materialbasis: Calciumsulfat verschiedener Hydratstoffe mit Spezialzusätzen Trocknungszeit: Verarbeitungszeit: ca. 45 Minuten Verbrauch: ca. 110 g/lfm (HRK-Kante), 210 g/lfm (HRAK-Kante) Verarbeitungstemperatur: + 10 °C Mischverhältnis: ca. 1,2 l Wasser/2,5 kg Anwendung: Verspachteln von Gipsplatten ohne Fugendeckstreifen an den Kanten, Grundverspachtelung bei anschließender Endverspachtelung mit Knauf Uniflott Finish im System Uniflott Weitere Eigenschaften: leichtgängig zu verspachtelnder Spezialgips, hohes Wasserrückhaltevermögen, leicht schleifbar, geringer Trocknungsschwund, hohes Haftvermögen, schnelle Festigkeit, schnelle Austrocknung, anmachfertig, DIN EN 1168 Herstellerinformationen: Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 3114",
+        "attributes": [
+          {
+            "name": "Einsatzbereich",
+            "value": "Innen"
+          },
+          {
+            "name": "Anwendungsbereich",
+            "value": "Wand und Decke"
+          },
+          {
+            "name": "Inhalt",
+            "value": "25 kg"
+          },
+          {
+            "name": "Farbe",
+            "value": "hellgrau"
+          },
+          {
+            "name": "Materialbasis",
+            "value": "Calciumsulfat verschiedener Hydratstoffe mit Spezialzusätzen"
+          },
+          {
+            "name": "Trocknungszeit",
+            "value": "Verarbeitungszeit: ca. 45 Minuten"
+          },
+          {
+            "name": "Verbrauch",
+            "value": "ca. 110 g/lfm (HRK-Kante), 210 g/lfm (HRAK-Kante)"
+          },
+          {
+            "name": "Verarbeitungstemperatur",
+            "value": "+ 10 °C"
+          },
+          {
+            "name": "Mischverhältnis",
+            "value": "ca. 1,2 l Wasser/2,5 kg"
+          },
+          {
+            "name": "Anwendung",
+            "value": "Verspachteln von Gipsplatten ohne Fugendeckstreifen an den Kanten, Grundverspachtelung bei anschließender Endverspachtelung mit Knauf Uniflott Finish im System Uniflott"
+          },
+          {
+            "name": "Weitere Eigenschaften",
+            "value": "leichtgängig zu verspachtelnder Spezialgips, hohes Wasserrückhaltevermögen, leicht schleifbar, geringer Trocknungsschwund, hohes Haftvermögen, schnelle Festigkeit, schnelle Austrocknung, anmachfertig, DIN EN 1168"
+          },
+          {
+            "name": "Herstellerinformationen",
+            "value": "Knauf Bauprodukte GmbH & Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 3114"
+          }
+        ]
+      }
+    ],
+    "priceMeta": [
+      "<meta property=\"og:url\" content=\"https://www.globus-baumarkt.de/p/knauf-uniflott-spachtelmasse-25-kg-0779100299/\"/>",
+      "<meta property=\"og:title\" content=\"Knauf Uniflott Spachtelmasse 25 kg kaufen | Globus Baumarkt\"/>",
+      "<meta property=\"product:price\" content=\"42,50 €\"/>",
+      "<meta property=\"product:product_link\" content=\"https://www.globus-baumarkt.de/p/knauf-uniflott-spachtelmasse-25-kg-0779100299/\"/>"
+    ],
+    "itemState": {
+      "event": "view_item",
+      "ecommerce": {
+        "value": 42.5,
+        "currency": "EUR",
+        "items": [
+          {
+            "item_list_id": "",
+            "item_brand": "Knauf",
+            "discount": "",
+            "price": 42.5,
+            "item_name": "Knauf Uniflott Spachtelmasse 25 kg",
+            "item_variant": "",
+            "item_category5": "Main Globus",
+            "item_id": "GLO779100299",
+            "item_category3": "Fliesen &amp; Baustoffe",
+            "coupon": "",
+            "item_category": "Spachtelmassen",
+            "location_id": "",
+            "item_category2": "Trockenbau",
+            "affiliation": "",
+            "item_category4": "Sortiment",
+            "quantity": 1,
+            "item_list_name": "",
+            "index": ""
+          }
+        ]
+      }
+    },
+    "ownDescription": ">\n                        <div\n                            class=\"mb-3 long-description\"><p>Knauf Uniflott ist eine hochfeste, geschmeidige, sowie anmachfertige Spachtelmasse und dient als Grundverspachtelung von Gipsplattenfugen im System Uniflott. Die anschließende Endverspachtelung erfolgt mit Knauf Uniflott Finish. Die Knauf Uniflott Spachtelmasse wird mit Hand, ohne Bewehrungsstreifen, an Wand und/oder Decke im Innenbereich aufgetragen. Der Spezialgips ist dabei leicht zu verspachteln, zu schleifen und zeichnet sich zudem durch einen geringen Trocknungsschwund aus. Anwendungsbereich: Wand, Decke, Innen, Grundverspachtelung von Gipsplattenfugen im System Uniflott.</p></div>\n\n                                                                            <ul><li>Einsatzbereich: Innen</li><li>Anwendungsbereich: Wand und Decke</li><li>Inhalt: 25 kg</li><li>Farbe: hellgrau</li><li>Materialbasis: Calciumsulfat verschiedener Hydratstoffe mit Spezialzusätzen</li><li>Trocknungszeit: Verarbeitungszeit: ca. 45 Minuten</li><li>Verbrauch: ca. 110 g/lfm (HRK-Kante), 210 g/lfm (HRAK-Kante)</li><li>Verarbeitungstemperatur: + 10 °C</li><li>Mischverhältnis: ca. 1,2 l Wasser/2,5 kg</li><li>Anwendung: Verspachteln von Gipsplatten ohne Fugendeckstreifen an den Kanten, Grundverspachtelung bei anschließender Endverspachtelung mit Knauf Uniflott Finish im System Uniflott</li><li>Weitere Eigenschaften: leichtgängig zu verspachtelnder Spezialgips, hohes Wasserrückhaltevermögen, leicht schleifbar, geringer Trocknungsschwund, hohes Haftvermögen, schnelle Festigkeit, schnelle Austrocknung, anmachfertig, DIN EN 1168</li><li>Herstellerinformationen: Knauf Bauprodukte GmbH &amp; Co. KG | Am Bahnhof 7 | 97343 Iphofen, DEUTSCHLAND | eMail: info-bauprodukte@knauf.com | Herstellernr. 3114</li>",
+    "checked_at": "2026-10-13T18:59:24.590Z"
+  }
+]

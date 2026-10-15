@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-13T11:52:10.689Z",
+  "generated_at": "2026-10-14T11:02:58.696Z",
   "canonical_material_ids": {
     "gipskarton-standard-12-5-1200-600-v1": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
     "gipskarton-standard-12-5-2000-1250-v1": "2d750efa-4af5-e9b4-5416-89678194f058",
@@ -166,6 +166,43 @@
       "observed_specs": {
         "length_mm": 2000,
         "width_mm": 50
+      }
+    },
+    {
+      "material_id": "090eff92-f6d1-2d5f-55ef-a2396edb10ce",
+      "canonical_slug": "uw50-40-2000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "uw-profil",
+        "length_mm": 2000,
+        "width_mm": 50,
+        "profile": "uw",
+        "excluded_terms": [
+          "cw",
+          "cd",
+          "ud",
+          "türsturz",
+          "steckwinkel"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "Knauf UW-db-Rahmenprofil 2000 x 50 x 40 mm",
+      "product_url": "https://www.globus-baumarkt.de/p/knauf-uw-db-rahmenprofil-2000-x-50-x-40-mm-0779250656/",
+      "price": 4.49,
+      "unit_price": 2.25,
+      "unit": "m",
+      "package_quantity": 2,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T19:01:29.705Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 2000,
+        "width_mm": 50,
+        "profile": "uw",
+        "type": "uw-profil"
       }
     },
     {
@@ -650,6 +687,48 @@
           "feuerschutz"
         ]
       },
+      "store_id": "globus",
+      "product_name": "Knauf Gipskarton-Bauplatte GKB 200 x 125 cm 12,5 mm",
+      "product_url": "https://www.globus-baumarkt.de/p/knauf-gipskarton-bauplatte-gkb-200-x-125-cm-12-5-mm-0779250144/",
+      "price": 9.98,
+      "unit_price": 3.99,
+      "unit": "m2",
+      "package_quantity": 2.5,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T19:01:29.698Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 2000,
+        "width_mm": 1250,
+        "thickness_mm": 12.5,
+        "area_m2": 2.5,
+        "type": "standard"
+      }
+    },
+    {
+      "material_id": "2d750efa-4af5-e9b4-5416-89678194f058",
+      "canonical_slug": "gipskarton-standard-12-5-2000-1250-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "standard",
+        "thickness_mm": 12.5,
+        "width_mm": 1250,
+        "length_mm": 2000,
+        "area_m2": 2.5,
+        "required_terms": [
+          "gipskarton"
+        ],
+        "excluded_terms": [
+          "feuchtraum",
+          "imprägniert",
+          "impragniert",
+          "gkbi",
+          "feuerschutz"
+        ]
+      },
       "store_id": "obi",
       "product_name": "Gipskarton 12,5 mm x 1250 mm x 2000 mm",
       "product_url": "https://www.obi.de/p/6728448/gipskarton-12-5-mm-x-1250-mm-x-2000-mm",
@@ -961,6 +1040,44 @@
         "length_mm": 10000,
         "width_mm": 1000,
         "area_m2": 10
+      }
+    },
+    {
+      "material_id": "42039b00-d37b-5117-8c6a-568f6de25468",
+      "canonical_slug": "schleifpapier-k180-230-280-1-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "schleifpapier",
+        "length_mm": 280,
+        "width_mm": 230,
+        "grit": 180,
+        "pieces": 1,
+        "excluded_terms": [
+          "maschine",
+          "schleifspitze",
+          "set",
+          "schleifrolle"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "Color Expert Schleifpapier Alu-Oxyd K180 Körnung 180, 230 mm x 280 mm; für Holz und Spachtelmasse",
+      "product_url": "https://www.globus-baumarkt.de/p/color-expert-schleifpapier-alu-oxyd-k180-koernung-180-230-mm-x-280-mm-0760100649/",
+      "price": 1.29,
+      "unit_price": 1.29,
+      "unit": "piece",
+      "package_quantity": 1,
+      "currency": "EUR",
+      "checked_at": "2026-10-14T11:01:32.371Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "schleifpapier",
+        "length_mm": 280,
+        "width_mm": 230,
+        "grit": 180,
+        "pieces": 1
       }
     },
     {
@@ -1340,6 +1457,49 @@
           "glaswolle"
         ]
       },
+      "store_id": "globus",
+      "product_name": "Rockwool Trennwandplatte Sonorock Steinwolle WLG 040",
+      "product_url": "https://www.globus-baumarkt.de/p/rockwool-trennwandplatte-sonorock-steinwolle-wlg-040-0779200121/",
+      "price": 32.18,
+      "unit_price": 4.29,
+      "unit": "m2",
+      "package_quantity": 7.5,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T19:01:29.702Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 1000,
+        "width_mm": 625,
+        "thickness_mm": 40,
+        "area_m2": 7.5,
+        "pieces": 12,
+        "thermal_conductivity": 0.04,
+        "type": "steinwolle-trennwandplatte"
+      }
+    },
+    {
+      "material_id": "a77f72d7-ba2c-f7ee-d4ea-8a3c6899322c",
+      "canonical_slug": "steinwolle-sonorock-040-40-7-5m2-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "steinwolle-trennwandplatte",
+        "thickness_mm": 40,
+        "width_mm": 625,
+        "length_mm": 1000,
+        "pieces": 12,
+        "area_m2": 7.5,
+        "thermal_conductivity": 0.04,
+        "required_terms": [
+          "steinwolle",
+          "sonorock"
+        ],
+        "excluded_terms": [
+          "glaswolle"
+        ]
+      },
       "store_id": "obi",
       "product_name": "Rockwool Trennwandplatte Sonorock WLG 040 40 mm Steinwolle, 7,5 m²/Paket",
       "product_url": "https://www.obi.de/p/2877751/rockwool-trennwandplatte-sonorock-wlg-40-40-mm-steinwolle",
@@ -1459,6 +1619,44 @@
           "tb"
         ]
       },
+      "store_id": "globus",
+      "product_name": "Connex Schnellbauschrauben 3,5 x 25 mm, PH 2, 1000 Stück",
+      "product_url": "https://www.globus-baumarkt.de/p/connex-schnellbauschrauben-3-5-x-25-mm-ph-2-1000-stueck-0763026038/",
+      "price": 19.39,
+      "unit_price": 0.02,
+      "unit": "piece",
+      "package_quantity": 1000,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T19:01:29.693Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 25,
+        "diameter_mm": 3.5,
+        "pieces": 1000,
+        "type": "tn"
+      }
+    },
+    {
+      "material_id": "c3eb45d7-6ade-8acf-36b5-998aae112efa",
+      "canonical_slug": "tn-3-5-25-1000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "tn",
+        "diameter_mm": 3.5,
+        "length_mm": 25,
+        "pieces": 1000,
+        "required_terms": [
+          "tn",
+          "feingewinde"
+        ],
+        "excluded_terms": [
+          "grobgewinde",
+          "tb"
+        ]
+      },
       "store_id": "obi",
       "product_name": "Knauf Schnellbauschrauben TN 3,5 x 25 mm 1.000 Stück",
       "product_url": "https://www.obi.de/p/4261053/knauf-schnellbauschrauben-tn-3-5-x-25-mm-1-000-stueck",
@@ -1537,6 +1735,43 @@
       "availability": null,
       "observed_specs": {
         "weight_kg": 8
+      }
+    },
+    {
+      "material_id": "cebcf814-aecb-4a94-5319-d57b54761eea",
+      "canonical_slug": "armierungsgewebe-165-1000-10000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "grammage_g_m2": 165,
+        "area_m2": 10,
+        "excluded_terms": [
+          "streifen",
+          "eckprofil",
+          "mörtel"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "Knauf Armierungsgewebe 10 x 1 m = 10 m² Maschenweite: 5 x 5 mm",
+      "product_url": "https://www.globus-baumarkt.de/p/knauf-armierungsgewebe-10-x-1-m-10-m2-maschenweite-5-x-5-mm-0779250266/",
+      "price": 32.99,
+      "unit_price": 3.3,
+      "unit": "m2",
+      "package_quantity": 10,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T19:00:07.552Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "area_m2": 10,
+        "grammage_g_m2": 165
       }
     },
     {
@@ -1636,6 +1871,42 @@
       "observed_specs": {
         "length_mm": 125,
         "pieces": 1
+      }
+    },
+    {
+      "material_id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+      "canonical_slug": "direktabhaenger-cd-125-1-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd",
+        "excluded_terms": [
+          "holzlatten",
+          "holzplatten",
+          "nonius",
+          "verbinder"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "Knauf Direktabhänger 125 mm für CD Profil 60/27",
+      "product_url": "https://www.globus-baumarkt.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-27-0779250352/",
+      "price": 0.58,
+      "unit_price": 0.58,
+      "unit": "piece",
+      "package_quantity": 1,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T18:59:14.350Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd"
       }
     },
     {
@@ -2084,6 +2355,43 @@
       "observed_specs": {
         "length_mm": 2600,
         "width_mm": 50
+      }
+    },
+    {
+      "material_id": "f68369db-71cd-60ae-887f-e4ddcdb7f64e",
+      "canonical_slug": "cw50-50-2600-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "cw-profil",
+        "length_mm": 2600,
+        "width_mm": 50,
+        "profile": "cw",
+        "excluded_terms": [
+          "uw",
+          "cd",
+          "ud",
+          "türsturz",
+          "steckwinkel"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "Knauf CW-db-Ständerprofil 2600 x 50 x 50 mm",
+      "product_url": "https://www.globus-baumarkt.de/p/knauf-cw-db-staenderprofil-2600-x-50-x-50-mm-0779250244/",
+      "price": 5.99,
+      "unit_price": 2.3,
+      "unit": "m",
+      "package_quantity": 2.6,
+      "currency": "EUR",
+      "checked_at": "2026-10-13T18:59:12.615Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "cw-profil",
+        "length_mm": 2600,
+        "width_mm": 50,
+        "profile": "cw"
       }
     },
     {

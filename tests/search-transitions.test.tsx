@@ -15,6 +15,7 @@ import { GET as getToomPrices } from "../src/app/api/toom/prices/route";
 import { MVP_MATERIAL_INTENTS } from "../src/lib/toomIntent";
 import { POST as getObiPrices } from "../src/app/api/obi/search/route";
 import type { ObiSearchResult } from "../src/lib/obi-offer";
+import type { StorePrice } from "../src/services/prices";
 
 test("real Finder hides old cards, renders skeletons, and never commits an older search", async () => {
   const dom = new JSDOM('<!doctype html><div id="root"></div>', { url: "http://localhost/", pretendToBeVisual: true });
@@ -29,6 +30,8 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
   const origin = { address: "Synthetischer DOM-Teststandort", location: { lat: 50.12, lng: 8.68 }, countryCode: "DE" };
   const stores = CHAIN_IDS.map((id, index) => routeFallback({ id, placeId: `fixture-${id}`, name: `${CHAINS[id].name} Testfiliale`,
     address: "Synthetische Testadresse", location: { lat: 50.13 + index * .01, lng: 8.68 }, countryCode: "DE", airDistanceMeters: 1000 + index * 100, attributions: [] }));
+  // The shortest air line is deliberately not the shortest available driving route.
+  Object.assign(stores[0], { distanceMeters: 9000, distance: "9 km", durationSeconds: 900, duration: "15 Min.", routeStatus: "driving" });
   const materials = bundledMaterialCatalog();
   const requests: Array<{ resolve: (value: unknown) => void; reject: (error: Error) => void }> = [];
   let pendingCatalog: Promise<unknown> | null = null;
@@ -75,7 +78,7 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     });
     const submit = async () => act(async () => { dom.window.document.querySelector("form")!.dispatchEvent(new dom.window.Event("submit", { bubbles: true, cancelable: true })); });
     const complete = async (index: number) => act(async () => {
-      requests[index].resolve({ origin, stores, warnings: [] });
+      requests[index].resolve({ origin, stores, warnings: index === 0 ? ["Produktkatalog konnte nicht geladen werden: parser failed"] : [] });
       // Local API performs a real file read; let that response arrive while React's act scope is open.
       await new Promise(resolve => setTimeout(resolve, 0));
       await pendingCatalog;
@@ -89,6 +92,10 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     };
     await input('[aria-label="Adresse"]', "Frankfurt"); await input("#material", "Acryl 310 ml"); await submit(); loading(); await complete(0);
     assert.match(names(), /Acryl/i); assert.equal(dom.window.document.querySelectorAll(".skeletonCard").length, 0);
+    assert.equal(dom.window.document.querySelector('h1')?.textContent, 'Baumarktpreise in deiner Nähe vergleichen');
+    assert.equal(dom.window.document.querySelector('.nearestBadge')?.textContent, 'Nächste Filiale');
+    assert.equal(dom.window.document.querySelector('.nearestBadge')?.closest('article')?.getAttribute('data-store-id'), `fixture-${stores[1].id}`, 'real route distance takes precedence over the nearer air line');
+    assert.doesNotMatch(dom.window.document.body.textContent!, /Geringste Luftlinie|Produktkatalog konnte nicht geladen|parser failed/);
     await input("#material", "Tiefengrund");
     assert.equal(dom.window.document.querySelectorAll(".productOfferCard").length, 0, "typing a new material clears the old price before submit");
     await submit(); loading(); await complete(1);
@@ -143,9 +150,9 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
       assert.equal(dom.window.document.querySelectorAll('.comparisonGrid').length,1);
       for (const store of stores) {
         const selection=selectChainOffer(target,harness.offers,materials.map(item=>item.material),store.id);
-        if (['bauhaus','obi'].includes(store.id)) assert.ok(selection.price, `${intent.input}: ${store.id} must have a verified comparable offer`);
-        const expectedPrice=store.id==='obi' ? obi.offer : selection.price;
-        const expectedPackage=store.id==='obi' ? obi.offer.actual_size : selection.actualSpecification;
+        if (['bauhaus','obi','globus'].includes(store.id)) assert.ok(selection.price, `${intent.input}: ${store.id} must have a verified comparable offer`);
+        const expectedPrice: StorePrice | NonNullable<ObiSearchResult['offer']> | null | undefined = store.id==='obi' ? obi.offer : selection.price;
+        const expectedPackage: string | null = store.id==='obi' ? obi.offer.actual_size : selection.actualSpecification;
         const card=dom.window.document.querySelector(`[data-store-id="${store.placeId}"]`)!;
         assert.ok(card,`${intent.input}: ${store.id} branch card`);
         if(expectedPrice) {
@@ -170,6 +177,12 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     await input('#material','Dämmung');await submit();await complete(requestIndex++);
     const insulation=materials.find(item=>item.material.slug==='steinwolle-sonorock-040-40-7-5m2-v1')!.material;
     assert.equal((dom.window.document.querySelector('#comparison-material') as HTMLSelectElement).value,insulation.id,'shared defaults work without a TOOM branch');
+    await input('#material', 'Acryl'); await submit(); loading();
+    const cancelledAddressRequest = requestIndex++;
+    await input('[aria-label="Adresse"]', 'Hamburg');
+    assert.equal(dom.window.document.querySelectorAll('.productOfferCard,.skeletonCard').length, 0, 'editing the address immediately clears old results and cancels loading');
+    await complete(cancelledAddressRequest);
+    assert.equal(dom.window.document.querySelectorAll('.productOfferCard').length, 0, 'an old address response must not restore old cards');
     if(process.env.FRONTEND_AUDIT_REPORT) await writeFile(resolve(process.env.FRONTEND_AUDIT_REPORT),JSON.stringify({
       checked_at:new Date().toISOString(),flow:'Actual Finder/components in JSDOM with real OBI/TOOM API and verified catalog; address/nearby services simulated. Not a live browser test.',
       queries:MVP_MATERIAL_INTENTS.length,observations:evidence,

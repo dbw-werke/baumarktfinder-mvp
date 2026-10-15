@@ -1,0 +1,6885 @@
+[
+  {
+    "key": "gipskarton",
+    "url": "https://www.hagebau.de/p/knauf-gipskartonplatte-miniboard-bxl-600-x-1200-x-125-mm-anP7000133401/",
+    "bytes": 446032,
+    "checked_at": "2026-10-15T17:21:14.552Z",
+    "htmlpath": "work/final-hagebau-gipskarton-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:12.888813621",
+      "minDeliveryTime": "2026-10-17T19:21:12.888813621",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "237545597",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "deliverySystemType": "KEP",
+      "ean": "4006379062171",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "285531",
+      "highlightUnitPrice": false,
+      "id": "P7000133401",
+      "inCart": false,
+      "itemId": "1142010",
+      "itemType": "STATIONARY",
+      "minimumOrderQuantity": 20,
+      "name": "Gipskartonplatte »Miniboard«, BxL: 600 x 1200 x 12,5 mm",
+      "number": "1142010",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "4,84 €",
+            "value": 4.84,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "6,72 €",
+              "value": 6.72,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "4,99 €",
+            "value": 4.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "6,93 €",
+              "value": 6.93,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "4,84 €",
+            "value": 4.84,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "6,72 €",
+              "value": 6.72,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "4,99 €",
+            "value": 4.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "6,93 €",
+              "value": 6.93,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          }
+        }
+      },
+      "productDisruptor": {
+        "backgroundColor": "FEED05",
+        "hideIfStorePriceHigher": false,
+        "name": "DAUERTIEFPREIS",
+        "textColor": "000000",
+        "type": "PERMANENT_LOW_PRICE"
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingAmount": {
+        "displayValue": "39,95 €",
+        "value": 39.95,
+        "currency": "EUR"
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shippingType": "gross_sperrig_3",
+      "shortDescription": "Gipskartonplatte »Miniboard«, BxL: 600 x 1200 x 12,5 mm",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1142010&productId=P7000133401&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "10010204",
+        "values": [
+          "10010204"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Gipskarton",
+        "values": [
+          "Gipskarton"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Stärke",
+        "value": "12.5 mm",
+        "values": [
+          "12.5 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "grau",
+        "values": [
+          "grau"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "1 - kein Picken",
+        "values": [
+          "1 - kein Picken"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "1 - Halle",
+        "values": [
+          "1 - Halle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "1 - nein",
+        "values": [
+          "1 - nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "3-lagig",
+        "values": [
+          "3-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "3 - Pal XL",
+        "values": [
+          "3 - Pal XL"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "3 - Pal XL",
+        "values": [
+          "3 - Pal XL"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Gips",
+        "values": [
+          "Gips"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Gipskartonplatte GKB Miniboard",
+        "values": [
+          "Gipskartonplatte GKB Miniboard"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "1200x600x12,5 mm",
+        "values": [
+          "1200x600x12,5 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "1200 mm",
+        "values": [
+          "1200 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "600 mm",
+        "values": [
+          "600 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "BxL: 600 x 1200 x 12,5 mm",
+        "values": [
+          "BxL: 600 x 1200 x 12,5 mm"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "Gipskartonplatten",
+        "color": "grau",
+        "depth": {
+          "unit": "mm",
+          "value": "1200"
+        },
+        "description": "KNAUF Gipskartonplatte »Miniboard«, BxL: 600 x 1200 x 12,5 mm, leicht und handlich, ca. 120 x 60 cm, ca. 12,5 mm stark",
+        "gtin13": "4006379062171",
+        "image": "https://image.hagebau.de/pdp_main/2199182.jpg",
+        "name": "Gipskartonplatte »Miniboard«, BxL: 600 x 1200 x 12,5 mm",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 4.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "transitTime": {
+                "maxValue": 4,
+                "minValue": 1,
+                "@type": "QuantitativeValue",
+                "unitCode": "d"
+              }
+            },
+            "shippingDestination": {
+              "addressCountry": "DE",
+              "@type": "DefinedRegion"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "currency": "EUR",
+              "value": 39.95
+            }
+          },
+          "url": "https://www.hagebau.de/p/knauf-gipskartonplatte-miniboard-bxl-600-x-1200-x-125-mm-anV1142010/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1142010",
+        "width": {
+          "unit": "mm",
+          "value": "600"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "acryl",
+    "url": "https://www.hagebau.de/p/renovo-acryl-riss-putz-anP02656646/",
+    "bytes": 387491,
+    "checked_at": "2026-10-15T17:21:16.582Z",
+    "htmlpath": "work/final-hagebau-acryl-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:14.897210489",
+      "minDeliveryTime": "2026-10-17T19:21:14.897210489",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-renovo/",
+        "name": "RENOVO"
+      },
+      "categoryId": "241877257",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4046806012867",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "491123",
+      "highlightUnitPrice": false,
+      "id": "P02656646",
+      "inCart": false,
+      "itemId": "1175112",
+      "itemType": "STATIONARY",
+      "manufacturerName": "Das Produkt wurde vor dem 13. Dezember 2024 vom Hersteller auf den Markt gebracht und von uns auch schon vor dem 13. Dezember 2024 zum Verkauf angeboten. Es besteht Konformität des Produkts nach Richtlinie 2001/95/EG.",
+      "name": "Acryl, »Riss & Putz«, 310 ml, weiß",
+      "number": "1175112",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "5,33 €",
+            "value": 5.33,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "17,18 €",
+              "value": 17.18,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "5,49 €",
+            "value": 5.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "17,71 €",
+              "value": 17.71,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "5,33 €",
+            "value": 5.33,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "17,18 €",
+              "value": 17.18,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "5,49 €",
+            "value": 5.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "17,71 €",
+              "value": 17.71,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shortDescription": "Acryl, »Riss & Putz«, 310 ml, weiß",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1175112&productId=P02656646&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "06030199",
+        "values": [
+          "06030199"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Acrylatdispersion",
+        "values": [
+          "Acrylatdispersion"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "weiß",
+        "values": [
+          "weiß"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "5 - KT einfach",
+        "values": [
+          "5 - KT einfach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Ja",
+        "values": [
+          "Ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gefahrgut Menge",
+        "value": "0.31",
+        "values": [
+          "0.31"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "3 - Warm (frostsicher)",
+        "values": [
+          "3 - Warm (frostsicher)"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "3-lagig",
+        "values": [
+          "3-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Materialmix",
+        "values": [
+          "Materialmix"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "10 - Karton",
+        "values": [
+          "10 - Karton"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Riss- und Putzacryl",
+        "values": [
+          "Riss- und Putzacryl"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "RENOVO",
+        "values": [
+          "RENOVO"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 3",
+        "value": "310ml",
+        "values": [
+          "310ml"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 4",
+        "value": "für den Innen- und Außenbereich",
+        "values": [
+          "für den Innen- und Außenbereich"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "RENOVO",
+          "@type": "Brand"
+        },
+        "category": "Acryl-Dichtstoffe",
+        "color": "weiß",
+        "description": "RENOVO Acryl Riss & Putz, Für innen und außen – die passende Unterstützung für Ihr Vorhaben, Mit RENOVO Riss + Putz Acryl 310 ml 310 ml – gelingen saubere Arbeiten und ein überzeugendes Finish, Für eine einfache und zielgerichtete Verarbeitung – bringt Ihr Projekt zügig voran",
+        "gtin13": "4046806012867",
+        "image": "https://image.hagebau.de/pdp_main/10013886.jpg",
+        "name": "Acryl Riss & Putz",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 5.49,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/renovo-acryl-riss-putz-310-ml-weiss-anV1175112/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1175112",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "rotband",
+    "url": "https://www.hagebau.de/p/knauf-haftputzgips-rotband-30-kg-grau-anP7000065922/",
+    "bytes": 364607,
+    "checked_at": "2026-10-15T17:21:20.025Z",
+    "htmlpath": "work/final-hagebau-rotband-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:18.433629554",
+      "minDeliveryTime": "2026-10-17T19:21:18.433629554",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "254635711",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4003982085160",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [
+        {
+          "description": "GHS05: Ätzwirkung",
+          "logo": "GHS05_acid_red.jpg",
+          "rank": 0
+        }
+      ],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "230579",
+      "highlightUnitPrice": false,
+      "id": "P7000065922",
+      "inCart": false,
+      "itemId": "1099216",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "Info-bauprodukte@knauf.com",
+      "manufacturerName": "Knauf Bauprodukte GmbH & Co. KG",
+      "manufacturerPostalAddress": "Knauf Gips KG, Am Bahnhof 7, 97346 Iphofen, Deutschland",
+      "manufacturerWebsite": "http://www.knauf.com",
+      "name": "Haftputzgips »Rotband«, 30 kg, grau",
+      "number": "1099216",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "11,34 €",
+            "value": 11.34,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "0,38 €",
+              "value": 0.38,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "11,69 €",
+            "value": 11.69,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "0,39 €",
+              "value": 0.39,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "11,34 €",
+            "value": 11.34,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "0,38 €",
+              "value": 0.38,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "11,69 €",
+            "value": 11.69,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "0,39 €",
+              "value": 0.39,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        }
+      },
+      "productDisruptor": {
+        "backgroundColor": "FEED05",
+        "hideIfStorePriceHigher": false,
+        "name": "DAUERTIEFPREIS",
+        "textColor": "000000",
+        "type": "PERMANENT_LOW_PRICE"
+      },
+      "reviews": {
+        "reviews": [
+          {
+            "author": "Harun",
+            "brand": "hagebau",
+            "city": "",
+            "date": "2026-08-07T12:59:01.000",
+            "helpfulCount": 0,
+            "isRecommended": false,
+            "message": "Einfach zu rühren und zu verarbeiten. Auch die Größe von 30kg/Sack passt perfekt.",
+            "notHelpfulCount": 0,
+            "productId": "P7000065922",
+            "rating": 5,
+            "reviewDate": "7. August 2026",
+            "source": "ADS",
+            "title": "Wand spachteln"
+          },
+          {
+            "author": "Anonym",
+            "brand": "hagebau",
+            "city": "",
+            "date": "2026-08-07T08:44:50.000",
+            "helpfulCount": 0,
+            "isRecommended": false,
+            "message": "Klassiker wenns ums verspachteln geht, kann man immer für fast alles nehmen.",
+            "notHelpfulCount": 0,
+            "productId": "P7000065922",
+            "rating": 5,
+            "reviewDate": "7. August 2026",
+            "source": "ADS",
+            "title": "Bestes zeuch"
+          }
+        ],
+        "average": 5,
+        "bestRating": 5,
+        "count": 2,
+        "starRating": 5,
+        "worstRating": 5
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shortDescription": "Haftputzgips »Rotband«, 30 kg, grau",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1099216&productId=P7000065922&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "06020106",
+        "values": [
+          "06020106"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen",
+        "values": [
+          "innen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Frostsicher",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gebindegröße (kg)",
+        "value": "30 kg",
+        "values": [
+          "30 kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbe",
+        "value": "Grau",
+        "values": [
+          "Grau"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Gips",
+        "values": [
+          "Gips"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Körnung (max.)",
+        "value": "0.8 mm",
+        "values": [
+          "0.8 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "grau",
+        "values": [
+          "grau"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "1 - kein Picken",
+        "values": [
+          "1 - kein Picken"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Ja",
+        "values": [
+          "Ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gefahrgut Menge",
+        "value": "30",
+        "values": [
+          "30"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gefahrstoffeinstufung",
+        "value": "Eye Dam. 1 Skin Irrit. 2",
+        "values": [
+          "Eye Dam. 1 Skin Irrit. 2"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "1 - Halle",
+        "values": [
+          "1 - Halle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "1-lagig",
+        "values": [
+          "1-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "GHS-Piktogramm-Kodierung",
+        "value": "GHS05: Ätzwirkung",
+        "values": [
+          "GHS05: Ätzwirkung"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Rotband Haftputzgips",
+        "values": [
+          "Rotband Haftputzgips"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "30,0Kg",
+        "values": [
+          "30,0Kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "FH Baustoffe",
+        "values": [
+          "FH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Untergrundeignung",
+        "value": "Putz",
+        "values": [
+          "Putz"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Witterungsbeständig",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "30 kg, grau",
+        "values": [
+          "30 kg, grau"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "aggregateRating": {
+          "ratingCount": 2,
+          "ratingValue": 5,
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "Gips",
+        "color": "grau",
+        "description": "KNAUF Haftputzgips »Rotband«, 30 kg, grau, Universeller Haftputzgips für Wand- und Deckenflächen, Idealer Untergrund für Anstriche oder Tapeten, Auf allen rauen Putzoberflächen anwendbar, Hohe Haftfähigkeit, stoß- und druckfest, Einsatz im Innenbereich",
+        "gtin13": "4003982085160",
+        "image": "https://image.hagebau.de/pdp_main/2000000000007513.jpg",
+        "name": "Haftputzgips »Rotband«, 30 kg, grau",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 11.69,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/knauf-haftputzgips-rotband-30-kg-grau-anV1099216/",
+          "@type": "Offer"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "name": "Harun",
+              "@type": "Person"
+            },
+            "datePublished": "2026-08-07",
+            "description": "Einfach zu rühren und zu verarbeiten. Auch die Größe von 30kg/Sack passt perfekt.",
+            "reviewRating": {
+              "ratingValue": 5,
+              "@type": "Rating"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "name": "Anonym",
+              "@type": "Person"
+            },
+            "datePublished": "2026-08-07",
+            "description": "Klassiker wenns ums verspachteln geht, kann man immer für fast alles nehmen.",
+            "reviewRating": {
+              "ratingValue": 5,
+              "@type": "Rating"
+            }
+          }
+        ],
+        "sku": "1099216",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "perlfix",
+    "url": "https://www.hagebau.de/p/knauf-ansetzgips-geeignet-fuer-wand-10-kg-anP7000203417/",
+    "bytes": 440634,
+    "checked_at": "2026-10-15T17:21:20.465Z",
+    "htmlpath": "work/final-hagebau-perlfix-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-26T19:21:18.90765023",
+      "minDeliveryTime": "2026-10-23T19:21:18.90765023",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "254635711",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4006379035182",
+      "estimatedDeliveryDateMax": "2026-10-26",
+      "estimatedDeliveryDateMin": "2026-10-23",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "247000",
+      "highlightUnitPrice": false,
+      "id": "P7000203417",
+      "inCart": false,
+      "itemId": "1168579",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "Info-bauprodukte@knauf.com",
+      "manufacturerName": "Knauf Bauprodukte GmbH & Co. KG",
+      "manufacturerPostalAddress": "Knauf Bauprodukte GmbH & Co. KG, Am Bahnhof 7, 97346 Iphofen, Deutschland",
+      "manufacturerWebsite": "http://www.knauf.com",
+      "name": "Ansetzgips »Perlfix«, geeignet für: Wand, 10 kg",
+      "number": "1168579",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "7,46 €",
+            "value": 7.46,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "0,75 €",
+              "value": 0.75,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "7,69 €",
+            "value": 7.69,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "0,77 €",
+              "value": 0.77,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "7,46 €",
+            "value": 7.46,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "0,75 €",
+              "value": 0.75,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "7,69 €",
+            "value": 7.69,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "0,77 €",
+              "value": 0.77,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 7,
+      "shortDescription": "Ansetzgips »Perlfix«, geeignet für: Wand, 10 kg",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1168579&productId=P7000203417&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "06020106",
+        "values": [
+          "06020106"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen",
+        "values": [
+          "innen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Inhalt",
+        "value": "10 kg",
+        "values": [
+          "10 kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Gips",
+        "values": [
+          "Gips"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "grau",
+        "values": [
+          "grau"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "5 - KT einfach",
+        "values": [
+          "5 - KT einfach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "1 - Halle",
+        "values": [
+          "1 - Halle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "3-lagig",
+        "values": [
+          "3-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Gips",
+        "values": [
+          "Gips"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "0 - Stück",
+        "values": [
+          "0 - Stück"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Perlfix Ansetzgips",
+        "values": [
+          "Perlfix Ansetzgips"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "10,0Kg",
+        "values": [
+          "10,0Kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "geeignet für: Wand, 10 kg",
+        "values": [
+          "geeignet für: Wand, 10 kg"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "Gips",
+        "color": "grau",
+        "description": "KNAUF Ansetzgips, geeignet für: Wand, 10 kg, Spezialkleber zum Befestigen von Gipsplatten direkt auf Mauerwerk und Beton, optimal haftvermittelnd für festen Halt Ihrer Platten  auch auf unebenem Untergrund, sehr ergiebig  ideal bei großen Flächen, leicht zu verarbeiten durch spachtelfähige Konsistenz, für Wände im Innenbereich geeignet",
+        "gtin13": "4006379035182",
+        "image": "https://image.hagebau.de/pdp_main/2014467.jpg",
+        "name": "Ansetzgips, geeignet für: Wand, 10 kg",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 7.69,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/knauf-ansetzgips-perlfix-geeignet-fuer-wand-10-kg-anV1168579/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1168579",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "sockelputz",
+    "url": "https://www.hagebau.de/p/sakret-sockelputz-grau-anP7000464814/",
+    "bytes": 339608,
+    "checked_at": "2026-10-15T17:21:22.579Z",
+    "htmlpath": "work/final-hagebau-sockelputz-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-21T19:21:20.9306342",
+      "minDeliveryTime": "2026-10-19T19:21:20.9306342",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-sakret/",
+        "name": "SAKRET"
+      },
+      "categoryId": "237534149",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4005813664070",
+      "estimatedDeliveryDateMax": "2026-10-21",
+      "estimatedDeliveryDateMin": "2026-10-19",
+      "ghsLabels": [
+        {
+          "description": "GHS05: Ätzwirkung",
+          "logo": "GHS05_acid_red.jpg",
+          "rank": 0
+        },
+        {
+          "description": "GHS07: Ausrufezeichen",
+          "logo": "GHS07_exclam.jpg",
+          "rank": 1
+        }
+      ],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "45514114",
+      "highlightUnitPrice": false,
+      "id": "P7000464814",
+      "inCart": false,
+      "itemId": "1150875",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "info@heimwerker.sakret.de",
+      "manufacturerName": "DEAL!",
+      "manufacturerPostalAddress": "SAKRET Trockenbaustoffe Europa GmbH & Co. KG, Franklinstr. 14, 10587 Berlin",
+      "manufacturerWebsite": "www.sakret.de",
+      "name": "Sockelputz",
+      "number": "1150875",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "10,18 €",
+            "value": 10.18,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "1,02 €",
+              "value": 1.02,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "10,49 €",
+            "value": 10.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "1,05 €",
+              "value": 1.05,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "10,18 €",
+            "value": 10.18,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "1,02 €",
+              "value": 1.02,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "10,49 €",
+            "value": 10.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "1,05 €",
+              "value": 1.05,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 3,
+      "shortDescription": "Sockelputz",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [
+        {
+          "attributeName": "import:dim_2",
+          "display_string": "Ausführung",
+          "name": "var[import:dim_2]",
+          "options": [
+            {
+              "ean": "4005813664070",
+              "imageUrl": "https://image.hagebau.de/pdp_thumb/1000000000435389.jpg",
+              "isAvailable": false,
+              "itemId": "1150875",
+              "label": "10 kg",
+              "value": "10 kg"
+            },
+            {
+              "ean": "4005813664087",
+              "imageUrl": "https://image.hagebau.de/pdp_thumb/1000000000435389.jpg",
+              "isAvailable": false,
+              "itemId": "1150867",
+              "label": "30 kg",
+              "value": "30 kg"
+            }
+          ],
+          "selectedOption": "10 kg"
+        }
+      ],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1150875&productId=P7000464814&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen & außen",
+        "values": [
+          "innen & außen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gebindegröße (kg)",
+        "value": "10 kg",
+        "values": [
+          "10 kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Körnung",
+        "value": "1 mm",
+        "values": [
+          "1 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Beschränkter Ausgangsstoff",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "grau",
+        "values": [
+          "grau"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Meldepflichtiger Ausgangstoff",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "GHS-Piktogramm-Kodierung",
+        "value": "GHS05: Ätzwirkung",
+        "values": [
+          "GHS05: Ätzwirkung",
+          "GHS07: Ausrufezeichen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Sockelputz",
+        "values": [
+          "Sockelputz"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "10Kg",
+        "values": [
+          "10Kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Höhe",
+        "value": "360 mm",
+        "values": [
+          "360 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "110 mm",
+        "values": [
+          "110 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "160 mm",
+        "values": [
+          "160 mm"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "SAKRET",
+          "@type": "Brand"
+        },
+        "category": "Ofendichtung",
+        "color": "grau",
+        "depth": {
+          "unit": "mm",
+          "value": "110"
+        },
+        "description": "SAKRET Sockelputz grau, Zementgebundener Unterputz für herkömmliches Mauerwerk / Normalputzmörtel, Für innen und außen, Für Wand, Schichtdicke 10 - 20 mm, Wasserabweisend, Filzbar",
+        "gtin13": "4005813664070",
+        "height": {
+          "unit": "mm",
+          "value": "360"
+        },
+        "image": "https://image.hagebau.de/pdp_main/1000000000435389.jpg",
+        "name": "Sockelputz grau",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 10.49,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/sakret-sockelputz-anV1150875/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1150875",
+        "width": {
+          "unit": "mm",
+          "value": "160"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "cd-profil",
+    "url": "https://www.hagebau.de/p/knauf-cd-deckenprofil-laenge-400-cm-silberfarben-anP7000288337/",
+    "bytes": 415022,
+    "checked_at": "2026-10-15T17:21:24.698Z",
+    "htmlpath": "work/final-hagebau-cd-profil-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-17T19:21:22.944325459",
+      "minDeliveryTime": "2026-10-15T19:21:22.944325459",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "237545508",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4006379066759",
+      "estimatedDeliveryDateMax": "2026-10-17",
+      "estimatedDeliveryDateMin": "2026-10-15",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "211436",
+      "highlightUnitPrice": false,
+      "id": "P7000288337",
+      "inCart": false,
+      "itemId": "1208686",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "Info-bauprodukte@knauf.com",
+      "manufacturerName": "Knauf Bauprodukte GmbH & Co. KG",
+      "manufacturerPostalAddress": "Knauf Bauprodukte GmbH & Co. KG, Am Bahnhof 7, 97346 Iphofen, Deutschland",
+      "manufacturerWebsite": "http://www.knauf.com",
+      "name": "Profil, CD-Decken, 60 x 27 x 6 mm, à 4000 mm",
+      "number": "1208686",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "11,44 €",
+            "value": 11.44,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,86 €",
+              "value": 2.86,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "11,79 €",
+            "value": 11.79,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "2,95 €",
+              "value": 2.95,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "11,44 €",
+            "value": 11.44,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,86 €",
+              "value": 2.86,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "11,79 €",
+            "value": 11.79,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "2,95 €",
+              "value": 2.95,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          }
+        }
+      },
+      "productDisruptor": {
+        "backgroundColor": "FEED05",
+        "hideIfStorePriceHigher": false,
+        "name": "DAUERTIEFPREIS",
+        "textColor": "000000",
+        "type": "PERMANENT_LOW_PRICE"
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 0,
+      "shortDescription": "Profil, CD-Decken, 60 x 27 x 6 mm, à 4000 mm",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1208686&productId=P7000288337&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "37020122",
+        "values": [
+          "37020122"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen",
+        "values": [
+          "innen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Stahlblech",
+        "values": [
+          "Stahlblech"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Stärke",
+        "value": "0.6 mm",
+        "values": [
+          "0.6 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "bunt",
+        "values": [
+          "bunt"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "5 - KT einfach",
+        "values": [
+          "5 - KT einfach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "1 - Halle",
+        "values": [
+          "1 - Halle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "1-lagig",
+        "values": [
+          "1-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Stahl",
+        "values": [
+          "Stahl"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "0 - Stück",
+        "values": [
+          "0 - Stück"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "CD-Deckenprofil",
+        "values": [
+          "CD-Deckenprofil"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "4000x60x27x0,6 mm",
+        "values": [
+          "4000x60x27x0,6 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "4000 mm",
+        "values": [
+          "4000 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Höhe",
+        "value": "27 mm",
+        "values": [
+          "27 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "60 mm",
+        "values": [
+          "60 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "CD-Decken, 60 x 27 x 6 mm, à 4000 mm",
+        "values": [
+          "CD-Decken, 60 x 27 x 6 mm, à 4000 mm"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "Trockenbauprofile",
+        "color": "bunt",
+        "depth": {
+          "unit": "mm",
+          "value": "4000"
+        },
+        "description": "KNAUF CD-Deckenprofil, Länge: 400 cm, silberfarben, Verzinktes Stahlblech für hohe Stabilität, Einfache Montage durch 4 m Länge, Ideal für Decken im Innenbereich, Zur Beplankung mit Gipsplatten, z. B. Knauf Gipsplatten, Platzsparend (geringe Höhe  von 27 mm), perfekt als Ständerprofil für Wandbekleidungen einsetzbar",
+        "gtin13": "4006379066759",
+        "height": {
+          "unit": "mm",
+          "value": "27"
+        },
+        "image": "https://image.hagebau.de/pdp_main/4000000000016357.jpg",
+        "name": "CD-Deckenprofil, Länge: 400 cm, silberfarben",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 11.79,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/knauf-profil-cd-decken-60-x-27-x-6-mm-a-4000-mm-anV1208686/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1208686",
+        "width": {
+          "unit": "mm",
+          "value": "60"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "uw-profil",
+    "url": "https://www.hagebau.de/p/knauf-uw-db-rahmenprofil-stahl-bxhxl-50-mm-x-40-mm-x-2000-mm-anP7000166633/",
+    "bytes": 431100,
+    "checked_at": "2026-10-15T17:21:26.872Z",
+    "htmlpath": "work/final-hagebau-uw-profil-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:24.941340124",
+      "minDeliveryTime": "2026-10-17T19:21:24.941340124",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "237545508",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4006379075706",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "358949",
+      "highlightUnitPrice": false,
+      "id": "P7000166633",
+      "inCart": false,
+      "itemId": "1131956",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "Info-bauprodukte@knauf.com",
+      "manufacturerName": "Knauf Bauprodukte GmbH & Co. KG",
+      "manufacturerPostalAddress": "Knauf Bauprodukte GmbH & Co. KG, Am Bahnhof 7, 97346 Iphofen, Deutschland",
+      "manufacturerWebsite": "http://www.knauf.com",
+      "name": "UW-dB-Rahmenprofil, Stahl, BxHxL: 50 mm x 40 mm x 2000 mm",
+      "number": "1131956",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "4,84 €",
+            "value": 4.84,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,42 €",
+              "value": 2.42,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "4,99 €",
+            "value": 4.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "2,50 €",
+              "value": 2.5,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "4,84 €",
+            "value": 4.84,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,42 €",
+              "value": 2.42,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "4,99 €",
+            "value": 4.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "2,50 €",
+              "value": 2.5,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shortDescription": "UW-dB-Rahmenprofil, Stahl, BxHxL: 50 mm x 40 mm x 2000 mm",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1131956&productId=P7000166633&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "37020134",
+        "values": [
+          "37020134"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Beschichtung",
+        "value": "verzinkt",
+        "values": [
+          "verzinkt"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Stahl",
+        "values": [
+          "Stahl"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Stärke",
+        "value": "0.6 mm",
+        "values": [
+          "0.6 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "silberfarben",
+        "values": [
+          "silberfarben"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "1 - kein Picken",
+        "values": [
+          "1 - kein Picken"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "2 - Unter Dach",
+        "values": [
+          "2 - Unter Dach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "1 - nein",
+        "values": [
+          "1 - nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "2-lagig",
+        "values": [
+          "2-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "3 - Pal XL",
+        "values": [
+          "3 - Pal XL"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "3 - Pal XL",
+        "values": [
+          "3 - Pal XL"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Metall",
+        "values": [
+          "Metall"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "UW-DB Rahmenprofil",
+        "values": [
+          "UW-DB Rahmenprofil"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "2000x50x40 mm",
+        "values": [
+          "2000x50x40 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "2000 mm",
+        "values": [
+          "2000 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Höhe",
+        "value": "40 mm",
+        "values": [
+          "40 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "50 mm",
+        "values": [
+          "50 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "Stahl, BxHxL: 50 mm x 40 mm x 2000 mm",
+        "values": [
+          "Stahl, BxHxL: 50 mm x 40 mm x 2000 mm"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "Trockenbauprofile",
+        "color": "silberfarben",
+        "depth": {
+          "unit": "mm",
+          "value": "2000"
+        },
+        "description": "KNAUF UW-dB-Rahmenprofil, Stahl, BxHxL: 50 mm x 40 mm x 2000 mm, stabile Grundlage fur den Aufbau einer Trockenbauwand, zusätzlich besserer Schallschutz, UW-dB 50x40mm x 200cm, zur Befestigung an Decke und Boden, wabenähnliche Spezialprägung macht die Metallleisten stabiler",
+        "gtin13": "4006379075706",
+        "height": {
+          "unit": "mm",
+          "value": "40"
+        },
+        "image": "https://image.hagebau.de/pdp_main/2222076.jpg",
+        "name": "UW-dB-Rahmenprofil, Stahl, BxHxL: 50 mm x 40 mm x 2000 mm",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 4.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/knauf-uw-db-rahmenprofil-stahl-bxhxl-50-mm-x-40-mm-x-2000-mm-anV1131956/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1131956",
+        "width": {
+          "unit": "mm",
+          "value": "50"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "direktabhaenger",
+    "url": "https://www.hagebau.de/p/knauf-abhaengung-direktabhaenger-laenge-125-cm-silberfarben-anP7000261035/",
+    "bytes": 389150,
+    "checked_at": "2026-10-15T17:21:28.862Z",
+    "htmlpath": "work/final-hagebau-direktabhaenger-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:26.954162615",
+      "minDeliveryTime": "2026-10-17T19:21:26.954162615",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "237545508",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4006379064052",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "133715",
+      "highlightUnitPrice": false,
+      "id": "P7000261035",
+      "inCart": false,
+      "itemId": "1170920",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "Info-bauprodukte@knauf.com",
+      "manufacturerName": "Knauf Bauprodukte GmbH & Co. KG",
+      "manufacturerPostalAddress": "Knauf Bauprodukte GmbH & Co. KG, Am Bahnhof 7, 97346 Iphofen, Deutschland",
+      "manufacturerWebsite": "http://www.knauf.com",
+      "name": "Abhängung, Direktabhänger, Länge: 12.5cm, silberfarben",
+      "number": "1170920",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "0,63 €",
+            "value": 0.63,
+            "currency": "EUR"
+          },
+          "displayPrice": {
+            "displayValue": "0,65 €",
+            "value": 0.65,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "0,63 €",
+            "value": 0.63,
+            "currency": "EUR"
+          },
+          "displayPrice": {
+            "displayValue": "0,65 €",
+            "value": 0.65,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false
+        }
+      },
+      "reviews": {
+        "reviews": [
+          {
+            "author": "Vasile",
+            "brand": "hagebau",
+            "city": "",
+            "date": "2026-08-07T14:21:27.000",
+            "helpfulCount": 0,
+            "isRecommended": false,
+            "message": "Top, alle Produkte sind sehr qualitativ und sehr nette Mitarbeiter",
+            "notHelpfulCount": 0,
+            "productId": "P7000261035",
+            "rating": 5,
+            "reviewDate": "7. August 2026",
+            "source": "ADS",
+            "title": "Sehr gut"
+          }
+        ],
+        "average": 5,
+        "bestRating": 5,
+        "count": 1,
+        "starRating": 5,
+        "worstRating": 5
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shortDescription": "Abhängung, Direktabhänger, Länge: 12.5cm, silberfarben",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1170920&productId=P7000261035&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "33010102",
+        "values": [
+          "33010102"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen",
+        "values": [
+          "innen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Metall",
+        "values": [
+          "Metall"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "5 - KT einfach",
+        "values": [
+          "5 - KT einfach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "1 - Halle",
+        "values": [
+          "1 - Halle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "1-lagig",
+        "values": [
+          "1-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "2 - PK",
+        "values": [
+          "2 - PK"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "2 - PK",
+        "values": [
+          "2 - PK"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "11 - Paket",
+        "values": [
+          "11 - Paket"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Direktabhänger",
+        "values": [
+          "Direktabhänger"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "für CD-Profil 125 mm",
+        "values": [
+          "für CD-Profil 125 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "12.5 cm",
+        "values": [
+          "12.5 cm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "Direktabhänger,  Länge: 12.5cm,  silberfarben",
+        "values": [
+          "Direktabhänger,  Länge: 12.5cm,  silberfarben"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "aggregateRating": {
+          "ratingCount": 1,
+          "ratingValue": 5,
+          "@type": "AggregateRating"
+        },
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "Trockenbauprofile",
+        "depth": {
+          "unit": "cm",
+          "value": "12.5"
+        },
+        "description": "KNAUF Abhängung, Direktabhänger, Länge: 12.5 cm, silberfarben, Zur direkten Abhängung der Decke bis 12,5 cm, Wärmedämmung bis zu 100 mm möglich, Für Innen, Aus verzinktem Stahlblech, Tragfähigkeit von 0,40 kN",
+        "gtin13": "4006379064052",
+        "image": "https://image.hagebau.de/pdp_main/4000000000016621.jpg",
+        "name": "Abhängung, Direktabhänger, Länge: 12.5 cm, silberfarben",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 0.65,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/knauf-abhaengung-direktabhaenger-laenge-125cm-silberfarben-anV1170920/",
+          "@type": "Offer"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "name": "Vasile",
+              "@type": "Person"
+            },
+            "datePublished": "2026-08-07",
+            "description": "Top, alle Produkte sind sehr qualitativ und sehr nette Mitarbeiter",
+            "reviewRating": {
+              "ratingValue": 5,
+              "@type": "Rating"
+            }
+          }
+        ],
+        "sku": "1170920",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "haftgrund",
+    "url": "https://www.hagebau.de/p/mem-haftgrund-super-haftgrund-anP00637294/",
+    "bytes": 360251,
+    "checked_at": "2026-10-15T17:21:30.818Z",
+    "htmlpath": "work/final-hagebau-haftgrund-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-22T19:21:28.975910803",
+      "minDeliveryTime": "2026-10-20T19:21:28.975910803",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-mem/",
+        "name": "MEM"
+      },
+      "categoryId": "2898433348",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4010327007718",
+      "estimatedDeliveryDateMax": "2026-10-22",
+      "estimatedDeliveryDateMin": "2026-10-20",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "273318",
+      "highlightUnitPrice": false,
+      "id": "P00637294",
+      "inCart": false,
+      "itemId": "1147408",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "mem.service@bostik.com",
+      "manufacturerName": "Bostik GmbH, NL MEM",
+      "manufacturerPostalAddress": "Am Emsdeich 52, 26789 Leer",
+      "manufacturerWebsite": "www.mem.de",
+      "name": "Haftgrund »SUPER-HAFTGRUND«, 5 l, weiß",
+      "number": "1147408",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "29,09 €",
+            "value": 29.09,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "5,82 €",
+              "value": 5.82,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "29,99 €",
+            "value": 29.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "6,00 €",
+              "value": 6,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "29,09 €",
+            "value": 29.09,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "5,82 €",
+              "value": 5.82,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "29,99 €",
+            "value": 29.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "6,00 €",
+              "value": 6,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 4,
+      "shortDescription": "Haftgrund »SUPER-HAFTGRUND«, 5 l, weiß",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1147408&productId=P00637294&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gebindegröße",
+        "value": "5 l",
+        "values": [
+          "5 l"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gebindegröße (l)",
+        "value": "5 l",
+        "values": [
+          "5 l"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Materialmix",
+        "values": [
+          "Materialmix"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialbasis",
+        "value": "Wasserbasis",
+        "values": [
+          "Wasserbasis"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Beschränkter Ausgangsstoff",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "weiß",
+        "values": [
+          "weiß"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Materialmix",
+        "values": [
+          "Materialmix"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Meldepflichtiger Ausgangstoff",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Super Haftgrund",
+        "values": [
+          "Super Haftgrund"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "5,0L",
+        "values": [
+          "5,0L"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "5 l, weiß",
+        "values": [
+          "5 l, weiß"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "MEM",
+          "@type": "Brand"
+        },
+        "category": "Sanierputz",
+        "color": "weiß",
+        "description": "MEM Haftgrund SUPER-HAFTGRUND, lösemittelfrei, auch für feuchte Untergründe, hochwertig kautschukvergütet, Innen und außen anwendbar, nach ca. 30 Minuten überarbeitbar",
+        "gtin13": "4010327007718",
+        "image": "https://image.hagebau.de/pdp_main/13887179.jpg",
+        "name": "Haftgrund SUPER-HAFTGRUND",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 29.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/mem-haftgrund-super-haftgrund-5-l-weiss-anV1147408/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1147408",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "rollputz",
+    "url": "https://www.hagebau.de/p/knauf-dekorputz-weiss-geeignet-fuer-wand-und-decke-anP7000248025/",
+    "bytes": 421672,
+    "checked_at": "2026-10-15T17:21:32.979Z",
+    "htmlpath": "work/final-hagebau-rollputz-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:30.966523281",
+      "minDeliveryTime": "2026-10-17T19:21:30.966523281",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "254635811",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4006379067657",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "370543",
+      "highlightUnitPrice": false,
+      "id": "P7000248025",
+      "inCart": false,
+      "itemId": "1170946",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "Info-bauprodukte@knauf.com",
+      "manufacturerName": "Knauf Bauprodukte GmbH & Co. KG",
+      "manufacturerPostalAddress": "Knauf Bauprodukte GmbH & Co. KG, Am Bahnhof 7, 97346 Iphofen, Deutschland",
+      "manufacturerWebsite": "http://www.knauf.com",
+      "name": "Putz »Easy-Putz«, 1 mm, 10 kg",
+      "number": "1170946",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "29,09 €",
+            "value": 29.09,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,91 €",
+              "value": 2.91,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "29,99 €",
+            "value": 29.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "3,00 €",
+              "value": 3,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "29,09 €",
+            "value": 29.09,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,91 €",
+              "value": 2.91,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "29,99 €",
+            "value": 29.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "3,00 €",
+              "value": 3,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        }
+      },
+      "productDisruptor": {
+        "backgroundColor": "FEED05",
+        "hideIfStorePriceHigher": false,
+        "name": "DAUERTIEFPREIS",
+        "textColor": "000000",
+        "type": "PERMANENT_LOW_PRICE"
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shortDescription": "Putz »Easy-Putz«, 1 mm, 10 kg",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1170946&productId=P7000248025&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "06040299",
+        "values": [
+          "06040299"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen",
+        "values": [
+          "innen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "bunt",
+        "values": [
+          "bunt"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "5 - KT einfach",
+        "values": [
+          "5 - KT einfach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Ja",
+        "values": [
+          "Ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "3 - Warm (frostsicher)",
+        "values": [
+          "3 - Warm (frostsicher)"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "1-lagig",
+        "values": [
+          "1-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Materialmix",
+        "values": [
+          "Materialmix"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "0 - Stück",
+        "values": [
+          "0 - Stück"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Easy Putz Rollputz",
+        "values": [
+          "Easy Putz Rollputz"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "10,0Kg, 1,0 mm",
+        "values": [
+          "10,0Kg, 1,0 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "1 mm, 10 kg",
+        "values": [
+          "1 mm, 10 kg"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "sonstiger Putz",
+        "color": "bunt",
+        "description": "KNAUF Dekorputz, weiß, Geeignet für Wand und Decke, Atmungsaktiv und wasserdampfdurchlässig, Hochdeckend und abriebfest, Einfärbbar mit Knauf Compact Color, Lösemittelfrei und VOC-konform, Erfüllt die Produkteigenschaften gemäß DIN EN 15824",
+        "gtin13": "4006379067657",
+        "image": "https://image.hagebau.de/pdp_main/1949991.jpg",
+        "name": "Dekorputz, weiß, Geeignet für Wand und Decke",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 29.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/knauf-putz-easy-putz-1-mm-10-kg-anV1170946/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1170946",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "schnellbauschrauben",
+    "url": "https://www.hagebau.de/p/gecco-schnellbauschrauben-35-mm-stahl-1000-stk-35-x-25-mm-anP7000133242/",
+    "bytes": 344428,
+    "checked_at": "2026-10-15T17:21:34.813Z",
+    "htmlpath": "work/final-hagebau-schnellbauschrauben-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-23T19:21:32.959273252",
+      "minDeliveryTime": "2026-10-21T19:21:32.959273252",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-gecco/",
+        "name": "GECCO"
+      },
+      "categoryId": "237580157",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4035300987252",
+      "estimatedDeliveryDateMax": "2026-10-23",
+      "estimatedDeliveryDateMin": "2026-10-21",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "45852474",
+      "highlightUnitPrice": false,
+      "id": "P7000133242",
+      "inCart": false,
+      "itemId": "1140353",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "info@conmetall.de",
+      "manufacturerName": "Conmetall Meister GmbH",
+      "manufacturerPostalAddress": "Conmetall Meister GmbH, Hafenstraße 26, 29223 Celle (DE)",
+      "manufacturerWebsite": "https://www.conmetallmeister.de",
+      "name": "Schnellbauschrauben, 3,5 mm, Stahl, 1000 Stk., 3,5 x 25 mm",
+      "number": "1140353",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "11,63 €",
+            "value": 11.63,
+            "currency": "EUR"
+          },
+          "displayPrice": {
+            "displayValue": "11,99 €",
+            "value": 11.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "11,63 €",
+            "value": 11.63,
+            "currency": "EUR"
+          },
+          "displayPrice": {
+            "displayValue": "11,99 €",
+            "value": 11.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 5,
+      "shortDescription": "Schnellbauschrauben, 3,5 mm, Stahl, 1000 Stk., 3,5 x 25 mm",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1140353&productId=P7000133242&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Basic (ALT)",
+        "values": [
+          "Basic (ALT)"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "schwarz",
+        "values": [
+          "schwarz"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Stahl",
+        "values": [
+          "Stahl"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "GECCO Schnellbauschrauben 3,5 x 25 mm",
+        "values": [
+          "GECCO Schnellbauschrauben 3,5 x 25 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "Trompetenkopf, mit Feingewinde pho",
+        "values": [
+          "Trompetenkopf, mit Feingewinde pho"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 3",
+        "value": "1000 St",
+        "values": [
+          "1000 St"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "GECCO",
+          "@type": "Brand"
+        },
+        "category": "Schnellbauschrauben",
+        "color": "schwarz",
+        "description": "GECCO Schnellbauschrauben, 3,5 mm, Stahl, 1000 Stk., 3,5 x 25 mm, Trompetenkopf, mit Feingewinde, gefertigt nach DIN EN 14566, phosphatiert",
+        "gtin13": "4035300987252",
+        "image": "https://image.hagebau.de/pdp_main/1000000000128615.jpg",
+        "name": "Schnellbauschrauben, 3,5 mm, Stahl, 1000 Stk., 3,5 x 25 mm",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 11.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/gecco-schnellbauschrauben-35-mm-stahl-1000-stk-35-x-25-mm-anV1140353/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1140353",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "pu-schaum",
+    "url": "https://www.hagebau.de/p/soudal-pu-schaum-pistolenschaum-b2-anP00637754/",
+    "bytes": 395908,
+    "checked_at": "2026-10-15T17:21:37.064Z",
+    "htmlpath": "work/final-hagebau-pu-schaum-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:34.990408055",
+      "minDeliveryTime": "2026-10-17T19:21:34.990408055",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-soudal/",
+        "name": "SOUDAL"
+      },
+      "categoryId": "237544650",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "5411183007970",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [
+        {
+          "description": "GHS02: Flamme",
+          "logo": "GHS02_flamme.jpg",
+          "rank": 0
+        },
+        {
+          "description": "GHS07: Ausrufezeichen",
+          "logo": "GHS07_exclam.jpg",
+          "rank": 1
+        },
+        {
+          "description": "GHS08: Gesundheitsgefahr",
+          "logo": "GHS08_silhouete.jpg",
+          "rank": 2
+        }
+      ],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "278017",
+      "highlightUnitPrice": false,
+      "id": "P00637754",
+      "inCart": false,
+      "itemId": "1169406",
+      "itemType": "STATIONARY",
+      "manufacturerName": "Das Produkt wurde vor dem 13. Dezember 2024 vom Hersteller auf den Markt gebracht und von uns auch schon vor dem 13. Dezember 2024 zum Verkauf angeboten. Es besteht Konformität des Produkts nach Richtlinie 2001/95/EG.",
+      "name": "PU-Schaum, »Pistolenschaum B2«, 750 ml, beige",
+      "number": "1169406",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "12,12 €",
+            "value": 12.12,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "16,15 €",
+              "value": 16.15,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "12,49 €",
+            "value": 12.49,
+            "currency": "EUR"
+          },
+          "savedAmount": {
+            "displayValue": "1,50 €",
+            "value": 1.5,
+            "currency": "EUR"
+          },
+          "savedPercentage": 11,
+          "strikePrice": {
+            "displayValue": "13,99 €",
+            "value": 13.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": true,
+          "unitPrice": {
+            "price": {
+              "displayValue": "16,65 €",
+              "value": 16.65,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "unitStrikePrice": {
+            "price": {
+              "displayValue": "18,65 €",
+              "value": 18.65,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "12,12 €",
+            "value": 12.12,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "16,15 €",
+              "value": 16.15,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "12,49 €",
+            "value": 12.49,
+            "currency": "EUR"
+          },
+          "savedAmount": {
+            "displayValue": "1,50 €",
+            "value": 1.5,
+            "currency": "EUR"
+          },
+          "savedPercentage": 11,
+          "strikePrice": {
+            "displayValue": "13,99 €",
+            "value": 13.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": true,
+          "unitPrice": {
+            "price": {
+              "displayValue": "16,65 €",
+              "value": 16.65,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "unitStrikePrice": {
+            "price": {
+              "displayValue": "18,65 €",
+              "value": 18.65,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shortDescription": "PU-Schaum, »Pistolenschaum B2«, 750 ml, beige",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1169406&productId=P00637754&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "06030299",
+        "values": [
+          "06030299"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Funktionen",
+        "value": "Abdichten, Ausfüllen, Dämmen, Isolieren",
+        "values": [
+          "Abdichten, Ausfüllen, Dämmen, Isolieren"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gewicht",
+        "value": "1000 g",
+        "values": [
+          "1000 g"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Polyurethan (PU)",
+        "values": [
+          "Polyurethan (PU)"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "beige",
+        "values": [
+          "beige"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "5 - KT einfach",
+        "values": [
+          "5 - KT einfach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Ja",
+        "values": [
+          "Ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gefahrgut Faktor",
+        "value": "3",
+        "values": [
+          "3"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gefahrgut Menge",
+        "value": "333",
+        "values": [
+          "333"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gefahrgut UN-Nummer",
+        "value": "1950 - DRUCKGASPACKUNGEN, ätzend",
+        "values": [
+          "1950 - DRUCKGASPACKUNGEN, ätzend"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gefahrgutklasse",
+        "value": "Klasse 2 Gase",
+        "values": [
+          "Klasse 2 Gase"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gefahrstoffeinstufung",
+        "value": "Acute Tox. 4 (DE) Aerosol 1 (DE) Carc. 2 (DE) Eye Irrit. 2 (DE) Resp. Sens. 1 (DE) STOT RE 2 (DE) STOT SE 3 (DE) Skin Irrit. 2 (DE) Skin Sens. 1 (DE)",
+        "values": [
+          "Acute Tox. 4 (DE) Aerosol 1 (DE) Carc. 2 (DE) Eye Irrit. 2 (DE) Resp. Sens. 1 (DE) STOT RE 2 (DE) STOT SE 3 (DE) Skin Irrit. 2 (DE) Skin Sens. 1 (DE)"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "3 - Warm (frostsicher)",
+        "values": [
+          "3 - Warm (frostsicher)"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "1-lagig",
+        "values": [
+          "1-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Kunststoff",
+        "values": [
+          "Kunststoff"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "10 - Karton",
+        "values": [
+          "10 - Karton"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "GHS-Piktogramm-Kodierung",
+        "value": "GHS02: Flamme",
+        "values": [
+          "GHS02: Flamme",
+          "GHS07: Ausrufezeichen",
+          "GHS08: Gesundheitsgefahr"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Dosierschaum B2",
+        "values": [
+          "Dosierschaum B2"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "750ml",
+        "values": [
+          "750ml"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Tunnelbeschränkungscode",
+        "value": "D",
+        "values": [
+          "D"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Höhe",
+        "value": "33.3 cm",
+        "values": [
+          "33.3 cm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "6.5 cm",
+        "values": [
+          "6.5 cm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Tiefe",
+        "value": "6.5 cm",
+        "values": [
+          "6.5 cm"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "SOUDAL",
+          "@type": "Brand"
+        },
+        "category": "Dichtstoffe",
+        "color": "beige",
+        "depth": {
+          "unit": "cm",
+          "value": "6.5"
+        },
+        "description": "SOUDAL PU-Schaum Pistolenschaum B2, Schwindarm und lösemittelfrei – für überzeugende Ergebnisse bei Ihrem Projekt, Ideal für Fenster und Haustüren – für eine passgenaue Umsetzung Ihrer Ideen, Für innen und außen – einfach und sinnvoll ins Projekt integrierbar",
+        "gtin13": "5411183007970",
+        "height": {
+          "unit": "cm",
+          "value": "33.3"
+        },
+        "image": "https://image.hagebau.de/pdp_main/15143672.jpg",
+        "name": "PU-Schaum Pistolenschaum B2",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 12.49,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/soudal-pu-schaum-pistolenschaum-b2-750-ml-beige-anV1169406/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1169406",
+        "weight": {
+          "unit": "g",
+          "value": "1000"
+        },
+        "width": {
+          "unit": "cm",
+          "value": "6.5"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "zement",
+    "url": "https://www.hagebau.de/p/renovo-universalzement-grau-5-kg-anP7000464852/",
+    "bytes": 407474,
+    "checked_at": "2026-10-15T17:21:38.546Z",
+    "htmlpath": "work/final-hagebau-zement-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-21T19:21:36.991509657",
+      "minDeliveryTime": "2026-10-19T19:21:36.991509657",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-renovo/",
+        "name": "RENOVO"
+      },
+      "categoryId": "237545475",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4046806012010",
+      "estimatedDeliveryDateMax": "2026-10-21",
+      "estimatedDeliveryDateMin": "2026-10-19",
+      "ghsLabels": [
+        {
+          "description": "GHS05: Ätzwirkung",
+          "logo": "GHS05_acid_red.jpg",
+          "rank": 0
+        },
+        {
+          "description": "GHS07: Ausrufezeichen",
+          "logo": "GHS07_exclam.jpg",
+          "rank": 1
+        }
+      ],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "360609",
+      "highlightUnitPrice": false,
+      "id": "P7000464852",
+      "inCart": false,
+      "itemId": "1157263",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "info@heimwerker.sakret.de",
+      "manufacturerName": "DEAL!",
+      "manufacturerPostalAddress": "SAKRET Trockenbaustoffe Europa GmbH & Co. KG, Franklinstr. 14, 10587 Berlin",
+      "manufacturerWebsite": "www.sakret.de",
+      "name": "Universalzement",
+      "number": "1157263",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "3,87 €",
+            "value": 3.87,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "0,78 €",
+              "value": 0.78,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "3,99 €",
+            "value": 3.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "0,80 €",
+              "value": 0.8,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "3,87 €",
+            "value": 3.87,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "0,78 €",
+              "value": 0.78,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "3,99 €",
+            "value": 3.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "0,80 €",
+              "value": 0.8,
+              "currency": "EUR"
+            },
+            "unit": "kg",
+            "unmappedUnit": "Kilogramm",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 3,
+      "shortDescription": "Universalzement",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1157263&productId=P7000464852&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen & außen",
+        "values": [
+          "innen & außen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gebindegröße (kg)",
+        "value": "5 kg",
+        "values": [
+          "5 kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Beschränkter Ausgangsstoff",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "grau",
+        "values": [
+          "grau"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "5 - KT einfach",
+        "values": [
+          "5 - KT einfach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "1 - Halle",
+        "values": [
+          "1 - Halle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "2-lagig",
+        "values": [
+          "2-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Materialmix",
+        "values": [
+          "Materialmix"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Meldepflichtiger Ausgangstoff",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "999",
+        "values": [
+          "999"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "999",
+        "values": [
+          "999"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "999",
+        "values": [
+          "999"
+        ]
+      },
+      {
+        "images": [],
+        "name": "GHS-Piktogramm-Kodierung",
+        "value": "GHS05: Ätzwirkung",
+        "values": [
+          "GHS05: Ätzwirkung",
+          "GHS07: Ausrufezeichen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Universal Zement",
+        "values": [
+          "Universal Zement"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "RENOVO",
+        "values": [
+          "RENOVO"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 3",
+        "value": "5,0Kg",
+        "values": [
+          "5,0Kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Höhe",
+        "value": "400 mm",
+        "values": [
+          "400 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "80 mm",
+        "values": [
+          "80 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "160 mm",
+        "values": [
+          "160 mm"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "RENOVO",
+          "@type": "Brand"
+        },
+        "category": "Zement",
+        "color": "grau",
+        "depth": {
+          "unit": "mm",
+          "value": "80"
+        },
+        "description": "RENOVO Universalzement grau 5 kg, RENOVO Universalzement ist ein mineralisches, hydraulisch erhärtendes Bindemittel, Für die Herstellung von Mörtel, Putz und Estrich. Für innen und außen, Für universellen Einsatz, Wasserfest, Normal erhärtend, Farbe: grau",
+        "gtin13": "4046806012010",
+        "height": {
+          "unit": "mm",
+          "value": "400"
+        },
+        "image": "https://image.hagebau.de/pdp_main/1027207.jpg",
+        "name": "Universalzement grau 5 kg",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 3.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/renovo-universalzement-anV1157263/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1157263",
+        "width": {
+          "unit": "mm",
+          "value": "160"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "gipskarton-feuchtraum",
+    "url": "https://www.hagebau.de/p/knauf-gipskartonplatte-200x125-hxb-gruen-anP7000252472/",
+    "bytes": 376473,
+    "checked_at": "2026-10-15T17:21:40.593Z",
+    "htmlpath": "work/final-hagebau-gipskarton-feuchtraum-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:39.004635248",
+      "minDeliveryTime": "2026-10-17T19:21:39.004635248",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "254635811",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4003982001665",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "570321",
+      "highlightUnitPrice": false,
+      "id": "P7000252472",
+      "inCart": false,
+      "itemId": "1208766",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "Info-bauprodukte@knauf.com",
+      "manufacturerName": "Knauf Bauprodukte GmbH & Co. KG",
+      "manufacturerPostalAddress": "Knauf Gips KG, Am Bahnhof 7, 97346 Iphofen, Deutschland",
+      "manufacturerWebsite": "http://www.knauf.com",
+      "name": "Gipskartonplatte, 200x125 (HxB), grün",
+      "number": "1208766",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "15,51 €",
+            "value": 15.51,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "6,21 €",
+              "value": 6.21,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "15,99 €",
+            "value": 15.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "6,40 €",
+              "value": 6.4,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "15,51 €",
+            "value": 15.51,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "6,21 €",
+              "value": 6.21,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "15,99 €",
+            "value": 15.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "6,40 €",
+              "value": 6.4,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shortDescription": "Gipskartonplatte, 200x125 (HxB), grün",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1208766&productId=P7000252472&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "10010204",
+        "values": [
+          "10010204"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Gipskarton",
+        "values": [
+          "Gipskarton"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "grün",
+        "values": [
+          "grün"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "1 - kein Picken",
+        "values": [
+          "1 - kein Picken"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "1 - Halle",
+        "values": [
+          "1 - Halle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "4-lagig",
+        "values": [
+          "4-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "3 - Pal XL",
+        "values": [
+          "3 - Pal XL"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "3 - Pal XL",
+        "values": [
+          "3 - Pal XL"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Gips",
+        "values": [
+          "Gips"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Gipskartonplatte GKBI",
+        "values": [
+          "Gipskartonplatte GKBI"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "imprägniert",
+        "values": [
+          "imprägniert"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 3",
+        "value": "2000x1250x12,5 mm",
+        "values": [
+          "2000x1250x12,5 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "200 cm",
+        "values": [
+          "200 cm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "125 cm",
+        "values": [
+          "125 cm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "200x125 (HxB), grün",
+        "values": [
+          "200x125 (HxB), grün"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "sonstiger Putz",
+        "color": "grün",
+        "depth": {
+          "unit": "cm",
+          "value": "200"
+        },
+        "description": "KNAUF Gipskartonplatte, 200x125 (HxB), grün, Imprägnierte Gipsplatte für den Einsatz in Innenräumen mit hoher Feuchtigkeit (Bad, Dusche, Küche), Aufgrund des großen Formats ideal für eine schnelle und großflächige Montage, Kann als Deckenbekleidung, Trennwand, Vorsatzschale oder Trockenputz eingesetzt werden, Formbeständig, belastbar und gleichzeitig sehr einfach zu verarbeiten, Frei von gesundheitsschädlichen Stoffen",
+        "gtin13": "4003982001665",
+        "image": "https://image.hagebau.de/pdp_main/16893177.jpg",
+        "name": "Gipskartonplatte, 200x125 (HxB), grün",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 15.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/knauf-gipskartonplatte-200x125-hxb-gruen-anV1208766/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1208766",
+        "width": {
+          "unit": "cm",
+          "value": "125"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "silikon",
+    "url": "https://www.hagebau.de/p/knauf-sanitaer-silikon-weiss-03-l-anP7000228223/",
+    "bytes": 379093,
+    "checked_at": "2026-10-15T17:21:42.788Z",
+    "htmlpath": "work/final-hagebau-silikon-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:41.013035904",
+      "minDeliveryTime": "2026-10-17T19:21:41.013035904",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "241877361",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "deliverySystemType": "KEP",
+      "ean": "4006379096756",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "45571208",
+      "highlightUnitPrice": false,
+      "id": "P7000228223",
+      "inCart": false,
+      "itemId": "1198984",
+      "itemType": "STATIONARY",
+      "name": "Sanitär-Silikon »Sanitär-Silikon«, weiß, 0,3 l",
+      "number": "1198984",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "freeShipping": {
+          "displayValue": "50,00 €",
+          "value": 50,
+          "currency": "EUR"
+        },
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "11,63 €",
+            "value": 11.63,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "38,77 €",
+              "value": 38.77,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "11,99 €",
+            "value": 11.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "39,97 €",
+              "value": 39.97,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "11,63 €",
+            "value": 11.63,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "38,77 €",
+              "value": 38.77,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "11,99 €",
+            "value": 11.99,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "39,97 €",
+              "value": 39.97,
+              "currency": "EUR"
+            },
+            "unit": "l",
+            "unmappedUnit": "Liter",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingAmount": {
+        "displayValue": "4,95 €",
+        "value": 4.95,
+        "currency": "EUR"
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shippingType": "klein_handlich",
+      "shortDescription": "Sanitär-Silikon »Sanitär-Silikon«, weiß, 0,3 l",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1198984&productId=P7000228223&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "06030199",
+        "values": [
+          "06030199"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen & außen",
+        "values": [
+          "innen & außen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gebindegröße",
+        "value": "0.3 l",
+        "values": [
+          "0.3 l"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "5 - KT einfach",
+        "values": [
+          "5 - KT einfach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Ja",
+        "values": [
+          "Ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "1 - Halle",
+        "values": [
+          "1 - Halle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "2 - ja",
+        "values": [
+          "2 - ja"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "1-lagig",
+        "values": [
+          "1-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "1 - PE",
+        "values": [
+          "1 - PE"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "10 - Karton",
+        "values": [
+          "10 - Karton"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Sanitär-Silikon",
+        "values": [
+          "Sanitär-Silikon"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "300ml weiss",
+        "values": [
+          "300ml weiss"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "weiß, 0,3 l",
+        "values": [
+          "weiß, 0,3 l"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "Sanitärsilikon",
+        "description": "KNAUF Sanitär-Silikon, weiß, 0,3 l, Hochleistungs-Silicon zum dauerelastischen Verfugen im Sanitärbereich, Beugt Schimmelpilzbefall vor, Einfach zu verarbeiten: standfest (fließt nicht aus der Fuge) und leicht zu glätten, Schnell vernetzend – Badezimmer schon nach 12 Stunden wieder einsatzbereit, Exzellente Haftung auf vielen Untergründen wie Keramikfliesen oder Glas",
+        "gtin13": "4006379096756",
+        "image": "https://image.hagebau.de/pdp_main/18449748.jpg",
+        "name": "Sanitär-Silikon, weiß, 0,3 l",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 11.99,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "transitTime": {
+                "maxValue": 4,
+                "minValue": 1,
+                "@type": "QuantitativeValue",
+                "unitCode": "d"
+              }
+            },
+            "shippingDestination": {
+              "addressCountry": "DE",
+              "@type": "DefinedRegion"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "currency": "EUR",
+              "value": 4.95
+            }
+          },
+          "url": "https://www.hagebau.de/p/knauf-sanitaer-silikon-sanitaer-silikon-weiss-03-l-anV1198984/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1198984",
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "schleifpapier",
+    "url": "https://www.hagebau.de/p/wolfcraft-schleifpapierbogen-anP01905905/",
+    "bytes": 362306,
+    "checked_at": "2026-10-15T17:21:44.843Z",
+    "htmlpath": "work/final-hagebau-schleifpapier-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": true,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:43.032144118",
+      "minDeliveryTime": "2026-10-17T19:21:43.032144118",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-wolfcraft/",
+        "name": "WOLFCRAFT"
+      },
+      "categoryId": "237354122",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4006885601505",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "592861",
+      "highlightUnitPrice": false,
+      "id": "P01905905",
+      "inCart": false,
+      "itemId": "1512795",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "info@wolfcraft.com",
+      "manufacturerName": "wolfcraft GmbH",
+      "manufacturerPostalAddress": "wolfcraft GmbH, Wolffstraße 1, 56746 Kempenich",
+      "manufacturerWebsite": "www.wolfcraft.com",
+      "name": "Schleifpapierbogen, Farbe/Lack 230x280 mm K180",
+      "number": "1512795",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "1,45 €",
+            "value": 1.45,
+            "currency": "EUR"
+          },
+          "displayPrice": {
+            "displayValue": "1,49 €",
+            "value": 1.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "1,45 €",
+            "value": 1.45,
+            "currency": "EUR"
+          },
+          "displayPrice": {
+            "displayValue": "1,49 €",
+            "value": 1.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shortDescription": "Schleifpapierbogen, Farbe/Lack 230x280 mm K180",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1512795&productId=P01905905&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gewicht",
+        "value": "0.04 kg",
+        "values": [
+          "0.04 kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Serienname Lieferant",
+        "value": "1 Schleifpapierb.Farbe/Lack K180 230x280",
+        "values": [
+          "1 Schleifpapierb.Farbe/Lack K180 230x280"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "weiß",
+        "values": [
+          "weiß"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Materialmix",
+        "values": [
+          "Materialmix"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Schleifpapierband Farbe/Lack",
+        "values": [
+          "Schleifpapierband Farbe/Lack"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "230x280 mm K180",
+        "values": [
+          "230x280 mm K180"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "280 mm",
+        "values": [
+          "280 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Höhe",
+        "value": "1 mm",
+        "values": [
+          "1 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "230 mm",
+        "values": [
+          "230 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Tiefe",
+        "value": "280 mm",
+        "values": [
+          "280 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "Farbe/Lack 230x280 mm K180",
+        "values": [
+          "Farbe/Lack 230x280 mm K180"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "WOLFCRAFT",
+          "@type": "Brand"
+        },
+        "category": "Zubehör Schleifen",
+        "color": "weiß",
+        "depth": {
+          "unit": "mm",
+          "value": "280"
+        },
+        "description": "WOLFCRAFT Schleifpapierbogen, Gut geeignet für Metall, Kunststoff, Karosserie, Farbe/Lack, reduziert vorzeitiges Zusetzen der Körnung beim Schleifen von Farbe, Lack und Spachtel , bis zu 4-fache Standzeit gegenüber Standard-Schleifpapier ",
+        "gtin13": "4006885601505",
+        "height": {
+          "unit": "mm",
+          "value": "1"
+        },
+        "image": "https://image.hagebau.de/pdp_main/12577370.jpg",
+        "name": "Schleifpapierbogen",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 1.49,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/wolfcraft-schleifpapierbogen-farbe-lack-230x280-mm-k180-anV1512795/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1512795",
+        "weight": {
+          "unit": "kg",
+          "value": "0.04"
+        },
+        "width": {
+          "unit": "mm",
+          "value": "230"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "armierungsgewebe",
+    "url": "https://www.hagebau.de/p/quick-mix-armierungsgewebe-laenge-10-m-maschenweite-4-x-4-mm-anP7000495979/",
+    "bytes": 363319,
+    "checked_at": "2026-10-15T17:21:46.560Z",
+    "htmlpath": "work/final-hagebau-armierungsgewebe-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-17T19:21:45.006250798",
+      "minDeliveryTime": "2026-10-15T19:21:45.006250798",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-quick-mix/",
+        "name": "quick-mix"
+      },
+      "categoryId": "254635811",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4004637382405",
+      "estimatedDeliveryDateMax": "2026-10-17",
+      "estimatedDeliveryDateMin": "2026-10-15",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "45897196",
+      "highlightUnitPrice": false,
+      "id": "P7000495979",
+      "inCart": false,
+      "itemId": "1199628",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "info@sievert.de",
+      "manufacturerName": "Sievert Baustoffe SE & Co. KG",
+      "manufacturerPostalAddress": "Sievert Baustoffe SE & Co. KG - Baumarkt -, Mühleneschweg 6, 49090 Osnabrück (DE)",
+      "manufacturerWebsite": "www.sievert.de",
+      "name": "Armierungsgewebe, Länge: 10 m, Maschenweite: 4 x 4 mm",
+      "number": "1199628",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "26,67 €",
+            "value": 26.67,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,67 €",
+              "value": 2.67,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "27,49 €",
+            "value": 27.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "2,75 €",
+              "value": 2.75,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "26,67 €",
+            "value": 26.67,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,67 €",
+              "value": 2.67,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "27,49 €",
+            "value": 27.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "2,75 €",
+              "value": 2.75,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 0,
+      "shortDescription": "Armierungsgewebe, Länge: 10 m, Maschenweite: 4 x 4 mm",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1199628&productId=P7000495979&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "11020299",
+        "values": [
+          "11020299"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Textilglas",
+        "values": [
+          "Textilglas"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "blau",
+        "values": [
+          "blau"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Textil",
+        "values": [
+          "Textil"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Armierungsgewebe",
+        "values": [
+          "Armierungsgewebe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "10 m",
+        "values": [
+          "10 m"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "10 m",
+        "values": [
+          "10 m"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "100 cm",
+        "values": [
+          "100 cm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "Länge: 10 m, Maschenweite: 4 x  4 mm",
+        "values": [
+          "Länge: 10 m, Maschenweite: 4 x  4 mm"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "quick-mix",
+          "@type": "Brand"
+        },
+        "category": "sonstiger Putz",
+        "color": "blau",
+        "depth": {
+          "unit": "m",
+          "value": "10"
+        },
+        "description": "quick-mix Armierungsgewebe, Länge: 10 m, Maschenweite: 4 x 4 mm, alkalibeständiges Textilglas-Gittergewebe, zur Aufnahme der Zugspannungen in Armierungs- und Putzschichten, für mineralische und organische Spachtel geeignet",
+        "gtin13": "4004637382405",
+        "image": "https://image.hagebau.de/pdp_main/1000000000537696.jpg",
+        "name": "Armierungsgewebe, Länge: 10 m, Maschenweite: 4 x 4 mm",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 27.49,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/quick-mix-armierungsgewebe-laenge-10-m-maschenweite-4-x-4-mm-anV1199628/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1199628",
+        "width": {
+          "unit": "cm",
+          "value": "100"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "steinwolle",
+    "url": "https://www.hagebau.de/p/rockwool-daemmstoff-sonorock-bxl-625-x-1000-mm-steinwolle-anP7000458929/",
+    "bytes": 392786,
+    "checked_at": "2026-10-15T17:21:48.787Z",
+    "htmlpath": "work/final-hagebau-steinwolle-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:47.021282425",
+      "minDeliveryTime": "2026-10-17T19:21:47.021282425",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/search/?q=Rockwool",
+        "name": "Rockwool"
+      },
+      "categoryId": "255216911",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "deliverySystemType": "SPEDITION",
+      "ean": "4003446812981",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "45327668",
+      "highlightUnitPrice": false,
+      "id": "P7000458929",
+      "inCart": false,
+      "itemId": "1168819",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "info@rockwool.de",
+      "manufacturerName": "Deutsche Rockwool GmbH & Co. KG",
+      "manufacturerPostalAddress": "Deutsche Rockwool GmbH & Co. KG, Rockwool Straße 37-41, 45966 Gladbeck (DE)",
+      "manufacturerWebsite": "www.rockwool.de",
+      "name": "Dämmstoff »WLG 042«, BxL: 625 x 1000 mm, Stärke: 40 mm",
+      "number": "1168819",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "28,30 €",
+            "value": 28.3,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "3,77 €",
+              "value": 3.77,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "29,18 €",
+            "value": 29.18,
+            "currency": "EUR"
+          },
+          "displayPriceUnit": "Paket",
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "3,89 €",
+              "value": 3.89,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "28,30 €",
+            "value": 28.3,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "3,77 €",
+              "value": 3.77,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "29,18 €",
+            "value": 29.18,
+            "currency": "EUR"
+          },
+          "displayPriceUnit": "Paket",
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "3,89 €",
+              "value": 3.89,
+              "currency": "EUR"
+            },
+            "unit": "m²",
+            "unmappedUnit": "Quadratmeter",
+            "valid": true
+          }
+        }
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingAmount": {
+        "displayValue": "79,95 €",
+        "value": 79.95,
+        "currency": "EUR"
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shippingType": "uebergroesse_2",
+      "shortDescription": "Dämmstoff »WLG 042«, BxL: 625 x 1000 mm, Stärke: 40 mm",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1168819&productId=P7000458929&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "11010208",
+        "values": [
+          "11010208"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen",
+        "values": [
+          "innen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Gewicht",
+        "value": "8.6 kg",
+        "values": [
+          "8.6 kg"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Serienname Lieferant",
+        "value": "Sonorock",
+        "values": [
+          "Sonorock"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Steinwolle",
+        "values": [
+          "Steinwolle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Material",
+        "value": "Steinwolle",
+        "values": [
+          "Steinwolle"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Stärke",
+        "value": "40 mm",
+        "values": [
+          "40 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "braun",
+        "values": [
+          "braun"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "Trennwandplatte Sonorock",
+        "values": [
+          "Trennwandplatte Sonorock"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "WLG 040",
+        "values": [
+          "WLG 040"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 3",
+        "value": "1000x625x40 mm",
+        "values": [
+          "1000x625x40 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "1000 mm",
+        "values": [
+          "1000 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "625 mm",
+        "values": [
+          "625 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "BxL: 625 x 1000 mm, Stärke: 40 mm",
+        "values": [
+          "BxL: 625 x 1000 mm, Stärke: 40 mm"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "Rockwool",
+          "@type": "Brand"
+        },
+        "category": "Dämmwolle",
+        "color": "braun",
+        "depth": {
+          "unit": "mm",
+          "value": "1000"
+        },
+        "description": "Rockwool Dämmstoff »Sonorock«, BxL: 625 x 1000 mm, Steinwolle, Schallschutz, nicht brennbar, duffusionsoffen, wasserabweisend",
+        "gtin13": "4003446812981",
+        "image": "https://image.hagebau.de/pdp_main/1018612.jpg",
+        "name": "Dämmstoff »Sonorock«, BxL: 625 x 1000 mm, Steinwolle",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 29.18,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "transitTime": {
+                "maxValue": 4,
+                "minValue": 1,
+                "@type": "QuantitativeValue",
+                "unitCode": "d"
+              }
+            },
+            "shippingDestination": {
+              "addressCountry": "DE",
+              "@type": "DefinedRegion"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "currency": "EUR",
+              "value": 79.95
+            }
+          },
+          "url": "https://www.hagebau.de/p/rockwool-daemmstoff-wlg-042-bxl-625-x-1000-mm-staerke-40-mm-anV1168819/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1168819",
+        "weight": {
+          "unit": "kg",
+          "value": "8.6"
+        },
+        "width": {
+          "unit": "mm",
+          "value": "625"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  },
+  {
+    "key": "cw-profil",
+    "url": "https://www.hagebau.de/p/knauf-profil-bxhxl-5-x-5-x-300-cm-anP7000237001/",
+    "bytes": 422555,
+    "checked_at": "2026-10-15T17:21:50.770Z",
+    "htmlpath": "work/final-hagebau-cw-profil-20261015.html",
+    "product": {
+      "availabilityText": "lieferbar in 2-3 Werktagen",
+      "available": false,
+      "listedInStore": false,
+      "maxDeliveryTime": "2026-10-20T19:21:49.030217114",
+      "minDeliveryTime": "2026-10-17T19:21:49.030217114",
+      "statusOnline": "unavailable",
+      "statusStore": "storeNotSet",
+      "stocks": {
+        "online": 0
+      },
+      "biocide": false,
+      "brand": {
+        "displayBrandStore": false,
+        "link": "/marken-knauf/",
+        "name": "KNAUF"
+      },
+      "categoryId": "237545508",
+      "cliplisterModel": {
+        "customerId": "184851",
+        "videos": []
+      },
+      "ean": "4006379063260",
+      "estimatedDeliveryDateMax": "2026-10-20",
+      "estimatedDeliveryDateMin": "2026-10-17",
+      "ghsLabels": [],
+      "hasStorePriceAndStock": false,
+      "hbcNumber": "161516",
+      "highlightUnitPrice": false,
+      "id": "P7000237001",
+      "inCart": false,
+      "itemId": "1168631",
+      "itemType": "STATIONARY",
+      "manufacturerEmail": "Info-bauprodukte@knauf.com",
+      "manufacturerName": "Knauf Bauprodukte GmbH & Co. KG",
+      "manufacturerPostalAddress": "Knauf Bauprodukte GmbH & Co. KG, Am Bahnhof 7, 97346 Iphofen, Deutschland",
+      "manufacturerWebsite": "http://www.knauf.com",
+      "name": "Profil, BxHxL: 5 x 5 x 300 cm",
+      "number": "1168631",
+      "onWishlist": false,
+      "price": {
+        "defaultPriceType": "OUTLET_PLACEHOLDER",
+        "isFromPrice": false,
+        "prices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "7,27 €",
+            "value": 7.27,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,42 €",
+              "value": 2.42,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "7,49 €",
+            "value": 7.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "2,50 €",
+              "value": 2.5,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          }
+        },
+        "reservationPrices": {
+          "customerCardDisplayPrice": {
+            "displayValue": "7,27 €",
+            "value": 7.27,
+            "currency": "EUR"
+          },
+          "customerCardUnitPrice": {
+            "price": {
+              "displayValue": "2,42 €",
+              "value": 2.42,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          },
+          "displayPrice": {
+            "displayValue": "7,49 €",
+            "value": 7.49,
+            "currency": "EUR"
+          },
+          "strikePriceIsRrp": false,
+          "unitPrice": {
+            "price": {
+              "displayValue": "2,50 €",
+              "value": 2.5,
+              "currency": "EUR"
+            },
+            "unit": "m",
+            "unmappedUnit": "Meter",
+            "valid": true
+          }
+        }
+      },
+      "productDisruptor": {
+        "backgroundColor": "FEED05",
+        "hideIfStorePriceHigher": false,
+        "name": "DAUERTIEFPREIS",
+        "textColor": "000000",
+        "type": "PERMANENT_LOW_PRICE"
+      },
+      "reviews": {
+        "reviews": [],
+        "average": 0,
+        "bestRating": -2147483648,
+        "count": 0,
+        "starRating": 0,
+        "worstRating": 2147483647
+      },
+      "shippingCostUrl": "",
+      "shippingInfoUrl": "",
+      "shippingTime": 2,
+      "shortDescription": "Profil, BxHxL: 5 x 5 x 300 cm",
+      "storePriceIsHigher": false,
+      "useOnlinePrice": false,
+      "variations": [],
+      "wishlistUrl": "/wishlist/addItem/?itemId=1168631&productId=P7000237001&quantity=1",
+      "battery": false,
+      "legacyEquipmentRedemption": false,
+      "recycling": false
+    },
+    "features": [
+      {
+        "images": [],
+        "name": "Onboarding-Klasse",
+        "value": "Complete",
+        "values": [
+          "Complete"
+        ]
+      },
+      {
+        "images": [],
+        "name": "WG-BDB",
+        "value": "37020134",
+        "values": [
+          "37020134"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Einsatzbereich",
+        "value": "innen",
+        "values": [
+          "innen"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Formatgruppe",
+        "value": "x",
+        "values": [
+          "x"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Farbgruppe",
+        "value": "silberfarben",
+        "values": [
+          "silberfarben"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Feinkommissionierung hagebau Logistik",
+        "value": "1 - kein Picken",
+        "values": [
+          "1 - kein Picken"
+        ]
+      },
+      {
+        "images": [],
+        "name": "frostgefährdet",
+        "value": "Nein",
+        "values": [
+          "Nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Lagerbereich hagebau Logistik",
+        "value": "2 - Unter Dach",
+        "values": [
+          "2 - Unter Dach"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Regalfähigkeit hagebau Logistik",
+        "value": "1 - nein",
+        "values": [
+          "1 - nein"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Stapelhöhe hagebau Logistik",
+        "value": "2-lagig",
+        "values": [
+          "2-lagig"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Warenausgang hagebau Logistik",
+        "value": "3 - Pal XL",
+        "values": [
+          "3 - Pal XL"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Handlingskategorie Wareneingang hagebau Logistik",
+        "value": "3 - Pal XL",
+        "values": [
+          "3 - Pal XL"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Materialgruppe",
+        "value": "Metall",
+        "values": [
+          "Metall"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Lagerkosten hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Warenausgang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Mengeneinheit für Wareneingang hagebau Logistik",
+        "value": "8 - Palette",
+        "values": [
+          "8 - Palette"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 1",
+        "value": "CW-DB Ständerprofil",
+        "values": [
+          "CW-DB Ständerprofil"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Plakattext 2",
+        "value": "50 / 50 / 3000 mm",
+        "values": [
+          "50 / 50 / 3000 mm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "hagebau Logistik Produktmanager",
+        "value": "EH Baustoffe",
+        "values": [
+          "EH Baustoffe"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Länge",
+        "value": "300 cm",
+        "values": [
+          "300 cm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Höhe",
+        "value": "5 cm",
+        "values": [
+          "5 cm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Breite",
+        "value": "5 cm",
+        "values": [
+          "5 cm"
+        ]
+      },
+      {
+        "images": [],
+        "name": "Ergänzung Artikelbezeichnung",
+        "value": "BxHxL: 5 x 5 x 300 cm",
+        "values": [
+          "BxHxL: 5 x 5 x 300 cm"
+        ]
+      }
+    ],
+    "ld": [
+      {
+        "brand": {
+          "name": "KNAUF",
+          "@type": "Brand"
+        },
+        "category": "Trockenbauprofile",
+        "color": "silberfarben",
+        "depth": {
+          "unit": "cm",
+          "value": "300"
+        },
+        "description": "KNAUF Profil, BxHxL: 5 x 5 x 300 cm, CW-dB Ständer-Profile für die Unterkonstruktion bei Trockenbau-Wänden, Maße 50x50x260cm, Zusammen verwendbar mit Knauf UW-dB-Profilen (für Böden und Decken), Sorgen für erhöhten Schallschutz: für ein entspanntes Zuhause, Clevere Details erleichtern den Einbau, Auch optimal für Brandschutzkonstruktionen und Einbringen von Dämmmaterial",
+        "gtin13": "4006379063260",
+        "height": {
+          "unit": "cm",
+          "value": "5"
+        },
+        "image": "https://image.hagebau.de/pdp_main/4000000000016434.jpg",
+        "name": "Profil, BxHxL: 5 x 5 x 300 cm",
+        "offers": {
+          "availability": "https://schema.org/InStoreOnly",
+          "hasMerchantReturnPolicy": {
+            "additionalProperty": {
+              "name": "productReturnExceptions",
+              "value": "Pflanzen,Tierbedarf",
+              "@type": "PropertyValue"
+            },
+            "applicableCountry": [
+              "DE"
+            ],
+            "inStoreReturnsOffered": false,
+            "merchantReturnDays": 30,
+            "merchantReturnLink": "https://www.hagebau.de/service-ruecksendung/",
+            "refundType": "https://schema.org/FullRefund",
+            "returnFees": "https://schema.org/FreeReturn",
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "returnPolicyCountry": "DE",
+            "@type": "MerchantReturnPolicy"
+          },
+          "itemCondition": "https://schema.org/NewCondition",
+          "price": 7.49,
+          "priceCurrency": "EUR",
+          "priceValidUntil": "2027-01-15",
+          "url": "https://www.hagebau.de/p/knauf-profil-bxhxl-5-x-5-x-300-cm-anV1168631/",
+          "@type": "Offer"
+        },
+        "review": [],
+        "sku": "1168631",
+        "width": {
+          "unit": "cm",
+          "value": "5"
+        },
+        "@context": "https://schema.org/",
+        "@type": "Product"
+      }
+    ]
+  }
+]

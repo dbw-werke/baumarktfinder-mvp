@@ -1,0 +1,216 @@
+[
+  {
+    "key": "acryl",
+    "store_id": "globus",
+    "material_slug": "acryl-weiss-310ml-v1",
+    "product_name": "Acryl weiß 310 ml",
+    "product_url": "https://www.globus-baumarkt.de/p/acryl-weiss-310-ml-0779051109/",
+    "price": 1.99,
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "observed_specs": {
+      "type": "acryl",
+      "volume_l": 0.31,
+      "color": "weiss"
+    },
+    "checked_at": "2026-10-13T18:59:06.384Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T18:59:06.384Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. Acryldispersion weiss, 310 ml, ueberstreichbar; fuer Gipskarton und Anschlussfugen innen.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  },
+  {
+    "key": "armierungsgewebe",
+    "store_id": "globus",
+    "material_slug": "armierungsgewebe-165-1000-10000-v1",
+    "product_name": "Knauf Armierungsgewebe 10 x 1 m = 10 m² Maschenweite: 5 x 5 mm",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-armierungsgewebe-10-x-1-m-10-m2-maschenweite-5-x-5-mm-0779250266/",
+    "price": 32.99,
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 10,
+    "observed_specs": {
+      "type": "armierungsgewebe",
+      "length_mm": 10000,
+      "width_mm": 1000,
+      "area_m2": 10,
+      "grammage_g_m2": 165
+    },
+    "checked_at": "2026-10-13T19:00:07.552Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T19:00:07.552Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. Knauf 10 x 1 m Rolle, 10 m2, 165 g/m2; innen/aussen, Wand/Decke, zum Spannungsausgleich beim Auftrag von Spachtelmassen. SAKRET WDVS-orientierte Alternative verworfen.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  },
+  {
+    "key": "cd-profil",
+    "store_id": "globus",
+    "material_slug": "cd60-27-3100-v1",
+    "product_name": "Knauf CD-Deckenprofil 3100 x 60 x 27 mm",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-cd-deckenprofil-3100-x-60-x-27-mm-0779250250/",
+    "price": 9.15,
+    "currency": "EUR",
+    "base_unit": "m",
+    "package_quantity": 3.1,
+    "observed_specs": {
+      "type": "cd",
+      "length_mm": 3100,
+      "width_mm": 60,
+      "height_mm": 27
+    },
+    "checked_at": "2026-10-13T18:59:10.570Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T18:59:10.570Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. Ein CD-Deckenprofil 3100 x 60 x 27 mm, 0,6 mm Blech. Grund-/Tragprofil Trockenbaudecke.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  },
+  {
+    "key": "cw-profil",
+    "store_id": "globus",
+    "material_slug": "cw50-50-2600-v1",
+    "product_name": "Knauf CW-db-Ständerprofil 2600 x 50 x 50 mm",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-cw-db-staenderprofil-2600-x-50-x-50-mm-0779250244/",
+    "price": 5.99,
+    "currency": "EUR",
+    "base_unit": "m",
+    "package_quantity": 2.6,
+    "observed_specs": {
+      "type": "cw-profil",
+      "length_mm": 2600,
+      "width_mm": 50,
+      "height_mm": 50,
+      "profile": "cw"
+    },
+    "checked_at": "2026-10-13T18:59:12.615Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T18:59:12.615Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. Ein CW-dB-Staenderprofil 2600 x 50 x 50 mm, 0,6 mm Blech, Trockenbau-Trennwand. Aktueller Preis 5,99 EUR; keine Umrechnung des alten 6,35-EUR-Preises.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  },
+  {
+    "key": "direktabhaenger",
+    "store_id": "globus",
+    "material_slug": "direktabhaenger-cd-125-1-v1",
+    "product_name": "Knauf Direktabhänger 125 mm für CD Profil 60/27",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-27-0779250352/",
+    "price": 0.58,
+    "currency": "EUR",
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "observed_specs": {
+      "type": "direktabhaenger",
+      "length_mm": 125,
+      "pieces": 1,
+      "profile": "cd"
+    },
+    "checked_at": "2026-10-13T18:59:14.350Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T18:59:14.350Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. Ein Direktabhaenger 125 mm fuer CD 60/27; tatsaechliches Abhaenger-Bauteil, kein Nonius oder Verbinder.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  },
+  {
+    "key": "feuchtraumplatte",
+    "store_id": "globus",
+    "material_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+    "product_name": "Knauf Gipskarton-Bauplatte GKBI 200 x 125 cm 12,5 mm",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-gipskarton-bauplatte-gkbi-200-x-125-cm-12-5-mm-0779250150/",
+    "price": 15.95,
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 2.5,
+    "observed_specs": {
+      "type": "feuchtraum",
+      "length_mm": 2000,
+      "width_mm": 1250,
+      "thickness_mm": 12.5,
+      "area_m2": 2.5
+    },
+    "checked_at": "2026-10-13T18:59:16.893Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T18:59:16.893Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. Einzelne impraegnierte GKBI-Bauplatte 2000 x 1250 x 12,5 mm, 2,5 m2. Keine Palette, keine Standard-GKB-Platte.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  },
+  {
+    "key": "haftgrund",
+    "store_id": "globus",
+    "material_slug": "haftgrund-5l-v1",
+    "product_name": "MEM Super Haftgrund 5 l",
+    "product_url": "https://www.globus-baumarkt.de/p/mem-super-haftgrund-5-l-0779050054/",
+    "price": 27.99,
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 5,
+    "observed_specs": {
+      "type": "haftgrund",
+      "volume_l": 5
+    },
+    "checked_at": "2026-10-13T18:59:18.203Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T18:59:18.203Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. MEM Super Haftgrund 5 l, Haftvermittler auch fuer Gipsplatten. Kein Tiefengrund und kein Betonkontakt.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  },
+  {
+    "key": "perlfix",
+    "store_id": "globus",
+    "material_slug": "knauf-perlfix-30kg-v1",
+    "product_name": "Knauf Perlfix Ansetzgips hellgrau, 30 kg",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-perlfix-ansetzgips-hellgrau-30-kg-0779100295/",
+    "price": 9.95,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "observed_specs": {
+      "type": "ansetzgips",
+      "weight_kg": 30
+    },
+    "checked_at": "2026-10-13T18:59:20.346Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T18:59:20.346Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. Knauf Perlfix Ansetzgips, 30-kg-Sack, zum Ansetzen von Gipsplatten im Innenbereich.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  },
+  {
+    "key": "rotband",
+    "store_id": "globus",
+    "material_slug": "knauf-rotband-30kg-v1",
+    "product_name": "Knauf Rotband Haftputzgips 30 kg",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-rotband-haftputzgips-30-kg-0779100307/",
+    "price": 11.5,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 30,
+    "observed_specs": {
+      "type": "haftputzgips",
+      "weight_kg": 30
+    },
+    "checked_at": "2026-10-13T18:59:21.561Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T18:59:21.561Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. Knauf Rotband Haftputzgips 30 kg, klassischer Hand-Gipsputz fuer Innenwaende, kein Finish/Pro/Flaechenspachtel.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  },
+  {
+    "key": "uniflott",
+    "store_id": "globus",
+    "material_slug": "knauf-uniflott-25kg-v1",
+    "product_name": "Knauf Uniflott Spachtelmasse 25 kg",
+    "product_url": "https://www.globus-baumarkt.de/p/knauf-uniflott-spachtelmasse-25-kg-0779100299/",
+    "price": 42.5,
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "observed_specs": {
+      "type": "fugenspachtel",
+      "weight_kg": 25
+    },
+    "checked_at": "2026-10-13T18:59:24.590Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus PDP manually reviewed after successful normal HTTP retrieval on 2026-10-13T18:59:24.590Z. Current same-product structured offer and product:price agree on the total for one actual sales package; not a derived unit-price total. Knauf Uniflott 25 kg Pulver-Fugenspachtel fuer Gipsplatten, kein Finish und keine impraegnierte Variante.",
+    "evidence_file": "docs/evidence/globus-first-direct-20261013.json"
+  }
+]

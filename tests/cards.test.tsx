@@ -25,7 +25,7 @@ test("card separates package price from unit price and links exactly to the pric
 });
 test("missing prices stay visibly unavailable and use the official canonical search", () => {
   const html = render();
-  assert.match(html, /Preis nicht verfügbar/);
+  assert.match(html, /Preis aktuell nicht verfügbar/);
   assert.match(html, /https:\/\/www.obi.de\/search\/Gipskarton%20Test/);
   assert.doesNotMatch(html, /7,20/);
 });
@@ -33,6 +33,8 @@ test("routing failure shows one Luftlinie label, keeps card and links to the exa
   const html = render(price);
   assert.equal((html.match(/3,5 km Luftlinie/g) ?? []).length, 1);
   assert.doesNotMatch(html, /Luftlinie Luftlinie/);
+  assert.match(html, /Nächste Filiale/);
+  assert.doesNotMatch(html, /Geringste Luftlinie/);
   assert.match(html, /Fahrzeit derzeit nicht verfügbar/);
   assert.match(html, /destination_place_id=test-place-1/);
   assert.match(html, /origin=50.12%2C8.65/);
@@ -58,7 +60,7 @@ test("comparison attaches chain prices to every physical branch and keeps an alt
   assert.equal((html.match(/data-match="alternative"/g) ?? []).length, 2);
   assert.equal((html.match(/class="packagePrice">11,49/g) ?? []).length, 2);
   assert.equal((html.match(/class="actualSpecification">5 kg/g) ?? []).length, 2);
-  assert.equal((html.match(/Preis nicht verfügbar/g) ?? []).length, 1);
+  assert.equal((html.match(/Preis aktuell nicht verfügbar/g) ?? []).length, 1);
   assert.equal((html.match(/href="https:\/\/www.obi.de\/p\/6728141\/knauf-uniflott-spachtelmasse-5-kg"/g) ?? []).length, 2);
   assert.match(html, /destination_place_id=test-place-1/);
   assert.match(html, /destination_place_id=test-place-2/);

@@ -1,0 +1,73 @@
+{
+  "product": {
+    "name": "Color Expert Schleifpapier Alu-Oxyd K180 Körnung 180, 230 mm x 280 mm",
+    "url": "https://www.globus-baumarkt.de/p/color-expert-schleifpapier-alu-oxyd-k180-koernung-180-230-mm-x-280-mm-0760100649/",
+    "price": 1.29,
+    "currency": "EUR",
+    "priceBasis": null,
+    "priceSource": "json-ld-offer",
+    "availability": "InStock",
+    "brand": "Color Expert",
+    "category": null,
+    "description": "Das Alu-Oxyd-Schleifpapier ist optimal für Schleifarbeiten mit wasserverdünnbaren Lacken, Holz und Spachtelmasse geeignet. Das Material ist sehr flexibel und passt sich dem Untergrund optimal an Größe: 230 x 280 mmKörnung 180für einfache Arbeitenoffen gestreutvielseitig einsetzbarHerstellerinformationen: Ciret GmbH | Platz der Republik 6 | 42107 Wuppertal, Deutschland | eMail: info@ciret.eu | Herstellernr. 93141810",
+    "attributes": [],
+    "externalId": "0760100649",
+    "observedSpecs": {},
+    "soldIndividually": true,
+    "retrievedAt": "2026-10-14T11:01:32.371Z"
+  },
+  "price_meta": "1,29 €",
+  "event": {
+    "event": "view_item",
+    "ecommerce": {
+      "value": 1.29,
+      "currency": "EUR",
+      "items": [
+        {
+          "item_list_id": "",
+          "item_brand": "Color Expert",
+          "discount": "",
+          "price": 1.29,
+          "item_name": "Color Expert Schleifpapier Alu-Oxyd K180 Körnung 180, 230 mm x 280 mm",
+          "item_variant": "",
+          "item_category5": "Sortiment",
+          "item_id": "GLO760100649",
+          "item_category3": "Farben &amp; Malerzubehör",
+          "coupon": "",
+          "item_category": "Schleifpapier",
+          "location_id": "",
+          "item_category2": "Malerwerkzeug",
+          "affiliation": "",
+          "item_category4": "Farben &amp; Haushalt",
+          "quantity": 1,
+          "item_list_name": "",
+          "index": ""
+        }
+      ]
+    }
+  },
+  "manual_verified": {
+    "key": "schleifpapier",
+    "store_id": "globus",
+    "material_slug": "schleifpapier-k180-230-280-1-v1",
+    "product_name": "Color Expert Schleifpapier Alu-Oxyd K180 Körnung 180, 230 mm x 280 mm; für Holz und Spachtelmasse",
+    "official_product_name": "Color Expert Schleifpapier Alu-Oxyd K180 Körnung 180, 230 mm x 280 mm",
+    "product_url": "https://www.globus-baumarkt.de/p/color-expert-schleifpapier-alu-oxyd-k180-koernung-180-230-mm-x-280-mm-0760100649/",
+    "price": 1.29,
+    "currency": "EUR",
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "observed_specs": {
+      "type": "schleifpapier",
+      "length_mm": 280,
+      "width_mm": 230,
+      "grit": 180,
+      "pieces": 1
+    },
+    "checked_at": "2026-10-14T11:01:32.371Z",
+    "price_basis": "package",
+    "source": "manual_verified",
+    "verification_note": "Official Globus product page reviewed: one Alu-Oxyd K180 sheet 230 x 280 mm, selling total 1.29 EUR; product:price and same-SKU ecommerce item.price agree, quantity one, no unit-price multiplication. Own product description explicitly suitable for Holz und Spachtelmasse; dry sanding of filled drywall surfaces, not wet paper. Product name retains official title and appends only the documented application. Not claimed as a manufacturer Q3 certification.",
+    "evidence_file": "docs/evidence/globus-paper-20261014.json"
+  }
+}

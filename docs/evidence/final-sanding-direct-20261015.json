@@ -1,0 +1,90 @@
+[
+  {
+    "store": "hornbach",
+    "url": "https://www.hornbach.de/p/rautner-schleifgitter-silca-k180-93-x-280-mm-5er/10447127/",
+    "checked_at": "2026-10-15T17:21:46.502Z",
+    "products": [
+      {
+        "name": "RAUTNER Schleifgitter SilCa K180 93 x 280 mm 5er",
+        "url": "https://www.hornbach.de/p/rautner-schleifgitter-silca-k180-93-x-280-mm-5er/10447127/",
+        "price": 2.95,
+        "currency": "EUR",
+        "priceBasis": "package",
+        "priceSource": "json-ld-offer",
+        "availability": "InStock",
+        "brand": "Rautner",
+        "category": "Startseite > Sortiment > Farben, Tapeten & Wandverkleidungen > Malerbedarf & Malerzubehör > Schleifmittel für Maler",
+        "description": "Möchtest Du bei Deinen Schleifarbeiten erstklassige Ergebnisse erzielen? Dann ist das RAUTNER Schleifgitter SilCa K180 die richtige Wahl für Dich. Produktmerkmale des RAUTNER Schleifgitters SilCa K180 Darum solltest Du zugreifen: Dieses Schleifgitter eignet sich perfekt für Maler- und Renovierarbeiten sowie Schleifarbeiten im Innen- und Außenbereich. Die Schleifgitterscheibe ist ideal für den Trockenschliff und sorgt für eine effiziente Staubabsaugung, was Dein Arbeitsumfeld sauber hält. Mit einer Körnung von 180 ist das Schleifgitter besonders für die Bearbeitung von Gips, Holz und Spachtelmasse geeignet und ermöglicht präzise und gleichmäßige Schleifergebnisse. Das Material aus Siliciumcarbid zeichnet sich durch seine hohe Härte aus und verlängert die Standzeit der Schleifmittel, sodass Du länger ohne Materialwechsel arbeiten kannst. Die Maße von ca. 93 mm x 280 mm machen es ideal für den Einsatz mit Handschleifern und ermöglichen eine besonders einfache und flexible Handhabung. Festgezurrt: Das RAUTNER Schleifgitter SilCa K180 überzeugt mit langer Haltbarkeit und gleichmäßigen Schleifergebnissen bei Deinen Projekten.",
+        "attributes": [
+          {
+            "name": "Material",
+            "value": "Siliciumcarbid, Siliziumkarbid"
+          },
+          {
+            "name": "Körnung",
+            "value": "180"
+          },
+          {
+            "name": "Breite",
+            "value": "280 mm"
+          },
+          {
+            "name": "Länge",
+            "value": "93 mm"
+          },
+          {
+            "name": "Anwendungsbereich",
+            "value": "Malerarbeiten, Renovierarbeiten, Schleifarbeiten"
+          },
+          {
+            "name": "Inhalt",
+            "value": "5 Stück"
+          },
+          {
+            "name": "Einsatzbereich",
+            "value": "Außen, Innen"
+          },
+          {
+            "name": "Artikeltyp",
+            "value": "Schleifgitter"
+          },
+          {
+            "name": "Ausführung",
+            "value": "Schleifgitterscheibe"
+          },
+          {
+            "name": "Zu bearbeitendes Material",
+            "value": "Gips, Holz, Spachtelmasse"
+          },
+          {
+            "name": "Geeignet für",
+            "value": "Handschleifer"
+          },
+          {
+            "name": "Eigenschaft",
+            "value": "Geeignet für Trockenschliff"
+          },
+          {
+            "name": "AKN (Artikelkurznummer)",
+            "value": "3R3V"
+          },
+          {
+            "name": "EAN",
+            "value": "4306517585082"
+          }
+        ],
+        "externalId": "10447127",
+        "observedSpecs": {},
+        "soldIndividually": true,
+        "retrievedAt": "2026-10-15T17:21:46.498Z",
+        "priceBasisEvidence": "hornbach-same-sku-sales-unit"
+      }
+    ]
+  },
+  {
+    "store": "hagebau",
+    "url": "https://www.hagebau.de/p/kwb-schleifgitter-grau-koernung-225-220-mm-anP7000121187/",
+    "checked_at": "2026-10-15T17:21:48.932Z",
+    "products": []
+  }
+]
