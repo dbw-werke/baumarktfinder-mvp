@@ -8,8 +8,8 @@ import robots from "../src/app/robots";
 
 test("SEO uses one public canonical origin and only existing indexable pages", () => {
   assert.equal(SITE_URL, "https://baumarktfinder-app.de/");
-  assert.equal(siteMetadata.metadataBase?.href, SITE_URL);
-  assert.equal(siteMetadata.alternates?.canonical, SITE_URL);
+  assert.equal(siteMetadata.metadataBase?.toString(), SITE_URL);
+  assert.equal(siteMetadata.alternates?.canonical?.toString(), SITE_URL);
   assert.equal(siteMetadata.openGraph?.url, SITE_URL);
   assert.deepEqual(siteMetadata.robots, { index: true, follow: true });
   assert.deepEqual(sitemap().map((entry) => entry.url), [SITE_URL]);
