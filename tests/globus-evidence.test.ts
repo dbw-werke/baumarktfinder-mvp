@@ -23,6 +23,7 @@ type VerifiedGlobusRow = {
 };
 
 const evidence = JSON.parse(readFileSync(new URL("../docs/evidence/globus-import-20261013.json", import.meta.url), "utf8")) as VerifiedGlobusRow[];
+const screenshotCorrections = JSON.parse(readFileSync(new URL("../docs/evidence/screenshot-product-corrections-20261018.json", import.meta.url), "utf8")) as VerifiedGlobusRow[];
 const catalog = bundledMaterialCatalog();
 const materials = catalog.map(entry => entry.material);
 const offers = getCatalogSnapshot(["globus"]);
@@ -31,7 +32,9 @@ test("all 21 simple searches select the independently observed current Globus pa
   assert.equal(evidence.length, 21);
   assert.deepEqual(new Set(evidence.map(row => row.key)), new Set(MVP_MATERIAL_INTENTS.map(intent => intent.key)));
   for (const intent of MVP_MATERIAL_INTENTS) {
-    const observed = evidence.find(row => row.key === intent.key)!;
+    const observed = intent.key === "haftgrund"
+      ? screenshotCorrections.find(row => row.store_id === "globus" && row.material_slug === "mem-super-haftgrund-10l-v1")!
+      : evidence.find(row => row.key === intent.key)!;
     const target = resolveMvpPreferredMaterial(catalog, intent.input);
     assert.ok(target, intent.input);
     const actualMaterial = materials.find(row => row.slug === observed.material_slug);

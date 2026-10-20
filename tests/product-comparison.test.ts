@@ -80,7 +80,7 @@ test("nearest size wins before the cheapest size; a newer duplicate replaces the
 });
 
 test("a matching label never substitutes a different family or functional variant", () => {
-  const wrong = [find("Knauf Uniflott Finish Fertigspachtel, 8 kg"), find("Rigips VARIO Fugenspachtel, 5 kg"), find("Knauf Perlfix Ansetzgips, 30 kg"),
+  const wrong = [find("Knauf Uniflott Finish Fertigspachtel, 8 kg"), find("Rigips VARIO Fugenspachtel, 25 kg"), find("Knauf Perlfix Ansetzgips, 30 kg"),
     { ...uniflott25, id: "other-spec", specs: { ...uniflott25.specs, waterproof: true } }];
   for (const material of wrong) {
     assert.equal(getVariantDistance(uniflott5, material), null);

@@ -23,6 +23,7 @@ export type ChainOfferSelection = {
   actualSpecification: string | null;
   preferredSpecification: string;
   explanation: string;
+  specificationWarning?: string;
 };
 
 /** Canonical definitions and their seed IDs only; this does not generate offers. */
@@ -52,6 +53,8 @@ export function formatMaterialSpecification(material: CanonicalMaterial): string
   const unit = material.base_unit === "piece" ? "Stück" : material.base_unit === "m2" ? "m²" : material.base_unit;
   parts.push(material.base_unit === "l" && quantity < 1 ? `${number(quantity * 1000)} ml` : `${number(quantity)} ${unit}`);
   if (pieces > 1 && material.base_unit !== "piece") parts[parts.length - 1] += " gesamt";
+  if (material.product_family === "dampfbremse") parts.push(numeric("sd_m") ? `sd ${number(numeric("sd_m")!)} m`
+    : `sd ${number(numeric("sd_min_m")!)}–${number(numeric("sd_max_m")!)} m · feuchtevariabel`);
   return parts.join(" · ");
 }
 
@@ -97,11 +100,26 @@ export function selectChainOffer(target: CanonicalMaterial, offers: readonly Sto
 
   const alternatives = [...latest.values()].flatMap((price) => {
     const material = byId.get(price.material_id)!;
-    const distance = getVariantDistance(preferred, material);
-    return distance !== null ? [{ price, material, distance }] : [];
+    // Legacy CD-hanger metadata omitted the section. Only explicit product evidence bridges it.
+    const confirmedCdSection = preferred.product_family === "direktabhaenger" && material.product_family === "direktabhaenger"
+      && preferred.specs.profile === "cd60/27" && material.specs.profile === "cd"
+      && /\bcd(?:[ -]?profil[e]?)?\s*60\s*(?:mm)?\s*\/\s*27\s*(?:mm)?\b/i.test(price.product_name);
+    const distance = getVariantDistance(preferred, confirmedCdSection ? { ...material, specs: { ...material.specs, profile: "cd60/27" } } : material);
+    if (distance !== null) return [{ price, material, distance, specificationWarning: preferred.product_family === "dampfbremse"
+      && preferred.specs.sd_m && material.specs.sd_min_m ? "Feuchtevariable Alternative · Eignung für den Aufbau prüfen" : undefined as string | undefined }];
+    // Explicit user-selected screenshot alternatives only; insulation matching otherwise stays strict.
+    const referenceTarget = preferred.product_family === "mineralwolle" && preferred.specs.type === "glaswolle-klemmfilz"
+      && preferred.specs.thickness_mm === 120 && preferred.specs.width_mm === 1200 && preferred.specs.thermal_conductivity === .035
+      && material.specs.type === "glaswolle-klemmfilz" && material.specs.width_mm === 1200 && material.specs.pieces === 1 && price.source === "manual";
+    const bauhausRoll = referenceTarget && chain === "bauhaus" && /\/p\/33169235\/?$/.test(price.product_url)
+      && material.specs.thickness_mm === 100 && material.specs.length_mm === 5600 && material.package_quantity === 6.72 && material.specs.thermal_conductivity === .035;
+    const hornbachRoll = referenceTarget && chain === "hornbach" && /\/12358612\/?$/.test(price.product_url)
+      && material.specs.thickness_mm === 120 && material.specs.length_mm === 4800 && material.package_quantity === 5.76 && material.specs.thermal_conductivity === .034;
+    return bauhausRoll || hornbachRoll ? [{ price, material, distance: 10, specificationWarning: bauhausRoll
+      ? "100 mm statt 120 mm · abweichende Dämmstärke" : "WLG 034 · 5,76 m² pro Rolle" }] : [];
   }).sort((left, right) => left.distance - right.distance || left.price.unit_price - right.price.unit_price
     || Date.parse(right.price.checked_at) - Date.parse(left.price.checked_at) || left.material.id.localeCompare(right.material.id));
   const alternative = alternatives[0];
   return alternative ? { price: alternative.price, match: "alternative", actualSpecification: formatMaterialSpecification(alternative.material), preferredSpecification,
-    explanation: "Alternative Größe – kein geprüftes Angebot der Wunschgröße" } : unavailable;
+    explanation: "Alternative Größe – kein geprüftes Angebot der Wunschgröße", specificationWarning: alternative.specificationWarning } : unavailable;
 }

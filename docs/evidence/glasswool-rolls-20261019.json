@@ -1,0 +1,48 @@
+[
+  {
+    "store_id": "bauhaus",
+    "material_slug": "glaswolle-035-100-6-72m2-v1",
+    "product_name": "Isover Lanaé Glaswolle Klemmfilz WLS 035, 100 × 1200 × 5600 mm, 6,72 m²/Rolle",
+    "product_url": "https://www.bauhaus.info/glaswolle/isover-lanae-glaswolle-klemmfilz-wls-035/p/33169235",
+    "price": 44,
+    "unit_price": 6.55,
+    "verification_note": "Official BAUHAUS screenshot supplied by user dated 18 October 2026: 44.00 EUR per roll, secondary 6.55 EUR/m². Official article 33169235 confirms 100 mm × 1200 mm × 5600 mm and 6.72 m² per roll. Product title/subtitle and description state WLS035 (0.035); a secondary specification field inconsistently says 0.04. Preserve the selected product title and actual 100 mm package; do not relabel it as 120 mm.",
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 6.72,
+    "checked_at": "2026-10-18T19:35:00.000Z",
+    "observed_specs": {
+      "type": "glaswolle-klemmfilz",
+      "thickness_mm": 100,
+      "width_mm": 1200,
+      "length_mm": 5600,
+      "pieces": 1,
+      "thermal_conductivity": 0.035,
+      "area_m2": 6.72
+    }
+  },
+  {
+    "store_id": "hornbach",
+    "material_slug": "glaswolle-034-100-6-72m2-v1",
+    "product_name": "ISOVER Klemmfilz Integra ZKF 1-034 Lanaé Zwischensparrendämmung für Steildach 5600 mm × 1200 mm × 100 mm, Rolle = 6,72 m²",
+    "product_url": "https://www.hornbach.de/p/isover-klemmfilz-integra-zkf-1-034-lanae-zwischensparrendaemmung-fuer-steildach-5600-mm-x-1200-mm-x-100-mm-rolle-6-72-m/12358614/",
+    "price": 44.06,
+    "unit_price": 6.56,
+    "verification_note": "Official HORNBACH screenshot supplied by user dated 18 October 2026: standard single-roll package total 44.06 EUR, 6.72 m², 5600 × 1200 × 100 mm, WLG034. 6.56 EUR/m² is secondary; 43.25 EUR per roll only applies to 18-roll bulk purchase. Exact official product URL article 12358614 independently matched via official search result; do not relabel 100 mm as 120 mm.",
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 6.72,
+    "checked_at": "2026-10-18T19:35:00.000Z",
+    "observed_specs": {
+      "type": "glaswolle-klemmfilz",
+      "thickness_mm": 100,
+      "width_mm": 1200,
+      "length_mm": 5600,
+      "pieces": 1,
+      "thermal_conductivity": 0.034,
+      "area_m2": 6.72
+    }
+  }
+]

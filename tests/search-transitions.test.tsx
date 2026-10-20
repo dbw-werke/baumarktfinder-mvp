@@ -173,6 +173,70 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
         assert.ok(toom.querySelector('.packagePrice'),'simple Uniflott displays the verified TOOM cache observation');
       }
     }
+    for (const [query, price, productId, dimensions] of [
+      ['CD Profil', '6,65', '20489120', '27 × 60 × 3000 mm · 3 m'],
+      ['Feuchtraumplatte', '15,95', '13874329', '12,5 × 1250 × 2000 mm · 2,5 m²'],
+      ['OSB', '15,14', '20121495', '18 × 675 × 2500 mm · 1,6875 m²'],
+      ['OSB Platte', '15,14', '20121495', '18 × 675 × 2500 mm · 1,6875 m²'],
+      ['OSB Verlegeplatte', '15,14', '20121495', '18 × 675 × 2500 mm · 1,6875 m²'],
+    ]) {
+      await input('#material',query); await submit(); loading(); await complete(requestIndex++);
+      const card=dom.window.document.querySelector('[data-store-id="fixture-bauhaus"]')!;
+      assert.ok(card, `${query}: BAUHAUS card rendered`);
+      assert.ok(card.querySelector('.packagePrice')?.textContent?.includes(price), query);
+      assert.equal(card.querySelector('.actualSpecification')?.textContent,dimensions,query);
+      assert.ok(card.querySelector<HTMLAnchorElement>('.offerButton')?.href.endsWith(`/p/${productId}`),query);
+    }
+    for (const [query, expected] of [
+      ['Uniflott Finish', [['toom', '17,99', '8 kg', '2356740']]],
+      ['Perlfix', [['toom', '10,49', '25 kg', '3053281']]],
+      ['Glaswolle', [['bauhaus', '44,00', '100 × 1200 × 5600 mm · 6,72 m²', '33169235'], ['hornbach', '48,38', '120 × 1200 × 4800 mm · 5,76 m²', '12358612']]],
+      ['Randdämmstreifen', [['bauhaus', '25,50', '8 × 150 × 50000 mm · 50 m', '26668592'], ['hornbach', '28,45', '8 × 150 × 50000 mm · 50 m', '12501330']]],
+      ['Sanitär-Silikon weiß, essigvernetzend, 310 ml', [['bauhaus', '7,85', '310 ml', '23413872'], ['toom', '9,99', '310 ml', '2360002']]],
+      ['Soudal PU-Bauschaum 1K B2 Genius Gun beige, 750 ml', [['toom', '13,99', '750 ml', '2368047']]],
+      ['Super Haftgrund', [['toom', '29,99', '5 l', '3351128'], ['obi', '29,99', '5 l', '2373454'], ['bauhaus', '26,95', '5 l', '13881776'], ['globus', '37,99', '10 l', '0779050060']]],
+      ['Haftgrund', [['toom', '29,99', '5 l', '3351128'], ['obi', '29,99', '5 l', '2373454'], ['bauhaus', '26,95', '5 l', '13881776'], ['globus', '37,99', '10 l', '0779050060']]],
+    ] as const) {
+      await input('#material',query); await submit(); loading(); await complete(requestIndex++);
+      for (const [store,price,pack,id] of expected) {
+        const card=dom.window.document.querySelector(`[data-store-id="fixture-${store}"]`)!;
+        assert.ok(card.querySelector('.packagePrice')?.textContent?.includes(price), `${query}/${store}: screenshot package total`);
+        assert.equal(card.querySelector('.actualSpecification')?.textContent,pack,`${query}/${store}: actual package`);
+        assert.ok(card.querySelector<HTMLAnchorElement>('.offerButton')?.href.includes(id), `${query}/${store}: exact product URL`);
+        if(query.includes('Haftgrund')) assert.match(card.querySelector('.productName')!.textContent!, /MEM Super[- ]Haftgrund/);
+        if(query==='Glaswolle') assert.match(card.textContent!, store==='bauhaus' ? /100 mm statt 120 mm/ : /WLG 034/);
+        if(query.startsWith('Soudal')) {
+          assert.match(card.querySelector('.productName')!.textContent!,/Genius Gun, champagner/);
+          assert.doesNotMatch(card.textContent!,/Sika|300 ml/);
+        }
+      }
+      const options=dom.window.document.querySelector('#comparison-material')!.textContent!;
+      assert.doesNotMatch(options,/Haftgrund mit Quarzsand|VARIO Fugenspachtel, (?:5|8) kg/);
+    }
+    const filmCases = [
+      ['PE Folie', [['bauhaus','44,95','50 m²','13862355'],['hornbach','29,95','50 m²','8582101'],
+        ['obi','33,99','30 m²','1016732'],['toom','69,99','100 m²','8350160'],['globus','79,99','100 m²','0779600036']]],
+      ['Baufolie', [['bauhaus','44,95','50 m²','13862355'],['hornbach','29,95','50 m²','8582101'],
+        ['obi','33,99','30 m²','1016732'],['toom','69,99','100 m²','8350160'],['globus','79,99','100 m²','0779600036']]],
+      ['Dampfbremse', [['bauhaus','149,25','75 m²','20678201'],['obi','149,25','75 m²','2472678'],
+        ['toom','209,99','60 m²','3150288'],['hornbach','59,95','30 m²','6047598'],
+        ['globus','69,99','25 m²','0779201398'],['hagebau','64,99','25 m²','anV1151865']]],
+    ] as const;
+    for(const [query,expected] of filmCases) {
+      await input('#material',query);await submit();loading();await complete(requestIndex++);
+      for(const [store,price,pack,id] of expected) {
+        const card=dom.window.document.querySelector(`[data-store-id="fixture-${store}"]`)!;
+        assert.ok(card.querySelector('.packagePrice')?.textContent?.includes(price),`${query}/${store}: full roll total`);
+        assert.ok(card.querySelector('.actualSpecification')?.textContent?.includes(pack),`${query}/${store}: roll area`);
+        assert.ok(card.querySelector<HTMLAnchorElement>('.offerButton')?.href.includes(id),`${query}/${store}: exact link`);
+        if(query==='Dampfbremse' && ['toom','hornbach'].includes(store))assert.match(card.textContent!,/feuchtevariabel|Feuchtevariable/);
+      }
+    }
+    await input('#material','VARIO'); await submit(); loading(); await complete(requestIndex++);
+    const vario=materials.find(item=>item.material.slug==='rigips-vario-25kg-v1')!.material;
+    assert.equal((dom.window.document.querySelector('#comparison-material') as HTMLSelectElement).value,vario.id);
+    assert.doesNotMatch(names(),/VARIO[^,]*, (?:5|8) kg/);
+    assert.equal(dom.window.document.querySelectorAll('.packagePrice').length,0,'no screenshot price exists for VARIO; never invent a value');
     stores.splice(stores.findIndex(store=>store.id==='toom'),1);
     await input('#material','Dämmung');await submit();await complete(requestIndex++);
     const insulation=materials.find(item=>item.material.slug==='steinwolle-sonorock-040-40-7-5m2-v1')!.material;

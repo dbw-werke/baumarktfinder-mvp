@@ -18,12 +18,14 @@ const families = [
   [/schnellbauschraub|trockenbauschraub/, "screw", /schnellbauschraub|trockenbauschraub|gips(?:karton|platten?)schraub/, /bohrspitze/],
   [/direktabhaenger/, "hanger", /direktabhaenger/, /nonius/],
   [/nonius/, "hanger", /nonius.*unterteil/, /oberteil/],
-  [/trennwandband|dichtungsband|randdaemmstreifen/, "band", /trennwandband|dichtungsband|randdaemmstreifen/],
-  [/dampfbremse|pe.?folie/, "film", /dampfbremse|folie/],
+  [/trennwand(?:[ -]dichtungs)?band|dichtungsband|\bdichtband\b|anschlussband/, "band", /trennwand(?:[ -]dichtungs)?band|dichtungsband|\bdichtband\b|anschlussband/, /randdaemmstreifen/],
+  [/randdaemmstreifen/, "band", /randdaemmstreifen|estrichrandstreifen|randstreifen/],
+  [/dampfbrems|klimamembran/, "film", /dampfbrems|klimamembran/, /unterspann|unterdeck|fassadenbahn/],
+  [/pe.?folie|baufolie/, "film", /baufolie|pe[ -]?(?:bau)?folie|polyethylenfolie/, /dampfbrems|unterspann|unterdeck|teichfolie|malerfolie|frischhalte|stretchfolie/],
   [/\bcd\b/, "profile", /\bcd\b|deckenprofil/, /\bcw\b|\buw\b|\bud\b/],
   [/\bcw\b/, "profile", /\bcw\b|staenderprofil/, /\bcd\b|\buw\b|\bud\b/],
   [/\buw\b/, "profile", /\buw\b|rahmenprofil/, /\bcd\b|\bcw\b|\bud\b/],
-  [/\bud\b/, "profile", /\bud\b|randprofil/, /\bcd\b|\bcw\b|\buw\b/],
+  [/\bud\b/, "profile", /\bud\b|randprofil|wandanschlussprofil/, /\bcd\b|\bcw\b|\buw\b/],
   [/mineralwolle|glaswolle|steinwolle|klemmfilz|trennwandplatte/, "insulation", /mineralwolle|glaswolle|steinwolle|klemmfilz|trennwandplatte|sonorock|akustic/, /rohrschale/],
   [/armierungsgewebe/, "mesh", /armierungs(?:glas)?gewebe|glasfasergewebe|putzgewebe/, /streifen|eckwinkel|band/],
   [/acryl/, "liquid", /acryl/, /silikon|hybrid|ms[ -]?polymer|smp[ -]?polymer|polyurethan|\bpu[ -]?(?:dichtstoff|fugendicht)|montagekleber|acryl[ -]?(?:farbe|lack)|\b(?:weisslack|buntlack|klarlack|lack|farbe)\b|haftgrund|tiefen?grund|grundierung|baukleber|dichtband|reiniger|fugenabzieher|kartuschenpresse|kuenstler|entferner/],
@@ -41,7 +43,7 @@ export function buildStandard(material) {
   if (!material || !Number.isInteger(Number(material.canonical_version)) || Number(material.canonical_version) < 1 || !["kg", "l", "m", "m2", "piece"].includes(material.base_unit) || !positive(material.package_quantity)) return null;
   const specs = material.specs;
   if (!specs || typeof specs !== "object" || Array.isArray(specs)) return null;
-  const known = [...numericKeys, "type", "color", "profile", "sd_m", "thermal_conductivity", "required_terms", "excluded_terms", "min_package_price", "max_package_price"];
+  const known = [...numericKeys, "type", "color", "profile", "sd_m", "sd_min_m", "sd_max_m", "thermal_conductivity", "required_terms", "excluded_terms", "min_package_price", "max_package_price"];
   if (Object.keys(specs).some((key) => !known.includes(key))) return null;
   const family = families.find(([pattern]) => pattern.test(normalize(`${material.name || ""} ${material.product_family || ""}`)));
   if (!family) return null;
@@ -56,7 +58,13 @@ export function buildStandard(material) {
     m: Number(specs.length_mm) / 1000 * Number(specs.pieces || 1),
     m2: Number(specs.length_mm) * Number(specs.width_mm) / 1e6 * Number(specs.pieces || 1), piece: Number(specs.pieces || 1) }[material.base_unit];
   if (!close(quantity, calculated)) return null;
-  return { id: material.id, name: material.name, brand: material.brand ?? null, productFamily: material.product_family || normalize(material.name).replace(/\s+\d.*$/, ""), search: material.store_search_term || material.name, family: family[1], productMatch: family[2],
+  const search = family[1] === "hanger"
+    ? (/nonius/.test(normalize(`${material.name} ${material.product_family}`)) ? "Nonius Unterteil" : "Direktabhänger")
+    : material.product_family === "dampfbremse" ? "Dampfbremse"
+    : material.product_family === "pe-folie" ? "Baufolie"
+    : material.product_family === "randdaemmstreifen" ? "Randdämmstreifen mit Folie"
+    : material.store_search_term || material.name;
+  return { id: material.id, name: material.name, brand: material.brand ?? null, productFamily: material.product_family || normalize(material.name).replace(/\s+\d.*$/, ""), search, family: family[1], productMatch: family[2],
     exclude: family[3], specs, baseUnit: material.base_unit, packageQuantity: quantity, canonicalVersion: Number(material.canonical_version),
     minPrice: Number(specs.min_package_price || 0.1), maxPrice: Number(specs.max_package_price || 10000) };
 }
@@ -89,6 +97,7 @@ const familyDetectors = [
   ["acrylic-paint", /acryl[ -]?(?:farbe|lack)|weisslack|buntlack|kuenstleracryl/],
   ["betonkontakt", /betonkontakt/], ["haftgrund", /haftgrund/], ["tiefengrund", /tiefen?grund/],
   ["acrylic", /acryl/],
+  ["dampfbremse", /dampfbrems|klimamembran/],
   ["uniflott-finish", /uniflott.*finish/], ["uniflott", /uniflott/], ["rotband", /rotband/], ["perlfix", /perlfix/], ["vario", /vario/],
   // Compound product identities precede their substrate: Gipsplattenschrauben
   // are screws, even when the retailer's Ausführung contains "Gipsplatte".
@@ -96,12 +105,13 @@ const familyDetectors = [
   ["gipskarton-feuchtraum", /feuchtraum|gkbi|impraegniert/], ["osb", /\bosb/],
   ["gipskarton", /gipskarton|rigipsplatte|gipsplatte|bauplatte|\bgkb\b/],
   ["direktabhaenger", /direktabhaenger/], ["noniusabhaenger", /nonius/],
-  ["band", /trennwandband|dichtungsband|randdaemmstreifen/],
+  ["randdaemmstreifen", /randdaemmstreifen/],
+  ["band", /trennwand(?:[ -]dichtungs)?band|dichtungsband|\bdichtband\b|anschlussband/],
   ["cd-profil", /\bcd\b/], ["cw-profil", /\bcw\b/], ["uw-profil", /\buw\b/], ["ud-profil", /\bud\b/],
-  ["cd-profil", /deckenprofil/], ["cw-profil", /staenderprofil/], ["uw-profil", /rahmenprofil/], ["ud-profil", /randprofil/],
+  ["cd-profil", /deckenprofil/], ["cw-profil", /staenderprofil/], ["uw-profil", /rahmenprofil/], ["ud-profil", /randprofil|wandanschlussprofil/],
   ["pu-schaum", /pu.?schaum|bauschaum|montageschaum|pistolenschaum/],
   ["mineralwolle", /mineralwolle|glaswolle|steinwolle|klemmfilz|trennwandplatte|sonorock|akustic/],
-  ["dampfbremse", /dampfbremse/], ["pe-folie", /pe.?folie|pe.?baufolie/], ["armierungsgewebe", /armierungs(?:glas)?gewebe|glasfasergewebe|putzgewebe/],
+  ["dampfbremse", /dampfbrems/], ["pe-folie", /pe.?folie|pe.?baufolie|baufolie|polyethylenfolie/], ["armierungsgewebe", /armierungs(?:glas)?gewebe|glasfasergewebe|putzgewebe/],
   ["rollputz", /rollputz|streichputz|easyputz/], ["sockelputz", /sockelputz|sockelleichtputz/], ["zement", /zement/],
   ["schleifpapier", /schleifpapier|schleifblatt|schleifgitter|schleifstreifen|schleifbogen|schleifrolle/],
 ];
@@ -165,6 +175,7 @@ export function extractSpecifications(product, standard) {
       // A mesh's millimetre aperture is not the dimensions of its metre-wide roll.
       if (standard.family === "mesh" && values.every(value => value < 50)) continue;
       if (standard.family === "screw") { add("length_mm", values[0]); add("diameter_mm", values[1]); }
+      else if (standard.productFamily === "randdaemmstreifen" && values[0] < 500) { add("width_mm", values[0]); add("thickness_mm", values[1]); }
       else if (standard.family === "profile" && values[0] < 500) { add("width_mm", values[0]); add("height_mm", values[1]); }
       else { add("length_mm", values[0]); add("width_mm", values[1]); }
     }
@@ -172,6 +183,7 @@ export function extractSpecifications(product, standard) {
     if (["profile", "hanger"].includes(standard.family)) for (const m of dimensionName.matchAll(/(\d+(?:\.\d+)?)\s*(mm|cm|m)\b/g)) {
       const value = Number(m[1]) * factor(m[2]); if (value >= 500 || standard.family === "hanger") add("length_mm", value);
     }
+    if (standard.productFamily === "randdaemmstreifen") capture(/(\d+(?:\.\d+)?)\s*m\b/g, "length_mm", 1000);
   }
   if (standard.family === "profile") for (const m of dimensionName.matchAll(/(\d+(?:\.\d+)?)\s*(mm|cm|m)\b/g)) {
     const value = Number(m[1]) * factor(m[2]); if (value >= 500) add("length_mm", value);
@@ -200,6 +212,7 @@ export function evaluateProductMatch(product, standard, { exactPackage = false }
   const reject = (reason, hard = false) => ({ ...diagnostic, accepted: false, score: 0, rejectionReason: reason, hardExclusion: hard ? reason : null });
   if (!product || !standard) return reject("unsupported-canonical-specification", true);
   const fields = productFields(product), { values, conflicts } = extractSpecifications(product, standard);
+  if (standard.productFamily === "vario" && (standard.baseUnit !== "kg" || standard.packageQuantity !== 25 || values.weight_kg !== 25)) return reject("vario-requires-25kg-package", true);
   const attributeText = fields.attributes.map(({ name, value }) => `${name}: ${value}`).join(" ");
   const observedColor = colorName(normalize(product.observedSpecs?.color || fields.attributes.find((a) => /^(farbe|farbton|grundfarbe|color)$/.test(a.name))?.value).match(colors)?.[1] || fields.name.match(colors)?.[1]);
   diagnostic.observedSpecs = { ...values, ...(observedColor ? { color: observedColor } : {}) };
@@ -209,6 +222,8 @@ export function evaluateProductMatch(product, standard, { exactPackage = false }
   if (diagnostic.detectedFamily !== "unknown" && diagnostic.requestedFamily !== "unknown" && diagnostic.detectedFamily !== diagnostic.requestedFamily) return reject("incompatible_product_family", true);
   if (!standard.productMatch.test(identity)) return reject("incompatible_product_family", true);
   if (standard.exclude?.test(fields.primary)) return reject("incompatible_product_family", true);
+  if (/wandanschlussprofil/.test(fields.primary) && diagnostic.requestedFamily === "ud-profil"
+    && (!close(values.width_mm, 28) || !close(values.height_mm, 27))) return reject("wrong-ud-profile-section", true);
   const purposeConflict = productPurposeConflict(standard, product);
   if (purposeConflict) return reject(purposeConflict, true);
   if (standard.family === "board" && standard.specs.type === "standard" && /\bxps\b|\beps\b|zement|gipsfaser/.test(fields.primary)) return reject("incompatible_product_family", true);
@@ -232,9 +247,12 @@ export function evaluateProductMatch(product, standard, { exactPackage = false }
   }[standard.specs.type];
   if (essential && !essential.test(evidence) && normalize(product.observedSpecs?.type) !== normalize(standard.specs.type)) return reject("unverified-essential-attribute", true);
   if (standard.specs.type === "1k-b2-genius" && (!/\bb2\b/.test(evidence) || !/einkomponent|1[ -]?k\b/.test(evidence))) return reject("unverified-essential-attribute", true);
-  if (standard.specs.profile && !evidence.replace(/\s+/g, "").includes(normalize(standard.specs.profile))) return reject("wrong-or-missing-profile", true);
+  if (standard.specs.profile && !evidence.replace(/(\d+(?:\.\d+)?)\s*mm\b/g, "$1").replace(/\s+/g, "").includes(normalize(standard.specs.profile))) return reject("wrong-or-missing-profile", true);
   const sd = product.observedSpecs?.sd_m ?? evidence.match(/\bsd(?:[ -]?wert)?\s*[:=]?\s*(\d+(?:\.\d+)?)\s*m\b/)?.[1];
   if (standard.specs.sd_m != null && !close(sd, standard.specs.sd_m)) return reject("wrong-or-missing-sd-value", true);
+  for (const key of ["sd_min_m", "sd_max_m"]) {
+    if (standard.specs[key] != null && !close(product.observedSpecs?.[key], standard.specs[key])) return reject("wrong-or-missing-sd-range", true);
+  }
   const thermal = product.observedSpecs?.thermal_conductivity ?? Number(evidence.match(/\b(?:wlg?|wls)\s*[:=]?\s*(0\d{2})\b/)?.[1]) / 1000;
   if (standard.specs.thermal_conductivity != null && !close(thermal, standard.specs.thermal_conductivity)) return reject("wrong-or-missing-thermal-conductivity", true);
   if (conflicts.length) return reject(`conflicting-specifications:${conflicts.join(",")}`, true);
@@ -244,7 +262,9 @@ export function evaluateProductMatch(product, standard, { exactPackage = false }
     if (key === "pieces" && Number(standard.specs[key]) === 1 && values.pieces == null && product.soldIndividually === true) { values.pieces = 1; continue; }
     if (values[key] == null) return reject(`missing-specification:${key}`);
     if (!close(values[key], standard.specs[key])) {
-      if (exactPackage || !packageAxes[standard.baseUnit].includes(key)) return reject(`wrong-specification:${key}`, !packageAxes[standard.baseUnit].includes(key));
+      const nearBandThickness = diagnostic.requestedFamily === "band" && key === "thickness_mm"
+        && Math.abs(values[key] - standard.specs[key]) / standard.specs[key] <= 0.1;
+      if (exactPackage || (!packageAxes[standard.baseUnit].includes(key) && !nearBandThickness)) return reject(`wrong-specification:${key}`, !packageAxes[standard.baseUnit].includes(key));
       exactSize = false;
     }
   }
@@ -255,12 +275,15 @@ export function evaluateProductMatch(product, standard, { exactPackage = false }
   const observedBrand = normalize(typeof product.brand === "object" ? product.brand?.name : product.brand);
   if (exactPackage && standard.brand && observedBrand && observedBrand !== normalize(standard.brand)) return reject("different-canonical-brand");
   const distance = Math.abs(quantity - standard.packageQuantity) / standard.packageQuantity;
+  const bandThicknessDistance = diagnostic.requestedFamily === "band"
+    ? Math.abs(values.thickness_mm - standard.specs.thickness_mm) / standard.specs.thickness_mm : 0;
   const colorScore = standard.specs.color && observedColor === colorName(normalize(standard.specs.color)) ? 20 : 0;
   const properties = (standard.specs.required_terms || []).filter((term) => evidence.includes(normalize(term))).length;
   diagnostic.accepted = true;
   diagnostic.score = 100 + (exactSize ? 40 : distance <= 0.05 ? 30 : distance <= 0.15 ? 20 : Math.max(1, 15 / (1 + distance)))
     + colorScore + Math.min(10, properties * 2) + (standard.productMatch.test(`${fields.category} ${attributeText}`) ? 10 : 0)
-    + (standard.brand && (observedBrand === normalize(standard.brand) || fields.name.includes(normalize(standard.brand))) ? 5 : 0);
+    + (standard.brand && (observedBrand === normalize(standard.brand) || fields.name.includes(normalize(standard.brand))) ? 5 : 0)
+    - bandThicknessDistance * 10;
   diagnostic.matchKind = exactSize ? "exact" : "alternative";
   diagnostic.packageQuantity = quantity;
   diagnostic.packageDistance = distance;

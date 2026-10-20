@@ -1,0 +1,100 @@
+[
+  {
+    "store_id": "toom",
+    "material_slug": "ud28-27-3000-v1",
+    "product_name": "Knauf UD-Wandanschlussprofil 3000 × 28 × 27 mm",
+    "product_url": "https://toom.de/p/wandanschlussprofil-3000-x-28-x-27-mm/3156770",
+    "price": 7.49,
+    "unit_price": 2.5,
+    "base_unit": "m",
+    "package_quantity": 3,
+    "observed_specs": {
+      "type": "ud",
+      "length_mm": 3000,
+      "width_mm": 28,
+      "height_mm": 27
+    },
+    "verification_note": "User screenshot official toom Frankfurt-Bornheim dated 2026-10-16: article3156770 Wandanschlussprofil3000x28x27mm package3m total7.49EUR; secondary2.50EUR/m. Officialdescription explicitly UDprofile. Localmarket price can differ elsewhere; no stock claim.",
+    "currency": "EUR",
+    "checked_at": "2026-10-16T22:07:38.042Z",
+    "price_basis": "package"
+  },
+  {
+    "store_id": "toom",
+    "material_slug": "direktabhaenger-cd-125-1-v1",
+    "product_name": "Knauf Direktabhänger für CD-Profile 60/27, Schenkellänge 125 mm",
+    "product_url": "https://toom.de/p/direktabhaenger-fuer-cd-profile/3153733",
+    "price": 0.69,
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "observed_specs": {
+      "type": "direktabhaenger",
+      "length_mm": 125,
+      "pieces": 1,
+      "profile": "cd"
+    },
+    "verification_note": "Userofficialtoomscreenshot16Oct2026 article3153733 onepiece0.69EUR. Officialdescription confirmsKnaufCDceilingprofiles60mm width,125mmschenkellaenge, Inhalt1Stk; targetCD60/27. Referenceprice FrankfurtBornheim, no universalstockclaim.",
+    "currency": "EUR",
+    "checked_at": "2026-10-16T22:07:38.042Z",
+    "price_basis": "package"
+  },
+  {
+    "store_id": "hornbach",
+    "material_slug": "direktabhaenger-cd-125-1-v1",
+    "product_name": "Knauf Direktabhänger 125 mm für CD Profil 60 mm / 27 mm",
+    "product_url": "https://www.hornbach.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-mm-27-mm/7017220/",
+    "price": 0.58,
+    "base_unit": "piece",
+    "package_quantity": 1,
+    "observed_specs": {
+      "type": "direktabhaenger",
+      "length_mm": 125,
+      "pieces": 1,
+      "profile": "cd"
+    },
+    "verification_note": "UsersofficialHORNBACHscreenshot16Oct2026 article7017220 onepieceoptionselected,0.58EUR/ST;125mmCD60/27. Existing verified automaticreference agrees.",
+    "currency": "EUR",
+    "checked_at": "2026-10-16T22:07:38.042Z",
+    "price_basis": "package"
+  },
+  {
+    "store_id": "bauhaus",
+    "material_slug": "dichtungsband-50-3-30000-v1",
+    "product_name": "Probau Trennwandband selbstklebend 30 m × 50 mm × 3 mm",
+    "product_url": "https://www.bauhaus.info/trockenbaubaender/trennwandband/p/25501375",
+    "price": 9.05,
+    "unit_price": 0.3,
+    "base_unit": "m",
+    "package_quantity": 30,
+    "observed_specs": {
+      "type": "dichtungsband",
+      "length_mm": 30000,
+      "width_mm": 50,
+      "thickness_mm": 3
+    },
+    "verification_note": "OfficialBAUHAUSpageopened17Oct2026:9.05EURproRolle,notoldersearchsnippet8.80. Actual30m50mm3mm, selfadhesive/soundinsulationdrywallconnections. TrennwandbandandDichtungsband descriptionequivalent.",
+    "currency": "EUR",
+    "checked_at": "2026-10-16T22:07:38.042Z",
+    "price_basis": "package"
+  },
+  {
+    "store_id": "hornbach",
+    "material_slug": "nonius-unterteil-cd60-130-100-v1",
+    "product_name": "Knauf Nonius-Hänger-Unterteil für CD 60 mm / 27 mm 130 mm Pack = 100 St",
+    "product_url": "https://www.hornbach.de/p/knauf-nonius-haenger-unterteil-fuer-cd-60-mm-27-mm-130-mm-pack-100-st/7147417/",
+    "price": 45.65,
+    "unit_price": 0.46,
+    "base_unit": "piece",
+    "package_quantity": 100,
+    "observed_specs": {
+      "type": "nonius-unterteil",
+      "length_mm": 130,
+      "pieces": 100,
+      "profile": "cd60/27"
+    },
+    "verification_note": "OfficialHORNBACHHTTP200 inspected2026-10-16T22:04:53.907Z=17OctBerlin: JSONLD45.65matchesproductstate defaultPrice45.65 unitPack/defaultSalesUnitPAK; actual100St130mmCD60/27 Unterteil. Mainpriceis100piecepacktotalnotunit0.46.",
+    "currency": "EUR",
+    "checked_at": "2026-10-16T22:07:38.042Z",
+    "price_basis": "package"
+  }
+]

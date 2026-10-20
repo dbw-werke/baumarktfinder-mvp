@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-14T11:02:58.696Z",
+  "generated_at": "2026-10-20T16:29:36.958Z",
   "canonical_material_ids": {
     "gipskarton-standard-12-5-1200-600-v1": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
     "gipskarton-standard-12-5-2000-1250-v1": "2d750efa-4af5-e9b4-5416-89678194f058",
@@ -15,12 +15,10 @@
     "knauf-uniflott-5kg-v1": "f123e8b4-bcc3-d801-e8b3-72eb5412c728",
     "knauf-uniflott-25kg-v1": "1fc5bf38-3822-f578-7c96-34f5b4b8e68d",
     "knauf-uniflott-finish-8kg-v1": "c8288465-c1df-0c3a-e05a-773e75a6b678",
-    "rigips-vario-5kg-v1": "00e88660-9715-54f7-e1e8-3acc27b1d7ba",
     "knauf-rotband-30kg-v1": "2b40f637-5d50-0aea-962f-94be9f528b05",
     "knauf-rotband-25kg-v1": "32353635-2f0c-145d-8c80-b51d643f0acd",
     "knauf-perlfix-30kg-v1": "8739fa28-ef16-5da4-dea0-a10cd973d87a",
     "knauf-tiefengrund-5l-v1": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
-    "haftgrund-quarzsand-5l-v1": "8eaeded8-90f3-a96c-ba42-fbc8836eebdb",
     "acryl-weiss-310ml-v1": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
     "tn-3-5-25-1000-v1": "c3eb45d7-6ade-8acf-36b5-998aae112efa",
     "tn-3-5-35-1000-v1": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
@@ -64,7 +62,23 @@
     "sanitaer-silikon-weiss-300ml-v1": "e2e2830e-b113-5828-bf7e-598987e86840",
     "schleifpapier-k180-93-5000-rolle-v1": "587c0ad5-79b5-7126-58c8-d4e3504cc0ef",
     "steinwolle-040-40-9m2-v1": "7911616b-c5fe-d6b0-1bbc-6ee25d740aed",
-    "schleifpapier-trockenbau-k180-225-5-v1": "3f27e372-f757-5850-5643-489a33782dbb"
+    "schleifpapier-trockenbau-k180-225-5-v1": "3f27e372-f757-5850-5643-489a33782dbb",
+    "osb3-18-2500-675-v1": "7dca26b6-f1af-a691-3f31-28c1dabbb8a7",
+    "nonius-unterteil-cd60-130-100-v1": "9d6af0d6-b275-9449-91c4-9d23d19e6d71",
+    "rigips-vario-25kg-v1": "f0652db9-5ee1-f9b4-4250-3afb8a574424",
+    "mem-super-haftgrund-5l-v1": "6667c2c2-893a-7831-be47-f95fc076e71c",
+    "mem-super-haftgrund-10l-v1": "287bfb05-5343-0fb9-8ac4-a41bdbf003fb",
+    "glaswolle-035-100-6-72m2-v1": "41bab945-0ef9-b1ca-2e9c-963088da2974",
+    "glaswolle-034-100-6-72m2-v1": "d1e921f2-4f35-e8ef-9fd5-996c1f987776",
+    "dampfbremse-sd2-1000-25000-v1": "3786743c-c32a-422c-dc2b-ffa4d24cb57e",
+    "dampfbremse-variabel-03-5-1500-40000-v1": "93c79942-9f3f-c68a-b52e-8a0a79b2c6b1",
+    "dampfbremse-variabel-05-55-1500-20000-v1": "25fcf087-17ac-44a9-8046-9817871622c6",
+    "pe-folie-200-2000-25000-v1": "cd8ae724-7c87-4fcf-0514-39a87cf7dd64",
+    "pe-folie-200-3000-10000-v1": "fa1bf29a-860a-3715-905f-17f67cda0a8a",
+    "pe-folie-200-4000-25000-v1": "6a4249aa-0793-f6fe-0637-5ee39bb35d2b",
+    "glaswolle-034-120-5-76m2-v1": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
+    "randdaemmstreifen-8-150-50000-v1": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
+    "pu-schaum-1k-b2-genius-champagner-750ml-v1": "322f8d06-4b24-234f-4ccf-3a98906565d8"
   },
   "prices": [
     {
@@ -88,6 +102,35 @@
       "package_quantity": 25,
       "currency": "EUR",
       "checked_at": "2026-10-08T17:06:46.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 25
+      }
+    },
+    {
+      "material_id": "003defc8-10d9-c91c-206a-302684b9ce88",
+      "canonical_slug": "knauf-perlfix-25kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "ansetzgips",
+        "weight_kg": 25,
+        "required_terms": [
+          "knauf",
+          "perlfix"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Knauf Perlfix Ansetzgips 25 kg",
+      "product_url": "https://toom.de/p/ansatzgips-perflix-25-kg/3053281",
+      "price": 10.49,
+      "unit_price": 0.42,
+      "unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-18T19:23:00.000Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -269,44 +312,6 @@
       "availability": null,
       "observed_specs": {
         "volume_l": 5
-      }
-    },
-    {
-      "material_id": "1d199601-0cbf-b7df-32fe-cfa4986b6dd0",
-      "canonical_slug": "dampfbremse-sd2-1500-50000-v1",
-      "canonical_version": 1,
-      "canonical_specs": {
-        "type": "dampfbremse",
-        "sd_m": 2,
-        "width_mm": 1500,
-        "length_mm": 50000,
-        "area_m2": 75,
-        "required_terms": [
-          "dampfbremse"
-        ],
-        "excluded_terms": [
-          "variabel",
-          "klimamembran"
-        ]
-      },
-      "store_id": "bauhaus",
-      "product_name": "Ursa SecoPro Dampfbremse 1,5 x 50 m, sd-Wert 2 m, 75 m²",
-      "product_url": "https://www.bauhaus.info/dampfsperre-dachfolien/ursa-secopro-dampfbremsfolie/p/20678201",
-      "price": 149.25,
-      "unit_price": 1.99,
-      "unit": "m2",
-      "package_quantity": 75,
-      "currency": "EUR",
-      "checked_at": "2026-10-01T21:04:00Z",
-      "source": "manual",
-      "price_scope": "chain",
-      "verified": true,
-      "availability": null,
-      "observed_specs": {
-        "length_mm": 50000,
-        "width_mm": 1500,
-        "sd_m": 2,
-        "area_m2": 75
       }
     },
     {
@@ -514,6 +519,36 @@
       "availability": "InStock",
       "observed_specs": {
         "volume_l": 0.3
+      }
+    },
+    {
+      "material_id": "287bfb05-5343-0fb9-8ac4-a41bdbf003fb",
+      "canonical_slug": "mem-super-haftgrund-10l-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "super-haftgrund",
+        "volume_l": 10,
+        "required_terms": [
+          "mem",
+          "haftgrund"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "MEM Super Haftgrund 10 l",
+      "product_url": "https://www.globus-baumarkt.de/p/mem-super-haftgrund-10-l-0779050060/",
+      "price": 37.99,
+      "unit_price": 3.8,
+      "unit": "l",
+      "package_quantity": 10,
+      "currency": "EUR",
+      "checked_at": "2026-10-18T19:23:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "super-haftgrund",
+        "volume_l": 10
       }
     },
     {
@@ -934,6 +969,44 @@
       }
     },
     {
+      "material_id": "3d049513-3876-7c6d-5522-965ca4dd56f2",
+      "canonical_slug": "ud28-27-3000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "ud",
+        "length_mm": 3000,
+        "width_mm": 28,
+        "height_mm": 27,
+        "required_terms": [
+          "ud"
+        ],
+        "excluded_terms": [
+          "cd",
+          "cw",
+          "uw"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Knauf UD-Wandanschlussprofil 3000 × 28 × 27 mm",
+      "product_url": "https://toom.de/p/wandanschlussprofil-3000-x-28-x-27-mm/3156770",
+      "price": 7.49,
+      "unit_price": 2.5,
+      "unit": "m",
+      "package_quantity": 3,
+      "currency": "EUR",
+      "checked_at": "2026-10-16T22:07:38.042Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "ud",
+        "length_mm": 3000,
+        "width_mm": 28,
+        "height_mm": 27
+      }
+    },
+    {
       "material_id": "3f27e372-f757-5850-5643-489a33782dbb",
       "canonical_slug": "schleifpapier-trockenbau-k180-225-5-v1",
       "canonical_version": 1,
@@ -1303,6 +1376,133 @@
       }
     },
     {
+      "material_id": "6667c2c2-893a-7831-be47-f95fc076e71c",
+      "canonical_slug": "mem-super-haftgrund-5l-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "super-haftgrund",
+        "volume_l": 5,
+        "required_terms": [
+          "mem",
+          "haftgrund"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "MEM Super Haftgrund 5 l",
+      "product_url": "https://www.bauhaus.info/tiefengrund-haftgrund/mem-haftgrund/p/13881776",
+      "price": 26.95,
+      "unit_price": 5.39,
+      "unit": "l",
+      "package_quantity": 5,
+      "currency": "EUR",
+      "checked_at": "2026-10-18T19:23:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "super-haftgrund",
+        "volume_l": 5
+      }
+    },
+    {
+      "material_id": "6667c2c2-893a-7831-be47-f95fc076e71c",
+      "canonical_slug": "mem-super-haftgrund-5l-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "super-haftgrund",
+        "volume_l": 5,
+        "required_terms": [
+          "mem",
+          "haftgrund"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "MEM Super-Haftgrund 5 l",
+      "product_url": "https://www.obi.de/p/2373454/mem-super-haftgrund-5-l",
+      "price": 29.99,
+      "unit_price": 6,
+      "unit": "l",
+      "package_quantity": 5,
+      "currency": "EUR",
+      "checked_at": "2026-10-18T19:23:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "super-haftgrund",
+        "volume_l": 5
+      }
+    },
+    {
+      "material_id": "6667c2c2-893a-7831-be47-f95fc076e71c",
+      "canonical_slug": "mem-super-haftgrund-5l-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "super-haftgrund",
+        "volume_l": 5,
+        "required_terms": [
+          "mem",
+          "haftgrund"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "MEM Super Haftgrund 5 l",
+      "product_url": "https://toom.de/p/super-haftgrund-5-l/3351128",
+      "price": 29.99,
+      "unit_price": 6,
+      "unit": "l",
+      "package_quantity": 5,
+      "currency": "EUR",
+      "checked_at": "2026-10-18T19:23:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "super-haftgrund",
+        "volume_l": 5
+      }
+    },
+    {
+      "material_id": "7dca26b6-f1af-a691-3f31-28c1dabbb8a7",
+      "canonical_slug": "osb3-18-2500-675-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "osb3",
+        "thickness_mm": 18,
+        "width_mm": 675,
+        "length_mm": 2500,
+        "area_m2": 1.6875,
+        "required_terms": [
+          "osb",
+          "nut",
+          "feder"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "OSB-Verlegeplatte",
+      "product_url": "https://www.bauhaus.info/verlegeplatten/osb-verlegeplatte/p/20121495",
+      "price": 15.14,
+      "unit_price": 8.97,
+      "unit": "m2",
+      "package_quantity": 1.6875,
+      "currency": "EUR",
+      "checked_at": "2026-10-16T12:41:47.271Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "osb3",
+        "length_mm": 2500,
+        "width_mm": 675,
+        "thickness_mm": 18,
+        "area_m2": 1.6875
+      }
+    },
+    {
       "material_id": "8739fa28-ef16-5da4-dea0-a10cd973d87a",
       "canonical_slug": "knauf-perlfix-30kg-v1",
       "canonical_version": 1,
@@ -1392,6 +1592,45 @@
       "availability": null,
       "observed_specs": {
         "weight_kg": 8
+      }
+    },
+    {
+      "material_id": "9d6af0d6-b275-9449-91c4-9d23d19e6d71",
+      "canonical_slug": "nonius-unterteil-cd60-130-100-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "nonius-unterteil",
+        "length_mm": 130,
+        "pieces": 100,
+        "profile": "cd60/27",
+        "required_terms": [
+          "nonius",
+          "unterteil",
+          "60",
+          "27"
+        ],
+        "excluded_terms": [
+          "oberteil"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Knauf Nonius-Hänger-Unterteil für CD 60 mm / 27 mm 130 mm Pack = 100 St",
+      "product_url": "https://www.hornbach.de/p/knauf-nonius-haenger-unterteil-fuer-cd-60-mm-27-mm-130-mm-pack-100-st/7147417/",
+      "price": 45.65,
+      "unit_price": 0.46,
+      "unit": "piece",
+      "package_quantity": 100,
+      "currency": "EUR",
+      "checked_at": "2026-10-16T22:07:38.042Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "nonius-unterteil",
+        "length_mm": 130,
+        "pieces": 100,
+        "profile": "cd60/27"
       }
     },
     {
@@ -1738,6 +1977,36 @@
       }
     },
     {
+      "material_id": "c8288465-c1df-0c3a-e05a-773e75a6b678",
+      "canonical_slug": "knauf-uniflott-finish-8kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "fertigspachtel",
+        "weight_kg": 8,
+        "required_terms": [
+          "knauf",
+          "uniflott",
+          "finish"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Knauf Feinspachtelmasse Uniflott Finish 8 kg",
+      "product_url": "https://toom.de/p/feinspachtelmasse-uniflott-finish-8-kg/2356740",
+      "price": 17.99,
+      "unit_price": 2.25,
+      "unit": "kg",
+      "package_quantity": 8,
+      "currency": "EUR",
+      "checked_at": "2026-10-18T19:23:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 8
+      }
+    },
+    {
       "material_id": "cebcf814-aecb-4a94-5319-d57b54761eea",
       "canonical_slug": "armierungsgewebe-165-1000-10000-v1",
       "canonical_version": 1,
@@ -1925,6 +2194,42 @@
           "verbinder"
         ]
       },
+      "store_id": "hornbach",
+      "product_name": "Knauf Direktabhänger 125 mm für CD Profil 60 mm / 27 mm",
+      "product_url": "https://www.hornbach.de/p/knauf-direktabhaenger-125-mm-fuer-cd-profil-60-mm-27-mm/7017220/",
+      "price": 0.58,
+      "unit_price": 0.58,
+      "unit": "piece",
+      "package_quantity": 1,
+      "currency": "EUR",
+      "checked_at": "2026-10-16T22:07:38.042Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd"
+      }
+    },
+    {
+      "material_id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+      "canonical_slug": "direktabhaenger-cd-125-1-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd",
+        "excluded_terms": [
+          "holzlatten",
+          "holzplatten",
+          "nonius",
+          "verbinder"
+        ]
+      },
       "store_id": "obi",
       "product_name": "Direktabhänger 125 mm",
       "product_url": "https://www.obi.de/p/2353639/direktabhaenger-125-mm",
@@ -1934,6 +2239,42 @@
       "package_quantity": 1,
       "currency": "EUR",
       "checked_at": "2026-10-13T11:47:24.109Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd"
+      }
+    },
+    {
+      "material_id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+      "canonical_slug": "direktabhaenger-cd-125-1-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "direktabhaenger",
+        "length_mm": 125,
+        "pieces": 1,
+        "profile": "cd",
+        "excluded_terms": [
+          "holzlatten",
+          "holzplatten",
+          "nonius",
+          "verbinder"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Knauf Direktabhänger für CD-Profile 60/27, Schenkellänge 125 mm",
+      "product_url": "https://toom.de/p/direktabhaenger-fuer-cd-profile/3153733",
+      "price": 0.69,
+      "unit_price": 0.69,
+      "unit": "piece",
+      "package_quantity": 1,
+      "currency": "EUR",
+      "checked_at": "2026-10-16T22:07:38.042Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -2047,6 +2388,40 @@
       }
     },
     {
+      "material_id": "dcfebd0f-41e0-1769-03f6-94d2ec3e9fdf",
+      "canonical_slug": "dichtungsband-50-3-30000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "dichtungsband",
+        "width_mm": 50,
+        "thickness_mm": 3,
+        "length_mm": 30000,
+        "required_terms": [
+          "dichtungsband",
+          "selbstklebend"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau Trennwandband selbstklebend 30 m × 50 mm × 3 mm",
+      "product_url": "https://www.bauhaus.info/trockenbaubaender/trennwandband/p/25501375",
+      "price": 9.05,
+      "unit_price": 0.3,
+      "unit": "m",
+      "package_quantity": 30,
+      "currency": "EUR",
+      "checked_at": "2026-10-16T22:07:38.042Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "dichtungsband",
+        "length_mm": 30000,
+        "width_mm": 50,
+        "thickness_mm": 3
+      }
+    },
+    {
       "material_id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
       "canonical_slug": "knauf-tiefengrund-5l-v1",
       "canonical_version": 1,
@@ -2126,38 +2501,6 @@
           "entferner"
         ]
       },
-      "store_id": "bauhaus",
-      "product_name": "Probau Sanitär-Silikon Weiß 310 ml",
-      "product_url": "https://www.bauhaus.info/silikon/probau-sanitaer-silikon/p/23413872",
-      "price": 7.85,
-      "unit_price": 25.32,
-      "unit": "l",
-      "package_quantity": 0.31,
-      "currency": "EUR",
-      "checked_at": "2026-10-09T07:02:00.000Z",
-      "source": "manual",
-      "price_scope": "chain",
-      "verified": true,
-      "availability": null,
-      "observed_specs": {
-        "volume_l": 0.31
-      }
-    },
-    {
-      "material_id": "e729a380-10bf-a30f-84ac-094f8b127f74",
-      "canonical_slug": "sanitaer-silikon-weiss-310ml-v1",
-      "canonical_version": 1,
-      "canonical_specs": {
-        "type": "sanitaer-silikon",
-        "color": "weiss",
-        "volume_l": 0.31,
-        "excluded_terms": [
-          "acryl",
-          "hybrid",
-          "montagekleber",
-          "entferner"
-        ]
-      },
       "store_id": "obi",
       "product_name": "OBI Sanitär-Silikon Weiß 310 ml",
       "product_url": "https://www.obi.de/p/8215667/obi-sanitaer-silikon-weiss-310-ml",
@@ -2202,12 +2545,13 @@
       "unit": "m",
       "package_quantity": 3,
       "currency": "EUR",
-      "checked_at": "2026-10-08T17:06:46.000Z",
+      "checked_at": "2026-10-16T12:41:47.271Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
       "availability": null,
       "observed_specs": {
+        "type": "cd",
         "length_mm": 3000,
         "width_mm": 60,
         "height_mm": 27
@@ -2265,19 +2609,20 @@
         ]
       },
       "store_id": "bauhaus",
-      "product_name": "Rigips Gipskartonplatte GKBI 2000 × 1250 × 12,5 mm imprägniert",
-      "product_url": "https://www.bauhaus.info/feuchtraumplatten/rigips-gipskartonplatte-gkbi/p/22687869",
+      "product_name": "Knauf Gipskartonplatte GKBI 2000 × 1250 × 12,5 mm imprägniert",
+      "product_url": "https://www.bauhaus.info/feuchtraumplatten/knauf-gipskartonplatte-gkbi/p/13874329",
       "price": 15.95,
       "unit_price": 6.38,
       "unit": "m2",
       "package_quantity": 2.5,
       "currency": "EUR",
-      "checked_at": "2026-10-08T17:06:46.000Z",
+      "checked_at": "2026-10-16T12:41:47.271Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
       "availability": null,
       "observed_specs": {
+        "type": "feuchtraum",
         "length_mm": 2000,
         "width_mm": 1250,
         "thickness_mm": 12.5,
@@ -2428,6 +2773,803 @@
         "type": "cw-profil",
         "length_mm": 2600,
         "width_mm": 50
+      }
+    },
+    {
+      "material_id": "41bab945-0ef9-b1ca-2e9c-963088da2974",
+      "canonical_slug": "glaswolle-035-100-6-72m2-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "glaswolle-klemmfilz",
+        "thickness_mm": 100,
+        "width_mm": 1200,
+        "length_mm": 5600,
+        "pieces": 1,
+        "thermal_conductivity": 0.035,
+        "area_m2": 6.72,
+        "required_terms": [
+          "klemmfilz",
+          "035"
+        ],
+        "excluded_terms": [
+          "steinwolle"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Isover Lanaé Glaswolle Klemmfilz WLS 035, 100 × 1200 × 5600 mm, 6,72 m²/Rolle",
+      "product_url": "https://www.bauhaus.info/glaswolle/isover-lanae-glaswolle-klemmfilz-wls-035/p/33169235",
+      "price": 44,
+      "unit_price": 6.55,
+      "unit": "m2",
+      "package_quantity": 6.72,
+      "currency": "EUR",
+      "checked_at": "2026-10-18T19:35:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "glaswolle-klemmfilz",
+        "thickness_mm": 100,
+        "width_mm": 1200,
+        "length_mm": 5600,
+        "pieces": 1,
+        "thermal_conductivity": 0.035,
+        "area_m2": 6.72
+      }
+    },
+    {
+      "material_id": "d1e921f2-4f35-e8ef-9fd5-996c1f987776",
+      "canonical_slug": "glaswolle-034-100-6-72m2-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "glaswolle-klemmfilz",
+        "thickness_mm": 100,
+        "width_mm": 1200,
+        "length_mm": 5600,
+        "pieces": 1,
+        "thermal_conductivity": 0.034,
+        "area_m2": 6.72,
+        "required_terms": [
+          "klemmfilz",
+          "034"
+        ],
+        "excluded_terms": [
+          "steinwolle"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "ISOVER Klemmfilz Integra ZKF 1-034 Lanaé Zwischensparrendämmung für Steildach 5600 mm × 1200 mm × 100 mm, Rolle = 6,72 m²",
+      "product_url": "https://www.hornbach.de/p/isover-klemmfilz-integra-zkf-1-034-lanae-zwischensparrendaemmung-fuer-steildach-5600-mm-x-1200-mm-x-100-mm-rolle-6-72-m/12358614/",
+      "price": 44.06,
+      "unit_price": 6.56,
+      "unit": "m2",
+      "package_quantity": 6.72,
+      "currency": "EUR",
+      "checked_at": "2026-10-18T19:35:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "glaswolle-klemmfilz",
+        "thickness_mm": 100,
+        "width_mm": 1200,
+        "length_mm": 5600,
+        "pieces": 1,
+        "thermal_conductivity": 0.034,
+        "area_m2": 6.72
+      }
+    },
+    {
+      "material_id": "1d199601-0cbf-b7df-32fe-cfa4986b6dd0",
+      "canonical_slug": "dampfbremse-sd2-1500-50000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "dampfbremse",
+        "sd_m": 2,
+        "width_mm": 1500,
+        "length_mm": 50000,
+        "area_m2": 75,
+        "required_terms": [
+          "dampfbremse"
+        ],
+        "excluded_terms": [
+          "variabel",
+          "klimamembran"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Ursa SecoPro Dampfbremsfolie 50 m × 1,5 m, sd 2 m, 75 m²",
+      "product_url": "https://www.bauhaus.info/dampfsperre-dachfolien/ursa-secopro-dampfbremsfolie/p/20678201",
+      "price": 149.25,
+      "unit_price": 1.99,
+      "unit": "m2",
+      "package_quantity": 75,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "dampfbremse",
+        "sd_m": 2,
+        "width_mm": 1500,
+        "length_mm": 50000,
+        "area_m2": 75
+      }
+    },
+    {
+      "material_id": "1d199601-0cbf-b7df-32fe-cfa4986b6dd0",
+      "canonical_slug": "dampfbremse-sd2-1500-50000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "dampfbremse",
+        "sd_m": 2,
+        "width_mm": 1500,
+        "length_mm": 50000,
+        "area_m2": 75,
+        "required_terms": [
+          "dampfbremse"
+        ],
+        "excluded_terms": [
+          "variabel",
+          "klimamembran"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Ursa-Seco Pro SD2 Dampfbremse 50 m × 1,5 m, 75 m²",
+      "product_url": "https://www.obi.de/p/2472678/ursa-seco-pro-sd2-dampfbremse-50-m-x-1-5-m",
+      "price": 149.25,
+      "unit_price": 1.99,
+      "unit": "m2",
+      "package_quantity": 75,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "dampfbremse",
+        "sd_m": 2,
+        "width_mm": 1500,
+        "length_mm": 50000,
+        "area_m2": 75
+      }
+    },
+    {
+      "material_id": "25fcf087-17ac-44a9-8046-9817871622c6",
+      "canonical_slug": "dampfbremse-variabel-05-55-1500-20000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "dampfbremse",
+        "sd_min_m": 0.5,
+        "sd_max_m": 5.5,
+        "width_mm": 1500,
+        "length_mm": 20000,
+        "area_m2": 30,
+        "required_terms": [
+          "dampfbremse"
+        ],
+        "excluded_terms": [
+          "unterspannbahn",
+          "unterdeckbahn"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "PRECIT feuchtevariable Dampfbremsfolie 20 m × 1,5 m, Rolle 30 m²",
+      "product_url": "https://www.hornbach.de/p/precit-feuchtevariable-dampfbremsfolie-20-m-x-1-5-m-rolle-30-m/6047598/",
+      "price": 59.95,
+      "unit_price": 2,
+      "unit": "m2",
+      "package_quantity": 30,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "dampfbremse",
+        "sd_min_m": 0.5,
+        "sd_max_m": 5.5,
+        "width_mm": 1500,
+        "length_mm": 20000,
+        "area_m2": 30
+      }
+    },
+    {
+      "material_id": "3786743c-c32a-422c-dc2b-ffa4d24cb57e",
+      "canonical_slug": "dampfbremse-sd2-1000-25000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "dampfbremse",
+        "sd_m": 2,
+        "width_mm": 1000,
+        "length_mm": 25000,
+        "area_m2": 25,
+        "required_terms": [
+          "dampfbremse"
+        ],
+        "excluded_terms": [
+          "variabel",
+          "klimamembran"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "ICUTEC Dampfbremse SD2 25 × 1 m, 25 m²",
+      "product_url": "https://www.globus-baumarkt.de/p/icutec-dampfbremse-sd2-25-x-1-25-m2-weiss-0779201398/",
+      "price": 69.99,
+      "unit_price": 2.8,
+      "unit": "m2",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "dampfbremse",
+        "sd_m": 2,
+        "width_mm": 1000,
+        "length_mm": 25000,
+        "area_m2": 25
+      }
+    },
+    {
+      "material_id": "3786743c-c32a-422c-dc2b-ffa4d24cb57e",
+      "canonical_slug": "dampfbremse-sd2-1000-25000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "dampfbremse",
+        "sd_m": 2,
+        "width_mm": 1000,
+        "length_mm": 25000,
+        "area_m2": 25,
+        "required_terms": [
+          "dampfbremse"
+        ],
+        "excluded_terms": [
+          "variabel",
+          "klimamembran"
+        ]
+      },
+      "store_id": "hagebau",
+      "product_name": "ICUTEC Dampfbremse SD2 1 × 25 m, 25 m²",
+      "product_url": "https://www.hagebau.de/p/icutec-dampfbremse-sd2-bxl-1-x-25-m-anV1151865/",
+      "price": 64.99,
+      "unit_price": 2.6,
+      "unit": "m2",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "dampfbremse",
+        "sd_m": 2,
+        "width_mm": 1000,
+        "length_mm": 25000,
+        "area_m2": 25
+      }
+    },
+    {
+      "material_id": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
+      "canonical_slug": "glaswolle-034-120-5-76m2-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "glaswolle-klemmfilz",
+        "thickness_mm": 120,
+        "width_mm": 1200,
+        "length_mm": 4800,
+        "pieces": 1,
+        "thermal_conductivity": 0.034,
+        "area_m2": 5.76,
+        "required_terms": [
+          "klemmfilz",
+          "034"
+        ],
+        "excluded_terms": [
+          "steinwolle"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "ISOVER Klemmfilz Integra ZKF 1-034 Lanaé 4800 × 1200 × 120 mm, Rolle 5,76 m²",
+      "product_url": "https://www.hornbach.de/p/isover-klemmfilz-integra-zkf-1-034-lanae-zwischensparrendaemmung-fuer-steildach-4800-mm-x-1200-mm-x-120-mm-rolle-5-76-m/12358612/",
+      "price": 48.38,
+      "unit_price": 8.4,
+      "unit": "m2",
+      "package_quantity": 5.76,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "glaswolle-klemmfilz",
+        "thickness_mm": 120,
+        "width_mm": 1200,
+        "length_mm": 4800,
+        "pieces": 1,
+        "thermal_conductivity": 0.034,
+        "area_m2": 5.76
+      }
+    },
+    {
+      "material_id": "6a4249aa-0793-f6fe-0637-5ee39bb35d2b",
+      "canonical_slug": "pe-folie-200-4000-25000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 4000,
+        "length_mm": 25000,
+        "area_m2": 100,
+        "required_terms": [
+          "pe",
+          "folie"
+        ]
+      },
+      "store_id": "globus",
+      "product_name": "Jufol Baufolie Profi 0,2 mm 25 × 4 m, 100 m² transluzent",
+      "product_url": "https://www.globus-baumarkt.de/p/jufol-baufolie-profi-0-2-mm-25-x-4-m-100-m2-transluzent-0779600036/",
+      "price": 79.99,
+      "unit_price": 0.8,
+      "unit": "m2",
+      "package_quantity": 100,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 4000,
+        "length_mm": 25000,
+        "area_m2": 100
+      }
+    },
+    {
+      "material_id": "6a4249aa-0793-f6fe-0637-5ee39bb35d2b",
+      "canonical_slug": "pe-folie-200-4000-25000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 4000,
+        "length_mm": 25000,
+        "area_m2": 100,
+        "required_terms": [
+          "pe",
+          "folie"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "toom Baufolie extra stark 4 × 25 m, PE 200 µm, 100 m²",
+      "product_url": "https://toom.de/p/baufolie-extra-stark-4-x-25-m-200-gm-transluzent/8350160",
+      "price": 69.99,
+      "unit_price": 0.7,
+      "unit": "m2",
+      "package_quantity": 100,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 4000,
+        "length_mm": 25000,
+        "area_m2": 100
+      }
+    },
+    {
+      "material_id": "93c79942-9f3f-c68a-b52e-8a0a79b2c6b1",
+      "canonical_slug": "dampfbremse-variabel-03-5-1500-40000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "dampfbremse",
+        "sd_min_m": 0.3,
+        "sd_max_m": 5,
+        "width_mm": 1500,
+        "length_mm": 40000,
+        "area_m2": 60,
+        "required_terms": [
+          "dampfbremse"
+        ],
+        "excluded_terms": [
+          "unterspannbahn",
+          "unterdeckbahn"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Isover Klimamembran Vario Duplex UV 60 m², 1,5 × 40 m, sd 0,3–5 m",
+      "product_url": "https://toom.de/p/klimamembran-vario-duplex-uv-60-m/3150288",
+      "price": 209.99,
+      "unit_price": 3.5,
+      "unit": "m2",
+      "package_quantity": 60,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "dampfbremse",
+        "sd_min_m": 0.3,
+        "sd_max_m": 5,
+        "width_mm": 1500,
+        "length_mm": 40000,
+        "area_m2": 60
+      }
+    },
+    {
+      "material_id": "cd8ae724-7c87-4fcf-0514-39a87cf7dd64",
+      "canonical_slug": "pe-folie-200-2000-25000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 2000,
+        "length_mm": 25000,
+        "area_m2": 50,
+        "required_terms": [
+          "pe",
+          "folie"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau Baufolie 25 × 2 m × 0,2 mm, PE, 50 m²",
+      "product_url": "https://www.bauhaus.info/baufolien/probau-baufolie/p/13862355",
+      "price": 44.95,
+      "unit_price": 0.9,
+      "unit": "m2",
+      "package_quantity": 50,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 2000,
+        "length_mm": 25000,
+        "area_m2": 50
+      }
+    },
+    {
+      "material_id": "cd8ae724-7c87-4fcf-0514-39a87cf7dd64",
+      "canonical_slug": "pe-folie-200-2000-25000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 2000,
+        "length_mm": 25000,
+        "area_m2": 50,
+        "required_terms": [
+          "pe",
+          "folie"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Baufolie LDPE 0,2 mm 25 × 2 m Opak bunt, Rolle 50 m²",
+      "product_url": "https://www.hornbach.de/p/baufolie-ldpe-0-2-mm-25-x-2-m-opak-bunt-rolle-50-m/8582101/",
+      "price": 29.95,
+      "unit_price": 0.6,
+      "unit": "m2",
+      "package_quantity": 50,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 2000,
+        "length_mm": 25000,
+        "area_m2": 50
+      }
+    },
+    {
+      "material_id": "fa1bf29a-860a-3715-905f-17f67cda0a8a",
+      "canonical_slug": "pe-folie-200-3000-10000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 3000,
+        "length_mm": 10000,
+        "area_m2": 30,
+        "required_terms": [
+          "pe",
+          "folie"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "LUX-TOOLS Baufolie Transparent 3 × 10 m, PE 0,2 mm, 30 m²",
+      "product_url": "https://www.obi.de/p/1016732/lux-tools-baufolie-transparent-3-x-10-m",
+      "price": 33.99,
+      "unit_price": 1.13,
+      "unit": "m2",
+      "package_quantity": 30,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:23:03.950Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "pe-baufolie",
+        "thickness_mm": 0.2,
+        "width_mm": 3000,
+        "length_mm": 10000,
+        "area_m2": 30
+      }
+    },
+    {
+      "material_id": "322f8d06-4b24-234f-4ccf-3a98906565d8",
+      "canonical_slug": "pu-schaum-1k-b2-genius-champagner-750ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "1k-b2-genius",
+        "volume_l": 0.75,
+        "color": "champagner",
+        "required_terms": [
+          "soudal",
+          "b2",
+          "genius",
+          "einkomponent"
+        ],
+        "excluded_terms": [
+          "2k",
+          "reiniger"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Soudal PU-Montageschaum B2 750 ml (1K, Genius Gun, champagner)",
+      "product_url": "https://toom.de/p/pu-montageschaum-b2-750-ml/2368047",
+      "price": 13.99,
+      "unit_price": 18.65,
+      "unit": "l",
+      "package_quantity": 0.75,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:29:36.958Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "1k-b2-genius",
+        "volume_l": 0.75,
+        "color": "champagner"
+      }
+    },
+    {
+      "material_id": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
+      "canonical_slug": "randdaemmstreifen-8-150-50000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "randdaemmstreifen",
+        "thickness_mm": 8,
+        "width_mm": 150,
+        "length_mm": 50000,
+        "required_terms": [
+          "randdämmstreifen",
+          "folienlasche"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Profi Depot Randdämmstreifen 50 m × 150 mm × 8 mm, mit Schleppfolie",
+      "product_url": "https://www.bauhaus.info/beton-estrich/profi-depot-randdaemmstreifen/p/26668592",
+      "price": 25.5,
+      "unit_price": 0.51,
+      "unit": "m",
+      "package_quantity": 50,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:29:36.958Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "randdaemmstreifen",
+        "thickness_mm": 8,
+        "width_mm": 150,
+        "length_mm": 50000
+      }
+    },
+    {
+      "material_id": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
+      "canonical_slug": "randdaemmstreifen-8-150-50000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "randdaemmstreifen",
+        "thickness_mm": 8,
+        "width_mm": 150,
+        "length_mm": 50000,
+        "required_terms": [
+          "randdämmstreifen",
+          "folienlasche"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "swisspor BOARD Randdämmstreifen mit Lasche 150 mm × 8 mm, 50 m Rolle",
+      "product_url": "https://www.hornbach.de/p/swisspor-board-randdaemmstreifen-mit-lasche-150-mm-x-8-mm-50-m-rolle/12501330/",
+      "price": 28.45,
+      "unit_price": 0.57,
+      "unit": "m",
+      "package_quantity": 50,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:29:36.958Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "randdaemmstreifen",
+        "thickness_mm": 8,
+        "width_mm": 150,
+        "length_mm": 50000
+      }
+    },
+    {
+      "material_id": "e729a380-10bf-a30f-84ac-094f8b127f74",
+      "canonical_slug": "sanitaer-silikon-weiss-310ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sanitaer-silikon",
+        "color": "weiss",
+        "volume_l": 0.31,
+        "excluded_terms": [
+          "acryl",
+          "hybrid",
+          "montagekleber",
+          "entferner"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau Sanitär-Silikon Weiß 310 ml",
+      "product_url": "https://www.bauhaus.info/silikon/probau-sanitaer-silikon/p/23413872",
+      "price": 7.85,
+      "unit_price": 25.32,
+      "unit": "l",
+      "package_quantity": 0.31,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:29:36.958Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "sanitaer-silikon",
+        "color": "weiss",
+        "volume_l": 0.31
+      }
+    },
+    {
+      "material_id": "e729a380-10bf-a30f-84ac-094f8b127f74",
+      "canonical_slug": "sanitaer-silikon-weiss-310ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sanitaer-silikon",
+        "color": "weiss",
+        "volume_l": 0.31,
+        "excluded_terms": [
+          "acryl",
+          "hybrid",
+          "montagekleber",
+          "entferner"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "toom Sanitärsilikon weiß 310 ml",
+      "product_url": "https://toom.de/p/sanitaersilikon-weiss-310-ml/2360002",
+      "price": 9.99,
+      "unit_price": 32.23,
+      "unit": "l",
+      "package_quantity": 0.31,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:29:36.958Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "sanitaer-silikon",
+        "color": "weiss",
+        "volume_l": 0.31
+      }
+    },
+    {
+      "material_id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+      "canonical_slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sanitaer-silikon-acetat",
+        "volume_l": 0.31,
+        "color": "weiss",
+        "required_terms": [
+          "silikon",
+          "sanitär",
+          "essig"
+        ],
+        "excluded_terms": [
+          "neutral",
+          "acryl",
+          "entferner"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Probau Sanitär-Silikon Weiß 310 ml",
+      "product_url": "https://www.bauhaus.info/silikon/probau-sanitaer-silikon/p/23413872",
+      "price": 7.85,
+      "unit_price": 25.32,
+      "unit": "l",
+      "package_quantity": 0.31,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:29:36.958Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "sanitaer-silikon-acetat",
+        "volume_l": 0.31,
+        "color": "weiss"
+      }
+    },
+    {
+      "material_id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+      "canonical_slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sanitaer-silikon-acetat",
+        "volume_l": 0.31,
+        "color": "weiss",
+        "required_terms": [
+          "silikon",
+          "sanitär",
+          "essig"
+        ],
+        "excluded_terms": [
+          "neutral",
+          "acryl",
+          "entferner"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "toom Sanitärsilikon weiß 310 ml",
+      "product_url": "https://toom.de/p/sanitaersilikon-weiss-310-ml/2360002",
+      "price": 9.99,
+      "unit_price": 32.23,
+      "unit": "l",
+      "package_quantity": 0.31,
+      "currency": "EUR",
+      "checked_at": "2026-10-20T16:29:36.958Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "sanitaer-silikon-acetat",
+        "volume_l": 0.31,
+        "color": "weiss"
       }
     }
   ]

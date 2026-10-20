@@ -1,4 +1,5 @@
 import type { BaseUnit } from "./materialSuggestions";
+import { retiredComparisonMaterialIds } from "./materialSuggestions";
 
 export type StorePrice = {
   material_id: string; store_id: string; product_name: string; product_url: string;
@@ -19,6 +20,7 @@ export function getPriceFreshness(checkedAt: string, now = Date.now()): PriceFre
 
 /** Defend against malformed imports as well as mismatched material or chain rows. */
 export function validateStorePrice(row: Record<string, unknown>, materialId: string, storeIds: readonly string[], now = Date.now()): StorePrice | null {
+  if (retiredComparisonMaterialIds.has(materialId)) return null;
   if (row.material_id !== materialId || typeof row.store_id !== "string" || !storeIds.includes(row.store_id) || !HOSTS[row.store_id]) return null;
   if (row.verified !== true || row.currency !== "EUR" || row.price_scope !== "chain" || !["automatic", "manual"].includes(String(row.source))) return null;
   if (typeof row.product_name !== "string" || !row.product_name.trim() || typeof row.product_url !== "string") return null;

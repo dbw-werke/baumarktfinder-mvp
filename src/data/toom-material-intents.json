@@ -48,9 +48,14 @@
     "key": "direktabhaenger",
     "input": "Direktabhänger",
     "canonical_slug": "direktabhaenger-cd-125-1-v1",
-    "search_term": "Direktabhänger CD 125 mm",
+    "search_term": "Direktabhänger",
     "aliases": [
-      "Direktabhaenger"
+      "Direktabhaenger",
+      "Direktabhänger",
+      "CD Direktabhänger",
+      "Direktabhänger CD",
+      "Deckenabhänger",
+      "Direktabhänger 125 mm"
     ]
   },
   {
@@ -68,14 +73,18 @@
   {
     "key": "haftgrund",
     "input": "Haftgrund",
-    "canonical_slug": "haftgrund-5l-v1",
-    "search_term": "Haftgrund",
-    "aliases": []
+    "canonical_slug": "mem-super-haftgrund-5l-v1",
+    "search_term": "MEM Super Haftgrund",
+    "aliases": [
+      "Super Haftgrund",
+      "Super-Haftgrund",
+      "MEM Super Haftgrund"
+    ]
   },
   {
     "key": "perlfix",
     "input": "Perlfix",
-    "canonical_slug": "knauf-perlfix-30kg-v1",
+    "canonical_slug": "knauf-perlfix-25kg-v1",
     "search_term": "Knauf Perlfix",
     "aliases": [
       "Knauf Perlfix"

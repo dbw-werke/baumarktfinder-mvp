@@ -1,0 +1,130 @@
+[
+  {
+    "store_id": "bauhaus",
+    "material_slug": "randdaemmstreifen-8-150-50000-v1",
+    "product_name": "Profi Depot Randdämmstreifen 50 m × 150 mm × 8 mm, mit Schleppfolie",
+    "price": 25.5,
+    "product_url": "https://www.bauhaus.info/beton-estrich/profi-depot-randdaemmstreifen/p/26668592",
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m",
+    "package_quantity": 50,
+    "checked_at": "2026-10-20T16:29:36.958Z",
+    "observed_specs": {
+      "type": "randdaemmstreifen",
+      "thickness_mm": 8,
+      "width_mm": 150,
+      "length_mm": 50000
+    },
+    "verification_note": "manual_verified: Official page20October2026 explicitly25.50EURproRolle/50m, dimensions150x8mm. Installation step3 describes attached Schleppfolie. Real total, not0.51EUR/m."
+  },
+  {
+    "store_id": "hornbach",
+    "material_slug": "randdaemmstreifen-8-150-50000-v1",
+    "product_name": "swisspor BOARD Randdämmstreifen mit Lasche 150 mm × 8 mm, 50 m Rolle",
+    "price": 28.45,
+    "product_url": "https://www.hornbach.de/p/swisspor-board-randdaemmstreifen-mit-lasche-150-mm-x-8-mm-50-m-rolle/12501330/",
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m",
+    "package_quantity": 50,
+    "checked_at": "2026-10-20T16:29:36.958Z",
+    "observed_specs": {
+      "type": "randdaemmstreifen",
+      "thickness_mm": 8,
+      "width_mm": 150,
+      "length_mm": 50000
+    },
+    "verification_note": "manual_verified: Official product page confirms150x8mm50m and Lasche. Official category https://www.hornbach.de/c/bodenbelaege-fliesen/fliesenzubehoer/entkopplungsmatten-duschabdichtung/S1066/ explicitly28.45EUR/Rolle,20October2026."
+  },
+  {
+    "store_id": "bauhaus",
+    "material_slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+    "product_name": "Probau Sanitär-Silikon Weiß 310 ml",
+    "price": 7.85,
+    "product_url": "https://www.bauhaus.info/silikon/probau-sanitaer-silikon/p/23413872",
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "checked_at": "2026-10-20T16:29:36.958Z",
+    "observed_specs": {
+      "type": "sanitaer-silikon-acetat",
+      "volume_l": 0.31,
+      "color": "weiss"
+    },
+    "verification_note": "manual_verified: User supplied official retailer screenshot20October2026: single310ml cartridge 7.85EUR. Weiß and310ml verified, essigvernetzend confirmed in official technical documentation https://media.cdn.bauhaus/m/17385/BH_DOC_17385.pdf. No bulk/unit price used."
+  },
+  {
+    "store_id": "bauhaus",
+    "material_slug": "sanitaer-silikon-weiss-310ml-v1",
+    "product_name": "Probau Sanitär-Silikon Weiß 310 ml",
+    "price": 7.85,
+    "product_url": "https://www.bauhaus.info/silikon/probau-sanitaer-silikon/p/23413872",
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "checked_at": "2026-10-20T16:29:36.958Z",
+    "observed_specs": {
+      "type": "sanitaer-silikon",
+      "color": "weiss",
+      "volume_l": 0.31
+    },
+    "verification_note": "manual_verified: User supplied official retailer screenshot20October2026: single310ml cartridge 7.85EUR. Weiß and310ml verified, essigvernetzend confirmed in official technical documentation https://media.cdn.bauhaus/m/17385/BH_DOC_17385.pdf. No bulk/unit price used."
+  },
+  {
+    "store_id": "toom",
+    "material_slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+    "product_name": "toom Sanitärsilikon weiß 310 ml",
+    "price": 9.99,
+    "product_url": "https://toom.de/p/sanitaersilikon-weiss-310-ml/2360002",
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "checked_at": "2026-10-20T16:29:36.958Z",
+    "observed_specs": {
+      "type": "sanitaer-silikon-acetat",
+      "volume_l": 0.31,
+      "color": "weiss"
+    },
+    "verification_note": "manual_verified: User supplied official retailer screenshot20October2026: single310ml cartridge 9.99EUR. Weiß and310ml verified, essigvernetzend confirmed in official technical documentation https://catalogs.toom.de/frontend/catalogs/882648/1/pdf/complete.pdf. No bulk/unit price used."
+  },
+  {
+    "store_id": "toom",
+    "material_slug": "sanitaer-silikon-weiss-310ml-v1",
+    "product_name": "toom Sanitärsilikon weiß 310 ml",
+    "price": 9.99,
+    "product_url": "https://toom.de/p/sanitaersilikon-weiss-310-ml/2360002",
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "l",
+    "package_quantity": 0.31,
+    "checked_at": "2026-10-20T16:29:36.958Z",
+    "observed_specs": {
+      "type": "sanitaer-silikon",
+      "color": "weiss",
+      "volume_l": 0.31
+    },
+    "verification_note": "manual_verified: User supplied official retailer screenshot20October2026: single310ml cartridge 9.99EUR. Weiß and310ml verified, essigvernetzend confirmed in official technical documentation https://catalogs.toom.de/frontend/catalogs/882648/1/pdf/complete.pdf. No bulk/unit price used."
+  },
+  {
+    "store_id": "toom",
+    "material_slug": "pu-schaum-1k-b2-genius-champagner-750ml-v1",
+    "product_name": "Soudal PU-Montageschaum B2 750 ml (1K, Genius Gun, champagner)",
+    "price": 13.99,
+    "product_url": "https://toom.de/p/pu-montageschaum-b2-750-ml/2368047",
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "l",
+    "package_quantity": 0.75,
+    "checked_at": "2026-10-20T16:29:36.958Z",
+    "observed_specs": {
+      "type": "1k-b2-genius",
+      "volume_l": 0.75,
+      "color": "champagner"
+    },
+    "verification_note": "manual_verified: User official TOOM screenshot20October2026: SKU2368047,750ml,13.99EURsinglecan. Integrated red GeniusGun pictured; official TOOM catalogue https://catalogs.toom.de/frontend/catalogs/1239203/2/pdf/complete.pdf associates2368047 with GeniusGun technology. https://static.toom.de/produkte/bilder/2368047/technisches_datenblatt_2368047.pdf confirms1K,B2,750ml and actual colour champagner; shown as such, not relabelled beige. BAUHAUS Sika300ml is excluded by user request."
+  }
+]

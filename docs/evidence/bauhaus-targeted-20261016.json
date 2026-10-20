@@ -1,0 +1,64 @@
+[
+  {
+    "material_slug": "cd60-27-3000-v1",
+    "product_name": "Probau CD-Deckenprofil 3000 × 60 × 27 mm",
+    "product_url": "https://www.bauhaus.info/cd-profile/probau-cd-deckenprofil/p/20489120",
+    "price": 6.65,
+    "unit_price": 2.22,
+    "base_unit": "m",
+    "package_quantity": 3,
+    "observed_specs": {
+      "type": "cd",
+      "length_mm": 3000,
+      "width_mm": 60,
+      "height_mm": 27
+    },
+    "verification_note": "Existing verified BAUHAUS value reconfirmed by user official-page screenshot dated 2026-10-16: 6.65 EUR per 3000 mm piece, secondary 2.22 EUR/m.",
+    "store_id": "bauhaus",
+    "currency": "EUR",
+    "checked_at": "2026-10-16T12:41:47.271Z",
+    "price_basis": "package"
+  },
+  {
+    "material_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+    "product_name": "Knauf Gipskartonplatte GKBI 2000 × 1250 × 12,5 mm imprägniert",
+    "product_url": "https://www.bauhaus.info/feuchtraumplatten/knauf-gipskartonplatte-gkbi/p/13874329",
+    "price": 15.95,
+    "unit_price": 6.38,
+    "base_unit": "m2",
+    "package_quantity": 2.5,
+    "observed_specs": {
+      "type": "feuchtraum",
+      "length_mm": 2000,
+      "width_mm": 1250,
+      "thickness_mm": 12.5,
+      "area_m2": 2.5
+    },
+    "verification_note": "Official BAUHAUS page and user screenshot: Knauf GKBI impregnated moisture-resistant board, 2000x1250x12.5 mm, explicit Gesamtbetrag 15.95 EUR per piece; 6.38 EUR/m2 secondary. No standard GKB substitution.",
+    "store_id": "bauhaus",
+    "currency": "EUR",
+    "checked_at": "2026-10-16T12:41:47.271Z",
+    "price_basis": "package"
+  },
+  {
+    "material_slug": "osb3-18-2500-675-v1",
+    "product_name": "OSB-Verlegeplatte",
+    "product_url": "https://www.bauhaus.info/verlegeplatten/osb-verlegeplatte/p/20121495",
+    "price": 15.14,
+    "unit_price": 8.97,
+    "base_unit": "m2",
+    "package_quantity": 1.6875,
+    "observed_specs": {
+      "type": "osb3",
+      "length_mm": 2500,
+      "width_mm": 675,
+      "thickness_mm": 18,
+      "area_m2": 1.6875
+    },
+    "verification_note": "Official BAUHAUS page inspected 2026-10-16: OSB type 3, Nut & Feder, 2500x675x18 mm, explicit price pro Stueck and Gesamtbetrag 15.14 EUR. 8.97 EUR/m2 is secondary; actual unrounded dimensional area 1.6875 m2.",
+    "store_id": "bauhaus",
+    "currency": "EUR",
+    "checked_at": "2026-10-16T12:41:47.271Z",
+    "price_basis": "package"
+  }
+]

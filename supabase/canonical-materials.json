@@ -116,7 +116,7 @@
     "slug": "osb3-18-2500-1250-v1",
     "name": "OSB/3 Verlegeplatte 18 × 1250 × 2500 mm, Nut und Feder",
     "suggestion_label": "OSB/3 Verlegeplatte 18 × 1250 × 2500 mm, Nut und Feder",
-    "store_search_term": "OSB/3 Verlegeplatte 18 × 1250 × 2500 mm, Nut und Feder",
+    "store_search_term": "OSB Platte",
     "category": "Holzbau",
     "product_family": "osb",
     "base_unit": "m2",
@@ -137,7 +137,12 @@
       "OSB",
       "osb platte",
       "grobspanplatte",
-      "verlegeplatte"
+      "verlegeplatte",
+      "OSB/3 Platte",
+      "OSB Verlegeplatte",
+      "OSB/3 Verlegeplatte",
+      "OSB Nut und Feder",
+      "OSB 18 mm"
     ],
     "brand": null,
     "canonical_version": 1
@@ -146,7 +151,7 @@
     "slug": "ud28-27-3000-v1",
     "name": "UD-Wandprofil 28/27 × 3000 mm",
     "suggestion_label": "UD-Wandprofil 28/27 × 3000 mm",
-    "store_search_term": "UD-Wandprofil 28/27 × 3000 mm",
+    "store_search_term": "UD Wandprofil",
     "category": "Trockenbau",
     "product_family": "ud-profil",
     "base_unit": "m",
@@ -169,7 +174,10 @@
       "UD",
       "UD 28",
       "UD Profil",
-      "wandanschlussprofil"
+      "wandanschlussprofil",
+      "UD-Wandprofil",
+      "UD 28/27",
+      "UD Wandprofil 28/27 3000 mm"
     ],
     "brand": null,
     "canonical_version": 1
@@ -178,7 +186,7 @@
     "slug": "cd60-27-3000-v1",
     "name": "CD-Deckenprofil 60/27 × 3000 mm",
     "suggestion_label": "CD-Deckenprofil 60/27 × 3000 mm",
-    "store_search_term": "CD-Deckenprofil 60/27 × 3000 mm",
+    "store_search_term": "CD Deckenprofil",
     "category": "Trockenbau",
     "product_family": "cd-profil",
     "base_unit": "m",
@@ -202,7 +210,10 @@
       "CD Profil",
       "CD 60/27",
       "CD Profil 60/27",
-      "deckenprofil"
+      "deckenprofil",
+      "CD-Deckenprofil",
+      "Deckenprofil 60/27",
+      "CD Profil 60/27 3000 mm"
     ],
     "brand": null,
     "canonical_version": 1
@@ -211,7 +222,7 @@
     "slug": "trennwandband-30-3-30000-v1",
     "name": "Trennwandband 30 mm × 3 mm × 30 m, selbstklebend",
     "suggestion_label": "Trennwandband 30 mm × 3 mm × 30 m, selbstklebend",
-    "store_search_term": "Trennwandband 30 mm × 3 mm × 30 m, selbstklebend",
+    "store_search_term": "Trennwandband",
     "category": "Trockenbau",
     "product_family": "trennwandband",
     "base_unit": "m",
@@ -228,7 +239,13 @@
     },
     "aliases": [
       "trennwandband",
-      "dichtungsband trockenbau"
+      "dichtungsband trockenbau",
+      "Trennwandband",
+      "Dichtungsband",
+      "Trennwand-Dichtungsband",
+      "Anschlussband",
+      "selbstklebendes Dichtungsband",
+      "Dichtband"
     ],
     "brand": null,
     "canonical_version": 1
@@ -237,7 +254,7 @@
     "slug": "dichtungsband-50-3-30000-v1",
     "name": "Dichtungsband 50 mm × 3 mm × 30 m, selbstklebend",
     "suggestion_label": "Dichtungsband 50 mm × 3 mm × 30 m, selbstklebend",
-    "store_search_term": "Dichtungsband 50 mm × 3 mm × 30 m, selbstklebend",
+    "store_search_term": "Dichtungsband Trockenbau",
     "category": "Trockenbau",
     "product_family": "dichtungsband",
     "base_unit": "m",
@@ -254,7 +271,13 @@
     },
     "aliases": [
       "dichtungsband",
-      "profilband"
+      "profilband",
+      "Trennwandband",
+      "Dichtungsband",
+      "Trennwand-Dichtungsband",
+      "Anschlussband",
+      "selbstklebendes Dichtungsband",
+      "Dichtband"
     ],
     "brand": null,
     "canonical_version": 1
@@ -263,7 +286,7 @@
     "slug": "direktabhaenger-cd60-125-1-v1",
     "name": "Direktabhänger CD 60/27, 125 mm, 1 Stück",
     "suggestion_label": "Direktabhänger CD 60/27, 125 mm, 1 Stück",
-    "store_search_term": "Direktabhänger CD 60/27, 125 mm, 1 Stück",
+    "store_search_term": "Direktabhänger",
     "category": "Trockenbau",
     "product_family": "direktabhaenger",
     "base_unit": "piece",
@@ -282,7 +305,12 @@
     "aliases": [
       "direktabhänger",
       "direktabhaenger",
-      "abhänger"
+      "abhänger",
+      "Direktabhänger",
+      "CD Direktabhänger",
+      "Direktabhänger CD",
+      "Deckenabhänger",
+      "Direktabhänger 125 mm"
     ],
     "brand": null,
     "canonical_version": 1
@@ -291,7 +319,7 @@
     "slug": "nonius-unterteil-cd60-130-1-v1",
     "name": "Noniusabhänger Unterteil CD 60/27, 130 mm, 1 Stück",
     "suggestion_label": "Noniusabhänger Unterteil CD 60/27, 130 mm, 1 Stück",
-    "store_search_term": "Noniusabhänger Unterteil CD 60/27, 130 mm, 1 Stück",
+    "store_search_term": "Nonius Unterteil",
     "category": "Trockenbau",
     "product_family": "noniusabhaenger",
     "base_unit": "piece",
@@ -314,7 +342,13 @@
     "aliases": [
       "noniusabhänger",
       "noniusabhaenger",
-      "nonius unterteil"
+      "nonius unterteil",
+      "Noniusabhänger",
+      "Nonius",
+      "Nonius Unterteil",
+      "Noniusabhänger Unterteil",
+      "Nonius Abhänger",
+      "Nonius 130 mm"
     ],
     "brand": null,
     "canonical_version": 1
@@ -402,34 +436,6 @@
       "fertigspachtel"
     ],
     "brand": "Knauf",
-    "canonical_version": 1
-  },
-  {
-    "slug": "rigips-vario-5kg-v1",
-    "name": "Rigips VARIO Fugenspachtel, 5 kg",
-    "suggestion_label": "Rigips VARIO Fugenspachtel, 5 kg",
-    "store_search_term": "Rigips VARIO Fugenspachtel, 5 kg",
-    "category": "Spachtelmassen",
-    "product_family": "vario",
-    "base_unit": "kg",
-    "package_quantity": 5,
-    "specs": {
-      "type": "fugenspachtel",
-      "weight_kg": 5,
-      "required_terms": [
-        "rigips",
-        "vario"
-      ],
-      "excluded_terms": [
-        "hydro"
-      ]
-    },
-    "aliases": [
-      "VARIO",
-      "rigips vario",
-      "fugenspachtel"
-    ],
-    "brand": "Rigips",
     "canonical_version": 1
   },
   {
@@ -547,34 +553,6 @@
       "tiefgrund"
     ],
     "brand": "Knauf",
-    "canonical_version": 1
-  },
-  {
-    "slug": "haftgrund-quarzsand-5l-v1",
-    "name": "Haftgrund mit Quarzsand, gebrauchsfertig, 5 l",
-    "suggestion_label": "Haftgrund mit Quarzsand, gebrauchsfertig, 5 l",
-    "store_search_term": "Haftgrund mit Quarzsand, gebrauchsfertig, 5 l",
-    "category": "Grundierungen",
-    "product_family": "haftgrund",
-    "base_unit": "l",
-    "package_quantity": 5,
-    "specs": {
-      "type": "haftgrund-quarzsand",
-      "volume_l": 5,
-      "required_terms": [
-        "haftgrund",
-        "quarzsand"
-      ],
-      "excluded_terms": [
-        "konzentrat"
-      ]
-    },
-    "aliases": [
-      "haftgrund",
-      "haftbrücke",
-      "haftbruecke"
-    ],
-    "brand": null,
     "canonical_version": 1
   },
   {
@@ -704,7 +682,8 @@
       "dämmung",
       "daemmung",
       "klemmfilz",
-      "glaswolle"
+      "glaswolle",
+      "Glaswolle-Klemmfilz WLG 035, 120 mm"
     ],
     "brand": null,
     "canonical_version": 1
@@ -713,7 +692,7 @@
     "slug": "dampfbremse-sd2-1500-50000-v1",
     "name": "Dampfbremse sd 2 m, 1,5 × 50 m, 75 m²/Rolle",
     "suggestion_label": "Dampfbremse sd 2 m, 1,5 × 50 m, 75 m²/Rolle",
-    "store_search_term": "Dampfbremse sd 2 m, 1,5 × 50 m, 75 m²/Rolle",
+    "store_search_term": "Dampfbremse",
     "category": "Dämmung",
     "product_family": "dampfbremse",
     "base_unit": "m2",
@@ -734,16 +713,19 @@
     },
     "aliases": [
       "dampfbremse",
-      "dampfbremsfolie"
+      "dampfbremsfolie",
+      "Dampfbremse sd",
+      "Dampfbremsfolie",
+      "Dampfbremsbahn"
     ],
     "brand": null,
     "canonical_version": 1
   },
   {
     "slug": "pe-folie-200-2000-50000-v1",
-    "name": "PE-Baufolie 200 µm, 2 × 50 m, 100 m²/Rolle",
-    "suggestion_label": "PE-Baufolie 200 µm, 2 × 50 m, 100 m²/Rolle",
-    "store_search_term": "PE-Baufolie 200 µm, 2 × 50 m, 100 m²/Rolle",
+    "name": "PE-Baufolie 0,2 mm",
+    "suggestion_label": "PE-Baufolie 0,2 mm",
+    "store_search_term": "Baufolie",
     "category": "Folien",
     "product_family": "pe-folie",
     "base_unit": "m2",
@@ -763,7 +745,15 @@
       "PE Folie",
       "PE-Folie",
       "baufolie",
-      "polyethylenfolie"
+      "polyethylenfolie",
+      "PE Baufolie",
+      "PE-Baufolie",
+      "Bau Folie",
+      "Baufolie",
+      "Polyethylenfolie",
+      "PE Abdeckfolie",
+      "Estrichfolie",
+      "PE-Folie 200 µm"
     ],
     "brand": null,
     "canonical_version": 1
@@ -772,7 +762,7 @@
     "slug": "randdaemmstreifen-8-150-25000-v1",
     "name": "Randdämmstreifen 8 × 150 mm × 25 m, mit Folienlasche",
     "suggestion_label": "Randdämmstreifen 8 × 150 mm × 25 m, mit Folienlasche",
-    "store_search_term": "Randdämmstreifen 8 × 150 mm × 25 m, mit Folienlasche",
+    "store_search_term": "Randdämmstreifen mit Folie",
     "category": "Estrich",
     "product_family": "randdaemmstreifen",
     "base_unit": "m",
@@ -790,7 +780,10 @@
     "aliases": [
       "randdämmstreifen",
       "randdaemmstreifen",
-      "estrichrandstreifen"
+      "estrichrandstreifen",
+      "Randdämmstreifen mit Folie",
+      "Estrich Randdämmstreifen",
+      "Randstreifen mit Folienlasche"
     ],
     "brand": null,
     "canonical_version": 1
@@ -1215,7 +1208,7 @@
     "slug": "direktabhaenger-cd-125-1-v1",
     "name": "Direktabhänger für CD-Profile, Schenkellänge 125 mm, 1 Stück",
     "suggestion_label": "Direktabhänger für CD-Profile, Schenkellänge 125 mm, 1 Stück",
-    "store_search_term": "Direktabhänger für CD-Profile, Schenkellänge 125 mm, 1 Stück",
+    "store_search_term": "Direktabhänger",
     "category": "Baumaterial",
     "product_family": "direktabhaenger",
     "base_unit": "piece",
@@ -1235,7 +1228,11 @@
     "aliases": [
       "Direktabhänger",
       "Direktabhaenger",
-      "Abhänger CD"
+      "Abhänger CD",
+      "CD Direktabhänger",
+      "Direktabhänger CD",
+      "Deckenabhänger",
+      "Direktabhänger 125 mm"
     ],
     "brand": null,
     "canonical_version": 1
@@ -1546,7 +1543,13 @@
         "perlfix"
       ]
     },
-    "aliases": [],
+    "aliases": [
+      "Perlfix",
+      "Knauf Perlfix",
+      "Ansetzgips",
+      "Perlfix 25 kg",
+      "Knauf Perlfix Ansetzgips"
+    ],
     "brand": "Knauf",
     "canonical_version": 1
   },
@@ -1828,6 +1831,450 @@
     },
     "aliases": [],
     "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "osb3-18-2500-675-v1",
+    "name": "OSB/3 Verlegeplatte 18 × 675 × 2500 mm, Nut und Feder",
+    "suggestion_label": "OSB/3 Verlegeplatte 18 × 675 × 2500 mm, Nut und Feder",
+    "store_search_term": "OSB Platte",
+    "category": "Holzbau",
+    "product_family": "osb",
+    "base_unit": "m2",
+    "package_quantity": 1.6875,
+    "specs": {
+      "type": "osb3",
+      "thickness_mm": 18,
+      "width_mm": 675,
+      "length_mm": 2500,
+      "area_m2": 1.6875,
+      "required_terms": [
+        "osb",
+        "nut",
+        "feder"
+      ]
+    },
+    "aliases": [
+      "OSB",
+      "osb platte",
+      "grobspanplatte",
+      "verlegeplatte",
+      "OSB/3 Platte",
+      "OSB Verlegeplatte",
+      "OSB/3 Verlegeplatte",
+      "OSB Nut und Feder",
+      "OSB 18 mm"
+    ],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "nonius-unterteil-cd60-130-100-v1",
+    "name": "Noniusabhänger Unterteil CD 60/27, 130 mm, 100 Stück",
+    "suggestion_label": "Noniusabhänger Unterteil CD 60/27, 130 mm, 100 Stück",
+    "store_search_term": "Nonius Unterteil",
+    "category": "Trockenbau",
+    "product_family": "noniusabhaenger",
+    "base_unit": "piece",
+    "package_quantity": 100,
+    "specs": {
+      "type": "nonius-unterteil",
+      "length_mm": 130,
+      "pieces": 100,
+      "profile": "cd60/27",
+      "required_terms": [
+        "nonius",
+        "unterteil",
+        "60",
+        "27"
+      ],
+      "excluded_terms": [
+        "oberteil"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "rigips-vario-25kg-v1",
+    "name": "Rigips VARIO Fugenspachtel, 25 kg",
+    "suggestion_label": "Rigips VARIO Fugenspachtel, 25 kg",
+    "store_search_term": "Rigips VARIO 25 kg",
+    "category": "Spachtelmassen",
+    "product_family": "vario",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "specs": {
+      "type": "fugenspachtel",
+      "weight_kg": 25,
+      "required_terms": [
+        "rigips",
+        "vario"
+      ],
+      "excluded_terms": [
+        "hydro"
+      ]
+    },
+    "aliases": [
+      "VARIO",
+      "rigips vario",
+      "fugenspachtel",
+      "Rigips VARIO 25 kg",
+      "VARIO 25 kg"
+    ],
+    "brand": "Rigips",
+    "canonical_version": 1
+  },
+  {
+    "slug": "mem-super-haftgrund-5l-v1",
+    "name": "Super Haftgrund, 5 l",
+    "suggestion_label": "Super Haftgrund, 5 l",
+    "store_search_term": "MEM Super Haftgrund 5 l",
+    "category": "Grundierungen",
+    "product_family": "super-haftgrund",
+    "base_unit": "l",
+    "package_quantity": 5,
+    "specs": {
+      "type": "super-haftgrund",
+      "volume_l": 5,
+      "required_terms": [
+        "mem",
+        "haftgrund"
+      ]
+    },
+    "aliases": [
+      "Super Haftgrund",
+      "Super-Haftgrund",
+      "MEM Super Haftgrund",
+      "Haftgrund",
+      "Haftgrundierung",
+      "Haftgrund 5 l"
+    ],
+    "brand": "MEM",
+    "canonical_version": 1
+  },
+  {
+    "slug": "mem-super-haftgrund-10l-v1",
+    "name": "Super Haftgrund, 10 l",
+    "suggestion_label": "Super Haftgrund, 10 l",
+    "store_search_term": "MEM Super Haftgrund 10 l",
+    "category": "Grundierungen",
+    "product_family": "super-haftgrund",
+    "base_unit": "l",
+    "package_quantity": 10,
+    "specs": {
+      "type": "super-haftgrund",
+      "volume_l": 10,
+      "required_terms": [
+        "mem",
+        "haftgrund"
+      ]
+    },
+    "aliases": [
+      "Super Haftgrund 10 l",
+      "MEM Super Haftgrund 10 l"
+    ],
+    "brand": "MEM",
+    "canonical_version": 1
+  },
+  {
+    "slug": "glaswolle-035-100-6-72m2-v1",
+    "name": "Glaswolle-Klemmfilz WLG 035, 100 × 1200 × 5600 mm, 6,72 m²/Rolle",
+    "suggestion_label": "Glaswolle-Klemmfilz WLG 035, 100 × 1200 × 5600 mm, 6,72 m²/Rolle",
+    "store_search_term": "ISOVER Klemmfilz 035 100 mm",
+    "category": "Dämmung",
+    "product_family": "mineralwolle",
+    "base_unit": "m2",
+    "package_quantity": 6.72,
+    "specs": {
+      "type": "glaswolle-klemmfilz",
+      "thickness_mm": 100,
+      "width_mm": 1200,
+      "length_mm": 5600,
+      "pieces": 1,
+      "thermal_conductivity": 0.035,
+      "area_m2": 6.72,
+      "required_terms": [
+        "klemmfilz",
+        "035"
+      ],
+      "excluded_terms": [
+        "steinwolle"
+      ]
+    },
+    "aliases": [
+      "Glaswolle 035 100 mm",
+      "Klemmfilz 035 100 mm"
+    ],
+    "brand": "ISOVER",
+    "canonical_version": 1
+  },
+  {
+    "slug": "glaswolle-034-100-6-72m2-v1",
+    "name": "Glaswolle-Klemmfilz WLG 034, 100 × 1200 × 5600 mm, 6,72 m²/Rolle",
+    "suggestion_label": "Glaswolle-Klemmfilz WLG 034, 100 × 1200 × 5600 mm, 6,72 m²/Rolle",
+    "store_search_term": "ISOVER Klemmfilz 034 100 mm",
+    "category": "Dämmung",
+    "product_family": "mineralwolle",
+    "base_unit": "m2",
+    "package_quantity": 6.72,
+    "specs": {
+      "type": "glaswolle-klemmfilz",
+      "thickness_mm": 100,
+      "width_mm": 1200,
+      "length_mm": 5600,
+      "pieces": 1,
+      "thermal_conductivity": 0.034,
+      "area_m2": 6.72,
+      "required_terms": [
+        "klemmfilz",
+        "034"
+      ],
+      "excluded_terms": [
+        "steinwolle"
+      ]
+    },
+    "aliases": [
+      "Glaswolle 034 100 mm",
+      "Klemmfilz 034 100 mm"
+    ],
+    "brand": "ISOVER",
+    "canonical_version": 1
+  },
+  {
+    "slug": "dampfbremse-sd2-1000-25000-v1",
+    "name": "Dampfbremse sd 2 m, 1 × 25 m, 25 m²/Rolle",
+    "suggestion_label": "Dampfbremse sd 2 m, 1 × 25 m, 25 m²/Rolle",
+    "store_search_term": "Dampfbremse",
+    "category": "Dämmung",
+    "product_family": "dampfbremse",
+    "base_unit": "m2",
+    "package_quantity": 25,
+    "specs": {
+      "type": "dampfbremse",
+      "sd_m": 2,
+      "width_mm": 1000,
+      "length_mm": 25000,
+      "area_m2": 25,
+      "required_terms": [
+        "dampfbremse"
+      ],
+      "excluded_terms": [
+        "variabel",
+        "klimamembran"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "dampfbremse-variabel-03-5-1500-40000-v1",
+    "name": "Dampfbremse feuchtevariabel sd 0.3–5 m, 1,5 × 40 m, 60 m²/Rolle",
+    "suggestion_label": "Dampfbremse feuchtevariabel sd 0.3–5 m, 1,5 × 40 m, 60 m²/Rolle",
+    "store_search_term": "Dampfbremse",
+    "category": "Dämmung",
+    "product_family": "dampfbremse",
+    "base_unit": "m2",
+    "package_quantity": 60,
+    "specs": {
+      "type": "dampfbremse",
+      "sd_min_m": 0.3,
+      "sd_max_m": 5,
+      "width_mm": 1500,
+      "length_mm": 40000,
+      "area_m2": 60,
+      "required_terms": [
+        "dampfbremse"
+      ],
+      "excluded_terms": [
+        "unterspannbahn",
+        "unterdeckbahn"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "dampfbremse-variabel-05-55-1500-20000-v1",
+    "name": "Dampfbremse feuchtevariabel sd 0.5–5.5 m, 1,5 × 20 m, 30 m²/Rolle",
+    "suggestion_label": "Dampfbremse feuchtevariabel sd 0.5–5.5 m, 1,5 × 20 m, 30 m²/Rolle",
+    "store_search_term": "Dampfbremse",
+    "category": "Dämmung",
+    "product_family": "dampfbremse",
+    "base_unit": "m2",
+    "package_quantity": 30,
+    "specs": {
+      "type": "dampfbremse",
+      "sd_min_m": 0.5,
+      "sd_max_m": 5.5,
+      "width_mm": 1500,
+      "length_mm": 20000,
+      "area_m2": 30,
+      "required_terms": [
+        "dampfbremse"
+      ],
+      "excluded_terms": [
+        "unterspannbahn",
+        "unterdeckbahn"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "pe-folie-200-2000-25000-v1",
+    "name": "PE-Baufolie 0,2 mm, 2 × 25 m, 50 m²/Rolle",
+    "suggestion_label": "PE-Baufolie 0,2 mm, 2 × 25 m, 50 m²/Rolle",
+    "store_search_term": "Baufolie",
+    "category": "Folien",
+    "product_family": "pe-folie",
+    "base_unit": "m2",
+    "package_quantity": 50,
+    "specs": {
+      "type": "pe-baufolie",
+      "thickness_mm": 0.2,
+      "width_mm": 2000,
+      "length_mm": 25000,
+      "area_m2": 50,
+      "required_terms": [
+        "pe",
+        "folie"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "pe-folie-200-3000-10000-v1",
+    "name": "PE-Baufolie 0,2 mm, 3 × 10 m, 30 m²/Rolle",
+    "suggestion_label": "PE-Baufolie 0,2 mm, 3 × 10 m, 30 m²/Rolle",
+    "store_search_term": "Baufolie",
+    "category": "Folien",
+    "product_family": "pe-folie",
+    "base_unit": "m2",
+    "package_quantity": 30,
+    "specs": {
+      "type": "pe-baufolie",
+      "thickness_mm": 0.2,
+      "width_mm": 3000,
+      "length_mm": 10000,
+      "area_m2": 30,
+      "required_terms": [
+        "pe",
+        "folie"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "pe-folie-200-4000-25000-v1",
+    "name": "PE-Baufolie 0,2 mm, 4 × 25 m, 100 m²/Rolle",
+    "suggestion_label": "PE-Baufolie 0,2 mm, 4 × 25 m, 100 m²/Rolle",
+    "store_search_term": "Baufolie",
+    "category": "Folien",
+    "product_family": "pe-folie",
+    "base_unit": "m2",
+    "package_quantity": 100,
+    "specs": {
+      "type": "pe-baufolie",
+      "thickness_mm": 0.2,
+      "width_mm": 4000,
+      "length_mm": 25000,
+      "area_m2": 100,
+      "required_terms": [
+        "pe",
+        "folie"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "glaswolle-034-120-5-76m2-v1",
+    "name": "ISOVER Glaswolle-Klemmfilz WLG 034, 120 × 1200 × 4800 mm, 5,76 m²/Rolle",
+    "suggestion_label": "ISOVER Glaswolle-Klemmfilz WLG 034, 120 × 1200 × 4800 mm, 5,76 m²/Rolle",
+    "store_search_term": "Klemmfilz 120 mm",
+    "category": "Dämmung",
+    "product_family": "mineralwolle",
+    "base_unit": "m2",
+    "package_quantity": 5.76,
+    "specs": {
+      "type": "glaswolle-klemmfilz",
+      "thickness_mm": 120,
+      "width_mm": 1200,
+      "length_mm": 4800,
+      "pieces": 1,
+      "thermal_conductivity": 0.034,
+      "area_m2": 5.76,
+      "required_terms": [
+        "klemmfilz",
+        "034"
+      ],
+      "excluded_terms": [
+        "steinwolle"
+      ]
+    },
+    "aliases": [],
+    "brand": "ISOVER",
+    "canonical_version": 1
+  },
+  {
+    "slug": "randdaemmstreifen-8-150-50000-v1",
+    "name": "Randdämmstreifen 8 × 150 mm × 50 m, mit Folienlasche",
+    "suggestion_label": "Randdämmstreifen 8 × 150 mm × 50 m, mit Folienlasche",
+    "store_search_term": "Randdämmstreifen mit Folie",
+    "category": "Estrich",
+    "product_family": "randdaemmstreifen",
+    "base_unit": "m",
+    "package_quantity": 50,
+    "specs": {
+      "type": "randdaemmstreifen",
+      "thickness_mm": 8,
+      "width_mm": 150,
+      "length_mm": 50000,
+      "required_terms": [
+        "randdämmstreifen",
+        "folienlasche"
+      ]
+    },
+    "aliases": [],
+    "brand": null,
+    "canonical_version": 1
+  },
+  {
+    "slug": "pu-schaum-1k-b2-genius-champagner-750ml-v1",
+    "name": "Soudal PU-Bauschaum 1K B2 Genius Gun champagner, 750 ml",
+    "suggestion_label": "Soudal PU-Bauschaum 1K B2 Genius Gun champagner, 750 ml",
+    "store_search_term": "Soudal Genius Gun 750 ml",
+    "category": "Bauschäume",
+    "product_family": "pu-schaum",
+    "base_unit": "l",
+    "package_quantity": 0.75,
+    "specs": {
+      "type": "1k-b2-genius",
+      "volume_l": 0.75,
+      "color": "champagner",
+      "required_terms": [
+        "soudal",
+        "b2",
+        "genius",
+        "einkomponent"
+      ],
+      "excluded_terms": [
+        "2k",
+        "reiniger"
+      ]
+    },
+    "aliases": [],
+    "brand": "Soudal",
     "canonical_version": 1
   }
 ]

@@ -1,0 +1,102 @@
+[
+  {
+    "material_slug": "knauf-uniflott-finish-8kg-v1",
+    "store_id": "toom",
+    "product_name": "Knauf Feinspachtelmasse Uniflott Finish 8 kg",
+    "product_url": "https://toom.de/p/feinspachtelmasse-uniflott-finish-8-kg/2356740",
+    "price": 17.99,
+    "package_quantity": 8,
+    "base_unit": "kg",
+    "currency": "EUR",
+    "price_basis": "package",
+    "checked_at": "2026-10-18T19:23:00.000Z",
+    "observed_specs": {
+      "weight_kg": 8
+    },
+    "verification_note": "User screenshot codex-clipboard-4588bb88-a663-4464-a480-df1ea9872848.png on 18.10.2026: exact displayed total package price and size; official product URL confirmed. Screenshot market Frankfurt-Bornheim; no other branch stock assertion. "
+  },
+  {
+    "material_slug": "knauf-perlfix-25kg-v1",
+    "store_id": "toom",
+    "product_name": "Knauf Perlfix Ansetzgips 25 kg",
+    "product_url": "https://toom.de/p/ansatzgips-perflix-25-kg/3053281",
+    "price": 10.49,
+    "package_quantity": 25,
+    "base_unit": "kg",
+    "currency": "EUR",
+    "price_basis": "package",
+    "checked_at": "2026-10-18T19:23:00.000Z",
+    "observed_specs": {
+      "weight_kg": 25
+    },
+    "verification_note": "User screenshot codex-clipboard-8cc1bab8-9221-4bb8-9ca4-614c7dcc51ec.png on 18.10.2026: exact displayed total package price and size; official product URL confirmed. Screenshot market Frankfurt-Bornheim; no other branch stock assertion. "
+  },
+  {
+    "material_slug": "mem-super-haftgrund-5l-v1",
+    "store_id": "toom",
+    "product_name": "MEM Super Haftgrund 5 l",
+    "product_url": "https://toom.de/p/super-haftgrund-5-l/3351128",
+    "price": 29.99,
+    "package_quantity": 5,
+    "base_unit": "l",
+    "currency": "EUR",
+    "price_basis": "package",
+    "checked_at": "2026-10-18T19:23:00.000Z",
+    "observed_specs": {
+      "type": "super-haftgrund",
+      "volume_l": 5
+    },
+    "verification_note": "User screenshot codex-clipboard-6be2ae74-1387-46d9-b192-6cb2543dd624.png on 18.10.2026: exact displayed total package price and size; official product URL confirmed. Screenshot market Frankfurt-Bornheim; no other branch stock assertion. "
+  },
+  {
+    "material_slug": "mem-super-haftgrund-5l-v1",
+    "store_id": "obi",
+    "product_name": "MEM Super-Haftgrund 5 l",
+    "product_url": "https://www.obi.de/p/2373454/mem-super-haftgrund-5-l",
+    "price": 29.99,
+    "package_quantity": 5,
+    "base_unit": "l",
+    "currency": "EUR",
+    "price_basis": "package",
+    "checked_at": "2026-10-18T19:23:00.000Z",
+    "observed_specs": {
+      "type": "super-haftgrund",
+      "volume_l": 5
+    },
+    "verification_note": "User screenshot codex-clipboard-f958fd2f-6ff4-44f1-babd-67771e96ea89.png on 18.10.2026: exact displayed total package price and size; official product URL confirmed.  "
+  },
+  {
+    "material_slug": "mem-super-haftgrund-5l-v1",
+    "store_id": "bauhaus",
+    "product_name": "MEM Super Haftgrund 5 l",
+    "product_url": "https://www.bauhaus.info/tiefengrund-haftgrund/mem-haftgrund/p/13881776",
+    "price": 26.95,
+    "package_quantity": 5,
+    "base_unit": "l",
+    "currency": "EUR",
+    "price_basis": "package",
+    "checked_at": "2026-10-18T19:23:00.000Z",
+    "observed_specs": {
+      "type": "super-haftgrund",
+      "volume_l": 5
+    },
+    "verification_note": "User screenshot codex-clipboard-fb1e391f-e8df-4da5-9531-6ef8651d889c.png on 18.10.2026: exact displayed total package price and size; official product URL confirmed.  Page title MEM Haftgrund; screenshot label and official description identify MEM Super Haftgrund."
+  },
+  {
+    "material_slug": "mem-super-haftgrund-10l-v1",
+    "store_id": "globus",
+    "product_name": "MEM Super Haftgrund 10 l",
+    "product_url": "https://www.globus-baumarkt.de/p/mem-super-haftgrund-10-l-0779050060/",
+    "price": 37.99,
+    "package_quantity": 10,
+    "base_unit": "l",
+    "currency": "EUR",
+    "price_basis": "package",
+    "checked_at": "2026-10-18T19:23:00.000Z",
+    "observed_specs": {
+      "type": "super-haftgrund",
+      "volume_l": 10
+    },
+    "verification_note": "User screenshot codex-clipboard-c46fb4bb-9344-477f-96f9-acb4d1f5a588.png on 18.10.2026: exact displayed total package price and size; official product URL confirmed.  "
+  }
+]

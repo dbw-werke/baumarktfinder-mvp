@@ -28,6 +28,14 @@ export type MaterialRow = {
 };
 export type CachedMaterial = { material: MaterialRow; aliases: string[] };
 
+// Retired comparison options keep their historical observations, but never surface as offers.
+export function isRetiredComparisonMaterial(material: Pick<MaterialRow, "slug" | "product_family" | "package_quantity">): boolean {
+  return material.slug === "haftgrund-quarzsand-5l-v1" || (material.product_family === "vario" && material.package_quantity !== 25);
+}
+export const retiredComparisonMaterialIds = new Set(Object.entries(snapshot.canonical_material_ids)
+  .filter(([slug]) => slug === "haftgrund-quarzsand-5l-v1" || (slug.startsWith("rigips-vario-") && slug !== "rigips-vario-25kg-v1"))
+  .map(([, id]) => id));
+
 const CACHE_TTL = 5 * 60_000;
 const MAX_STALE = 24 * 60 * 60_000;
 
@@ -42,6 +50,19 @@ export function bundledMaterialCatalog(): CachedMaterial[] {
       base_unit: definition.base_unit as BaseUnit, package_quantity: definition.package_quantity,
       specs: definition.specs, product_family: definition.product_family, brand: definition.brand }, aliases: definition.aliases }];
   });
+}
+
+/** These user-corrected product choices also apply before the remote catalogue is reseeded. */
+export function withCorrectedProductMetadata(items: CachedMaterial[]): CachedMaterial[] {
+  const slugs = new Set(["rigips-vario-25kg-v1", "mem-super-haftgrund-5l-v1", "mem-super-haftgrund-10l-v1",
+    "knauf-uniflott-finish-8kg-v1", "knauf-perlfix-25kg-v1", "dampfbremse-sd2-1500-50000-v1", "pe-folie-200-2000-50000-v1",
+    "randdaemmstreifen-8-150-25000-v1"]);
+  const authored = bundledMaterialCatalog().filter(item => slugs.has(item.material.slug));
+  const current = items.filter(item => !isRetiredComparisonMaterial(item.material)).map(item => {
+    const corrected = authored.find(row => row.material.slug === item.material.slug);
+    return corrected ? { material: { ...corrected.material, id: item.material.id, active: item.material.active }, aliases: corrected.aliases } : item;
+  });
+  return [...current, ...authored.filter(item => !current.some(row => row.material.id === item.material.id || row.material.slug === item.material.slug))];
 }
 
 export function normalizeMaterialSearch(value: string): string {
@@ -71,8 +92,12 @@ export function searchMaterialCatalog(items: CachedMaterial[], input: string): M
   const query = normalizeMaterialSearch(input).slice(0, 160);
   if (!query) return [];
   const queryTokens = query.split(" ");
-  return items.filter(({ material }) => material.active && material.canonical_version >= 1)
+  return items.filter(({ material }) => material.active && material.canonical_version >= 1 && !isRetiredComparisonMaterial(material))
     .map(({ material, aliases }) => {
+      // Keep these corrected search aliases usable with an older database catalogue.
+      if (["ud-profil", "cd-profil", "direktabhaenger", "noniusabhaenger", "trennwandband", "dichtungsband", "dampfbremse", "pe-folie"].includes(material.product_family)) {
+        aliases = [...aliases, ...(definitions.find(item => item.slug === material.slug)?.aliases ?? [])];
+      }
       const candidates = [material.suggestion_label ?? material.name, material.name, material.store_search_term, ...aliases, ...aliases.map((alias) => `${alias} ${material.name}`)]
         .map(normalizeMaterialSearch);
       let score = 0;
@@ -115,7 +140,7 @@ export function createMaterialCatalogLoader(client = supabase, now: () => number
           // A healthy material query remains authoritative even when aliases alone are unavailable.
           const aliasesById = new Map<string, string[]>();
           for (const row of aliases.data ?? []) aliasesById.set(row.material_id, [...(aliasesById.get(row.material_id) ?? []), row.alias]);
-          const items = (materials.data ?? []).filter((material) => material.active && material.canonical_version >= 1)
+          const items = (materials.data ?? []).filter((material) => material.active && material.canonical_version >= 1 && !isRetiredComparisonMaterial(material))
             .map((material) => ({ material: material as MaterialRow, aliases: aliasesById.get(material.id) ?? [] }));
           // Empty/inactive catalogues are a valid database decision, never a fallback trigger.
           cache = { items, loadedAt: now(), retryAt: now() + CACHE_TTL, database: true };
@@ -146,13 +171,21 @@ const preferredSlugs = [
   "gipskarton-standard-12-5-1200-600-v1", "knauf-tiefengrund-5l-v1",
   "cd60-27-3000-v1", "knauf-rotband-30kg-v1", "knauf-uniflott-25kg-v1",
   "acryl-weiss-310ml-v1", "glaswolle-035-120-6m2-v1",
+  "osb3-18-2500-1250-v1",
+  "trennwandband-30-3-30000-v1", "nonius-unterteil-cd60-130-1-v1",
+  "rigips-vario-25kg-v1", "mem-super-haftgrund-5l-v1", "knauf-perlfix-25kg-v1",
+  "dampfbremse-sd2-1500-50000-v1", "pe-folie-200-2000-50000-v1",
+  "randdaemmstreifen-8-150-25000-v1",
 ];
 export function resolvePreferredMaterial(items: CachedMaterial[], input: string, selectedId?: string): MaterialRow | null {
-  const active = items.filter(({ material }) => material.active && material.canonical_version >= 1);
+  const active = items.filter(({ material }) => material.active && material.canonical_version >= 1 && !isRetiredComparisonMaterial(material));
   if (selectedId) return active.find(({ material }) => material.id === selectedId)?.material ?? null;
   const matches = searchMaterialCatalog(active, input);
   if (matches.length === 1) return active.find(({ material }) => material.id === matches[0].id)!.material;
   const query = normalizeMaterialSearch(input);
+  const exactNames = active.filter(({ material }) => [material.name, material.suggestion_label]
+    .some(name => name && normalizeMaterialSearch(name) === query));
+  if (exactNames.length === 1) return exactNames[0].material;
   const defaults = preferredSlugs.flatMap((slug) => {
     const definition = definitions.find((item) => item.slug === slug);
     if (!definition || !definition.aliases.some((alias) => normalizeMaterialSearch(alias) === query)) return [];
@@ -169,5 +202,5 @@ export async function warmMaterialSuggestions(): Promise<void> {
 
 export async function getMaterialSuggestions(input: string): Promise<MaterialSuggestion[]> {
   if (!input.trim()) return [];
-  return searchMaterialCatalog(await loadMaterialCache(), input);
+  return searchMaterialCatalog(withCorrectedProductMetadata(await loadMaterialCache()), input);
 }

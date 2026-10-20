@@ -27,6 +27,7 @@ export default function StoreCard({ store, price, origin, searchTerm, highlighte
     <div className="pricePlaceholder"><p className="productName" title={price?.product_name ?? searchTerm}>{price?.product_name ?? searchTerm}</p>
       <p className="actualSpecification">{price && "actual_size" in price ? price.actual_size : comparison?.actualSpecification ?? comparison?.preferredSpecification ?? (price?.package_quantity && price.unit ? `${price.package_quantity.toLocaleString("de-DE")} ${unitLabels[price.unit]}` : "Gewünschte Ausführung")}</p>
       {comparison && <div className="matchStatus"><span className={`matchBadge ${comparison.match === "alternative" ? "alternativeBadge" : ""}`}>{comparison.match === "exact" ? "Wunschgröße" : comparison.match === "alternative" ? "Alternative Größe" : "Kein geprüftes Angebot"}</span></div>}
+      {comparison?.specificationWarning && <small>{comparison.specificationWarning}</small>}
       {price ? <>
         <strong className="packagePrice">{money.format(price.price)}</strong><span className="packageLabel">Produkt- / Packungspreis · inkl. MwSt.</span>
         {price.unit_price != null && price.unit && <p className="unitPrice">{money.format(price.unit_price)} / {unitLabels[price.unit]}</p>}

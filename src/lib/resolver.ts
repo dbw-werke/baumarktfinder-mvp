@@ -16,7 +16,13 @@ export function isSafeStoreUrl(storeId: string, value: string | null | undefined
 export function getStoreUrl(storeId: string, searchTerm: string): string {
   if (!isChainId(storeId)) throw new Error("Nicht unterstützte Baumarktkette.");
   if (!searchTerm.trim()) return `https://www.${STORE_HOSTS[storeId]}/`;
-  const q = encodeURIComponent(searchTerm.trim().slice(0, 250));
+  const shortTerm = /direktabh[aä]nger/i.test(searchTerm) && !/nonius/i.test(searchTerm) ? "Direktabhänger"
+    : /nonius/i.test(searchTerm) && !/direktabh[aä]nger/i.test(searchTerm) ? (/unterteil/i.test(searchTerm) ? "Nonius Unterteil" : "Noniusabhänger")
+    : /dampfbrems/i.test(searchTerm) ? "Dampfbremse"
+    : /randd[aä]mmstreifen|estrichrandstreifen|randstreifen/i.test(searchTerm) ? "Randdämmstreifen mit Folie"
+    : /\bpe[ -]?(?:bau)?folie|bau[ -]?folie|polyethylenfolie/i.test(searchTerm) ? "Baufolie"
+    : searchTerm.trim();
+  const q = encodeURIComponent(shortTerm.slice(0, 250));
   const urls: Record<ChainId, string> = {
     obi: `https://www.obi.de/search/${q}/`,
     hornbach: `https://www.hornbach.de/s/${q}/`,

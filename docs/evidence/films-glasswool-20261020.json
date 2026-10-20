@@ -1,0 +1,246 @@
+[
+  {
+    "store_id": "obi",
+    "material_slug": "dampfbremse-sd2-1500-50000-v1",
+    "product_name": "Ursa-Seco Pro SD2 Dampfbremse 50 m × 1,5 m, 75 m²",
+    "product_url": "https://www.obi.de/p/2472678/ursa-seco-pro-sd2-dampfbremse-50-m-x-1-5-m",
+    "price": 149.25,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 75,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "dampfbremse",
+      "sd_m": 2,
+      "width_mm": 1500,
+      "length_mm": 50000,
+      "area_m2": 75
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. Gesamtpreis 149.25 EUR, fixed sd2."
+  },
+  {
+    "store_id": "bauhaus",
+    "material_slug": "dampfbremse-sd2-1500-50000-v1",
+    "product_name": "Ursa SecoPro Dampfbremsfolie 50 m × 1,5 m, sd 2 m, 75 m²",
+    "product_url": "https://www.bauhaus.info/dampfsperre-dachfolien/ursa-secopro-dampfbremsfolie/p/20678201",
+    "price": 149.25,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 75,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "dampfbremse",
+      "sd_m": 2,
+      "width_mm": 1500,
+      "length_mm": 50000,
+      "area_m2": 75
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. 149.25 EUR pro Rolle, fixed sd2."
+  },
+  {
+    "store_id": "globus",
+    "material_slug": "dampfbremse-sd2-1000-25000-v1",
+    "product_name": "ICUTEC Dampfbremse SD2 25 × 1 m, 25 m²",
+    "product_url": "https://www.globus-baumarkt.de/p/icutec-dampfbremse-sd2-25-x-1-25-m2-weiss-0779201398/",
+    "price": 69.99,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 25,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "dampfbremse",
+      "sd_m": 2,
+      "width_mm": 1000,
+      "length_mm": 25000,
+      "area_m2": 25
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. Official current JSON-LD 69.99 EUR."
+  },
+  {
+    "store_id": "hagebau",
+    "material_slug": "dampfbremse-sd2-1000-25000-v1",
+    "product_name": "ICUTEC Dampfbremse SD2 1 × 25 m, 25 m²",
+    "product_url": "https://www.hagebau.de/p/icutec-dampfbremse-sd2-bxl-1-x-25-m-anV1151865/",
+    "price": 64.99,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 25,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "dampfbremse",
+      "sd_m": 2,
+      "width_mm": 1000,
+      "length_mm": 25000,
+      "area_m2": 25
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. Current HTTP JSON-LD 64.99 EUR; older indexed 59.99 not used."
+  },
+  {
+    "store_id": "toom",
+    "material_slug": "dampfbremse-variabel-03-5-1500-40000-v1",
+    "product_name": "Isover Klimamembran Vario Duplex UV 60 m², 1,5 × 40 m, sd 0,3–5 m",
+    "product_url": "https://toom.de/p/klimamembran-vario-duplex-uv-60-m/3150288",
+    "price": 209.99,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 60,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "dampfbremse",
+      "sd_min_m": 0.3,
+      "sd_max_m": 5,
+      "width_mm": 1500,
+      "length_mm": 40000,
+      "area_m2": 60
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. Official category https://toom.de/c/bauen-renovieren/baustoffe/daemmung/innendaemmung lists 209.99 EUR/Pack for exact SKU. Variable sd0.3–5m, not fixed sd2."
+  },
+  {
+    "store_id": "hornbach",
+    "material_slug": "dampfbremse-variabel-05-55-1500-20000-v1",
+    "product_name": "PRECIT feuchtevariable Dampfbremsfolie 20 m × 1,5 m, Rolle 30 m²",
+    "product_url": "https://www.hornbach.de/p/precit-feuchtevariable-dampfbremsfolie-20-m-x-1-5-m-rolle-30-m/6047598/",
+    "price": 59.95,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 30,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "dampfbremse",
+      "sd_min_m": 0.5,
+      "sd_max_m": 5.5,
+      "width_mm": 1500,
+      "length_mm": 20000,
+      "area_m2": 30
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. 59.95 EUR/ST. Technical sheet https://media.hornbach.de/hb/technicaldatasheet/as.180918015.pdf V2026-01 gives sd2.5(-2/+3)m, hence range0.5–5.5m."
+  },
+  {
+    "store_id": "obi",
+    "material_slug": "pe-folie-200-3000-10000-v1",
+    "product_name": "LUX-TOOLS Baufolie Transparent 3 × 10 m, PE 0,2 mm, 30 m²",
+    "product_url": "https://www.obi.de/p/1016732/lux-tools-baufolie-transparent-3-x-10-m",
+    "price": 33.99,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 30,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "pe-baufolie",
+      "thickness_mm": 0.2,
+      "width_mm": 3000,
+      "length_mm": 10000,
+      "area_m2": 30
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. Gesamtpreis 33.99 EUR, attributes PE and 0.2mm."
+  },
+  {
+    "store_id": "bauhaus",
+    "material_slug": "pe-folie-200-2000-25000-v1",
+    "product_name": "Probau Baufolie 25 × 2 m × 0,2 mm, PE, 50 m²",
+    "product_url": "https://www.bauhaus.info/baufolien/probau-baufolie/p/13862355",
+    "price": 44.95,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 50,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "pe-baufolie",
+      "thickness_mm": 0.2,
+      "width_mm": 2000,
+      "length_mm": 25000,
+      "area_m2": 50
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. 44.95 EUR pro Rolle."
+  },
+  {
+    "store_id": "hornbach",
+    "material_slug": "pe-folie-200-2000-25000-v1",
+    "product_name": "Baufolie LDPE 0,2 mm 25 × 2 m Opak bunt, Rolle 50 m²",
+    "product_url": "https://www.hornbach.de/p/baufolie-ldpe-0-2-mm-25-x-2-m-opak-bunt-rolle-50-m/8582101/",
+    "price": 29.95,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 50,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "pe-baufolie",
+      "thickness_mm": 0.2,
+      "width_mm": 2000,
+      "length_mm": 25000,
+      "area_m2": 50
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. JSON-LD and defaultPrice29.95 unitST; basicPrice0.60/m² is secondary."
+  },
+  {
+    "store_id": "toom",
+    "material_slug": "pe-folie-200-4000-25000-v1",
+    "product_name": "toom Baufolie extra stark 4 × 25 m, PE 200 µm, 100 m²",
+    "product_url": "https://toom.de/p/baufolie-extra-stark-4-x-25-m-200-gm-transluzent/8350160",
+    "price": 69.99,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 100,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "pe-baufolie",
+      "thickness_mm": 0.2,
+      "width_mm": 4000,
+      "length_mm": 25000,
+      "area_m2": 100
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. https://toom.de/c/bauen-renovieren/bauzubehoer/baufolien-planen lists69.99/Pack exactSKU; attributes confirm200µ/0.2mm PE. Market-only; no branch availability inferred."
+  },
+  {
+    "store_id": "globus",
+    "material_slug": "pe-folie-200-4000-25000-v1",
+    "product_name": "Jufol Baufolie Profi 0,2 mm 25 × 4 m, 100 m² transluzent",
+    "product_url": "https://www.globus-baumarkt.de/p/jufol-baufolie-profi-0-2-mm-25-x-4-m-100-m2-transluzent-0779600036/",
+    "price": 79.99,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 100,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "pe-baufolie",
+      "thickness_mm": 0.2,
+      "width_mm": 4000,
+      "length_mm": 25000,
+      "area_m2": 100
+    },
+    "verification_note": "manual_verified: Official retailer product page checked 19 October 2026. Explicit single-roll total (not multiplied unit price); actual roll dimensions, material and technical properties confirmed. HTTP200 Product JSON-LD79.99EUR SKU0779600036 GTIN4049404202210; description LDPE/Copolymere/Recyclate."
+  },
+  {
+    "store_id": "hornbach",
+    "material_slug": "glaswolle-034-120-5-76m2-v1",
+    "product_name": "ISOVER Klemmfilz Integra ZKF 1-034 Lanaé 4800 × 1200 × 120 mm, Rolle 5,76 m²",
+    "product_url": "https://www.hornbach.de/p/isover-klemmfilz-integra-zkf-1-034-lanae-zwischensparrendaemmung-fuer-steildach-4800-mm-x-1200-mm-x-120-mm-rolle-5-76-m/12358612/",
+    "price": 48.38,
+    "currency": "EUR",
+    "price_basis": "package",
+    "base_unit": "m2",
+    "package_quantity": 5.76,
+    "checked_at": "2026-10-20T16:23:03.950Z",
+    "observed_specs": {
+      "type": "glaswolle-klemmfilz",
+      "thickness_mm": 120,
+      "width_mm": 1200,
+      "length_mm": 4800,
+      "pieces": 1,
+      "thermal_conductivity": 0.034,
+      "area_m2": 5.76
+    },
+    "verification_note": "manual_verified: User official HORNBACH screenshot19October2026, confirmed again20October:48.38EUR per single roll5.76m²,120mm,WLG034. Not8.40EUR/m² or47EUR bulk. Exact official product12358612."
+  }
+]

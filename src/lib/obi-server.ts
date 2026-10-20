@@ -9,6 +9,7 @@ import { validateObiOffer } from "./obi-offer";
 import { bundledMaterialCatalog } from "../services/materialSuggestions";
 import { resolveMvpPreferredMaterial } from "./toomIntent";
 import { selectChainOffer } from "./productComparison";
+import { productPurposeConflict } from "./productCompatibility.mjs";
 
 const sourceRows = [...manual.prices, ...automatic.prices] as Record<string, unknown>[];
 export const obiSeedProducts = [...getCatalogSnapshot(["obi"]).map(row => ({
@@ -28,7 +29,12 @@ export async function lookupObi(query: string) {
   const catalog = bundledMaterialCatalog();
   const material = resolveMvpPreferredMaterial(catalog, query);
   const result = await service.lookup(material?.name ?? query);
-  const dynamic = validateObiOffer(result.offer);
+  let dynamic = validateObiOffer(result.offer);
+  // Film comparisons need the catalogue's verified sd/thickness and complete roll metadata.
+  if (material && ["dampfbremse", "pe-folie"].includes(material.product_family)) dynamic = null;
+  if (material?.product_family === "super-haftgrund" && dynamic && productPurposeConflict(material, dynamic)) dynamic = null;
+  if (material?.product_family === "vario" && dynamic && (dynamic.unit !== "kg" || dynamic.package_quantity !== 25
+    || !/\brigips\b/i.test(dynamic.product_name) || !/\bvario\b/i.test(dynamic.product_name) || /hydro/i.test(dynamic.product_name))) dynamic = null;
   const selected = material ? selectChainOffer(material, getCatalogSnapshot(["obi"]), catalog.map(row => row.material), "obi") : null;
   const price = selected?.price;
   // A stale generic cache must never displace today's verified canonical/manual observation.
