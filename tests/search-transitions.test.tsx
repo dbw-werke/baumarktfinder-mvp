@@ -236,7 +236,11 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     const vario=materials.find(item=>item.material.slug==='rigips-vario-25kg-v1')!.material;
     assert.equal((dom.window.document.querySelector('#comparison-material') as HTMLSelectElement).value,vario.id);
     assert.doesNotMatch(names(),/VARIO[^,]*, (?:5|8) kg/);
-    assert.equal(dom.window.document.querySelectorAll('.packagePrice').length,0,'no screenshot price exists for VARIO; never invent a value');
+    for (const [store, price] of [['bauhaus', '36,05'], ['obi', '29,99']]) {
+      const card = dom.window.document.querySelector(`[data-store-id="fixture-${store}"]`)!;
+      assert.ok(card.querySelector('.packagePrice')?.textContent?.includes(price));
+      assert.match(card.querySelector('.actualSpecification')!.textContent!, /25 kg/);
+    }
     stores.splice(stores.findIndex(store=>store.id==='toom'),1);
     await input('#material','Dämmung');await submit();await complete(requestIndex++);
     const insulation=materials.find(item=>item.material.slug==='steinwolle-sonorock-040-40-7-5m2-v1')!.material;

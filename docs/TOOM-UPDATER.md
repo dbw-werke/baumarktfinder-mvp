@@ -1,6 +1,6 @@
 # Stündliche toom-Preisprüfung
 
-Stand: 06.10.2026. Nur toom wurde erweitert; Karten, Logos, Maps und übrige Händler bleiben erhalten.
+Stand: 21.10.2026. Das Design bleibt unverändert. Der Stundenlauf veröffentlicht geprüfte toom-Beobachtungen zusätzlich für die Vercel-Anwendung.
 
 ## Ablauf
 
@@ -35,7 +35,7 @@ Der Stundenlauf sucht nicht erneut nach bereits bekannten Artikeln. Neue erfolgr
 
 Standarddatei: `work/toom-verified-cache.json`. Sie enthält aktuelle geprüfte Preise, Preisänderungshistorie und letzte Fehler. `TOOM_CACHE_PATH` kann einen anderen dauerhaften Pfad festlegen. Server und Worker müssen dieselbe Datei sehen. Atomisches Schreiben und eine `.lock`-Datei verhindern überlappende lokale Läufe. Nach einem harten Prozessabbruch eine verwaiste Lockdatei nur entfernen, nachdem bestätigt wurde, dass kein Updater mehr läuft. Fehler beim Lesen einer vorhandenen Cachedatei werden nicht durch Überschreiben beseitigt.
 
-`GET /api/toom/prices` liest diese Datei bei jeder Anfrage mit `no-store`. Die Kundensuche übernimmt pro Material/Kette die neueste geprüfte Beobachtung aus Laufzeitcache, Supabase und gebündeltem Katalog. Eine Preisänderung erscheint ohne Neubau oder Serverneustart bei der nächsten Suche. Im Kundenpfad werden keine toom-Seiten und kein Chromium aufgerufen.
+`GET /api/toom/prices` liest diese Datei bei jeder Anfrage mit `no-store`. Auf Vercel liest der Server zusätzlich `src/data/toom-published-prices.json` von der festen öffentlichen GitHub-URL dieser Repository-Hauptbranch. Der Worker exportiert ausschließlich validierte öffentliche Preisfelder und committet nur diese Datei; Preis-Historie, Diagnosen und Zugangsdaten werden nicht veröffentlicht. Der Server bündelt gleichzeitige Anfragen, verwendet einen Cache von fünf Minuten und einen Abruf-Timeout von drei Sekunden. Bei Ausfall oder ungültigen Daten bleiben gültige Beobachtungen mit ursprünglichem Prüfdatum erhalten. Die Kundensuche übernimmt pro Material/Kette die neueste geprüfte Beobachtung aus Laufzeitcache, Supabase und gebündeltem Katalog. Dafür ist kein gemeinsames beschreibbares Vercel-Dateisystem erforderlich. Im Kundenpfad werden keine toom-Seiten und kein Chromium aufgerufen.
 
 ## Preis- und Marktkontext
 
@@ -43,13 +43,15 @@ Standarddatei: `work/toom-verified-cache.json`. Sie enthält aktuelle geprüfte 
 
 ## Supabase: aktueller realer Stand
 
-Der geprüfte öffentliche Zugang meldete:
+Aktuelle Prüfung am 21.10.2026: Die lokal konfigurierte Supabase-Adresse ist per DNS nicht auflösbar (`ENOTFOUND`); öffentliche und Service-Role-Anfragen erreichen die API nicht. In den GitHub-Actions-Secrets sind keine Supabase-Werte hinterlegt. Der allgemeine tägliche Datenbank-Workflow scheitert deshalb bereits an `Missing Supabase URL secret`. Benötigt werden eine erreichbare Projektadresse als `NEXT_PUBLIC_SUPABASE_URL` und ein gültiger serverseitiger `SUPABASE_SERVICE_ROLE_KEY`; optional der passende öffentliche `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (oder `NEXT_PUBLIC_SUPABASE_ANON_KEY`). Die Schlüssel gehören in Repository Settings → Secrets and variables → Actions, nicht in Quelldateien oder Chatnachrichten. Die Vercel-Konfiguration muss dieselbe erreichbare Datenbank verwenden.
+
+Historischer Befund vom 05.10.2026, bei wieder erreichbarer Instanz erneut zu prüfen:
 
 - `store_products`, `verified_store_prices`, `price_history`: HTTP 404 / `PGRST205`, im Schema-Cache nicht vorhanden.
 - `materials.canonical_version`: HTTP 400 / PostgreSQL `42703`, Spalte fehlt.
 - Konfigurierter Service-Role-Schlüssel: HTTP 401, `Invalid API key`.
 
-Es wurde **keine Live-Migration durchgeführt**. Ergebnisse werden derzeit ausschließlich lokal gespeichert. [Live-Befund](evidence/toom-schema-20261005.json).
+Es wurde **keine Live-Migration durchgeführt**. Der toom-Stundenlauf funktioniert unabhängig davon über den veröffentlichten Preis-Snapshot. [Historischer Schema-Befund](evidence/toom-schema-20261005.json).
 
 Mit Owner-Zugang im SQL Editor in dieser Reihenfolge ausführen:
 
@@ -65,8 +67,14 @@ Lesen oder Schreiben in Supabase darf scheitern, ohne den lokalen gültigen Prei
 
 `.github/workflows/toom-refresh.yml` ist für jede Stunde zur Minute 17 UTC konfiguriert, zusätzlich manuell auslösbar. Er installiert Chromium, lädt den letzten Cache derselben Branch, prüft bekannte URLs und archiviert Cache/Historie sowie Diagnosebericht auch bei einzelnen Abruffehlern. Nach einer fehlgeschlagenen Cache-Wiederherstellung wird kein unvollständiger Ersatz archiviert. GitHub kann geplante Läufe verzögert starten.
 
-Der Workflow ist **lokal vorbereitet, nicht aktiviert**: Es wurde nichts gepusht oder deployt. Nach ausdrücklicher Freigabe muss er auf die Standardbranch gelangen und GitHub Actions aktiviert sein. Für gemeinsame Webapp-Preise sind die oben genannten gültigen Supabase-Secrets nötig. Ein GitHub-Artefakt versorgt nur spätere Workflow-Läufe; es aktualisiert weder die lokale Datei dieses PCs noch eine Vercel-Datei automatisch. Ohne Supabase braucht ein eigener dauerhaft laufender Worker dasselbe beschreibbare Volume wie der Webserver. Hier wurde kein zusätzlicher Windows-/Codex-Stundenjob angelegt.
+Der Workflow ist auf `main` aktiv. Er benötigt `contents: write`, um nach der Prüfung ausschließlich den öffentlichen toom-Snapshot auf `main` zu veröffentlichen. Der automatische Commit verwendet den GitHub-Actions-Bot; konkurrierende Stundenläufe werden serialisiert. Vor dem Push wird die Hauptbranch per Rebase aktualisiert. Das Artefakt erhält weiterhin Cache und Historie für den folgenden Lauf. Ohne Supabase-Secrets wird keine Datenbankverbindung versucht; die Website erhält Preise über den veröffentlichten Snapshot. Wenn Supabase ausdrücklich konfiguriert ist und fehlschlägt, bleiben Schema-/Schreibfehler sichtbar. Hier wurde kein zusätzlicher Windows-/Codex-Stundenjob angelegt.
+
+## Fehlerbehebung vom 21.10.2026
+
+Der fehlgeschlagene Lauf 39528606085 prüfte 32 Artikel; 27 wurden aktualisiert, fünf durch den Matcher abgelehnt. Ursachen: Händler-Schreibweise „Perflix“, Stärke „200 µ“, ein nicht erkannter variabler sd-Bereich sowie fehlende Chemie-/Genius-Gun-Angaben im kurzen Seitentitel. Der Reader liest nun die eigenen technischen Attribute und ergänzt fehlende technische Fakten nur bei exakt gebundener SKU, Marke und weiterhin verlinktem, geprüftem Datenblatt. Widersprechende neue Angaben bleiben abgelehnt. Preise und Packungsgrößen kommen weiterhin ausschließlich aus dem aktuellen Händlerabruf. Der gezielte Live-Nachtest ergab fünf erfolgreiche Prüfungen ohne Fehler. Perlfix 25 kg hatte dabei den aktuellen Gesamtpreis 10,99 €; die manuelle Screenshot-Beobachtung 10,49 € bleibt unverändert gespeichert.
+
+Die Discovery nutzt kurze kanonische Suchbegriffe. Next.js wurde auf den Sicherheits-Patch 16.3.8 aktualisiert; `sharp` und `source-map-js` auf gepatchte Versionen. Die Actions verwenden aktuelle Runtime-Versionen und Ubuntu 24.04 statt einer während des laufenden Betriebs wechselnden `ubuntu-latest`-Version.
 
 ## Prüfungen
 
-[Ergebnisse pro Material](TOOM-ABNAHME.md). 247 Tests, ESLint, TypeScript und `npm run build` bestanden. Die gebaute Anwendung wird zusätzlich per HTTP und mit den produktiven Kartenkomponenten geprüft. Die Chromium-Abnahme betrifft die echte toom-Produktseite; eine visuelle Neuabnahme der unveränderten gesamten Webapp ist damit nicht behauptet.
+`npm run verify` prüft ESLint, sämtliche Regressionstests einschließlich der produktiven Kartenkomponenten und den Produktionsbuild. `npm audit --omit=dev` prüft die ausgelieferten Abhängigkeiten. Die technischen Reader-Korrekturen und die Veröffentlichung haben zusätzliche positive und negative Regressionstests. [Historische Ergebnisse pro Material](TOOM-ABNAHME.md) dokumentieren den ersten Stand vom 06.10.; sie sind keine aktuelle Abdeckungszählung.

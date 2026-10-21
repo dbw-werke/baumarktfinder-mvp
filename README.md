@@ -8,7 +8,7 @@ Der neue Katalogmodus kann bei Google-Ausfall auf eine ausdrücklich ausgelöste
 
 ## Funktionsumfang
 
-- **toom-Stundenrefresh vom 06.10.2026:** gespeicherte Produkt-URLs, aktive Aktions-/Packungspreise, Historie und separater Chromium-Fallback. 13 Produkte lokal prüfbar; stündlicher GitHub-Workflow vorbereitet, noch nicht aktiv. [Einrichtung](docs/TOOM-UPDATER.md) · [Prüfergebnisse und Supabase-Befund](docs/TOOM-ABNAHME.md).
+- **toom-Stundenrefresh:** aktive Packungspreise anhand gespeicherter Produkt-URLs, Historie und separater Chromium-Fallback. Der GitHub-Workflow veröffentlicht geprüfte Preise für Vercel auch ohne Supabase. [Einrichtung, Fehlerbehebung und aktueller Datenbank-Befund](docs/TOOM-UPDATER.md).
 
 - **OBI-Fortsetzung vom 04.10.2026:** freie Materialsuche ohne neue kanonische Datensätze, persistenter geprüfter Cache und separater Chromium-Updater als HTTP-Fallback. [Einrichtung](docs/OBI-UPDATER.md) · [Echte Abrufe und verbleibende Grenzen](docs/OBI-ABNAHME.md).
 

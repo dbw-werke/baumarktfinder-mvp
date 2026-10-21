@@ -198,7 +198,7 @@ export function extractSpecifications(product, standard) {
 }
 
 const packageAxes = { kg: ["weight_kg"], l: ["volume_l"], m: ["length_mm"], m2: ["length_mm", "width_mm", "area_m2", "pieces"], piece: ["pieces"] };
-const colors = /\b(weiss|white|grau|gray|grey|schwarz|black|transparent|beige|braun|brown)\b/;
+const colors = /\b(weiss|white|grau|gray|grey|schwarz|black|transparent|beige|braun|brown|champagner)\b/;
 const colorName = (value) => ({ white: "weiss", gray: "grau", grey: "grau", black: "schwarz", brown: "braun" }[value] || value);
 function packageQuantity(values, standard) {
   return { kg: values.weight_kg, l: values.volume_l, m: values.length_mm / 1000 * (values.pieces || 1),
@@ -289,6 +289,7 @@ export function evaluateProductMatch(product, standard, { exactPackage = false }
   diagnostic.packageDistance = distance;
   diagnostic.observedSpecs = { ...diagnostic.observedSpecs, ...values, type: standard.specs.type,
     ...(standard.specs.sd_m != null ? { sd_m: Number(sd) } : {}),
+    ...(standard.specs.sd_min_m != null ? { sd_min_m: Number(product.observedSpecs.sd_min_m), sd_max_m: Number(product.observedSpecs.sd_max_m) } : {}),
     ...(standard.specs.thermal_conductivity != null ? { thermal_conductivity: Number(thermal) } : {}) };
   return diagnostic;
 }

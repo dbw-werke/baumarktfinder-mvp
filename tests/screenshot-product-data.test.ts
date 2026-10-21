@@ -62,7 +62,14 @@ test("VARIO resolves only to 25 kg and has no invented price; retired quartz and
     assert.ok(target);
     assert.equal(target.slug, "rigips-vario-25kg-v1");
     assert.equal(target.package_quantity, 25);
-    for (const store of stores) assert.equal(selection(query, store).match, "unavailable");
+    for (const store of stores) {
+      const expected = store === "bauhaus" ? 36.05 : store === "obi" ? 29.99 : null;
+      const result = selection(query, store);
+      if (expected !== null) {
+        assert.equal(result.price?.price, expected);
+        assert.equal(result.price?.package_quantity, 25);
+      } else assert.equal(result.match, "unavailable");
+    }
   }
   assert.ok(catalog.filter(row => row.material.product_family === "vario").every(row => row.material.package_quantity === 25));
   assert.equal(catalog.some(row => row.material.slug === "haftgrund-quarzsand-5l-v1"), false);

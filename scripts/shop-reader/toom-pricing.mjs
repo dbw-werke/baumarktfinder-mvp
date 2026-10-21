@@ -1,5 +1,6 @@
 /** Pure toom identity and active selling-price parsers. */
 import { extractToomProductState } from './retailer-state.mjs';
+import { supplementToomTechnicalEvidence } from './toom-technical-evidence.mjs';
 const HOSTS = ['toom.de', 'www.toom.de'];
 const clean = value => String(value || '').replace(/\s+/g, ' ').trim();
 const decode = value => String(value || '').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ');
@@ -25,7 +26,8 @@ export function readToomIdentity(html, url, now = new Date()) {
     const encoded = html.match(/<div\b(?=[^>]*\bid="root")(?=[^>]*\bdata-props="([^"]+)")[^>]*>/)?.[1];
     const data = JSON.parse(decodeURIComponent(decode(encoded))).content;
     if (toomProductUrl(data?.meta_data?.canonical_url) !== valid || String(data?.basic_info?.sku) !== valid.split('/').at(-1)) return null;
-    const product = extractToomProductState(html, url, now, { identityOnly: true })[0];
+    const extracted = extractToomProductState(html, url, now, { identityOnly: true })[0];
+    const product = extracted && supplementToomTechnicalEvidence(extracted, data);
     if (!product) return null;
     const ownText = [product.name, ...(product.attributes || []).map(a => `${a.name}: ${a.value}`)].join(' ');
     const profile = ownText.match(/\b(CD|CW|UW|UD)[ -]*(?:Profil[e]?\s*)?(\d{2})\s*\/\s*(\d{2})\b/i);
@@ -107,7 +109,7 @@ export function parseToomSellingState(identity, state, now = new Date(), marketI
     ...(perUnit ? { declaredUnitPrice: perUnit.price, declaredUnit } : {}),
     // A public online-channel price does not prove stock in the customer's branch.
     availability: null, priceScope: 'chain', retrievedAt: now.toISOString(), verificationStatus: 'verified', retrievalMethod: 'direct',
-    metadata: { delivery_state: delivery.state || null, delivery_available: delivery.state === 'available',
+    metadata: { ...identity.product.metadata, delivery_state: delivery.state || null, delivery_available: delivery.state === 'available',
       observed_market_id: String(marketId), price_channel: 'deliver', pickup_state: state.reserve?.state || null },
   }], reason: null };
 }
@@ -132,7 +134,7 @@ export function parseToomBuybox(identity, box, now = new Date()) {
   return { products: [{ ...identity.product, ...info, price: total.price, oldPrice, priceBasis: 'package', priceSource: 'retailer-product-state',
     priceBasisEvidence: 'toom-own-visible-buybox-current', ...(perUnit ? { declaredUnitPrice: perUnit.price, declaredUnit: perUnit.unit } : {}),
     availability: null, priceScope: 'chain', retrievedAt: now.toISOString(), verificationStatus: 'verified', retrievalMethod: 'playwright',
-    metadata: { observed_market: box.market || null, delivery_state: box.deliveryState || null, price_channel: 'visible-buybox' },
+    metadata: { ...identity.product.metadata, observed_market: box.market || null, delivery_state: box.deliveryState || null, price_channel: 'visible-buybox' },
   }], reason: null };
 }
 

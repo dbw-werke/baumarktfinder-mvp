@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-20T16:29:36.958Z",
+  "generated_at": "2026-10-21T12:05:08.703Z",
   "canonical_material_ids": {
     "gipskarton-standard-12-5-1200-600-v1": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
     "gipskarton-standard-12-5-2000-1250-v1": "2d750efa-4af5-e9b4-5416-89678194f058",
@@ -3570,6 +3570,70 @@
         "type": "sanitaer-silikon-acetat",
         "volume_l": 0.31,
         "color": "weiss"
+      }
+    },
+    {
+      "material_id": "f0652db9-5ee1-f9b4-4250-3afb8a574424",
+      "canonical_slug": "rigips-vario-25kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "fugenspachtel",
+        "weight_kg": 25,
+        "required_terms": [
+          "rigips",
+          "vario"
+        ],
+        "excluded_terms": [
+          "hydro"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Rigips Fugenspachtel Vario 25 kg",
+      "product_url": "https://www.bauhaus.info/trockenbauspachtel/rigips-fugenspachtel-vario/p/29354711",
+      "price": 36.05,
+      "unit_price": 1.44,
+      "unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-21T12:05:08.703Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 25
+      }
+    },
+    {
+      "material_id": "f0652db9-5ee1-f9b4-4250-3afb8a574424",
+      "canonical_slug": "rigips-vario-25kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "fugenspachtel",
+        "weight_kg": 25,
+        "required_terms": [
+          "rigips",
+          "vario"
+        ],
+        "excluded_terms": [
+          "hydro"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Rigips Fugenspachtel Vario Unifüll 25 kg",
+      "product_url": "https://www.obi.de/p/9643644/rigips-fugenspachtel-vario-unifuell-25-kg",
+      "price": 29.99,
+      "unit_price": 1.2,
+      "unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-21T12:05:08.703Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "weight_kg": 25
       }
     }
   ]

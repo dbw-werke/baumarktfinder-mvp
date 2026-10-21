@@ -2,6 +2,7 @@
 import { chromium } from 'playwright';
 import { createPoliteFetcher, robotsAllows } from './http.mjs';
 import { toomProductUrl, toomHardBlock, readToomIdentity, parseToomSellingState, parseToomBuybox } from './toom-pricing.mjs';
+import { buildStandard } from './product-standardizer.mjs';
 export { toomProductUrl, toomHardBlock, readToomIdentity, parseToomSellingState, parseToomBuybox } from './toom-pricing.mjs';
 const HOSTS = ['toom.de', 'www.toom.de'], API_HOSTS = ['api.toom.de'];
 const clean = value => String(value || '').replace(/\s+/g, ' ').trim();
@@ -106,7 +107,7 @@ export function createToomReader({ http = createPoliteFetcher({ minDelayMs: 2500
     return browserProduct(url, directReason);
   }
   return { readProduct, async search(query) {
-    const term = typeof query === 'string' ? query : query?.name;
+    const term = typeof query === 'string' ? query : buildStandard(query)?.search || query?.store_search_term || query?.name;
     if (!clean(term)) return failure('invalid_query');
     if (blocked) return failure(blocked);
     const searchUrl = `https://toom.de/s/${encodeURIComponent(clean(term))}/`, errors = [], products = [];

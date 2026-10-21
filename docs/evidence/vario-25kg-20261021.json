@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-21T12:05:08.703Z",
+  "source": "official-retailer-web-reader",
+  "rows": [
+    {
+      "material_slug": "rigips-vario-25kg-v1",
+      "store_id": "bauhaus",
+      "product_name": "Rigips Fugenspachtel Vario 25 kg",
+      "price": 36.05,
+      "product_url": "https://www.bauhaus.info/trockenbauspachtel/rigips-fugenspachtel-vario/p/29354711",
+      "checked_at": "2026-10-21T12:05:08.703Z",
+      "base_unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "price_basis": "package",
+      "observed_specs": {
+        "weight_kg": 25
+      },
+      "verification_note": "Official retailer product page read 2026-10-21 via web reader: exact 25 kg sack total incl. VAT; EAN 4002806613046 shared; no 5/8 kg or bulk price. manual_verified."
+    },
+    {
+      "material_slug": "rigips-vario-25kg-v1",
+      "store_id": "obi",
+      "product_name": "Rigips Fugenspachtel Vario Unifüll 25 kg",
+      "price": 29.99,
+      "product_url": "https://www.obi.de/p/9643644/rigips-fugenspachtel-vario-unifuell-25-kg",
+      "checked_at": "2026-10-21T12:05:08.703Z",
+      "base_unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "price_basis": "package",
+      "observed_specs": {
+        "weight_kg": 25
+      },
+      "verification_note": "Official retailer product page read 2026-10-21 via web reader: exact 25 kg sack total incl. VAT; EAN 4002806613046 shared; no 5/8 kg or bulk price. manual_verified."
+    }
+  ]
+}
