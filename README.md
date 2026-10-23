@@ -155,7 +155,7 @@ Push und Deployment sind Teil des aktuellen Auftrags und wurden bereits in früh
 
 ## Aufbau
 
-Aktueller Stand: [Katalog, Fortschritt und offene Voraussetzungen](docs/PROGRESS-20261023.md), [SEO und optionale Cloudflare-Statistik](docs/SEO-ANALYTICS.md). Die gemeinsame Suchwortstrategie liegt in `src/lib/materialSearch.mjs`; sichtbare Kurznamen ändern keine technischen Produktdefinitionen. Händlerergebnisse werden vor jeder Preisübernahme weiterhin geprüft.
+Aktueller Stand: [Katalog, Fortschritt und offene Voraussetzungen](docs/PROGRESS-20261023.md), [SEO und Umami-Besucherstatistik](docs/SEO-ANALYTICS.md). Die gemeinsame Suchwortstrategie liegt in `src/lib/materialSearch.mjs`; sichtbare Kurznamen ändern keine technischen Produktdefinitionen. Händlerergebnisse werden vor jeder Preisübernahme weiterhin geprüft.
 
 ```text
 src/components/          Suchformular, Vorschläge, Ergebniskarten

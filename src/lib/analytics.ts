@@ -1,9 +1,17 @@
-/** Cloudflare's public site token, never an API credential. No configured token means no tracking. */
-export function cloudflareAnalyticsConfig(env: NodeJS.ProcessEnv = process.env) {
-  const token = env.CLOUDFLARE_WEB_ANALYTICS_TOKEN?.trim();
-  if (env.NODE_ENV !== "production" || (env.VERCEL_ENV && env.VERCEL_ENV !== "production")
-    || !token || !/^[a-f0-9]{32}$/i.test(token)) return null;
-  return { src: "https://static.cloudflareinsights.com/beacon.min.js", beacon: JSON.stringify({ token }) };
+/** Public website ID supplied by the owner; previews and local development do not track. */
+export function umamiAnalyticsConfig(env: NodeJS.ProcessEnv = process.env) {
+  if (env.NODE_ENV !== "production" || (env.VERCEL_ENV && env.VERCEL_ENV !== "production")) return null;
+  return {
+    id: "umami-analytics",
+    src: "https://cloud.umami.is/script.js",
+    strategy: "afterInteractive" as const,
+    defer: true,
+    "data-website-id": "e8e49b5e-7925-4039-97d5-37e646e0c181",
+    "data-domains": "baumarktfinder-app.de",
+    "data-exclude-search": "true",
+    "data-exclude-hash": "true",
+    "data-do-not-track": "true",
+  };
 }
 
 /** URL-prefix ownership verification works without changing DNS. */
