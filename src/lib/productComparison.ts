@@ -3,10 +3,12 @@ import snapshot from "../data/verified-catalog-snapshot.json";
 import type { BaseUnit } from "../services/materialSuggestions";
 import { validateStorePrice, type StorePrice } from "../services/prices";
 import { getVariantDistance, hasComparableSpecification, productPurposeConflict } from "./productCompatibility.mjs";
+import { isRequestedScreenshotPrice, preferPrice, requestedProduct } from "./requestedProducts";
 
 export { getVariantDistance } from "./productCompatibility.mjs";
 
 export type CanonicalMaterial = {
+  slug?: string;
   id: string;
   name: string;
   product_family: string;
@@ -24,6 +26,7 @@ export type ChainOfferSelection = {
   preferredSpecification: string;
   explanation: string;
   specificationWarning?: string;
+  requestedProduct?: boolean;
 };
 
 /** Canonical definitions and their seed IDs only; this does not generate offers. */
@@ -55,6 +58,7 @@ export function formatMaterialSpecification(material: CanonicalMaterial): string
   if (pieces > 1 && material.base_unit !== "piece") parts[parts.length - 1] += " gesamt";
   if (material.product_family === "dampfbremse") parts.push(numeric("sd_m") ? `sd ${number(numeric("sd_m")!)} m`
     : `sd ${number(numeric("sd_min_m")!)}–${number(numeric("sd_max_m")!)} m · feuchtevariabel`);
+  if (Array.isArray(specs.grits)) parts.push(`K${specs.grits.join("/")}`);
   return parts.join(" · ");
 }
 
@@ -92,18 +96,33 @@ export function selectChainOffer(target: CanonicalMaterial, offers: readonly Sto
     const price = validateStorePrice({ ...offer, verified: true }, material.id, [chain]);
     if (!price) continue;
     const previous = latest.get(material.id);
-    if (!previous || Date.parse(price.checked_at) > Date.parse(previous.checked_at)
-      || (price.checked_at === previous.checked_at && price.product_url.localeCompare(previous.product_url) < 0)) latest.set(material.id, price);
+    if (preferPrice(price, previous)
+      || (previous && price.checked_at === previous.checked_at && price.product_url.localeCompare(previous.product_url) < 0)) latest.set(material.id, price);
+  }
+  const requested = requestedProduct(preferred.id, chain);
+  const requestedPrice = requested && latest.get(requested.material_id);
+  const requestedMaterial = requested && byId.get(requested.material_id);
+  if (requested && requestedPrice && requestedMaterial && isRequestedScreenshotPrice(requestedPrice)
+    && requestedMaterial.product_family === preferred.product_family) {
+    return { price: requestedPrice, match: requestedMaterial.id === preferred.id ? "exact" : "alternative", requestedProduct: true,
+      actualSpecification: formatMaterialSpecification(requestedMaterial), preferredSpecification,
+      explanation: "Ausgewähltes Produkt", specificationWarning: requested.note || undefined };
   }
   const exact = latest.get(preferred.id);
   if (exact) return { price: exact, match: "exact", actualSpecification: formatMaterialSpecification(preferred), preferredSpecification, explanation: "Wunschgröße" };
 
   const alternatives = [...latest.values()].flatMap((price) => {
     const material = byId.get(price.material_id)!;
-    // Legacy CD-hanger metadata omitted the section. Only explicit product evidence bridges it.
+    // Legacy CD-hanger metadata omitted the section. The user's verified TOOM SKU
+    // remains the same product when the hourly reader returns its shorter title.
+    // Evidence: docs/evidence/profiles-bands-hangers-20261017.json (3153733).
+    const verifiedToomHanger = chain === "toom" && material.specs.length_mm === 125 && material.package_quantity === 1
+      && /\/p\/direktabhaenger-fuer-cd-profile\/3153733\/?$/.test(price.product_url)
+      && /Direktabhänger für CD-Profile/i.test(price.product_name)
+      && !/Nonius|\b(?:CW|UW|UD)\b|\bCD\s*(?!60\b)\d/i.test(price.product_name);
     const confirmedCdSection = preferred.product_family === "direktabhaenger" && material.product_family === "direktabhaenger"
       && preferred.specs.profile === "cd60/27" && material.specs.profile === "cd"
-      && /\bcd(?:[ -]?profil[e]?)?\s*60\s*(?:mm)?\s*\/\s*27\s*(?:mm)?\b/i.test(price.product_name);
+      && (/\bcd(?:[ -]?profil[e]?)?\s*60\s*(?:mm)?\s*\/\s*27\s*(?:mm)?\b/i.test(price.product_name) || verifiedToomHanger);
     const distance = getVariantDistance(preferred, confirmedCdSection ? { ...material, specs: { ...material.specs, profile: "cd60/27" } } : material);
     if (distance !== null) return [{ price, material, distance, specificationWarning: preferred.product_family === "dampfbremse"
       && preferred.specs.sd_m && material.specs.sd_min_m ? "Feuchtevariable Alternative · Eignung für den Aufbau prüfen" : undefined as string | undefined }];

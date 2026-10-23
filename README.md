@@ -2,7 +2,7 @@
 
 Webapp für die nächsten Baumärkte zu einer deutschen Adresse und die erfassten Materialien ihrer Händler. Material ist optional: ohne Eingabe erscheint der gesamte verfügbare geprüfte Katalog der nahen Händler. Bestehendes Next.js-Projekt, bestehende Bildwelt und rot-weiße Gestaltung wurden weiterverwendet.
 
-**Stand der Abnahme:** Der Code lässt sich bauen und lokal prüfen. Die vorhandene Supabase-Instanz benötigt die mitgelieferte Migration und den Seed. Der vorhandene Google-Schlüssel weist lokale Places-Anfragen wegen der HTTP-Referrer-Beschränkung zurück. Daher ist die App noch nicht als live vollständig abgenommen zu betrachten. Details und Händlergrenzen stehen in [docs/ABNAHME.md](docs/ABNAHME.md).
+**Stand vom 22.10.2026:** Die bestehende Anwendung ist unter [baumarktfinder-app.de](https://baumarktfinder-app.de) erreichbar. Der lokale Ersatzkatalog und die veröffentlichten toom-Preise funktionieren unabhängig von Supabase. Die konfigurierte zentrale Datenbank ist derzeit nicht erreichbar; Betreiberinformationen, öffentliche Rechtstexte und die abschließende Kartenanbieter-Abnahme fehlen. Der kommerzielle Start ist deshalb noch nicht freigegeben. Aktuelle Befunde und benötigte Angaben stehen in [docs/COMMERCIAL-LAUNCH-REVIEW.md](docs/COMMERCIAL-LAUNCH-REVIEW.md); ältere Abnahmen sind unter [docs/ABNAHME.md](docs/ABNAHME.md) dokumentiert.
 
 Der neue Katalogmodus kann bei Google-Ausfall auf eine ausdrücklich ausgelöste OpenStreetMap-Suche zurückgreifen. Für öffentliche Nominatim-Server gelten strenge Anwendungsgrenzen: keine Autovervollständigung, höchstens eine Anfrage pro Sekunde insgesamt und nur ein kleiner einzelner Serverprozess. Vor öffentlichem Betrieb [Konfiguration und offizielle Nutzungsregeln](docs/OSM.md) beachten; der kostenlose Dienst bietet keine Verfügbarkeitsgarantie. Bei fehlender Preisdatenbank werden ausschließlich tatsächlich überprüfte, mit Originaldatum gespeicherte Händlerbeobachtungen angezeigt. Ein vollständiges Filialsortiment oder Lagerbestand ist damit nicht behauptet.
 
@@ -16,7 +16,7 @@ Der neue Katalogmodus kann bei Google-Ausfall auf eine ausdrücklich ausgelöste
 - OBI, BAUHAUS, HORNBACH, toom, hagebau, Globus Baumarkt und HELLWEG im Umkreis von 35 km; maximal 15 physische Märkte.
 - Serviceabteilungen werden ausgefiltert. Dubletten werden anhand von Kette, Adresse und räumlicher Nähe bereinigt, bevor Routen angefragt werden.
 - Google Routes mit Verkehrslage; bei Ausfall bleiben Märkte und Preise sichtbar. Luftlinie wird ausdrücklich als solche bezeichnet.
-- 36 konkrete Materialvarianten mit Synonymen, Schreibfehlertoleranz und überprüfbaren Packungs- und Maßangaben. Kompakte Größen wie „5L“ und „30kg“ funktionieren; unbekannte Größen werden nicht geraten.
+- Kanonische Materialvarianten mit Synonymen, Schreibfehlertoleranz und überprüfbaren Packungs- und Maßangaben. Kompakte Größen wie „5L“ und „30kg“ funktionieren; unbekannte Größen werden nicht geraten. `npm run prices:audit` zählt den aktuellen aktiven Katalog und dessen Preisabdeckung.
 - Bei Materialsuche erhält jede physische Filiale eine eigene Vergleichskarte. Je Kette zuerst die Wunschgröße, sonst die nächste geprüfte kompatible Variante unter ihrer eigenen Material-ID. Tatsächliche Größe und großer, zentrierter Packungspreis bleiben unverändert; der Grundpreis steht kleiner darunter. Fehlende Angebote bleiben sichtbar als „Preis nicht verfügbar“.
 - Suche nur mit Adresse bleibt möglich: Materialkatalog mit Freitext-/Händlerfilter und nächster Filiale pro Angebot. Preisreihenfolge im Katalog ist nur innerhalb derselben Material-ID verfügbar.
 - Separater Preis-Worker: Produkt finden, Merkmale prüfen, echten Packungspreis lesen und atomar speichern. Die Kundensuche verwendet geprüfte Datenbank-/Cachewerte. Die freie OBI-Suche kann serverseitig begrenzt strukturierte Daten nachladen; Chromium läuft ausschließlich in separaten Updatern.
@@ -58,10 +58,7 @@ Der bestehende alternative Name `NEXT_PUBLIC_SUPABASE_ANON_KEY` wird ebenfalls u
 
 Die Migration ist für die geprüfte Bestandsstruktur mit UUID-Material-IDs vorbereitet und lässt sich auch auf einer frischen Supabase-Datenbank ausführen. Vor Anwendung auf einer anderen Bestandsdatenbank deren Struktur prüfen. Eine übliche Datenbanksicherung anlegen.
 
-Im Supabase SQL Editor mit dem Datenbank-Owner nacheinander ausführen:
-
-1. `supabase/migrations/202609220001_canonical_prices.sql`
-2. `supabase/seed.sql`
+Im Supabase SQL Editor mit dem Datenbank-Owner die noch nicht angewendeten Dateien aus `supabase/migrations/` in aufsteigender Dateinamen-Reihenfolge ausführen, anschließend `supabase/seed.sql`. Dazu gehören auch die Erweiterungen für OBI und toom sowie spätere Katalogbereinigungen.
 
 Alternativ dieselben Dateien mit `psql -v ON_ERROR_STOP=1` auf einer **lokal konfigurierten Owner-Verbindung** ausführen. Die vorhandenen REST-/Service-Role-Schlüssel ersetzen keine SQL-Verbindung und erlauben keine Schema-Migration.
 
@@ -105,7 +102,7 @@ Verwendet werden die JavaScript-Bibliotheken `places`, `geocoding` und `routes` 
 
 Den Browser-Schlüssel auf **Websites / HTTP-Referrer** und die tatsächlich benötigten APIs beschränken. Die exakten genutzten Origins freigeben, etwa `http://localhost:3000/*` und `https://deine-domain.de/*`; temporäre Test- und Vercel-Preview-Domains nur gezielt. `localhost` und `127.0.0.1` sind verschiedene Hosts. Referrer-Einschränkungen nicht zur Fehlerbehebung entfernen. Kontingente und Budgetbenachrichtigungen passend zur Nutzung festlegen.
 
-Google-Schlüssel sind clientseitig sichtbar. Die Anwendung blendet Google- und ggf. Drittanbieterattribution ein. Es wird keine dauerhafte lokale Kopie von Google-Standortdaten angelegt. Google wird für Adressvorschläge nach Eingabe einer Adresse geladen. Geolocation fragt die Browserfreigabe ab; Ablehnung und Zeitüberschreitung sperren das Formular nicht dauerhaft.
+Google-Schlüssel sind clientseitig sichtbar. Die Anwendung blendet Google- und ggf. Drittanbieterattribution ein. Es wird keine dauerhafte lokale Kopie von Google-Standortdaten angelegt. Das Adresswidget lädt Google erst beim aktiven Fokus im Adressfeld; ein Anbieterhinweis steht direkt am Feld. Eine ausdrücklich gestartete Marktsuche kann ebenfalls Google laden. Das verzögerte Laden ist keine vollständige Einwilligungs- oder Datenschutzlösung: Die tatsächlichen Datenflüsse und Rechtsgrundlagen müssen vor dem kommerziellen Start geklärt und erklärt werden. Geolocation fragt die Browserfreigabe ab; Ablehnung und Zeitüberschreitung sperren das Formular nicht dauerhaft.
 
 Offizielle Referenzen: [Google-Schlüsselschutz](https://developers.google.com/maps/api-security-best-practices), [Places](https://developers.google.com/maps/documentation/javascript/reference/place), [RouteMatrix](https://developers.google.com/maps/documentation/javascript/reference/route-matrix).
 
@@ -124,7 +121,7 @@ npm run prices:snapshot -- --stores=hornbach --all-materials
 
 Importe sind standardmäßig schreibfreie Prüfungen. Ein Worker-Ausfall löscht keinen Preis. Ein älterer Preis bleibt mit seinem ursprünglichen Prüfzeitpunkt sichtbar. Automatische Erreichbarkeit hängt vom Händler ab; CAPTCHA, Sperren und robots-Vorgaben werden nicht umgangen. Die manuellen Zuordnungen und Preise werden mit derselben kanonischen Prüfung und eigener Quellenkennzeichnung gespeichert.
 
-`prices:snapshot` aktualisiert den öffentlichen Ersatzkatalog in `src/data/verified-catalog-snapshot.json` ohne Datenbankzugang. Nur tatsächlich abgerufene, unter ihrer eigenen kanonischen Variante geprüfte Angebote gelangen hinein; erfolglose Abrufe erhalten alte Werte und Zeitstempel. Stand 03.10.2026: zusammen mit den manuellen Daten 59 unterschiedliche Angebote aus sechs Ketten, 34 Materialvarianten. [Genaue Abdeckung und Lücken](docs/PREISABDECKUNG.md). Die Kundensuche kombiniert Datenbank und gespeicherte Beobachtungen je Material/Kette; der neueste gültige Prüfzeitpunkt gewinnt. Der Snapshot wird mit der App ausgeliefert und benötigt nach Änderungen einen neuen Produktionsbuild. Im laufenden Regelbetrieb übernimmt der separate Datenbank-Worker die Preise; der gebündelte Katalog aktualisiert sich nicht selbst.
+`prices:snapshot` aktualisiert den öffentlichen Ersatzkatalog in `src/data/verified-catalog-snapshot.json` ohne Datenbankzugang. Nur tatsächlich abgerufene, unter ihrer eigenen kanonischen Variante geprüfte Angebote gelangen hinein; erfolglose Abrufe erhalten alte Werte und Zeitstempel. `npm run prices:audit` liefert die aktuelle Abdeckung. Die Kundensuche kombiniert Datenbank und gespeicherte Beobachtungen je Material/Kette; normalerweise gewinnt der neueste gültige Prüfzeitpunkt. Ausdrücklich festgelegte Screenshotangebote haben mit ihrem Originaldatum Vorrang; ihre Regeln stehen in [docs/SCREENSHOT-KORREKTUREN-20261021.md](docs/SCREENSHOT-KORREKTUREN-20261021.md). Der Snapshot wird mit der App ausgeliefert und benötigt nach Änderungen einen neuen Produktionsbuild. Der separate Datenbank-Worker benötigt eine erreichbare Supabase-Instanz; die unabhängige Veröffentlichung aktueller toom-Beobachtungen übernimmt der Stundenworkflow.
 
 `.github/workflows/price-update.yml` führt die Aktualisierung täglich um **03:23 UTC** aus und erlaubt einen manuellen Start, standardmäßig als Dry Run. In GitHub Actions die Secrets `NEXT_PUBLIC_SUPABASE_URL` und `SUPABASE_SERVICE_ROLE_KEY` setzen. Der Worker läuft außerhalb der Vercel-Webanfragen; lange Abrufe blockieren keine Kundensuche. Der Bericht wird als Workflow-Artefakt gespeichert. Null geprüfte Angebote oder Speicherfehler markieren den Lauf als fehlgeschlagen; Teilprobleme je Händler stehen im Bericht.
 
@@ -150,13 +147,15 @@ Das optionale Testwerkzeug `@electric-sql/pglite` separat installieren; es ist k
 
 ## GitHub und Vercel
 
-Diese Projektwurzel in ein GitHub-Repository übernehmen. `.env.local`, `.git`, `.next`, `node_modules` und `work` gehören nicht in eine Quellcode-ZIP. Vorhandene persönliche Änderungen wurden nicht zurückgesetzt.
+Das bestehende Repository ist [dbw-werke/baumarktfinder-mvp](https://github.com/dbw-werke/baumarktfinder-mvp), der Produktionsbranch ist `main`. Die Website läuft unter [baumarktfinder-app.de](https://baumarktfinder-app.de). `.env.local`, `.next`, `node_modules` und `work` gehören nicht ins Repository.
 
-In Vercel dieses Repository als Next.js-Projekt importieren. Falls das Repository den übergeordneten Ordner enthält, `frontend` als Root Directory setzen; bei der mitgelieferten ZIP ist der entpackte Projektordner selbst die Wurzel. Node.js 24, Install `npm ci`, Build `npm run build`; das Next.js-Frameworkpreset verwenden. Die drei öffentlichen Umgebungsvariablen vor dem Build setzen, Supabase-Migration/Seed anwenden und den Google-Schlüssel für die tatsächliche Domain freigeben. Keine kundenseitigen Schreibrechte vergeben.
+Das vorhandene Vercel-Projekt verwendet diese Projektwurzel und das Next.js-Frameworkpreset: Node.js 24, Install `npm ci`, Build `npm run build`. Öffentliche Umgebungsvariablen vor dem Build setzen, Supabase-Migrationen/Seed anwenden und den Google-Schlüssel für die tatsächliche Domain freigeben. Keine kundenseitigen Schreibrechte vergeben.
 
-GitHub-Push und Vercel-Deployment sind ausdrücklich nicht beauftragt und wurden nicht ausgeführt. Betreiberangaben, Impressum und Datenschutzerklärung wurden nicht erfunden; sie müssen vor einer späteren öffentlichen Inbetriebnahme mit den tatsächlichen Betreiberinformationen ergänzt werden.
+Push und Deployment sind Teil des aktuellen Auftrags und wurden bereits in früheren Arbeitsständen durchgeführt. Ein erfolgreicher Push ersetzt nicht die Kontrolle von CI und Vercel für den jeweiligen neuen Commit. Betreiberangaben, Impressum und Datenschutzerklärung müssen mit den tatsächlichen Informationen ergänzt werden; es werden keine Platzhalter als fertige Rechtstexte veröffentlicht. Die noch offenen Startvoraussetzungen stehen im [kommerziellen Startbericht](docs/COMMERCIAL-LAUNCH-REVIEW.md).
 
 ## Aufbau
+
+Aktueller Stand: [Katalog, Fortschritt und offene Voraussetzungen](docs/PROGRESS-20261023.md), [SEO und optionale Cloudflare-Statistik](docs/SEO-ANALYTICS.md). Die gemeinsame Suchwortstrategie liegt in `src/lib/materialSearch.mjs`; sichtbare Kurznamen ändern keine technischen Produktdefinitionen. Händlerergebnisse werden vor jeder Preisübernahme weiterhin geprüft.
 
 ```text
 src/components/          Suchformular, Vorschläge, Ergebniskarten

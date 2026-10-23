@@ -1,5 +1,8 @@
 import { getVariantDistance } from "../../src/lib/productCompatibility.mjs";
+import { getMaterialSearchTerms } from "../../src/lib/materialSearch.mjs";
 import { buildStandard, chooseNormalizedProduct, getProductRejectionReason, evaluateProductMatch } from "./product-standardizer.mjs";
+
+const MAX_AUTOMATIC_QUERIES = 4;
 
 /** Alternatives are complete canonical definitions, never rewritten preferred specifications. */
 export function rankCanonicalVariants(preferred, catalog = []) {
@@ -20,11 +23,14 @@ export function rankCanonicalVariants(preferred, catalog = []) {
 export async function findStoreProduct(preferred, { storeId, repository, reader, canonicalMaterials = [], candidateUrls = [], candidateUrlsByMaterial = {} }) {
   const choices = [{ material: preferred, distance: 0 }, ...rankCanonicalVariants(preferred, canonicalMaterials)];
   const products = [], errors = [], attempts = [];
-  async function collect(material, standard, options) {
-    const attempt = { material_id: material.id, canonical_slug: material.slug, discovery: options.mappedUrl ? "mapping" : "automatic", reader_products_found: 0, products: [], rejection_reason: null };
+  // Scope this cache to one refresh. Different declared sizes often have the
+  // same short search term; their specifications still get checked separately.
+  const automaticResults = new Map(), directResults = new Map();
+  async function collect(material, standard, query, options) {
+    const attempt = { material_id: material.id, canonical_slug: material.slug, search_term: query, discovery: options.mappedUrl ? "mapping" : "automatic", reader_products_found: 0, products: [], rejection_reason: null };
     attempts.push(attempt);
     try {
-      const result = await reader.searchShop(storeId, standard.search, options);
+      const result = await reader.searchShop(storeId, query, options);
       attempt.discovery = result.discovery || attempt.discovery;
       attempt.reader_products_found = result.products?.length || 0;
       attempt.products = (result.products || []).map((product) => {
@@ -38,6 +44,10 @@ export async function findStoreProduct(preferred, { storeId, repository, reader,
       });
       if (!attempt.reader_products_found) attempt.rejection_reason = result.errors?.map((error) => error.code).join(",") || "no-structured-product-offer";
       products.push(...(result.products || [])); errors.push(...(result.errors || []));
+      // Some adapters report access restrictions as data instead of throwing.
+      // A synonym must never become a retry around a retailer's access policy.
+      const blocked = result.errors?.find(error => ["blocked", "robots-disallowed", "robots-unavailable"].includes(error.code));
+      if (blocked) throw Object.assign(new Error(blocked.code), { code: blocked.code });
       return result;
     } catch (error) {
       attempt.rejection_reason = error.code || "collection-error";
@@ -54,12 +64,25 @@ export async function findStoreProduct(preferred, { storeId, repository, reader,
     let product = chooseNormalizedProduct(products, standard);
     if (!product) {
       const mappedUrl = await repository.mapping(material.id, storeId);
-      let result = await collect(material, standard, { mappedUrl, candidateUrls: urls });
-      product = chooseNormalizedProduct(result.products, standard);
-      // A changed mapped SKU cannot prevent discovery of an exact replacement.
-      if (!product && mappedUrl && result.discovery === "mapping") {
-        result = await collect(material, standard, { candidateUrls: urls });
+      if (mappedUrl || urls.length) {
+        const key = JSON.stringify([mappedUrl || null, [...new Set(urls)].sort()]);
+        if (!directResults.has(key)) directResults.set(key, await collect(material, standard, standard.search, { mappedUrl, candidateUrls: urls }));
+        const result = directResults.get(key);
         product = chooseNormalizedProduct(result.products, standard);
+        // The reader already performed an automatic search when no supplied
+        // URL yielded a product. Do not issue that same search a second time.
+        if (result.discovery === "automatic") automaticResults.set(standard.search.toLocaleLowerCase("de"), result);
+      }
+      // Candidate URLs and stale mappings can return the wrong SKU. Continue
+      // without those URLs, using short synonyms, rather than accepting them.
+      for (const query of getMaterialSearchTerms(material)) {
+        if (product) break;
+        const key = query.toLocaleLowerCase("de");
+        if (!automaticResults.has(key)) {
+          if (automaticResults.size >= MAX_AUTOMATIC_QUERIES) continue;
+          automaticResults.set(key, await collect(material, standard, query, {}));
+        }
+        product = chooseNormalizedProduct(automaticResults.get(key).products, standard);
       }
     }
     if (product) return { actualMaterial: material, preferredMaterialId: preferred.id, product,

@@ -1,0 +1,113 @@
+[
+  {
+    "store_id": "hornbach",
+    "material_id": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+    "target_ids": [
+      "42039b00-d37b-5117-8c6a-568f6de25468",
+      "2605d0b0-4619-a02e-eaa7-fda5c33ab40c"
+    ],
+    "product_url": "https://www.hornbach.de/p/rautner-schleifpapier-alox-plus-fuer-handschleifer-schwingschleifer-230-x-280-mm-k-60-80-120-180-240-ungelocht-15-stueck/10501474/",
+    "price": 11.95,
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "package_quantity": 15,
+    "note": "15 Blatt · Körnungen 60/80/120/180/240",
+    "evidence": "docs/evidence/screenshot-corrections-20261021.json"
+  },
+  {
+    "store_id": "toom",
+    "material_id": "003defc8-10d9-c91c-206a-302684b9ce88",
+    "target_ids": [
+      "003defc8-10d9-c91c-206a-302684b9ce88"
+    ],
+    "product_url": "https://toom.de/p/ansatzgips-perflix-25-kg/3053281",
+    "price": 10.49,
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "package_quantity": 25,
+    "note": "",
+    "evidence": "docs/evidence/screenshot-corrections-20261021.json"
+  },
+  {
+    "store_id": "bauhaus",
+    "material_id": "658b9cf7-69e0-1144-5917-3ee8b8f4195d",
+    "target_ids": [
+      "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+      "658b9cf7-69e0-1144-5917-3ee8b8f4195d",
+      "cf20d372-e5f7-f8b6-4181-7ea97cc9dc4d"
+    ],
+    "product_url": "https://www.bauhaus.info/bauschaeume/sika-bauschaum-1-k-pu/p/29340206",
+    "price": 10.95,
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "package_quantity": 0.3,
+    "note": "300 ml pro Dose",
+    "evidence": "docs/evidence/screenshot-corrections-20261021.json"
+  },
+  {
+    "store_id": "toom",
+    "material_id": "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+    "target_ids": [
+      "8739c5f1-f989-497c-4424-0e3f0e1836c7"
+    ],
+    "product_url": "https://toom.de/p/pu-montageschaum-b2-500-ml/2368036",
+    "price": 10.99,
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "package_quantity": 0.5,
+    "note": "",
+    "evidence": "docs/evidence/screenshot-corrections-20261021.json"
+  },
+  {
+    "store_id": "hornbach",
+    "material_id": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
+    "target_ids": [
+      "62ef9d78-ef8b-b0cc-3520-d724316ea678"
+    ],
+    "product_url": "https://www.hornbach.de/p/baumit-zementsockelputz-unter-und-oberputz-fuer-schweres-mauerwerk-fuer-innen-und-aussen-25-kg/7196554/",
+    "price": 10.35,
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "package_quantity": 25,
+    "note": "",
+    "evidence": "docs/evidence/screenshot-corrections-20261021.json"
+  },
+  {
+    "store_id": "bauhaus",
+    "material_id": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+    "target_ids": [
+      "dae638df-5d1f-1c45-c736-f8634303d3b4",
+      "40ab2786-cd59-9252-3ce4-005f7bb647f1"
+    ],
+    "product_url": "https://www.bauhaus.info/putzgewebe-armierungsgewebe/catnic-innenputzgewebe/p/13907753",
+    "price": 22.95,
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "package_quantity": 10,
+    "note": "Für Innenputz · Maschenweite 5 × 5 mm",
+    "evidence": "docs/evidence/screenshot-corrections-20261021.json"
+  },
+  {
+    "store_id": "obi",
+    "material_id": "0f28b52e-3469-b623-648a-b89405f56fd6",
+    "target_ids": [
+      "dae638df-5d1f-1c45-c736-f8634303d3b4",
+      "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+      "0f28b52e-3469-b623-648a-b89405f56fd6"
+    ],
+    "product_url": "https://www.obi.de/p/3554755/multipor-armierungsgewebe-1-m-x-25-m",
+    "price": 59.75,
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "package_quantity": 25,
+    "note": "25 m² pro Rolle · für das Multipor-Dämmsystem",
+    "evidence": "docs/evidence/screenshot-corrections-20261021.json"
+  },
+  {
+    "store_id": "toom",
+    "material_id": "322f8d06-4b24-234f-4ccf-3a98906565d8",
+    "target_ids": [
+      "cf20d372-e5f7-f8b6-4181-7ea97cc9dc4d",
+      "322f8d06-4b24-234f-4ccf-3a98906565d8"
+    ],
+    "product_url": "https://toom.de/p/pu-montageschaum-b2-750-ml/2368047",
+    "price": 13.99,
+    "checked_at": "2026-10-20T16:29:36.958Z",
+    "package_quantity": 0.75,
+    "note": "750 ml · Genius Gun · champagner",
+    "evidence": "docs/evidence/edge-strip-silicone-foam-20261020.json"
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "material_slug": "schleifpapier-sortiment-230-280-15-v1",
+    "store_id": "hornbach",
+    "product_name": "RAUTNER Schleifpapier AlOx Plus für Holz, 230 x 280 mm, K 60 80 120 180 240, ungelocht, 15 Stück",
+    "price": 11.95,
+    "product_url": "https://www.hornbach.de/p/rautner-schleifpapier-alox-plus-fuer-handschleifer-schwingschleifer-230-x-280-mm-k-60-80-120-180-240-ungelocht-15-stueck/10501474/",
+    "currency": "EUR",
+    "base_unit": "piece",
+    "package_quantity": 15,
+    "price_basis": "package",
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "observed_specs": {
+      "type": "schleifpapier-sortiment",
+      "length_mm": 280,
+      "width_mm": 230,
+      "grits": [
+        60,
+        80,
+        120,
+        180,
+        240
+      ],
+      "pieces": 15
+    },
+    "verification_note": "Benutzerscreenshot codex-clipboard-04396cb0-6f51-40e5-8a84-abf57e52d900.png vom 21.10.2026. Exakt dieses Produkt und diese Packung ausdrücklich bestätigt. Einzelpackungspreis, kein Mengenrabatt. Produktseite bestätigt Identität/URL; Preis ausschließlich aus Screenshot."
+  },
+  {
+    "material_slug": "knauf-perlfix-25kg-v1",
+    "store_id": "toom",
+    "product_name": "Knauf Perlfix Ansetzgips 25 kg",
+    "price": 10.49,
+    "product_url": "https://toom.de/p/ansatzgips-perflix-25-kg/3053281",
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "price_basis": "package",
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "observed_specs": {
+      "type": "ansetzgips",
+      "weight_kg": 25
+    },
+    "verification_note": "Benutzerscreenshot codex-clipboard-695903de-29b5-4521-9531-c4a385bff0e5.png vom 21.10.2026. Exakt dieses Produkt und diese Packung ausdrücklich bestätigt. Einzelpackungspreis, kein Mengenrabatt. Produktseite bestätigt Identität/URL; Preis ausschließlich aus Screenshot."
+  },
+  {
+    "material_slug": "pu-schaum-1k-300ml-v1",
+    "store_id": "bauhaus",
+    "product_name": "Sika Bauschaum 1-K PU, 300 ml",
+    "price": 10.95,
+    "product_url": "https://www.bauhaus.info/bauschaeume/sika-bauschaum-1-k-pu/p/29340206",
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 0.3,
+    "price_basis": "package",
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "observed_specs": {
+      "type": "pu-schaum",
+      "volume_l": 0.3
+    },
+    "verification_note": "Benutzerscreenshot codex-clipboard-12c4a727-3dce-4e9c-a758-1b3e7dc5df2e.png vom 21.10.2026. Exakt dieses Produkt und diese Packung ausdrücklich bestätigt. Einzelpackungspreis, kein Mengenrabatt. Produktseite bestätigt Identität/URL; Preis ausschließlich aus Screenshot."
+  },
+  {
+    "material_slug": "pu-schaum-1k-500ml-v1",
+    "store_id": "toom",
+    "product_name": "Soudal PU-Montageschaum B2 Genius Gun, 500 ml",
+    "price": 10.99,
+    "product_url": "https://toom.de/p/pu-montageschaum-b2-500-ml/2368036",
+    "currency": "EUR",
+    "base_unit": "l",
+    "package_quantity": 0.5,
+    "price_basis": "package",
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "observed_specs": {
+      "type": "pu-schaum",
+      "volume_l": 0.5
+    },
+    "verification_note": "Benutzerscreenshot codex-clipboard-f9506397-1ae5-453b-a92b-f3e43a30c2a1.png vom 21.10.2026. Exakt dieses Produkt und diese Packung ausdrücklich bestätigt. Einzelpackungspreis, kein Mengenrabatt. Produktseite bestätigt Identität/URL; Preis ausschließlich aus Screenshot."
+  },
+  {
+    "material_slug": "sockelputz-25kg-v1",
+    "store_id": "hornbach",
+    "product_name": "Baumit Zementsockelputz Unter- und Oberputz für innen und außen, 25 kg",
+    "price": 10.35,
+    "product_url": "https://www.hornbach.de/p/baumit-zementsockelputz-unter-und-oberputz-fuer-schweres-mauerwerk-fuer-innen-und-aussen-25-kg/7196554/",
+    "currency": "EUR",
+    "base_unit": "kg",
+    "package_quantity": 25,
+    "price_basis": "package",
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "observed_specs": {
+      "type": "sockelputz",
+      "weight_kg": 25
+    },
+    "verification_note": "Benutzerscreenshot codex-clipboard-b589a3fa-22d4-4669-a1b5-0677c4042188.png vom 21.10.2026. Exakt dieses Produkt und diese Packung ausdrücklich bestätigt. Einzelpackungspreis, kein Mengenrabatt. Produktseite bestätigt Identität/URL; Preis ausschließlich aus Screenshot."
+  },
+  {
+    "material_slug": "armierungsgewebe-1000-10000-v1",
+    "store_id": "bauhaus",
+    "product_name": "Catnic Armierungsgewebe / Innenputzgewebe, 1 x 10 m, Maschenweite 5 x 5 mm",
+    "price": 22.95,
+    "product_url": "https://www.bauhaus.info/putzgewebe-armierungsgewebe/catnic-innenputzgewebe/p/13907753",
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 10,
+    "price_basis": "package",
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "observed_specs": {
+      "type": "armierungsgewebe",
+      "length_mm": 10000,
+      "width_mm": 1000,
+      "area_m2": 10
+    },
+    "verification_note": "Benutzerscreenshot codex-clipboard-5efe9f32-6ab5-4d8b-9b24-82bf2637f8fe.png vom 21.10.2026. Exakt dieses Produkt und diese Packung ausdrücklich bestätigt. Einzelpackungspreis, kein Mengenrabatt. Produktseite bestätigt Identität/URL; Preis ausschließlich aus Screenshot."
+  },
+  {
+    "material_slug": "armierungsgewebe-1000-25000-v1",
+    "store_id": "obi",
+    "product_name": "Multipor Armierungsgewebe 1 m x 25 m",
+    "price": 59.75,
+    "product_url": "https://www.obi.de/p/3554755/multipor-armierungsgewebe-1-m-x-25-m",
+    "currency": "EUR",
+    "base_unit": "m2",
+    "package_quantity": 25,
+    "price_basis": "package",
+    "checked_at": "2026-10-21T21:22:00.000Z",
+    "observed_specs": {
+      "type": "armierungsgewebe",
+      "length_mm": 25000,
+      "width_mm": 1000,
+      "area_m2": 25
+    },
+    "verification_note": "Benutzerscreenshot codex-clipboard-9e84e0b9-20cd-4c48-bece-27761247b62e.png vom 21.10.2026. Exakt dieses Produkt und diese Packung ausdrücklich bestätigt. Einzelpackungspreis, kein Mengenrabatt. Produktseite bestätigt Identität/URL; Preis ausschließlich aus Screenshot."
+  }
+]

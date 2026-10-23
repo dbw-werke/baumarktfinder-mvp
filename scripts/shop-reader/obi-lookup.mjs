@@ -4,6 +4,7 @@ import { createShopReader } from './shops.mjs';
 import { createPoliteFetcher } from './http.mjs';
 import { obiProductUrl } from './obi-state.mjs';
 import { normalizeObiQuery, rankObiCandidates } from './obi-query-matcher.mjs';
+import { getMaterialSearchTerms } from '../../src/lib/materialSearch.mjs';
 
 const positive = value => typeof value === 'number' && Number.isFinite(value) && value > 0;
 function basicRejection(product, now) {
@@ -100,7 +101,14 @@ export function createObiLookup({ seedProducts = [], cacheFile = null, reader = 
       if (attempts.size > 500) attempts.delete(attempts.keys().next().value);
       try {
         const source = reader ?? createShopReader({http:createPoliteFetcher({timeoutMs:5000}),maxProductPages:4,maxSitemaps:1});
-        const response = await source.searchShop('obi',query,{candidateUrls:prior.product ? [prior.product.url] : []});
+        const response = { products: [], errors: [], retrieval: null };
+        for (const [index, shortQuery] of getMaterialSearchTerms(query).slice(0, 3).entries()) {
+          const attempt = await source.searchShop('obi',shortQuery,{candidateUrls:index === 0 && prior.product ? [prior.product.url] : []});
+          response.products.push(...(attempt.products || [])); response.errors.push(...(attempt.errors || []));
+          response.retrieval = attempt.retrieval ?? response.retrieval;
+          if (selectObiOffer(query,response.products,now()).offer
+            || response.errors.some(e=>['blocked','FETCH_BLOCKED','robots-unavailable','robots-disallowed','network-error'].includes(e.code))) break;
+        }
         retrieval=response.retrieval ?? null;
         const products = Array.isArray(response.products) ? response.products.slice(0,50) : [];
         productsFound = products.length;

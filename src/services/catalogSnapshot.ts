@@ -1,7 +1,9 @@
 import snapshot from "../data/verified-catalog-snapshot.json";
 import manual from "../data/manual-prices.json";
 import definitions from "../../supabase/canonical-materials.json";
+import retiredMaterials from "../data/retired-materials.json";
 import { validateStorePrice, type StorePrice } from "./prices";
+import { preferPrice } from "../lib/requestedProducts";
 
 type SnapshotData = {
   version: number;
@@ -24,6 +26,7 @@ export function filterCatalogSnapshot(data: SnapshotData, storeIds: readonly str
     if (!entry || typeof entry !== "object" || Array.isArray(entry)) continue;
     const row = entry as Record<string, unknown>;
     if (typeof row.canonical_slug !== "string" || typeof row.material_id !== "string" || !uuid.test(row.material_id)) continue;
+    if (Object.hasOwn(retiredMaterials, row.canonical_slug)) continue;
     const material = canonicalMaterials.get(row.canonical_slug);
     if (!material || data.canonical_material_ids[material.slug] !== row.material_id || row.canonical_version !== material.canonical_version) continue;
     if (stableJson(row.canonical_specs) !== stableJson(material.specs) || row.unit !== material.base_unit || row.package_quantity !== material.package_quantity) continue;
@@ -40,7 +43,7 @@ export function getCatalogSnapshot(storeIds: readonly string[]): StorePrice[] {
   const combined = new Map<string, StorePrice>();
   for (const row of [...filterCatalogSnapshot(snapshot, storeIds), ...filterCatalogSnapshot(manual, storeIds)]) {
     const key = `${row.material_id}:${row.store_id}`, previous = combined.get(key);
-    if (!previous || Date.parse(row.checked_at) >= Date.parse(previous.checked_at)) combined.set(key, row);
+    if (preferPrice(row, previous) || row.checked_at === previous?.checked_at) combined.set(key, row);
   }
   return [...combined.values()];
 }

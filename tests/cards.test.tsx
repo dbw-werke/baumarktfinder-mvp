@@ -26,7 +26,7 @@ test("card separates package price from unit price and links exactly to the pric
 test("missing prices stay visibly unavailable and use the official canonical search", () => {
   const html = render();
   assert.match(html, /Preis aktuell nicht verfügbar/);
-  assert.match(html, /https:\/\/www.obi.de\/search\/Gipskarton%20Test/);
+  assert.match(html, /https:\/\/www.obi.de\/search\/Gipskartonplatte/);
   assert.doesNotMatch(html, /7,20/);
 });
 test("routing failure shows one Luftlinie label, keeps card and links to the exact physical store", () => {

@@ -1,5 +1,6 @@
 /** Match product identity before preferences. Only product-bound reader fields are trusted. */
 import { productPurposeConflict } from "../../src/lib/productCompatibility.mjs";
+import { getMaterialSearchTerms } from "../../src/lib/materialSearch.mjs";
 export function normalize(value = "") {
   return String(value).toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue")
     .replace(/ß/g, "ss").replace(/×|\*/g, "x").replace(/,/g, ".").replace(/\s+/g, " ").trim();
@@ -43,7 +44,7 @@ export function buildStandard(material) {
   if (!material || !Number.isInteger(Number(material.canonical_version)) || Number(material.canonical_version) < 1 || !["kg", "l", "m", "m2", "piece"].includes(material.base_unit) || !positive(material.package_quantity)) return null;
   const specs = material.specs;
   if (!specs || typeof specs !== "object" || Array.isArray(specs)) return null;
-  const known = [...numericKeys, "type", "color", "profile", "sd_m", "sd_min_m", "sd_max_m", "thermal_conductivity", "required_terms", "excluded_terms", "min_package_price", "max_package_price"];
+  const known = [...numericKeys, "grits", "type", "color", "profile", "sd_m", "sd_min_m", "sd_max_m", "thermal_conductivity", "required_terms", "excluded_terms", "min_package_price", "max_package_price"];
   if (Object.keys(specs).some((key) => !known.includes(key))) return null;
   const family = families.find(([pattern]) => pattern.test(normalize(`${material.name || ""} ${material.product_family || ""}`)));
   if (!family) return null;
@@ -51,19 +52,16 @@ export function buildStandard(material) {
     profile: ["length_mm", "width_mm"], insulation: ["length_mm", "width_mm", "thickness_mm", "pieces"],
     screw: ["diameter_mm", "length_mm", "pieces"], mesh: ["length_mm", "width_mm"],
     hanger: ["length_mm", "pieces"], band: ["length_mm", "width_mm", "thickness_mm"], film: ["length_mm", "width_mm"],
-    abrasive: ["length_mm", "width_mm", "grit", "pieces"] }[family[1]];
+    abrasive: ["length_mm", "width_mm", ...(specs.grits ? [] : ["grit"]), "pieces"] }[family[1]];
+  if (specs.grits && (!Array.isArray(specs.grits) || specs.grits.length < 2 || specs.grit !== undefined
+    || specs.grits.some(value => !Number.isInteger(value) || value <= 0) || new Set(specs.grits).size !== specs.grits.length)) return null;
   if (required.some((key) => !positive(specs[key])) || numericKeys.some((key) => specs[key] != null && !positive(specs[key]))) return null;
   const quantity = Number(material.package_quantity);
   const calculated = { kg: specs.weight_kg, l: specs.volume_l,
     m: Number(specs.length_mm) / 1000 * Number(specs.pieces || 1),
     m2: Number(specs.length_mm) * Number(specs.width_mm) / 1e6 * Number(specs.pieces || 1), piece: Number(specs.pieces || 1) }[material.base_unit];
   if (!close(quantity, calculated)) return null;
-  const search = family[1] === "hanger"
-    ? (/nonius/.test(normalize(`${material.name} ${material.product_family}`)) ? "Nonius Unterteil" : "Direktabhänger")
-    : material.product_family === "dampfbremse" ? "Dampfbremse"
-    : material.product_family === "pe-folie" ? "Baufolie"
-    : material.product_family === "randdaemmstreifen" ? "Randdämmstreifen mit Folie"
-    : material.store_search_term || material.name;
+  const search = getMaterialSearchTerms(material)[0] || material.store_search_term || material.name;
   return { id: material.id, name: material.name, brand: material.brand ?? null, productFamily: material.product_family || normalize(material.name).replace(/\s+\d.*$/, ""), search, family: family[1], productMatch: family[2],
     exclude: family[3], specs, baseUnit: material.base_unit, packageQuantity: quantity, canonicalVersion: Number(material.canonical_version),
     minPrice: Number(specs.min_package_price || 0.1), maxPrice: Number(specs.max_package_price || 10000) };
@@ -212,6 +210,14 @@ export function evaluateProductMatch(product, standard, { exactPackage = false }
   const reject = (reason, hard = false) => ({ ...diagnostic, accepted: false, score: 0, rejectionReason: reason, hardExclusion: hard ? reason : null });
   if (!product || !standard) return reject("unsupported-canonical-specification", true);
   const fields = productFields(product), { values, conflicts } = extractSpecifications(product, standard);
+  const listedGrits = fields.name.match(/\b(?:k|korn|koernungen?)\s*(\d{2,4}(?:\s*[/,]\s*\d{2,4})+|\d{2,4}(?:\s+\d{2,4}){2,})(?!\d)/)?.[1]?.match(/\d+/g)?.map(Number);
+  if (standard.specs.grits) {
+    const actual = product.observedSpecs?.grits ?? listedGrits;
+    const same = list => Array.isArray(list) && list.length === standard.specs.grits.length
+      && [...list].sort((a,b) => a-b).every((value,index) => value === [...standard.specs.grits].sort((a,b) => a-b)[index]);
+    if (!same(actual) || (listedGrits && !same(listedGrits)) || (!listedGrits && values.grit)) return reject("wrong-or-missing-grit-assortment", true);
+  }
+  else if (standard.family === "abrasive" && (listedGrits?.length > 1 || product.observedSpecs?.grits?.length > 1)) return reject("unexpected-grit-assortment", true);
   if (standard.productFamily === "vario" && (standard.baseUnit !== "kg" || standard.packageQuantity !== 25 || values.weight_kg !== 25)) return reject("vario-requires-25kg-package", true);
   const attributeText = fields.attributes.map(({ name, value }) => `${name}: ${value}`).join(" ");
   const observedColor = colorName(normalize(product.observedSpecs?.color || fields.attributes.find((a) => /^(farbe|farbton|grundfarbe|color)$/.test(a.name))?.value).match(colors)?.[1] || fields.name.match(colors)?.[1]);

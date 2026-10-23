@@ -1,0 +1,17 @@
+{
+  "tested_at": "2026-10-22T19:37:37.970Z",
+  "migration": "202610220001_retire_165gsm_mesh.sql",
+  "engine": "Isolated PostgreSQL/PGlite",
+  "passed": true,
+  "externalSupabaseMigrated": false,
+  "retired_slug": "armierungsgewebe-165-1000-10000-v1",
+  "retired_material_id": "cebcf814-aecb-4a94-5319-d57b54761eea",
+  "remaining_active_materials": 79,
+  "checks": [
+    "Migration executes twice without error or reactivating the removed material",
+    "Only retired material and related store mappings are disabled",
+    "Anonymous RLS hides the retired material, aliases, product mappings and verified prices",
+    "Existing aliases, verified price observations and price history remain stored",
+    "Application rejects stale database search suggestions and prices for the retired material ID"
+  ]
+}

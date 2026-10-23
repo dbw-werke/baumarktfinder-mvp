@@ -50,7 +50,6 @@
     "rollputz-15kg-v1": "18ceb301-2b85-303b-c6c9-3139acccb732",
     "sockelputz-25kg-v1": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
     "armierungsgewebe-1000-10000-v1": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
-    "armierungsgewebe-165-1000-10000-v1": "cebcf814-aecb-4a94-5319-d57b54761eea",
     "knauf-perlfix-25kg-v1": "003defc8-10d9-c91c-206a-302684b9ce88",
     "rollputz-8kg-v1": "9c27bb96-20f0-2ed0-af3c-d7e84a4ea603",
     "rollputz-10kg-v1": "5a2025df-74a9-77e5-e50f-5e61d6447090",
@@ -78,7 +77,10 @@
     "pe-folie-200-4000-25000-v1": "6a4249aa-0793-f6fe-0637-5ee39bb35d2b",
     "glaswolle-034-120-5-76m2-v1": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
     "randdaemmstreifen-8-150-50000-v1": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
-    "pu-schaum-1k-b2-genius-champagner-750ml-v1": "322f8d06-4b24-234f-4ccf-3a98906565d8"
+    "pu-schaum-1k-b2-genius-champagner-750ml-v1": "322f8d06-4b24-234f-4ccf-3a98906565d8",
+    "schleifpapier-sortiment-230-280-15-v1": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+    "pu-schaum-1k-300ml-v1": "658b9cf7-69e0-1144-5917-3ee8b8f4195d",
+    "armierungsgewebe-1000-25000-v1": "0f28b52e-3469-b623-648a-b89405f56fd6"
   },
   "prices": [
     {
@@ -102,35 +104,6 @@
       "package_quantity": 25,
       "currency": "EUR",
       "checked_at": "2026-10-08T17:06:46.000Z",
-      "source": "manual",
-      "price_scope": "chain",
-      "verified": true,
-      "availability": null,
-      "observed_specs": {
-        "weight_kg": 25
-      }
-    },
-    {
-      "material_id": "003defc8-10d9-c91c-206a-302684b9ce88",
-      "canonical_slug": "knauf-perlfix-25kg-v1",
-      "canonical_version": 1,
-      "canonical_specs": {
-        "type": "ansetzgips",
-        "weight_kg": 25,
-        "required_terms": [
-          "knauf",
-          "perlfix"
-        ]
-      },
-      "store_id": "toom",
-      "product_name": "Knauf Perlfix Ansetzgips 25 kg",
-      "product_url": "https://toom.de/p/ansatzgips-perflix-25-kg/3053281",
-      "price": 10.49,
-      "unit_price": 0.42,
-      "unit": "kg",
-      "package_quantity": 25,
-      "currency": "EUR",
-      "checked_at": "2026-10-18T19:23:00.000Z",
       "source": "manual",
       "price_scope": "chain",
       "verified": true,
@@ -1061,40 +1034,6 @@
           "mörtel"
         ]
       },
-      "store_id": "bauhaus",
-      "product_name": "Probau Armierungsgewebe 10 m²",
-      "product_url": "https://www.bauhaus.info/wdvs-gewebe/probau-armierungsgewebe/p/13878909",
-      "price": 19.95,
-      "unit_price": 2,
-      "unit": "m2",
-      "package_quantity": 10,
-      "currency": "EUR",
-      "checked_at": "2026-10-08T17:06:46.000Z",
-      "source": "manual",
-      "price_scope": "chain",
-      "verified": true,
-      "availability": null,
-      "observed_specs": {
-        "length_mm": 10000,
-        "width_mm": 1000,
-        "area_m2": 10
-      }
-    },
-    {
-      "material_id": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
-      "canonical_slug": "armierungsgewebe-1000-10000-v1",
-      "canonical_version": 1,
-      "canonical_specs": {
-        "type": "armierungsgewebe",
-        "length_mm": 10000,
-        "width_mm": 1000,
-        "area_m2": 10,
-        "excluded_terms": [
-          "streifen",
-          "eckprofil",
-          "mörtel"
-        ]
-      },
       "store_id": "obi",
       "product_name": "Glasfasergewebe 1 m x 10 m",
       "product_url": "https://www.obi.de/p/3263647/glasfasergewebe-1-m-x-10-m",
@@ -2004,43 +1943,6 @@
       "availability": null,
       "observed_specs": {
         "weight_kg": 8
-      }
-    },
-    {
-      "material_id": "cebcf814-aecb-4a94-5319-d57b54761eea",
-      "canonical_slug": "armierungsgewebe-165-1000-10000-v1",
-      "canonical_version": 1,
-      "canonical_specs": {
-        "type": "armierungsgewebe",
-        "length_mm": 10000,
-        "width_mm": 1000,
-        "grammage_g_m2": 165,
-        "area_m2": 10,
-        "excluded_terms": [
-          "streifen",
-          "eckprofil",
-          "mörtel"
-        ]
-      },
-      "store_id": "globus",
-      "product_name": "Knauf Armierungsgewebe 10 x 1 m = 10 m² Maschenweite: 5 x 5 mm",
-      "product_url": "https://www.globus-baumarkt.de/p/knauf-armierungsgewebe-10-x-1-m-10-m2-maschenweite-5-x-5-mm-0779250266/",
-      "price": 32.99,
-      "unit_price": 3.3,
-      "unit": "m2",
-      "package_quantity": 10,
-      "currency": "EUR",
-      "checked_at": "2026-10-13T19:00:07.552Z",
-      "source": "manual",
-      "price_scope": "chain",
-      "verified": true,
-      "availability": null,
-      "observed_specs": {
-        "type": "armierungsgewebe",
-        "length_mm": 10000,
-        "width_mm": 1000,
-        "area_m2": 10,
-        "grammage_g_m2": 165
       }
     },
     {
@@ -3634,6 +3536,256 @@
       "availability": null,
       "observed_specs": {
         "weight_kg": 25
+      }
+    },
+    {
+      "material_id": "003defc8-10d9-c91c-206a-302684b9ce88",
+      "canonical_slug": "knauf-perlfix-25kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "ansetzgips",
+        "weight_kg": 25,
+        "required_terms": [
+          "knauf",
+          "perlfix"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Knauf Perlfix Ansetzgips 25 kg",
+      "product_url": "https://toom.de/p/ansatzgips-perflix-25-kg/3053281",
+      "price": 10.49,
+      "unit_price": 0.42,
+      "unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-21T21:22:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "ansetzgips",
+        "weight_kg": 25
+      }
+    },
+    {
+      "material_id": "0f28b52e-3469-b623-648a-b89405f56fd6",
+      "canonical_slug": "armierungsgewebe-1000-25000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 25000,
+        "width_mm": 1000,
+        "area_m2": 25,
+        "excluded_terms": [
+          "streifen",
+          "eckprofil",
+          "mörtel"
+        ]
+      },
+      "store_id": "obi",
+      "product_name": "Multipor Armierungsgewebe 1 m x 25 m",
+      "product_url": "https://www.obi.de/p/3554755/multipor-armierungsgewebe-1-m-x-25-m",
+      "price": 59.75,
+      "unit_price": 2.39,
+      "unit": "m2",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-21T21:22:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 25000,
+        "width_mm": 1000,
+        "area_m2": 25
+      }
+    },
+    {
+      "material_id": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+      "canonical_slug": "schleifpapier-sortiment-230-280-15-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "schleifpapier-sortiment",
+        "length_mm": 280,
+        "width_mm": 230,
+        "grits": [
+          60,
+          80,
+          120,
+          180,
+          240
+        ],
+        "pieces": 15,
+        "excluded_terms": [
+          "schleifmaschine",
+          "schleifspitze",
+          "nass",
+          "schleifleinen"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "RAUTNER Schleifpapier AlOx Plus für Holz, 230 x 280 mm, K 60 80 120 180 240, ungelocht, 15 Stück",
+      "product_url": "https://www.hornbach.de/p/rautner-schleifpapier-alox-plus-fuer-handschleifer-schwingschleifer-230-x-280-mm-k-60-80-120-180-240-ungelocht-15-stueck/10501474/",
+      "price": 11.95,
+      "unit_price": 0.8,
+      "unit": "piece",
+      "package_quantity": 15,
+      "currency": "EUR",
+      "checked_at": "2026-10-21T21:22:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "schleifpapier-sortiment",
+        "length_mm": 280,
+        "width_mm": 230,
+        "grits": [
+          60,
+          80,
+          120,
+          180,
+          240
+        ],
+        "pieces": 15
+      }
+    },
+    {
+      "material_id": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+      "canonical_slug": "armierungsgewebe-1000-10000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "area_m2": 10,
+        "excluded_terms": [
+          "streifen",
+          "eckprofil",
+          "mörtel"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Catnic Armierungsgewebe / Innenputzgewebe, 1 x 10 m, Maschenweite 5 x 5 mm",
+      "product_url": "https://www.bauhaus.info/putzgewebe-armierungsgewebe/catnic-innenputzgewebe/p/13907753",
+      "price": 22.95,
+      "unit_price": 2.3,
+      "unit": "m2",
+      "package_quantity": 10,
+      "currency": "EUR",
+      "checked_at": "2026-10-21T21:22:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "armierungsgewebe",
+        "length_mm": 10000,
+        "width_mm": 1000,
+        "area_m2": 10
+      }
+    },
+    {
+      "material_id": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
+      "canonical_slug": "sockelputz-25kg-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "sockelputz",
+        "weight_kg": 25,
+        "required_terms": [
+          "sockelputz"
+        ],
+        "excluded_terms": [
+          "farbe",
+          "profil",
+          "gewebe"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Baumit Zementsockelputz Unter- und Oberputz für innen und außen, 25 kg",
+      "product_url": "https://www.hornbach.de/p/baumit-zementsockelputz-unter-und-oberputz-fuer-schweres-mauerwerk-fuer-innen-und-aussen-25-kg/7196554/",
+      "price": 10.35,
+      "unit_price": 0.41,
+      "unit": "kg",
+      "package_quantity": 25,
+      "currency": "EUR",
+      "checked_at": "2026-10-21T21:22:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "sockelputz",
+        "weight_kg": 25
+      }
+    },
+    {
+      "material_id": "658b9cf7-69e0-1144-5917-3ee8b8f4195d",
+      "canonical_slug": "pu-schaum-1k-300ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.3,
+        "excluded_terms": [
+          "brunnenschaum",
+          "kleber",
+          "reiniger",
+          "entferner",
+          "2k"
+        ]
+      },
+      "store_id": "bauhaus",
+      "product_name": "Sika Bauschaum 1-K PU, 300 ml",
+      "product_url": "https://www.bauhaus.info/bauschaeume/sika-bauschaum-1-k-pu/p/29340206",
+      "price": 10.95,
+      "unit_price": 36.5,
+      "unit": "l",
+      "package_quantity": 0.3,
+      "currency": "EUR",
+      "checked_at": "2026-10-21T21:22:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.3
+      }
+    },
+    {
+      "material_id": "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+      "canonical_slug": "pu-schaum-1k-500ml-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.5,
+        "excluded_terms": [
+          "brunnenschaum",
+          "kleber",
+          "reiniger",
+          "entferner",
+          "2k"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Soudal PU-Montageschaum B2 Genius Gun, 500 ml",
+      "product_url": "https://toom.de/p/pu-montageschaum-b2-500-ml/2368036",
+      "price": 10.99,
+      "unit_price": 21.98,
+      "unit": "l",
+      "package_quantity": 0.5,
+      "currency": "EUR",
+      "checked_at": "2026-10-21T21:22:00.000Z",
+      "source": "manual",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "type": "pu-schaum",
+        "volume_l": 0.5
       }
     }
   ]

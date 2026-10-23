@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-10-14T11:02:58.998Z",
+  "generated_at": "2026-10-23T07:32:42.528Z",
   "canonical_material_ids": {
     "gipskarton-standard-12-5-1200-600-v1": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
     "gipskarton-standard-12-5-2000-1250-v1": "2d750efa-4af5-e9b4-5416-89678194f058",
@@ -50,7 +50,6 @@
     "rollputz-15kg-v1": "18ceb301-2b85-303b-c6c9-3139acccb732",
     "sockelputz-25kg-v1": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
     "armierungsgewebe-1000-10000-v1": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
-    "armierungsgewebe-165-1000-10000-v1": "cebcf814-aecb-4a94-5319-d57b54761eea",
     "knauf-perlfix-25kg-v1": "003defc8-10d9-c91c-206a-302684b9ce88",
     "rollputz-8kg-v1": "9c27bb96-20f0-2ed0-af3c-d7e84a4ea603",
     "rollputz-10kg-v1": "5a2025df-74a9-77e5-e50f-5e61d6447090",
@@ -78,9 +77,44 @@
     "pe-folie-200-4000-25000-v1": "6a4249aa-0793-f6fe-0637-5ee39bb35d2b",
     "glaswolle-034-120-5-76m2-v1": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
     "randdaemmstreifen-8-150-50000-v1": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
-    "pu-schaum-1k-b2-genius-champagner-750ml-v1": "322f8d06-4b24-234f-4ccf-3a98906565d8"
+    "pu-schaum-1k-b2-genius-champagner-750ml-v1": "322f8d06-4b24-234f-4ccf-3a98906565d8",
+    "schleifpapier-sortiment-230-280-15-v1": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+    "pu-schaum-1k-300ml-v1": "658b9cf7-69e0-1144-5917-3ee8b8f4195d",
+    "armierungsgewebe-1000-25000-v1": "0f28b52e-3469-b623-648a-b89405f56fd6"
   },
   "prices": [
+    {
+      "material_id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
+      "canonical_slug": "tn-3-5-35-1000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "tn",
+        "diameter_mm": 3.5,
+        "length_mm": 35,
+        "pieces": 1000,
+        "required_terms": [
+          "tn",
+          "feingewinde"
+        ],
+        "excluded_terms": [
+          "grobgewinde",
+          "tb"
+        ]
+      },
+      "store_id": "hornbach",
+      "product_name": "Knauf Schnellbauschraube Feingewinde TN 3,5 mm x 35 mm Pack = 1000 St",
+      "product_url": "https://www.hornbach.de/p/knauf-schnellbauschraube-feingewinde-tn-3-5-mm-x-35-mm-pack-1000-st/7026780/",
+      "price": 13.4,
+      "unit_price": 0.01,
+      "unit": "piece",
+      "package_quantity": 1000,
+      "currency": "EUR",
+      "checked_at": "2026-10-23T07:30:46.657Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": "InStock"
+    },
     {
       "material_id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
       "canonical_slug": "tn-3-5-35-1000-v1",

@@ -46,6 +46,9 @@ export function supplementToomTechnicalEvidence(product, data) {
     facts.push({ name: 'Aushärtungssystem', value: 'essigvernetzend (Acetat)' });
   }
   if (facts.length) {
+    // Keep the proven applicator/color visible after the shorter live title
+    // replaces an older manual price observation on the customer card.
+    if (sku === '2368047') product.name += ' (1K, Genius Gun, champagner)';
     product.attributes = [...attributes, ...facts];
     product.metadata = { ...product.metadata, technical_evidence: {
       verified_at: '2026-10-21', product_id: sku, document_url: document,

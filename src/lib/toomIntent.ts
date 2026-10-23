@@ -1,4 +1,5 @@
 import intents from "../data/toom-material-intents.json";
+import { getMaterialSearchTerms } from "./materialSearch.mjs";
 import { bundledMaterialCatalog, withCorrectedProductMetadata, normalizeMaterialSearch, resolvePreferredMaterial, type CachedMaterial, type MaterialRow } from "../services/materialSuggestions";
 
 export type ToomMaterialIntent = { key: string; input: string; canonical_slug: string; search_term: string; aliases: string[] };
@@ -13,7 +14,7 @@ export function resolveToomMaterialIntent(items: CachedMaterial[], input: string
   const definition = TOOM_MVP_INTENTS.find(intent => [intent.input, ...intent.aliases].some(alias => normalizeMaterialSearch(alias) === query));
   if (!definition) return null; // Never erase an unrecognized color, package size or technical requirement.
   const material = items.find(item => item.material.slug === definition.canonical_slug && item.material.active && item.material.canonical_version >= 1)?.material;
-  return material ? { material, searchTerm: definition.search_term, definition } : null;
+  return material ? { material, searchTerm: getMaterialSearchTerms(material)[0], definition } : null;
 }
 
 /** Local verified prices also need their authored metadata when an older database lacks new rows. */

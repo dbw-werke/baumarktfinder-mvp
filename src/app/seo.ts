@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { googleSiteVerification } from "../lib/analytics";
 
 export const SITE_URL = "https://baumarktfinder-app.de/";
 export const SITE_NAME = "Baumarktfinder";
@@ -12,6 +13,7 @@ export const siteMetadata: Metadata = {
   description: SITE_DESCRIPTION,
   alternates: { canonical: SITE_URL },
   robots: { index: true, follow: true },
+  verification: { google: googleSiteVerification() },
   icons: { icon: "/icon.svg" },
   openGraph: {
     type: "website",

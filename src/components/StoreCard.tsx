@@ -7,6 +7,7 @@ import { createRouteUrl } from "../services/maps";
 import type { StorePrice } from "../services/prices";
 import type { ChainOfferSelection } from "../lib/productComparison";
 import type { ObiOffer } from "../lib/obi-offer";
+import { getMaterialDisplayName, getMaterialSearchTerms } from "../lib/materialSearch.mjs";
 
 const money = new Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" });
 const date = new Intl.DateTimeFormat("de-DE", { dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Berlin" });
@@ -18,15 +19,18 @@ export default function StoreCard({ store, price, origin, searchTerm, highlighte
   const ageHours = price ? (observedAt - new Date(price.checked_at).getTime()) / 3_600_000 : 0;
   const freshness = price?.source === "manual" ? "Manuell gepflegt" : ageHours <= 24 ? "Automatisch aktualisiert" : "Gespeicherter Preis";
   const badge = "Nächste Filiale";
-  const offerUrl = price?.product_url || getStoreUrl(store.id, searchTerm);
+  // The retailer intermittently serves an error for this exact product page.
+  // Preserve its price/source URL but let the customer find the same SKU directly.
+  const retailerSearch = store.id === "bauhaus" && /\/p\/27790416\/?$/.test(price?.product_url ?? "");
+  const offerUrl = retailerSearch ? getStoreUrl(store.id, "27790416") : price?.product_url || getStoreUrl(store.id, getMaterialSearchTerms(searchTerm)[0] || searchTerm);
   return <article className={`offerCard productOfferCard ${highlighted ? "nearestCard" : ""}`} data-store-id={store.placeId} data-match={comparison?.match}>
     {highlighted && <span className="nearestBadge">{badge}</span>}
     <div className="logoArea"><Image src={CHAINS[store.id].logo} alt={CHAINS[store.id].name} width={160} height={65} unoptimized /></div>
     <h3 title={store.name}>{store.name}</h3><p className="storeAddress" title={store.address}>{store.address}</p>
     <div className="distancePlaceholder"><span>{store.distance}</span>{store.routeStatus !== "unavailable" && <><span className="distanceSeparator"> · </span><span className="driveTime">{store.duration}</span></>}</div>
-    <div className="pricePlaceholder"><p className="productName" title={price?.product_name ?? searchTerm}>{price?.product_name ?? searchTerm}</p>
+    <div className="pricePlaceholder"><p className="productName" title={price?.product_name ?? searchTerm}>{getMaterialDisplayName(price?.product_name ?? searchTerm)}</p>
       <p className="actualSpecification">{price && "actual_size" in price ? price.actual_size : comparison?.actualSpecification ?? comparison?.preferredSpecification ?? (price?.package_quantity && price.unit ? `${price.package_quantity.toLocaleString("de-DE")} ${unitLabels[price.unit]}` : "Gewünschte Ausführung")}</p>
-      {comparison && <div className="matchStatus"><span className={`matchBadge ${comparison.match === "alternative" ? "alternativeBadge" : ""}`}>{comparison.match === "exact" ? "Wunschgröße" : comparison.match === "alternative" ? "Alternative Größe" : "Kein geprüftes Angebot"}</span></div>}
+      {comparison && <div className="matchStatus"><span className={`matchBadge ${comparison.match === "alternative" ? "alternativeBadge" : ""}`}>{comparison.requestedProduct ? "Ausgewähltes Produkt" : comparison.match === "exact" ? "Wunschgröße" : comparison.match === "alternative" ? "Alternative Größe" : "Kein geprüftes Angebot"}</span></div>}
       {comparison?.specificationWarning && <small>{comparison.specificationWarning}</small>}
       {price ? <>
         <strong className="packagePrice">{money.format(price.price)}</strong><span className="packageLabel">Produkt- / Packungspreis · inkl. MwSt.</span>
@@ -38,12 +42,13 @@ export default function StoreCard({ store, price, origin, searchTerm, highlighte
           <p>Filialpreis und Bestand können abweichen.</p>
           <p>{price.product_name}</p>
           <p>{store.routeStatus === "traffic" ? "Fahrzeit mit aktueller Verkehrslage" : store.routeStatus === "driving" ? "Fahrzeit ohne aktuelle Verkehrslage" : "Fahrzeit derzeit nicht verfügbar"}</p>
-          {comparison?.match === "alternative" && <p>Kein geprüftes Angebot der Wunschgröße ({comparison.preferredSpecification}). Gezeigt wird die verfügbare geprüfte Alternative.</p>}
+          {comparison?.requestedProduct ? <p>Ausgewähltes Produkt: Größe und Packungspreis laut Screenshot.</p>
+            : comparison?.match === "alternative" && <p>Kein geprüftes Angebot der Wunschgröße ({comparison.preferredSpecification}). Gezeigt wird die verfügbare geprüfte Alternative.</p>}
         </details>
       </> : <strong className="missingPrice">Preis aktuell nicht verfügbar</strong>}
     </div>
     <div className="cardActions">
-      <a className="offerButton" href={offerUrl} target="_blank" rel="noopener noreferrer" aria-label={price ? `Angebot für ${price.product_name} bei ${CHAINS[store.id].name}` : `Bei ${CHAINS[store.id].name} suchen`}><span className="desktopLabel">{price ? "Zum Angebot ↗" : "Beim Händler suchen ↗"}</span><span className="mobileLabel">{price ? "Angebot ↗" : "Suchen ↗"}</span></a>
+      <a className="offerButton" href={offerUrl} target="_blank" rel="noopener noreferrer" aria-label={price && !retailerSearch ? `Angebot für ${price.product_name} bei ${CHAINS[store.id].name}` : `Bei ${CHAINS[store.id].name} suchen`}><span className="desktopLabel">{retailerSearch ? "Produkt bei BAUHAUS suchen ↗" : price ? "Zum Angebot ↗" : "Beim Händler suchen ↗"}</span><span className="mobileLabel">{price && !retailerSearch ? "Angebot ↗" : "Suchen ↗"}</span></a>
       <a className="routeButton" href={createRouteUrl(origin, store)} target="_blank" rel="noopener noreferrer">Route →</a>
     </div>
     {store.attributions.length > 0 && <div className="providerAttribution">{store.attributions.map((item, index) => item.providerURI?.startsWith("https://") ? <a key={index} href={item.providerURI} target="_blank" rel="noopener noreferrer">{item.provider}</a> : <span key={index}>{item.provider}</span>)}</div>}

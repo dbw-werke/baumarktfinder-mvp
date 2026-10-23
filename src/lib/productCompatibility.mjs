@@ -94,7 +94,10 @@ export function hasComparableSpecification(material) {
   if (comparisonFamily(material.product_family) === "vario"
     && (material.base_unit !== "kg" || !close(material.package_quantity, 25) || !close(specs.weight_kg, 25) || (specs.pieces ?? 1) !== 1)) return false;
   if (numericFields.some((key) => specs[key] !== undefined && !positive(specs[key]))) return false;
-  if ((functionalFields[comparisonFamily(material.product_family)] ?? []).some((key) => typeof specs[key] === "string" ? !specs[key].trim() : !positive(specs[key]))) return false;
+  if (specs.grits && (!Array.isArray(specs.grits) || specs.grits.length < 2 || specs.grit !== undefined
+    || specs.grits.some(value => !Number.isInteger(value) || value <= 0) || new Set(specs.grits).size !== specs.grits.length)) return false;
+  if ((functionalFields[comparisonFamily(material.product_family)] ?? []).some((key) => key === "grit" && specs.grits ? false
+    : typeof specs[key] === "string" ? !specs[key].trim() : !positive(specs[key]))) return false;
   if (specs.pieces !== undefined && !Number.isInteger(specs.pieces)) return false;
   if (["required_terms", "excluded_terms"].some((key) => specs[key] !== undefined && (!Array.isArray(specs[key]) || specs[key].some((term) => typeof term !== "string" || !term.trim())))) return false;
   const pieces = specs.pieces ?? 1;

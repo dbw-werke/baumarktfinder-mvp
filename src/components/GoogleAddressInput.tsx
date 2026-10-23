@@ -17,8 +17,11 @@ type Props = {
 /** Google owns its input and prediction UI; the plain input only covers loading/failure. */
 export default function GoogleAddressInput(props: Props) {
   const host = useRef<HTMLDivElement>(null);
+  const plainInput = useRef<HTMLInputElement>(null);
   const widget = useRef<google.maps.places.PlaceAutocompleteElement | null>(null);
   const current = useRef(props);
+  const transferFocus = useRef(false);
+  const [activated, setActivated] = useState(false);
   const [ready, setReady] = useState(false);
 
   useLayoutEffect(() => {
@@ -26,10 +29,19 @@ export default function GoogleAddressInput(props: Props) {
     if (widget.current) {
       widget.current.disabled = props.disabled;
       if (widget.current.value !== props.value) widget.current.value = props.value;
+      widget.current.setAttribute("aria-describedby", props.hint ? "address-provider address-hint" : "address-provider");
     }
   }, [props]);
 
+  useLayoutEffect(() => {
+    // Replacing the loading input must preserve typing focus, but must not
+    // pull focus back after the user has already moved to another field.
+    if (ready && transferFocus.current && document.activeElement === document.body) widget.current?.focus();
+    transferFocus.current = false;
+  }, [ready]);
+
   useEffect(() => {
+    if (!activated) return;
     let disposed = false, revision = 0;
     let pendingValue: string | null = null;
     let teardown: (() => void) | undefined;
@@ -39,6 +51,7 @@ export default function GoogleAddressInput(props: Props) {
       element.id = "address";
       element.className = "googleAddressWidget";
       element.setAttribute("aria-label", "WO IN DEUTSCHLAND?");
+      element.setAttribute("aria-describedby", current.current.hint ? "address-provider address-hint" : "address-provider");
       element.value = current.current.value;
       element.disabled = current.current.disabled;
       element.style.width = "100%";
@@ -90,6 +103,7 @@ export default function GoogleAddressInput(props: Props) {
         element.removeEventListener("gmp-error", failure);
         element.remove();
       };
+      transferFocus.current = document.activeElement === plainInput.current;
       host.current.appendChild(element);
       setReady(true);
       current.current.onReady();
@@ -97,18 +111,20 @@ export default function GoogleAddressInput(props: Props) {
       if (!disposed) current.current.onError(error);
     });
     return () => { disposed = true; revision++; teardown?.(); widget.current = null; };
-  }, []);
+  }, [activated]);
 
   return <div className="fieldBlock googleAddressField">
     <label htmlFor="address">WO IN DEUTSCHLAND?</label>
     <div ref={host} className="googleAddressHost" hidden={!ready} />
     {!ready && <div className="inputShell">
       <span className="inputIcon" aria-hidden="true">⌖</span>
-      <input id="address" name="address" value={props.value} disabled={props.disabled}
+      <input ref={plainInput} id="address" name="address" value={props.value} disabled={props.disabled}
         placeholder="Straße, Hausnummer, PLZ und Ort" autoComplete="street-address"
-        aria-describedby={props.hint ? "address-hint" : undefined}
+        aria-describedby={props.hint ? "address-provider address-hint" : "address-provider"}
+        onFocus={() => setActivated(true)}
         onChange={(event) => props.onChange(event.target.value)} />
     </div>}
+    <p className="fieldHint" id="address-provider">Für Adressvorschläge wird beim Aktivieren des Felds Google geladen. Eingaben werden an Google übertragen.</p>
     {props.hint && <p className="fieldHint" id="address-hint" role="status">{props.hint}</p>}
   </div>;
 }

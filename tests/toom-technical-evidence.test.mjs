@@ -37,7 +37,10 @@ for (const entry of cases) test(`toom refresh validates SKU ${entry[0]} using it
   assert.ok(selected, entry[3]);
   assert.equal(selected.price, 17.23);
   if (entry[5]) assert.equal(product.metadata.technical_evidence.document_url, entry[5]);
-  if (entry[0] === '2368047') assert.equal(selected.matchEvidence.observed_specs.color, 'champagner');
+  if (entry[0] === '2368047') {
+    assert.equal(selected.matchEvidence.observed_specs.color, 'champagner');
+    assert.match(selected.name, /Genius Gun, champagner/);
+  }
   if (entry[0] === '3150288') assert.equal(selected.matchEvidence.observed_specs.sd_min_m, 0.3);
 });
 test('technical supplementation never supplies a price or copies a missing canonical dimension', () => {

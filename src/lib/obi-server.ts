@@ -38,7 +38,7 @@ export async function lookupObi(query: string) {
   const selected = material ? selectChainOffer(material, getCatalogSnapshot(["obi"]), catalog.map(row => row.material), "obi") : null;
   const price = selected?.price;
   // A stale generic cache must never displace today's verified canonical/manual observation.
-  const offer = price && (!dynamic || Date.parse(price.checked_at) >= Date.parse(dynamic.checked_at))
+  const offer = price && (selected.requestedProduct || !dynamic || Date.parse(price.checked_at) >= Date.parse(dynamic.checked_at))
     ? validateObiOffer({ ...price, actual_size: selected.actualSpecification, family: material?.product_family, match_score: 100 })
     : dynamic;
   return { offer, normalizedQuery: result.normalizedQuery,

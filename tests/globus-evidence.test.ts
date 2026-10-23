@@ -1,8 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { bundledMaterialCatalog } from "../src/services/materialSuggestions";
+import { bundledMaterialCatalog, searchMaterialCatalog, type MaterialRow } from "../src/services/materialSuggestions";
 import { getCatalogSnapshot } from "../src/services/catalogSnapshot";
+import { validateStorePrice } from "../src/services/prices";
 import { formatMaterialSpecification, selectChainOffer } from "../src/lib/productComparison";
 import { MVP_MATERIAL_INTENTS, resolveMvpPreferredMaterial } from "../src/lib/toomIntent";
 
@@ -28,7 +29,20 @@ const catalog = bundledMaterialCatalog();
 const materials = catalog.map(entry => entry.material);
 const offers = getCatalogSnapshot(["globus"]);
 
-test("all 21 simple searches select the independently observed current Globus package and exact URL", () => {
+test("retired mesh stays excluded when an older database still returns its material and price", () => {
+  const historical = evidence.find(row => row.material_slug === "armierungsgewebe-165-1000-10000-v1")!;
+  const material: MaterialRow = {
+    id: "cebcf814-aecb-4a94-5319-d57b54761eea", slug: historical.material_slug,
+    name: "Armierungsgewebe 165 g/m², 1 × 10 m", suggestion_label: "Armierungsgewebe", store_search_term: "Armierungsgewebe",
+    active: true, canonical_version: 1, base_unit: "m2", package_quantity: 10,
+    specs: historical.observed_specs, product_family: "armierungsgewebe", brand: null,
+  };
+  assert.deepEqual(searchMaterialCatalog([{ material, aliases: ["Armierungsgewebe"] }], "Armierungsgewebe"), []);
+  assert.equal(validateStorePrice({ ...historical, material_id: material.id, unit: "m2", unit_price: 3.30,
+    source: "manual", price_scope: "chain", verified: true }, material.id, ["globus"]), null);
+});
+
+test("simple searches retain verified Globus packages while the removed 165 gsm mesh stays hidden", () => {
   assert.equal(evidence.length, 21);
   assert.deepEqual(new Set(evidence.map(row => row.key)), new Set(MVP_MATERIAL_INTENTS.map(intent => intent.key)));
   for (const intent of MVP_MATERIAL_INTENTS) {
@@ -38,6 +52,12 @@ test("all 21 simple searches select the independently observed current Globus pa
     const target = resolveMvpPreferredMaterial(catalog, intent.input);
     assert.ok(target, intent.input);
     const actualMaterial = materials.find(row => row.slug === observed.material_slug);
+    if (observed.material_slug === "armierungsgewebe-165-1000-10000-v1") {
+      assert.equal(actualMaterial, undefined, "retired mesh is absent from the active catalogue");
+      assert.equal(offers.some(row => row.material_id === "cebcf814-aecb-4a94-5319-d57b54761eea"), false);
+      assert.equal(selectChainOffer(target, offers, materials, "globus").match, "unavailable");
+      continue;
+    }
     assert.ok(actualMaterial, `${intent.input}: actual package metadata exists`);
     const selected = selectChainOffer(target, offers, materials, "globus");
     assert.ok(selected.price, `${intent.input}: Globus verified price is customer-accessible`);

@@ -2,6 +2,7 @@ import { supabase } from "../lib/supabase";
 import { isChainId, type ChainId } from "../lib/stores";
 import { validateStorePrice, type StorePrice } from "./prices";
 import { getCatalogSnapshot } from "./catalogSnapshot";
+import { preferPrice } from "../lib/requestedProducts";
 
 export type StoreCatalogResult = { offers: StorePrice[]; error: string | null };
 export type GroupedCatalogOffers = Map<ChainId, Map<string, StorePrice>>;
@@ -22,7 +23,7 @@ export function groupCatalogOffers(offers: readonly StorePrice[]): GroupedCatalo
     if (!valid) continue;
     const materials = grouped.get(offer.store_id) ?? new Map<string, StorePrice>();
     const previous = materials.get(offer.material_id);
-    if (!previous || Date.parse(valid.checked_at) > Date.parse(previous.checked_at)) materials.set(offer.material_id, valid);
+    if (preferPrice(valid, previous)) materials.set(offer.material_id, valid);
     grouped.set(offer.store_id, materials);
   }
   return grouped;
@@ -34,7 +35,7 @@ function flatten(grouped: GroupedCatalogOffers): StorePrice[] {
 
 export function mergeCatalogSources(chains: ChainId[], databaseOffers: StorePrice[], localOffers: readonly StorePrice[], message: string | null): StoreCatalogResult {
   // Both sources are verified observations. Chain + actual material ID is the key;
-  // newest checked_at wins, with the database taking priority on identical timestamps.
+  // Explicit screenshot corrections win; otherwise newest checked_at wins.
   const offers = flatten(groupCatalogOffers([...databaseOffers, ...localOffers.filter((offer) => chains.includes(offer.store_id as ChainId))])).slice(0, MAX_ROWS);
   const usedSnapshot = offers.some((offer) => !databaseOffers.some((database) => database.material_id === offer.material_id && database.store_id === offer.store_id && database.checked_at === offer.checked_at));
   return { offers, error: message && usedSnapshot

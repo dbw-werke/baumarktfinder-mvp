@@ -34,6 +34,7 @@ function publicRow(row) {
   // Deliberately whitelist serialized fields: no arbitrary API responses or environment metadata.
   const observed = {};
   for (const [key, value] of Object.entries(row.observed_specs || {})) {
+    if (key === "grits" && Array.isArray(value) && JSON.stringify(value) === JSON.stringify(row.canonical_specs.grits)) observed[key] = value;
     if (typeof row.canonical_specs[key] === "number" && typeof value === "number" && Number.isFinite(value) && value > 0) observed[key] = value;
     if (["type", "profile", "color"].includes(key) && typeof value === "string" && value === row.canonical_specs[key]) observed[key] = value;
   }

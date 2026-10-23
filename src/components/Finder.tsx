@@ -20,6 +20,7 @@ import { closestBranch, filterCatalog } from "../lib/catalogView";
 import { CHAINS, type Coordinates, type ChainId } from "../lib/stores";
 import { getStoreUrl } from "../lib/resolver";
 import { resolveMvpPreferredMaterial, withMvpMaterialMetadata } from "../lib/toomIntent";
+import { getMaterialOptionLabel } from "../lib/materialSearch.mjs";
 
 type SearchResult = NearbyResult & { offers: StorePrice[]; observedAt: number; materials: MaterialRow[]; obiOffer?: ObiOffer | null; obiMaterialId?: string | null };
 const POPULAR_MATERIALS = ["Rigips", "Dämmung", "Rotband", "Acryl", "Tiefengrund"];
@@ -187,10 +188,10 @@ export default function Finder() {
           <select id="comparison-material" value={comparisonMaterial?.id ?? ""} onChange={(event) => {
             const material = result.materials.find((item) => item.id === event.target.value) ?? null;
             setComparisonMaterial(material);
-            if (material) { const item = { ...material, label: material.suggestion_label ?? material.name }; setSelectedMaterial(item); setProduct(item.label); setSuggestions([]); }
+            if (material) { const item = { ...material, label: getMaterialOptionLabel(material) }; setSelectedMaterial(item); setProduct(item.label); setSuggestions([]); }
           }}>
             <option value="" disabled>Bitte genaue Ausführung wählen</option>
-            {result.materials.map((item) => <option key={item.id} value={item.id}>{item.suggestion_label ?? item.name}</option>)}
+            {result.materials.map((item) => <option key={item.id} value={item.id}>{getMaterialOptionLabel(item)}</option>)}
           </select>
           <p>{comparisonMaterial ? "Je Händler zuerst die Wunschgröße, sonst die nächste geprüfte, passende Größe. Der große Preis gilt immer für die tatsächlich gezeigte Packung." : result.obiOffer ? `OBI-Angebot für „${comparisonQuery}“. Die Karte zeigt die tatsächliche Ausführung. Für weitere Händler kannst du eine Vergleichsgröße wählen.` : `Für „${comparisonQuery}“ ist die Ausführung noch nicht eindeutig. Wähle das gewünschte Produkt, um geprüfte Preise zu vergleichen.`}</p>
           <button type="button" className="secondaryButton" onClick={() => { setComparisonQuery(""); setComparisonMaterial(null); setQuery(""); setFilterIds([]); }}>Alle Materialien durchstöbern</button>

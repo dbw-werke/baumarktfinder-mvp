@@ -1,6 +1,8 @@
 import { supabase } from "../lib/supabase";
 import definitions from "../../supabase/canonical-materials.json";
 import snapshot from "../data/verified-catalog-snapshot.json";
+import { getMaterialOptionLabel, getMaterialSearchTerms } from "../lib/materialSearch.mjs";
+import retiredMaterials from "../data/retired-materials.json";
 
 export type BaseUnit = "kg" | "l" | "m" | "m2" | "piece";
 export type MaterialSuggestion = {
@@ -30,11 +32,11 @@ export type CachedMaterial = { material: MaterialRow; aliases: string[] };
 
 // Retired comparison options keep their historical observations, but never surface as offers.
 export function isRetiredComparisonMaterial(material: Pick<MaterialRow, "slug" | "product_family" | "package_quantity">): boolean {
-  return material.slug === "haftgrund-quarzsand-5l-v1" || (material.product_family === "vario" && material.package_quantity !== 25);
+  return Object.hasOwn(retiredMaterials, material.slug) || material.slug === "haftgrund-quarzsand-5l-v1" || (material.product_family === "vario" && material.package_quantity !== 25);
 }
-export const retiredComparisonMaterialIds = new Set(Object.entries(snapshot.canonical_material_ids)
+export const retiredComparisonMaterialIds = new Set([...Object.values(retiredMaterials), ...Object.entries(snapshot.canonical_material_ids)
   .filter(([slug]) => slug === "haftgrund-quarzsand-5l-v1" || (slug.startsWith("rigips-vario-") && slug !== "rigips-vario-25kg-v1"))
-  .map(([, id]) => id));
+  .map(([, id]) => id)]);
 
 const CACHE_TTL = 5 * 60_000;
 const MAX_STALE = 24 * 60 * 60_000;
@@ -98,7 +100,7 @@ export function searchMaterialCatalog(items: CachedMaterial[], input: string): M
       if (["ud-profil", "cd-profil", "direktabhaenger", "noniusabhaenger", "trennwandband", "dichtungsband", "dampfbremse", "pe-folie"].includes(material.product_family)) {
         aliases = [...aliases, ...(definitions.find(item => item.slug === material.slug)?.aliases ?? [])];
       }
-      const candidates = [material.suggestion_label ?? material.name, material.name, material.store_search_term, ...aliases, ...aliases.map((alias) => `${alias} ${material.name}`)]
+      const candidates = [getMaterialOptionLabel(material), ...getMaterialSearchTerms(material), material.suggestion_label ?? material.name, material.name, material.store_search_term, ...aliases, ...aliases.map((alias) => `${alias} ${material.name}`)]
         .map(normalizeMaterialSearch);
       let score = 0;
       for (const candidate of candidates) {
@@ -112,8 +114,8 @@ export function searchMaterialCatalog(items: CachedMaterial[], input: string): M
     }).filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score || (a.material.suggestion_label ?? a.material.name).localeCompare(b.material.suggestion_label ?? b.material.name, "de"))
     .slice(0, 10).map(({ material }) => ({
-      id: material.id, label: material.suggestion_label ?? material.name, name: material.name,
-      store_search_term: material.store_search_term, base_unit: material.base_unit,
+      id: material.id, label: getMaterialOptionLabel(material), name: material.name,
+      store_search_term: getMaterialSearchTerms(material)[0], base_unit: material.base_unit,
       package_quantity: material.package_quantity, specs: material.specs,
     }));
 }
@@ -183,7 +185,7 @@ export function resolvePreferredMaterial(items: CachedMaterial[], input: string,
   const matches = searchMaterialCatalog(active, input);
   if (matches.length === 1) return active.find(({ material }) => material.id === matches[0].id)!.material;
   const query = normalizeMaterialSearch(input);
-  const exactNames = active.filter(({ material }) => [material.name, material.suggestion_label]
+  const exactNames = active.filter(({ material }) => [material.name, material.suggestion_label, getMaterialOptionLabel(material)]
     .some(name => name && normalizeMaterialSearch(name) === query));
   if (exactNames.length === 1) return exactNames[0].material;
   const defaults = preferredSlugs.flatMap((slug) => {

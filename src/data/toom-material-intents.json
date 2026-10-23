@@ -3,7 +3,7 @@
     "key": "acryl",
     "input": "Acryl",
     "canonical_slug": "acryl-weiss-310ml-v1",
-    "search_term": "Maleracryl weiß 310 ml",
+    "search_term": "Acryl weiß",
     "aliases": [
       "Acryl Weiß 310 ml",
       "Acryl 310 ml",
@@ -17,7 +17,7 @@
     "key": "armierungsgewebe",
     "input": "Armierungsgewebe",
     "canonical_slug": "armierungsgewebe-1000-10000-v1",
-    "search_term": "Armierungsgewebe 1 x 10 m",
+    "search_term": "Armierungsgewebe",
     "aliases": [
       "Glasfasergewebe"
     ]
@@ -26,7 +26,7 @@
     "key": "cd-profil",
     "input": "CD Profil",
     "canonical_slug": "cd60-27-3000-v1",
-    "search_term": "CD Deckenprofil 60 27",
+    "search_term": "CD Profil",
     "aliases": [
       "CD Profil 60/27",
       "CD Deckenprofil",
@@ -37,7 +37,7 @@
     "key": "cw-profil",
     "input": "CW Profil",
     "canonical_slug": "cw50-50-2600-v1",
-    "search_term": "CW Ständerprofil 50",
+    "search_term": "CW Profil",
     "aliases": [
       "CW Profil 50",
       "CW Ständerprofil",
@@ -62,7 +62,7 @@
     "key": "feuchtraumplatte",
     "input": "Feuchtraumplatte",
     "canonical_slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
-    "search_term": "Gipskartonplatte imprägniert 12,5 mm",
+    "search_term": "Gipskarton Feuchtraum",
     "aliases": [
       "Feuchtraumplatte 12,5 mm",
       "Feuchtraum Gipskartonplatte",
@@ -74,7 +74,7 @@
     "key": "haftgrund",
     "input": "Haftgrund",
     "canonical_slug": "mem-super-haftgrund-5l-v1",
-    "search_term": "MEM Super Haftgrund",
+    "search_term": "Super Haftgrund",
     "aliases": [
       "Super Haftgrund",
       "Super-Haftgrund",
@@ -85,7 +85,7 @@
     "key": "perlfix",
     "input": "Perlfix",
     "canonical_slug": "knauf-perlfix-25kg-v1",
-    "search_term": "Knauf Perlfix",
+    "search_term": "Perlfix",
     "aliases": [
       "Knauf Perlfix"
     ]
@@ -94,7 +94,7 @@
     "key": "rotband",
     "input": "Rotband",
     "canonical_slug": "knauf-rotband-30kg-v1",
-    "search_term": "Knauf Rotband",
+    "search_term": "Rotband",
     "aliases": [
       "Knauf Rotband"
     ]
@@ -103,7 +103,7 @@
     "key": "uniflott",
     "input": "Uniflott",
     "canonical_slug": "knauf-uniflott-25kg-v1",
-    "search_term": "Knauf Uniflott 25 kg",
+    "search_term": "Uniflott",
     "aliases": [
       "Knauf Uniflott",
       "Knauf Uniflott 25 kg",
@@ -114,18 +114,21 @@
     "key": "pu-schaum",
     "input": "PU-Schaum",
     "canonical_slug": "pu-schaum-1k-750ml-v1",
-    "search_term": "PU Bauschaum 750 ml",
+    "search_term": "Bauschaum 1K",
     "aliases": [
       "Bauschaum",
       "PU Schaum",
-      "Montageschaum"
+      "Montageschaum",
+      "Bauschaum 1K",
+      "PU Bauschaum",
+      "PU Bauschaum 1K"
     ]
   },
   {
     "key": "gipskarton",
     "input": "Rigips",
     "canonical_slug": "gipskarton-standard-12-5-1200-600-v1",
-    "search_term": "Gipskartonplatte 12,5 mm",
+    "search_term": "Gipskartonplatte",
     "aliases": [
       "Gipskarton",
       "Gipskartonplatte",
@@ -141,7 +144,7 @@
     "key": "rollputz",
     "input": "Rollputz",
     "canonical_slug": "rollputz-12kg-v1",
-    "search_term": "Rollputz 12 kg",
+    "search_term": "Rollputz weiß",
     "aliases": []
   },
   {
@@ -158,7 +161,7 @@
     "key": "schnellbauschrauben",
     "input": "Schrauben",
     "canonical_slug": "tn-3-5-25-1000-v1",
-    "search_term": "Schnellbauschrauben 25 mm",
+    "search_term": "Schnellbauschrauben TN",
     "aliases": [
       "Schnellbauschrauben",
       "Schnellbauschrauben 25 mm",
@@ -171,7 +174,7 @@
     "key": "silikon",
     "input": "Silikon",
     "canonical_slug": "sanitaer-silikon-weiss-310ml-v1",
-    "search_term": "Sanitär Silikon weiß 310 ml",
+    "search_term": "Sanitär Silikon weiß",
     "aliases": [
       "Sanitärsilikon",
       "Sanitär Silikon"
@@ -213,7 +216,7 @@
     "key": "uw-profil",
     "input": "UW Profil",
     "canonical_slug": "uw50-40-2000-v1",
-    "search_term": "UW Rahmenprofil 50",
+    "search_term": "UW Profil",
     "aliases": [
       "UW Profil 50",
       "UW Rahmenprofil",
@@ -224,7 +227,7 @@
     "key": "zement",
     "input": "Zement",
     "canonical_slug": "zement-25kg-v1",
-    "search_term": "Zement 25 kg",
+    "search_term": "Zement",
     "aliases": [
       "Bauzement",
       "Universalzement"

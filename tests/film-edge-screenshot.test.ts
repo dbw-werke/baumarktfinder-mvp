@@ -50,7 +50,7 @@ test("Dampfbremse keeps fixed sd exact, clearly labels verified variable alterna
 test("Randdämmstreifen parses height/thickness separately from roll length and requires a film flap",()=>{
   const target=get("randdaemmstreifen-8-150-25000-v1"),actual=get("randdaemmstreifen-8-150-50000-v1");
   const standard=buildStandard(actual)!;
-  assert.equal(standard.search,"Randdämmstreifen mit Folie");
+  assert.equal(standard.search,"Randdämmstreifen");
   assert.equal(evaluateProductMatch({name:"swisspor BOARD Randdämmstreifen mit Lasche 150 mm × 8 mm, 50 m Rolle"},standard,{exactPackage:true}).accepted,true);
   assert.equal(evaluateProductMatch({name:"Randdämmstreifen ohne Folienlasche 150 mm × 8 mm, 50 m Rolle"},standard,{exactPackage:true}).accepted,false);
   for(const [store,total] of [["bauhaus",25.50],["hornbach",28.45]] as const){

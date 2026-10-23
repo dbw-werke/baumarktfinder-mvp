@@ -5,6 +5,17 @@ import {resolve,join} from 'node:path';
 import {createObiLookup} from '../scripts/shop-reader/obi-lookup.mjs';
 const stamp='2026-10-03T10:00:00Z', now=()=>Date.parse(stamp);
 const product={name:'Flex-Fliesenkleber 25 kg',url:'https://www.obi.de/p/1000001/testprodukt',price:10,currency:'EUR',priceBasis:'package',priceSource:'json-ld-offer',retrievedAt:stamp};
+test('OBI searches short synonyms while validating against the original technical request',async()=>{
+ const queries=[];
+ const service=createObiLookup({now,reader:{searchShop:async(_store,query)=>{
+  queries.push(query);
+  return {products:[{...product,name:queries.length===1?'Knauf Uniflott 30 kg':'Knauf Rotband Haftputzgips 30 kg'}],errors:[]};
+ }}});
+ const result=await service.lookup('Knauf Haftputzgips Rotband 30 kg');
+ assert.deepEqual(queries,['Rotband','Knauf Rotband']);
+ assert.match(result.offer.product_name,/Rotband/);
+ assert.equal(result.offer.actual_size,'30 kg');
+});
 test('generic noncanonical OBI result persists, coalesces requests and survives a failed refresh/restart',async()=>{
  const dir=await mkdtemp(resolve('node_modules/.obi-cache-test-'));
  try {

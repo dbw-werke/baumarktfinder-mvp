@@ -32,10 +32,11 @@ test("nearest compatible canonical size is retrieved before a farther cheaper si
   const requests = [];
   const result = await findStoreProduct(preferred, { repository, storeId: "hornbach", canonicalMaterials: [far, alternative],
     reader: { searchShop: async (_store, query) => {
-      requests.push(query); return { products: query === preferred.store_search_term ? [offer(far, 3)] : [offer(alternative, 10)] };
+      requests.push(query); return { products: query === "Rotband" ? [offer(far, 3)] : [offer(alternative, 10)] };
     } } });
   assert.equal(result.actualMaterial.id, alternative.id); assert.equal(result.product.price, 10);
-  assert.equal(result.matchKind, "alternative"); assert.equal(requests.length, 2);
+  assert.equal(result.matchKind, "alternative");
+  assert.deepEqual(requests, ["Rotband", "Knauf Rotband", "Rotband Haftputzgips"]);
 });
 
 test("wrong type, thickness and undeclared sizes fail; a brand preference is soft", async () => {
@@ -96,12 +97,70 @@ test("missing-price trace distinguishes wrong packages, unit-only prices and blo
     } } });
   const [mismatch, blocked] = result.stores;
   assert.equal(mismatch.chain_id, "hornbach"); assert.equal(mismatch.requested_material_id, preferred.id);
-  assert.equal(mismatch.reader_products_found, 2); assert.equal(mismatch.saved_to_supabase, false);
+  assert.equal(mismatch.attempts[0].reader_products_found, 2); assert.equal(mismatch.saved_to_supabase, false);
   assert.match(mismatch.rejection_reason, /wrong-specification:weight_kg/);
   assert.match(mismatch.rejection_reason, /base-unit-price-only/);
   assert.equal(mismatch.attempts[0].products[0].observed_specs.weight_kg, 25);
   assert.equal(blocked.reader_products_found, 0); assert.equal(blocked.rejection_reason, "blocked");
   assert.equal(blocked.attempts[0].rejection_reason, "blocked"); assert.equal(writes, 0);
+});
+
+test("short synonyms can find the exact package after the primary query returns another size", async () => {
+  const requests = [];
+  const result = await findStoreProduct(preferred, { repository, storeId: "hornbach", canonicalMaterials: [alternative],
+    reader: { searchShop: async (_store, query) => {
+      requests.push(query);
+      return { products: query === "Knauf Rotband" ? [offer(preferred, 15)] : [offer(alternative, 10)] };
+    } } });
+  assert.deepEqual(requests, ["Rotband", "Knauf Rotband"]);
+  assert.equal(result.matchKind, "exact");
+  assert.equal(result.actualMaterial.id, preferred.id);
+  assert.equal(result.product.packageQuantity, 30);
+  assert.equal(result.attempts[1].search_term, "Knauf Rotband");
+});
+
+test("automatic synonyms are bounded and reused across size variants without relaxing purpose or quantity", async () => {
+  const pu = catalog.find(material => material.slug === "pu-schaum-1k-500ml-v1");
+  const variants = [0.3, 0.75, 1].map(volume => ({ ...pu, id: `pu-${volume}`, name: `PU Bauschaum 1K ${volume * 1000} ml`,
+    package_quantity: volume, specs: { ...pu.specs, volume_l: volume } }));
+  const requests = [];
+  const result = await findStoreProduct(pu, { repository, storeId: "hornbach", canonicalMaterials: variants,
+    reader: { searchShop: async (_store, query) => {
+      requests.push(query);
+      return { products: [{ ...offer(pu), name: "PU Bauschaum 2K 500 ml" }] };
+    } } });
+  assert.equal(result.product, null);
+  assert.ok(requests.length > 1 && requests.length <= 4);
+  assert.equal(new Set(requests).size, requests.length);
+  assert.ok(requests.every(query => !/500|750|300|1000|2K/.test(query)));
+});
+
+test("wrong mapped and supplied candidate products cannot shadow a valid automatic offer", async () => {
+  for (const source of ["mapping", "provided-candidate"]) {
+    const requests = [];
+    const result = await findStoreProduct(preferred, { storeId: "hornbach", canonicalMaterials: [alternative],
+      repository: { mapping: async () => source === "mapping" ? offer(alternative).url : null },
+      candidateUrls: source === "provided-candidate" ? [offer(alternative).url] : [],
+      reader: { searchShop: async (_store, query, options) => {
+        requests.push({ query, options });
+        return options.mappedUrl || options.candidateUrls?.length
+          ? { discovery: source, products: [offer(alternative, 10)] }
+          : { discovery: "automatic", products: [offer(preferred, 15)] };
+      } } });
+    assert.equal(result.matchKind, "exact");
+    assert.equal(requests.length, 2);
+    assert.deepEqual(requests[1].options, {});
+  }
+});
+
+test("an adapter-reported access restriction ends synonym discovery immediately", async () => {
+  let requests = 0;
+  await assert.rejects(findStoreProduct(preferred, { repository, storeId: "hornbach", canonicalMaterials: [alternative],
+    reader: { searchShop: async () => {
+      requests++;
+      return { products: [], errors: [{ code: "robots-disallowed" }] };
+    } } }), error => error.code === "robots-disallowed" && error.collectionAttempts.length === 1);
+  assert.equal(requests, 1);
 });
 
 test("verified trace uses the alternative's actual package and distinguishes dry runs from database failures", async () => {

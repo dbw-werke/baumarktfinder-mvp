@@ -3,6 +3,7 @@ import { readToomCache } from "../../../../../scripts/shop-reader/toom-cache.mjs
 import { getCatalogSnapshot } from "../../../../services/catalogSnapshot";
 import { validateStorePrice } from "../../../../services/prices";
 import { readPublishedToomPrices } from "../../../../services/publishedToomPrices";
+import { mergeCatalogSources } from "../../../../services/catalog";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -21,5 +22,6 @@ export async function GET(): Promise<Response> {
     const valid = validateStorePrice(row, row.material_id, ["toom"]);
     return valid ? [{ ...valid, verified: true }] : [];
   });
-  return Response.json({ prices }, { headers: { "Cache-Control": "private, no-store" } });
+  const selected = mergeCatalogSources(["toom"], prices, getCatalogSnapshot(["toom"]), null).offers;
+  return Response.json({ prices: selected.map(row => ({ ...row, verified: true })) }, { headers: { "Cache-Control": "private, no-store" } });
 }
