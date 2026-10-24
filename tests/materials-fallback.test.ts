@@ -65,7 +65,24 @@ test("healthy empty or inactive database catalogues never resurrect bundled mate
   for (const data of [[], [{ ...fixture, active: false }]]) {
     const load = createMaterialCatalogLoader(client((url) => json(url.pathname.endsWith("/materials") ? data : [])));
     assert.deepEqual(await load(), []);
+    assert.deepEqual(load.peek(), []);
   }
+});
+
+test("synchronous autocomplete cache starts immediately then uses authoritative database IDs and labels", async () => {
+  let calls = 0;
+  const databaseMaterial = { ...fixture, product_family: 'test', store_search_term: fixture.name };
+  const load = createMaterialCatalogLoader(client(url => {
+    calls++;
+    return json(url.pathname.endsWith('/materials') ? [databaseMaterial] : []);
+  }));
+  assert.ok(searchMaterialCatalog(load.peek(), 'R').length > 0);
+  assert.equal(calls, 0);
+  const loaded = await load();
+  assert.equal(load.peek(), loaded);
+  assert.deepEqual(searchMaterialCatalog(load.peek(), 'Datenbank').map(item => [item.id, item.label]), [[fixture.id, fixture.suggestion_label]]);
+  assert.deepEqual(searchMaterialCatalog(load.peek(), 'Regips'), []);
+  assert.equal(calls, 2);
 });
 
 test("healthy database remains authoritative when only aliases are unavailable", async () => {

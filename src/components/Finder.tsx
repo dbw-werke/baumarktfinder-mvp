@@ -9,7 +9,7 @@ import SearchLoading from "./SearchLoading";
 import StoreCard from "./StoreCard";
 import NearbyStoreCard from "./NearbyStoreCard";
 import ProductComparison from "./ProductComparison";
-import { getMaterialCatalog, getMaterialSuggestions, searchMaterialCatalog, warmMaterialSuggestions, type MaterialRow, type MaterialSuggestion } from "../services/materialSuggestions";
+import { getMaterialCatalog, getCachedMaterialSuggestions, getMaterialSuggestions, searchMaterialCatalog, warmMaterialSuggestions, type MaterialRow, type MaterialSuggestion } from "../services/materialSuggestions";
 import { fetchStoreCatalog } from "../services/catalog";
 import { fetchObiOffer } from "../services/obi";
 import type { ObiOffer } from "../lib/obi-offer";
@@ -62,11 +62,8 @@ export default function Finder() {
   useEffect(() => {
     if (!product.trim() || selectedMaterial) return;
     let cancelled = false;
-    const timer = window.setTimeout(async () => {
-      try { const found = await getMaterialSuggestions(product); if (!cancelled) setSuggestions(found); }
-      catch { if (!cancelled) setSuggestions([]); }
-    }, 150);
-    return () => { cancelled = true; window.clearTimeout(timer); };
+    void getMaterialSuggestions(product).then(found => { if (!cancelled) setSuggestions(found); }).catch(() => {});
+    return () => { cancelled = true; };
   }, [product, selectedMaterial]);
 
   function clearSearch() {
@@ -75,7 +72,7 @@ export default function Finder() {
   }
   function changeMaterial(value: string) {
     clearSearch();
-    setProduct(value); setSelectedMaterial(null); setSuggestions([]);
+    setProduct(value); setSelectedMaterial(null); setSuggestions(getCachedMaterialSuggestions(value));
   }
   async function useCurrentLocation() {
     if (busy.current || locationBusy.current || addressBusy.current) return;
@@ -171,7 +168,7 @@ export default function Finder() {
           <button type="button" className="currentLocationButton" disabled={loading || locationLoading || addressPending} onClick={useCurrentLocation}><span aria-hidden="true">⌖</span>{locationLoading ? "Standort wird ermittelt …" : "Meinen aktuellen Standort verwenden"}</button>
         </div>
         <SuggestionInput id="material" label="MATERIAL" placeholder="z. B. Rigips, Uniflott oder Acryl" value={product} suggestions={suggestions} disabled={locationLoading}
-          onChange={changeMaterial} onSelect={(item) => { changeMaterial(item.label); setSelectedMaterial(item); }} />
+          onChange={changeMaterial} onSelect={(item) => { changeMaterial(item.label); setSelectedMaterial(item); setSuggestions([]); }} />
         <button className="searchButton" disabled={(loading && pendingKey === searchKey) || locationLoading || addressPending} type="submit">{loading && pendingKey === searchKey ? "Suche läuft …" : addressPending ? "Adresse wird geprüft …" : "Suchen"}</button>
       </form>
       <div className="popular"><span>Beliebt:</span>{POPULAR_MATERIALS.map((item) => <button type="button" disabled={locationLoading} key={item} onClick={() => { changeMaterial(item); document.getElementById("material")?.focus(); }}>{item}</button>)}</div>

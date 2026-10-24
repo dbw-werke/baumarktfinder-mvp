@@ -65,7 +65,7 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
           if (args.path === "nearby") return { resolveDir: resolve("."), contents: "export const discoverNearby=(...args)=>globalThis.__finderHarness.nearby(...args);" };
           if (args.path === "obi") return { resolveDir: resolve("."), contents: "export const fetchObiOffer=(...args)=>globalThis.__finderHarness.obi(...args);" };
           if (args.path === "catalog") return { resolveDir: resolve("."), contents: "export const fetchStoreCatalog=()=>globalThis.__finderHarness.catalog();" };
-          return { resolveDir: resolve("."), contents: `import {searchMaterialCatalog} from "./src/services/materialSuggestions.ts"; export {resolvePreferredMaterial,searchMaterialCatalog} from "./src/services/materialSuggestions.ts"; export const getMaterialCatalog=async()=>globalThis.__finderHarness.materials; export const getMaterialSuggestions=async(q)=>searchMaterialCatalog(globalThis.__finderHarness.materials,q); export const warmMaterialSuggestions=async()=>{};` };
+          return { resolveDir: resolve("."), contents: `import {searchMaterialCatalog} from "./src/services/materialSuggestions.ts"; export {resolvePreferredMaterial,searchMaterialCatalog} from "./src/services/materialSuggestions.ts"; export const getMaterialCatalog=async()=>globalThis.__finderHarness.materials; export const getCachedMaterialSuggestions=(q)=>searchMaterialCatalog(globalThis.__finderHarness.materials,q); export const getMaterialSuggestions=async(q)=>searchMaterialCatalog(globalThis.__finderHarness.materials,q); export const warmMaterialSuggestions=async()=>{};` };
         });
       } }] });
     const file = join(directory, "finder.mjs"); await writeFile(file, compiled.outputFiles[0].text);

@@ -100,10 +100,11 @@ export function searchMaterialCatalog(items: CachedMaterial[], input: string): M
       if (["ud-profil", "cd-profil", "direktabhaenger", "noniusabhaenger", "trennwandband", "dichtungsband", "dampfbremse", "pe-folie"].includes(material.product_family)) {
         aliases = [...aliases, ...(definitions.find(item => item.slug === material.slug)?.aliases ?? [])];
       }
-      const candidates = [getMaterialOptionLabel(material), ...getMaterialSearchTerms(material), material.suggestion_label ?? material.name, material.name, material.store_search_term, ...aliases, ...aliases.map((alias) => `${alias} ${material.name}`)]
+      const candidates = [...getMaterialSearchTerms(material), material.suggestion_label || material.name, material.name, material.store_search_term, ...aliases, ...aliases.map((alias) => `${alias} ${material.name}`)]
         .map(normalizeMaterialSearch);
       let score = 0;
       for (const candidate of candidates) {
+        if (query.length === 1 && !candidate.startsWith(query)) continue;
         const words = candidate.split(" ");
         if (candidate === query) score = Math.max(score, 100);
         else if (candidate.startsWith(query) && (!/\d/.test(queryTokens.at(-1)!) || candidate[query.length] === " ")) score = Math.max(score, 90);
@@ -114,8 +115,8 @@ export function searchMaterialCatalog(items: CachedMaterial[], input: string): M
     }).filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score || (a.material.suggestion_label ?? a.material.name).localeCompare(b.material.suggestion_label ?? b.material.name, "de"))
     .slice(0, 10).map(({ material }) => ({
-      id: material.id, label: getMaterialOptionLabel(material), name: material.name,
-      store_search_term: getMaterialSearchTerms(material)[0], base_unit: material.base_unit,
+      id: material.id, label: material.suggestion_label || material.name, name: material.name,
+      store_search_term: material.store_search_term, base_unit: material.base_unit,
       package_quantity: material.package_quantity, specs: material.specs,
     }));
 }
@@ -124,7 +125,9 @@ export function searchMaterialCatalog(items: CachedMaterial[], input: string): M
 export function createMaterialCatalogLoader(client = supabase, now: () => number = Date.now) {
   let cache: { items: CachedMaterial[]; loadedAt: number; retryAt: number; database: boolean } | null = null;
   let loadingPromise: Promise<CachedMaterial[]> | null = null;
-  return async function load(): Promise<CachedMaterial[]> {
+  let initialFallback: CachedMaterial[] | null = null;
+  const peek = (): CachedMaterial[] => cache?.items ?? (initialFallback ??= bundledMaterialCatalog());
+  async function load(): Promise<CachedMaterial[]> {
     if (cache && now() < cache.retryAt) return cache.items;
     if (loadingPromise) return loadingPromise;
     loadingPromise = (async () => {
@@ -160,7 +163,8 @@ export function createMaterialCatalogLoader(client = supabase, now: () => number
     })();
     try { return await loadingPromise; }
     finally { loadingPromise = null; }
-  };
+  }
+  return Object.assign(load, { peek });
 }
 
 const loadMaterialCache = createMaterialCatalogLoader();
@@ -202,7 +206,12 @@ export async function warmMaterialSuggestions(): Promise<void> {
   await loadMaterialCache();
 }
 
+/** Immediate suggestions from the shared cache, without starting a network request. */
+export function getCachedMaterialSuggestions(input: string): MaterialSuggestion[] {
+  return searchMaterialCatalog(loadMaterialCache.peek(), input);
+}
+
 export async function getMaterialSuggestions(input: string): Promise<MaterialSuggestion[]> {
   if (!input.trim()) return [];
-  return searchMaterialCatalog(withCorrectedProductMetadata(await loadMaterialCache()), input);
+  return searchMaterialCatalog(await loadMaterialCache(), input);
 }

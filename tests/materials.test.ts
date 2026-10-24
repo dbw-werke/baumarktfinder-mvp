@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { normalizeMaterialSearch, searchMaterialCatalog, type CachedMaterial } from '../src/services/materialSuggestions';
+import { bundledMaterialCatalog, normalizeMaterialSearch, searchMaterialCatalog, type CachedMaterial } from '../src/services/materialSuggestions';
 import { getPriceFreshness, validateStorePrice, fetchStorePrices } from '../src/services/prices';
 import { buildStandard } from '../scripts/shop-reader/product-standardizer.mjs';
 
@@ -21,11 +21,27 @@ test('canonical seeds cover required categories without retailer prices', () => 
   }
 });
 test('Rigips, Regips and GK preserve both explicit standard board variants', () => {
-  for (const query of ['rig', 'rigips', 'Regips', 'GK', 'gk platte', 'rigips platte']) {
+  for (const query of ['rig', 'rigips', 'Regips', 'Regipsplatte', 'GK', 'gk platte', 'rigips platte']) {
     const results = searchMaterialCatalog(catalog, query);
     assert.ok(results.some((item) => item.id === 'gipskarton-standard-12-5-1200-600-v1'), query);
     assert.ok(results.some((item) => item.id === 'gipskarton-standard-12-5-2000-1250-v1'), query);
   }
+});
+test('first-letter searches use name or alias prefixes and retain exact catalogue labels and IDs', () => {
+  const fixture = bundledMaterialCatalog()[0];
+  const items = [
+    { material: { ...fixture.material, id: 'prefix', name: 'Randmaterial', suggestion_label: 'Originaler Datenbankname', product_family: 'test', store_search_term: 'Randmaterial' }, aliases: [] },
+    { material: { ...fixture.material, id: 'alias', name: 'Bestandsmaterial', suggestion_label: null, product_family: 'test', store_search_term: 'Bestandsmaterial' }, aliases: ['Randprodukt'] },
+    { material: { ...fixture.material, id: 'middle', name: 'Test Randmaterial', suggestion_label: 'Test Randmaterial', product_family: 'test', store_search_term: 'Test Randmaterial' }, aliases: [] },
+  ];
+  const before = structuredClone(items);
+  const results = searchMaterialCatalog(items, 'R');
+  assert.deepEqual(results.map(item => item.id).sort(), ['alias', 'prefix']);
+  assert.equal(results.find(item => item.id === 'prefix')?.label, 'Originaler Datenbankname');
+  assert.equal(results.find(item => item.id === 'alias')?.label, 'Bestandsmaterial');
+  assert.deepEqual(items, before);
+  const standard = catalog.find(entry => entry.material.slug === 'gipskarton-standard-12-5-1200-600-v1')!;
+  assert.equal(searchMaterialCatalog(catalog, 'Regipsplatte').find(item => item.id === standard.material.id)?.label, standard.material.suggestion_label);
 });
 test('umlauts, decimal commas, case and abbreviations normalize', () => {
   assert.equal(normalizeMaterialSearch('  DÄMMUNG  12,5 × 600  '), 'daemmung 12.5 600');
