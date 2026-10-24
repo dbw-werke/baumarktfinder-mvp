@@ -29,7 +29,8 @@ export default function GoogleAddressInput(props: Props) {
     if (widget.current) {
       widget.current.disabled = props.disabled;
       if (widget.current.value !== props.value) widget.current.value = props.value;
-      widget.current.setAttribute("aria-describedby", props.hint ? "address-provider address-hint" : "address-provider");
+      if (props.hint) widget.current.setAttribute("aria-describedby", "address-hint");
+      else widget.current.removeAttribute("aria-describedby");
     }
   }, [props]);
 
@@ -51,7 +52,7 @@ export default function GoogleAddressInput(props: Props) {
       element.id = "address";
       element.className = "googleAddressWidget";
       element.setAttribute("aria-label", "WO IN DEUTSCHLAND?");
-      element.setAttribute("aria-describedby", current.current.hint ? "address-provider address-hint" : "address-provider");
+      if (current.current.hint) element.setAttribute("aria-describedby", "address-hint");
       element.value = current.current.value;
       element.disabled = current.current.disabled;
       element.style.width = "100%";
@@ -120,11 +121,10 @@ export default function GoogleAddressInput(props: Props) {
       <span className="inputIcon" aria-hidden="true">⌖</span>
       <input ref={plainInput} id="address" name="address" value={props.value} disabled={props.disabled}
         placeholder="Straße, Hausnummer, PLZ und Ort" autoComplete="street-address"
-        aria-describedby={props.hint ? "address-provider address-hint" : "address-provider"}
+        aria-describedby={props.hint ? "address-hint" : undefined}
         onFocus={() => setActivated(true)}
         onChange={(event) => props.onChange(event.target.value)} />
     </div>}
-    <p className="fieldHint" id="address-provider">Für Adressvorschläge wird beim Aktivieren des Felds Google geladen. Eingaben werden an Google übertragen.</p>
     {props.hint && <p className="fieldHint" id="address-hint" role="status">{props.hint}</p>}
   </div>;
 }

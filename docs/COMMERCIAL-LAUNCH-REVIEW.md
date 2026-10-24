@@ -20,7 +20,7 @@ Die aktuelle Preisabdeckung ist mit `npm run prices:audit` aus dem aktiven Katal
 
 ## Umgesetzte Begrenzung des Google-Aufrufs
 
-`GoogleAddressInput` lädt das Adresswidget erst, wenn der Nutzer das Adressfeld fokussiert. Beim bloßen Seitenaufruf löst diese Komponente keinen Google-Aufruf mehr aus. Der Hinweis am Feld erklärt Anbieter und Übertragung der Eingabe. Eine ausdrücklich gestartete Marktsuche kann unabhängig davon Google verwenden. Der Wechsel vom normalen Eingabefeld zum Widget behält den zuletzt eingegebenen Text und den Fokus; bei Fehlern bleibt das normale Eingabefeld verfügbar.
+`GoogleAddressInput` lädt das Adresswidget erst, wenn der Nutzer das Adressfeld fokussiert. Beim bloßen Seitenaufruf löst diese Komponente keinen Google-Aufruf mehr aus. Der zusätzliche Hinweis am Feld wurde am 24.10.2026 auf Wunsch entfernt; der Datenschutzhinweis im Seitenfuß bleibt erhalten. Es wurde kein Einwilligungsdialog entfernt oder umgangen. Die weiterhin fehlende vollständige öffentliche Datenschutzerklärung muss auch erklären, dass Google beim Aktivieren des Adressfelds geladen wird und Eingaben für Adressvorschläge an Google übermittelt werden. Eine ausdrücklich gestartete Marktsuche kann unabhängig davon Google verwenden. Der Wechsel vom normalen Eingabefeld zum Widget behält den zuletzt eingegebenen Text und den Fokus; bei Fehlern bleibt das normale Eingabefeld verfügbar.
 
 Der React-/JSDOM-Regressionstest `tests/google-address-input.test.tsx` prüft den ausbleibenden Aufruf beim Mounten, die Aktivierung beim Fokus, Text- und Fokuserhalt, keinen Fokusdiebstahl, den Fehlerfallback ohne Reload-Schleife und das Verwerfen später Ergebnisse nach dem Unmount. Er ist lokal erfolgreich. Dabei werden keine echten Adressen an Google gesendet.
 

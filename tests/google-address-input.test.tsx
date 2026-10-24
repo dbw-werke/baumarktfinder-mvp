@@ -30,12 +30,16 @@ test("Google address suggestions load on use, preserve input and focus, and reta
     root = createRoot(dom.window.document.getElementById("root")!);
     let ready = 0, failures = 0;
     const changes: string[] = [];
-    const props = { value: "Frankfurt", disabled: false, onChange: (value: string) => changes.push(value),
+    const props = { value: "Frankfurt", disabled: false, hint: undefined as string | undefined, onChange: (value: string) => changes.push(value),
       onSelect: () => {}, onError: () => failures++, onReady: () => ready++, onPendingChange: () => {} };
     const render = (key = "first") => act(async () => root!.render(<Address key={key} {...props} />));
     await render();
     assert.equal(requests.length, 0, "mounting the page must not contact Google");
-    assert.match(dom.window.document.getElementById("address-provider")!.textContent!, /Google/);
+    assert.equal(dom.window.document.getElementById("address-provider"), null);
+    assert.equal(dom.window.document.getElementById("address")!.getAttribute("aria-describedby"), null);
+    props.hint = "Bitte wähle eine Adresse aus.";
+    await render();
+    assert.equal(dom.window.document.getElementById("address")!.getAttribute("aria-describedby"), "address-hint");
     await act(async () => dom.window.document.getElementById("address")!.focus());
     assert.equal(requests.length, 1, "focusing the address field activates the provider");
     props.value = "Frankfurt am Main";
@@ -45,7 +49,11 @@ test("Google address suggestions load on use, preserve input and focus, and reta
     assert.equal(widget.value, "Frankfurt am Main", "text changed during loading is retained");
     assert.equal(dom.window.document.activeElement, widget, "typing focus survives the async replacement");
     assert.equal(ready, 1);
-    assert.equal(widget.getAttribute("aria-describedby"), "address-provider");
+    assert.equal(widget.getAttribute("aria-describedby"), "address-hint");
+    assert.equal(dom.window.document.getElementById("address-hint")!.textContent, props.hint);
+    props.hint = undefined;
+    await render();
+    assert.equal(widget.getAttribute("aria-describedby"), null, "cleared hints must not leave dangling accessibility references");
     widget.value = "Frankfurt Bornheim";
     await act(async () => widget.dispatchEvent(new dom.window.Event("input")));
     assert.equal(changes.at(-1), "Frankfurt Bornheim");
