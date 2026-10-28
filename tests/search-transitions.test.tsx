@@ -163,7 +163,14 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
           assert.equal(card.querySelector('.actualSpecification')?.textContent,expectedPackage);
           assert.equal(card.querySelector<HTMLAnchorElement>('.offerButton')?.href,
             store.id === 'bauhaus' && expectedPrice.product_url.endsWith('/27790416') ? getStoreUrl('bauhaus','27790416') : expectedPrice.product_url);
-        } else assert.ok(card.querySelector('.missingPrice'),`${intent.input}: never fabricate missing ${store.id} price`);
+        } else {
+          assert.equal(card.getAttribute('data-price-kind'), 'estimate', `${intent.input}: ${store.id} has no verified offer`);
+          assert.equal(card.querySelector('.missingPrice'), null);
+          assert.equal(card.querySelector('.matchBadge')?.textContent, 'Schätzpreis');
+          assert.match(card.querySelector('.packagePrice')?.textContent ?? '', /^ca\. [\d.,]+\s*€/);
+          assert.match(card.querySelector('.priceScope')?.textContent ?? '', /kein Händlerangebot/);
+          assert.match(card.querySelector('.offerButton')?.textContent ?? '', /Beim Händler suchen/);
+        }
         assert.match(card.querySelector<HTMLAnchorElement>('.routeButton')!.href,/google\.com\/maps\/dir/);
         evidence.push({input:intent.input,canonical_slug:intent.canonical_slug,store:store.id,rendered:Boolean(expectedPrice),
           product:expectedPrice?.product_name??null,package:expectedPackage,price:expectedPrice?.price??null,

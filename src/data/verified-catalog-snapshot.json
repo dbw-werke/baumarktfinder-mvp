@@ -154,6 +154,42 @@
       }
     },
     {
+      "material_id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
+      "canonical_slug": "tn-3-5-35-1000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "tn",
+        "diameter_mm": 3.5,
+        "length_mm": 35,
+        "pieces": 1000,
+        "required_terms": [
+          "tn",
+          "feingewinde"
+        ],
+        "excluded_terms": [
+          "grobgewinde",
+          "tb"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Bosch Trockenbauschraube Feingewinde PH2 Ø 3,5 × 35 mm, 1000 Stück",
+      "product_url": "https://toom.de/p/trockenbauschraube-feingewinde-ph2-3535-mm-1000-stueck/10454831",
+      "price": 34.99,
+      "unit_price": 0.03,
+      "unit": "piece",
+      "package_quantity": 1000,
+      "currency": "EUR",
+      "checked_at": "2026-10-27T20:33:00.620Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 35,
+        "pieces": 1000
+      }
+    },
+    {
       "material_id": "090eff92-f6d1-2d5f-55ef-a2396edb10ce",
       "canonical_slug": "uw50-40-2000-v1",
       "canonical_version": 1,

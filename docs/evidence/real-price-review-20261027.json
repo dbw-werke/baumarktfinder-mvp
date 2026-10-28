@@ -1,0 +1,2527 @@
+{
+  "completed_at": "2026-10-27T20:33:53.788Z",
+  "scope": "All missing material/retailer pairs reviewed with existing short queries and aliases. Existing retailer access restrictions respected without retries; remaining retailers limited to 120 seconds each and two product pages per query. Candidate observations validated against existing product specification. No catalog prices, names, IDs or observation dates modified.",
+  "active_materials": 79,
+  "chains": [
+    {
+      "chain": "obi",
+      "missing_materials": [
+        {
+          "id": "645be38b-685d-6037-df21-2c24828c098d",
+          "slug": "osb3-18-2500-1250-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "1d5fbb5a-10e4-32b1-0eb5-bbbb060c071c",
+          "slug": "trennwandband-30-3-30000-v1",
+          "queries": [
+            "Trennwandband",
+            "Trennwand Dichtungsband"
+          ]
+        },
+        {
+          "id": "dcfebd0f-41e0-1769-03f6-94d2ec3e9fdf",
+          "slug": "dichtungsband-50-3-30000-v1",
+          "queries": [
+            "Dichtungsband Trockenbau",
+            "Trennwandband"
+          ]
+        },
+        {
+          "id": "65777a87-70cd-99a3-c1ad-7004cc248378",
+          "slug": "direktabhaenger-cd60-125-1-v1",
+          "queries": [
+            "Direktabhänger",
+            "Direktabhänger CD"
+          ]
+        },
+        {
+          "id": "53b139ab-3099-e6a7-228a-fcf727928403",
+          "slug": "nonius-unterteil-cd60-130-1-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "1d091a9c-c26c-ab55-accc-d07b134dc17d",
+          "slug": "randdaemmstreifen-8-150-25000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+          "slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+          "queries": [
+            "Sanitär Silikon weiß",
+            "Sanitärsilikon weiß"
+          ]
+        },
+        {
+          "id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+          "slug": "pu-schaum-1k-b2-genius-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "7dca26b6-f1af-a691-3f31-28c1dabbb8a7",
+          "slug": "osb3-18-2500-675-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "9d6af0d6-b275-9449-91c4-9d23d19e6d71",
+          "slug": "nonius-unterteil-cd60-130-100-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "41bab945-0ef9-b1ca-2e9c-963088da2974",
+          "slug": "glaswolle-035-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "d1e921f2-4f35-e8ef-9fd5-996c1f987776",
+          "slug": "glaswolle-034-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "93c79942-9f3f-c68a-b52e-8a0a79b2c6b1",
+          "slug": "dampfbremse-variabel-03-5-1500-40000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "25fcf087-17ac-44a9-8046-9817871622c6",
+          "slug": "dampfbremse-variabel-05-55-1500-20000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
+          "slug": "glaswolle-034-120-5-76m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
+          "slug": "randdaemmstreifen-8-150-50000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "322f8d06-4b24-234f-4ccf-3a98906565d8",
+          "slug": "pu-schaum-1k-b2-genius-champagner-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+          "slug": "schleifpapier-sortiment-230-280-15-v1",
+          "queries": [
+            "Schleifpapier Sortiment",
+            "Schleifpapier Set"
+          ]
+        }
+      ],
+      "planned_queries": 22,
+      "attempts": [
+        {
+          "query": "OSB Platte",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/OSB%20Platte/"
+            }
+          ]
+        },
+        {
+          "query": "OSB Verlegeplatte",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/OSB%20Verlegeplatte/"
+            }
+          ]
+        },
+        {
+          "query": "Trennwandband",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Trennwandband/"
+            }
+          ]
+        },
+        {
+          "query": "Trennwand Dichtungsband",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Trennwand%20Dichtungsband/"
+            }
+          ]
+        },
+        {
+          "query": "Dichtungsband Trockenbau",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Dichtungsband%20Trockenbau/"
+            }
+          ]
+        },
+        {
+          "query": "Direktabhänger",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Direktabh%C3%A4nger/"
+            }
+          ]
+        },
+        {
+          "query": "Direktabhänger CD",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Direktabh%C3%A4nger%20CD/"
+            }
+          ]
+        },
+        {
+          "query": "Nonius Unterteil",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Nonius%20Unterteil/"
+            }
+          ]
+        },
+        {
+          "query": "Noniusabhänger Unterteil",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Noniusabh%C3%A4nger%20Unterteil/"
+            }
+          ]
+        },
+        {
+          "query": "Randdämmstreifen",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Randd%C3%A4mmstreifen/"
+            }
+          ]
+        },
+        {
+          "query": "Randdämmstreifen mit Folie",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Randd%C3%A4mmstreifen%20mit%20Folie/"
+            }
+          ]
+        },
+        {
+          "query": "Sanitär Silikon weiß",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Sanit%C3%A4r%20Silikon%20wei%C3%9F/"
+            }
+          ]
+        },
+        {
+          "query": "Sanitärsilikon weiß",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Sanit%C3%A4rsilikon%20wei%C3%9F/"
+            }
+          ]
+        },
+        {
+          "query": "Bauschaum 1K",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Bauschaum%201K/"
+            }
+          ]
+        },
+        {
+          "query": "Soudal Genius Gun 1K",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Soudal%20Genius%20Gun%201K/"
+            }
+          ]
+        },
+        {
+          "query": "Glaswolle 100 mm",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Glaswolle%20100%20mm/"
+            }
+          ]
+        },
+        {
+          "query": "Glaswolle Klemmfilz",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Glaswolle%20Klemmfilz/"
+            }
+          ]
+        },
+        {
+          "query": "Dampfbremse",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Dampfbremse/"
+            }
+          ]
+        },
+        {
+          "query": "Klimamembran",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Klimamembran/"
+            }
+          ]
+        },
+        {
+          "query": "Glaswolle 120 mm",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Glaswolle%20120%20mm/"
+            }
+          ]
+        },
+        {
+          "query": "Schleifpapier Sortiment",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Schleifpapier%20Sortiment/"
+            }
+          ]
+        },
+        {
+          "query": "Schleifpapier Set",
+          "products_found": 0,
+          "errors": [
+            {
+              "code": "not-found",
+              "url": "https://www.obi.de/search/Schleifpapier%20Set/"
+            }
+          ]
+        }
+      ],
+      "stop_reason": null
+    },
+    {
+      "chain": "bauhaus",
+      "missing_materials": [
+        {
+          "id": "65777a87-70cd-99a3-c1ad-7004cc248378",
+          "slug": "direktabhaenger-cd60-125-1-v1",
+          "queries": [
+            "Direktabhänger",
+            "Direktabhänger CD"
+          ]
+        },
+        {
+          "id": "53b139ab-3099-e6a7-228a-fcf727928403",
+          "slug": "nonius-unterteil-cd60-130-1-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
+          "slug": "tn-3-5-35-1000-v1",
+          "queries": [
+            "Schnellbauschrauben TN",
+            "Trockenbauschrauben Feingewinde"
+          ]
+        },
+        {
+          "id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+          "slug": "pu-schaum-1k-b2-genius-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "3f27e372-f757-5850-5643-489a33782dbb",
+          "slug": "schleifpapier-trockenbau-k180-225-5-v1",
+          "queries": [
+            "Schleifscheibe K180",
+            "Trockenbau Schleifpapier K180"
+          ]
+        },
+        {
+          "id": "9d6af0d6-b275-9449-91c4-9d23d19e6d71",
+          "slug": "nonius-unterteil-cd60-130-100-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "d1e921f2-4f35-e8ef-9fd5-996c1f987776",
+          "slug": "glaswolle-034-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "93c79942-9f3f-c68a-b52e-8a0a79b2c6b1",
+          "slug": "dampfbremse-variabel-03-5-1500-40000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "25fcf087-17ac-44a9-8046-9817871622c6",
+          "slug": "dampfbremse-variabel-05-55-1500-20000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
+          "slug": "glaswolle-034-120-5-76m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "322f8d06-4b24-234f-4ccf-3a98906565d8",
+          "slug": "pu-schaum-1k-b2-genius-champagner-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+          "slug": "schleifpapier-sortiment-230-280-15-v1",
+          "queries": [
+            "Schleifpapier Sortiment",
+            "Schleifpapier Set"
+          ]
+        }
+      ],
+      "planned_queries": 17,
+      "attempts": [],
+      "stop_reason": "existing-access-restriction-not-retried",
+      "prior_review": {
+        "file": "docs/evidence/catalog-short-search-retry-20261023.json",
+        "stop_reason": "robots-unavailable"
+      }
+    },
+    {
+      "chain": "hornbach",
+      "missing_materials": [
+        {
+          "id": "645be38b-685d-6037-df21-2c24828c098d",
+          "slug": "osb3-18-2500-1250-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "1d5fbb5a-10e4-32b1-0eb5-bbbb060c071c",
+          "slug": "trennwandband-30-3-30000-v1",
+          "queries": [
+            "Trennwandband",
+            "Trennwand Dichtungsband"
+          ]
+        },
+        {
+          "id": "dcfebd0f-41e0-1769-03f6-94d2ec3e9fdf",
+          "slug": "dichtungsband-50-3-30000-v1",
+          "queries": [
+            "Dichtungsband Trockenbau",
+            "Trennwandband"
+          ]
+        },
+        {
+          "id": "c94d34f6-3b31-013a-e176-da1fee7c21f1",
+          "slug": "schleifpapier-k180-93-230-10-v1",
+          "queries": [
+            "Schleifpapier K180",
+            "Schleifbogen K180"
+          ]
+        },
+        {
+          "id": "587c0ad5-79b5-7126-58c8-d4e3504cc0ef",
+          "slug": "schleifpapier-k180-93-5000-rolle-v1",
+          "queries": [
+            "Schleifpapierrolle K180",
+            "Schleifrolle K180"
+          ]
+        },
+        {
+          "id": "3f27e372-f757-5850-5643-489a33782dbb",
+          "slug": "schleifpapier-trockenbau-k180-225-5-v1",
+          "queries": [
+            "Schleifscheibe K180",
+            "Trockenbau Schleifpapier K180"
+          ]
+        },
+        {
+          "id": "7dca26b6-f1af-a691-3f31-28c1dabbb8a7",
+          "slug": "osb3-18-2500-675-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "f0652db9-5ee1-f9b4-4250-3afb8a574424",
+          "slug": "rigips-vario-25kg-v1",
+          "queries": [
+            "Vario Fugenspachtel",
+            "Rigips Vario"
+          ]
+        },
+        {
+          "id": "6667c2c2-893a-7831-be47-f95fc076e71c",
+          "slug": "mem-super-haftgrund-5l-v1",
+          "queries": [
+            "Super Haftgrund",
+            "MEM Super Haftgrund"
+          ]
+        },
+        {
+          "id": "287bfb05-5343-0fb9-8ac4-a41bdbf003fb",
+          "slug": "mem-super-haftgrund-10l-v1",
+          "queries": [
+            "Super Haftgrund",
+            "MEM Super Haftgrund"
+          ]
+        },
+        {
+          "id": "41bab945-0ef9-b1ca-2e9c-963088da2974",
+          "slug": "glaswolle-035-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "93c79942-9f3f-c68a-b52e-8a0a79b2c6b1",
+          "slug": "dampfbremse-variabel-03-5-1500-40000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        }
+      ],
+      "planned_queries": 19,
+      "attempts": [
+        {
+          "query": "OSB Platte",
+          "products_found": 1,
+          "errors": []
+        },
+        {
+          "query": "OSB Verlegeplatte",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Trennwandband",
+          "products_found": 1,
+          "errors": []
+        },
+        {
+          "query": "Trennwand Dichtungsband",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Dichtungsband Trockenbau",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Schleifpapier K180",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Schleifbogen K180",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Schleifpapierrolle K180",
+          "products_found": 1,
+          "errors": []
+        },
+        {
+          "query": "Schleifrolle K180",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Schleifscheibe K180",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Trockenbau Schleifpapier K180",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Vario Fugenspachtel",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Rigips Vario",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Super Haftgrund",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "MEM Super Haftgrund",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Glaswolle 100 mm",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Glaswolle Klemmfilz",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Dampfbremse",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Klimamembran",
+          "products_found": 2,
+          "errors": []
+        }
+      ],
+      "stop_reason": null
+    },
+    {
+      "chain": "toom",
+      "missing_materials": [
+        {
+          "id": "645be38b-685d-6037-df21-2c24828c098d",
+          "slug": "osb3-18-2500-1250-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "1d5fbb5a-10e4-32b1-0eb5-bbbb060c071c",
+          "slug": "trennwandband-30-3-30000-v1",
+          "queries": [
+            "Trennwandband",
+            "Trennwand Dichtungsband"
+          ]
+        },
+        {
+          "id": "dcfebd0f-41e0-1769-03f6-94d2ec3e9fdf",
+          "slug": "dichtungsband-50-3-30000-v1",
+          "queries": [
+            "Dichtungsband Trockenbau",
+            "Trennwandband"
+          ]
+        },
+        {
+          "id": "53b139ab-3099-e6a7-228a-fcf727928403",
+          "slug": "nonius-unterteil-cd60-130-1-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
+          "slug": "tn-3-5-35-1000-v1",
+          "queries": [
+            "Schnellbauschrauben TN",
+            "Trockenbauschrauben Feingewinde"
+          ]
+        },
+        {
+          "id": "1d091a9c-c26c-ab55-accc-d07b134dc17d",
+          "slug": "randdaemmstreifen-8-150-25000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "3f27e372-f757-5850-5643-489a33782dbb",
+          "slug": "schleifpapier-trockenbau-k180-225-5-v1",
+          "queries": [
+            "Schleifscheibe K180",
+            "Trockenbau Schleifpapier K180"
+          ]
+        },
+        {
+          "id": "7dca26b6-f1af-a691-3f31-28c1dabbb8a7",
+          "slug": "osb3-18-2500-675-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "9d6af0d6-b275-9449-91c4-9d23d19e6d71",
+          "slug": "nonius-unterteil-cd60-130-100-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "f0652db9-5ee1-f9b4-4250-3afb8a574424",
+          "slug": "rigips-vario-25kg-v1",
+          "queries": [
+            "Vario Fugenspachtel",
+            "Rigips Vario"
+          ]
+        },
+        {
+          "id": "41bab945-0ef9-b1ca-2e9c-963088da2974",
+          "slug": "glaswolle-035-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "d1e921f2-4f35-e8ef-9fd5-996c1f987776",
+          "slug": "glaswolle-034-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "25fcf087-17ac-44a9-8046-9817871622c6",
+          "slug": "dampfbremse-variabel-05-55-1500-20000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
+          "slug": "glaswolle-034-120-5-76m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
+          "slug": "randdaemmstreifen-8-150-50000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+          "slug": "schleifpapier-sortiment-230-280-15-v1",
+          "queries": [
+            "Schleifpapier Sortiment",
+            "Schleifpapier Set"
+          ]
+        }
+      ],
+      "planned_queries": 22,
+      "attempts": [
+        {
+          "query": "OSB Platte",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "OSB Verlegeplatte",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Trennwandband",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Trennwand Dichtungsband",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Dichtungsband Trockenbau",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Nonius Unterteil",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Noniusabhänger Unterteil",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Schnellbauschrauben TN",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Trockenbauschrauben Feingewinde",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Randdämmstreifen",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Randdämmstreifen mit Folie",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Schleifscheibe K180",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Trockenbau Schleifpapier K180",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Vario Fugenspachtel",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Rigips Vario",
+          "products_found": 2,
+          "errors": []
+        },
+        {
+          "query": "Glaswolle 100 mm",
+          "products_found": 0,
+          "errors": []
+        }
+      ],
+      "stop_reason": "bounded-chain-time-budget"
+    },
+    {
+      "chain": "hagebau",
+      "missing_materials": [
+        {
+          "id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
+          "slug": "gipskarton-standard-12-5-1200-600-v1",
+          "queries": [
+            "Gipskartonplatte",
+            "Gipskarton"
+          ]
+        },
+        {
+          "id": "2d750efa-4af5-e9b4-5416-89678194f058",
+          "slug": "gipskarton-standard-12-5-2000-1250-v1",
+          "queries": [
+            "Gipskartonplatte",
+            "Gipskarton"
+          ]
+        },
+        {
+          "id": "f1da0475-9771-b503-5f40-26c8b138d4ae",
+          "slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+          "queries": [
+            "Gipskarton Feuchtraum",
+            "Gipskarton imprägniert"
+          ]
+        },
+        {
+          "id": "645be38b-685d-6037-df21-2c24828c098d",
+          "slug": "osb3-18-2500-1250-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "3d049513-3876-7c6d-5522-965ca4dd56f2",
+          "slug": "ud28-27-3000-v1",
+          "queries": [
+            "UD Profil",
+            "UD Wandprofil"
+          ]
+        },
+        {
+          "id": "eaff18c6-3cc4-0b8e-0d86-888725219caf",
+          "slug": "cd60-27-3000-v1",
+          "queries": [
+            "CD Profil",
+            "CD Deckenprofil"
+          ]
+        },
+        {
+          "id": "1d5fbb5a-10e4-32b1-0eb5-bbbb060c071c",
+          "slug": "trennwandband-30-3-30000-v1",
+          "queries": [
+            "Trennwandband",
+            "Trennwand Dichtungsband"
+          ]
+        },
+        {
+          "id": "dcfebd0f-41e0-1769-03f6-94d2ec3e9fdf",
+          "slug": "dichtungsband-50-3-30000-v1",
+          "queries": [
+            "Dichtungsband Trockenbau",
+            "Trennwandband"
+          ]
+        },
+        {
+          "id": "65777a87-70cd-99a3-c1ad-7004cc248378",
+          "slug": "direktabhaenger-cd60-125-1-v1",
+          "queries": [
+            "Direktabhänger",
+            "Direktabhänger CD"
+          ]
+        },
+        {
+          "id": "53b139ab-3099-e6a7-228a-fcf727928403",
+          "slug": "nonius-unterteil-cd60-130-1-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "c8288465-c1df-0c3a-e05a-773e75a6b678",
+          "slug": "knauf-uniflott-finish-8kg-v1",
+          "queries": [
+            "Uniflott Finish",
+            "Knauf Uniflott Finish"
+          ]
+        },
+        {
+          "id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+          "slug": "knauf-rotband-30kg-v1",
+          "queries": [
+            "Rotband",
+            "Knauf Rotband"
+          ]
+        },
+        {
+          "id": "32353635-2f0c-145d-8c80-b51d643f0acd",
+          "slug": "knauf-rotband-25kg-v1",
+          "queries": [
+            "Rotband",
+            "Knauf Rotband"
+          ]
+        },
+        {
+          "id": "8739fa28-ef16-5da4-dea0-a10cd973d87a",
+          "slug": "knauf-perlfix-30kg-v1",
+          "queries": [
+            "Perlfix",
+            "Knauf Perlfix"
+          ]
+        },
+        {
+          "id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+          "slug": "acryl-weiss-310ml-v1",
+          "queries": [
+            "Acryl weiß",
+            "Acryl Dichtstoff weiß"
+          ]
+        },
+        {
+          "id": "c3eb45d7-6ade-8acf-36b5-998aae112efa",
+          "slug": "tn-3-5-25-1000-v1",
+          "queries": [
+            "Schnellbauschrauben TN",
+            "Trockenbauschrauben Feingewinde"
+          ]
+        },
+        {
+          "id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
+          "slug": "tn-3-5-35-1000-v1",
+          "queries": [
+            "Schnellbauschrauben TN",
+            "Trockenbauschrauben Feingewinde"
+          ]
+        },
+        {
+          "id": "775c5e17-d6db-e6ac-4e70-a65d07515bd8",
+          "slug": "glaswolle-035-120-6m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "2f179e38-0b65-416f-f2f4-65bce8d65cb5",
+          "slug": "pe-folie-200-2000-50000-v1",
+          "queries": [
+            "PE Baufolie",
+            "Baufolie"
+          ]
+        },
+        {
+          "id": "1d091a9c-c26c-ab55-accc-d07b134dc17d",
+          "slug": "randdaemmstreifen-8-150-25000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+          "slug": "cd60-27-3100-v1",
+          "queries": [
+            "CD Profil",
+            "CD Deckenprofil"
+          ]
+        },
+        {
+          "id": "aceb2694-62a9-d1e0-3e6c-3bf8d4c68ebd",
+          "slug": "glaswolle-035-120-5-28m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+          "slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+          "queries": [
+            "Sanitär Silikon weiß",
+            "Sanitärsilikon weiß"
+          ]
+        },
+        {
+          "id": "1da620c7-7d08-a42e-5ad8-bd13fd803269",
+          "slug": "glaswolle-035-120-5-76m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+          "slug": "pu-schaum-1k-b2-genius-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "23aa28b5-5e69-1a1c-65c7-c68c4fb11c57",
+          "slug": "acryl-weiss-300ml-v1",
+          "queries": [
+            "Acryl weiß",
+            "Acryl Dichtstoff weiß"
+          ]
+        },
+        {
+          "id": "81262b5d-1e95-5fe3-1634-8e543049d5af",
+          "slug": "acryl-weiss-280ml-v1",
+          "queries": [
+            "Acryl weiß",
+            "Acryl Dichtstoff weiß"
+          ]
+        },
+        {
+          "id": "a77f72d7-ba2c-f7ee-d4ea-8a3c6899322c",
+          "slug": "steinwolle-sonorock-040-40-7-5m2-v1",
+          "queries": [
+            "Steinwolle 40 mm",
+            "Steinwolle Trennwandplatte"
+          ]
+        },
+        {
+          "id": "60c4a168-2bf6-f806-729b-1490d89aa85c",
+          "slug": "zement-25kg-v1",
+          "queries": [
+            "Zement",
+            "Portlandzement"
+          ]
+        },
+        {
+          "id": "d68b71d7-ee5b-20f3-9d25-13ce34f3764c",
+          "slug": "sockelputz-30kg-v1",
+          "queries": [
+            "Sockelputz",
+            "Zementsockelputz"
+          ]
+        },
+        {
+          "id": "dae638df-5d1f-1c45-c736-f8634303d3b4",
+          "slug": "armierungsgewebe-160-1000-10000-v1",
+          "queries": [
+            "Armierungsgewebe",
+            "Putzgewebe"
+          ]
+        },
+        {
+          "id": "f68369db-71cd-60ae-887f-e4ddcdb7f64e",
+          "slug": "cw50-50-2600-v1",
+          "queries": [
+            "CW Profil",
+            "CW Ständerprofil"
+          ]
+        },
+        {
+          "id": "090eff92-f6d1-2d5f-55ef-a2396edb10ce",
+          "slug": "uw50-40-2000-v1",
+          "queries": [
+            "UW Profil",
+            "UW Rahmenprofil"
+          ]
+        },
+        {
+          "id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+          "slug": "direktabhaenger-cd-125-1-v1",
+          "queries": [
+            "Direktabhänger",
+            "Direktabhänger CD"
+          ]
+        },
+        {
+          "id": "1611b788-0e27-0632-4682-bbe3a1233b14",
+          "slug": "haftgrund-5l-v1",
+          "queries": [
+            "Haftgrund",
+            "Haftgrundierung"
+          ]
+        },
+        {
+          "id": "cf20d372-e5f7-f8b6-4181-7ea97cc9dc4d",
+          "slug": "pu-schaum-1k-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "PU Bauschaum 1K"
+          ]
+        },
+        {
+          "id": "e729a380-10bf-a30f-84ac-094f8b127f74",
+          "slug": "sanitaer-silikon-weiss-310ml-v1",
+          "queries": [
+            "Sanitär Silikon weiß",
+            "Sanitärsilikon weiß"
+          ]
+        },
+        {
+          "id": "4d497e8a-3224-e97a-6614-9e86d889deed",
+          "slug": "rollputz-12kg-v1",
+          "queries": [
+            "Rollputz weiß",
+            "Streichputz weiß"
+          ]
+        },
+        {
+          "id": "42039b00-d37b-5117-8c6a-568f6de25468",
+          "slug": "schleifpapier-k180-230-280-1-v1",
+          "queries": [
+            "Schleifpapier K180",
+            "Schleifbogen K180"
+          ]
+        },
+        {
+          "id": "d8231910-6f33-8873-2e32-39dd3ac29e32",
+          "slug": "knauf-perlfix-10kg-v1",
+          "queries": [
+            "Perlfix",
+            "Knauf Perlfix"
+          ]
+        },
+        {
+          "id": "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+          "slug": "pu-schaum-1k-500ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "PU Bauschaum 1K"
+          ]
+        },
+        {
+          "id": "18ceb301-2b85-303b-c6c9-3139acccb732",
+          "slug": "rollputz-15kg-v1",
+          "queries": [
+            "Rollputz weiß",
+            "Streichputz weiß"
+          ]
+        },
+        {
+          "id": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
+          "slug": "sockelputz-25kg-v1",
+          "queries": [
+            "Sockelputz",
+            "Zementsockelputz"
+          ]
+        },
+        {
+          "id": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+          "slug": "armierungsgewebe-1000-10000-v1",
+          "queries": [
+            "Armierungsgewebe",
+            "Putzgewebe"
+          ]
+        },
+        {
+          "id": "003defc8-10d9-c91c-206a-302684b9ce88",
+          "slug": "knauf-perlfix-25kg-v1",
+          "queries": [
+            "Perlfix",
+            "Knauf Perlfix"
+          ]
+        },
+        {
+          "id": "9c27bb96-20f0-2ed0-af3c-d7e84a4ea603",
+          "slug": "rollputz-8kg-v1",
+          "queries": [
+            "Rollputz weiß",
+            "Streichputz weiß"
+          ]
+        },
+        {
+          "id": "5a2025df-74a9-77e5-e50f-5e61d6447090",
+          "slug": "rollputz-10kg-v1",
+          "queries": [
+            "Rollputz weiß",
+            "Streichputz weiß"
+          ]
+        },
+        {
+          "id": "53529bb2-5112-c4e1-0110-9be7e7a211e5",
+          "slug": "sockelputz-10kg-v1",
+          "queries": [
+            "Sockelputz",
+            "Zementsockelputz"
+          ]
+        },
+        {
+          "id": "6c7ac510-90ec-bcd9-d768-4384821e0e7c",
+          "slug": "zement-5kg-v1",
+          "queries": [
+            "Zement",
+            "Portlandzement"
+          ]
+        },
+        {
+          "id": "26727068-e723-f466-abd2-17ae49e3338b",
+          "slug": "cd60-27-4000-v1",
+          "queries": [
+            "CD Profil",
+            "CD Deckenprofil"
+          ]
+        },
+        {
+          "id": "98626fce-2c50-e299-39ac-bb5f9c9dfc41",
+          "slug": "haftgrund-2-5kg-v1",
+          "queries": [
+            "Haftgrund",
+            "Haftgrundierung"
+          ]
+        },
+        {
+          "id": "c94d34f6-3b31-013a-e176-da1fee7c21f1",
+          "slug": "schleifpapier-k180-93-230-10-v1",
+          "queries": [
+            "Schleifpapier K180",
+            "Schleifbogen K180"
+          ]
+        },
+        {
+          "id": "e2e2830e-b113-5828-bf7e-598987e86840",
+          "slug": "sanitaer-silikon-weiss-300ml-v1",
+          "queries": [
+            "Sanitär Silikon weiß",
+            "Sanitärsilikon weiß"
+          ]
+        },
+        {
+          "id": "587c0ad5-79b5-7126-58c8-d4e3504cc0ef",
+          "slug": "schleifpapier-k180-93-5000-rolle-v1",
+          "queries": [
+            "Schleifpapierrolle K180",
+            "Schleifrolle K180"
+          ]
+        },
+        {
+          "id": "7911616b-c5fe-d6b0-1bbc-6ee25d740aed",
+          "slug": "steinwolle-040-40-9m2-v1",
+          "queries": [
+            "Steinwolle 40 mm",
+            "Steinwolle Trennwandplatte"
+          ]
+        },
+        {
+          "id": "3f27e372-f757-5850-5643-489a33782dbb",
+          "slug": "schleifpapier-trockenbau-k180-225-5-v1",
+          "queries": [
+            "Schleifscheibe K180",
+            "Trockenbau Schleifpapier K180"
+          ]
+        },
+        {
+          "id": "7dca26b6-f1af-a691-3f31-28c1dabbb8a7",
+          "slug": "osb3-18-2500-675-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "9d6af0d6-b275-9449-91c4-9d23d19e6d71",
+          "slug": "nonius-unterteil-cd60-130-100-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "f0652db9-5ee1-f9b4-4250-3afb8a574424",
+          "slug": "rigips-vario-25kg-v1",
+          "queries": [
+            "Vario Fugenspachtel",
+            "Rigips Vario"
+          ]
+        },
+        {
+          "id": "6667c2c2-893a-7831-be47-f95fc076e71c",
+          "slug": "mem-super-haftgrund-5l-v1",
+          "queries": [
+            "Super Haftgrund",
+            "MEM Super Haftgrund"
+          ]
+        },
+        {
+          "id": "287bfb05-5343-0fb9-8ac4-a41bdbf003fb",
+          "slug": "mem-super-haftgrund-10l-v1",
+          "queries": [
+            "Super Haftgrund",
+            "MEM Super Haftgrund"
+          ]
+        },
+        {
+          "id": "41bab945-0ef9-b1ca-2e9c-963088da2974",
+          "slug": "glaswolle-035-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "d1e921f2-4f35-e8ef-9fd5-996c1f987776",
+          "slug": "glaswolle-034-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "93c79942-9f3f-c68a-b52e-8a0a79b2c6b1",
+          "slug": "dampfbremse-variabel-03-5-1500-40000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "25fcf087-17ac-44a9-8046-9817871622c6",
+          "slug": "dampfbremse-variabel-05-55-1500-20000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "cd8ae724-7c87-4fcf-0514-39a87cf7dd64",
+          "slug": "pe-folie-200-2000-25000-v1",
+          "queries": [
+            "PE Baufolie",
+            "Baufolie"
+          ]
+        },
+        {
+          "id": "fa1bf29a-860a-3715-905f-17f67cda0a8a",
+          "slug": "pe-folie-200-3000-10000-v1",
+          "queries": [
+            "PE Baufolie",
+            "Baufolie"
+          ]
+        },
+        {
+          "id": "6a4249aa-0793-f6fe-0637-5ee39bb35d2b",
+          "slug": "pe-folie-200-4000-25000-v1",
+          "queries": [
+            "PE Baufolie",
+            "Baufolie"
+          ]
+        },
+        {
+          "id": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
+          "slug": "glaswolle-034-120-5-76m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
+          "slug": "randdaemmstreifen-8-150-50000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "322f8d06-4b24-234f-4ccf-3a98906565d8",
+          "slug": "pu-schaum-1k-b2-genius-champagner-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+          "slug": "schleifpapier-sortiment-230-280-15-v1",
+          "queries": [
+            "Schleifpapier Sortiment",
+            "Schleifpapier Set"
+          ]
+        },
+        {
+          "id": "658b9cf7-69e0-1144-5917-3ee8b8f4195d",
+          "slug": "pu-schaum-1k-300ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "PU Bauschaum 1K"
+          ]
+        },
+        {
+          "id": "0f28b52e-3469-b623-648a-b89405f56fd6",
+          "slug": "armierungsgewebe-1000-25000-v1",
+          "queries": [
+            "Armierungsgewebe",
+            "Putzgewebe"
+          ]
+        }
+      ],
+      "planned_queries": 69,
+      "attempts": [
+        {
+          "query": "Gipskartonplatte",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Gipskarton",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Gipskarton Feuchtraum",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Gipskarton imprägniert",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "OSB Platte",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "OSB Verlegeplatte",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "UD Profil",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "UD Wandprofil",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "CD Profil",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "CD Deckenprofil",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Trennwandband",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Trennwand Dichtungsband",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Dichtungsband Trockenbau",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Direktabhänger",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Direktabhänger CD",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Nonius Unterteil",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Noniusabhänger Unterteil",
+          "products_found": 0,
+          "errors": []
+        },
+        {
+          "query": "Uniflott Finish",
+          "products_found": 1,
+          "errors": []
+        },
+        {
+          "query": "Knauf Uniflott Finish",
+          "products_found": 1,
+          "errors": []
+        }
+      ],
+      "stop_reason": "bounded-chain-time-budget"
+    },
+    {
+      "chain": "globus",
+      "missing_materials": [
+        {
+          "id": "645be38b-685d-6037-df21-2c24828c098d",
+          "slug": "osb3-18-2500-1250-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "3d049513-3876-7c6d-5522-965ca4dd56f2",
+          "slug": "ud28-27-3000-v1",
+          "queries": [
+            "UD Profil",
+            "UD Wandprofil"
+          ]
+        },
+        {
+          "id": "1d5fbb5a-10e4-32b1-0eb5-bbbb060c071c",
+          "slug": "trennwandband-30-3-30000-v1",
+          "queries": [
+            "Trennwandband",
+            "Trennwand Dichtungsband"
+          ]
+        },
+        {
+          "id": "dcfebd0f-41e0-1769-03f6-94d2ec3e9fdf",
+          "slug": "dichtungsband-50-3-30000-v1",
+          "queries": [
+            "Dichtungsband Trockenbau",
+            "Trennwandband"
+          ]
+        },
+        {
+          "id": "53b139ab-3099-e6a7-228a-fcf727928403",
+          "slug": "nonius-unterteil-cd60-130-1-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "c8288465-c1df-0c3a-e05a-773e75a6b678",
+          "slug": "knauf-uniflott-finish-8kg-v1",
+          "queries": [
+            "Uniflott Finish",
+            "Knauf Uniflott Finish"
+          ]
+        },
+        {
+          "id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
+          "slug": "tn-3-5-35-1000-v1",
+          "queries": [
+            "Schnellbauschrauben TN",
+            "Trockenbauschrauben Feingewinde"
+          ]
+        },
+        {
+          "id": "775c5e17-d6db-e6ac-4e70-a65d07515bd8",
+          "slug": "glaswolle-035-120-6m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "1d091a9c-c26c-ab55-accc-d07b134dc17d",
+          "slug": "randdaemmstreifen-8-150-25000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "aceb2694-62a9-d1e0-3e6c-3bf8d4c68ebd",
+          "slug": "glaswolle-035-120-5-28m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+          "slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+          "queries": [
+            "Sanitär Silikon weiß",
+            "Sanitärsilikon weiß"
+          ]
+        },
+        {
+          "id": "1da620c7-7d08-a42e-5ad8-bd13fd803269",
+          "slug": "glaswolle-035-120-5-76m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+          "slug": "pu-schaum-1k-b2-genius-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "dae638df-5d1f-1c45-c736-f8634303d3b4",
+          "slug": "armierungsgewebe-160-1000-10000-v1",
+          "queries": [
+            "Armierungsgewebe",
+            "Putzgewebe"
+          ]
+        },
+        {
+          "id": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+          "slug": "armierungsgewebe-1000-10000-v1",
+          "queries": [
+            "Armierungsgewebe",
+            "Putzgewebe"
+          ]
+        },
+        {
+          "id": "587c0ad5-79b5-7126-58c8-d4e3504cc0ef",
+          "slug": "schleifpapier-k180-93-5000-rolle-v1",
+          "queries": [
+            "Schleifpapierrolle K180",
+            "Schleifrolle K180"
+          ]
+        },
+        {
+          "id": "3f27e372-f757-5850-5643-489a33782dbb",
+          "slug": "schleifpapier-trockenbau-k180-225-5-v1",
+          "queries": [
+            "Schleifscheibe K180",
+            "Trockenbau Schleifpapier K180"
+          ]
+        },
+        {
+          "id": "7dca26b6-f1af-a691-3f31-28c1dabbb8a7",
+          "slug": "osb3-18-2500-675-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "9d6af0d6-b275-9449-91c4-9d23d19e6d71",
+          "slug": "nonius-unterteil-cd60-130-100-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "f0652db9-5ee1-f9b4-4250-3afb8a574424",
+          "slug": "rigips-vario-25kg-v1",
+          "queries": [
+            "Vario Fugenspachtel",
+            "Rigips Vario"
+          ]
+        },
+        {
+          "id": "41bab945-0ef9-b1ca-2e9c-963088da2974",
+          "slug": "glaswolle-035-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "d1e921f2-4f35-e8ef-9fd5-996c1f987776",
+          "slug": "glaswolle-034-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "93c79942-9f3f-c68a-b52e-8a0a79b2c6b1",
+          "slug": "dampfbremse-variabel-03-5-1500-40000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "25fcf087-17ac-44a9-8046-9817871622c6",
+          "slug": "dampfbremse-variabel-05-55-1500-20000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
+          "slug": "glaswolle-034-120-5-76m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
+          "slug": "randdaemmstreifen-8-150-50000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "322f8d06-4b24-234f-4ccf-3a98906565d8",
+          "slug": "pu-schaum-1k-b2-genius-champagner-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+          "slug": "schleifpapier-sortiment-230-280-15-v1",
+          "queries": [
+            "Schleifpapier Sortiment",
+            "Schleifpapier Set"
+          ]
+        },
+        {
+          "id": "0f28b52e-3469-b623-648a-b89405f56fd6",
+          "slug": "armierungsgewebe-1000-25000-v1",
+          "queries": [
+            "Armierungsgewebe",
+            "Putzgewebe"
+          ]
+        }
+      ],
+      "planned_queries": 34,
+      "attempts": [],
+      "stop_reason": "existing-access-restriction-not-retried",
+      "prior_review": {
+        "file": "docs/evidence/catalog-short-search-retry-20261023.json",
+        "stop_reason": "blocked"
+      }
+    },
+    {
+      "chain": "hellweg",
+      "missing_materials": [
+        {
+          "id": "4a544080-5b47-920c-c3e2-4a5a9b879b2e",
+          "slug": "gipskarton-standard-12-5-1200-600-v1",
+          "queries": [
+            "Gipskartonplatte",
+            "Gipskarton"
+          ]
+        },
+        {
+          "id": "2d750efa-4af5-e9b4-5416-89678194f058",
+          "slug": "gipskarton-standard-12-5-2000-1250-v1",
+          "queries": [
+            "Gipskartonplatte",
+            "Gipskarton"
+          ]
+        },
+        {
+          "id": "f1da0475-9771-b503-5f40-26c8b138d4ae",
+          "slug": "gipskarton-feuchtraum-12-5-2000-1250-v1",
+          "queries": [
+            "Gipskarton Feuchtraum",
+            "Gipskarton imprägniert"
+          ]
+        },
+        {
+          "id": "645be38b-685d-6037-df21-2c24828c098d",
+          "slug": "osb3-18-2500-1250-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "3d049513-3876-7c6d-5522-965ca4dd56f2",
+          "slug": "ud28-27-3000-v1",
+          "queries": [
+            "UD Profil",
+            "UD Wandprofil"
+          ]
+        },
+        {
+          "id": "eaff18c6-3cc4-0b8e-0d86-888725219caf",
+          "slug": "cd60-27-3000-v1",
+          "queries": [
+            "CD Profil",
+            "CD Deckenprofil"
+          ]
+        },
+        {
+          "id": "1d5fbb5a-10e4-32b1-0eb5-bbbb060c071c",
+          "slug": "trennwandband-30-3-30000-v1",
+          "queries": [
+            "Trennwandband",
+            "Trennwand Dichtungsband"
+          ]
+        },
+        {
+          "id": "dcfebd0f-41e0-1769-03f6-94d2ec3e9fdf",
+          "slug": "dichtungsband-50-3-30000-v1",
+          "queries": [
+            "Dichtungsband Trockenbau",
+            "Trennwandband"
+          ]
+        },
+        {
+          "id": "65777a87-70cd-99a3-c1ad-7004cc248378",
+          "slug": "direktabhaenger-cd60-125-1-v1",
+          "queries": [
+            "Direktabhänger",
+            "Direktabhänger CD"
+          ]
+        },
+        {
+          "id": "53b139ab-3099-e6a7-228a-fcf727928403",
+          "slug": "nonius-unterteil-cd60-130-1-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "f123e8b4-bcc3-d801-e8b3-72eb5412c728",
+          "slug": "knauf-uniflott-5kg-v1",
+          "queries": [
+            "Uniflott",
+            "Knauf Uniflott"
+          ]
+        },
+        {
+          "id": "1fc5bf38-3822-f578-7c96-34f5b4b8e68d",
+          "slug": "knauf-uniflott-25kg-v1",
+          "queries": [
+            "Uniflott",
+            "Knauf Uniflott"
+          ]
+        },
+        {
+          "id": "c8288465-c1df-0c3a-e05a-773e75a6b678",
+          "slug": "knauf-uniflott-finish-8kg-v1",
+          "queries": [
+            "Uniflott Finish",
+            "Knauf Uniflott Finish"
+          ]
+        },
+        {
+          "id": "2b40f637-5d50-0aea-962f-94be9f528b05",
+          "slug": "knauf-rotband-30kg-v1",
+          "queries": [
+            "Rotband",
+            "Knauf Rotband"
+          ]
+        },
+        {
+          "id": "32353635-2f0c-145d-8c80-b51d643f0acd",
+          "slug": "knauf-rotband-25kg-v1",
+          "queries": [
+            "Rotband",
+            "Knauf Rotband"
+          ]
+        },
+        {
+          "id": "8739fa28-ef16-5da4-dea0-a10cd973d87a",
+          "slug": "knauf-perlfix-30kg-v1",
+          "queries": [
+            "Perlfix",
+            "Knauf Perlfix"
+          ]
+        },
+        {
+          "id": "e303c5f8-2c5d-d1ed-ae63-74f96ef1d222",
+          "slug": "knauf-tiefengrund-5l-v1",
+          "queries": [
+            "Tiefengrund",
+            "Tiefgrund"
+          ]
+        },
+        {
+          "id": "38a6f6fb-8e89-1c25-a3fb-19062f2cdce8",
+          "slug": "acryl-weiss-310ml-v1",
+          "queries": [
+            "Acryl weiß",
+            "Acryl Dichtstoff weiß"
+          ]
+        },
+        {
+          "id": "c3eb45d7-6ade-8acf-36b5-998aae112efa",
+          "slug": "tn-3-5-25-1000-v1",
+          "queries": [
+            "Schnellbauschrauben TN",
+            "Trockenbauschrauben Feingewinde"
+          ]
+        },
+        {
+          "id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
+          "slug": "tn-3-5-35-1000-v1",
+          "queries": [
+            "Schnellbauschrauben TN",
+            "Trockenbauschrauben Feingewinde"
+          ]
+        },
+        {
+          "id": "775c5e17-d6db-e6ac-4e70-a65d07515bd8",
+          "slug": "glaswolle-035-120-6m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "1d199601-0cbf-b7df-32fe-cfa4986b6dd0",
+          "slug": "dampfbremse-sd2-1500-50000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Dampfbremsfolie"
+          ]
+        },
+        {
+          "id": "2f179e38-0b65-416f-f2f4-65bce8d65cb5",
+          "slug": "pe-folie-200-2000-50000-v1",
+          "queries": [
+            "PE Baufolie",
+            "Baufolie"
+          ]
+        },
+        {
+          "id": "1d091a9c-c26c-ab55-accc-d07b134dc17d",
+          "slug": "randdaemmstreifen-8-150-25000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "56d016b1-f439-c79b-b17e-386bf15841d5",
+          "slug": "cd60-27-3100-v1",
+          "queries": [
+            "CD Profil",
+            "CD Deckenprofil"
+          ]
+        },
+        {
+          "id": "aceb2694-62a9-d1e0-3e6c-3bf8d4c68ebd",
+          "slug": "glaswolle-035-120-5-28m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "ef3ea455-adb7-d63b-a2ce-add398c4dcb9",
+          "slug": "sanitaer-silikon-acetat-weiss-310ml-v1",
+          "queries": [
+            "Sanitär Silikon weiß",
+            "Sanitärsilikon weiß"
+          ]
+        },
+        {
+          "id": "1da620c7-7d08-a42e-5ad8-bd13fd803269",
+          "slug": "glaswolle-035-120-5-76m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "73b47589-0fb3-9e0b-2c41-a5610ea7e459",
+          "slug": "pu-schaum-1k-b2-genius-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "23aa28b5-5e69-1a1c-65c7-c68c4fb11c57",
+          "slug": "acryl-weiss-300ml-v1",
+          "queries": [
+            "Acryl weiß",
+            "Acryl Dichtstoff weiß"
+          ]
+        },
+        {
+          "id": "81262b5d-1e95-5fe3-1634-8e543049d5af",
+          "slug": "acryl-weiss-280ml-v1",
+          "queries": [
+            "Acryl weiß",
+            "Acryl Dichtstoff weiß"
+          ]
+        },
+        {
+          "id": "a77f72d7-ba2c-f7ee-d4ea-8a3c6899322c",
+          "slug": "steinwolle-sonorock-040-40-7-5m2-v1",
+          "queries": [
+            "Steinwolle 40 mm",
+            "Steinwolle Trennwandplatte"
+          ]
+        },
+        {
+          "id": "60c4a168-2bf6-f806-729b-1490d89aa85c",
+          "slug": "zement-25kg-v1",
+          "queries": [
+            "Zement",
+            "Portlandzement"
+          ]
+        },
+        {
+          "id": "d68b71d7-ee5b-20f3-9d25-13ce34f3764c",
+          "slug": "sockelputz-30kg-v1",
+          "queries": [
+            "Sockelputz",
+            "Zementsockelputz"
+          ]
+        },
+        {
+          "id": "dae638df-5d1f-1c45-c736-f8634303d3b4",
+          "slug": "armierungsgewebe-160-1000-10000-v1",
+          "queries": [
+            "Armierungsgewebe",
+            "Putzgewebe"
+          ]
+        },
+        {
+          "id": "f68369db-71cd-60ae-887f-e4ddcdb7f64e",
+          "slug": "cw50-50-2600-v1",
+          "queries": [
+            "CW Profil",
+            "CW Ständerprofil"
+          ]
+        },
+        {
+          "id": "090eff92-f6d1-2d5f-55ef-a2396edb10ce",
+          "slug": "uw50-40-2000-v1",
+          "queries": [
+            "UW Profil",
+            "UW Rahmenprofil"
+          ]
+        },
+        {
+          "id": "cfe9f6e3-98e9-4006-5248-85933d841d16",
+          "slug": "direktabhaenger-cd-125-1-v1",
+          "queries": [
+            "Direktabhänger",
+            "Direktabhänger CD"
+          ]
+        },
+        {
+          "id": "1611b788-0e27-0632-4682-bbe3a1233b14",
+          "slug": "haftgrund-5l-v1",
+          "queries": [
+            "Haftgrund",
+            "Haftgrundierung"
+          ]
+        },
+        {
+          "id": "cf20d372-e5f7-f8b6-4181-7ea97cc9dc4d",
+          "slug": "pu-schaum-1k-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "PU Bauschaum 1K"
+          ]
+        },
+        {
+          "id": "e729a380-10bf-a30f-84ac-094f8b127f74",
+          "slug": "sanitaer-silikon-weiss-310ml-v1",
+          "queries": [
+            "Sanitär Silikon weiß",
+            "Sanitärsilikon weiß"
+          ]
+        },
+        {
+          "id": "4d497e8a-3224-e97a-6614-9e86d889deed",
+          "slug": "rollputz-12kg-v1",
+          "queries": [
+            "Rollputz weiß",
+            "Streichputz weiß"
+          ]
+        },
+        {
+          "id": "42039b00-d37b-5117-8c6a-568f6de25468",
+          "slug": "schleifpapier-k180-230-280-1-v1",
+          "queries": [
+            "Schleifpapier K180",
+            "Schleifbogen K180"
+          ]
+        },
+        {
+          "id": "d8231910-6f33-8873-2e32-39dd3ac29e32",
+          "slug": "knauf-perlfix-10kg-v1",
+          "queries": [
+            "Perlfix",
+            "Knauf Perlfix"
+          ]
+        },
+        {
+          "id": "8739c5f1-f989-497c-4424-0e3f0e1836c7",
+          "slug": "pu-schaum-1k-500ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "PU Bauschaum 1K"
+          ]
+        },
+        {
+          "id": "18ceb301-2b85-303b-c6c9-3139acccb732",
+          "slug": "rollputz-15kg-v1",
+          "queries": [
+            "Rollputz weiß",
+            "Streichputz weiß"
+          ]
+        },
+        {
+          "id": "62ef9d78-ef8b-b0cc-3520-d724316ea678",
+          "slug": "sockelputz-25kg-v1",
+          "queries": [
+            "Sockelputz",
+            "Zementsockelputz"
+          ]
+        },
+        {
+          "id": "40ab2786-cd59-9252-3ce4-005f7bb647f1",
+          "slug": "armierungsgewebe-1000-10000-v1",
+          "queries": [
+            "Armierungsgewebe",
+            "Putzgewebe"
+          ]
+        },
+        {
+          "id": "003defc8-10d9-c91c-206a-302684b9ce88",
+          "slug": "knauf-perlfix-25kg-v1",
+          "queries": [
+            "Perlfix",
+            "Knauf Perlfix"
+          ]
+        },
+        {
+          "id": "9c27bb96-20f0-2ed0-af3c-d7e84a4ea603",
+          "slug": "rollputz-8kg-v1",
+          "queries": [
+            "Rollputz weiß",
+            "Streichputz weiß"
+          ]
+        },
+        {
+          "id": "5a2025df-74a9-77e5-e50f-5e61d6447090",
+          "slug": "rollputz-10kg-v1",
+          "queries": [
+            "Rollputz weiß",
+            "Streichputz weiß"
+          ]
+        },
+        {
+          "id": "53529bb2-5112-c4e1-0110-9be7e7a211e5",
+          "slug": "sockelputz-10kg-v1",
+          "queries": [
+            "Sockelputz",
+            "Zementsockelputz"
+          ]
+        },
+        {
+          "id": "6c7ac510-90ec-bcd9-d768-4384821e0e7c",
+          "slug": "zement-5kg-v1",
+          "queries": [
+            "Zement",
+            "Portlandzement"
+          ]
+        },
+        {
+          "id": "26727068-e723-f466-abd2-17ae49e3338b",
+          "slug": "cd60-27-4000-v1",
+          "queries": [
+            "CD Profil",
+            "CD Deckenprofil"
+          ]
+        },
+        {
+          "id": "98626fce-2c50-e299-39ac-bb5f9c9dfc41",
+          "slug": "haftgrund-2-5kg-v1",
+          "queries": [
+            "Haftgrund",
+            "Haftgrundierung"
+          ]
+        },
+        {
+          "id": "c94d34f6-3b31-013a-e176-da1fee7c21f1",
+          "slug": "schleifpapier-k180-93-230-10-v1",
+          "queries": [
+            "Schleifpapier K180",
+            "Schleifbogen K180"
+          ]
+        },
+        {
+          "id": "e2e2830e-b113-5828-bf7e-598987e86840",
+          "slug": "sanitaer-silikon-weiss-300ml-v1",
+          "queries": [
+            "Sanitär Silikon weiß",
+            "Sanitärsilikon weiß"
+          ]
+        },
+        {
+          "id": "587c0ad5-79b5-7126-58c8-d4e3504cc0ef",
+          "slug": "schleifpapier-k180-93-5000-rolle-v1",
+          "queries": [
+            "Schleifpapierrolle K180",
+            "Schleifrolle K180"
+          ]
+        },
+        {
+          "id": "7911616b-c5fe-d6b0-1bbc-6ee25d740aed",
+          "slug": "steinwolle-040-40-9m2-v1",
+          "queries": [
+            "Steinwolle 40 mm",
+            "Steinwolle Trennwandplatte"
+          ]
+        },
+        {
+          "id": "3f27e372-f757-5850-5643-489a33782dbb",
+          "slug": "schleifpapier-trockenbau-k180-225-5-v1",
+          "queries": [
+            "Schleifscheibe K180",
+            "Trockenbau Schleifpapier K180"
+          ]
+        },
+        {
+          "id": "7dca26b6-f1af-a691-3f31-28c1dabbb8a7",
+          "slug": "osb3-18-2500-675-v1",
+          "queries": [
+            "OSB Platte",
+            "OSB Verlegeplatte"
+          ]
+        },
+        {
+          "id": "9d6af0d6-b275-9449-91c4-9d23d19e6d71",
+          "slug": "nonius-unterteil-cd60-130-100-v1",
+          "queries": [
+            "Nonius Unterteil",
+            "Noniusabhänger Unterteil"
+          ]
+        },
+        {
+          "id": "f0652db9-5ee1-f9b4-4250-3afb8a574424",
+          "slug": "rigips-vario-25kg-v1",
+          "queries": [
+            "Vario Fugenspachtel",
+            "Rigips Vario"
+          ]
+        },
+        {
+          "id": "6667c2c2-893a-7831-be47-f95fc076e71c",
+          "slug": "mem-super-haftgrund-5l-v1",
+          "queries": [
+            "Super Haftgrund",
+            "MEM Super Haftgrund"
+          ]
+        },
+        {
+          "id": "287bfb05-5343-0fb9-8ac4-a41bdbf003fb",
+          "slug": "mem-super-haftgrund-10l-v1",
+          "queries": [
+            "Super Haftgrund",
+            "MEM Super Haftgrund"
+          ]
+        },
+        {
+          "id": "41bab945-0ef9-b1ca-2e9c-963088da2974",
+          "slug": "glaswolle-035-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "d1e921f2-4f35-e8ef-9fd5-996c1f987776",
+          "slug": "glaswolle-034-100-6-72m2-v1",
+          "queries": [
+            "Glaswolle 100 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "3786743c-c32a-422c-dc2b-ffa4d24cb57e",
+          "slug": "dampfbremse-sd2-1000-25000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Dampfbremsfolie"
+          ]
+        },
+        {
+          "id": "93c79942-9f3f-c68a-b52e-8a0a79b2c6b1",
+          "slug": "dampfbremse-variabel-03-5-1500-40000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "25fcf087-17ac-44a9-8046-9817871622c6",
+          "slug": "dampfbremse-variabel-05-55-1500-20000-v1",
+          "queries": [
+            "Dampfbremse",
+            "Klimamembran"
+          ]
+        },
+        {
+          "id": "cd8ae724-7c87-4fcf-0514-39a87cf7dd64",
+          "slug": "pe-folie-200-2000-25000-v1",
+          "queries": [
+            "PE Baufolie",
+            "Baufolie"
+          ]
+        },
+        {
+          "id": "fa1bf29a-860a-3715-905f-17f67cda0a8a",
+          "slug": "pe-folie-200-3000-10000-v1",
+          "queries": [
+            "PE Baufolie",
+            "Baufolie"
+          ]
+        },
+        {
+          "id": "6a4249aa-0793-f6fe-0637-5ee39bb35d2b",
+          "slug": "pe-folie-200-4000-25000-v1",
+          "queries": [
+            "PE Baufolie",
+            "Baufolie"
+          ]
+        },
+        {
+          "id": "643f3851-9e57-4d95-7a65-f074ce1aeeb4",
+          "slug": "glaswolle-034-120-5-76m2-v1",
+          "queries": [
+            "Glaswolle 120 mm",
+            "Glaswolle Klemmfilz"
+          ]
+        },
+        {
+          "id": "c509a60b-9d8c-a718-12b9-c4dc02b37760",
+          "slug": "randdaemmstreifen-8-150-50000-v1",
+          "queries": [
+            "Randdämmstreifen",
+            "Randdämmstreifen mit Folie"
+          ]
+        },
+        {
+          "id": "322f8d06-4b24-234f-4ccf-3a98906565d8",
+          "slug": "pu-schaum-1k-b2-genius-champagner-750ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "Soudal Genius Gun 1K"
+          ]
+        },
+        {
+          "id": "2605d0b0-4619-a02e-eaa7-fda5c33ab40c",
+          "slug": "schleifpapier-sortiment-230-280-15-v1",
+          "queries": [
+            "Schleifpapier Sortiment",
+            "Schleifpapier Set"
+          ]
+        },
+        {
+          "id": "658b9cf7-69e0-1144-5917-3ee8b8f4195d",
+          "slug": "pu-schaum-1k-300ml-v1",
+          "queries": [
+            "Bauschaum 1K",
+            "PU Bauschaum 1K"
+          ]
+        },
+        {
+          "id": "0f28b52e-3469-b623-648a-b89405f56fd6",
+          "slug": "armierungsgewebe-1000-25000-v1",
+          "queries": [
+            "Armierungsgewebe",
+            "Putzgewebe"
+          ]
+        }
+      ],
+      "planned_queries": 74,
+      "attempts": [],
+      "stop_reason": "existing-access-restriction-not-retried",
+      "prior_review": {
+        "file": "docs/evidence/catalog-short-search-retry-20261023.json",
+        "stop_reason": "robots-unavailable"
+      }
+    }
+  ],
+  "validated_new_observations": [
+    {
+      "material_id": "030e5226-e380-dcb0-40f7-bc6a7218ad2a",
+      "canonical_slug": "tn-3-5-35-1000-v1",
+      "canonical_version": 1,
+      "canonical_specs": {
+        "type": "tn",
+        "diameter_mm": 3.5,
+        "length_mm": 35,
+        "pieces": 1000,
+        "required_terms": [
+          "tn",
+          "feingewinde"
+        ],
+        "excluded_terms": [
+          "grobgewinde",
+          "tb"
+        ]
+      },
+      "store_id": "toom",
+      "product_name": "Bosch Trockenbauschraube Feingewinde PH2 Ø 3,5 × 35 mm, 1000 Stück",
+      "product_url": "https://toom.de/p/trockenbauschraube-feingewinde-ph2-3535-mm-1000-stueck/10454831",
+      "price": 34.99,
+      "unit_price": 0.03,
+      "unit": "piece",
+      "package_quantity": 1000,
+      "currency": "EUR",
+      "checked_at": "2026-10-27T20:33:00.620Z",
+      "source": "automatic",
+      "price_scope": "chain",
+      "verified": true,
+      "availability": null,
+      "observed_specs": {
+        "length_mm": 35,
+        "pieces": 1000
+      }
+    }
+  ]
+}
