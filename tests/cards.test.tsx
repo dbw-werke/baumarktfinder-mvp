@@ -112,6 +112,7 @@ test("a dynamic OBI offer keeps its actual size and price instead of an estimate
   assert.equal(document.querySelector("article")?.getAttribute("data-price-kind"), "verified");
   assert.match(document.querySelector(".packagePrice")?.textContent ?? "", /^11,49/);
   assert.equal(document.querySelector(".actualSpecification")?.textContent, "5 kg");
+  assert.equal(document.querySelector(".matchBadge")?.textContent, "Geprüfter Preis");
   assert.equal(document.querySelector(".offerButton")?.getAttribute("href"), dynamic.product_url);
   assert.doesNotMatch(html, /Schätzpreis|Schätzgrundlage/);
 });
