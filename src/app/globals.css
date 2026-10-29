@@ -9,7 +9,7 @@
 html {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
@@ -17,7 +17,7 @@ body {
   width: 100%;
   max-width: 100%;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
 
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
@@ -41,7 +41,7 @@ img {
 .site {
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
 
   background: #ffffff;
 }
@@ -172,29 +172,6 @@ img {
 /* =========================================
    HERO BILD
    ========================================= */
-
-.heroVisual {
-  position: absolute;
-  z-index: 1;
-
-  top: 25px;
-  right: 45px;
-
-  width: 520px;
-  height: 330px;
-
-  pointer-events: none;
-}
-
-.heroVisual img {
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
-  object-position: right top;
-}
 
 
 /* =========================================
@@ -509,22 +486,6 @@ img {
    ERGEBNISSE
    ========================================= */
 
-.resultsSection {
-  width: 100%;
-  max-width: 1440px;
-
-  margin: 24px auto 0;
-  padding: 30px 54px 54px;
-}
-
-.sectionHeading {
-  margin-bottom: 24px;
-
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
 .eyebrow {
   color: #ee3034;
 
@@ -533,161 +494,15 @@ img {
   letter-spacing: 1.2px;
 }
 
-.sectionHeading h2 {
-  margin: 7px 0 6px;
-
-  color: #171b23;
-
-  font-size: 30px;
-  letter-spacing: -1px;
-}
-
-.sectionHeading p {
-  margin: 0;
-
-  color: #777e88;
-
-  font-size: 14px;
-}
-
-.sectionHeading p strong {
-  color: #333943;
-}
-
-.resultCount {
-  padding: 9px 13px;
-
-  border-radius: 999px;
-
-  background: #f3f4f5;
-  color: #6e747c;
-
-  font-size: 13px;
-}
-
 
 /* =========================================
    BAUMARKT-KARTEN
    ========================================= */
 
-.storeGrid {
-  width: 100%;
-
-  padding: 12px 4px 20px;
-
-  display: flex;
-  gap: 18px;
-
-  overflow-x: auto;
-  overflow-y: visible;
-
-  scroll-snap-type: x proximity;
-
-  scrollbar-width: thin;
-  scrollbar-color: #d9d9d9 transparent;
-}
-
-.storeGrid::-webkit-scrollbar {
-  height: 7px;
-}
-
-.storeGrid::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.storeGrid::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-
-  background: #d9d9d9;
-}
-
-.offerCard {
-  position: relative;
-
-  width: 225px;
-  min-width: 225px;
-  min-height: 355px;
-
-  flex: 0 0 225px;
-
-  padding: 24px 18px 18px;
-
-  display: flex;
-  flex-direction: column;
-
-  border: 1px solid #e6e8eb;
-  border-radius: 10px;
-
-  background: #ffffff;
-
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
-
-  scroll-snap-align: start;
-
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.offerCard:hover {
-  transform: translateY(-2px);
-
-  border-color: #d9dce0;
-
-  box-shadow: 0 8px 25px rgba(20, 25, 35, 0.08);
-}
-
-.nearestCard {
-  border-color: rgba(239, 47, 50, 0.4);
-
-  box-shadow: 0 8px 24px rgba(239, 47, 50, 0.07);
-}
-
-.nearestBadge {
-  position: absolute;
-
-  top: -12px;
-  left: 14px;
-
-  padding: 6px 10px;
-
-  border-radius: 999px;
-
-  background: #ed3033;
-  color: #ffffff;
-
-  font-size: 10px;
-  font-weight: 800;
-
-  white-space: nowrap;
-}
-
 
 /* =========================================
    LOGOS
    ========================================= */
-
-.logoArea {
-  width: 100%;
-  height: 80px;
-
-  margin-bottom: 14px;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.logoArea img {
-  width: 160px;
-  height: 65px;
-
-  display: block;
-
-  object-fit: contain;
-  object-position: left center;
-}
 
 .storeNameFallback {
   max-width: 100%;
@@ -705,29 +520,6 @@ img {
    BAUMARKT-INFOS
    ========================================= */
 
-.offerCard h3 {
-  min-height: 40px;
-
-  margin: 0 0 6px;
-
-  color: #171b23;
-
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.4;
-}
-
-.storeAddress {
-  min-height: 38px;
-
-  margin: 0 0 12px;
-
-  color: #747b85;
-
-  font-size: 12px;
-  line-height: 1.4;
-}
-
 .availabilityPlaceholder {
   margin-bottom: 12px;
 
@@ -737,90 +529,15 @@ img {
   font-weight: 700;
 }
 
-.distancePlaceholder {
-  margin-bottom: 15px;
-
-  display: flex;
-  align-items: center;
-  gap: 6px;
-
-  color: #ec3033;
-
-  font-size: 12px;
-}
-
 
 /* =========================================
    PREIS
    ========================================= */
 
-.pricePlaceholder {
-  margin-top: auto;
-  margin-bottom: 16px;
-
-  padding-top: 14px;
-
-  border-top: 1px solid #eeeeee;
-}
-
-.pricePlaceholder span {
-  display: block;
-
-  margin-bottom: 4px;
-
-  color: #969ba2;
-
-  font-size: 10px;
-}
-
-.pricePlaceholder strong {
-  display: block;
-
-  color: #171b23;
-
-  font-size: 21px;
-  font-weight: 800;
-}
-
-.pricePlaceholder small {
-  display: block;
-
-  margin-top: 5px;
-
-  color: #969ba2;
-
-  font-size: 10px;
-}
-
 
 /* =========================================
    AKTIONEN
    ========================================= */
-
-.cardActions {
-  width: 100%;
-
-  margin-top: auto;
-
-  display: grid;
-  gap: 8px;
-}
-
-.cardActions a {
-  width: 100%;
-  height: 42px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 6px;
-
-  text-decoration: none;
-
-  font-size: 12px;
-  font-weight: 700;
-}
 
 .offerButton {
   border: 1px solid #ef2d31;
@@ -918,14 +635,6 @@ img {
     max-width: 570px;
   }
 
-  .heroVisual {
-    top: 20px;
-    right: 20px;
-
-    width: 390px;
-    height: 235px;
-  }
-
   .searchPanel {
     max-width: 850px;
 
@@ -933,18 +642,6 @@ img {
       minmax(220px, 1fr)
       minmax(220px, 1fr)
       120px;
-  }
-
-  .resultsSection {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .offerCard {
-    width: 220px;
-    min-width: 220px;
-
-    flex-basis: 220px;
   }
 
   .benefits {
@@ -963,15 +660,6 @@ img {
 @media (max-width: 850px) {
   .nav {
     gap: 20px;
-  }
-
-  .heroVisual {
-    top: 25px;
-    right: -200px;
-
-    width: 570px;
-
-    opacity: 0.22;
   }
 
   .searchPanel {
@@ -1052,10 +740,6 @@ img {
     line-height: 1.5;
   }
 
-  .heroVisual {
-    display: none;
-  }
-
   .searchPanel {
     width: 100%;
     max-width: 100%;
@@ -1093,83 +777,6 @@ img {
   .popular {
     width: 100%;
     max-width: 100%;
-  }
-
-  .resultsSection {
-    width: 100%;
-    max-width: 100%;
-
-    padding: 28px 16px 36px;
-  }
-
-  .sectionHeading {
-    width: 100%;
-
-    align-items: flex-start;
-    flex-direction: column;
-
-    gap: 12px;
-  }
-
-  .sectionHeading h2 {
-    font-size: 26px;
-
-    overflow-wrap: break-word;
-  }
-
-  .storeGrid {
-    width: 100%;
-
-    margin: 0;
-    padding: 12px 0 20px;
-
-    display: flex;
-    flex-wrap: nowrap;
-
-    gap: 16px;
-
-    overflow-x: auto;
-
-    scroll-snap-type: x proximity;
-  }
-
-  .offerCard {
-    width: 225px;
-    min-width: 225px;
-    min-height: 0;
-
-    flex: 0 0 225px;
-
-    padding: 22px 18px 18px;
-
-    scroll-snap-align: start;
-  }
-
-  .logoArea {
-    height: 65px;
-  }
-
-  .logoArea img {
-    width: auto;
-    max-width: 150px;
-    height: 55px;
-  }
-
-  .offerCard h3,
-  .storeAddress {
-    min-height: 0;
-
-    overflow-wrap: anywhere;
-  }
-
-  .pricePlaceholder {
-    margin-top: 10px;
-  }
-
-  .pricePlaceholder span,
-  .pricePlaceholder strong,
-  .pricePlaceholder small {
-    overflow-wrap: anywhere;
   }
 
   .benefits {
@@ -1214,11 +821,6 @@ img {
     padding-right: 12px;
   }
 
-  .resultsSection {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
   .benefits {
     margin-left: 12px;
     margin-right: 12px;
@@ -1231,7 +833,6 @@ img {
 .heroCopy > .eyebrow { display: block; margin-bottom: 17px; font-size: 13px; }
 .heroCopy h1 { font-size: clamp(40px, 4.4vw, 64px); }
 .heroCopy p { color: #5d6570; }
-.heroVisual { z-index: 0; }
 .fieldBlock label { font-size: 13px; }
 .currentLocationButton { font-size: 14px; line-height: 1.5; color: #414a55; opacity: 1; }
 .fieldHint { color: #8f3422; font-size: 14px; line-height: 1.5; margin: 8px 0 0; }
@@ -1246,69 +847,16 @@ img {
 .searchStatus { display: flex; align-items: center; gap: 10px; line-height: 1.6; color: #424a55; min-height: 24px; }
 .spinner { flex: 0 0 17px; width: 17px; height: 17px; border: 2px solid #e3e5e8; border-top-color: #ed2f32; border-radius: 50%; animation: spin 0.7s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
-.resultsSection { width: calc(100% - 64px); max-width: 1332px; margin: 0 auto 32px; padding: 26px; border: 1px solid #eceef1; border-radius: 14px; background: #fff; }
-.resultsSection .sectionHeading h2 { font-size: 24px; letter-spacing: -0.6px; }
-.sectionHeading { gap: 24px; align-items: center; }
-.sectionHeading p { color: #535e6a; font-size: 16px; line-height: 1.5; }
-.sectionHeading .originLabel { margin-top: 6px; font-size: 14px; }
 .resultsToolbar { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .sortLabel { display: flex; flex-direction: column; gap: 6px; color: #525b65; font-size: 13px; }
 .sortLabel select { padding: 10px 32px 10px 12px; border: 1px solid #d9dde2; border-radius: 6px; background: #fff; color: #202733; font: inherit; font-size: 14px; }
 .resultWarnings { background: #f6f7f8; border: 1px solid #e6e8eb; border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; font-size: 14px; color: #535e6a; line-height: 1.5; }
 .resultWarnings p { margin: 4px 0; }
-.storeRow { position: relative; min-width: 0; }
-.storeGrid { display: flex; flex-wrap: nowrap; align-items: stretch; gap: 18px; overflow-x: auto; overflow-y: hidden; padding: 14px 1px 16px; overscroll-behavior-x: contain; scroll-snap-type: x proximity; }
-.storeGrid:focus-visible { outline: 2px solid #a3242c; outline-offset: 4px; border-radius: 6px; }
-.offerCard { width: 210px; min-width: 210px; flex: 0 0 210px; padding: 16px 14px 14px; scroll-snap-align: start; }
-.logoArea, .nearbyStoreCard .logoArea { height: 50px; margin-bottom: 10px; justify-content: center; }
-.logoArea img { width: 132px; height: 48px; max-width: 100%; object-position: center; }
-.nearestBadge { font-size: 10px; max-width: calc(100% - 28px); overflow-wrap: anywhere; white-space: normal; }
-.offerCard h3 { font-size: 14px; min-height: 40px; }
-.storeAddress { font-size: 12px; min-height: 34px; color: #535d69; margin-bottom: 8px; }
-.distancePlaceholder { font-size: 13px; font-weight: 600; margin-bottom: 4px; color: #e9252a; }
 .routeDetail { font-size: 11px; min-height: 30px; color: #59616c; margin: 0 0 12px; line-height: 1.4; }
-.storeScroll { position: absolute; top: 45%; z-index: 2; width: 42px; height: 42px; border: 1px solid #eceef1; border-radius: 50%; background: #fff; color: #313b46; box-shadow: 0 2px 8px #17202b0d; cursor: pointer; font-size: 28px; line-height: 1; }
-.storeScrollPrevious { left: -22px; }
-.storeScrollNext { right: -22px; }
-.storeScroll:disabled { visibility: hidden; }
-.pricePlaceholder { margin-top: 0; }
-.pricePlaceholder .productName { min-height: 46px; color: #313b46; font-size: 14px; line-height: 1.5; margin: 0 0 12px; }
-.pricePlaceholder strong { font-size: 28px; }
-.productOfferCard .pricePlaceholder { text-align: center; }
-.productOfferCard .pricePlaceholder .packagePrice { font-size: 32px; line-height: 1.15; letter-spacing: -0.8px; font-variant-numeric: tabular-nums; }
-.productOfferCard .pricePlaceholder .productName { min-height: 54px; margin-bottom: 6px; font-size: 13px; font-weight: 600; line-height: 18px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
-.productOfferCard .actualSpecification { min-height: 36px; margin: 0 0 6px; color: #313b46; font-size: 13px; line-height: 1.4; font-weight: 700; }
-.matchStatus { min-height: 24px; margin-bottom: 6px; }
-.pricePlaceholder .matchBadge { display: inline-block; padding: 4px 8px; border-radius: 5px; background: #eff5f1; color: #265c3b; font-size: 11px; font-weight: 600; }
-.pricePlaceholder .alternativeBadge { background: #f1f3f5; color: #46515e; }
-.matchStatus p { margin: 4px 0 0; color: #6a581d; font-size: 12px; line-height: 1.4; }
-.comparisonSelection { padding: 0; margin: 18px 0; }
-.comparisonSelection label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 8px; }
-.comparisonSelection select { display: block; width: 100%; max-width: 680px; padding: 12px; border: 1px solid #d9dde2; border-radius: 7px; background: #fff; color: #202733; font: inherit; font-size: 16px; }
-.comparisonSelection p { color: #596370; line-height: 1.5; font-size: 14px; }
-.pricePlaceholder .missingPrice { font-size: 19px; line-height: 1.4; }
-.pricePlaceholder .packageLabel { font-size: 11px; color: #59616c; margin-top: 6px; }
-.pricePlaceholder .unitPrice { font-size: 13px; color: #303945; margin: 6px 0 8px; }
-.pricePlaceholder .priceSource, .pricePlaceholder small { font-size: 12px; color: #59616c; line-height: 1.5; }
-.priceScope { font-size: 12px; line-height: 1.5; color: #606974; margin-bottom: 0; }
-.priceDetails { margin-top: 8px; color: #59616c; font-size: 11px; line-height: 1.5; }
-.priceDetails summary { cursor: pointer; }
-.priceDetails p { margin: 6px 0; }
 .loadingResults h2 { margin: 0 0 12px; font-size: 20px; }
-.skeletonCard { min-height: 535px; gap: 14px; }
 .skeletonBlock { display: block; height: 16px; width: 100%; border-radius: 5px; background: linear-gradient(90deg, #f0f1f3 25%, #f9f9fa 50%, #f0f1f3 75%); background-size: 200% 100%; animation: skeletonPulse 1.5s ease-in-out infinite; }
-.skeletonLogo { width: 75%; height: 44px; margin: 8px auto 10px; }
 .skeletonShort { width: 70%; }
-.skeletonProduct { height: 80px; margin-top: 20px; }
-.skeletonPrice { width: 65%; height: 36px; margin: 5px auto; }
-.skeletonButton { height: 40px; }
 @keyframes skeletonPulse { to { background-position: -200% 0; } }
-.cardActions { grid-template-columns: 1fr; }
-.cardActions a { font-size: 13px; min-height: 40px; height: auto; padding: 10px 5px; text-align: center; }
-.mobileLabel { display: none; }
-.providerAttribution { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; font-size: 12px; color: #66717e; }
-.providerAttribution a { color: inherit; }
-.comparisonNote { color: #596370; line-height: 1.6; font-size: 14px; max-width: 880px; }
 .benefits { margin-bottom: 24px; }
 .benefits span { font-size: 14px; color: #5c6673; line-height: 1.5; }
 .benefits b { font-size: 15px; }
@@ -1317,7 +865,7 @@ img {
 .footer p { margin: 0; max-width: 520px; line-height: 1.5; }
 button:focus-visible, a:focus-visible, select:focus-visible { outline: 3px solid #a3242c; outline-offset: 3px; }
 button:disabled { cursor: wait; opacity: 0.6; }
-@media (max-width: 1100px) { .footer { margin: 0 30px; } .heroVisual { opacity: 0.35; } }
+@media (max-width: 1100px) { .footer { margin: 0 30px; } }
 @media (max-width: 650px) {
   .header { height: 54px; }
   .hero { padding: 20px 12px 12px; }
@@ -1336,72 +884,13 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .popular::-webkit-scrollbar { display: none; }
   .searchStatus { margin-top: 10px; font-size: 12px; min-height: 0; }
   .searchStatus:empty { display: none; }
-  .sectionHeading { align-items: flex-start; gap: 6px; margin-bottom: 10px; }
-  .sectionHeading .eyebrow { display: none; }
-  .resultsSection { width: calc(100% - 16px); padding: 12px 8px; margin-bottom: 20px; }
-  .resultsSection .sectionHeading h2 { font-size: 21px; margin: 0; }
-  .sectionHeading .originLabel { font-size: 12px; margin-top: 4px; }
-  .resultCount { padding: 4px 8px; font-size: 11px; }
-  .comparisonSelection { margin: 12px 0 4px; }
-  .comparisonSelection label { font-size: 12px; margin-bottom: 5px; }
-  .comparisonSelection select { padding: 9px; max-width: 100%; }
-  .comparisonSelection p, .comparisonSelection > .secondaryButton { display: none; }
-  .distanceNote { margin: 5px 0 8px; font-size: 11px; line-height: 1.4; }
-  .storeGrid { gap: 6px; padding: 16px 0 6px; scrollbar-width: none; }
-  .storeGrid::-webkit-scrollbar { display: none; }
-  .offerCard { width: calc((100% - 12px) / 3); min-width: 0; min-height: 0; flex: 0 0 calc((100% - 12px) / 3); padding: 9px 6px 7px; border-radius: 7px; }
-  .offerCard:hover { transform: none; }
-  .nearestBadge { top: -11px; left: 4px; max-width: calc(100% - 8px); padding: 4px 5px; font-size: 9px; line-height: 1.2; white-space: nowrap; }
-  .logoArea, .nearbyStoreCard .logoArea { height: 34px; margin: 4px 0 7px; }
-  .logoArea img { width: 100%; max-width: 100%; height: 30px; object-fit: contain; }
-  .offerCard h3 { min-height: 28px; max-height: 28px; margin: 0 0 5px; font-size: 11px; line-height: 14px; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
-  .storeAddress { min-height: 28px; max-height: 28px; margin: 0 0 6px; font-size: 10px; line-height: 14px; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
-  .distancePlaceholder { min-height: 30px; margin: 0 0 7px; font-size: 11px; line-height: 15px; display: block; overflow-wrap: normal; }
-  .distancePlaceholder .driveTime { display: block; }
-  .distanceSeparator { display: none; }
-  .productOfferCard .pricePlaceholder .productName { min-height: 56px; max-height: 56px; margin: 0 0 5px; font-size: 11px; line-height: 14px; -webkit-line-clamp: 4; overflow-wrap: anywhere; }
-  .productOfferCard .actualSpecification { min-height: 39px; margin: 0 0 5px; font-size: 10px; line-height: 13px; font-weight: 600; overflow-wrap: anywhere; }
-  .productOfferCard .pricePlaceholder .packagePrice { display: block; font-size: clamp(18px, 4.9vw, 23px); line-height: 1.15; letter-spacing: -0.6px; white-space: nowrap; overflow-wrap: normal; }
-  .pricePlaceholder .unitPrice { font-size: 10px; line-height: 14px; margin: 5px 0 9px; overflow-wrap: anywhere; }
-  .pricePlaceholder .missingPrice { display: block; min-height: 53px; font-size: 12px; line-height: 16px; }
-  .packageLabel, .priceScope, .priceDetails, .matchStatus, .nearbyStoreCard .routeDetail { display: none; }
-  .productOfferCard[data-price-kind="estimate"] .matchStatus,
-  .productOfferCard[data-price-kind="estimate"] .priceScope,
-  .productOfferCard[data-price-kind="estimate"] .priceDetails { display: block; }
-  .productOfferCard[data-price-kind="estimate"] .packagePrice { font-size: clamp(13px, 4vw, 19px); }
-  .productOfferCard[data-price-kind="estimate"] .priceScope,
-  .productOfferCard[data-price-kind="estimate"] .priceDetails { font-size: 10px; line-height: 14px; overflow-wrap: anywhere; }
-  .cardActions { gap: 6px; padding-top: 8px; }
-  .cardActions a { min-height: 34px; padding: 8px 2px; font-size: 11px; border-radius: 5px; }
-  .desktopLabel { display: none; }
-  .mobileLabel { display: inline; }
-  .storeScroll { display: none; }
-  .providerAttribution { font-size: 9px; margin-top: 6px; }
   .loadingResults h2 { font-size: 16px; }
-  .skeletonCard { min-height: 340px; gap: 10px; }
-  .skeletonLogo { height: 30px; }
-  .skeletonProduct { height: 55px; margin-top: 10px; }
-  .skeletonPrice { height: 25px; }
-  .skeletonButton { height: 34px; }
   .benefits { grid-template-columns: 1fr 1fr; gap: 18px 12px; margin-bottom: 20px; }
   .benefits b { font-size: 13px; }
   .benefits span { font-size: 12px; }
   .footer { margin: 0 16px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
-
-.nearbyStoreCard { min-height: 0; }
-.nearbyStoreCard .logoArea { height: 58px; }
-.catalogAvailability { border-top: 1px solid #eceeef; padding-top: 14px; margin-bottom: 16px; }
-.catalogAvailability b { font-size: 15px; }
-.catalogAvailability p { color: #596370; font-size: 13px; line-height: 1.5; margin: 8px 0 0; }
-.nearbyActions { display: grid; gap: 9px; margin-top: auto; }
-.nearbyActions a, .catalogBrowseButton { display: block; padding: 12px; text-align: center; border-radius: 7px; font-size: 14px; text-decoration: none; font-weight: 600; }
-.nearbyActions a { color: #9d252a; background: #fff5f5; }
-.nearbyActions .routeButton { color: #303945; background: #fff; }
-.catalogBrowseButton { cursor: pointer; background: #ed2f32; color: #fff; border: 1px solid #ed2f32; }
-.secondaryButton { padding: 12px 18px; border: 1px solid #d9dde2; border-radius: 7px; background: #fff; color: #303945; cursor: pointer; font-weight: 600; }
-.catalogSection { border-top: 1px solid #e6e8eb; margin-top: 40px; padding-top: 34px; scroll-margin-top: 24px; }
 .catalogFilters { display: flex; flex-wrap: wrap; gap: 16px; align-items: end; padding: 20px; border-radius: 10px; background: #f6f7f8; }
 .catalogFilters label { flex: 1 1 180px; display: grid; gap: 8px; color: #424a55; font-size: 14px; min-width: 0; }
 .catalogFilters label:first-child { flex-grow: 2; }
@@ -1415,4 +904,125 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .fallbackLinks { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
 .fallbackLinks a { color: #95232b; background: #fff; border: 1px solid #e0e3e7; border-radius: 6px; padding: 9px 12px; text-decoration: none; }
 .searchFallback p { margin-bottom: 0; color: #626367; font-size: 13px; }
-@media (max-width: 650px) { .catalogFilters { padding: 16px; } .catalogFilters label { flex-basis: 100%; } .catalogFilters .secondaryButton { width: 100%; } .catalogSection { margin-top: 28px; } }
+@media (max-width: 650px) { .catalogFilters { padding: 16px; } .catalogFilters label { flex-basis: 100%; } .catalogFilters .secondaryButton { width: 100%; } }
+
+/* Results: one responsive source for compact cards, controls and carousel. */
+.resultsSection {
+  --result-border: #e2e6eb;
+  --result-ink: #182230;
+  width: calc(100% - 48px);
+  max-width: 1440px;
+  margin: 0 auto 24px;
+  padding: 18px;
+  border: 1px solid var(--result-border);
+  border-radius: 12px;
+  background: #fff;
+}
+.sectionHeading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+.sectionHeading > div { min-width: 0; }
+.sectionHeading h2 { margin: 4px 0; font-size: 24px; line-height: 1.2; letter-spacing: -.6px; color: #182230; }
+.sectionHeading .eyebrow { font-size: 10px; }
+.sectionHeading p { margin: 0; color: #596370; font-size: 13px; line-height: 1.4; overflow-wrap: anywhere; }
+.sectionHeading .originLabel { margin-top: 4px; }
+.resultCount { flex-shrink: 0; margin-top: 19px; padding: 6px 9px; border-radius: 6px; background: #f4f5f7; color: #46515e; font-size: 12px; white-space: nowrap; }
+.comparisonNote { color: #596370; font-size: 12px; line-height: 1.4; margin: 8px 0; max-width: 900px; }
+.distanceNote { margin: 5px 0 12px; }
+.comparisonSelection { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 6px 14px; margin: 0 0 10px; }
+.comparisonSelection label { grid-column: 1 / -1; font-size: 12px; font-weight: 700; color: #303945; }
+.comparisonSelection select { width: 100%; min-width: 0; min-height: 42px; padding: 8px 10px; border: 1px solid #d9dde2; border-radius: 7px; background: #fff; color: #202733; font: inherit; font-size: 14px; text-overflow: ellipsis; }
+.comparisonSelection p { grid-column: 1 / -1; grid-row: 3; margin: 0; color: #596370; font-size: 12px; line-height: 1.4; }
+.comparisonSelection > .secondaryButton { grid-column: 2; grid-row: 2; }
+.secondaryButton { min-height: 40px; padding: 8px 12px; border: 1px solid #d9dde2; border-radius: 7px; background: #fff; color: #303945; cursor: pointer; font: inherit; font-size: 12px; font-weight: 600; }
+.secondaryButton:hover { background: #f6f7f9; border-color: #aeb7c2; }
+.storeRow { --visible-cards: 5; --card-gap: 12px; display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; column-gap: 6px; position: relative; min-width: 0; width: 100%; }
+.storeGrid { grid-area: 1 / 2; display: flex; flex-wrap: nowrap; align-items: flex-start; gap: var(--card-gap, 12px); width: 100%; min-width: 0; padding: 12px 0 8px; overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #c8ced6 transparent; }
+.storeGrid::-webkit-scrollbar { height: 5px; }
+.storeGrid::-webkit-scrollbar-thumb { background: #c8ced6; border-radius: 8px; }
+.storeGrid:focus-visible { outline: 2px solid #a3242c; outline-offset: 2px; border-radius: 6px; }
+.storeScroll { grid-row: 1; align-self: start; position: sticky; top: min(42vh, 240px); margin-top: 172px; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid #303945; border-radius: 50%; background: #303945; color: #fff; box-shadow: 0 3px 9px #18223024; cursor: pointer; transition: background-color .15s, box-shadow .15s; }
+.storeScrollPrevious { grid-column: 1; }
+.storeScrollNext { grid-column: 3; }
+.storeScroll svg { width: 20px; height: 20px; }
+.storeScroll:hover:not(:disabled) { background: #17202d; box-shadow: 0 4px 12px #18223040; }
+.storeScroll:disabled { cursor: default; opacity: .3; box-shadow: none; }
+.offerCard { position: relative; flex: 0 0 calc((100% - (var(--visible-cards, 5) - 1) * var(--card-gap, 12px)) / var(--visible-cards, 5)); min-width: 0; min-height: 0; padding: 12px; display: flex; flex-direction: column; border: 1px solid #e2e6eb; border-radius: 9px; background: #fff; box-shadow: 0 2px 6px #18223005; color: #182230; scroll-snap-align: start; transition: border-color .15s; overflow-wrap: anywhere; }
+.offerCard:hover { border-color: #bac2cd; }
+.nearestCard { border-color: #efaeb1; }
+.nearestBadge { position: absolute; top: -10px; left: 10px; max-width: calc(100% - 20px); padding: 3px 7px; border-radius: 5px; background: #ed3033; color: #fff; font-size: 10px; font-weight: 700; line-height: 1.2; }
+.logoArea { display: flex; align-items: center; justify-content: center; width: 100%; height: 32px; margin: 3px 0 8px; }
+.logoArea img { display: block; width: 120px; max-width: 100%; height: 32px; object-fit: contain; object-position: center; }
+.offerCard h3 { margin: 0 0 3px; min-height: 32px; font-size: 13px; line-height: 16px; font-weight: 700; }
+.storeAddress { min-height: 28px; margin: 0 0 5px; color: #596370; font-size: 11px; line-height: 14px; }
+.distancePlaceholder { display: flex; flex-wrap: wrap; gap: 3px; margin: 0 0 7px; color: #d9232b; font-size: 12px; line-height: 16px; font-weight: 600; }
+.pricePlaceholder { margin: 0 0 8px; padding-top: 8px; border-top: 1px solid #eef0f3; text-align: center; }
+.pricePlaceholder .productName { margin: 0 0 4px; min-height: 32px; font-size: 12px; line-height: 16px; font-weight: 600; color: #303945; }
+.actualSpecification { min-height: 28px; margin: 0 0 5px; font-size: 11px; line-height: 14px; font-weight: 600; color: #46515e; }
+.matchStatus { min-height: 20px; margin-bottom: 5px; }
+.pricePlaceholder .matchBadge { display: inline-block; padding: 3px 6px; border-radius: 4px; background: #eff5f1; color: #265c3b; font-size: 10px; line-height: 14px; font-weight: 600; }
+.pricePlaceholder .alternativeBadge { background: #f1f3f5; color: #46515e; }
+.pricePlaceholder .packagePrice { display: block; margin: 0; color: #182230; font-size: 29px; line-height: 34px; letter-spacing: -.7px; font-weight: 800; font-variant-numeric: tabular-nums; overflow-wrap: normal; }
+.pricePlaceholder .packageLabel { display: block; margin-top: 2px; font-size: 10px; line-height: 13px; color: #596370; }
+.pricePlaceholder .unitPrice { margin: 4px 0; font-size: 12px; line-height: 15px; color: #303945; }
+.priceScope { min-height: 28px; margin: 4px 0 0; font-size: 10px; line-height: 14px; color: #596370; }
+.priceDetails { margin-top: 2px; font-size: 11px; line-height: 1.4; color: #596370; }
+.priceDetails summary { padding: 6px 0; cursor: pointer; text-decoration: underline; text-decoration-color: #c7cdd4; text-underline-offset: 3px; }
+.priceDetails p { margin: 6px 0; }
+.priceDetails a { color: #303945; }
+.pricePlaceholder small { display: block; margin: 4px 0; color: #596370; font-size: 10px; line-height: 14px; }
+.pricePlaceholder .missingPrice { display: block; margin: 8px 0; font-size: 18px; line-height: 1.3; }
+.cardActions { display: grid; grid-template-columns: minmax(0, 1fr) minmax(54px, .55fr); gap: 6px; width: 100%; margin-top: 0; }
+.cardActions a { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 40px; padding: 6px 5px; border-radius: 6px; font-size: 12px; line-height: 14px; font-weight: 600; text-align: center; text-decoration: none; }
+.mobileLabel { display: none; }
+.providerAttribution { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; font-size: 10px; line-height: 14px; color: #66717e; }
+.providerAttribution a { color: inherit; }
+.nearbyStoreCard .routeDetail { min-height: 0; margin: 0 0 8px; }
+.catalogAvailability { padding-top: 8px; margin-bottom: 10px; border-top: 1px solid #eef0f3; }
+.catalogAvailability b { font-size: 13px; }
+.catalogAvailability p { margin: 4px 0 0; font-size: 12px; line-height: 1.4; color: #596370; }
+.nearbyActions { display: grid; gap: 6px; }
+.nearbyActions a, .catalogBrowseButton { padding: 8px; min-height: 40px; border-radius: 6px; font-size: 12px; line-height: 16px; text-align: center; text-decoration: none; font-weight: 600; }
+.nearbyActions a { color: #9d252a; background: #fff5f5; }
+.nearbyActions .routeButton { color: #303945; background: #fff; }
+.catalogBrowseButton { cursor: pointer; background: #ed2f32; color: #fff; border: 1px solid #ed2f32; }
+.catalogSection { margin-top: 20px; padding-top: 18px; border-top: 1px solid #e2e6eb; scroll-margin-top: 24px; }
+.skeletonCard { min-height: 420px; gap: 10px; }
+.skeletonLogo { width: 65%; height: 32px; margin: 4px auto; }
+.skeletonProduct { height: 48px; margin-top: 8px; }
+.skeletonPrice { width: 65%; height: 32px; margin: 4px auto; }
+.skeletonButton { height: 36px; }
+/* Keep the full existing hero asset inside its own column at every breakpoint. */
+.hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; column-gap: 28px; min-height: 0; padding-top: 36px; padding-bottom: 24px; }
+.heroCopy { max-width: none; }
+.heroVisual { position: relative; width: 100%; height: auto; aspect-ratio: 520 / 330; pointer-events: none; }
+.heroVisual img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.hero > .searchPanel, .hero > .popular, .hero > .searchStatus, .hero > .searchFallback { grid-column: 1 / -1; }
+.hero > .searchPanel { width: 100%; margin-top: 24px; }
+@media (max-width: 1279px) { .storeRow { --visible-cards: 4; } }
+@media (max-width: 1099px) { .storeRow { --visible-cards: 3; } .resultsSection { width: calc(100% - 32px); padding: 14px; } }
+@media (max-width: 899px) { .storeRow { --visible-cards: 2; } .hero { column-gap: 18px; } .heroCopy h1 { font-size: clamp(30px, 4.4vw, 44px); } }
+@media (max-width: 650px) {
+  .resultsSection { width: calc(100% - 16px); padding: 12px 10px; margin-bottom: 18px; }
+  .sectionHeading { flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+  .sectionHeading h2 { font-size: 20px; }
+  .sectionHeading .eyebrow { display: none; }
+  .sectionHeading .originLabel { font-size: 12px; }
+  .resultCount { margin-top: 0; padding: 5px 7px; font-size: 11px; }
+  .comparisonSelection { grid-template-columns: minmax(0, 1fr); gap: 6px; margin-bottom: 8px; }
+  .comparisonSelection select { min-height: 44px; font-size: 16px; }
+  .comparisonSelection p { grid-row: auto; font-size: 11px; }
+  .comparisonSelection > .secondaryButton { grid-column: 1; grid-row: auto; justify-self: start; }
+  .distanceNote { font-size: 11px; margin-bottom: 10px; }
+  .storeRow { --visible-cards: 1; --card-gap: 10px; column-gap: 4px; }
+  .storeGrid { scrollbar-width: none; }
+  .storeGrid::-webkit-scrollbar { display: none; }
+  .offerCard { padding: 10px; }
+  .pricePlaceholder .packagePrice { font-size: 28px; }
+  .desktopLabel { display: none; }
+  .mobileLabel { display: inline; }
+  .cardActions a { min-height: 44px; }
+  .priceDetails summary { min-height: 36px; padding: 10px 0; }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 12px; padding-top: 20px; padding-bottom: 16px; }
+  .heroCopy h1 { font-size: clamp(27px, 7.4vw, 34px); }
+  .heroVisual { width: min(100%, 260px); height: 120px; aspect-ratio: auto; justify-self: center; }
+  .hero > .searchPanel { margin-top: 0; }
+}
