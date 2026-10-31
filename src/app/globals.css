@@ -128,6 +128,7 @@ img {
    ========================================= */
 
 .hero {
+  --hero-gutter: 54px;
   position: relative;
 
   width: 100%;
@@ -149,6 +150,7 @@ img {
 
 .heroCopy h1 {
   margin: 0;
+  text-wrap: balance;
 
   color: #171b23;
 
@@ -401,12 +403,13 @@ img {
   border-radius: 0;
 
   background: #ffffff;
-  color: #242932;
+  color: #202124;
 
   text-align: left;
 
-  font-size: 13px;
-  font-weight: 500;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 
   cursor: pointer;
 }
@@ -627,6 +630,7 @@ img {
   }
 
   .hero {
+    --hero-gutter: 30px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -838,9 +842,9 @@ img {
 .fieldHint { color: #8f3422; font-size: 14px; line-height: 1.5; margin: 8px 0 0; }
 .materialSuggestions { z-index: 30; }
 .materialSuggestions ul { margin: 0; padding: 0; list-style: none; max-height: 252px; overflow-y: auto; overscroll-behavior: contain; }
-.materialSuggestion { padding: 5px 10px; line-height: 15px; }
+.materialSuggestion { padding: 5px 10px; line-height: 16px; }
 .materialSuggestionLabel { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; overflow-wrap: anywhere; }
-.materialSuggestion mark { background: #fff0cf; color: inherit; font-weight: 700; }
+.materialSuggestion mark { background: transparent; color: #5f6368; font-weight: 400; }
 .activeSuggestion { background: #fce9e9; }
 .googleAttribution { font-size: 13px; color: #525b68; padding: 12px 0; }
 .materialSuggestions .googleAttribution { padding: 10px 16px; border-top: 1px solid #eee; }
@@ -990,10 +994,10 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .skeletonProduct { height: 48px; margin-top: 8px; }
 .skeletonPrice { width: 65%; height: 32px; margin: 4px auto; }
 .skeletonButton { height: 36px; }
-/* Keep the full existing hero asset inside its own column at every breakpoint. */
+/* Extend only the image to the viewport edge; keep the text and form columns in place. */
 .hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; column-gap: 28px; min-height: 0; padding-top: 36px; padding-bottom: 24px; }
 .heroCopy { max-width: none; }
-.heroVisual { position: relative; width: 100%; height: auto; aspect-ratio: 520 / 330; pointer-events: none; }
+.heroVisual { position: relative; width: calc(100% + var(--hero-gutter) + max(0px, (100vw - 1440px) / 2)); height: auto; aspect-ratio: 3 / 2; pointer-events: none; }
 .heroVisual img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .hero > .searchPanel, .hero > .popular, .hero > .searchStatus, .hero > .searchFallback { grid-column: 1 / -1; }
 .hero > .searchPanel { width: 100%; margin-top: 24px; }
@@ -1021,8 +1025,7 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .mobileLabel { display: inline; }
   .cardActions a { min-height: 44px; }
   .priceDetails summary { min-height: 36px; padding: 10px 0; }
-  .hero { grid-template-columns: minmax(0, 1fr); gap: 12px; padding-top: 20px; padding-bottom: 16px; }
+  .hero { --hero-gutter: 12px; grid-template-columns: minmax(0, 1fr); gap: 12px; padding-top: 20px; padding-bottom: 16px; }
   .heroCopy h1 { font-size: clamp(27px, 7.4vw, 34px); }
-  .heroVisual { width: min(100%, 260px); height: 120px; aspect-ratio: auto; justify-self: center; }
   .hero > .searchPanel { margin-top: 0; }
 }

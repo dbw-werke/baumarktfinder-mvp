@@ -155,8 +155,8 @@ export default function Finder() {
       <nav className="nav" aria-label="Hauptnavigation"><a href="#search">Märkte & Material</a><a href="#about">So funktioniert’s</a><span className="countryLabel">Deutschland</span></nav>
     </header>
     <section className="hero" id="search" aria-label="Baumärkte und Material suchen">
-      <div className="heroCopy"><div className="eyebrow">DEINE ADRESSE. DEINE BAUMÄRKTE.</div><h1>Baumarktpreise in deiner Nähe vergleichen</h1><p>Material suchen, Packungspreise naher Baumärkte vergleichen und mit Entfernung, Fahrzeit und Route zum passenden Angebot.</p></div>
-      <div className="heroVisual"><Image src="/Material.hero.png" alt="Baumaterialien für dein Projekt" width={520} height={330} priority unoptimized /></div>
+      <div className="heroCopy"><div className="eyebrow">DEINE ADRESSE. DEINE BAUMÄRKTE.</div><h1>Baumarktpreise in deiner Nähe vergleichen</h1><p>Adresse eingeben, Material suchen und die Preise verschiedener Baumärkte in deiner Nähe auf einen Blick vergleichen – inklusive Entfernung, Fahrzeit und Route.</p></div>
+      <div className="heroVisual"><Image src="/trockenbau-materialien.png" alt="Baumaterialien für dein Projekt" width={1536} height={1024} sizes="(max-width: 650px) 100vw, (max-width: 1440px) 50vw, 65vw" preload /></div>
       <form onSubmit={handleSearch} className="searchPanel" aria-busy={loading}>
         <div className="locationField">
           <GoogleAddressInput value={address} disabled={locationLoading} hint={addressError}
