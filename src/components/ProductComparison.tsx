@@ -16,6 +16,6 @@ export default function ProductComparison({ stores, origin, offers, material, ca
     const selection = material && !dynamicObi ? selectChainOffer(material, offers, catalog, store.id) : undefined;
     const estimate = material && !dynamicObi && !selection?.price ? estimateComparisonPrice(material, offers, catalog, store.id) : null;
     return <StoreCard key={store.placeId} store={store} origin={origin} price={dynamicObi ?? selection?.price} estimate={estimate} comparison={selection}
-      searchTerm={material?.name ?? searchTerm} highlighted={index === 0} observedAt={observedAt} />;
+      searchTerm={material?.name ?? searchTerm} highlighted={index === 0} observedAt={observedAt} comparisonLayout />;
   })}</StoreRow>;
 }

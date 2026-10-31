@@ -22,6 +22,23 @@ const estimate: EstimatedComparisonPrice = {
 };
 const render = (offer?: StorePrice, time = observedAt) => renderToStaticMarkup(<StoreCard store={routeFallback(store)} price={offer} origin={origin} searchTerm="Gipskarton Test" highlighted observedAt={time} />);
 
+test("comparison styling preserves catalog content, original logos and action destinations", () => {
+  const standard = new JSDOM(render(price)).window.document;
+  const comparison = new JSDOM(renderToStaticMarkup(<StoreCard store={routeFallback(store)} price={price} origin={origin} searchTerm="Gipskarton Test" highlighted observedAt={observedAt} comparisonLayout />)).window.document;
+  for (const selector of ["h3", ".storeAddress", ".distancePlaceholder", ".pricePlaceholder", ".nearestBadge"]) {
+    assert.equal(comparison.querySelector(selector)?.textContent, standard.querySelector(selector)?.textContent, selector);
+  }
+  for (const selector of [".offerButton", ".routeButton"]) {
+    assert.equal(comparison.querySelector(selector)?.getAttribute("href"), standard.querySelector(selector)?.getAttribute("href"), selector);
+  }
+  assert.equal(comparison.querySelector(".logoArea img")?.getAttribute("src"), standard.querySelector(".logoArea img")?.getAttribute("src"));
+  assert.equal(standard.querySelector(".cardLocationIcon"), null, "catalog cards retain their existing presentation");
+  assert.ok(comparison.querySelector('.cardLocationIcon[aria-hidden="true"]'));
+  assert.equal(comparison.querySelector(".offerButton")?.textContent, "Zum Angebot");
+  assert.equal(comparison.querySelector(".routeButton")?.textContent, "Route");
+  assert.doesNotMatch(comparison.body.textContent ?? "", /Auf Lager/);
+});
+
 test("card separates package price from unit price and links exactly to the priced product", () => {
   const html = render(price);
   assert.match(html, /7,20/);

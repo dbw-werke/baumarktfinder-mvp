@@ -1029,3 +1029,59 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .heroCopy h1 { font-size: clamp(27px, 7.4vw, 34px); }
   .hero > .searchPanel { margin-top: 0; }
 }
+
+/* Reference design applies only to address + material comparisons. */
+.comparisonGrid { --visible-cards: 4; --card-gap: 14px; display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - (var(--visible-cards) - 1) * var(--card-gap)) / var(--visible-cards)); grid-template-rows: auto auto auto auto minmax(0, 1fr) auto auto auto; row-gap: 0; align-items: stretch; }
+.comparisonGrid .offerCard { display: grid; grid-template-rows: subgrid; grid-row: span 8; row-gap: 0; padding: 18px; border: 1px solid #e9edf2; border-radius: 12px; box-shadow: 0 3px 14px #18223004; color: #080f24; }
+.comparisonGrid .offerCard:hover { border-color: #cdd4df; }
+.comparisonGrid .nearestBadge { top: -10px; left: 18px; }
+.comparisonGrid .logoArea { grid-row: 1; position: relative; height: 112px; flex-shrink: 0; margin: 0 0 12px; overflow: hidden; }
+.comparisonGrid .logoArea img { position: absolute; left: 50%; top: 50%; width: 85%; max-width: none; height: auto; transform: translate(-50%, -50%); object-fit: contain; }
+.comparisonGrid .logoArea[data-chain="obi"] img { width: 82%; }
+.comparisonGrid .logoArea[data-chain="bauhaus"] img { width: 90%; }
+.comparisonGrid .logoArea[data-chain="hornbach"] img { width: 84%; }
+.comparisonGrid .logoArea[data-chain="toom"] img { width: 79%; }
+.comparisonGrid .logoArea[data-chain="hagebau"] img { width: 82%; }
+.comparisonGrid .logoArea[data-chain="globus"] img { width: 82%; }
+.comparisonGrid .logoArea[data-chain="hellweg"] img { width: 85%; transform: translate(-50%, -86.47%); }
+.comparisonGrid h3 { grid-row: 2; min-height: 50px; margin: 0 0 10px; color: #080f24; font-size: 21px; line-height: 25px; letter-spacing: -.65px; }
+.comparisonGrid .storeAddress { grid-row: 3; min-height: 36px; margin: 0 0 12px; color: #697a94; font-size: 13px; line-height: 18px; }
+.comparisonGrid .distancePlaceholder { grid-row: 4; align-items: center; min-height: 28px; gap: 9px; margin: 0 0 20px; color: #ff171e; font-size: 18px; line-height: 26px; font-weight: 400; }
+.comparisonGrid .cardLocationIcon { flex-shrink: 0; width: 23px; height: 25px; }
+.comparisonGrid .distanceSeparator { margin: 0 3px; font-weight: 700; }
+.comparisonGrid .pricePlaceholder { container-type: inline-size; grid-row: 5; display: flex; flex-direction: column; flex: 1; margin: 0 0 14px; padding-top: 16px; border-color: #e9edf2; }
+.comparisonGrid .productName { min-height: 20px; margin-bottom: 4px; color: #303c50; font-size: 14px; line-height: 20px; }
+.comparisonGrid .actualSpecification { min-height: 18px; margin-bottom: 7px; font-size: 13px; line-height: 18px; font-weight: 400; color: #697a94; }
+.comparisonGrid .matchStatus { min-height: 24px; margin-bottom: 12px; }
+.comparisonGrid .matchBadge { padding: 4px 7px; font-size: 11px; line-height: 16px; }
+.comparisonGrid .packagePrice { margin-top: auto; color: #080f24; font-size: 49px; line-height: 60px; letter-spacing: -1.8px; font-weight: 800; }
+.comparisonGrid [data-price-kind="estimate"] .packagePrice { font-size: clamp(34px, 18cqw, 46px); }
+.comparisonGrid .estimateQualifier { font-size: .55em; line-height: 1; letter-spacing: -.5px; }
+.comparisonGrid .packageLabel { min-height: 36px; margin-top: 5px; color: #697a94; font-size: 13px; line-height: 18px; }
+.comparisonGrid .unitPrice { min-height: 22px; margin: 3px 0; color: #697a94; font-size: 16px; line-height: 22px; }
+.comparisonGrid .priceScope { min-height: 36px; margin: 3px 0 14px; color: #697a94; font-size: 13px; line-height: 18px; }
+.comparisonGrid .priceDetails { margin-top: 0; border-top: 1px solid #edf0f4; color: #586b87; font-size: 14px; line-height: 20px; text-align: left; }
+.comparisonGrid .priceDetails summary { min-height: 44px; padding: 13px 0 5px; text-underline-offset: 3px; }
+.comparisonGrid .pricePlaceholder small { font-size: 12px; line-height: 17px; }
+.comparisonGrid .cardActions { grid-row: 6 / span 2; grid-template-columns: minmax(0, 1fr); grid-template-rows: subgrid; gap: 12px; margin-top: 0; }
+.comparisonGrid .cardActions a { gap: 12px; min-height: 56px; padding: 12px 8px; border-radius: 7px; font-size: 18px; line-height: 24px; font-weight: 700; }
+.comparisonGrid .cardActions svg { flex-shrink: 0; }
+.comparisonGrid .offerButton { background: #ff2029; border-color: #ff2029; color: #fff; }
+.comparisonGrid .offerButton:hover { background: #e71720; border-color: #e71720; }
+.comparisonGrid .cardActions .routeButton { min-height: 48px; padding: 9px 8px; border-color: #dfe5ee; background: #fff; color: #080f24; }
+.comparisonGrid .routeButton:hover { background: #f8fafc; }
+.comparisonGrid .providerAttribution { grid-row: 8; }
+@media (max-width: 1279px) { .comparisonGrid { --visible-cards: 3; } }
+@media (max-width: 899px) { .comparisonGrid { --visible-cards: 2; } }
+@media (max-width: 650px) {
+  .storeRow:has(> .comparisonGrid) { grid-template-columns: minmax(0, 1fr) 44px 44px; column-gap: 8px; }
+  .storeRow:has(> .comparisonGrid) > .storeScroll { position: static; margin-top: 0; grid-row: 1; }
+  .storeRow:has(> .comparisonGrid) > .storeScrollPrevious { grid-column: 2; }
+  .storeRow:has(> .comparisonGrid) > .storeScrollNext { grid-column: 3; }
+  .comparisonGrid { --visible-cards: 1; --card-gap: 10px; grid-area: 2 / 1 / 3 / -1; }
+  .comparisonGrid .offerCard { padding: 14px; }
+  .comparisonGrid h3 { font-size: 19px; line-height: 24px; }
+  .comparisonGrid .distancePlaceholder { font-size: 16px; gap: 5px; }
+  .comparisonGrid .packagePrice { font-size: 40px; line-height: 52px; }
+  .comparisonGrid .cardActions a { font-size: 16px; gap: 8px; }
+}
