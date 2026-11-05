@@ -51,21 +51,6 @@ img {
    HEADER
    ========================================= */
 
-.header {
-  width: 100%;
-  max-width: 1440px;
-  height: 76px;
-
-  margin: 0 auto;
-  padding: 0 48px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  border-bottom: 1px solid #ededed;
-}
-
 .brand {
   min-width: 0;
 
@@ -127,49 +112,6 @@ img {
    HERO
    ========================================= */
 
-.hero {
-  --hero-gutter: 54px;
-  position: relative;
-
-  width: 100%;
-  max-width: 1440px;
-  min-height: 500px;
-
-  margin: 0 auto;
-  padding: 58px 54px 42px;
-
-  overflow: hidden;
-}
-
-.heroCopy {
-  position: relative;
-  z-index: 3;
-
-  max-width: 610px;
-}
-
-.heroCopy h1 {
-  margin: 0;
-  text-wrap: balance;
-
-  color: #171b23;
-
-  font-size: clamp(48px, 4.8vw, 72px);
-  line-height: 1.02;
-  letter-spacing: -3px;
-}
-
-.heroCopy p {
-  max-width: 540px;
-
-  margin: 24px 0 0;
-
-  color: #7c8491;
-
-  font-size: 18px;
-  line-height: 1.55;
-}
-
 
 /* =========================================
    HERO BILD
@@ -179,32 +121,6 @@ img {
 /* =========================================
    SUCHE
    ========================================= */
-
-.searchPanel {
-  position: relative;
-  z-index: 10;
-
-  width: min(980px, 100%);
-
-  margin-top: 38px;
-  padding: 24px;
-
-  display: grid;
-  grid-template-columns:
-    minmax(260px, 1fr)
-    minmax(260px, 1fr)
-    130px;
-
-  gap: 18px;
-  align-items: start;
-
-  border: 1px solid #ebedf0;
-  border-radius: 14px;
-
-  background: rgba(255, 255, 255, 0.98);
-
-  box-shadow: 0 14px 40px rgba(18, 24, 33, 0.07);
-}
 
 .fieldBlock {
   position: relative;
@@ -323,43 +239,6 @@ img {
    SUCHBUTTON
    ========================================= */
 
-.searchButton {
-  width: 100%;
-  height: 58px;
-
-  margin-top: 22px;
-
-  border: 0;
-  border-radius: 8px;
-
-  background: linear-gradient(135deg, #f12e31, #e82024);
-  color: #ffffff;
-
-  font-size: 15px;
-  font-weight: 800;
-
-  cursor: pointer;
-
-  box-shadow: 0 8px 20px rgba(239, 47, 50, 0.2);
-
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
-}
-
-.searchButton:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(239, 47, 50, 0.25);
-}
-
-.searchButton:disabled {
-  opacity: 0.7;
-
-  cursor: wait;
-
-  transform: none;
-}
-
 
 /* =========================================
    MATERIALVORSCHLÄGE
@@ -434,47 +313,6 @@ img {
 /* =========================================
    BELIEBT
    ========================================= */
-
-.popular {
-  position: relative;
-  z-index: 5;
-
-  margin-top: 22px;
-
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.popular > span {
-  margin-right: 4px;
-
-  color: #6b717b;
-
-  font-size: 14px;
-}
-
-.popular button {
-  max-width: 100%;
-
-  padding: 10px 17px;
-
-  border: 1px solid #e0e3e7;
-  border-radius: 7px;
-
-  background: #ffffff;
-  color: #303640;
-
-  font-size: 14px;
-
-  cursor: pointer;
-}
-
-.popular button:hover {
-  border-color: #ed3033;
-  color: #ed3033;
-}
 
 .searchStatus {
   margin-top: 18px;
@@ -624,29 +462,6 @@ img {
    ========================================= */
 
 @media (max-width: 1100px) {
-  .header {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .hero {
-    --hero-gutter: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .heroCopy {
-    max-width: 570px;
-  }
-
-  .searchPanel {
-    max-width: 850px;
-
-    grid-template-columns:
-      minmax(220px, 1fr)
-      minmax(220px, 1fr)
-      120px;
-  }
 
   .benefits {
     width: auto;
@@ -666,18 +481,6 @@ img {
     gap: 20px;
   }
 
-  .searchPanel {
-    grid-template-columns:
-      minmax(0, 1fr)
-      minmax(0, 1fr);
-  }
-
-  .searchButton {
-    grid-column: 1 / -1;
-
-    margin-top: 0;
-  }
-
   .benefits {
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
@@ -690,11 +493,6 @@ img {
    ========================================= */
 
 @media (max-width: 650px) {
-  .header {
-    height: 62px;
-
-    padding: 0 16px;
-  }
 
   .nav {
     display: none;
@@ -713,48 +511,6 @@ img {
     font-size: 19px;
   }
 
-  .hero {
-    min-height: auto;
-
-    padding: 32px 16px 24px;
-
-    overflow: visible;
-  }
-
-  .heroCopy {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .heroCopy h1 {
-    font-size: clamp(32px, 10vw, 40px);
-    line-height: 1.05;
-    letter-spacing: -1.3px;
-
-    overflow-wrap: break-word;
-  }
-
-  .heroCopy p {
-    width: 100%;
-    max-width: 100%;
-
-    margin-top: 18px;
-
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  .searchPanel {
-    width: 100%;
-    max-width: 100%;
-
-    margin-top: 26px;
-    padding: 16px;
-
-    grid-template-columns: minmax(0, 1fr);
-    gap: 16px;
-  }
-
   .fieldBlock,
   .materialInputWrapper,
   .inputShell {
@@ -768,19 +524,6 @@ img {
     min-width: 0;
 
     font-size: 16px;
-  }
-
-  .searchButton {
-    width: 100%;
-
-    margin-top: 0;
-
-    grid-column: auto;
-  }
-
-  .popular {
-    width: 100%;
-    max-width: 100%;
   }
 
   .benefits {
@@ -804,10 +547,6 @@ img {
    ========================================= */
 
 @media (max-width: 380px) {
-  .header {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
 
   .brand {
     font-size: 16px;
@@ -820,11 +559,6 @@ img {
     margin-right: 7px;
   }
 
-  .hero {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
   .benefits {
     margin-left: 12px;
     margin-right: 12px;
@@ -833,10 +567,6 @@ img {
 
 /* Existing red/white identity, accessible controls and comparison layout. */
 .countryLabel { padding: 8px 12px; border: 1px solid #e2e5e9; border-radius: 6px; font-size: 14px; color: #565e68; }
-.hero { overflow: visible; }
-.heroCopy > .eyebrow { display: block; margin-bottom: 17px; font-size: 13px; }
-.heroCopy h1 { font-size: clamp(40px, 4.4vw, 64px); }
-.heroCopy p { color: #5d6570; }
 .fieldBlock label { font-size: 13px; }
 .currentLocationButton { font-size: 14px; line-height: 1.5; color: #414a55; opacity: 1; }
 .fieldHint { color: #8f3422; font-size: 14px; line-height: 1.5; margin: 8px 0 0; }
@@ -871,21 +601,10 @@ button:focus-visible, a:focus-visible, select:focus-visible { outline: 3px solid
 button:disabled { cursor: wait; opacity: 0.6; }
 @media (max-width: 1100px) { .footer { margin: 0 30px; } }
 @media (max-width: 650px) {
-  .header { height: 54px; }
-  .hero { padding: 20px 12px 12px; }
-  .heroCopy h1 { font-size: clamp(27px, 7.4vw, 34px); line-height: 1.08; letter-spacing: -1px; }
-  .heroCopy p { margin-top: 10px; font-size: 14px; line-height: 1.45; }
-  .heroCopy > .eyebrow { display: none; }
-  .searchPanel { margin-top: 16px; padding: 12px; gap: 10px; }
   .fieldBlock label { margin-bottom: 5px; font-size: 11px; }
   .inputShell { min-height: 44px; height: 44px; }
   .googleAddressWidget { min-height: 44px !important; }
   .currentLocationButton { margin-top: 5px; font-size: 12px; }
-  .searchButton { min-height: 44px; height: 44px; }
-  .popular { margin-top: 12px; gap: 6px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
-  .popular > span { font-size: 12px; }
-  .popular button { flex-shrink: 0; padding: 7px 10px; font-size: 12px; }
-  .popular::-webkit-scrollbar { display: none; }
   .searchStatus { margin-top: 10px; font-size: 12px; min-height: 0; }
   .searchStatus:empty { display: none; }
   .loadingResults h2 { font-size: 16px; }
@@ -994,16 +713,9 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .skeletonProduct { height: 48px; margin-top: 8px; }
 .skeletonPrice { width: 65%; height: 32px; margin: 4px auto; }
 .skeletonButton { height: 36px; }
-/* Extend only the image to the viewport edge; keep the text and form columns in place. */
-.hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; column-gap: 28px; min-height: 0; padding-top: 36px; padding-bottom: 24px; }
-.heroCopy { max-width: none; }
-.heroVisual { position: relative; width: calc(100% + var(--hero-gutter) + max(0px, (100vw - 1440px) / 2)); height: auto; aspect-ratio: 3 / 2; pointer-events: none; }
-.heroVisual img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.hero > .searchPanel, .hero > .popular, .hero > .searchStatus, .hero > .searchFallback { grid-column: 1 / -1; }
-.hero > .searchPanel { width: 100%; margin-top: 24px; }
 @media (max-width: 1279px) { .storeRow { --visible-cards: 4; } }
 @media (max-width: 1099px) { .storeRow { --visible-cards: 3; } .resultsSection { width: calc(100% - 32px); padding: 14px; } }
-@media (max-width: 899px) { .storeRow { --visible-cards: 2; } .hero { column-gap: 18px; } .heroCopy h1 { font-size: clamp(30px, 4.4vw, 44px); } }
+@media (max-width: 899px) { .storeRow { --visible-cards: 2; } }
 @media (max-width: 650px) {
   .resultsSection { width: calc(100% - 16px); padding: 12px 10px; margin-bottom: 18px; }
   .sectionHeading { flex-wrap: wrap; align-items: center; gap: 6px 10px; }
@@ -1025,9 +737,6 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .mobileLabel { display: inline; }
   .cardActions a { min-height: 44px; }
   .priceDetails summary { min-height: 36px; padding: 10px 0; }
-  .hero { --hero-gutter: 12px; grid-template-columns: minmax(0, 1fr); gap: 12px; padding-top: 20px; padding-bottom: 16px; }
-  .heroCopy h1 { font-size: clamp(27px, 7.4vw, 34px); }
-  .hero > .searchPanel { margin-top: 0; }
 }
 
 /* Reference design applies only to address + material comparisons. */
@@ -1084,4 +793,58 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .comparisonGrid .logoArea { width: min(100%, 200px); justify-self: center; }
   .comparisonGrid .cardActions a { min-height: 44px; }
   .comparisonGrid .cardActions .routeButton { min-height: 44px; }
+}
+
+
+/* Homepage follows the existing result container. Card rules above stay fixed. */
+.site { --page-width: calc(100% - 48px); --page-padding: 18px; }
+.header, .hero { width: var(--page-width); max-width: 1440px; margin-inline: auto; }
+.header { height: 64px; padding: 0 var(--page-padding); display: flex; align-items: center; justify-content: space-between; border: 1px solid transparent; border-bottom-color: #ededed; }
+.hero { padding: 18px 0 16px; overflow: visible; }
+.heroIntro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 330px); align-items: center; gap: 24px; padding-inline: var(--page-padding); border: 1px solid transparent; }
+.heroCopy { min-width: 0; }
+.heroCopy > .eyebrow { margin-bottom: 8px; font-size: 11px; }
+.heroCopy h1 { max-width: 25ch; margin: 0; color: #171b23; font-size: clamp(30px, 3vw, 40px); line-height: 1.1; letter-spacing: -1.2px; text-wrap: balance; }
+.heroCopy p { max-width: 650px; margin: 10px 0 0; color: #5d6570; font-size: 14px; line-height: 1.5; }
+.heroVisual { width: 100%; aspect-ratio: 3 / 2; justify-self: end; }
+.heroVisual img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.searchPanel { position: relative; z-index: 10; width: 100%; margin-top: 14px; padding: 12px var(--page-padding); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 120px; align-items: start; gap: 12px; border: 1px solid #e9edf2; border-radius: 8px; background: #fff; box-shadow: 0 3px 14px #18223004; }
+.searchPanel .fieldBlock label { margin-bottom: 6px; font-size: 11px; line-height: 14px; }
+.searchPanel .inputShell { height: 44px; min-height: 44px; border-radius: 5px; }
+.searchPanel .inputIcon { margin-left: 12px; font-size: 18px; }
+.searchPanel .inputShell input { padding-inline: 10px; font-size: 16px; }
+/* The Places widget sets an inline minimum; match its public host to our fields. */
+.searchPanel .googleAddressWidget { min-height: 44px !important; height: 44px; border-radius: 5px; font-size: 16px; }
+.searchPanel .currentLocationButton { margin-top: 4px; min-height: 24px; font-size: 12px; }
+.searchButton { width: 100%; min-height: 44px; height: 44px; margin-top: 20px; padding: 8px 12px; border: 1px solid #ef2d31; border-radius: 5px; background: linear-gradient(135deg, #f12e31, #e82024); color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; }
+.searchButton:disabled { opacity: .7; cursor: wait; }
+.popular { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 8px; padding-inline: var(--page-padding); border: 1px solid transparent; }
+.popular > span { color: #6b717b; font-size: 12px; }
+.popular button { padding: 6px 10px; min-height: 30px; border: 1px solid #e0e3e7; border-radius: 5px; background: #fff; color: #303640; font-size: 12px; cursor: pointer; }
+.popular button:hover { border-color: #ed3033; color: #ed3033; }
+.hero .searchStatus { margin: 8px 0 0; padding-inline: var(--page-padding); border: 1px solid transparent; min-height: 0; font-size: 12px; }
+.hero .searchStatus:empty { display: none; }
+@media (max-width: 1099px) {
+  .site { --page-width: calc(100% - 32px); --page-padding: 14px; }
+}
+@media (max-width: 899px) {
+  .heroIntro { grid-template-columns: minmax(0, 1fr) minmax(0, 240px); gap: 16px; }
+  .heroCopy h1 { font-size: 30px; }
+  .searchPanel { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 100px; gap: 8px; }
+}
+@media (max-width: 650px) {
+  .site { --page-width: calc(100% - 16px); --page-padding: 10px; }
+  .header { height: 54px; }
+  .hero { padding-top: 14px; padding-bottom: 12px; }
+  .heroIntro { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .heroCopy > .eyebrow { font-size: 10px; }
+  .heroCopy h1 { max-width: none; font-size: clamp(25px, 6.8vw, 29px); letter-spacing: -.8px; }
+  .heroCopy p { margin-top: 8px; font-size: 13px; line-height: 1.45; }
+  .heroVisual { width: 174px; }
+  .searchPanel { grid-template-columns: minmax(0, 1fr); margin-top: 10px; padding-block: 10px; gap: 8px; }
+  .searchButton { margin-top: 0; }
+  .searchPanel .currentLocationButton { min-height: 32px; }
+  .popular { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .popular button { flex-shrink: 0; min-height: 44px; padding: 7px 10px; }
+  .popular::-webkit-scrollbar { display: none; }
 }
