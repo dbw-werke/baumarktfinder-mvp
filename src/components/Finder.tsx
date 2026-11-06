@@ -9,6 +9,7 @@ import SearchLoading from "./SearchLoading";
 import StoreCard from "./StoreCard";
 import NearbyStoreCard from "./NearbyStoreCard";
 import ProductComparison from "./ProductComparison";
+import WebAppGuide from "./WebAppGuide";
 import { getMaterialCatalog, getCachedMaterialSuggestions, getMaterialSuggestions, searchMaterialCatalog, warmMaterialSuggestions, type MaterialRow, type MaterialSuggestion } from "../services/materialSuggestions";
 import { fetchStoreCatalog } from "../services/catalog";
 import { fetchObiOffer } from "../services/obi";
@@ -151,7 +152,7 @@ export default function Finder() {
 
   return <main className="site">
     <header className="header">
-      <a className="brand" href="#search"><span className="brandIcon" aria-hidden="true">⌂</span><span>BAUMARKT</span><strong>FINDER</strong></a>
+      <a className="brand" href="#search"><span className="brandIcon" aria-hidden="true"><Image src="/baumarktfinder-logo.png" alt="" width={34} height={34} sizes="34px" /></span><span>BAUMARKT</span><strong>FINDER</strong></a>
       <nav className="nav" aria-label="Hauptnavigation"><a href="#search">Märkte & Material</a><a href="#about">So funktioniert’s</a><span className="countryLabel">Deutschland</span></nav>
     </header>
     <section className="hero" id="search" aria-label="Baumärkte und Material suchen">
@@ -214,12 +215,14 @@ export default function Finder() {
       </div>}
       <p className="googleAttribution">{result.origin.provider === "osm" ? <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">Standorte: © OpenStreetMap-Mitwirkende</a> : "Standorte und Routen: Google Maps"}</p>
     </section>}
-    <section className="benefits" id="about" aria-label="So funktioniert Baumarktfinder">
-      <div><strong aria-hidden="true">1</strong><span><b>Adresse eingeben</b>Oder deinen Standort verwenden</span></div>
-      <div><strong aria-hidden="true">2</strong><span><b>Märkte entdecken</b>Die nächsten Filialen im Überblick</span></div>
-      <div><strong aria-hidden="true">3</strong><span><b>Materialpreise vergleichen</b>Produkt und tatsächliche Packung im Blick</span></div>
-      <div><strong aria-hidden="true">4</strong><span><b>Angebot und Route öffnen</b>Entfernung und Fahrzeit zur Filiale sehen</span></div>
-    </section>
+    {!loading && result && stores.length > 0 && <section className="resultMetrics" aria-label="Dein Baumarktvergleich auf einen Blick">
+      <dl>
+        <div><dt>Baumärkte in deiner Nähe</dt><dd>{stores.length}</dd></div>
+        <div><dt>Händler im Vergleich</dt><dd>{chains.length}</dd></div>
+        <div><dt>Zur schnellsten Route</dt><dd>1 Klick</dd></div>
+      </dl>
+    </section>}
+    <WebAppGuide />
     <footer className="footer"><span>BAUMARKTFINDER · Deutschland</span><p>Für die Suche wird deine Adresse bzw. dein Standort an Google oder OpenStreetMap (Nominatim/Overpass) übermittelt. Routenlinks öffnen Google Maps.</p></footer>
   </main>;
 }
