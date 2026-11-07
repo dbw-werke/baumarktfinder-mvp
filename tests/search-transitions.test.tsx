@@ -73,6 +73,9 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     const { createRoot } = await import("react-dom/client");
     root = createRoot(dom.window.document.getElementById("root")!);
     await act(async () => root!.render(<Finder />));
+    const metrics = () => [...dom.window.document.querySelectorAll('.resultMetrics dd')].map(node => node.textContent);
+    assert.deepEqual(metrics(), ['Bis zu 15', '7', '1 Klick'], 'initial metrics describe search capacity, not invented nearby results');
+    assert.equal(dom.window.document.querySelector('.nav a[href="#about"]')?.textContent, 'So funktioniert’s');
     const input = async (selector: string, value: string) => act(async () => {
       const element = dom.window.document.querySelector(selector) as HTMLInputElement;
       Object.getOwnPropertyDescriptor(dom.window.HTMLInputElement.prototype, "value")!.set!.call(element, value);
@@ -88,12 +91,15 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
     });
     const names = () => [...dom.window.document.querySelectorAll(".productName")].map(node => node.textContent).join(" ");
     const loading = () => {
+      assert.ok(dom.window.document.querySelector('.resultMetrics'), 'metrics remain visible while searching');
       assert.equal(dom.window.document.querySelectorAll(".productOfferCard").length, 0, "old product/price cards disappear immediately");
       assert.equal(dom.window.document.querySelectorAll(".skeletonCard").length, 5);
       assert.match(dom.window.document.querySelector(".loadingResults")!.textContent!, /Baumärkte und Preise werden geladen/);
     };
     await input('[aria-label="Adresse"]', "Frankfurt"); await input("#material", "Acryl 310 ml"); await submit(); loading(); await complete(0);
     assert.match(names(), /Acryl/i); assert.equal(dom.window.document.querySelectorAll(".skeletonCard").length, 0);
+    assert.deepEqual(metrics(), [String(stores.length), String(new Set(stores.map(store => store.id)).size), '1 Klick']);
+    assert.doesNotMatch(dom.window.document.body.textContent!, /Alle Materialien durchstöbern/);
     assert.equal(dom.window.document.querySelector('h1')?.textContent, 'Baumarktpreise in deiner Nähe vergleichen');
     assert.equal(dom.window.document.querySelector('.nearestBadge')?.textContent, 'Nächste Filiale');
     assert.equal(dom.window.document.querySelector('.nearestBadge')?.closest('article')?.getAttribute('data-store-id'), `fixture-${stores[1].id}`, 'real route distance takes precedence over the nearer air line');

@@ -18,7 +18,7 @@ import type { StorePrice } from "../services/prices";
 import { type ResolvedAddress } from "../services/maps";
 import { discoverNearby, type NearbyResult } from "../services/nearby";
 import { closestBranch, filterCatalog } from "../lib/catalogView";
-import { CHAINS, type Coordinates, type ChainId } from "../lib/stores";
+import { CHAINS, MAX_STORES, type Coordinates, type ChainId } from "../lib/stores";
 import { getStoreUrl } from "../lib/resolver";
 import { resolveMvpPreferredMaterial, withMvpMaterialMetadata } from "../lib/toomIntent";
 import { getMaterialOptionLabel } from "../lib/materialSearch.mjs";
@@ -158,7 +158,7 @@ export default function Finder() {
     <section className="hero" id="search" aria-label="Baumärkte und Material suchen">
       <div className="heroIntro">
         <div className="heroCopy"><div className="eyebrow">DEINE ADRESSE. DEINE BAUMÄRKTE.</div><h1>Baumarktpreise in deiner Nähe vergleichen</h1><p>Adresse eingeben, Material suchen und die Preise verschiedener Baumärkte in deiner Nähe auf einen Blick vergleichen – inklusive Entfernung, Fahrzeit und Route.</p></div>
-        <div className="heroVisual"><Image src="/trockenbau-materialien.png" alt="Baumaterialien für dein Projekt" width={1536} height={1024} sizes="(max-width: 650px) 174px, (max-width: 899px) 240px, 330px" preload /></div>
+        <div className="heroVisual"><Image src="/trockenbau-materialien.png" alt="Baumaterialien für dein Projekt" width={1536} height={1024} sizes="(max-width: 650px) 174px, (max-width: 899px) 240px, 300px" preload /></div>
       </div>
       <form onSubmit={handleSearch} className="searchPanel" aria-busy={loading}>
         <div className="locationField">
@@ -178,6 +178,13 @@ export default function Finder() {
       <div className="searchStatus" role="status" aria-live="polite">{loading && <span className="spinner" aria-hidden="true" />}{status}</div>
       {failedSearch && <div className="searchFallback"><b>Du kannst direkt beim Kartendienst oder Händler weitersuchen:</b><div className="fallbackLinks"><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Baumarkt bei ${failedSearch.address}`)}`} target="_blank" rel="noopener noreferrer">Baumärkte auf der Karte suchen ↗</a>{Object.entries(CHAINS).map(([id, info]) => <a key={id} href={getStoreUrl(id, failedSearch.product)} target="_blank" rel="noopener noreferrer">{info.name} ↗</a>)}</div><p>Externe Suche; diese Links bestätigen keine Entfernung und keinen Filialbestand.</p></div>}
     </section>
+    <section className="resultMetrics" aria-label="Dein Baumarktvergleich auf einen Blick">
+      <dl>
+        <div><dt>{result ? "Baumärkte in deiner Nähe" : "Baumärkte pro Suche"}</dt><dd>{result ? stores.length : <><small>Bis zu</small> {MAX_STORES}</>}</dd></div>
+        <div><dt>Händler im Vergleich</dt><dd>{result ? chains.length : Object.keys(CHAINS).length}</dd></div>
+        <div><dt>Zur Route</dt><dd>1 Klick</dd></div>
+      </dl>
+    </section>
     {loading && <SearchLoading />}
     {!loading && result && <section className="resultsSection" id="results" aria-label="Suchergebnisse" aria-busy={loading}>
       <div className="sectionHeading"><div><span className="eyebrow">RUND UM DEINE ADRESSE</span><h2>Deine nächsten Baumärkte</h2><p className="originLabel">Ausgangspunkt: {result.origin.address}</p></div><span className="resultCount">{stores.length} Märkte · {chains.length} Händler</span></div>
@@ -194,7 +201,6 @@ export default function Finder() {
             {result.materials.map((item) => <option key={item.id} value={item.id}>{getMaterialOptionLabel(item)}</option>)}
           </select>
           <p>{comparisonMaterial ? "Je Händler zuerst die Wunschgröße, sonst die nächste geprüfte, passende Größe. Der große Preis gilt immer für die tatsächlich gezeigte Packung." : result.obiOffer ? `OBI-Angebot für „${comparisonQuery}“. Die Karte zeigt die tatsächliche Ausführung. Für weitere Händler kannst du eine Vergleichsgröße wählen.` : `Für „${comparisonQuery}“ ist die Ausführung noch nicht eindeutig. Wähle das gewünschte Produkt, um geprüfte Preise zu vergleichen.`}</p>
-          <button type="button" className="secondaryButton" onClick={() => { setComparisonQuery(""); setComparisonMaterial(null); setQuery(""); setFilterIds([]); }}>Alle Materialien durchstöbern</button>
         </div>
         <ProductComparison stores={stores} origin={result.origin} offers={result.offers} material={comparisonMaterial} catalog={result.materials} searchTerm={comparisonQuery} observedAt={result.observedAt}
           obiOffer={(comparisonMaterial?.id ?? null) === result.obiMaterialId ? result.obiOffer : null} />
@@ -214,13 +220,6 @@ export default function Finder() {
           : <div className="catalogEmpty"><h3>{query ? "Noch kein geprüftes Angebot für diese Suche" : "Für diese Händler sind noch keine geprüften Preise erfasst"}</h3><p>Du kannst das Material über die Links in den Marktkarten direkt im Händlersortiment suchen.</p></div>}
       </div>}
       <p className="googleAttribution">{result.origin.provider === "osm" ? <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">Standorte: © OpenStreetMap-Mitwirkende</a> : "Standorte und Routen: Google Maps"}</p>
-    </section>}
-    {!loading && result && stores.length > 0 && <section className="resultMetrics" aria-label="Dein Baumarktvergleich auf einen Blick">
-      <dl>
-        <div><dt>Baumärkte in deiner Nähe</dt><dd>{stores.length}</dd></div>
-        <div><dt>Händler im Vergleich</dt><dd>{chains.length}</dd></div>
-        <div><dt>Zur schnellsten Route</dt><dd>1 Klick</dd></div>
-      </dl>
     </section>}
     <WebAppGuide />
     <footer className="footer"><span>BAUMARKTFINDER · Deutschland</span><p>Für die Suche wird deine Adresse bzw. dein Standort an Google oder OpenStreetMap (Nominatim/Overpass) übermittelt. Routenlinks öffnen Google Maps.</p></footer>

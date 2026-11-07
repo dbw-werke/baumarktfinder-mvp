@@ -1,24 +1,37 @@
 import Image from "next/image";
 
-type SmartphoneImage = { src: string; width: number; height: number };
-
-// Supply the user's smartphone image here once provided; never render a substitute.
-export default function WebAppGuide({ smartphoneImage }: { smartphoneImage?: SmartphoneImage }) {
+export default function WebAppGuide() {
   return <section className="webAppGuide" id="about" aria-labelledby="webapp-guide-title">
-    <h2 id="webapp-guide-title">So funktioniert Baumarktfinder</h2>
-    <p className="webAppGuideIntro">Adresse eingeben, Material suchen und Baumarktpreise in deiner Nähe vergleichen – inklusive Entfernung, Fahrzeit und Route.</p>
-    <div className={`webAppGuideContent${smartphoneImage ? " hasPreview" : ""}`}>
-      {smartphoneImage && <div className="webAppGuideImage"><Image {...smartphoneImage} alt="Baumarktfinder-Webapp auf einem Smartphone" sizes="(max-width: 650px) 200px, 240px" /></div>}
+    <div className="webAppGuideHeading">
+      <span className="eyebrow">IN DREI SCHRITTEN ZUM PASSENDEN BAUMARKT</span>
+      <h2 id="webapp-guide-title">So funktioniert Baumarktfinder</h2>
+      <p>Material finden. Preise vergleichen. Losfahren.</p>
+    </div>
+    <div className="webAppGuideContent">
+      <figure className="webAppGuidePreview">
+        <div className="phoneFrame">
+          <div className="phoneSpeaker" aria-hidden="true" />
+          <Image src="/baumarktfinder-mobile.png" alt="Die Baumarktfinder-Webapp auf dem Smartphone mit Adresssuche und Materialauswahl" width={375} height={672} sizes="(max-width: 650px) 190px, 230px" />
+          <div className="phoneHomeIndicator" aria-hidden="true" />
+        </div>
+        <figcaption>Dein Baumarktvergleich. Auch unterwegs.</figcaption>
+      </figure>
       <div className="webAppGuideText">
-        <h3>Baumarktfinder als Webapp nutzen</h3>
-        <p>Nutze Baumarktfinder direkt auf deinem Smartphone. Vergleiche Baumarktpreise, entdecke Filialen in deiner Nähe und öffne die passende Route – ganz einfach über deinen Browser.</p>
-        <h4>So funktioniert die Installation:</h4>
-        <ol>
-          <li>Baumarktfinder auf dem Smartphone im Browser öffnen.</li>
-          <li>Über das Browsermenü „Zum Home-Bildschirm hinzufügen“ bzw. die entsprechende Installationsoption auswählen.</li>
-          <li>Baumarktfinder anschließend direkt über das Symbol auf dem Startbildschirm öffnen.</li>
+        <ol className="guideSteps" role="list">
+          <li><span className="guideStepNumber" aria-hidden="true">1</span><div><h3>Deinen Standort wählen</h3><p>Gib deine Adresse ein oder verwende deinen aktuellen Standort. Wir finden die Baumärkte in deiner Nähe.</p></div></li>
+          <li><span className="guideStepNumber" aria-hidden="true">2</span><div><h3>Material und Preise vergleichen</h3><p>Suche dein Material und wähle die passende Ausführung. Vergleiche Preise, Packungsgrößen und Entfernung auf einen Blick.</p></div></li>
+          <li><span className="guideStepNumber" aria-hidden="true">3</span><div><h3>Angebot öffnen oder Route starten</h3><p>Mit „Zum Angebot“ gelangst du direkt zum Händler. Über „Route“ öffnest du die Wegbeschreibung zum ausgewählten Markt.</p></div></li>
         </ol>
-        <p className="webAppPlatformNote">iPhone: In Safari über „Teilen“ die Option „Zu Home-Bildschirm hinzufügen“ wählen. Android: Im Chrome-Menü „Installieren und Verknüpfung erstellen“ und dann „Verknüpfung erstellen“ wählen; je nach Version heißt die Option „Zum Startbildschirm hinzufügen“. Mit „Hinzufügen“ bestätigen. Es ist keine App aus dem App Store oder Google Play erforderlich.</p>
+        <div className="webAppInstall">
+          <h3>Wie eine App. Direkt im Browser.</h3>
+          <p>Lege Baumarktfinder auf deinen Startbildschirm – so ist dein Preisvergleich immer nur einen Fingertipp entfernt.</p>
+          <details>
+            <summary>So legst du Baumarktfinder auf den Startbildschirm</summary>
+            <p><strong>iPhone:</strong> Öffne Baumarktfinder in Safari. Wähle unter „Teilen“ die Option „Zu Home-Bildschirm hinzufügen“ und bestätige mit „Hinzufügen“.</p>
+            <p><strong>Android:</strong> Öffne Baumarktfinder in Chrome. Wähle im Menü „Installieren und Verknüpfung erstellen“, dann „Verknüpfung erstellen“. Je nach Version heißt die Option „Zum Startbildschirm hinzufügen“. Bestätige mit „Hinzufügen“.</p>
+            <p>Es ist keine App aus dem App Store oder Google Play erforderlich.</p>
+          </details>
+        </div>
       </div>
     </div>
   </section>;
