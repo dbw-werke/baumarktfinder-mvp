@@ -829,6 +829,12 @@ button:disabled { cursor: wait; opacity: 0.6; }
 /* Shared page rhythm; comparison card sizes and data remain unchanged. */
 .brandIcon:has(img) { background: transparent; }
 .brandIcon img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.benefitsSection { width: var(--page-width); max-width: 1440px; margin: 0 auto; padding: 28px var(--page-padding) 32px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.benefitItem { min-width: 0; text-align: center; }
+.benefitIcon { width: 56px; height: 56px; margin: 0 auto 14px; display: grid; place-items: center; border-radius: 50%; background: #f6f7f8; color: #ed2f32; }
+.benefitIcon svg { width: 26px; height: 26px; }
+.benefitItem h2 { margin: 0 0 8px; color: #182230; font-size: 18px; line-height: 1.35; text-wrap: balance; }
+.benefitItem p { max-width: 290px; margin: 0 auto; color: #5c6673; font-size: 14px; line-height: 1.55; }
 .webAppGuide, .site .footer { width: var(--page-width); max-width: 1440px; margin: 0 auto var(--section-gap); }
 .webAppGuide { padding: 24px var(--page-padding) 0; border-top: 1px solid #e9edf2; background: #fff; scroll-margin-top: 16px; }
 .webAppGuideHeading { margin-bottom: 20px; }
@@ -860,6 +866,7 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .header .nav a[href="#search"], .header .countryLabel { display: none; }
   .header .nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; }
   .webAppGuide { padding-block: 20px; }
+  .benefitsSection { grid-template-columns: minmax(0, 1fr); gap: 26px; padding-block: 24px; }
   .webAppGuideHeading { margin-bottom: 20px; }
   .webAppGuide h2 { font-size: 20px; }
   .webAppGuideContent { grid-template-columns: minmax(0, 1fr); gap: 24px; }

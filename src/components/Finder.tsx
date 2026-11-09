@@ -214,6 +214,23 @@ export default function Finder() {
       </div>}
       <p className="googleAttribution">{result.origin.provider === "osm" ? <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">Standorte: © OpenStreetMap-Mitwirkende</a> : "Standorte und Routen: Google Maps"}</p>
     </section>}
+    <section className="benefitsSection" aria-label="Deine Vorteile mit Baumarktfinder">
+      <div className="benefitItem">
+        <span className="benefitIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg></span>
+        <h2>Spare Zeit</h2>
+        <p>Finde schnell den passenden Baumarkt in deiner Nähe.</p>
+      </div>
+      <div className="benefitItem">
+        <span className="benefitIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M18 5a7 7 0 1 0 0 14M5 10h10M5 14h9" /></svg></span>
+        <h2>Spare Geld</h2>
+        <p>Vergleiche Preise verschiedener Händler auf einen Blick.</p>
+      </div>
+      <div className="benefitItem">
+        <span className="benefitIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="7" height="16" rx="1.5" /><rect x="14" y="4" width="7" height="16" rx="1.5" /><path d="M5.5 9h2M5.5 13h2M5.5 17h2M16.5 9h2M16.5 13h2M16.5 17h2" /></svg></span>
+        <h2>Material übersichtlich vergleichen</h2>
+        <p>Sieh Produkt, Preis, Entfernung und Route klar und einfach.</p>
+      </div>
+    </section>
     <WebAppGuide />
     <footer className="footer"><span>BAUMARKTFINDER · Deutschland</span><p>Für die Suche wird deine Adresse bzw. dein Standort an Google oder OpenStreetMap (Nominatim/Overpass) übermittelt. Routenlinks öffnen Google Maps.</p></footer>
   </main>;
