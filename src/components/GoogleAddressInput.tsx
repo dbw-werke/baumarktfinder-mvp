@@ -51,7 +51,7 @@ export default function GoogleAddressInput(props: Props) {
       widget.current = element;
       element.id = "address";
       element.className = "googleAddressWidget";
-      element.setAttribute("aria-label", "WO IN DEUTSCHLAND?");
+      element.setAttribute("aria-label", "Adresse");
       if (current.current.hint) element.setAttribute("aria-describedby", "address-hint");
       element.value = current.current.value;
       element.disabled = current.current.disabled;
@@ -115,7 +115,7 @@ export default function GoogleAddressInput(props: Props) {
   }, [activated]);
 
   return <div className="fieldBlock googleAddressField">
-    <label htmlFor="address">WO IN DEUTSCHLAND?</label>
+    <label htmlFor="address">Adresse</label>
     <div ref={host} className="googleAddressHost" hidden={!ready} />
     {!ready && <div className="inputShell">
       <span className="inputIcon" aria-hidden="true">⌖</span>

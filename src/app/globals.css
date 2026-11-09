@@ -798,15 +798,15 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .site { --page-width: calc(100% - 48px); --page-padding: 18px; --section-gap: 24px; }
 .header, .hero { width: var(--page-width); max-width: 1440px; margin-inline: auto; }
 .header { min-height: 68px; padding: 0 var(--page-padding); display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 1px solid transparent; border-bottom-color: #ededed; }
-.hero { padding: var(--section-gap) 0; overflow: visible; }
+.hero { padding: 16px 0 20px; overflow: visible; }
 .heroIntro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); align-items: center; gap: 24px; padding-inline: var(--page-padding); border: 1px solid transparent; }
 .heroCopy { min-width: 0; }
-.heroCopy > .eyebrow { margin-bottom: 8px; font-size: 11px; }
+.heroCopy > .eyebrow { margin-bottom: 8px; font-size: 11px; color: #182230; }
 .heroCopy h1 { max-width: 25ch; margin: 0; color: #171b23; font-size: clamp(30px, 3vw, 38px); line-height: 1.15; letter-spacing: -1px; text-wrap: balance; }
 .heroCopy p { max-width: 650px; margin: 12px 0 0; color: #5d6570; font-size: 15px; line-height: 1.55; }
 .heroVisual { width: 100%; aspect-ratio: 3 / 2; justify-self: end; }
 .heroVisual img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.searchPanel { position: relative; z-index: 10; width: 100%; margin-top: 14px; padding: 12px var(--page-padding); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 120px; align-items: start; gap: 12px; border: 1px solid #e9edf2; border-radius: 8px; background: #fff; box-shadow: 0 3px 14px #18223004; }
+.searchPanel { position: relative; z-index: 10; width: 100%; max-width: 1080px; margin-top: 12px; padding: 12px var(--page-padding); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 104px; align-items: start; gap: 8px; border: 1px solid #e9edf2; border-radius: 8px; background: #fff; }
 .searchPanel .fieldBlock label { margin-bottom: 6px; font-size: 11px; line-height: 14px; }
 .searchPanel .inputShell { height: 44px; min-height: 44px; border-radius: 5px; }
 .searchPanel .inputIcon { margin-left: 12px; font-size: 18px; }
@@ -814,7 +814,7 @@ button:disabled { cursor: wait; opacity: 0.6; }
 /* The Places widget sets an inline minimum; match its public host to our fields. */
 .searchPanel .googleAddressWidget { min-height: 44px !important; height: 44px; border-radius: 5px; font-size: 16px; }
 .searchPanel .currentLocationButton { margin-top: 4px; min-height: 24px; font-size: 12px; }
-.searchButton { width: 100%; min-height: 44px; height: 44px; margin-top: 20px; padding: 8px 12px; border: 1px solid #ef2d31; border-radius: 5px; background: linear-gradient(135deg, #f12e31, #e82024); color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; }
+.searchButton { width: 100%; min-height: 44px; height: 44px; margin-top: 20px; padding: 8px 12px; border: 1px solid #ef2d31; border-radius: 5px; background: #ed2f32; color: #fff; font-size: 14px; font-weight: 700; cursor: pointer; }
 .searchButton:disabled { opacity: .7; cursor: wait; }
 .popular { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-top: 8px; padding-inline: var(--page-padding); border: 1px solid transparent; }
 .popular > span { color: #6b717b; font-size: 12px; }
@@ -829,32 +829,28 @@ button:disabled { cursor: wait; opacity: 0.6; }
 /* Shared page rhythm; comparison card sizes and data remain unchanged. */
 .brandIcon:has(img) { background: transparent; }
 .brandIcon img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.resultMetrics, .webAppGuide, .site .footer { width: var(--page-width); max-width: 1440px; margin: 0 auto var(--section-gap); }
-.resultMetrics { padding: 8px var(--page-padding) 12px; border: 1px solid transparent; }
-.resultMetrics dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin: 0; }
-.resultMetrics dl > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; border-left: 3px solid #ed2f32; padding: 2px 12px; }
-.resultMetrics dd { order: -1; margin: 0; color: #182230; font-size: 28px; line-height: 1.15; font-weight: 800; letter-spacing: -.5px; }
-.resultMetrics dd small { font-size: 12px; font-weight: 600; letter-spacing: 0; }
-.resultMetrics dt { color: #5c6673; font-size: 13px; line-height: 1.4; }
-.webAppGuide { padding: 24px var(--page-padding); border: 1px solid #e9edf2; border-radius: 8px; background: #f6f7f8; scroll-margin-top: 16px; }
-.webAppGuideHeading { margin-bottom: 24px; }
-.webAppGuideHeading > .eyebrow { font-size: 10px; }
-.webAppGuide h2 { margin: 8px 0; color: #182230; font-size: 24px; line-height: 1.2; letter-spacing: -.6px; text-wrap: balance; }
+.webAppGuide, .site .footer { width: var(--page-width); max-width: 1440px; margin: 0 auto var(--section-gap); }
+.webAppGuide { padding: 24px var(--page-padding) 0; border-top: 1px solid #e9edf2; background: #fff; scroll-margin-top: 16px; }
+.webAppGuideHeading { margin-bottom: 20px; }
+.webAppGuide h2 { margin: 0; color: #182230; font-size: 24px; line-height: 1.2; letter-spacing: -.6px; text-wrap: balance; }
 .webAppGuide p { margin: 0; font-size: 14px; line-height: 1.55; color: #5c6673; }
-.webAppGuideContent { display: grid; grid-template-columns: minmax(220px, .8fr) minmax(0, 1.2fr); gap: 40px; align-items: center; max-width: 1020px; margin-inline: auto; }
+.webAppGuideContent { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 112px; align-items: start; max-width: 980px; }
 .webAppGuidePreview { min-width: 0; margin: 0; display: grid; justify-items: center; gap: 18px; }
 .webAppGuidePreview figcaption { color: #5c6673; font-size: 12px; text-align: center; }
 .phoneFrame { position: relative; width: 230px; max-width: 100%; padding: 24px 5px 18px; border: 2px solid #303640; border-radius: 32px; background: #182230; box-shadow: 0 18px 36px #1822301a, 0 3px 8px #18223012; }
 .phoneFrame img { display: block; width: 100%; height: auto; border-radius: 5px; }
 .phoneSpeaker { position: absolute; top: 10px; left: 50%; width: 36px; height: 4px; border-radius: 4px; background: #737c87; transform: translateX(-50%); }
 .phoneHomeIndicator { position: absolute; bottom: 7px; left: 50%; width: 64px; height: 3px; border-radius: 4px; background: #fff; transform: translateX(-50%); }
-.webAppGuideText { min-width: 0; }
+.webAppGuideText { min-width: 0; padding-top: 94px; }
 .webAppGuide h3 { margin: 0 0 6px; color: #182230; font-size: 16px; line-height: 1.35; }
-.guideSteps { display: grid; gap: 20px; list-style: none; padding: 0; margin: 0; }
-.guideSteps li { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 12px; align-items: start; }
-.guideStepNumber { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid #f4c9ca; border-radius: 8px; background: #fff; color: #ed2f32; font-size: 14px; font-weight: 700; }
-.webAppInstall { margin-top: 24px; padding: 16px; border: 1px solid #e9edf2; border-radius: 8px; background: #fff; }
-.webAppInstall summary { padding-block: 12px 0; color: #343a43; font-size: 13px; line-height: 1.5; font-weight: 600; cursor: pointer; }
+.guideSteps { display: grid; grid-template-rows: 66px 88px auto; gap: 28px; list-style: none; padding: 0; margin: 0; }
+.guideSteps li { position: relative; display: grid; grid-template-columns: 20px minmax(0, 1fr); gap: 8px; align-items: start; min-height: 66px; }
+.guideStepNumber { color: #182230; font-size: 14px; line-height: 22px; font-weight: 600; }
+.guideConnector { position: absolute; right: calc(100% + 8px); top: 11px; width: 128px; height: 1px; overflow: visible; pointer-events: none; }
+.guideConnector path { fill: none; stroke: #bac2cb; stroke-width: 1; }
+.guideConnector circle { fill: #8c98a6; }
+.webAppInstall { margin-top: 18px; border-top: 1px solid #e9edf2; }
+.webAppInstall summary { padding-block: 12px; color: #343a43; font-size: 13px; line-height: 1.5; font-weight: 600; cursor: pointer; }
 .webAppInstall details p { margin-top: 12px; font-size: 13px; }
 .site .footer { padding: 20px var(--page-padding); margin-bottom: 0; }
 .site .footer p { max-width: 580px; }
@@ -863,18 +859,15 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .header .nav { display: flex; gap: 0; flex-shrink: 0; }
   .header .nav a[href="#search"], .header .countryLabel { display: none; }
   .header .nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; }
-  .resultMetrics { padding-block: 8px; }
-  .resultMetrics dl { gap: 8px; }
-  .resultMetrics dl > div { padding-inline: 8px; }
-  .resultMetrics dd { font-size: clamp(18px, 5.2vw, 22px); white-space: nowrap; }
-  .resultMetrics dt { font-size: 12px; }
   .webAppGuide { padding-block: 20px; }
   .webAppGuideHeading { margin-bottom: 20px; }
   .webAppGuide h2 { font-size: 20px; }
   .webAppGuideContent { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .webAppGuideText { padding-top: 0; }
+  .guideConnector { display: none; }
   .phoneFrame { width: 190px; }
-  .guideSteps { gap: 18px; }
-  .webAppInstall { margin-top: 20px; padding: 14px; }
+  .guideSteps { grid-template-rows: none; gap: 18px; }
+  .webAppInstall { margin-top: 16px; }
 }
 @media (max-width: 899px) {
   .heroIntro { grid-template-columns: minmax(0, 1fr) minmax(0, 240px); gap: 16px; }

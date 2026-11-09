@@ -18,7 +18,7 @@ import type { StorePrice } from "../services/prices";
 import { type ResolvedAddress } from "../services/maps";
 import { discoverNearby, type NearbyResult } from "../services/nearby";
 import { closestBranch, filterCatalog } from "../lib/catalogView";
-import { CHAINS, MAX_STORES, type Coordinates, type ChainId } from "../lib/stores";
+import { CHAINS, type Coordinates, type ChainId } from "../lib/stores";
 import { getStoreUrl } from "../lib/resolver";
 import { resolveMvpPreferredMaterial, withMvpMaterialMetadata } from "../lib/toomIntent";
 import { getMaterialOptionLabel } from "../lib/materialSearch.mjs";
@@ -157,7 +157,7 @@ export default function Finder() {
     </header>
     <section className="hero" id="search" aria-label="Baumärkte und Material suchen">
       <div className="heroIntro">
-        <div className="heroCopy"><div className="eyebrow">DEINE ADRESSE. DEINE BAUMÄRKTE.</div><h1>Baumarktpreise in deiner Nähe vergleichen</h1><p>Adresse eingeben, Material suchen und die Preise verschiedener Baumärkte in deiner Nähe auf einen Blick vergleichen – inklusive Entfernung, Fahrzeit und Route.</p></div>
+        <div className="heroCopy"><div className="eyebrow">DEINE ADRESSE. DEINE BAUMÄRKTE.</div><h1>Baumarktpreise in deiner Nähe vergleichen</h1><p>Material suchen und Baumarktpreise vergleichen – mit Entfernung, Fahrzeit und Route.</p></div>
         <div className="heroVisual"><Image src="/trockenbau-materialien.png" alt="Baumaterialien für dein Projekt" width={1536} height={1024} sizes="(max-width: 650px) 174px, (max-width: 899px) 240px, 300px" preload /></div>
       </div>
       <form onSubmit={handleSearch} className="searchPanel" aria-busy={loading}>
@@ -177,13 +177,6 @@ export default function Finder() {
       <div className="popular"><span>Beliebt:</span>{POPULAR_MATERIALS.map((item) => <button type="button" disabled={locationLoading} key={item} onClick={() => { changeMaterial(item); document.getElementById("material")?.focus(); }}>{item}</button>)}</div>
       <div className="searchStatus" role="status" aria-live="polite">{loading && <span className="spinner" aria-hidden="true" />}{status}</div>
       {failedSearch && <div className="searchFallback"><b>Du kannst direkt beim Kartendienst oder Händler weitersuchen:</b><div className="fallbackLinks"><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Baumarkt bei ${failedSearch.address}`)}`} target="_blank" rel="noopener noreferrer">Baumärkte auf der Karte suchen ↗</a>{Object.entries(CHAINS).map(([id, info]) => <a key={id} href={getStoreUrl(id, failedSearch.product)} target="_blank" rel="noopener noreferrer">{info.name} ↗</a>)}</div><p>Externe Suche; diese Links bestätigen keine Entfernung und keinen Filialbestand.</p></div>}
-    </section>
-    <section className="resultMetrics" aria-label="Dein Baumarktvergleich auf einen Blick">
-      <dl>
-        <div><dt>{result ? "Baumärkte in deiner Nähe" : "Baumärkte pro Suche"}</dt><dd>{result ? stores.length : <><small>Bis zu</small> {MAX_STORES}</>}</dd></div>
-        <div><dt>Händler im Vergleich</dt><dd>{result ? chains.length : Object.keys(CHAINS).length}</dd></div>
-        <div><dt>Zur Route</dt><dd>1 Klick</dd></div>
-      </dl>
     </section>
     {loading && <SearchLoading />}
     {!loading && result && <section className="resultsSection" id="results" aria-label="Suchergebnisse" aria-busy={loading}>
