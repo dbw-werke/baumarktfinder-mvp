@@ -829,52 +829,53 @@ button:disabled { cursor: wait; opacity: 0.6; }
 /* Shared page rhythm; comparison card sizes and data remain unchanged. */
 .brandIcon:has(img) { background: transparent; }
 .brandIcon img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.benefitsSection { width: var(--page-width); max-width: 1440px; margin: 0 auto; padding: 28px var(--page-padding) 32px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
-.benefitItem { min-width: 0; text-align: center; }
-.benefitIcon { width: 56px; height: 56px; margin: 0 auto 14px; display: grid; place-items: center; border-radius: 50%; background: #f6f7f8; color: #ed2f32; }
+.benefitIcon { width: 56px; height: 56px; flex-shrink: 0; display: grid; place-items: center; border-radius: 50%; background: #f6f7f8; color: #ed2f32; }
 .benefitIcon svg { width: 26px; height: 26px; }
-.benefitItem h2 { margin: 0 0 8px; color: #182230; font-size: 18px; line-height: 1.35; text-wrap: balance; }
-.benefitItem p { max-width: 290px; margin: 0 auto; color: #5c6673; font-size: 14px; line-height: 1.55; }
 .webAppGuide, .site .footer { width: var(--page-width); max-width: 1440px; margin: 0 auto var(--section-gap); }
-.webAppGuide { padding: 24px var(--page-padding) 0; border-top: 1px solid #e9edf2; background: #fff; scroll-margin-top: 16px; }
-.webAppGuideHeading { margin-bottom: 20px; }
-.webAppGuide h2 { margin: 0; color: #182230; font-size: 24px; line-height: 1.2; letter-spacing: -.6px; text-wrap: balance; }
-.webAppGuide p { margin: 0; font-size: 14px; line-height: 1.55; color: #5c6673; }
-.webAppGuideContent { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 112px; align-items: start; max-width: 980px; }
-.webAppGuidePreview { min-width: 0; margin: 0; display: grid; justify-items: center; gap: 18px; }
-.webAppGuidePreview figcaption { color: #5c6673; font-size: 12px; text-align: center; }
-.phoneFrame { position: relative; width: 230px; max-width: 100%; padding: 24px 5px 18px; border: 2px solid #303640; border-radius: 32px; background: #182230; box-shadow: 0 18px 36px #1822301a, 0 3px 8px #18223012; }
-.phoneFrame img { display: block; width: 100%; height: auto; border-radius: 5px; }
-.phoneSpeaker { position: absolute; top: 10px; left: 50%; width: 36px; height: 4px; border-radius: 4px; background: #737c87; transform: translateX(-50%); }
-.phoneHomeIndicator { position: absolute; bottom: 7px; left: 50%; width: 64px; height: 3px; border-radius: 4px; background: #fff; transform: translateX(-50%); }
-.webAppGuideText { min-width: 0; padding-top: 94px; }
-.webAppGuide h3 { margin: 0 0 6px; color: #182230; font-size: 16px; line-height: 1.35; }
-.guideSteps { display: grid; grid-template-rows: 66px 88px auto; gap: 28px; list-style: none; padding: 0; margin: 0; }
-.guideSteps li { position: relative; display: grid; grid-template-columns: 20px minmax(0, 1fr); gap: 8px; align-items: start; min-height: 66px; }
-.guideStepNumber { color: #182230; font-size: 14px; line-height: 22px; font-weight: 600; }
-.guideConnector { position: absolute; right: calc(100% + 8px); top: 11px; width: 128px; height: 1px; overflow: visible; pointer-events: none; }
-.guideConnector path { fill: none; stroke: #bac2cb; stroke-width: 1; }
-.guideConnector circle { fill: #8c98a6; }
-.webAppInstall { margin-top: 18px; border-top: 1px solid #e9edf2; }
+.webAppGuide { padding: 36px clamp(20px, 4vw, 60px) 0; background: #f8f9fb; scroll-margin-top: 16px; }
+.webAppGuideContent { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 64px); align-items: center; }
+.webAppGuideText { min-width: 0; padding-block: 24px; }
+.webAppGuide h2 { max-width: 20ch; margin: 0 0 26px; color: #08101c; font-size: clamp(36px, 4.3vw, 62px); font-weight: 800; line-height: 1.1; letter-spacing: -1.6px; }
+.webAppGuideText > p { margin: 0; color: #182230; font-size: clamp(16px, 1.5vw, 21px); line-height: 1.6; }
+.guideBenefits { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 0; list-style: none; padding: 0; margin: 38px 0 32px; }
+.guideBenefits li { min-width: 0; display: flex; align-items: center; gap: 8px; padding-inline: 12px; border-left: 1px solid #d4d9e0; }
+.guideBenefits li:first-child { padding-left: 0; border-left: 0; }
+.guideBenefits li:last-child { padding-right: 0; }
+.guideBenefits strong { color: #08101c; font-size: clamp(14px, 1.35vw, 20px); line-height: 1.15; }
+.guideLearnMore { display: inline-flex; align-items: center; gap: 16px; min-height: 44px; color: #ed2f32; font-size: 20px; font-weight: 700; text-decoration: underline; text-underline-offset: 6px; }
+.guideLearnMore span { text-decoration: none; }
+.webAppGuidePreview { min-width: 0; margin: 0; padding: 4px; }
+.phoneFrame { position: relative; width: 100%; max-width: 420px; margin-inline: auto; padding: 50px 9px 18px; border: 5px solid #17191c; border-radius: 58px; background: #fff; box-shadow: 0 0 0 2px #87898b, 0 0 0 4px #292b2e, 0 12px 18px #18223018; }
+.phoneFrame::before { content: ""; position: absolute; top: 128px; left: -10px; width: 3px; height: 58px; border-radius: 2px; background: #53565a; }
+.phoneFrame::after { content: ""; position: absolute; top: 166px; right: -10px; width: 3px; height: 72px; border-radius: 2px; background: #53565a; }
+.phoneFrame img { display: block; width: 100%; height: auto; border-radius: 0 0 34px 34px; }
+.phoneSpeaker { position: absolute; top: 14px; left: 50%; width: 108px; height: 27px; border-radius: 20px; background: #070809; transform: translateX(-50%); }
+.phoneHomeIndicator { position: absolute; bottom: 8px; left: 50%; width: 92px; height: 4px; border-radius: 4px; background: #17191c; transform: translateX(-50%); }
+.webAppInstall { margin-top: 32px; border-top: 1px solid #e9edf2; scroll-margin-top: 20px; }
 .webAppInstall summary { padding-block: 12px; color: #343a43; font-size: 13px; line-height: 1.5; font-weight: 600; cursor: pointer; }
-.webAppInstall details p { margin-top: 12px; font-size: 13px; }
+.webAppInstall details p { margin: 12px 0; color: #5c6673; font-size: 13px; line-height: 1.55; }
 .site .footer { padding: 20px var(--page-padding); margin-bottom: 0; }
 .site .footer p { max-width: 580px; }
+@media (min-width: 651px) and (max-width: 1100px) {
+  .guideBenefits { grid-template-columns: minmax(0, 1fr); gap: 14px; margin-block: 24px; }
+  .guideBenefits li { padding: 0; border: 0; }
+  .guideBenefits strong { font-size: 16px; }
+}
 @media (max-width: 650px) {
   .site { --section-gap: 20px; }
   .header .nav { display: flex; gap: 0; flex-shrink: 0; }
   .header .nav a[href="#search"], .header .countryLabel { display: none; }
   .header .nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; }
-  .webAppGuide { padding-block: 20px; }
-  .benefitsSection { grid-template-columns: minmax(0, 1fr); gap: 26px; padding-block: 24px; }
-  .webAppGuideHeading { margin-bottom: 20px; }
-  .webAppGuide h2 { font-size: 20px; }
-  .webAppGuideContent { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .webAppGuideText { padding-top: 0; }
-  .guideConnector { display: none; }
-  .phoneFrame { width: 190px; }
-  .guideSteps { grid-template-rows: none; gap: 18px; }
-  .webAppInstall { margin-top: 16px; }
+  .webAppGuide { padding: 28px var(--page-padding) 0; }
+  .webAppGuide h2 { margin-bottom: 20px; font-size: 34px; letter-spacing: -1px; }
+  .webAppGuideContent { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .webAppGuideText { padding: 0; }
+  .guideBenefits { margin: 24px 0 18px; }
+  .guideBenefits li { flex-direction: column; align-items: center; gap: 10px; padding-inline: 6px; text-align: center; }
+  .guideBenefits strong { font-size: 14px; }
+  .guideLearnMore { font-size: 17px; }
+  .phoneFrame { max-width: 340px; border-radius: 48px; }
+  .webAppInstall { margin-top: 24px; }
 }
 @media (max-width: 899px) {
   .heroIntro { grid-template-columns: minmax(0, 1fr) minmax(0, 240px); gap: 16px; }

@@ -2,25 +2,26 @@ import Image from "next/image";
 
 export default function WebAppGuide() {
   return <section className="webAppGuide" id="about" aria-labelledby="webapp-guide-title">
-    <div className="webAppGuideHeading">
-      <h2 id="webapp-guide-title">So funktioniert Baumarktfinder</h2>
-    </div>
     <div className="webAppGuideContent">
+      <div className="webAppGuideText">
+        <h2 id="webapp-guide-title">Wie Baumarktfinder funktioniert</h2>
+        <p>Mit der Baumarktfinder App gibst du einfach deine Adresse und das gewünschte Material ein, vergleichst die Preise von Baumärkten in deiner Nähe und siehst sofort den nächstgelegenen passenden Markt – inklusive Preis, Entfernung und Route. Die Route basiert auf dem tatsächlichen Standort des Marktes und hilft dir, schnell die nächstgelegene und sinnvollste Option zu finden.</p>
+        <ul className="guideBenefits" aria-label="Deine Vorteile">
+          <li><span className="benefitIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg></span><strong>Spare Zeit</strong></li>
+          <li><span className="benefitIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="M19 6c-1.3-1.3-2.7-2-5-2-4 0-7 3.6-7 8s3 8 7 8c2.3 0 3.7-.7 5-2M4 10h12M4 14h10" /></svg></span><strong>Spare Geld</strong></li>
+          <li><span className="benefitIcon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5" /></svg></span><strong>Material übersichtlich vergleichen</strong></li>
+        </ul>
+        <a className="guideLearnMore" href="#webapp-help">Mehr erfahren <span aria-hidden="true">→</span></a>
+      </div>
       <figure className="webAppGuidePreview">
         <div className="phoneFrame">
           <div className="phoneSpeaker" aria-hidden="true" />
-          <Image src="/baumarktfinder-mobile-results.png" alt="Beispielsuche in Frankfurt: Adresse und Acryl weiß 310 ml ausgewählt, darunter Baumarktangebote mit Preisen und Routenbuttons" width={375} height={672} sizes="(max-width: 650px) 190px, 230px" />
+          <Image src="/baumarktfinder-mobile-results-hd.png" alt="Beispielsuche in Frankfurt: Adresse und Acryl weiß 310 ml ausgewählt, darunter Baumarktangebote von HORNBACH für 4,89 € und BAUHAUS für 3,95 € mit Routenbuttons" width={1125} height={2070} unoptimized />
           <div className="phoneHomeIndicator" aria-hidden="true" />
         </div>
-        <figcaption>Beispielansicht · Frankfurt am Main</figcaption>
       </figure>
-      <div className="webAppGuideText">
-        <ol className="guideSteps" role="list">
-          <li><svg className="guideConnector" viewBox="0 0 128 1" aria-hidden="true"><path d="M3 0 H128" /><circle cx="3" cy="0" r="2" /></svg><span className="guideStepNumber" aria-hidden="true">1</span><div><h3>Adresse eingeben</h3><p>Gib deine Adresse ein oder verwende deinen aktuellen Standort.</p></div></li>
-          <li><svg className="guideConnector" viewBox="0 0 128 1" aria-hidden="true"><path d="M3 -57 H40 L96 0 H128" /><circle cx="3" cy="-57" r="2" /></svg><span className="guideStepNumber" aria-hidden="true">2</span><div><h3>Material suchen</h3><p>Suche dein Material und vergleiche die Angebote verschiedener Baumärkte.</p></div></li>
-          <li><svg className="guideConnector" viewBox="0 0 128 1" aria-hidden="true"><path d="M3 76 H40 L96 0 H128" /><circle cx="3" cy="76" r="2" /></svg><span className="guideStepNumber" aria-hidden="true">3</span><div><h3>Nächsten Baumarkt finden</h3><p>Finde den nächstgelegenen Baumarkt, vergleiche Preise und starte direkt die Route. Die Fahrzeit berücksichtigt die tatsächliche Straßenroute. Wenn verfügbar, fließen auch aktuelle Verkehrsdaten und Staus ein.</p></div></li>
-        </ol>
-        <div className="webAppInstall">
+    </div>
+        <div className="webAppInstall" id="webapp-help">
           <details>
             <summary>Baumarktfinder zum Startbildschirm hinzufügen</summary>
             <p><strong>iPhone:</strong> Öffne Baumarktfinder in Safari. Wähle unter „Teilen“ die Option „Zu Home-Bildschirm hinzufügen“ und bestätige mit „Hinzufügen“.</p>
@@ -28,7 +29,5 @@ export default function WebAppGuide() {
             <p>Es ist keine App aus dem App Store oder Google Play erforderlich.</p>
           </details>
         </div>
-      </div>
-    </div>
   </section>;
 }
