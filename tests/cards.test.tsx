@@ -147,7 +147,7 @@ test("comparison attaches chain prices to every physical branch and keeps an alt
   assert.equal((html.match(/data-match="alternative"/g) ?? []).length, 2);
   assert.equal((html.match(/class="packagePrice">11,49/g) ?? []).length, 2);
   assert.equal((html.match(/class="actualSpecification">5 kg/g) ?? []).length, 2);
-  assert.equal((html.match(/Schätzpreis/g) ?? []).length, 1);
+  assert.equal(new JSDOM(html).window.document.querySelectorAll('.comparisonGrid [data-price-kind="estimate"]').length, 1);
   assert.doesNotMatch(html, /Preis aktuell nicht verfügbar/);
   assert.equal((html.match(/href="https:\/\/www.obi.de\/p\/6728141\/knauf-uniflott-spachtelmasse-5-kg"/g) ?? []).length, 2);
   assert.match(html, /destination_place_id=test-place-1/);
@@ -158,4 +158,16 @@ test("comparison attaches chain prices to every physical branch and keeps an alt
   assert.match(cards[2].querySelector(".actualSpecification")?.textContent ?? "", /25 kg/);
   assert.match(cards[2].querySelector(".offerButton")?.getAttribute("href") ?? "", /^https:\/\/www\.bauhaus\.info\/search\?q=/);
   assert.doesNotMatch(html, /führt keine|nicht im Sortiment/);
+  const overview = new JSDOM(html).window.document;
+  const rows = overview.querySelectorAll('.compactPriceRow');
+  assert.equal(rows.length, 2, 'overview uses one nearest branch per retailer, while all three cards remain');
+  for (const row of rows) {
+    const target = overview.getElementById(row.querySelector('button')!.getAttribute('aria-controls')!);
+    assert.ok(target, 'overview points to its existing detailed card');
+    assert.equal(row.getAttribute('data-price-kind'), target.getAttribute('data-price-kind'));
+    assert.equal(row.querySelector('.compactPriceValue strong')?.textContent, target.querySelector('.packagePrice')?.textContent);
+    assert.equal(row.querySelector('.compactPriceSize')?.textContent, target.querySelector('.actualSpecification')?.textContent);
+  }
+  assert.match(rows[0].textContent ?? '', /Alternative Größe/);
+  assert.match(rows[1].textContent ?? '', /Schätzpreis/);
 });

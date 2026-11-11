@@ -180,7 +180,6 @@ export default function Finder() {
       <div className="searchStatus" role="status" aria-live="polite">{loading && <span className="spinner" aria-hidden="true" />}{status}</div>
       {failedSearch && <div className="searchFallback"><b>Du kannst direkt beim Kartendienst oder Händler weitersuchen:</b><div className="fallbackLinks"><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Baumarkt bei ${failedSearch.address}`)}`} target="_blank" rel="noopener noreferrer">Baumärkte auf der Karte suchen ↗</a>{Object.entries(CHAINS).map(([id, info]) => <a key={id} href={getStoreUrl(id, failedSearch.product)} target="_blank" rel="noopener noreferrer">{info.name} ↗</a>)}</div><p>Externe Suche; diese Links bestätigen keine Entfernung und keinen Filialbestand.</p></div>}
     </section>
-    <BenefitsSection />
     {loading && <SearchLoading />}
     {!loading && result && <section className="resultsSection" id="results" aria-label="Suchergebnisse" aria-busy={loading}>
       <div className="sectionHeading"><div><span className="eyebrow">RUND UM DEINE ADRESSE</span><h2>Deine nächsten Baumärkte</h2><p className="originLabel">Ausgangspunkt: {result.origin.address}</p></div><span className="resultCount">{stores.length} Märkte · {chains.length} Händler</span></div>
@@ -218,6 +217,7 @@ export default function Finder() {
       </div>}
       <p className="googleAttribution">{result.origin.provider === "osm" ? <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">Standorte: © OpenStreetMap-Mitwirkende</a> : "Standorte und Routen: Google Maps"}</p>
     </section>}
+    <BenefitsSection />
     <WebAppGuide />
     <footer className="footer"><span>BAUMARKTFINDER · Deutschland</span><p>Für die Suche wird deine Adresse bzw. dein Standort an Google oder OpenStreetMap (Nominatim/Overpass) übermittelt. Routenlinks öffnen Google Maps.</p></footer>
   </main>;

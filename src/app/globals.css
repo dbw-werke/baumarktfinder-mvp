@@ -7,6 +7,9 @@
 }
 
 html {
+  --font-body: Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   width: 100%;
   max-width: 100%;
   overflow-x: clip;
@@ -19,13 +22,15 @@ body {
   margin: 0;
   overflow-x: clip;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
   background: #ffffff;
   color: #141821;
 }
 
 button,
-input {
+input,
+select,
+textarea {
   font: inherit;
 }
 
@@ -286,7 +291,7 @@ img {
 
   text-align: left;
 
-  font-family: Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 16px;
   font-weight: 400;
 
@@ -689,7 +694,7 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .priceDetails { margin-top: 2px; font-size: 11px; line-height: 1.4; color: #596370; }
 .priceDetails summary { padding: 6px 0; cursor: pointer; text-decoration: underline; text-decoration-color: #c7cdd4; text-underline-offset: 3px; }
 .priceDetails p { margin: 6px 0; }
-.mobilePriceDetail, .comparisonInfo { display: none; }
+.mobilePriceDetail, .comparisonInfo, .mobilePriceOverview { display: none; }
 .priceDetails a { color: #303945; }
 .pricePlaceholder small { display: block; margin: 4px 0; color: #596370; font-size: 10px; line-height: 14px; }
 .pricePlaceholder .missingPrice { display: block; margin: 8px 0; font-size: 18px; line-height: 1.3; }
@@ -784,26 +789,50 @@ button:disabled { cursor: wait; opacity: 0.6; }
 @media (max-width: 899px) { .comparisonGrid { --visible-cards: 3; } }
 @media (max-width: 749px) { .comparisonGrid { --visible-cards: 2; } }
 @media (max-width: 650px) {
+  .mobilePriceOverview { display: block; margin: 8px 0 12px; }
+  .compactPriceHeading { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+  .compactPriceHeading h3 { margin: 0; font-size: 16px; line-height: 1.3; font-weight: 700; }
+  .compactPriceHeading > span { font-size: 12px; color: #596370; }
+  .compactPriceList { padding: 0; margin: 0; list-style: none; border-top: 1px solid #e9edf2; }
+  .compactPriceRow { display: grid; grid-template-columns: minmax(0, 1fr) auto 44px; gap: 3px 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid #e9edf2; }
+  .compactPriceMerchant, .compactPriceValue { display: flex; flex-direction: column; min-width: 0; gap: 3px; }
+  .compactPriceMerchant strong { font-size: 14px; line-height: 1.25; font-weight: 700; overflow-wrap: anywhere; }
+  .compactPriceDistance { font-size: 12px; line-height: 1.4; color: #596370; }
+  .compactPriceValue { align-items: flex-end; }
+  .compactPriceValue strong { font-size: clamp(22px, 5.7vw, 24px); line-height: 1.2; font-weight: 800; letter-spacing: -.4px; font-variant-numeric: tabular-nums; }
+  .compactPriceType { font-size: 12px; line-height: 1.3; color: #596370; }
+  .compactPriceOpen { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; color: #ed2f32; border: 1px solid #e0e3e7; border-radius: 6px; background: #fff; cursor: pointer; }
+  .compactPriceOpen:focus-visible { outline: 2px solid #ed2f32; outline-offset: 2px; }
+  .compactPriceSpecification { grid-column: 1 / -1; margin: 0; font-size: 12px; line-height: 1.4; color: #596370; }
+  .compactPriceSize { color: #303945; font-weight: 600; }
+  .compactPriceAlternative { font-weight: 600; }
+  .compactPriceNote, .compactPriceEstimateNote { margin: 7px 0 0; font-size: 12px; line-height: 1.4; color: #596370; }
   .storeRow:has(> .comparisonGrid) { grid-template-columns: minmax(0, 1fr) 40px 40px; column-gap: 4px; }
   .storeRow:has(> .comparisonGrid) > .storeScroll { position: static; margin-top: 0; grid-row: 1; }
   .storeRow:has(> .comparisonGrid) > .storeScrollPrevious { grid-column: 2; }
   .storeRow:has(> .comparisonGrid) > .storeScrollNext { grid-column: 3; }
   .storeRow:has(> .comparisonGrid) > .storeScroll { width: 40px; height: 40px; box-shadow: none; }
   .comparisonGrid { --card-gap: 10px; grid-area: 2 / 1 / 3 / -1; grid-auto-columns: 78%; padding-top: 10px; }
-  .comparisonGrid .logoArea { width: min(100%, 180px); height: 48px; justify-self: center; }
-  .comparisonGrid h3 { min-height: 34px; line-height: 17px; }
+  .comparisonGrid .logoArea { width: min(100%, 170px); height: 44px; justify-self: center; }
+  .comparisonGrid h3 { min-height: 36px; font-size: 15px; line-height: 18px; font-weight: 700; }
   .comparisonGrid .offerCard:not([data-price-kind="unavailable"]) > .storeAddress { display: none; }
   .comparisonGrid .mobilePriceDetail { display: block; }
-  .comparisonGrid .productName, .comparisonGrid .actualSpecification { font-size: 12px; line-height: 16px; }
-  .comparisonGrid .matchBadge { font-size: 10px; }
-  .comparisonGrid .packagePrice { font-size: 28px; line-height: 34px; }
-  .comparisonGrid .packageLabel, .comparisonGrid .priceScope { min-height: 0; font-size: 11px; line-height: 15px; }
+  .comparisonGrid .productName { font-size: 14px; line-height: 18px; font-weight: 600; }
+  .comparisonGrid .actualSpecification { font-size: 12px; line-height: 16px; }
+  .comparisonGrid .matchStatus { min-height: 0; }
+  .comparisonGrid .matchBadge { padding-block: 2px; font-size: 11px; }
+  .comparisonGrid .packagePrice, .comparisonGrid [data-price-kind="estimate"] .packagePrice { font-size: 26px; line-height: 31px; letter-spacing: -.5px; }
+  .comparisonGrid [data-price-kind="verified"] .packageLabel, .comparisonGrid [data-price-kind="verified"] .priceScope { display: none; }
+  .comparisonGrid .packageLabel, .comparisonGrid .priceScope { min-height: 0; font-size: 12px; line-height: 16px; }
+  .comparisonGrid .unitPrice { font-size: 13px; line-height: 17px; margin: 2px 0 6px; }
   .comparisonGrid .priceDetails { font-size: 12px; line-height: 17px; }
   .comparisonGrid .priceDetails summary { min-height: 40px; padding: 11px 0; }
   .comparisonGrid .priceAge { display: none; }
   .comparisonGrid .cardActions { grid-template-columns: minmax(0, 1fr) 72px; grid-template-rows: auto; gap: 6px; align-self: end; }
-  .comparisonGrid .cardActions a { min-height: 44px; font-size: 12px; gap: 4px; }
+  .comparisonGrid .cardActions a { min-height: 44px; font-size: 14px; gap: 4px; font-weight: 600; }
   .comparisonGrid .cardActions .routeButton { min-height: 44px; }
+  .comparisonGrid .offerCard:focus-visible { outline: 2px solid #ed2f32; outline-offset: -2px; }
+  .comparisonGrid .pricePlaceholder small { font-size: 12px; line-height: 16px; }
 }
 
 
@@ -884,13 +913,13 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .header .nav a[href="#search"], .header .countryLabel { display: none; }
   .header .nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; }
   .webAppGuide { padding: 20px 14px 0; }
-  .webAppGuide h2 { font-size: 25px; letter-spacing: -.6px; }
+  .webAppGuide h2 { font-size: 24px; line-height: 1.25; letter-spacing: -.6px; }
   .webAppGuideContent { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .guideBenefits { gap: 10px; }
   .benefitsSection { padding: 8px 0 16px; }
   .benefitIcon { width: 50px; height: 50px; }
   .benefitIcon svg { width: 23px; height: 23px; }
-  .guideBenefits strong { font-size: 13px; }
+  .guideBenefits strong { font-size: 13px; line-height: 1.3; font-weight: 600; }
   .guideSteps { gap: 16px; }
   .guideSteps li { min-height: 0; }
   .webAppGuide .phoneFrame { max-width: 260px; }
@@ -905,18 +934,21 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .site { --page-width: calc(100% - 32px); --page-padding: 0px; }
   .header { min-height: 60px; gap: 8px; }
   .hero { padding-top: 14px; padding-bottom: 12px; }
-  .heroIntro { grid-template-columns: minmax(0, 1fr); gap: 8px; }
-  .heroCopy > .eyebrow { font-size: 10px; }
-  .heroCopy h1 { max-width: none; font-size: clamp(28px, 7vw, 30px); letter-spacing: -.8px; }
-  .heroCopy p { margin-top: 8px; font-size: 14px; line-height: 1.45; }
-  .heroVisual { width: 136px; justify-self: center; }
+  .heroIntro { grid-template-columns: minmax(0, 1fr) 104px; gap: 8px 10px; }
+  .heroCopy { display: contents; }
+  .heroCopy > .eyebrow { grid-column: 1 / -1; margin-bottom: 0; font-size: 10px; }
+  .heroCopy h1 { grid-column: 1 / -1; max-width: none; font-size: clamp(28px, 7vw, 30px); line-height: 1.18; letter-spacing: -.8px; }
+  .heroCopy p { grid-column: 1; margin: 0; font-size: 14px; line-height: 1.45; }
+  .heroVisual { grid-column: 2; grid-row: 3; width: 104px; justify-self: end; align-self: center; }
   .searchPanel { grid-template-columns: minmax(0, 1fr); margin-top: 8px; padding: 10px; gap: 6px; }
   .searchButton { margin-top: 0; }
+  .searchPanel .fieldBlock label { font-size: 12px; line-height: 16px; font-weight: 600; margin-bottom: 4px; }
   .searchPanel .currentLocationButton { min-height: 32px; }
   .popular { flex-wrap: wrap; gap: 4px; }
   .popular button { min-height: 36px; padding: 6px 8px; }
   .resultsSection { width: var(--page-width); padding: 12px 10px; }
-  .sectionHeading h2 { font-size: 22px; }
+  .sectionHeading h2 { font-size: 22px; line-height: 1.25; font-weight: 700; }
+  .sectionHeading p, .distanceNote, .resultCount { font-size: 12px; line-height: 1.4; }
   .comparisonSelection { gap: 4px; margin-bottom: 0; }
   .comparisonSelection select { padding-block: 6px; }
   .comparisonExplanation { display: none; }

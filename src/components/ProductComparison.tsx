@@ -1,5 +1,6 @@
 import StoreCard from "./StoreCard";
 import StoreRow from "./StoreRow";
+import MobilePriceOverview, { type ComparisonEntry } from "./MobilePriceOverview";
 import { selectChainOffer, type CanonicalMaterial } from "../lib/productComparison";
 import { estimateComparisonPrice } from "../lib/estimatedPrices";
 import type { ResolvedAddress, RoutedStore } from "../lib/stores";
@@ -11,11 +12,15 @@ export default function ProductComparison({ stores, origin, offers, material, ca
   stores: RoutedStore[]; origin: ResolvedAddress; offers: StorePrice[]; material: CanonicalMaterial | null;
   catalog: CanonicalMaterial[]; searchTerm: string; observedAt: number; obiOffer?: ObiOffer | null;
 }) {
-  return <StoreRow className="comparisonGrid" label="Produktpreise der nächstgelegenen Märkte">{stores.map((store, index) => {
+  const entries: ComparisonEntry[] = stores.map((store) => {
     const dynamicObi = store.id === "obi" ? obiOffer : null;
     const selection = material && !dynamicObi ? selectChainOffer(material, offers, catalog, store.id) : undefined;
     const estimate = material && !dynamicObi && !selection?.price ? estimateComparisonPrice(material, offers, catalog, store.id) : null;
-    return <StoreCard key={store.placeId} store={store} origin={origin} price={dynamicObi ?? selection?.price} estimate={estimate} comparison={selection}
-      searchTerm={material?.name ?? searchTerm} highlighted={index === 0} observedAt={observedAt} comparisonLayout />;
-  })}</StoreRow>;
+    return { store, cardId: `comparison-card-${encodeURIComponent(store.placeId)}`, price: dynamicObi ?? selection?.price, estimate, comparison: selection };
+  });
+  return <>
+    <MobilePriceOverview entries={entries} material={material} />
+    <StoreRow className="comparisonGrid" label="Produktpreise der nächstgelegenen Märkte">{entries.map(({ store, cardId, price, estimate, comparison }, index) => <StoreCard key={store.placeId} cardId={cardId} store={store} origin={origin} price={price} estimate={estimate} comparison={comparison}
+      searchTerm={material?.name ?? searchTerm} highlighted={index === 0} observedAt={observedAt} comparisonLayout />)}</StoreRow>
+  </>;
 }

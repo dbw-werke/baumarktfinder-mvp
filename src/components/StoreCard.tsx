@@ -15,8 +15,8 @@ const sourceUnitPrice = new Intl.NumberFormat("de-DE", { style: "currency", curr
 const date = new Intl.DateTimeFormat("de-DE", { dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Berlin" });
 const unitLabels = { m2: "m²", piece: "Stück", m: "m", kg: "kg", l: "l" };
 
-export default function StoreCard({ store, price, estimate, origin, searchTerm, highlighted, observedAt, comparison, comparisonLayout = false }: {
-  store: RoutedStore; price?: StorePrice | ObiOffer; estimate?: EstimatedComparisonPrice | null; origin: ResolvedAddress; searchTerm: string; highlighted: boolean; observedAt: number; comparison?: ChainOfferSelection; comparisonLayout?: boolean;
+export default function StoreCard({ store, price, estimate, origin, searchTerm, highlighted, observedAt, comparison, comparisonLayout = false, cardId }: {
+  store: RoutedStore; price?: StorePrice | ObiOffer; estimate?: EstimatedComparisonPrice | null; origin: ResolvedAddress; searchTerm: string; highlighted: boolean; observedAt: number; comparison?: ChainOfferSelection; comparisonLayout?: boolean; cardId?: string;
 }) {
   const estimated = !price && estimate?.store_id === store.id ? estimate : null;
   const ageHours = price ? (observedAt - new Date(price.checked_at).getTime()) / 3_600_000 : 0;
@@ -26,7 +26,7 @@ export default function StoreCard({ store, price, estimate, origin, searchTerm, 
   // Preserve its price/source URL but let the customer find the same SKU directly.
   const retailerSearch = store.id === "bauhaus" && /\/p\/27790416\/?$/.test(price?.product_url ?? "");
   const offerUrl = retailerSearch ? getStoreUrl(store.id, "27790416") : price?.product_url || getStoreUrl(store.id, getMaterialSearchTerms(searchTerm)[0] || searchTerm);
-  return <article className={`offerCard productOfferCard ${highlighted ? "nearestCard" : ""}`} data-store-id={store.placeId} data-match={comparison?.match} data-price-kind={price ? "verified" : estimated ? "estimate" : "unavailable"}>
+  return <article id={cardId} tabIndex={cardId ? -1 : undefined} className={`offerCard productOfferCard ${highlighted ? "nearestCard" : ""}`} data-store-id={store.placeId} data-match={comparison?.match} data-price-kind={price ? "verified" : estimated ? "estimate" : "unavailable"}>
     {highlighted && <span className="nearestBadge">{badge}</span>}
     <div className="logoArea" data-chain={store.id}><Image src={CHAINS[store.id].logo} alt={CHAINS[store.id].name} width={160} height={65} unoptimized /></div>
     <h3 title={store.name}>{store.name}</h3><p className="storeAddress" title={store.address}>{store.address}</p>
@@ -41,6 +41,7 @@ export default function StoreCard({ store, price, estimate, origin, searchTerm, 
         <p className="priceScope">Onlinepreis der Kette · ggf. zzgl. Versand</p>
         <details className="priceDetails"><summary>Preisdetails{ageHours > 168 && <span className="priceAge"> · älter als 7 Tage</span>}</summary>
           <p className="mobilePriceDetail">{store.address}</p>
+          <p className="mobilePriceDetail">Produkt- / Packungspreis · inkl. MwSt.<br />Onlinepreis der Kette · ggf. zzgl. Versand</p>
           <span className="priceSource">{freshness}</span>
           <small>Geprüft: {date.format(new Date(price.checked_at))} Uhr</small>
           <p>Filialpreis und Bestand können abweichen.</p>
