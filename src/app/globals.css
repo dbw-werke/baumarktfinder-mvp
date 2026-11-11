@@ -829,53 +829,55 @@ button:disabled { cursor: wait; opacity: 0.6; }
 /* Shared page rhythm; comparison card sizes and data remain unchanged. */
 .brandIcon:has(img) { background: transparent; }
 .brandIcon img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.benefitIcon { width: 56px; height: 56px; flex-shrink: 0; display: grid; place-items: center; border-radius: 50%; background: #f6f7f8; color: #ed2f32; }
-.benefitIcon svg { width: 26px; height: 26px; }
+.benefitIcon { width: 72px; height: 72px; display: grid; place-items: center; border: 1px solid #e0e5eb; border-radius: 50%; background: #eef1f5; color: #ed2f32; }
+.benefitIcon svg { width: 30px; height: 30px; }
 .webAppGuide, .site .footer { width: var(--page-width); max-width: 1440px; margin: 0 auto var(--section-gap); }
-.webAppGuide { padding: 36px clamp(20px, 4vw, 60px) 0; background: #f8f9fb; scroll-margin-top: 16px; }
-.webAppGuideContent { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 64px); align-items: center; }
-.webAppGuideText { min-width: 0; padding-block: 24px; }
-.webAppGuide h2 { max-width: 20ch; margin: 0 0 26px; color: #08101c; font-size: clamp(36px, 4.3vw, 62px); font-weight: 800; line-height: 1.1; letter-spacing: -1.6px; }
-.webAppGuideText > p { margin: 0; color: #182230; font-size: clamp(16px, 1.5vw, 21px); line-height: 1.6; }
-.guideBenefits { display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 0; list-style: none; padding: 0; margin: 38px 0 32px; }
-.guideBenefits li { min-width: 0; display: flex; align-items: center; gap: 8px; padding-inline: 12px; border-left: 1px solid #d4d9e0; }
-.guideBenefits li:first-child { padding-left: 0; border-left: 0; }
-.guideBenefits li:last-child { padding-right: 0; }
-.guideBenefits strong { color: #08101c; font-size: clamp(14px, 1.35vw, 20px); line-height: 1.15; }
-.guideLearnMore { display: inline-flex; align-items: center; gap: 16px; min-height: 44px; color: #ed2f32; font-size: 20px; font-weight: 700; text-decoration: underline; text-underline-offset: 6px; }
-.guideLearnMore span { text-decoration: none; }
+.webAppGuide { padding: 24px clamp(20px, 3vw, 40px) 0; background: #f8f9fb; scroll-margin-top: 16px; }
+.webAppGuideContent { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 288px; gap: 96px; align-items: start; max-width: 1080px; margin-inline: auto; }
+.webAppGuideText { min-width: 0; }
+.webAppGuide h2 { margin: 0 0 20px; color: #08101c; font-size: 32px; font-weight: 700; line-height: 1.2; letter-spacing: -.8px; }
+.guideBenefits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; list-style: none; padding: 0; margin: 0; }
+.guideBenefits li { min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.guideBenefits strong { max-width: 180px; color: #08101c; font-size: 16px; line-height: 1.2; font-weight: 600; }
+.guideSteps { display: grid; gap: 18px; list-style: none; padding: 0; margin: 24px 0 0; }
+.guideSteps li { position: relative; display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; min-height: 76px; padding-right: 140px; }
+.guideStepNumber { display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid #ffd1d3; border-radius: 6px; color: #ed2f32; background: #fff; font-size: 13px; font-weight: 600; }
+.guideSteps h3 { margin: 0 0 6px; color: #182230; font-size: 16px; line-height: 1.35; }
+.guideSteps p { margin: 0; color: #5c6673; font-size: 14px; line-height: 1.55; }
+.guideConnector { position: absolute; z-index: 1; left: calc(100% - 120px); top: 12px; width: 244px; height: 1px; overflow: visible; pointer-events: none; }
+.guideConnector path { fill: none; stroke: #b0bac6; stroke-width: 1; }
+.guideConnector circle { fill: #8996a6; }
 .webAppGuidePreview { min-width: 0; margin: 0; padding: 4px; }
-.phoneFrame { position: relative; width: 100%; max-width: 420px; margin-inline: auto; padding: 50px 9px 18px; border: 5px solid #17191c; border-radius: 58px; background: #fff; box-shadow: 0 0 0 2px #87898b, 0 0 0 4px #292b2e, 0 12px 18px #18223018; }
-.phoneFrame::before { content: ""; position: absolute; top: 128px; left: -10px; width: 3px; height: 58px; border-radius: 2px; background: #53565a; }
-.phoneFrame::after { content: ""; position: absolute; top: 166px; right: -10px; width: 3px; height: 72px; border-radius: 2px; background: #53565a; }
-.phoneFrame img { display: block; width: 100%; height: auto; border-radius: 0 0 34px 34px; }
-.phoneSpeaker { position: absolute; top: 14px; left: 50%; width: 108px; height: 27px; border-radius: 20px; background: #070809; transform: translateX(-50%); }
-.phoneHomeIndicator { position: absolute; bottom: 8px; left: 50%; width: 92px; height: 4px; border-radius: 4px; background: #17191c; transform: translateX(-50%); }
-.webAppInstall { margin-top: 32px; border-top: 1px solid #e9edf2; scroll-margin-top: 20px; }
+.phoneFrame { position: relative; width: 100%; max-width: 280px; margin-inline: auto; padding: 36px 7px 14px; border: 4px solid #17191c; border-radius: 42px; background: #fff; box-shadow: 0 0 0 2px #87898b, 0 0 0 4px #292b2e, 0 8px 14px #18223018; }
+.phoneFrame::before { content: ""; position: absolute; top: 86px; left: -8px; width: 2px; height: 40px; border-radius: 2px; background: #53565a; }
+.phoneFrame::after { content: ""; position: absolute; top: 112px; right: -8px; width: 2px; height: 48px; border-radius: 2px; background: #53565a; }
+.phoneFrame img { display: block; width: 100%; height: auto; border-radius: 0 0 24px 24px; }
+.phoneSpeaker { position: absolute; top: 10px; left: 50%; width: 76px; height: 20px; border-radius: 16px; background: #070809; transform: translateX(-50%); }
+.phoneHomeIndicator { position: absolute; bottom: 6px; left: 50%; width: 68px; height: 3px; border-radius: 4px; background: #17191c; transform: translateX(-50%); }
+.webAppInstall { max-width: 1080px; margin: 16px auto 0; border-top: 1px solid #e9edf2; scroll-margin-top: 20px; }
 .webAppInstall summary { padding-block: 12px; color: #343a43; font-size: 13px; line-height: 1.5; font-weight: 600; cursor: pointer; }
 .webAppInstall details p { margin: 12px 0; color: #5c6673; font-size: 13px; line-height: 1.55; }
 .site .footer { padding: 20px var(--page-padding); margin-bottom: 0; }
 .site .footer p { max-width: 580px; }
-@media (min-width: 651px) and (max-width: 1100px) {
-  .guideBenefits { grid-template-columns: minmax(0, 1fr); gap: 14px; margin-block: 24px; }
-  .guideBenefits li { padding: 0; border: 0; }
-  .guideBenefits strong { font-size: 16px; }
+@media (max-width: 1100px) {
+  .webAppGuideContent { grid-template-columns: minmax(0, 1fr) 260px; gap: 28px; }
+  .guideSteps li { padding-right: 0; }
+  .guideConnector { display: none; }
 }
 @media (max-width: 650px) {
   .site { --section-gap: 20px; }
   .header .nav { display: flex; gap: 0; flex-shrink: 0; }
   .header .nav a[href="#search"], .header .countryLabel { display: none; }
   .header .nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 12px; }
-  .webAppGuide { padding: 28px var(--page-padding) 0; }
-  .webAppGuide h2 { margin-bottom: 20px; font-size: 34px; letter-spacing: -1px; }
-  .webAppGuideContent { grid-template-columns: minmax(0, 1fr); gap: 28px; }
-  .webAppGuideText { padding: 0; }
-  .guideBenefits { margin: 24px 0 18px; }
-  .guideBenefits li { flex-direction: column; align-items: center; gap: 10px; padding-inline: 6px; text-align: center; }
-  .guideBenefits strong { font-size: 14px; }
-  .guideLearnMore { font-size: 17px; }
-  .phoneFrame { max-width: 340px; border-radius: 48px; }
-  .webAppInstall { margin-top: 24px; }
+  .webAppGuide { padding: 24px var(--page-padding) 0; }
+  .webAppGuide h2 { font-size: 27px; letter-spacing: -.6px; }
+  .webAppGuideContent { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .guideBenefits { gap: 10px; }
+  .benefitIcon { width: 64px; height: 64px; }
+  .guideBenefits strong { font-size: 13px; }
+  .guideSteps { gap: 16px; }
+  .guideSteps li { min-height: 0; }
+  .webAppInstall { margin-top: 20px; }
 }
 @media (max-width: 899px) {
   .heroIntro { grid-template-columns: minmax(0, 1fr) minmax(0, 240px); gap: 16px; }
