@@ -160,7 +160,7 @@ export default function Finder() {
     <section className="hero" id="search" aria-label="Baumärkte und Material suchen">
       <div className="heroIntro">
         <div className="heroCopy"><div className="eyebrow">DEINE ADRESSE. DEINE BAUMÄRKTE.</div><h1>Baumarktpreise in deiner Nähe vergleichen</h1><p>Material suchen und Baumarktpreise vergleichen – mit Entfernung, Fahrzeit und Route.</p></div>
-        <div className="heroVisual"><Image src="/trockenbau-materialien.png" alt="Baumaterialien für dein Projekt" width={1536} height={1024} sizes="(max-width: 650px) 174px, (max-width: 899px) 240px, 300px" preload /></div>
+        <div className="heroVisual"><Image src="/baumaterialien-hero.png" alt="Baumaterialien für dein Projekt" width={1774} height={887} sizes="(max-width: 650px) 104px, (max-width: 899px) 240px, 300px" preload /></div>
       </div>
       <form onSubmit={handleSearch} className="searchPanel" aria-busy={loading}>
         <div className="locationField">
