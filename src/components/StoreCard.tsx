@@ -39,7 +39,8 @@ export default function StoreCard({ store, price, estimate, origin, searchTerm, 
         <strong className="packagePrice">{money.format(price.price)}</strong><span className="packageLabel">Produkt- / Packungspreis · inkl. MwSt.</span>
         {price.unit_price != null && price.unit && <p className="unitPrice">{money.format(price.unit_price)} / {unitLabels[price.unit]}</p>}
         <p className="priceScope">Onlinepreis der Kette · ggf. zzgl. Versand</p>
-        <details className="priceDetails"><summary>Preisdetails{ageHours > 168 ? " · älter als 7 Tage" : ""}</summary>
+        <details className="priceDetails"><summary>Preisdetails{ageHours > 168 && <span className="priceAge"> · älter als 7 Tage</span>}</summary>
+          <p className="mobilePriceDetail">{store.address}</p>
           <span className="priceSource">{freshness}</span>
           <small>Geprüft: {date.format(new Date(price.checked_at))} Uhr</small>
           <p>Filialpreis und Bestand können abweichen.</p>
@@ -53,6 +54,7 @@ export default function StoreCard({ store, price, estimate, origin, searchTerm, 
         <p className="unitPrice">ca. {money.format(estimated.unit_price)} / {unitLabels[estimated.unit]}</p>
         <p className="priceScope">Unverbindlicher Vergleichswert · kein Händlerangebot</p>
         <details className="priceDetails"><summary>Schätzgrundlage</summary>
+          <p className="mobilePriceDetail">{store.address}</p>
           <p>Median geprüfter Grundpreise {estimated.basis === "exact-material" ? "dieses Materials" : "vergleichbarer Materialien"}, umgerechnet auf {estimated.package_quantity.toLocaleString("de-DE")} {unitLabels[estimated.unit]}.</p>
           <p>Kein bestätigter Preis oder Bestand bei {CHAINS[store.id].name}.</p>
           {estimated.basis === "comparable-material" && <p>Die Vergleichsprodukte können in Marke, Größe oder Ausführung abweichen.</p>}

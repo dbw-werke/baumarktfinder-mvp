@@ -10,6 +10,7 @@ import StoreCard from "./StoreCard";
 import NearbyStoreCard from "./NearbyStoreCard";
 import ProductComparison from "./ProductComparison";
 import WebAppGuide from "./WebAppGuide";
+import BenefitsSection from "./BenefitsSection";
 import { getMaterialCatalog, getCachedMaterialSuggestions, getMaterialSuggestions, searchMaterialCatalog, warmMaterialSuggestions, type MaterialRow, type MaterialSuggestion } from "../services/materialSuggestions";
 import { fetchStoreCatalog } from "../services/catalog";
 import { fetchObiOffer } from "../services/obi";
@@ -149,6 +150,7 @@ export default function Finder() {
     return (closestBranch(stores, a.store_id)?.distanceMeters ?? Infinity) - (closestBranch(stores, b.store_id)?.distanceMeters ?? Infinity) || a.product_name.localeCompare(b.product_name, "de");
   });
   function browseChain(id: ChainId) { setChain(id); setOfferLimit(24); document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth", block: "start" }); }
+  const comparisonExplanation = comparisonMaterial ? "Je Händler zuerst die Wunschgröße, sonst die nächste geprüfte, passende Größe. Der große Preis gilt immer für die tatsächlich gezeigte Packung." : result?.obiOffer ? `OBI-Angebot für „${comparisonQuery}“. Die Karte zeigt die tatsächliche Ausführung. Für weitere Händler kannst du eine Vergleichsgröße wählen.` : `Für „${comparisonQuery}“ ist die Ausführung noch nicht eindeutig. Wähle das gewünschte Produkt, um geprüfte Preise zu vergleichen.`;
 
   return <main className="site">
     <header className="header">
@@ -178,6 +180,7 @@ export default function Finder() {
       <div className="searchStatus" role="status" aria-live="polite">{loading && <span className="spinner" aria-hidden="true" />}{status}</div>
       {failedSearch && <div className="searchFallback"><b>Du kannst direkt beim Kartendienst oder Händler weitersuchen:</b><div className="fallbackLinks"><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Baumarkt bei ${failedSearch.address}`)}`} target="_blank" rel="noopener noreferrer">Baumärkte auf der Karte suchen ↗</a>{Object.entries(CHAINS).map(([id, info]) => <a key={id} href={getStoreUrl(id, failedSearch.product)} target="_blank" rel="noopener noreferrer">{info.name} ↗</a>)}</div><p>Externe Suche; diese Links bestätigen keine Entfernung und keinen Filialbestand.</p></div>}
     </section>
+    <BenefitsSection />
     {loading && <SearchLoading />}
     {!loading && result && <section className="resultsSection" id="results" aria-label="Suchergebnisse" aria-busy={loading}>
       <div className="sectionHeading"><div><span className="eyebrow">RUND UM DEINE ADRESSE</span><h2>Deine nächsten Baumärkte</h2><p className="originLabel">Ausgangspunkt: {result.origin.address}</p></div><span className="resultCount">{stores.length} Märkte · {chains.length} Händler</span></div>
@@ -193,7 +196,8 @@ export default function Finder() {
             <option value="" disabled>Bitte genaue Ausführung wählen</option>
             {result.materials.map((item) => <option key={item.id} value={item.id}>{getMaterialOptionLabel(item)}</option>)}
           </select>
-          <p>{comparisonMaterial ? "Je Händler zuerst die Wunschgröße, sonst die nächste geprüfte, passende Größe. Der große Preis gilt immer für die tatsächlich gezeigte Packung." : result.obiOffer ? `OBI-Angebot für „${comparisonQuery}“. Die Karte zeigt die tatsächliche Ausführung. Für weitere Händler kannst du eine Vergleichsgröße wählen.` : `Für „${comparisonQuery}“ ist die Ausführung noch nicht eindeutig. Wähle das gewünschte Produkt, um geprüfte Preise zu vergleichen.`}</p>
+          <p className="comparisonExplanation">{comparisonExplanation}</p>
+          <details className="comparisonInfo"><summary>Info zum Preisvergleich</summary><p>{comparisonExplanation}</p></details>
         </div>
         <ProductComparison stores={stores} origin={result.origin} offers={result.offers} material={comparisonMaterial} catalog={result.materials} searchTerm={comparisonQuery} observedAt={result.observedAt}
           obiOffer={(comparisonMaterial?.id ?? null) === result.obiMaterialId ? result.obiOffer : null} />
