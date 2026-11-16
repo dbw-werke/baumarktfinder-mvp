@@ -134,7 +134,7 @@ test("a dynamic OBI offer keeps its actual size and price instead of an estimate
   assert.doesNotMatch(html, /Schätzpreis|Schätzgrundlage/);
 });
 
-test("comparison attaches chain prices to every physical branch and keeps an alternative's own package/link", () => {
+test("comparison renders every physical branch once with its original price, package and links, without an overview", () => {
   const catalog = getCanonicalComparisonCatalog();
   const requested = catalog.find((item) => item.product_family === "uniflott" && item.package_quantity === 25)!;
   const actual = catalog.find((item) => item.product_family === "uniflott" && item.package_quantity === 5)!;
@@ -143,31 +143,32 @@ test("comparison attaches chain prices to every physical branch and keeps an alt
     price: 11.49, unit_price: 2.3, unit: "kg", package_quantity: 5, product_url: "https://www.obi.de/p/6728141/knauf-uniflott-spachtelmasse-5-kg" };
   const branches = [routeFallback(store), routeFallback({ ...store, placeId: "test-place-2", name: "OBI Testfiliale 2" }), routeFallback({ ...store, id: "bauhaus", placeId: "test-place-3", name: "BAUHAUS Testfiliale" })];
   const html = renderToStaticMarkup(<ProductComparison stores={branches} origin={origin} offers={[observation]} material={requested} catalog={catalog} searchTerm={requested.name} observedAt={observedAt} />);
-  assert.equal((html.match(/<article /g) ?? []).length, 3);
-  assert.equal((html.match(/data-match="alternative"/g) ?? []).length, 2);
-  assert.equal((html.match(/class="packagePrice">11,49/g) ?? []).length, 2);
-  assert.equal((html.match(/class="actualSpecification">5 kg/g) ?? []).length, 2);
-  assert.equal(new JSDOM(html).window.document.querySelectorAll('.comparisonGrid [data-price-kind="estimate"]').length, 1);
+  const document = new JSDOM(html).window.document;
+  const cards = document.querySelectorAll(".comparisonGrid article");
+  assert.equal(document.querySelectorAll("article").length, branches.length);
+  assert.deepEqual(Array.from(cards, (card) => card.getAttribute("data-store-id")), branches.map((branch) => branch.placeId));
+  for (const [index, branch] of branches.entries()) {
+    const card = cards[index];
+    assert.equal(card.querySelector("h3")?.textContent, branch.name);
+    const route = new URL(card.querySelector(".routeButton")!.getAttribute("href")!);
+    assert.equal(route.searchParams.get("destination_place_id"), branch.placeId);
+    assert.equal(route.searchParams.get("origin"), "50.12,8.65");
+    if (branch.id === "obi") {
+      assert.equal(card.getAttribute("data-price-kind"), "verified");
+      assert.equal(card.getAttribute("data-match"), "alternative");
+      assert.equal(card.querySelector(".packagePrice")?.textContent, "11,49\u00a0€");
+      assert.equal(card.querySelector(".unitPrice")?.textContent, "2,30\u00a0€ / kg");
+      assert.equal(card.querySelector(".actualSpecification")?.textContent, "5 kg");
+      assert.equal(card.querySelector(".offerButton")?.getAttribute("href"), observation.product_url);
+    }
+  }
+  assert.equal(document.querySelectorAll('.comparisonGrid [data-price-kind="estimate"]').length, 1);
   assert.doesNotMatch(html, /Preis aktuell nicht verfügbar/);
-  assert.equal((html.match(/href="https:\/\/www.obi.de\/p\/6728141\/knauf-uniflott-spachtelmasse-5-kg"/g) ?? []).length, 2);
-  assert.match(html, /destination_place_id=test-place-1/);
-  assert.match(html, /destination_place_id=test-place-2/);
-  const cards = new JSDOM(html).window.document.querySelectorAll("article");
   assert.equal(cards[2].getAttribute("data-price-kind"), "estimate");
   assert.match(cards[2].querySelector(".packagePrice")?.textContent ?? "", /^ca\. \d/);
   assert.match(cards[2].querySelector(".actualSpecification")?.textContent ?? "", /25 kg/);
   assert.match(cards[2].querySelector(".offerButton")?.getAttribute("href") ?? "", /^https:\/\/www\.bauhaus\.info\/search\?q=/);
   assert.doesNotMatch(html, /führt keine|nicht im Sortiment/);
-  const overview = new JSDOM(html).window.document;
-  const rows = overview.querySelectorAll('.compactPriceRow');
-  assert.equal(rows.length, 2, 'overview uses one nearest branch per retailer, while all three cards remain');
-  for (const row of rows) {
-    const target = overview.getElementById(row.querySelector('button')!.getAttribute('aria-controls')!);
-    assert.ok(target, 'overview points to its existing detailed card');
-    assert.equal(row.getAttribute('data-price-kind'), target.getAttribute('data-price-kind'));
-    assert.equal(row.querySelector('.compactPriceValue strong')?.textContent, target.querySelector('.packagePrice')?.textContent);
-    assert.equal(row.querySelector('.compactPriceSize')?.textContent, target.querySelector('.actualSpecification')?.textContent);
-  }
-  assert.match(rows[0].textContent ?? '', /Alternative Größe/);
-  assert.match(rows[1].textContent ?? '', /Schätzpreis/);
+  assert.equal(document.querySelector(".mobilePriceOverview, .compactPriceRow"), null);
+  assert.doesNotMatch(document.body.textContent ?? "", /Preise im Überblick|Kompakter Preisvergleich/);
 });
