@@ -838,16 +838,15 @@ button:disabled { cursor: wait; opacity: 0.6; }
 
 /* Homepage follows the existing result container. Card rules above stay fixed. */
 .site { --page-width: calc(100% - 48px); --page-padding: 18px; --section-gap: 24px; }
+.firstView { display: contents; }
 .header, .hero { width: var(--page-width); max-width: 1440px; margin-inline: auto; }
 .header { min-height: 68px; padding: 0 var(--page-padding); display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 1px solid transparent; border-bottom-color: #ededed; }
 .hero { padding: 16px 0 20px; overflow: visible; }
-.heroIntro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); align-items: center; gap: 24px; padding-inline: var(--page-padding); border: 1px solid transparent; }
+.heroIntro { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: 24px; padding-inline: var(--page-padding); border: 1px solid transparent; }
 .heroCopy { min-width: 0; }
 .heroCopy > .eyebrow { margin-bottom: 8px; font-size: 11px; color: #182230; }
 .heroCopy h1 { max-width: 25ch; margin: 0; color: #171b23; font-size: clamp(30px, 3vw, 38px); line-height: 1.15; letter-spacing: -1px; text-wrap: balance; }
 .heroCopy p { max-width: 650px; margin: 12px 0 0; color: #5d6570; font-size: 15px; line-height: 1.55; }
-.heroVisual { width: 100%; aspect-ratio: 2 / 1; justify-self: end; }
-.heroVisual img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .searchPanel { position: relative; z-index: 10; width: 100%; max-width: 1080px; margin-top: 12px; padding: 12px var(--page-padding); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 104px; align-items: start; gap: 8px; border: 1px solid #e9edf2; border-radius: 8px; background: #fff; }
 .searchPanel .fieldBlock label { margin-bottom: 6px; font-size: 11px; line-height: 14px; }
 .searchPanel .inputShell { height: 44px; min-height: 44px; border-radius: 5px; }
@@ -874,8 +873,14 @@ button:disabled { cursor: wait; opacity: 0.6; }
 .benefitIcon { width: 72px; height: 72px; display: grid; place-items: center; border: 1px solid #e0e5eb; border-radius: 50%; background: #eef1f5; color: #ed2f32; }
 .benefitIcon svg { width: 30px; height: 30px; }
 .benefitsSection { width: var(--page-width); max-width: 1080px; margin: 0 auto var(--section-gap); padding: 16px var(--page-padding) 24px; }
-@media (min-width: 1101px) {
-  .site:not(:has(.resultsSection, .loadingResults)) .benefitsSection { display: grid; align-content: center; min-height: max(180px, calc(100svh - 490px)); padding-block: 24px; }
+@media (min-width: 900px) {
+  /* Keep the guide below the first viewport without a fixed-height spacer. */
+  .firstView:not(:has(.resultsSection, .loadingResults)) { display: flex; flex-direction: column; min-height: 100svh; }
+  .firstView > .header, .firstView > .hero { flex-shrink: 0; }
+  .firstView:not(:has(.resultsSection, .loadingResults)) > .benefitsSection { flex: 1; display: grid; align-content: center; min-height: 180px; padding-block: 24px; }
+  .hero { padding-top: clamp(28px, 4vh, 40px); }
+  .heroCopy h1 { font-size: clamp(38px, 3.2vw, 44px); }
+  .hero .searchPanel { margin-top: clamp(28px, 4vh, 36px); }
 }
 .webAppGuide, .site .footer { width: var(--page-width); max-width: 1440px; margin: 0 auto var(--section-gap); }
 .webAppGuide { padding: 24px clamp(20px, 3vw, 40px) 0; background: #f8f9fb; scroll-margin-top: 16px; }
@@ -929,7 +934,7 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .webAppInstall { margin-top: 20px; }
 }
 @media (max-width: 899px) {
-  .heroIntro { grid-template-columns: minmax(0, 1fr) minmax(0, 240px); gap: 16px; }
+  .heroIntro { gap: 16px; }
   .heroCopy h1 { font-size: 30px; }
   .searchPanel { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 100px; gap: 8px; }
 }
@@ -937,12 +942,11 @@ button:disabled { cursor: wait; opacity: 0.6; }
   .site { --page-width: calc(100% - 32px); --page-padding: 0px; }
   .header { min-height: 60px; gap: 8px; }
   .hero { padding-top: 14px; padding-bottom: 12px; }
-  .heroIntro { grid-template-columns: minmax(0, 1fr) 104px; gap: 8px 10px; }
+  .heroIntro { gap: 8px; }
   .heroCopy { display: contents; }
   .heroCopy > .eyebrow { grid-column: 1 / -1; margin-bottom: 0; font-size: 10px; }
   .heroCopy h1 { grid-column: 1 / -1; max-width: none; font-size: clamp(28px, 7vw, 30px); line-height: 1.18; letter-spacing: -.8px; }
   .heroCopy p { grid-column: 1; margin: 0; font-size: 14px; line-height: 1.45; }
-  .heroVisual { grid-column: 2; grid-row: 3; width: 104px; justify-self: end; align-self: center; }
   .searchPanel { grid-template-columns: minmax(0, 1fr); margin-top: 8px; padding: 10px; gap: 6px; }
   .searchButton { margin-top: 0; }
   .searchPanel .fieldBlock label { font-size: 12px; line-height: 16px; font-weight: 600; margin-bottom: 4px; }

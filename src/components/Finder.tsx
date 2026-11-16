@@ -153,6 +153,7 @@ export default function Finder() {
   const comparisonExplanation = comparisonMaterial ? "Je Händler zuerst die Wunschgröße, sonst die nächste geprüfte, passende Größe. Der große Preis gilt immer für die tatsächlich gezeigte Packung." : result?.obiOffer ? `OBI-Angebot für „${comparisonQuery}“. Die Karte zeigt die tatsächliche Ausführung. Für weitere Händler kannst du eine Vergleichsgröße wählen.` : `Für „${comparisonQuery}“ ist die Ausführung noch nicht eindeutig. Wähle das gewünschte Produkt, um geprüfte Preise zu vergleichen.`;
 
   return <main className="site">
+    <div className="firstView">
     <header className="header">
       <a className="brand" href="#search"><span className="brandIcon" aria-hidden="true"><Image src="/baumarktfinder-logo.png" alt="" width={34} height={34} sizes="34px" /></span><span>BAUMARKT</span><strong>FINDER</strong></a>
       <nav className="nav" aria-label="Hauptnavigation"><a href="#search">Märkte & Material</a><a href="#about">So funktioniert’s</a><span className="countryLabel">Deutschland</span></nav>
@@ -160,7 +161,6 @@ export default function Finder() {
     <section className="hero" id="search" aria-label="Baumärkte und Material suchen">
       <div className="heroIntro">
         <div className="heroCopy"><div className="eyebrow">DEINE ADRESSE. DEINE BAUMÄRKTE.</div><h1>Baumarktpreise in deiner Nähe vergleichen</h1><p>Material suchen und Baumarktpreise vergleichen – mit Entfernung, Fahrzeit und Route.</p></div>
-        <div className="heroVisual"><Image src="/baumaterialien-hero.png" alt="Baumaterialien für dein Projekt" width={1774} height={887} sizes="(max-width: 650px) 104px, (max-width: 899px) 240px, 300px" preload /></div>
       </div>
       <form onSubmit={handleSearch} className="searchPanel" aria-busy={loading}>
         <div className="locationField">
@@ -218,6 +218,7 @@ export default function Finder() {
       <p className="googleAttribution">{result.origin.provider === "osm" ? <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">Standorte: © OpenStreetMap-Mitwirkende</a> : "Standorte und Routen: Google Maps"}</p>
     </section>}
     <BenefitsSection />
+    </div>
     <WebAppGuide />
     <footer className="footer"><span>BAUMARKTFINDER · Deutschland</span><p>Für die Suche wird deine Adresse bzw. dein Standort an Google oder OpenStreetMap (Nominatim/Overpass) übermittelt. Routenlinks öffnen Google Maps.</p></footer>
   </main>;
