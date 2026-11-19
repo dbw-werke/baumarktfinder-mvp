@@ -167,11 +167,10 @@ test("real Finder hides old cards, renders skeletons, and never commits an older
           assert.equal(card.querySelector<HTMLAnchorElement>('.offerButton')?.href,
             store.id === 'bauhaus' && expectedPrice.product_url.endsWith('/27790416') ? getStoreUrl('bauhaus','27790416') : expectedPrice.product_url);
         } else {
-          assert.equal(card.getAttribute('data-price-kind'), 'estimate', `${intent.input}: ${store.id} has no verified offer`);
-          assert.equal(card.querySelector('.missingPrice'), null);
-          assert.equal(card.querySelector('.matchBadge')?.textContent, 'Schätzpreis');
-          assert.match(card.querySelector('.packagePrice')?.textContent ?? '', /^ca\. [\d.,]+\s*€/);
-          assert.match(card.querySelector('.priceScope')?.textContent ?? '', /kein Händlerangebot/);
+          assert.equal(card.getAttribute('data-price-kind'), 'unavailable', `${intent.input}: ${store.id} has no verified offer`);
+          assert.match(card.querySelector('.missingPrice')?.textContent ?? '', /Preis aktuell nicht verfügbar/);
+          assert.equal(card.querySelector('.packagePrice'), null);
+          assert.equal(card.querySelector('.unitPrice'), null);
           assert.match(card.querySelector('.offerButton')?.textContent ?? '', /Beim Händler suchen/);
         }
         assert.match(card.querySelector<HTMLAnchorElement>('.routeButton')!.href,/google\.com\/maps\/dir/);

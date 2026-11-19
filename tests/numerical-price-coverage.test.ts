@@ -85,7 +85,7 @@ test("audit preserves every verified selection and exposes estimate sources with
   }
 });
 
-test("every product/store pair renders its actual numeric price, truthful badge, quantity and correct retailer action", () => {
+test("every product/store pair renders only verified retail prices or an unavailable status with correct actions", () => {
   let rendered = 0;
   for (const material of active) {
     const html = renderToStaticMarkup(createElement(ProductComparison, {
@@ -99,22 +99,20 @@ test("every product/store pair renders its actual numeric price, truthful badge,
       const row = report.rows.find((item) => item.requested_material_id === material.id && item.chain_id === chain)!;
       const context = `${material.slug}/${chain}`;
       assert.equal(card.getAttribute("data-store-id"), stores[index].placeId, context);
-      assert.equal(card.getAttribute("data-price-kind"), row.price_kind, context);
-      assert.equal(card.querySelector(".missingPrice"), null, context);
-      assert.ok(typeof row.package_price === "number", context);
-      assert.equal(card.querySelector(".packagePrice")?.textContent, `${row.price_kind === "estimate" ? "ca. " : ""}${money.format(row.package_price)}`, context);
       assert.equal(card.querySelector(".actualSpecification")?.textContent, row.actual_specification ?? row.requested_specification, context);
       const action = card.querySelector<HTMLAnchorElement>(".offerButton")!;
       if (row.price_kind === "estimate") {
-        assert.ok(row.estimate, context);
-        assert.equal(card.querySelector(".matchBadge")?.textContent, "Schätzpreis", context);
-        assert.equal(card.querySelector(".priceScope")?.textContent, "Unverbindlicher Vergleichswert · kein Händlerangebot", context);
-        assert.match(card.querySelector(".unitPrice")?.textContent ?? "", /^ca\. \d/, context);
+        assert.equal(card.getAttribute("data-price-kind"), "unavailable", context);
+        assert.match(card.querySelector(".missingPrice")?.textContent ?? "", /Preis aktuell nicht verfügbar/, context);
+        assert.equal(card.querySelector(".packagePrice"), null, context);
+        assert.equal(card.querySelector(".unitPrice"), null, context);
         assert.match(action.textContent ?? "", /Beim Händler suchen/, context);
         assert.equal(action.getAttribute("href"), getStoreUrl(chain, getMaterialSearchTerms(material.name)[0] || material.name), context);
         assert.doesNotMatch(card.textContent ?? "", /Onlinepreis der Kette|Zum Angebot|Auf Lager|sofort verfügbar/, context);
-        assert.deepEqual([...card.querySelectorAll<HTMLAnchorElement>(".priceDetails a")].map((link) => link.getAttribute("href")), row.estimate.sources.map((source) => source.product_url), context);
       } else {
+        assert.equal(card.getAttribute("data-price-kind"), "verified", context);
+        assert.equal(card.querySelector(".missingPrice"), null, context);
+        assert.equal(card.querySelector(".packagePrice")?.textContent, money.format(row.package_price!), context);
         assert.notEqual(card.querySelector(".matchBadge")?.textContent, "Schätzpreis", context);
         const knownBrokenPage = chain === "bauhaus" && /\/p\/27790416\/?$/.test(row.product_url ?? "");
         assert.equal(action.getAttribute("href"), knownBrokenPage ? getStoreUrl(chain, "27790416") : row.product_url, context);

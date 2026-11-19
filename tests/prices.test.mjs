@@ -111,7 +111,7 @@ test("valid update writes one atomic RPC; dry run performs no writes", async () 
   await updateMaterial(material, { repository, reader, stores: ["hornbach"], dryRun: true }); assert.equal(saved.length, 0);
   await updateMaterial(material, { repository, reader, stores: ["hornbach"] }); assert.equal(saved.length, 1);
   assert.equal(saved[0].source, "automatic"); assert.equal(saved[0].price, 12); assert.equal(saved[0].package_quantity, 30);
-  const calls = []; await createRepository({ rpc: async (...args) => { calls.push(args); return { data: "id" }; } }).save(saved[0]);
+  const calls = []; await createRepository({ rpc: async (...args) => { calls.push(args); return { data: "11111111-1111-1111-1111-111111111111" }; } }).save(saved[0]);
   assert.deepEqual(calls, [["save_verified_price", { payload: saved[0] }]]);
 });
 test("manual imports are labeled manual and reject wrong package sizes", () => {

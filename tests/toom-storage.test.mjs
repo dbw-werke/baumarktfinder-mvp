@@ -20,14 +20,22 @@ test('toom inventory reads every verified page and never asks for another store'
 });
 test('toom writes one atomic canonical RPC, keeping active/old/unit prices separate', async () => {
   let request;
-  const storage = toomSupabaseStorage(env, async (url, options) => { request = { url, options }; return Response.json('row-id'); });
+  const id = '11111111-1111-4111-8111-111111111111';
+  const storage = toomSupabaseStorage(env, async (url, options) => { request = { url, options }; return Response.json(id); });
   const record = { material_id: 'uuid', store_id: 'toom', verified: true, price: 38.99, old_price: 43.99, unit_price: 1.56, unit: 'kg', package_quantity: 25, fetch_method: 'direct' };
-  assert.equal(await storage.save(record), 'row-id');
+  assert.equal(await storage.save(record), id);
   assert.match(request.url, /rpc\/refresh_verified_toom_price$/);
   assert.equal(request.options.headers.apikey, env.SUPABASE_SERVICE_ROLE_KEY);
   assert.deepEqual(JSON.parse(request.options.body), { payload: { ...record, base_unit: 'kg', price_scope: 'chain' } });
   await assert.rejects(storage.save({ ...record, store_id: 'obi' }), /unverified-product/);
   await assert.rejects(storage.save({ ...record, verified: false }), /unverified-product/);
+});
+
+test('empty or malformed write acknowledgements cannot count as a database update', async () => {
+  for (const result of [null, {}, [], 'not-a-price-id']) {
+    const storage = toomSupabaseStorage(env, async () => Response.json(result));
+    await assert.rejects(storage.save({ store_id: 'toom', verified: true }), /write-not-confirmed/);
+  }
 });
 test('missing schema and invalid service key are reported without exposing response secrets', async () => {
   const storage = toomSupabaseStorage(env, async () => Response.json({ code: 'PGRST205', message: 'sensitive-backend-message' }, { status: 404 }));

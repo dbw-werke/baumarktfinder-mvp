@@ -31,7 +31,9 @@ export function toomSupabaseStorage(env = process.env, fetchImpl = fetch) {
     async save(record) {
       if (!writeKey) throw new Error('toom-database-write-key-missing');
       if (record.store_id !== 'toom' || record.verified !== true) throw new Error('toom-database-unverified-product');
-      return request('rpc/refresh_verified_toom_price', writeKey, { payload: { ...record, base_unit: record.unit, price_scope: 'chain' } });
+      const id = await request('rpc/refresh_verified_toom_price', writeKey, { payload: { ...record, base_unit: record.unit, price_scope: 'chain' } });
+      if (typeof id !== 'string' || !/^[\da-f]{8}(?:-[\da-f]{4}){3}-[\da-f]{12}$/i.test(id)) throw new Error('toom-database-write-not-confirmed');
+      return id;
     },
   };
 }

@@ -29,12 +29,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: node --test tests/prices*.test.mjs
-      - name: Check configured credentials
-        shell: bash
-        run: |
-          test -n "$NEXT_PUBLIC_SUPABASE_URL" || { echo 'Missing Supabase URL secret'; exit 1; }
-          test -n "$SUPABASE_SERVICE_ROLE_KEY" || { echo 'Missing server service-role secret'; exit 1; }
       - name: Refresh exact product offers
+        id: refresh
         shell: bash
         run: |
           if [ "$DRY_RUN" = 'true' ]; then
@@ -49,3 +45,6 @@ jobs:
           path: work/price-update-last.json
           retention-days: 30
           if-no-files-found: ignore
+      - name: Report freshness and failures
+        if: always() && (steps.refresh.outcome == 'success' || steps.refresh.outcome == 'failure')
+        run: node scripts/price-update-summary.mjs work/price-update-last.json

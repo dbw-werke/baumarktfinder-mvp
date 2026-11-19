@@ -1,4 +1,4 @@
-import { normalize, extractSpecifications } from "./product-standardizer.mjs";
+import { normalize, extractSpecifications, specificationsAgree } from "./product-standardizer.mjs";
 
 /** OBI query matching has no dependency on canonical material records or their IDs. */
 export function normalizeObiQuery(query) {
@@ -48,7 +48,7 @@ const families = [
   { id: "insulation-board", test: /daemmplatte|hartschaumplatte|\bxps\b|\beps\b|styropor|styrodur|holzfaserplatte/, shape: "insulation", exclude: /kleber|du[e]?bel|halter|messer/ },
   { id: "osb", test: /\bosb/, shape: "board", exclude: /lack|schraub|kleber/ },
   { id: "filler", test: /spachtelmasse|fugenspachtel|flaechenspachtel|renovierspachtel|feinspachtel|fuellspachtel/, shape: "bag" },
-  { id: "gypsum", test: /gipskarton|rigips|gipsplatte|bauplatte|\bgkb\b/, shape: "board", exclude: /feuchtraum|impraegniert|gkbi|brandschutz|feuerschutz|gkfi|hartgips|diamant|silentboard|schallschutz|akustik|fireboard|spezialplatte|zement|\bxps\b|\beps\b|gipsfaser|schraub|spachtel|kleber/ },
+  { id: "gypsum", test: /gipskarton|rigips|gipsplatte|bauplatte|\bgkb?\b/, shape: "board", exclude: /feuchtraum|impraegniert|gkbi|brandschutz|feuerschutz|gkfi|hartgips|diamant|silentboard|schallschutz|akustik|fireboard|spezialplatte|zement|\bxps\b|\beps\b|gipsfaser|schraub|spachtel|kleber/ },
 ];
 const byFamily = new Map(families.map((family) => [family.id, family]));
 const detect = (text) => families.find((family) => family.test.test(text))?.id ?? "unknown";
@@ -91,7 +91,7 @@ function specifications(product, family) {
   const parsed = extractSpecifications({ ...product, name: own.name, attributes: own.attributes }, { family: shape });
   const add = (key, value) => {
     if (!number(value)) return;
-    if (parsed.values[key] != null && !equal(parsed.values[key], value)) parsed.conflicts.push(key);
+    if (parsed.values[key] != null && !specificationsAgree(key, parsed.values[key], value)) parsed.conflicts.push(key);
     else parsed.values[key] = Number(value);
   };
   if (shape === "profile") {
@@ -102,11 +102,8 @@ function specifications(product, family) {
     }
   }
   const grit = own.name.match(/(?:koernung|korn)\s*(\d{2,4})\b/); if (grit) add("grit", grit[1]);
-  const thermal = own.name.match(/\b(?:wlg|wls)\s*(0?\d{2})\b/); if (thermal) add("thermal_conductivity", Number(thermal[1]) / 1000);
-  if (product.observedSpecs?.thermal_conductivity) add("thermal_conductivity",product.observedSpecs.thermal_conductivity);
   for (const { name, value } of own.attributes) {
     if (/^(koernung|korn)$/.test(name)) add("grit", value.replace(/^[kp]\s*/, ""));
-    if (/^(waermeleitgruppe|wlg|wls)$/.test(name)) add("thermal_conductivity", Number(value) > 1 ? Number(value) / 1000 : value);
   }
   const color = normalize(product.observedSpecs?.color || own.attributes.find((attr) => /^(farbe|farbton|grundfarbe|color)$/.test(attr.name))?.value || own.name).match(colorPattern)?.[1];
   if (color) parsed.values.color = color;
@@ -232,7 +229,7 @@ export function rankObiCandidates(query, products = []) {
       ? !new RegExp(`\\bosb\\s*[/ -]?${term.at(-1)}\\b`).test(technicalText)
       : term === "feingewinde" && detectedFamily === "drywall-screw" && /\btn\b/.test(own.primary) ? false : !technicalText.includes(term));
     if (missingTerm) { reject(`missing-essential-attribute:${missingTerm}`); continue; }
-    const mismatch = Object.entries(intent.essentialSpecs).find(([key, value]) => !equal(actual.observedSpecs[key], value));
+    const mismatch = Object.entries(intent.essentialSpecs).find(([key, value]) => !specificationsAgree(key, actual.observedSpecs[key], value));
     if (mismatch) { reject(`wrong-or-unverified-specification:${mismatch[0]}`); continue; }
     let score = intent.family === "unknown" ? 90 : 100;
     if (detectedFamily === primaryFamily) score += 15;

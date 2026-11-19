@@ -1,7 +1,6 @@
 import StoreCard from "./StoreCard";
 import StoreRow from "./StoreRow";
 import { selectChainOffer, type CanonicalMaterial } from "../lib/productComparison";
-import { estimateComparisonPrice } from "../lib/estimatedPrices";
 import type { ResolvedAddress, RoutedStore } from "../lib/stores";
 import type { StorePrice } from "../services/prices";
 import type { ObiOffer } from "../lib/obi-offer";
@@ -14,9 +13,8 @@ export default function ProductComparison({ stores, origin, offers, material, ca
   const entries = stores.map((store) => {
     const dynamicObi = store.id === "obi" ? obiOffer : null;
     const selection = material && !dynamicObi ? selectChainOffer(material, offers, catalog, store.id) : undefined;
-    const estimate = material && !dynamicObi && !selection?.price ? estimateComparisonPrice(material, offers, catalog, store.id) : null;
-    return { store, price: dynamicObi ?? selection?.price, estimate, comparison: selection };
+    return { store, price: dynamicObi ?? selection?.price, comparison: selection };
   });
-  return <StoreRow className="comparisonGrid" label="Produktpreise der nächstgelegenen Märkte">{entries.map(({ store, price, estimate, comparison }, index) => <StoreCard key={store.placeId} store={store} origin={origin} price={price} estimate={estimate} comparison={comparison}
+  return <StoreRow className="comparisonGrid" label="Produktpreise der nächstgelegenen Märkte">{entries.map(({ store, price, comparison }, index) => <StoreCard key={store.placeId} store={store} origin={origin} price={price} comparison={comparison}
       searchTerm={material?.name ?? searchTerm} highlighted={index === 0} observedAt={observedAt} comparisonLayout />)}</StoreRow>;
 }

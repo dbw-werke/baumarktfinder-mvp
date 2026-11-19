@@ -7,7 +7,9 @@ export function normalize(value = "") {
 }
 const positive = (v) => Number.isFinite(Number(v)) && Number(v) > 0;
 const close = (a, b) => positive(a) && positive(b) && Math.abs(Number(a) - Number(b)) <= Math.max(0.001, Number(b) * 0.00001);
-const numericKeys = ["length_mm", "width_mm", "height_mm", "thickness_mm", "diameter_mm", "weight_kg", "volume_l", "pieces", "grammage_g_m2", "grit", "area_m2"];
+export const specificationsAgree = (key, a, b) => key === "thermal_conductivity"
+  ? positive(a) && positive(b) && Math.abs(Number(a) - Number(b)) <= 1e-8 : close(a, b);
+const numericKeys = ["length_mm", "width_mm", "height_mm", "thickness_mm", "diameter_mm", "weight_kg", "volume_l", "pieces", "grammage_g_m2", "grit", "area_m2", "thermal_conductivity"];
 const families = [
   [/uniflott.*finish/, "bag", /uniflott.*finish/, /impraegniert/],
   [/vario/, "bag", /vario/, /hydro/],
@@ -15,7 +17,7 @@ const families = [
   [/perlfix/, "bag", /perlfix/, /finish/], [/uniflott/, "bag", /uniflott/, /finish|impraegniert/],
   [/feuchtraum|gkbi/, "board", /feuchtraum|impraegniert|gkbi/, /brandschutz|gkfi/],
   [/\bosb/, "board", /\bosb\s*[/ -]?3\b/, /osb\s*[/ -]?2\b/],
-  [/gipskarton|rigips|gipsplatte|\bgkb\b/, "board", /gipskarton|rigipsplatte|gipsplatte|bauplatte|\bgkb\b/, /feuchtraum|impraegniert|gkbi|brandschutz|feuerschutz|\bgkf\b|gkfi|\bdf\b|hartgips|diamant|silentboard|schallschutz|akustik|fireboard|spezialplatte|zementbauplatte|bauplatten?\s*(?:aus\s*)?xps/],
+  [/gipskarton|rigips|gipsplatte|\bgkb?\b/, "board", /gipskarton|\brigips(?:platte)?\b|gipsplatte|bauplatte|\bgkb?\b/, /feuchtraum|impraegniert|gkbi|brandschutz|feuerschutz|\bgkf\b|gkfi|\bdf\b|hartgips|diamant|silentboard|schallschutz|akustik|fireboard|spezialplatte|zementbauplatte|bauplatten?\s*(?:aus\s*)?xps/],
   [/schnellbauschraub|trockenbauschraub/, "screw", /schnellbauschraub|trockenbauschraub|gips(?:karton|platten?)schraub/, /bohrspitze/],
   [/direktabhaenger/, "hanger", /direktabhaenger/, /nonius/],
   [/nonius/, "hanger", /nonius.*unterteil/, /oberteil/],
@@ -101,7 +103,7 @@ const familyDetectors = [
   // are screws, even when the retailer's Ausführung contains "Gipsplatte".
   ["tn-schrauben", /schnellbauschraub|trockenbauschraub|gips(?:karton|platten?)schraub/],
   ["gipskarton-feuchtraum", /feuchtraum|gkbi|impraegniert/], ["osb", /\bosb/],
-  ["gipskarton", /gipskarton|rigipsplatte|gipsplatte|bauplatte|\bgkb\b/],
+  ["gipskarton", /gipskarton|\brigips(?:platte)?\b|gipsplatte|bauplatte|\bgkb?\b/],
   ["direktabhaenger", /direktabhaenger/], ["noniusabhaenger", /nonius/],
   ["randdaemmstreifen", /randdaemmstreifen/],
   ["band", /trennwand(?:[ -]dichtungs)?band|dichtungsband|\bdichtband\b|anschlussband/],
@@ -123,13 +125,18 @@ export function extractSpecifications(product, standard) {
   const result = {}, conflicts = new Set();
   function add(key, value) {
     if (!positive(value)) return;
-    if (result[key] != null && !close(result[key], value)) conflicts.add(key);
+    if (result[key] != null && !specificationsAgree(key, result[key], value)) conflicts.add(key);
     result[key] = Number(value);
   }
   for (const key of numericKeys) if (product.observedSpecs?.[key] != null) add(key, product.observedSpecs[key]);
   const fields = productFields(product);
   for (const { name: key, value } of fields.attributes) {
     if (numericKeys.includes(key)) { add(key, Number(value)); continue; }
+    if (/^(waermeleitgruppe|waermeleitstufe|wlg|wls|waermeleitfaehigkeit)$/.test(key)) {
+      const thermal = value.match(/^(?:wlg|wls)?\s*(\d+(?:\.\d+)?)(?:\s|$)/)?.[1];
+      if (thermal) add("thermal_conductivity", Number(thermal) > 1 ? Number(thermal) / 1000 : thermal);
+      continue;
+    }
     const m = value.match(/^(\d+(?:\.\d+)?)\s*(mm|cm|m|ml|l|liter|kg|g|m2|m²)?(?:\s|$)/);
     if (!m) continue;
     const dimension = { laenge: "length_mm", breite: "width_mm", hoehe: "height_mm", staerke: "thickness_mm", dicke: "thickness_mm", durchmesser: "diameter_mm" }[key];
@@ -150,6 +157,8 @@ export function extractSpecifications(product, standard) {
   capture(/(\d+(?:\.\d+)?)\s*ml\b/g, "volume_l", 0.001); capture(/(\d+)\s*(?:stueck|stk\.?|st\b)/g, "pieces");
   capture(/(\d+(?:\.\d+)?)\s*gr?\s*\/\s*m[2²]/g, "grammage_g_m2"); capture(/\b[kp]\s*(\d{2,4})\b/g, "grit");
   capture(/(\d+(?:\.\d+)?)\s*m[2²]/g, "area_m2");
+  for (const match of `${fields.primary} ${fields.description}`.matchAll(/\b(?:wlg|wls)\s*[:=]?\s*(0?\d{2})\b/g))
+    add("thermal_conductivity", Number(match[1]) / 1000);
   const factor = (unit) => unit === "m" ? 1000 : unit === "cm" ? 10 : 1;
   // The hanger's 125 mm leg is not the compatible CD profile's 60/27 mm section.
   // Keep full identity text above; remove only the explicitly named mating profile
@@ -259,15 +268,15 @@ export function evaluateProductMatch(product, standard, { exactPackage = false }
   for (const key of ["sd_min_m", "sd_max_m"]) {
     if (standard.specs[key] != null && !close(product.observedSpecs?.[key], standard.specs[key])) return reject("wrong-or-missing-sd-range", true);
   }
-  const thermal = product.observedSpecs?.thermal_conductivity ?? Number(evidence.match(/\b(?:wlg?|wls)\s*[:=]?\s*(0\d{2})\b/)?.[1]) / 1000;
-  if (standard.specs.thermal_conductivity != null && !close(thermal, standard.specs.thermal_conductivity)) return reject("wrong-or-missing-thermal-conductivity", true);
+  const thermal = values.thermal_conductivity;
+  if (standard.specs.thermal_conductivity != null && !specificationsAgree("thermal_conductivity", thermal, standard.specs.thermal_conductivity)) return reject("wrong-or-missing-thermal-conductivity", true);
   if (conflicts.length) return reject(`conflicting-specifications:${conflicts.join(",")}`, true);
   let exactSize = true;
   for (const key of numericKeys) {
     if (standard.specs[key] == null) continue;
     if (key === "pieces" && Number(standard.specs[key]) === 1 && values.pieces == null && product.soldIndividually === true) { values.pieces = 1; continue; }
     if (values[key] == null) return reject(`missing-specification:${key}`);
-    if (!close(values[key], standard.specs[key])) {
+    if (!specificationsAgree(key, values[key], standard.specs[key])) {
       const nearBandThickness = diagnostic.requestedFamily === "band" && key === "thickness_mm"
         && Math.abs(values[key] - standard.specs[key]) / standard.specs[key] <= 0.1;
       if (exactPackage || (!packageAxes[standard.baseUnit].includes(key) && !nearBandThickness)) return reject(`wrong-specification:${key}`, !packageAxes[standard.baseUnit].includes(key));

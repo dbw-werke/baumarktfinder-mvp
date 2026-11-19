@@ -3,7 +3,7 @@ import snapshot from "../data/verified-catalog-snapshot.json";
 import type { BaseUnit } from "../services/materialSuggestions";
 import { validateStorePrice, type StorePrice } from "../services/prices";
 import { getVariantDistance, hasComparableSpecification, productPurposeConflict } from "./productCompatibility.mjs";
-import { isRequestedScreenshotPrice, preferPrice, requestedProduct } from "./requestedProducts";
+import { isRequestedProductPrice, preferPrice, requestedProduct } from "./requestedProducts";
 
 export { getVariantDistance } from "./productCompatibility.mjs";
 
@@ -97,12 +97,13 @@ export function selectChainOffer(target: CanonicalMaterial, offers: readonly Sto
     if (!price) continue;
     const previous = latest.get(material.id);
     if (preferPrice(price, previous)
-      || (previous && price.checked_at === previous.checked_at && price.product_url.localeCompare(previous.product_url) < 0)) latest.set(material.id, price);
+      || (previous && isRequestedProductPrice(price) === isRequestedProductPrice(previous)
+        && price.checked_at === previous.checked_at && price.product_url.localeCompare(previous.product_url) < 0)) latest.set(material.id, price);
   }
   const requested = requestedProduct(preferred.id, chain);
   const requestedPrice = requested && latest.get(requested.material_id);
   const requestedMaterial = requested && byId.get(requested.material_id);
-  if (requested && requestedPrice && requestedMaterial && isRequestedScreenshotPrice(requestedPrice)
+  if (requested && requestedPrice && requestedMaterial && isRequestedProductPrice(requestedPrice)
     && requestedMaterial.product_family === preferred.product_family) {
     return { price: requestedPrice, match: requestedMaterial.id === preferred.id ? "exact" : "alternative", requestedProduct: true,
       actualSpecification: formatMaterialSpecification(requestedMaterial), preferredSpecification,

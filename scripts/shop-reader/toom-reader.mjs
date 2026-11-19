@@ -24,6 +24,13 @@ export function createToomReader({ http = createPoliteFetcher({ minDelayMs: 2500
   let browser, context, page, blocked = null, lastNavigation = 0;
   const failure = (reason, method = 'direct', extra = {}) => ({ products: [], reason, method, removed: false, ...extra });
   const hard = error => ['blocked', 'FETCH_BLOCKED', 'captcha', 'hard_bot_block'].includes(error.code) || /HTTP (401|403|429)/.test(error.message || '');
+  // Keep useful browser failure categories without logging URLs, headers, or arbitrary exception text.
+  const browserError = (error, stage) => ({ stage,
+    reason: String(error.message || '').match(/\bnet::ERR_[A-Z0-9_]+\b/)?.[0]
+      || (error.name === 'TimeoutError' ? 'timeout' : null)
+      || (/Executable doesn't exist/i.test(error.message || '') ? 'browser_executable_missing' : null)
+      || (/Target (?:page, context or browser|closed)/i.test(error.message || '') ? 'browser_target_closed' : null)
+      || (/^[a-z][a-z0-9_-]{0,79}$/i.test(error.code || '') ? error.code : 'browser_operation_failed') });
   async function navigate(url) {
     if (blocked) throw Object.assign(new Error(blocked), { code: blocked });
     const target = new URL(url);
@@ -53,8 +60,10 @@ export function createToomReader({ http = createPoliteFetcher({ minDelayMs: 2500
     page = await context.newPage(); page.setDefaultTimeout(timeoutMs);
   }
   async function browserProduct(url, directReason) {
+    let stage = 'browser_start';
     try {
-      await start(); const check = await navigate(url);
+      await start(); stage = 'navigation'; const check = await navigate(url);
+      stage = 'buybox';
       await page.locator('[data-testid="buybox-price"] [data-testid="price-box-pricing-current"]').first().waitFor({ state: 'visible', timeout: 12000 }).catch(() => {});
       await check();
       const current = toomProductUrl(page.url());
@@ -73,7 +82,8 @@ export function createToomReader({ http = createPoliteFetcher({ minDelayMs: 2500
       return { ...result, method: 'playwright', removed: false, directReason, variantUrls: variantUrls(identity) };
     } catch (error) {
       if (hard(error)) blocked = error.code === 'captcha' ? 'captcha' : 'hard_bot_block';
-      return failure(blocked || error.code || 'playwright_navigation_failed', 'playwright', { directReason, removed: error.code === 'not-found' });
+      return failure(blocked || error.code || 'playwright_navigation_failed', 'playwright', {
+        directReason, removed: error.code === 'not-found', errors: [browserError(error, stage)] });
     }
   }
   async function readProduct(value) {
@@ -101,7 +111,7 @@ export function createToomReader({ http = createPoliteFetcher({ minDelayMs: 2500
       }
     } catch (error) {
       if (hard(error)) { blocked = 'hard_bot_block'; return failure(blocked); }
-      if (error.code === 'robots-disallowed') return failure('robots-disallowed');
+      if (['robots-disallowed', 'retry-after'].includes(error.code)) return failure(error.code);
       directReason = error.code === 'not-found' ? 'direct_fetch_404' : error.code || 'direct_fetch_failed';
     }
     return browserProduct(url, directReason);
@@ -117,7 +127,7 @@ export function createToomReader({ http = createPoliteFetcher({ minDelayMs: 2500
       urls = [...response.body.matchAll(/href=["']([^"']+)["']/g)].map(match => toomProductUrl(decode(match[1]))).filter(Boolean);
     } catch (error) {
       if (hard(error)) { blocked = 'hard_bot_block'; return failure(blocked); }
-      if (error.code === 'robots-disallowed') return failure('robots-disallowed');
+      if (['robots-disallowed', 'retry-after'].includes(error.code)) return failure(error.code);
       errors.push({ reason: error.code || 'direct_search_failed' });
     }
     if (!urls.length) {

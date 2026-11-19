@@ -6,7 +6,9 @@ import { filterCatalogSnapshot } from "../src/services/catalogSnapshot";
 import snapshot from "../src/data/verified-catalog-snapshot.json";
 
 /** Publish only validated public observations, never worker diagnostics or API payloads. */
-export function publicToomSnapshot(rows: Record<string, unknown>[]) {
+export function publicToomSnapshot(currentRows: Record<string, unknown>[], previousRows: Record<string, unknown>[] = []) {
+  // Partial checks and expired artifacts must never roll back a published observation.
+  const rows = [...previousRows, ...currentRows];
   const data = { version: 1, canonical_material_ids: snapshot.canonical_material_ids, prices: rows };
   const eligible = rows.filter(row => filterCatalogSnapshot({ ...data, prices: [row] }, ["toom"]).length);
   const valid = filterCatalogSnapshot({ ...data, prices: eligible }, ["toom"]);
@@ -22,11 +24,15 @@ export function publicToomSnapshot(rows: Record<string, unknown>[]) {
 
 async function main() {
   const report = JSON.parse(await readFile("work/toom-refresh-last.json", "utf8"));
-  if (!report.verified || report.schema_error || report.products?.some((row: { db_failure_reason?: string }) => row.db_failure_reason)) {
+  if (!report.verified) {
     throw new Error("Refresh did not produce publishable observations");
   }
   const cache = await readToomCache(resolve(process.env.TOOM_CACHE_PATH || "work/toom-verified-cache.json"));
-  const published = publicToomSnapshot(cache.prices);
+  const previous = JSON.parse(await readFile("src/data/toom-published-prices.json", "utf8"));
+  const published = publicToomSnapshot(cache.prices, previous.prices);
+  if (report.schema_error || report.products?.some((row: { db_failure_reason?: string }) => row.db_failure_reason)) {
+    console.warn("Database update failed; publishing independently verified cache observations only. The refresh job remains failed.");
+  }
   await writeFile("src/data/toom-published-prices.json", `${JSON.stringify(published, null, 2)}\n`);
   console.log(`Published ${published.prices.length} verified toom observations; original checked_at preserved.`);
 }

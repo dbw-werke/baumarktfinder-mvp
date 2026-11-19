@@ -20,7 +20,8 @@ jobs:
     timeout-minutes: 55
     env:
       TOOM_CACHE_PATH: work/toom-verified-cache.json
-      TOOM_USE_SUPABASE: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL != '' && secrets.SUPABASE_SERVICE_ROLE_KEY != '' }}
+      # No database is required for public publication; partial configuration is an error.
+      TOOM_USE_SUPABASE: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL != '' || secrets.SUPABASE_SERVICE_ROLE_KEY != '' }}
       NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
       NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
       NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
@@ -95,3 +96,6 @@ jobs:
           path: work/toom-refresh-last.json
           retention-days: 30
           if-no-files-found: ignore
+      - name: Report freshness and failures
+        if: always() && (steps.refresh.outcome == 'success' || steps.refresh.outcome == 'failure')
+        run: node scripts/price-update-summary.mjs work/toom-refresh-last.json

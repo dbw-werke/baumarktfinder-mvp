@@ -58,3 +58,23 @@ test('OBI treats unit-qualified content attributes as identity evidence and igno
  const old=rankObiCandidates('Direktabhänger',[{name:'Direktabhänger 125 mm',priceSource:'obi-rendered-product',attributes:[{name:'Höhe',value:'1 mm'},{name:'Breite',value:'3 cm'}]}]).selected;
  assert.equal(old.actualSize,'125 mm');
 });
+
+test('OBI gypsum aliases identify the same family and retain technical exclusions',()=>{
+ for(const query of ['Rigips','GKB','GK-Platte']) {
+  assert.ok(rankObiCandidates(query,[{name:'Gipskartonplatte 2000 x 1250 x 12,5 mm'}]).selected,query);
+  assert.equal(rankObiCandidates(query,[{name:'GK-Platte Brandschutz 2000 x 1250 x 12,5 mm'}]).selected,null,query);
+ }
+ assert.equal(rankObiCandidates('GK-Platte 12,5 mm',[{name:'GK-Platte 2000 x 1250 x 9,5 mm'}]).selected,null);
+});
+
+test('OBI conductivity differences and contradictory evidence remain hard exclusions',()=>{
+ for(const candidate of [
+  {name:'Glaswolle WLS 036 120 mm 6 m²'},
+  {name:'Glaswolle WLS 035 120 mm 6 m²',observedSpecs:{thermal_conductivity:.036}},
+  {name:'Glaswolle WLS 035 120 mm 6 m²',attributes:[{name:'Wärmeleitgruppe',value:'034'}]},
+  {name:'Glaswolle WLS 035 120 mm 6 m²',attributes:[{name:'Wärmeleitfähigkeit',value:'0,036 W/(m K)'}]},
+ ]) assert.equal(rankObiCandidates('Glaswolle WLS 035 120 mm',[candidate]).selected,null,candidate.name);
+ assert.ok(rankObiCandidates('Glaswolle WLS 035 120 mm',[{name:'Glaswolle WLS 035 120 mm 6 m²',observedSpecs:{thermal_conductivity:.035}}]).selected);
+ for(const name of ['Glaswolle 120 mm 6 m²','Steinwolle 120 mm 6 m²']) assert.ok(rankObiCandidates('Dämmung',[{name}]).selected);
+ assert.equal(rankObiCandidates('Glaswolle 120 mm',[{name:'Steinwolle 120 mm 6 m²'}]).selected,null);
+});

@@ -34,36 +34,66 @@ export function robotsAllows(policy, url) {
   }).sort((a, b) => b.value.replace(/\*/g, "").length - a.value.replace(/\*/g, "").length || Number(b.allow) - Number(a.allow));
   return !rules.length || rules[0].allow;
 }
-export function createPoliteFetcher({ fetchImpl = fetch, minDelayMs = 2000, timeoutMs = 15000, maxBytes = 8_000_000 } = {}) {
-  const policies = new Map(), lastRequest = new Map(), stopped = new Set();
-  const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+export function createPoliteFetcher({ fetchImpl = fetch, minDelayMs = 2000, timeoutMs = 15000, maxBytes = 8_000_000,
+  waitImpl = ms => new Promise(resolve => setTimeout(resolve, ms)), now = Date.now } = {}) {
+  const policies = new Map(), lastRequest = new Map(), cooldownUntil = new Map(), stopped = new Set();
+  const transientNetwork = error => error.name === "TimeoutError" || ["ECONNRESET", "ECONNREFUSED", "EPIPE", "ETIMEDOUT", "EAI_AGAIN",
+    "UND_ERR_CONNECT_TIMEOUT", "UND_ERR_HEADERS_TIMEOUT", "UND_ERR_BODY_TIMEOUT", "UND_ERR_SOCKET"].includes(error.cause?.code || error.code);
+  const retryAfter = value => {
+    if (!value) return 0;
+    const delay = /^\d+$/.test(value.trim()) ? Number(value) * 1000 : Date.parse(value) - now();
+    return Number.isNaN(delay) ? 0 : Math.max(0, delay);
+  };
+  async function responseBody(response) {
+    if (Number(response.headers.get("content-length")) > maxBytes) throw new CollectionError("response-too-large");
+    if (!response.body) return "";
+    const reader = response.body.getReader(), chunks = []; let size = 0;
+    for (;;) { const { done, value } = await reader.read(); if (done) break; size += value.length;
+      if (size > maxBytes) { await reader.cancel(); throw new CollectionError("response-too-large"); } chunks.push(value); }
+    return Buffer.concat(chunks).toString("utf8");
+  }
   async function request(url, hosts, delay = minDelayMs, isRobots = false) {
-    let current = new URL(url);
-    for (let redirect = 0; redirect < 5; redirect++) {
+    let current = new URL(url), redirects = 0, retries = 0, retryAt = 0;
+    while (redirects < 5) {
       if (current.protocol !== "https:" || current.username || current.password || !hosts.includes(current.hostname) || current.port) throw new CollectionError("unsafe-url");
       if (stopped.has(current.origin)) throw new CollectionError("blocked");
-      await wait(Math.max(0, (lastRequest.get(current.origin) || 0) + delay - Date.now()));
-      lastRequest.set(current.origin, Date.now());
-      const response = await fetchImpl(current.href, { redirect: "manual", signal: AbortSignal.timeout(timeoutMs), headers: {
-        "User-Agent": USER_AGENT, "Accept-Language": "de-DE,de;q=0.9", Accept: "text/html,application/ld+json,application/xml,text/plain;q=0.9" } });
-      if ([401, 403, 429].includes(response.status)) { stopped.add(current.origin); throw new CollectionError("blocked", `HTTP ${response.status}`); }
+      const cooldown = cooldownUntil.get(current.origin) || 0;
+      if (cooldown - now() > 30000) throw new CollectionError("retry-after", "Retry-After cooldown is still active");
+      await waitImpl(Math.max(0, (lastRequest.get(current.origin) ?? -Infinity) + delay - now(), retryAt - now(), cooldown - now()));
+      lastRequest.set(current.origin, now());
+      let response, body;
+      try {
+        response = await fetchImpl(current.href, { redirect: "manual", signal: AbortSignal.timeout(timeoutMs), headers: {
+          "User-Agent": USER_AGENT, "Accept-Language": "de-DE,de;q=0.9", Accept: "text/html,application/ld+json,application/xml,text/plain;q=0.9" } });
+        // Never retry a denial, including one accompanying an otherwise transient status.
+        if ([401, 403, 429].includes(response.status)) { stopped.add(current.origin); throw new CollectionError("blocked", `HTTP ${response.status}`); }
+        if (response.ok || [502, 503, 504].includes(response.status)) body = await responseBody(response);
+      } catch (error) {
+        if (!isRobots && retries < 2 && transientNetwork(error)) { retryAt = now() + 1000 * 2 ** retries++; continue; }
+        throw error;
+      }
+      if (/verify (?:you are|that you are) human|unusual traffic|request blocked|checking your browser|bot challenge|<title>[^<]*(access denied|captcha)/i.test(body || "")
+        || ([502, 503, 504].includes(response.status) && /captcha|access denied/i.test(body || ""))) {
+        stopped.add(current.origin); throw new CollectionError("blocked");
+      }
       if ([301, 302, 303, 307, 308].includes(response.status)) {
         const next = new URL(response.headers.get("location"), current);
         if (!isRobots) {
           const policy = await getRobots(next.origin, hosts);
           if (!robotsAllows(policy, next.href)) throw new CollectionError("robots-disallowed");
+          delay = Math.max(delay, policy.delay);
         }
-        current = next; continue;
+        current = next; redirects++; retryAt = 0; continue;
+      }
+      if (!isRobots && [502, 503, 504].includes(response.status)) {
+        const requestedDelay = retryAfter(response.headers.get("retry-after"));
+        // The server's backoff applies to later products too, even after this request exhausts its retries.
+        if (requestedDelay > 0) cooldownUntil.set(current.origin, now() + requestedDelay);
+        // A long Retry-After ends this attempt; never shorten the server's requested wait.
+        if (retries < 2 && requestedDelay <= 30000) { retryAt = now() + Math.max(1000 * 2 ** retries++, requestedDelay); continue; }
+        if (requestedDelay > 0) throw new CollectionError("retry-after", "Retry-After cooldown is still active");
       }
       if (!response.ok) throw new CollectionError(response.status === 404 ? "not-found" : "http-error", `HTTP ${response.status}`);
-      if (Number(response.headers.get("content-length")) > maxBytes) throw new CollectionError("response-too-large");
-      const reader = response.body.getReader(), chunks = []; let size = 0;
-      for (;;) { const { done, value } = await reader.read(); if (done) break; size += value.length;
-        if (size > maxBytes) { await reader.cancel(); throw new CollectionError("response-too-large"); } chunks.push(value); }
-      const body = Buffer.concat(chunks).toString("utf8");
-      if (/verify you are human|unusual traffic|request blocked|<title>[^<]*(access denied|captcha)/i.test(body)) {
-        stopped.add(current.origin); throw new CollectionError("blocked");
-      }
       return { body, url: current.href };
     }
     throw new CollectionError("redirect-limit");

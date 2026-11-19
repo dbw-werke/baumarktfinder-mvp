@@ -36,13 +36,32 @@ test("unchanged price updates verification time without repeatedly growing chang
 });
 test("failed refresh and database write never delete the valid cached price", async t => {
   const { cache } = await fixture(t);
+  const previous = await cache.load();
   const fail = await refreshToomProduct({ material, stored, cache, reader: { readProduct: async () => ({ products: [], reason: "captcha", method: "direct" }) } });
   assert.equal(fail.failure_reason, "captcha"); assert.equal(fail.checked_at, stored.checked_at);
   assert.deepEqual((await cache.load()).prices, [stored]);
+  assert.deepEqual((await cache.load()).history, previous.history);
   const saved = await refreshToomProduct({ material, stored, cache, reader: { readProduct: async () => ({ products: [product], method: "direct" }) },
     storage: { save: async () => { throw new Error("PGRST205:verified_store_prices"); } } });
   assert.equal(saved.cache_updated, true); assert.equal(saved.db_updated, false); assert.match(saved.db_failure_reason, /PGRST205/);
   assert.equal((await cache.load()).prices[0].price, 39);
+});
+
+test("failed product identity and browser navigation preserve the current observation and complete history", async t => {
+  const { cache } = await fixture(t);
+  await refreshToomProduct({ material, stored, cache, reader: { readProduct: async () => ({ products: [product], method: "direct" }) } });
+  const before = await cache.load();
+  const result = await refreshToomProduct({ material, stored: before.prices[0], cache, reader: {
+    readProduct: async () => ({ products: [], reason: "playwright_navigation_failed", method: "playwright",
+      directReason: "product_identity_missing", errors: [{ stage: "navigation", reason: "net::ERR_HTTP2_PROTOCOL_ERROR" }] }),
+  } });
+  assert.equal(result.failure_reason, "playwright_navigation_failed");
+  assert.equal(result.checked_at, product.retrievedAt);
+  assert.equal(result.new_active_price, product.price);
+  const after = await cache.load();
+  assert.deepEqual(after.prices, before.prices);
+  assert.deepEqual(after.history, before.history);
+  assert.deepEqual(result.retrieval_errors, [{ stage: "navigation", reason: "net::ERR_HTTP2_PROTOCOL_ERROR" }]);
 });
 test("dead URL searches for a valid replacement; live redirect to another SKU is refused", async t => {
   const { cache } = await fixture(t); let searches = 0;

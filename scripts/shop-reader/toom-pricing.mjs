@@ -1,9 +1,8 @@
 /** Pure toom identity and active selling-price parsers. */
-import { extractToomProductState } from './retailer-state.mjs';
+import { extractToomProductState, readToomProductData } from './retailer-state.mjs';
 import { supplementToomTechnicalEvidence } from './toom-technical-evidence.mjs';
 const HOSTS = ['toom.de', 'www.toom.de'];
 const clean = value => String(value || '').replace(/\s+/g, ' ').trim();
-const decode = value => String(value || '').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ');
 const money = value => typeof value === 'number' && Number.isFinite(value) && value > 0 && Math.abs(value * 100 - Math.round(value * 100)) < 0.00001;
 const unit = value => ({ kilogramm: 'kg', kg: 'kg', liter: 'l', l: 'l', milliliter: 'ml', ml: 'ml', meter: 'm', m: 'm', 'm²': 'm2', m2: 'm2', quadratmeter: 'm2', stück: 'piece', stueck: 'piece', pack: 'package', paket: 'package', pce: 'package' })[clean(value).toLowerCase()] || null;
 const fail = reason => ({ products: [], reason });
@@ -23,8 +22,7 @@ export function readToomIdentity(html, url, now = new Date()) {
   const valid = toomProductUrl(url);
   if (!valid) return null;
   try {
-    const encoded = html.match(/<div\b(?=[^>]*\bid="root")(?=[^>]*\bdata-props="([^"]+)")[^>]*>/)?.[1];
-    const data = JSON.parse(decodeURIComponent(decode(encoded))).content;
+    const data = readToomProductData(html, url);
     if (toomProductUrl(data?.meta_data?.canonical_url) !== valid || String(data?.basic_info?.sku) !== valid.split('/').at(-1)) return null;
     const extracted = extractToomProductState(html, url, now, { identityOnly: true })[0];
     const product = extracted && supplementToomTechnicalEvidence(extracted, data);

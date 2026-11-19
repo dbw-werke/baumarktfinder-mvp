@@ -22,22 +22,28 @@ export function createRepository(client) {
     async save(payload) {
       const { data, error } = await client.rpc("save_verified_price", { payload });
       if (error) throw new Error(`Atomic price write failed (${error.code || "database-error"}).`);
+      if (typeof data !== "string" || !/^[\da-f]{8}(?:-[\da-f]{4}){3}-[\da-f]{12}$/i.test(data)) throw new Error("Atomic price write returned no price identifier.");
       return data;
     },
   };
 }
 export function databaseRepository() {
   dotenv.config({ path: ".env.local", quiet: true });
+  const missing = ["NEXT_PUBLIC_SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"].filter((name) => !process.env[name]?.trim());
+  if (missing.length) throw Object.assign(new Error(`Missing required server configuration: ${missing.join(", ")}.`), {
+    code: "missing-configuration", missing_environment: missing,
+  });
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL, key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) throw new Error("NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required on the server.");
   return createRepository(createClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } }));
 }
 export function pricePayload(material, storeId, product, source = "automatic") {
   const url = productUrl(storeId, product.url);
   if (!url) throw new Error("Invalid official product URL.");
+  if (typeof product.retrievedAt !== "string" || !Number.isFinite(Date.parse(product.retrievedAt)) || Date.parse(product.retrievedAt) > Date.now() + 300000)
+    throw Object.assign(new Error("A valid actual retrieval timestamp is required."), { code: "invalid-observation-time" });
   return { material_id: material.id, store_id: storeId, product_name: product.name, product_url: url,
     price: product.price, package_quantity: product.packageQuantity, base_unit: product.unit, currency: "EUR",
-    source, price_scope: "chain", checked_at: product.retrievedAt || new Date().toISOString(),
+    source, price_scope: "chain", checked_at: product.retrievedAt,
     external_id: product.externalId || null, availability: product.availability || null, match_evidence: product.matchEvidence };
 }
 
@@ -85,8 +91,10 @@ export async function updateMaterial(material, { repository, reader, stores = ST
   for (const candidate of candidates) {
     const { row, store, product, actualMaterial, matchKind } = candidate;
     if (!accepted.has(candidate)) { row.status = "price-outlier"; row.rejection_reason = "price-outlier-for-same-package"; continue; }
+    let payload;
+    try { payload = pricePayload(actualMaterial, store, product); }
+    catch (error) { row.status = "invalid-observation"; row.rejection_reason = error.code || "invalid-price-payload"; continue; }
     try {
-      const payload = pricePayload(actualMaterial, store, product);
       if (!dryRun) await repository.save(payload);
       Object.assign(row, { status: dryRun ? "verified-dry-run" : "saved", retained_previous_price: dryRun,
         saved_to_supabase: !dryRun,
@@ -119,29 +127,64 @@ export function parseArguments(args) {
   if (options.materialsFile && !options.dryRun) throw new Error("--materials-file is restricted to read-only --dry-run.");
   return options;
 }
-export async function main(args = process.argv.slice(2)) {
-  const options = parseArguments(args), reader = createShopReader();
-  const repository = options.materialsFile ? { mapping: async () => null } : databaseRepository();
-  const canonicalMaterials = options.materialsFile ? JSON.parse(await readFile(options.materialsFile, "utf8")) : await repository.materials();
-  let materials = canonicalMaterials;
-  const query = normalize(options.query);
-  if (query && query !== "all") materials = materials.filter((m) => normalize(`${m.name} ${m.slug} ${m.product_family}`).includes(query));
-  materials = materials.slice(0, options.limit);
-  if (!materials.length) throw new Error("No active canonical materials matched.");
-  const candidateUrls = options.candidatesFile ? JSON.parse(await readFile(options.candidatesFile, "utf8")) : {};
-  const report = { started_at: new Date().toISOString(), dry_run: options.dryRun, materials: [] };
-  for (const material of materials) report.materials.push(await updateMaterial(material, {
-    repository, reader, stores: options.stores, dryRun: options.dryRun,
-    canonicalMaterials, candidateUrlsByMaterial: candidateUrls,
-    candidateUrls: candidateUrls[material.slug] || candidateUrls[material.id] || {}, log: console.log }));
+export function summarizeReport(report) {
+  const rows = report.materials.flatMap((material) => material.stores);
+  const verified = (row) => ["saved", "verified-dry-run"].includes(row.status);
+  // A missing compatible product is normal. Access, transport and mapping failures
+  // must remain failures even when another retailer returned a valid offer.
+  const collectionFailed = (row) => Boolean(row.error) || row.status === "invalid-observation"
+    || (row.status === "no-exact-verified-offer" && row.errors?.some((error) => error.code !== "not-found"));
+  report.verified = rows.filter(verified).length;
+  report.write_failures = rows.filter((row) => row.status === "save-failed").length;
+  report.collection_failures = rows.filter(collectionFailed).length;
+  report.unavailable = rows.length - report.verified;
+  report.stores = Object.fromEntries(report.requested_stores.map((store) => {
+    const attempts = rows.filter((row) => row.store === store);
+    return [store, { attempted: attempts.length, verified: attempts.filter(verified).length,
+      write_failures: attempts.filter((row) => row.status === "save-failed").length,
+      collection_failures: attempts.filter(collectionFailed).length }];
+  }));
+  report.status = report.failure ? "failed"
+    : report.write_failures || report.collection_failures ? (report.verified ? "partial-failure" : "failed")
+    : !report.verified ? "no-verified-offers"
+    : report.unavailable || report.materials.some((material) => material.status === "unsupported-canonical-specification") ? "partial" : "ok";
+  report.exit_code = report.failure || report.write_failures || report.collection_failures ? 1 : report.verified ? 0 : 2;
+  return report;
+}
+
+export async function main(args = process.argv.slice(2), { repositoryFactory = databaseRepository, readerFactory = createShopReader, log = console.log } = {}) {
+  const options = parseArguments(args);
+  const report = { started_at: new Date().toISOString(), dry_run: options.dryRun, requested_stores: options.stores, materials: [] };
+  let stage = "initialization";
+  try {
+    const repository = options.materialsFile ? { mapping: async () => null } : repositoryFactory();
+    const canonicalMaterials = options.materialsFile ? JSON.parse(await readFile(options.materialsFile, "utf8")) : await repository.materials();
+    let materials = canonicalMaterials;
+    const query = normalize(options.query);
+    if (query && query !== "all") materials = materials.filter((m) => normalize(`${m.name} ${m.slug} ${m.product_family}`).includes(query));
+    materials = materials.slice(0, options.limit);
+    if (!materials.length) throw Object.assign(new Error("No active canonical materials matched."), { code: "no-materials" });
+    const candidateUrls = options.candidatesFile ? JSON.parse(await readFile(options.candidatesFile, "utf8")) : {};
+    const reader = readerFactory();
+    stage = "collection";
+    for (const material of materials) report.materials.push(await updateMaterial(material, {
+      repository, reader, stores: options.stores, dryRun: options.dryRun,
+      canonicalMaterials, candidateUrlsByMaterial: candidateUrls,
+      candidateUrls: candidateUrls[material.slug] || candidateUrls[material.id] || {}, log }));
+  } catch (error) {
+    // Never serialize raw client/network errors, connection URLs or credentials.
+    report.failure = error.code === "missing-configuration"
+      ? { code: error.code, message: error.message, missing_environment: error.missing_environment }
+      : error.code === "no-materials" ? { code: error.code, message: error.message }
+      : { code: `${stage}-failed`, message: `Price update ${stage} failed; inspect server configuration, database access and input files.` };
+    log(report.failure.message);
+  }
   report.completed_at = new Date().toISOString();
-  report.verified = report.materials.flatMap((m) => m.stores).filter((row) => ["saved", "verified-dry-run"].includes(row.status)).length;
-  report.write_failures = report.materials.flatMap((m) => m.stores).filter((row) => row.status === "save-failed").length;
+  summarizeReport(report);
   await mkdir(dirname(resolve(options.report)), { recursive: true });
   await writeFile(options.report, `${JSON.stringify(report, null, 2)}\n`, "utf8");
-  console.log(`Verified offers: ${report.verified}. Report: ${options.report}. Failed retrievals retained every previous price.`);
-  if (report.write_failures) process.exitCode = 1;
-  else if (!report.verified) process.exitCode = 2;
+  log(`Price update: ${report.status}. Verified offers: ${report.verified}. Collection failures: ${report.collection_failures}. Write failures: ${report.write_failures}. Report: ${options.report}. Failed retrievals retained every previous price.`);
+  process.exitCode = report.exit_code;
   return report;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) main().catch((error) => {

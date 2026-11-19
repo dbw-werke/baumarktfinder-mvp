@@ -5,6 +5,17 @@ import { publicToomSnapshot } from "../scripts/publish-toom-prices";
 import { createPublishedToomReader } from "../src/services/publishedToomPrices";
 
 const original = manual.prices.find(row => row.store_id === "toom")!;
+test("partial publication retains previous products, prices and their verification timestamps", () => {
+  const second = manual.prices.find(row => row.store_id === "toom" && row.material_id !== original.material_id)!;
+  const prior = { ...original, checked_at: "2026-10-25T00:00:00.000Z" };
+  const stale = { ...original, checked_at: "2026-10-24T00:00:00.000Z" };
+  const partial = publicToomSnapshot([stale], [prior, second]);
+  assert.equal(partial.prices.length, 2);
+  assert.equal(partial.prices.find(row => row.material_id === original.material_id)?.checked_at, prior.checked_at);
+  assert.equal(partial.prices.find(row => row.material_id === second.material_id)?.checked_at, second.checked_at);
+  const newer = { ...original, checked_at: "2026-10-26T00:00:00.000Z" };
+  assert.equal(publicToomSnapshot([newer], partial.prices).prices.find(row => row.material_id === original.material_id)?.checked_at, newer.checked_at);
+});
 test("published observations contain only canonical public price fields", () => {
   const output = publicToomSnapshot([{ ...original, secret: "not-public", match_evidence: { token: "not-public" } },
     { ...original, material_id: "unknown", price: 1 }, { ...original, verified: false }]);

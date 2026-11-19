@@ -4,6 +4,7 @@ import { resolve, dirname } from "node:path";
 import definitions from "../supabase/canonical-materials.json";
 import snapshot from "../src/data/verified-catalog-snapshot.json";
 import manual from "../src/data/manual-prices.json";
+import published from "../src/data/toom-published-prices.json";
 import { filterCatalogSnapshot } from "../src/services/catalogSnapshot";
 import { createToomCache } from "./shop-reader/toom-cache.mjs";
 import { runToomRefresh } from "./shop-reader/toom-refresh.mjs";
@@ -29,8 +30,8 @@ const ids: Record<string, string> = snapshot.canonical_material_ids;
 let materials = definitions.map(m => ({ ...m, id: ids[m.slug] })).filter(m => m.id);
 if (query) materials = materials.filter(m => new RegExp(query, "i").test(`${m.name} ${m.slug} ${m.aliases.join(" ")}`));
 const validIds = new Set(materials.map(m => m.id));
-const sourceRows = [...snapshot.prices, ...manual.prices];
-const seedRows = [...filterCatalogSnapshot(snapshot, ["toom"]), ...filterCatalogSnapshot(manual, ["toom"])].map(row => ({
+const sourceRows = [...snapshot.prices, ...manual.prices, ...published.prices];
+const seedRows = [snapshot, manual, published].flatMap(source => filterCatalogSnapshot(source, ["toom"])).map(row => ({
   ...sourceRows.find(raw => raw.store_id === "toom" && raw.product_url === row.product_url && raw.checked_at === row.checked_at), ...row, verified: true,
 }));
 const file = resolve(process.env.TOOM_CACHE_PATH || "work/toom-verified-cache.json");

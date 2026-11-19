@@ -20,6 +20,7 @@ export default function StoreCard({ store, price, estimate, origin, searchTerm, 
 }) {
   const estimated = !price && estimate?.store_id === store.id ? estimate : null;
   const ageHours = price ? (observedAt - new Date(price.checked_at).getTime()) / 3_600_000 : 0;
+  const stale = Boolean(price && ageHours > 168);
   const freshness = price?.source === "manual" ? "Manuell gepflegt" : ageHours <= 24 ? "Automatisch aktualisiert" : "Gespeicherter Preis";
   const badge = "Nächste Filiale";
   // The retailer intermittently serves an error for this exact product page.
@@ -33,7 +34,7 @@ export default function StoreCard({ store, price, estimate, origin, searchTerm, 
     <div className="distancePlaceholder">{comparisonLayout && <svg className="cardLocationIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" stroke="currentColor" strokeWidth="1.6" /><circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="1.6" /></svg>}<span>{store.distance}</span>{store.routeStatus !== "unavailable" && <><span className="distanceSeparator"> · </span><span className="driveTime">{store.duration}</span></>}</div>
     <div className="pricePlaceholder"><p className="productName" title={price?.product_name ?? searchTerm}>{getMaterialDisplayName(price?.product_name ?? searchTerm)}</p>
       <p className="actualSpecification">{price && "actual_size" in price ? price.actual_size : comparison?.actualSpecification ?? comparison?.preferredSpecification ?? (price?.package_quantity && price.unit ? `${price.package_quantity.toLocaleString("de-DE")} ${unitLabels[price.unit]}` : estimated ? `${estimated.package_quantity.toLocaleString("de-DE")} ${unitLabels[estimated.unit]}` : "Gewünschte Ausführung")}</p>
-      {(comparison || estimated || price) && <div className="matchStatus"><span className={`matchBadge ${estimated || comparison?.match === "alternative" ? "alternativeBadge" : ""}`}>{estimated ? "Schätzpreis" : comparison?.requestedProduct ? "Ausgewähltes Produkt" : comparison?.match === "exact" ? "Wunschgröße" : comparison?.match === "alternative" ? "Alternative Größe" : price ? "Geprüfter Preis" : "Kein geprüftes Angebot"}</span></div>}
+      {(comparison || estimated || price) && <div className="matchStatus"><span className={`matchBadge ${estimated || stale || comparison?.match === "alternative" ? "alternativeBadge" : ""}`}>{estimated ? "Schätzpreis" : comparison?.requestedProduct ? "Ausgewähltes Produkt" : comparison?.match === "exact" ? "Wunschgröße" : comparison?.match === "alternative" ? "Alternative Größe" : price ? "Geprüfter Preis" : "Kein geprüftes Angebot"}{stale && " · veraltet"}</span></div>}
       {comparison?.specificationWarning && <small>{comparison.specificationWarning}</small>}
       {price ? <>
         <strong className="packagePrice">{money.format(price.price)}</strong><span className="packageLabel">Produkt- / Packungspreis · inkl. MwSt.</span>
@@ -47,7 +48,7 @@ export default function StoreCard({ store, price, estimate, origin, searchTerm, 
           <p>Filialpreis und Bestand können abweichen.</p>
           <p>{price.product_name}</p>
           <p>{store.routeStatus === "traffic" ? "Fahrzeit mit aktueller Verkehrslage" : store.routeStatus === "driving" ? "Fahrzeit ohne aktuelle Verkehrslage" : "Fahrzeit derzeit nicht verfügbar"}</p>
-          {comparison?.requestedProduct ? <p>Ausgewähltes Produkt: Größe und Packungspreis laut Screenshot.</p>
+          {comparison?.requestedProduct ? <p>Ausgewähltes Produkt: Größe und Packung gehören zum verlinkten Händlerartikel.</p>
             : comparison?.match === "alternative" && <p>Kein geprüftes Angebot der Wunschgröße ({comparison.preferredSpecification}). Gezeigt wird die verfügbare geprüfte Alternative.</p>}
         </details>
       </> : estimated ? <>

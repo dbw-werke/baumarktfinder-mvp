@@ -54,7 +54,7 @@ test("fallback updater stores the actual canonical 300 ml ID", async () => {
 test("gypsum synonyms work without literal gipskarton; wet/fire/special boards never substitute", () => {
   const standard = buildStandard(material("gipskarton-standard-12-5-2000-1250-v1"));
   assert.equal(productMatchesStandard(product("Bauplatte GKB 2000 x 1250 x 12,5 mm", { attributes: [{name:"Länge",value:"2.000 mm"},{name:"Breite",value:"1.250 mm"},{name:"Stärke",value:"12,5 mm"}] }), standard), true);
-  for (const name of ["Rigipsplatte", "Gipskartonplatte", "Bauplatte", "GKB"]) assert.equal(productMatchesStandard(product(`${name} 2000 x 1250 x 12,5 mm`), standard), true, name);
+  for (const name of ["Rigips", "Rigipsplatte", "Gipskartonplatte", "Bauplatte", "GKB", "GK-Platte"]) assert.equal(productMatchesStandard(product(`${name} 2000 x 1250 x 12,5 mm`), standard), true, name);
   for (const name of ["Feuchtraumplatte", "Gipskarton Brandschutzplatte", "Bauplatte Spezialplatte", "XPS Bauplatte"]) assert.equal(productMatchesStandard(product(`${name} 2000 x 1250 x 12,5 mm`), standard), false, name);
 });
 test("Tiefgrund synonyms allow a real 10 L fallback; Haftgrund and Betonkontakt stay separate", () => {
@@ -86,4 +86,32 @@ test("German grouped piece counts match title and own structured attributes", ()
   const standard = buildStandard(material("tn-3-5-25-1000-v1"));
   for (const suffix of ["1.000 Stück", "1.000 Stk", "1000 Stück"]) assert.equal(productMatchesStandard(product(`Schnellbauschrauben TN Feingewinde 3,5 x 25 mm ${suffix}`), standard), true, suffix);
   assert.equal(productMatchesStandard(product("Schnellbauschrauben TN Feingewinde 3,5 x 25 mm", { attributes: [{ name: "Stückzahl", value: "1.000" }] }), standard), true);
+});
+
+test("thermal conductivity must agree across title, own attributes and structured evidence", () => {
+  const definition = material("glaswolle-035-120-6m2-v1"), standard = buildStandard(definition);
+  const own = { observedSpecs: { ...definition.specs }, gtin13: "4000000000006" };
+  assert.equal(productMatchesStandard(product("Glaswolle WLS 035", own), standard, { exactPackage: true }), true);
+  for (const candidate of [
+    product("Glaswolle WLS 034", own),
+    product("Glaswolle WLS 036", own),
+    product("Glaswolle WLS 035", { ...own, observedSpecs: { ...definition.specs, thermal_conductivity: 0.036 } }),
+    product("Glaswolle WLS 035", { ...own, attributes: [{ name: "Wärmeleitgruppe", value: "034" }] }),
+    product("Glaswolle WLS 035", { ...own, attributes: [{ name: "Wärmeleitfähigkeit", value: "0,036 W/(m K)" }] }),
+    product("Glaswolle WLS 035 WLG 034", own),
+  ]) assert.equal(productMatchesStandard(candidate, standard, { exactPackage: true }), false, candidate.name);
+});
+
+test("same product identifiers never override material, thickness, profile or exact package conflicts", () => {
+  const identity = { gtin13: "4000000000006", externalId: "fixture-identity" };
+  for (const [slug, name] of [
+    ["glaswolle-035-120-6m2-v1", "Steinwolle WLS 035 5000 x 1200 x 120 mm 6 m²"],
+    ["gipskarton-standard-12-5-2000-1250-v1", "GK-Platte 2000 x 1250 x 9,5 mm"],
+    ["cw50-50-2600-v1", "UW Profil 50 x 50 x 2600 mm"],
+    ["knauf-rotband-25kg-v1", "Knauf Rotband 10 kg"],
+  ]) {
+    const definition = material(slug), standard = buildStandard(definition);
+    assert.equal(productMatchesStandard(product(definition.name, { ...identity, observedSpecs: definition.specs }), standard, { exactPackage: true }), true, slug);
+    assert.equal(productMatchesStandard(product(name, { ...identity, observedSpecs: definition.specs }), standard, { exactPackage: true }), false, name);
+  }
 });

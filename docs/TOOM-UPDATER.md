@@ -1,6 +1,10 @@
 # Stündliche toom-Preisprüfung
 
-Stand: 21.10.2026. Das Design bleibt unverändert. Der Stundenlauf veröffentlicht geprüfte toom-Beobachtungen zusätzlich für die Vercel-Anwendung.
+Stand: 19.11.2026. Der Stundenlauf veröffentlicht geprüfte toom-Beobachtungen zusätzlich für die Vercel-Anwendung. Aktuelle Fehlerursachen, Grenzen und Betrieb: [Preiszuverlässigkeit](PRICE-UPDATE-RELIABILITY.md).
+
+Die neue toom-Seite liefert Produktdaten als Next.js-Flight-Daten statt ausschließlich im bisherigen `div#root[data-props]`. Der Reader unterstützt beide Formate, ohne Seitenskripte auszuführen. Produkt-SKU, kanonische URL, technische Angaben und der unabhängig gebundene SAP-Preis bleiben Pflicht. Bei Fehlern werden keine Prüfzeitpunkte erneuert. Der zuletzt veröffentlichte Snapshot dient auch beim Verlust eines Cache-Artefakts als Startbestand; Teilveröffentlichungen dürfen neuere bestehende Beobachtungen nicht zurücksetzen.
+
+Ausgewählte Screenshot-Produkte bleiben dieselben Produkte und Packungen. Eine spätere verifizierte Beobachtung **desselben** Produkts darf Preis und Datum aktualisieren; ein anderes Produkt darf diese Auswahl nicht verdrängen. Die ursprünglichen manuellen Belege bleiben unverändert erhalten.
 
 ## Ablauf
 
@@ -43,7 +47,7 @@ Standarddatei: `work/toom-verified-cache.json`. Sie enthält aktuelle geprüfte 
 
 ## Supabase: aktueller realer Stand
 
-Aktuelle Prüfung am 21.10.2026: Die lokal konfigurierte Supabase-Adresse ist per DNS nicht auflösbar (`ENOTFOUND`); öffentliche und Service-Role-Anfragen erreichen die API nicht. In den GitHub-Actions-Secrets sind keine Supabase-Werte hinterlegt. Der allgemeine tägliche Datenbank-Workflow scheitert deshalb bereits an `Missing Supabase URL secret`. Benötigt werden eine erreichbare Projektadresse als `NEXT_PUBLIC_SUPABASE_URL` und ein gültiger serverseitiger `SUPABASE_SERVICE_ROLE_KEY`; optional der passende öffentliche `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (oder `NEXT_PUBLIC_SUPABASE_ANON_KEY`). Die Schlüssel gehören in Repository Settings → Secrets and variables → Actions, nicht in Quelldateien oder Chatnachrichten. Die Vercel-Konfiguration muss dieselbe erreichbare Datenbank verwenden.
+Erneute Prüfung am 19.11.2026: Die lokal konfigurierte Supabase-Adresse ist per DNS nicht auflösbar (`ENOTFOUND`); die API ist darüber nicht erreichbar. Repository- und Production-Secrets enthalten keine Supabase-Werte. Der allgemeine tägliche Datenbank-Workflow bleibt deshalb blockiert und benennt die fehlenden Variablen im Diagnosebericht. Benötigt werden eine erreichbare Projektadresse als `NEXT_PUBLIC_SUPABASE_URL` und ein gültiger serverseitiger `SUPABASE_SERVICE_ROLE_KEY`; optional der passende öffentliche `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (oder `NEXT_PUBLIC_SUPABASE_ANON_KEY`). Die Schlüssel gehören in Repository Settings → Secrets and variables → Actions, nicht in Quelldateien oder Chatnachrichten. Die Vercel-Konfiguration muss dieselbe erreichbare Datenbank verwenden.
 
 Historischer Befund vom 05.10.2026, bei wieder erreichbarer Instanz erneut zu prüfen:
 

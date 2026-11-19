@@ -61,11 +61,94 @@ export function confirmHornbachPackagePrices(html, products, pageUrl) {
   }).filter(Boolean);
 }
 
-export function extractToomProductState(html, pageUrl, now = new Date(), { identityOnly = false } = {}) {
-  let data;
+function flightRecords(chunks) {
+  const bytes = Buffer.from(chunks.join(""), "utf8"), records = new Map();
+  let offset = 0;
+  while (offset < bytes.length) {
+    const colon = bytes.indexOf(58, offset);
+    if (colon < 0) return null;
+    const id = bytes.subarray(offset, colon).toString("utf8");
+    if (!id && bytes[colon + 1] === 72) { // Anonymous resource-hint records have no product data.
+      const newline = bytes.indexOf(10, colon);
+      if (newline < 0) return null;
+      offset = newline + 1; continue;
+    }
+    if (!/^[\da-f]+$/i.test(id)) return null;
+    offset = colon + 1;
+    // Flight text uses a hexadecimal UTF-8 byte count, with no trailing newline.
+    // Its contents may include newlines or text resembling another Flight record.
+    if (bytes[offset] === 84) {
+      const comma = bytes.indexOf(44, offset), size = bytes.subarray(offset + 1, comma).toString("utf8");
+      if (comma < 0 || !/^[\da-f]+$/i.test(size)) return null;
+      const end = comma + 1 + Number.parseInt(size, 16);
+      if (!Number.isSafeInteger(end) || end > bytes.length || records.has(id)) return null;
+      records.set(id, { kind: "text", value: bytes.subarray(comma + 1, end).toString("utf8") });
+      offset = end;
+    } else {
+      const newline = bytes.indexOf(10, offset);
+      if (newline < 0) return null;
+      const value = bytes.subarray(offset, newline).toString("utf8");
+      try {
+        const model = JSON.parse(value);
+        if (records.has(id)) return null;
+        records.set(id, { kind: "model", value: model });
+      } catch { /* Module, resource and stream-control records do not contain product data. */ }
+      offset = newline + 1;
+    }
+  }
+  return records;
+}
+function flightValue(value, records, path = new Set(), depth = 0) {
+  if (depth > 100) throw new Error("flight_depth_limit");
+  if (typeof value === "string") {
+    if (value.startsWith("$$")) return value.slice(1);
+    const reference = value.match(/^\$([\da-f]+)$/i)?.[1];
+    if (!reference) return value;
+    const record = records.get(reference);
+    if (!record || record.kind === "unsupported" || path.has(reference)) throw new Error("flight_reference_invalid");
+    return record.kind === "text" ? record.value : flightValue(record.value, records, new Set([...path, reference]), depth + 1);
+  }
+  if (Array.isArray(value)) return value.map(child => flightValue(child, records, path, depth + 1));
+  if (value && typeof value === "object") return Object.fromEntries(Object.entries(value).map(([key, child]) => [key, flightValue(child, records, path, depth + 1)]));
+  return value;
+}
+
+/** Both toom page generations carry the same product object; decode data, never execute scripts. */
+export function readToomProductData(html, pageUrl) {
+  const candidates = [];
+  const add = data => {
+    if (data?.basic_info?.sku && sameUrl(data?.meta_data?.canonical_url, pageUrl)
+      && pageUrl.replace(/\/$/, "").endsWith(`/${data.basic_info.sku}`)) candidates.push(data);
+  };
   try { const encoded = html.match(/<div\b(?=[^>]*\bid="root")(?=[^>]*\bdata-props="([^"]+)")[^>]*>/)?.[1];
-    data = JSON.parse(decodeURIComponent(decode(encoded || "")))?.content; }
-  catch { return []; }
+    if (encoded) add(JSON.parse(decodeURIComponent(decode(encoded)))?.content); }
+  catch { /* A malformed legacy payload cannot supply identity. */ }
+  const chunks = [];
+  for (const script of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)) {
+    const push = script[1].trim().match(/^self\.__next_f\.push\((\[[\s\S]*\])\);?$/);
+    if (!push) continue;
+    try { const chunk = JSON.parse(push[1]);
+      if (chunk[0] === 1 && typeof chunk[1] === "string") chunks.push(chunk[1]); }
+    catch { /* Only JSON arguments from ordinary Flight text chunks are supported. */ }
+  }
+  const records = flightRecords(chunks);
+  // Flight records can span script tags. Product data belongs to a rendered component's
+  // props, not a metadata offer, a recommendation, or an arbitrary object in page text.
+  const visit = value => {
+    if (!value || typeof value !== "object") return;
+    if (Array.isArray(value) && value[0] === "$" && value[3]?.productData) add(flightValue(value[3].productData, records));
+    for (const child of Object.values(value)) visit(child);
+  };
+  for (const record of records?.values() || []) {
+    if (record.kind !== "model") continue;
+    try { visit(record.value); } catch { return null; /* Unresolved product data cannot supply identity. */ }
+  }
+  const distinct = [...new Map(candidates.map(data => [JSON.stringify(data), data])).values()];
+  return distinct.length === 1 ? distinct[0] : null;
+}
+
+export function extractToomProductState(html, pageUrl, now = new Date(), { identityOnly = false } = {}) {
+  const data = readToomProductData(html, pageUrl);
   const info = data?.basic_info, details = data?.details, metadata = data?.meta_data;
   if (!info || !text(info.name) || !metadata || details?.base_quantity_unit !== "PCE" || !sameUrl(metadata.canonical_url, pageUrl)
     || !pageUrl.replace(/\/$/, "").endsWith(`/${info.sku}`)) return [];

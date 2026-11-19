@@ -68,8 +68,21 @@ test("old/manual observations remain transparent and are not called live prices"
   const html = render({ ...price, source: "manual" }, Date.parse("2026-09-29T12:00:00Z"));
   assert.match(html, /Manuell gepflegt/);
   assert.match(html, /älter als 7 Tage/);
+  assert.match(new JSDOM(html).window.document.querySelector(".matchBadge")?.textContent ?? "", /veraltet/);
   assert.match(html, /Geprüft:/);
   assert.doesNotMatch(html, /Livepreis|Echtzeitpreis/);
+});
+
+test("refreshed selected products identify the retailer package without attributing the new price to a screenshot", () => {
+  const refreshed = { ...price, price: 8.64, unit_price: 12 };
+  const html = renderToStaticMarkup(<StoreCard store={routeFallback(store)} price={refreshed} origin={origin}
+    searchTerm="Gipskarton Test" highlighted observedAt={observedAt}
+    comparison={{ price: refreshed, match: "exact", actualSpecification: "0,72 m²", preferredSpecification: "0,72 m²", explanation: "", requestedProduct: true }} />);
+  const details = new JSDOM(html).window.document.querySelector(".priceDetails")!;
+  assert.match(details.textContent ?? "", /Automatisch aktualisiert/);
+  assert.match(details.textContent ?? "", /Größe und Packung gehören zum verlinkten Händlerartikel/);
+  assert.match(html, /8,64/);
+  assert.doesNotMatch(details.textContent ?? "", /Screenshot/);
 });
 
 test("estimated cards show the numeric target package price, distinct label and traceable sources with a search CTA", () => {
@@ -162,10 +175,10 @@ test("comparison renders every physical branch once with its original price, pac
       assert.equal(card.querySelector(".offerButton")?.getAttribute("href"), observation.product_url);
     }
   }
-  assert.equal(document.querySelectorAll('.comparisonGrid [data-price-kind="estimate"]').length, 1);
-  assert.doesNotMatch(html, /Preis aktuell nicht verfügbar/);
-  assert.equal(cards[2].getAttribute("data-price-kind"), "estimate");
-  assert.match(cards[2].querySelector(".packagePrice")?.textContent ?? "", /^ca\. \d/);
+  assert.equal(document.querySelectorAll('.comparisonGrid [data-price-kind="estimate"]').length, 0);
+  assert.match(html, /Preis aktuell nicht verfügbar/);
+  assert.equal(cards[2].getAttribute("data-price-kind"), "unavailable");
+  assert.equal(cards[2].querySelector(".packagePrice"), null);
   assert.match(cards[2].querySelector(".actualSpecification")?.textContent ?? "", /25 kg/);
   assert.match(cards[2].querySelector(".offerButton")?.getAttribute("href") ?? "", /^https:\/\/www\.bauhaus\.info\/search\?q=/);
   assert.doesNotMatch(html, /führt keine|nicht im Sortiment/);
