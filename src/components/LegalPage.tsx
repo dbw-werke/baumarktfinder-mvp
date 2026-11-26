@@ -1,10 +1,11 @@
 import type { ReactNode } from "react";
+import Link from "next/link";
 import styles from "./LegalPage.module.css";
 
 export default function LegalPage({ title, children }: { title: string; children: ReactNode }) {
   return (
     <main className={styles.page}>
-      <a className={styles.back} href="/">← Zurück zu Baumarktfinder</a>
+      <Link className={styles.back} href="/" prefetch={false}>← Zurück zu Baumarktfinder</Link>
       <article className={styles.content}>
         <h1>{title}</h1>
         {children}
