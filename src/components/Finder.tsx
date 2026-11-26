@@ -220,6 +220,5 @@ export default function Finder() {
     <BenefitsSection />
     </div>
     <WebAppGuide />
-    <footer className="footer"><span>BAUMARKTFINDER · Deutschland</span><p>Für die Suche wird deine Adresse bzw. dein Standort an Google oder OpenStreetMap (Nominatim/Overpass) übermittelt. Routenlinks öffnen Google Maps.</p></footer>
   </main>;
 }

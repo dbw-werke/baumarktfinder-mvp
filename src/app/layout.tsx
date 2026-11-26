@@ -1,5 +1,6 @@
 import "./globals.css";
 import Script from "next/script";
+import SiteFooter from "../components/SiteFooter";
 import { umamiAnalyticsConfig } from "../lib/analytics";
 import { serializeStructuredData, siteMetadata, siteStructuredData, siteViewport } from "./seo";
 
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeStructuredData(siteStructuredData) }} />
         {children}
+        <SiteFooter />
         {analytics && <Script {...analytics} />}
       </body>
     </html>
